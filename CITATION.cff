@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this research corpus, please cite it as below."
+title: "OMNIRING research corpus"
+version: 0.1.0
+license: CC-BY-4.0
+authors:
+  - family-names: "De Santiago"
+    given-names: "Juan Carlos"
+repository-code: "https://github.com/SovRing-Labs/omniring-research"

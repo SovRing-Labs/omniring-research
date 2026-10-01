@@ -1,0 +1,23 @@
+# Essays — readable editions of the OMNIRING research conversations
+
+**Authors:** Juan Carlos De Santiago, with the Sovereign Raptor fleet (AI-assisted) · **Licence:** CC BY 4.0 (see
+`LICENSE.md` at the corpus root)
+
+These essays retell, in plain language, the ideas that came out of the author's conversations with AI systems and
+the review sessions that followed. They are not transcripts; the conversations are not published. Every number
+comes from the measured documents in `../` or the omni-ring technical disclosure, and each is cited where it
+appears. Anything not measured is marked "Speculative".
+
+| # | Essay | What it covers | Sources used |
+|---|---|---|---|
+| 01 | [Rings around a resonator: where OMNIRING came from](01-rings-around-a-resonator.md) | The original picture (coprime rings around a resonator), the timing chain, calendars as prior art, the check ring, direct reads, why rings must settle together; what the early claims got wrong | Study-conversation review (Gemini and Claude threads), two Claude ring conversations, modulus panel; docs 01, 02, 03, 06, 08; disclosure §3–5, §12; Kymn et al. 2023 |
+| 02 | [The jump rope: telling crowded marks apart](02-the-jump-rope.md) | Crowded slots as jumpers in shared ropes; peeling (adopted); lateral inhibition, deflation, group testing and tabu voting (measured no gain, harmful, or untested) | Jump-rope conversation, AI review of RING-3; docs 01, 05, 06, 07, 08; disclosure §4, §6, §12 |
+| 03 | [Tuning the string: similar items, continuous dials and diamond facets](03-tuning-the-string.md) | What makes the resonator resonate; similar codebooks and read-time whitening; continuous dials for rotated symbols; facet ("diamond") records; mid-query tuning as an open question | D-string conversation; docs 01, 06; disclosure §4, §7, §8, §12; Frady et al. 2021 |
+| 04 | [Metaphor or mechanism: how review panels decided what to build](04-metaphor-or-mechanism.md) | Three AI review panels: resonator go/no-go, cross-field ideas vs metaphor, modulus choice; the rules that lasted (trust first, evidence tier, no fitted thresholds) | Resonator panel, cross-field panel and citation check, modulus panel; docs 01, 02, 06; disclosure §2, §3, §12 |
+| 05 | [The brain and the bookshelf: knowledge in the rings, a small model on top](05-brain-and-bookshelf.md) | Knowledge in a verifiable memory, reasoning in a small model; the two seam defects and their fixes; sharding across machines; the "resonator cortex" vision (labelled speculation); the retracted accuracy claims | Knowledge-base conversation, resonator-cortex vision draft; docs 01, 04, 05, 06, 08; disclosure §2, §9–12; RETRO, kNN-LM, Memorizing Transformers, MeZO |
+| 06 | [A memory that can say "I don't know": where it might matter](06-a-memory-that-can-say-i-dont-know.md) | Speculative map of settings where abstention plus integrity matter (clinical checks, compliance, audit, air-gapped use), and what must be true first | Application-surface exploration; docs 02, 05, 07, 08; disclosure §3, §4, §9, §12 |
+| 07 | [Tool, protocol, system, primitive, substrate: the fractal we build by](07-tool-protocol-system-primitive-substrate.md) | The author's notebook law; the five stages; verification, memory and geometry as three instances; the watcher that must evolve; determinism offloading reasoning; a short history of the project (Aug 25 – Oct 1, 2026) | Author's notebook; generation ledger; review archive; session archives; disclosures Part 1 and 2 |
+| 08 | [From a point to a tesseract: the geometry ladder](08-from-a-point-to-a-tesseract.md) | Point, line, triangle, square, cube, 4D as experiments: torus vs paraboloid, cubes, pyramids, spheres, lattices, golden frequencies, programs as vectors, the integrated GPU | Geometry conversations 2026-09-30; disclosure Part 2 §2–5, §8 |
+| 09 | [The triangle memory: triangulation, triage, truncation](09-the-triangle-memory.md) | Facts as bound triangles; edges, trits, decay, harmony, chaining, polygons from real sessions, nesting; where it did not hold | Omnitri conversations 2026-09-30/10-01; disclosure Part 2 §6, §8, §9 |
+| 10 | [Square, line, circle, triangle: a substrate](10-square-line-circle-triangle.md) | Table, matrix, full-text, ring and triangle each doing the job it measured best at; the routed test; the perception cache; ternary-pen designs (speculative) | Substrate conversation 2026-10-01; disclosure Part 2 §7, §8.1, §10 |
+| 11 | [How to be wrong on purpose: the method behind the results](11-how-to-be-wrong-on-purpose.md) | Search first, pre-register, publish kills, never re-score; four times the method changed the story | Research log 2026-09-30/10-01; disclosure Part 2 §9, §11 |

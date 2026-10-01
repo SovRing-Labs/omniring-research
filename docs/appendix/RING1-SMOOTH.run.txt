@@ -1,0 +1,59 @@
+# Appendix: RING-1 T2 (smooth ring) — raw run output
+
+Verbatim output of the harness that produced the numbers in `10-ring1-smooth-fractional-phase.md`. Published unchanged except for
+paths: the author's home directory and the fleet-internal staging paths are replaced with the
+published `harness/` layout, so the log still names the same file a reader can re-run. No number,
+table or verdict line was altered.
+
+Run it yourself: `python3 harness/ring1/run_smooth.py` (see `harness/README.md`).
+
+Licence: CC BY 4.0, by Juan Carlos De Santiago, with the Sovereign Raptor fleet (AI-assisted).
+
+=== RING1-SMOOTH (full mode, 300 trials/cell) ===
+D=5120, mods=(3, 5, 7, 13), space=1365, L=8
+
+--- (a) Smooth ring neighbour curve (d=0..32) ---
+  d= 0: mean=1.000000, std=0.000000
+  d= 2: mean=0.642518, std=0.000000
+  d= 4: mean=0.007609, std=0.000000
+  d= 6: mean=-0.222299, std=0.000000
+  d= 8: mean=-0.026785, std=0.000000
+  d=10: mean=0.108517, std=0.000000
+  d=12: mean=-0.001127, std=0.000000
+  d=14: mean=-0.091493, std=0.000000
+  d=16: mean=-0.008753, std=0.000000
+  d=18: mean=0.069873, std=0.000000
+  d=20: mean=0.016248, std=0.000000
+  d=22: mean=-0.042647, std=0.000000
+  d=24: mean=-0.002785, std=0.000000
+  d=26: mean=0.038158, std=0.000000
+  d=28: mean=-0.002188, std=0.000000
+  d=30: mean=-0.038153, std=0.000000
+  d=32: mean=0.002941, std=0.000000
+
+  Neighbour criterion check:
+    mean(d=1) = 0.902134
+    mean(d>=16) = 0.004485 (over 17 points)
+    std(d>=16) = 0.034709
+    SE(d>=16) = 0.008418
+    diff = 0.897649
+    5*SE = 0.042091
+    PASS (diff > 5*SE): True
+
+--- (b) Recall at M=12, c=1 (clamp 13-ring), with/without smooth ring ---
+  Without smooth ring: target=198/300 66.0% [58.7%, 72.6%]
+  With smooth ring:    target=2/300 0.7% [0.1%, 3.3%]
+  Recall criterion: with-smooth point estimate within without-smooth Wilson-99% CI
+    without-smooth CI: [0.5868, 0.7263]
+    with-smooth point:  0.0067
+    PASS (within CI): False
+
+--- (c) Recall at M=12, clamping smooth ring to target's tick ---
+  Smooth-ring clamped: target=196/300 65.3% [58.0%, 72.0%]
+  (For comparison, 13-ring clamped without smooth: 66.0% [58.7%, 72.6%])
+
+=== VERDICT: KILL: recall criterion failed ===
+Report written to: the project root/docs/appendix/RING1-SMOOTH.md
+
+Gate check:
+  test -s the project root/docs/appendix/RING1-SMOOTH.md && grep -qE '^(PASS|KILL)' the project root/docs/appendix/RING1-SMOOTH.md && python3 harness/ring1/run_smooth.py --quick

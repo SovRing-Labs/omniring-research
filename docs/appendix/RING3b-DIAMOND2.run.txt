@@ -1,0 +1,10 @@
+| design | M | recall of both unknown corners (2 known) | wrong settles flagged |
+|---|---|---|---|
+| (a) category corners K=15 + checksum | 12 | 136/150 = 90.7% [82.7%, 95.2%] | 8/14 |
+| (a) category corners K=15 + checksum | 24 | 118/150 = 78.7% [68.9%, 86.0%] | 19/32 |
+| (a) category corners K=35 + checksum | 12 | 105/150 = 70.0% [59.7%, 78.6%] | 42/45 |
+| (a) category corners K=35 + checksum | 24 | 83/150 = 55.3% [44.9%, 65.3%] | 60/67 |
+| (b) residue corners (3,5,7)+11, 7-ring cue per unknown corner | 12 | 42/150 = 28.0% [19.6%, 38.2%] | 106/108 |
+| (b) residue corners (3,5,7)+11, 7-ring cue per unknown corner | 24 | 20/150 = 13.3% [7.7%, 22.1%] | 126/130 |
+| (c) 105-value corners split into random category sub-rings 3x5x7 + checksum | 12 | 7/150 = 4.7% [1.8%, 11.3%] | 137/143 |
+| (c) 105-value corners split into random category sub-rings 3x5x7 + checksum | 24 | 6/150 = 4.0% [1.5%, 10.4%] | 138/144 |

@@ -1,0 +1,52 @@
+RING-1 T10 disperse  mods=[3, 5, 7, 13] D=5120 quant=float space=1365 trials/cell=200 
+codebook_seed=0  trial_seed=90210 + M*100003 + trial (independent of S)
+
+Pre-registration (verbatim): Pre-registered decision (do not change): PASS if, at M = 48, the best cell with S >= 4 has a Wilson-99% LOWER bound of target recall that exceeds the S = 1 cell's point recall by at least 0.20 absolute. Otherwise KILL: dispersal does not beat one crowded slot.
+
+grid: 19 cells (M/S < 1 skipped -> [(12, 16)])
+
+  M= 12 S= 1  12/slot  recall   73.5% [ 64.8, 80.7]  chance  8.33%  holder  100.0%  iters/q    2.0  wall/q    7.56 ms
+  M= 12 S= 2  6/slot  recall   66.0% [ 57.0, 74.0]  chance  8.33%  holder   80.0%  iters/q    4.8  wall/q   13.48 ms
+  M= 12 S= 4  3/slot  recall   71.5% [ 62.7, 78.9]  chance  8.33%  holder   74.5%  iters/q   11.0  wall/q   33.78 ms
+  M= 12 S= 8  1/slot  recall   65.0% [ 56.0, 73.1]  chance  8.33%  holder   65.5%  iters/q   20.4  wall/q   69.70 ms
+  M= 24 S= 1  24/slot  recall   44.5% [ 35.8, 53.6]  chance  4.17%  holder  100.0%  iters/q    2.2  wall/q    7.99 ms
+  M= 24 S= 2  12/slot  recall   45.5% [ 36.7, 54.6]  chance  4.17%  holder   70.0%  iters/q    4.4  wall/q   18.20 ms
+  M= 24 S= 4  6/slot  recall   49.0% [ 40.1, 58.0]  chance  4.17%  holder   57.0%  iters/q    9.9  wall/q   32.60 ms
+  M= 24 S= 8  3/slot  recall   49.0% [ 40.1, 58.0]  chance  4.17%  holder   51.5%  iters/q   22.9  wall/q   74.33 ms
+  M= 24 S=16  1/slot  recall   51.0% [ 42.0, 59.9]  chance  4.17%  holder   51.0%  iters/q   41.5  wall/q  162.15 ms
+  M= 48 S= 1  48/slot  recall   27.5% [ 20.2, 36.3]  chance  2.08%  holder  100.0%  iters/q    2.3  wall/q    9.54 ms
+  M= 48 S= 2  24/slot  recall   22.5% [ 15.8, 30.9]  chance  2.08%  holder   51.5%  iters/q    4.4  wall/q   19.10 ms
+  M= 48 S= 4  12/slot  recall   21.0% [ 14.6, 29.3]  chance  2.08%  holder   38.5%  iters/q    9.7  wall/q   36.86 ms
+  M= 48 S= 8  6/slot  recall   22.5% [ 15.8, 30.9]  chance  2.08%  holder   32.5%  iters/q   21.0  wall/q   80.46 ms
+  M= 48 S=16  3/slot  recall   24.0% [ 17.1, 32.5]  chance  2.08%  holder   25.5%  iters/q   46.5  wall/q  190.36 ms
+  M= 96 S= 1  96/slot  recall   16.0% [ 10.4, 23.8]  chance  1.04%  holder  100.0%  iters/q    2.3  wall/q   11.07 ms
+  M= 96 S= 2  48/slot  recall   11.5% [  6.9, 18.6]  chance  1.04%  holder   49.0%  iters/q    4.4  wall/q   21.31 ms
+  M= 96 S= 4  24/slot  recall   12.0% [  7.3, 19.2]  chance  1.04%  holder   29.0%  iters/q    8.7  wall/q   35.41 ms
+  M= 96 S= 8  12/slot  recall   18.5% [ 12.5, 26.5]  chance  1.04%  holder   24.0%  iters/q   18.5  wall/q   79.24 ms
+  M= 96 S=16  6/slot  recall   18.5% [ 12.5, 26.5]  chance  1.04%  holder   21.5%  iters/q   41.2  wall/q  172.92 ms
+
+| # | M | S | marks/slot | hits/trials | target recall | Wilson-99% | chance 1/M | winner = holder | probe iters/query | wall ms/query |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 12 | 1 | 12 | 147/200 | **73.5%** | [64.8%, 80.7%] | 8.33% | 200/200 (100.0%) | 2.0 | 7.56 |
+| 2 | 12 | 2 | 6 | 132/200 | **66.0%** | [57.0%, 74.0%] | 8.33% | 160/200 (80.0%) | 4.8 | 13.48 |
+| 3 | 12 | 4 | 3 | 143/200 | **71.5%** | [62.7%, 78.9%] | 8.33% | 149/200 (74.5%) | 11.0 | 33.78 |
+| 4 | 12 | 8 | 1 | 130/200 | **65.0%** | [56.0%, 73.1%] | 8.33% | 131/200 (65.5%) | 20.4 | 69.70 |
+| 5 | 24 | 1 | 24 | 89/200 | **44.5%** | [35.8%, 53.6%] | 4.17% | 200/200 (100.0%) | 2.2 | 7.99 |
+| 6 | 24 | 2 | 12 | 91/200 | **45.5%** | [36.7%, 54.6%] | 4.17% | 140/200 (70.0%) | 4.4 | 18.20 |
+| 7 | 24 | 4 | 6 | 98/200 | **49.0%** | [40.1%, 58.0%] | 4.17% | 114/200 (57.0%) | 9.9 | 32.60 |
+| 8 | 24 | 8 | 3 | 98/200 | **49.0%** | [40.1%, 58.0%] | 4.17% | 103/200 (51.5%) | 22.9 | 74.33 |
+| 9 | 24 | 16 | 1 | 102/200 | **51.0%** | [42.0%, 59.9%] | 4.17% | 102/200 (51.0%) | 41.5 | 162.15 |
+| 10 | 48 | 1 | 48 | 55/200 | **27.5%** | [20.2%, 36.3%] | 2.08% | 200/200 (100.0%) | 2.3 | 9.54 |
+| 11 | 48 | 2 | 24 | 45/200 | **22.5%** | [15.8%, 30.9%] | 2.08% | 103/200 (51.5%) | 4.4 | 19.10 |
+| 12 | 48 | 4 | 12 | 42/200 | **21.0%** | [14.6%, 29.3%] | 2.08% | 77/200 (38.5%) | 9.7 | 36.86 |
+| 13 | 48 | 8 | 6 | 45/200 | **22.5%** | [15.8%, 30.9%] | 2.08% | 65/200 (32.5%) | 21.0 | 80.46 |
+| 14 | 48 | 16 | 3 | 48/200 | **24.0%** | [17.1%, 32.5%] | 2.08% | 51/200 (25.5%) | 46.5 | 190.36 |
+| 15 | 96 | 1 | 96 | 32/200 | **16.0%** | [10.4%, 23.8%] | 1.04% | 200/200 (100.0%) | 2.3 | 11.07 |
+| 16 | 96 | 2 | 48 | 23/200 | **11.5%** | [6.9%, 18.6%] | 1.04% | 98/200 (49.0%) | 4.4 | 21.31 |
+| 17 | 96 | 4 | 24 | 24/200 | **12.0%** | [7.3%, 19.2%] | 1.04% | 58/200 (29.0%) | 8.7 | 35.41 |
+| 18 | 96 | 8 | 12 | 37/200 | **18.5%** | [12.5%, 26.5%] | 1.04% | 48/200 (24.0%) | 18.5 | 79.24 |
+| 19 | 96 | 16 | 6 | 37/200 | **18.5%** | [12.5%, 26.5%] | 1.04% | 43/200 (21.5%) | 41.2 | 172.92 |
+
+VERDICT: KILL: at M=48 the best S>=4 cell (S=16) has a Wilson-99% lower bound of 0.1714, which does NOT exceed the S=1 point recall of 0.2750 by the required 0.20 (short by 0.3036): dispersal does not beat one crowded slot
+elapsed: 227.5 s
+wrote report: 04-ring1-disperse.md

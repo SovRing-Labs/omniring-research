@@ -1,0 +1,110 @@
+==============================================================================
+RING1-CHECK -- T3: 17 check ring flags wrong resonator settles
+==============================================================================
+PRE-REGISTERED DECISION (verbatim from the experiment brief, task
+RING1-CHECK, step 6 -- fixed before any trial ran):
+  PASS if, pooled over cells with >= 30 wrong settles, the flag rate on wrong settles
+  has a Wilson-99% lower bound >= 0.5 AND the false-alarm rate on correct settles has
+  a Wilson-99% upper bound <= 0.05. Otherwise KILL.
+PRE-REGISTERED SCOPE (verbatim, step 2):
+  Marks carry mods (3,5,7,13,17) but only 0..1364 are legal values (17 is redundant).
+  Resonate with all 5 rings; call a settle 'legal' when crt of the 4 information
+  residues, taken mod 17, equals the decoded 17-residue. Cells: M in (1, 4, 12),
+  c in (0, 1), float, 300 trials. Report: rate of wrong settles (not any real mark),
+  flag rate on wrong settles (illegal), false-alarm rate on correct settles (flagged
+  illegal), and recall with vs without the 17 ring bound in (cost of the extra ring).
+REPORTING RULES (verbatim, step 4):
+  fixed seeds; no fitted thresholds; every number from a command that was run; report
+  the chance rate beside every recall figure; Wilson 99% intervals on every rate.
+
+setup
+  mods(5-ring)   = (3, 5, 7, 13, 17)   full space 23205
+  mods(4-ring)   = (3, 5, 7, 13)   info space 1365  (legal values 0..1364)
+  1365 mod 17    = 5  -> 17 is redundant (a checksum, not information)
+  D = 5120   quant = float   max_iter = 50
+  clamp order    = 13,7,5 -> ring indices (3, 2, 1); the 17 (index 4) is NEVER clamped (pinning the checksum is vacuous)
+  trials/cell    = 300   cells = M(1, 4, 12) x c(0, 1)   cell seeds are SeedSequence children of 20260928
+  codebook seeds = (20260928, 1, 2)   (pre-registered 20260928 + robustness scan)
+  chance         : target recall 1/M; a random residue tuple is illegal 16/17
+
+  NOTE A cell whose settles are decided by the tie-break seed (all positions of a ring tie exactly, every iteration burns the ceiling) reports a flag rate near 1 by construction: an arbitrary residue tuple is illegal 16/17 of the time. Read settled% and burned% before reading any c=0 flag rate.
+  identity 'legal <=> decoded mark < 1365' : 20000/20000 exact
+  false alarms on correct settles           : 0/20000 (structurally 0)
+
+  codebook seed 20260928: 6 cells x 300 trials x 2 arms in 249.0s (shared 3/5/7/13 codebooks bit-identical across arms: True)
+
+  codebook seed 1: 6 cells x 300 trials x 2 arms in 44.6s (shared 3/5/7/13 codebooks bit-identical across arms: True)
+
+  codebook seed 2: 6 cells x 300 trials x 2 arms in 46.9s (shared 3/5/7/13 codebooks bit-identical across arms: True)
+
+==============================================================================
+RESULTS -- codebook seed 20260928 (PRE-REGISTERED, inherited from RING1-CORE)
+==============================================================================
+wrong settle = the 5-ring decode is not ANY real mark in the slot
+
+| M | c | correct settles | WRONG settles | flagged (illegal) | silent phantom | false alarms |
+|---|---|-----------------|---------------|--------------------|----------------|--------------|
+| 1 | 0 | 0/300   0.0%  [0.0, 2.2] | 300/300 100.0%  [97.8, 100.0] | 300/300 100.0%  [97.8, 100.0] | 0/300   0.0%  [0.0, 2.2] | 0/0  --  [n/a] |
+| 1 | 1 | 300/300 100.0%  [97.8, 100.0] | 0/300   0.0%  [0.0, 2.2] | 0/0  --  [n/a] | 0/0  --  [n/a] | 0/300   0.0%  [0.0, 2.2] |
+| 4 | 0 | 0/300   0.0%  [0.0, 2.2] | 300/300 100.0%  [97.8, 100.0] | 300/300 100.0%  [97.8, 100.0] | 0/300   0.0%  [0.0, 2.2] | 0/0  --  [n/a] |
+| 4 | 1 | 297/300  99.0%  [96.1, 99.7] | 3/300   1.0%  [0.3, 3.9] | 3/3 100.0%  [31.1, 100.0] | 0/3   0.0%  [0.0, 68.9] | 0/297   0.0%  [0.0, 2.2] |
+| 12 | 0 | 0/300   0.0%  [0.0, 2.2] | 300/300 100.0%  [97.8, 100.0] | 300/300 100.0%  [97.8, 100.0] | 0/300   0.0%  [0.0, 2.2] | 0/0  --  [n/a] |
+| 12 | 1 | 256/300  85.3%  [79.3, 89.8] | 44/300  14.7%  [10.2, 20.7] | 36/44  81.8%  [63.1, 92.2] | 8/44  18.2%  [7.8, 36.9] | 0/256   0.0%  [0.0, 2.5] |
+
+  settle health (a cell that never settles cannot flag anything):
+| M | c | converged | burned the 50-iter ceiling | cycled | median iters 5-ring | median iters 4-ring |
+|---|---|-----------|--------------------------|--------|---------------------|---------------------|
+| 1 | 0 | 0/300   0.0%  [0.0, 2.2] | 300/300 100.0%  [97.8, 100.0] | 0/300   0.0%  [0.0, 2.2] | 50.0 | 2.0 |
+| 1 | 1 | 300/300 100.0%  [97.8, 100.0] | 0/300   0.0%  [0.0, 2.2] | 0/300   0.0%  [0.0, 2.2] | 2.0 | 2.0 |
+| 4 | 0 | 0/300   0.0%  [0.0, 2.2] | 300/300 100.0%  [97.8, 100.0] | 0/300   0.0%  [0.0, 2.2] | 50.0 | 2.0 |
+| 4 | 1 | 298/300  99.3%  [96.7, 99.9] | 2/300   0.7%  [0.1, 3.3] | 0/300   0.0%  [0.0, 2.2] | 2.0 | 2.0 |
+| 12 | 0 | 0/300   0.0%  [0.0, 2.2] | 300/300 100.0%  [97.8, 100.0] | 0/300   0.0%  [0.0, 2.2] | 50.0 | 2.0 |
+| 12 | 1 | 281/300  93.7%  [89.0, 96.4] | 17/300   5.7%  [3.1, 10.2] | 2/300   0.7%  [0.1, 3.3] | 2.0 | 2.0 |
+
+==============================================================================
+COST OF THE EXTRA RING -- target recall, 5-ring vs paired 4-ring
+==============================================================================
+| M | c | 5-ring target | 4-ring target | chance 1/M | both | only 4 | only 5 | McNemar p |
+|---|---|---------------|---------------|-----------|------|---------|--------|-----------|
+| 1 | 0 | 0/300   0.0%  [0.0, 2.2] | 300/300 100.0%  [97.8, 100.0] | 100.0% | 0 | 300 | 0 | 0.000 |
+| 1 | 1 | 300/300 100.0%  [97.8, 100.0] | 300/300 100.0%  [97.8, 100.0] | 100.0% | 300 | 0 | 0 | 1.000 |
+| 4 | 0 | 0/300   0.0%  [0.0, 2.2] | 86/300  28.7%  [22.5, 35.8] |  25.0% | 214 | 86 | 0 | 0.000 |
+| 4 | 1 | 264/300  88.0%  [82.3, 92.0] | 263/300  87.7%  [81.9, 91.8] |  25.0% | 275 | 12 | 13 | 1.000 |
+| 12 | 0 | 0/300   0.0%  [0.0, 2.2] | 29/300   9.7%  [6.1, 15.0] |   8.3% | 271 | 29 | 0 | 0.000 |
+| 12 | 1 | 165/300  55.0%  [47.6, 62.2] | 197/300  65.7%  [58.3, 72.3] |   8.3% | 186 | 73 | 41 | 0.004 |
+
+  'both' = the 17 ring left the cued mark's recall intact; 'only 4'/'only 5' = discordant pairs (McNemar, exact, two-sided).
+
+==============================================================================
+DECISION (pre-registered, applied as written, to the pre-registered seed)
+==============================================================================
+    cell filter (>= 30 wrong settles):
+      M= 1 c=0: 300 wrong -> IN POOL
+      M= 1 c=1:   0 wrong -> out
+      M= 4 c=0: 300 wrong -> IN POOL
+      M= 4 c=1:   3 wrong -> out
+      M=12 c=0: 300 wrong -> IN POOL
+      M=12 c=1:  44 wrong -> IN POOL
+      POOLED over the 4 eligible cell(s):
+        flag rate on wrong settles  936/944  99.2%  [98.0, 99.6]  [need lo >= 0.5] -> MET
+        false alarms on correct     0/256   0.0%  [0.0, 2.5]  [need hi <= 0.05] -> MET
+      for the record, over ALL 6 cells (filter ignored):
+        flag rate on wrong settles  939/947  99.2%  [98.0, 99.6]
+        false alarms on correct     0/853   0.0%  [0.0, 0.8]
+
+==============================================================================
+ROBUSTNESS SCAN -- the same grid on other codebook seeds (report only)
+==============================================================================
+| codebook seed | settled (conv 5-ring) | burned ceiling | wrong settles | flag rate on wrong | false alarms on correct | criterion |
+|---------------|------------------------|-----------------|---------------|--------------------|----------------------|-----------|
+| 20260928  (pre-reg) | 879/1800  48.8%  [45.8, 51.9] | 919/1800  51.1%  [48.0, 54.1] | 947/1800  52.6%  [49.6, 55.6] | 939/947  99.2%  [98.0, 99.6] | 0/853   0.0%  [0.0, 0.8] | **PASS** |
+| 1  | 1780/1800  98.9%  [98.0, 99.4] | 19/1800   1.1%  [0.6, 1.9] | 32/1800   1.8%  [1.1, 2.8] | 32/32 100.0%  [82.8, 100.0] | 0/1768   0.0%  [0.0, 0.4] | **KILL** |
+| 2  | 1780/1800  98.9%  [98.0, 99.4] | 19/1800   1.1%  [0.6, 1.9] | 49/1800   2.7%  [1.9, 3.9] | 46/49  93.9%  [78.9, 98.4] | 0/1751   0.0%  [0.0, 0.4] | **KILL** |
+
+algebra verification (false alarms structurally 0): OK
+
+VERDICT PASS: on the pre-registered codebook the pooled flag rate clears 0.5
+(Wilson-99% lower bound) and pooled false alarms clear 0.05 (Wilson-99% upper bound).
+
+total wall time: 340.7s
+EXIT=0

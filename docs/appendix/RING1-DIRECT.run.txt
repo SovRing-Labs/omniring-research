@@ -1,0 +1,35 @@
+PRE-REGISTERED DECISION (verbatim from the experiment brief, RING1-DIRECT, step 6):
+  PASS if direct single-mark decode is >= 0.99 exact (Wilson-99% lower bound)
+  under float, AND the tagged 2-mark both-correct rate's Wilson-99% lower
+  bound exceeds the untagged rate's point value. Otherwise KILL (report
+  which half failed).
+PRE-REGISTERED SCOPE (verbatim, step 2):
+  (a) Direct storage: mark = SUM (not product) of ring position vectors,
+      mods (3,5,7,13,17); read each ring by argmax over its codebook (45 probes)
+      then crt. Single-mark slots, float and k16, 1,000 marks. Report exact-decode
+      rate and wall time per read vs resonate() on the bound encoding.
+  (b) Two marks per slot with a 1-bit tag: bind mark 1 with a random unit tag
+      vector T and mark 2 with T.conj(); decode by unbinding its tag then resonating
+      (bound encoding, c = 0). 300 trials: both-correct rate vs untagged 2-mark slot.
+REPORTING RULES (verbatim, step 4):
+  Fixed seeds; every number from a command I ran (command + output pasted);
+  chance rate beside every recall; Wilson 99% intervals on every rate.
+
+DIRECT VS BOUND -- T7 + T6b (RING1-DIRECT)
+mods direct=(3, 5, 7, 13, 17) bound=(3, 5, 7, 13) D=5120 quant=float+float  quick=False n_marks=1000 n_tag=300
+
+=== (a) Direct single-mark decode ===
+Direct storage: mark = SUM of ring position vectors, read by argmax per ring + CRT.
+float  n=1000 exact=1000/1000=1.000  wilson99=[0.993,1.000]  mean_time/mark=0.0008s  total=0.79s
+k16  n=1000 exact=1000/1000=1.000  wilson99=[0.993,1.000]  mean_time/mark=0.0011s  total=1.10s
+--- bound + resonate() comparison (same marks, float only) ---
+bound float  n=1000 exact=1000/1000=1.000  wilson99=[0.993,1.000]  mean_time/mark=0.0078s  total=7.85s
+
+=== (b) Tagged 2-mark slot (1-bit sharing tag) ===
+untagged 2-mark (c=0, float): both-correct 267/300=0.890  wilson99=[0.835,0.928]
+tagged 2-mark (T + T.conj, c=0): both-correct 300/300=1.000  wilson99=[0.978,1.000]
+
+=== PRE-REGISTERED DECISION ===
+Direct float exact-decode: 1000/1000 = 100.0%  wilson-99 lower = 99.3%
+PASS criteria: direct float lower >= 0.99? YES  |  tagged lower > untagged point (0.890)? YES
+VERDICT: PASS (both pre-registered clauses met)

@@ -1,0 +1,115 @@
+# Appendix: RING-1 T4 (halo) — raw run output
+
+Verbatim output of the harness that produced the numbers in `09-ring1-halo-two-stage-chain.md`. Published unchanged except for
+paths: the author's home directory and the fleet-internal staging paths are replaced with the
+published `harness/` layout, so the log still names the same file a reader can re-run. No number,
+table or verdict line was altered.
+
+Run it yourself: `python3 harness/ring1/run_halo.py` (see `harness/README.md`).
+
+Licence: CC BY 4.0, by Juan Carlos De Santiago, with the Sovereign Raptor fleet (AI-assisted).
+
+RING-1 T4 -- two-stage halo chain vs one resonator on crowded slots
+D=5120 mods=(3, 5, 7, 13) states=1365 max_iter=50 quant=float trials/cell=300 loads=[12, 32]
+python 3.12.3  numpy 2.5.3
+threads: OMP=4 OPENBLAS=4 MKL=4
+
+PRE-REGISTERED DECISION (verbatim from the published pre-registration, fixed before any trial ran):
+  PASS if Arm B's target recall Wilson-99% lower bound exceeds Arm A's point recall at
+  M = 32, OR Arm B matches Arm A (intervals overlap) with <= 0.5x the median total
+  iterations. Otherwise KILL (the halo buys nothing).
+PRE-REGISTERED SCOPE (verbatim, step 2):
+  Same problems for both arms: mods (3,5,7,13), float, M in (12, 32), 300 trials, the
+  13-ring clamped to the target. Arm A: one resonator over all free rings (as RING1-CORE).
+  Arm B (halo): stage 1 resonates only the 7-ring against the slot with the 13-ring clamped
+  and the 3- and 5-rings held at their codebook means; its settled 7-residue then clamps
+  stage 2, which resonates the 3- and 5-rings. Report target recall, median total
+  iterations and wall time for both arms.
+REPORTING RULES (verbatim, step 4):
+  fixed seeds; the decision criterion below is pre-registered; every number from a
+  command you ran; chance rate beside every recall; Wilson 99% intervals on every rate.
+  chance = 1/M.
+
+READING OF THE CRITERION (stated before the run, not after it):
+  Clause 1 names M = 32 explicitly.  Clause 2 ("matches Arm A with <= 0.5x the median
+  total iterations") names no M.  This runner evaluates the criterion at M = 32 -- the
+  crowded cell the task is named for and the cell clause 1 names -- and prints the same
+  test at M = 12 beside it for transparency.  A PASS declared at M = 32 that would NOT
+  have held at M = 12 is flagged explicitly in the output, so a stricter reading can be
+  applied by the reader without re-running anything.
+
+built 4 float codebooks in 0.03s (same base seed as RING1-CORE)
+
+--- INTEGRITY 1: resonate_free() == ring1_core.resonate() ---
+  40 random problems (load 1..8, clamp 0..2): 0 mismatches (1.47s)
+  EQUIVALENCE PASS
+
+--- INTEGRITY 2: Arm A reproduces RING1-CORE (T1, c=1, float, 200 trials) ---
+  M=12  this run 134/200 target, 200/200 any-mark, medIt 2.0   RING1-CORE 134/200 target, 200/200 any-mark, medIt 2.0   MATCH
+  M=32  this run  69/200 target, 196/200 any-mark, medIt 2.0   RING1-CORE  69/200 target, 196/200 any-mark, medIt 2.0   MATCH
+  HARNESS CROSS-CHECK PASS
+  cell M=12 -> A 206/300, B 203/300 (wilson99 lower 60.4%), medIt A 2.0 / B 5.0  (6.4s)
+  cell M=32 -> A 114/300, B 116/300 (wilson99 lower 31.7%), medIt A 2.0 / B 5.0  (6.8s)
+
+=== T4: two-stage halo chain (B) vs one resonator (A), 13-ring clamped ===
+D=5120 mods=(3, 5, 7, 13) states=1365 max_iter=50 quant=float  chance = 1/M
+target recall  = all 4 rings equal the TARGET's residues
+any-mark recall= all 4 rings equal SOME mark in the slot
+
+   M     n  arm |   target wilson99          chance |  medIt     ms | any-mark wilson99           conv  cycle  medIt
+--------------------------------------------------------------------------------------------------------------------
+  12   300  one | 206/300   68% [ 61.4, 75.1]    8.3% |    2.0   7.12 | 300/300  100% [ 97.8,100.0]  99.7%   0.3%    2.0
+  12   300 halo | 203/300   67% [ 60.4, 74.2]    8.3% |    5.0  13.05 | 299/300   99% [ 97.2,100.0] 100.0%   0.0%    5.0
+     stage split (halo): stage 1 median 3.0 it, stage 2 median 2.0 it; paired discards: A-only 42, B-only 39
+  32   300  one | 114/300   38% [ 31.1, 45.4]    3.1% |    2.0   7.30 | 294/300   98% [ 94.7, 99.3] 100.0%   0.0%    2.0
+  32   300 halo | 116/300   38% [ 31.7, 46.1]    3.1% |    5.0  12.91 | 297/300   99% [ 96.1, 99.7] 100.0%   0.0%    5.0
+     stage split (halo): stage 1 median 3.0 it, stage 2 median 2.0 it; paired discards: A-only 44, B-only 46
+
+   M     A wall (s)     B wall (s) iters ratio   A ms/trial   B ms/trial
+  12           2.13           3.92       2.50         7.12        13.05
+  32           2.19           3.87       2.50         7.30        12.91
+
+--- WHERE THE ERROR LIVES (report-only, feeds no decision) ---
+The 13-ring is clamped to the target in both arms, so it is right by
+construction and is omitted.  Every row is a Wilson-99% interval.
+
+  M = 12  (n = 300, chance 1/M = 8.3%)
+    A one-resonator  7-ring    222/300   74% [ 67.0, 80.0]
+    A one-resonator  5-ring    226/300   75% [ 68.4, 81.1]
+    A one-resonator  3-ring    242/300   80% [ 74.2, 85.8]
+    B halo stage 1   7-ring    225/300   75% [ 68.1, 80.9]
+    B halo stage 2   5+3 both  203/225   90% [ 83.9, 94.2]   (of stage-1 hits)
+    either arm correct         245/300   81% [ 75.2, 86.7]
+    paired: A-only 42, B-only 39 -> the two arms fail on different trials
+
+  M = 32  (n = 300, chance 1/M = 3.1%)
+    A one-resonator  7-ring    147/300   49% [ 41.7, 56.4]
+    A one-resonator  5-ring    156/300   52% [ 44.6, 59.3]
+    A one-resonator  3-ring    188/300   62% [ 55.3, 69.5]
+    B halo stage 1   7-ring    152/300   50% [ 43.3, 58.0]
+    B halo stage 2   5+3 both  116/152   76% [ 66.5, 84.0]   (of stage-1 hits)
+    either arm correct         160/300   53% [ 45.9, 60.6]
+    paired: A-only 44, B-only 46 -> the two arms fail on different trials
+
+=== PRE-REGISTERED DECISION ===
+reported for transparency: M = 12
+  Arm A target recall 206/300 = 68.7%  wilson99 = [61.4%, 75.1%]  median iters 2.0
+  Arm B target recall 203/300 = 67.7%  wilson99 = [60.4%, 74.2%]  median iters 5.0
+  chance at M=12 = 8.3%   uniform 1/1365 = 0.07%
+  clause 1  lo_B (60.4%) > point_A (68.7%)  ->  false
+  clause 2  intervals overlap = True  AND  medIt_B (5.0) <= 0.5 x medIt_A (2.0 = 1.0)  ->  false
+  criterion at M=12: KILL
+
+decision cell (the one the criterion names): M = 32
+  Arm A target recall 114/300 = 38.0%  wilson99 = [31.1%, 45.4%]  median iters 2.0
+  Arm B target recall 116/300 = 38.7%  wilson99 = [31.7%, 46.1%]  median iters 5.0
+  chance at M=32 = 3.1%   uniform 1/1365 = 0.07%
+  clause 1  lo_B (31.7%) > point_A (38.0%)  ->  false
+  clause 2  intervals overlap = True  AND  medIt_B (5.0) <= 0.5 x medIt_A (2.0 = 1.0)  ->  false
+  criterion at M=32: KILL
+
+
+==============================================================================
+VERDICT: KILL: the halo buys nothing. At M=32 Arm B's Wilson-99% lower bound (31.7%) does not exceed Arm A's point recall (38.0%), and Arm B does not match Arm A at half the iterations (medIt_B 5.0 vs medIt_A 2.0).
+total wall clock: 13.1s
+==============================================================================
