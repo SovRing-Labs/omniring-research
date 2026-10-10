@@ -110,10 +110,17 @@ What is left for learned or resonant machinery is what cannot: noisy cues, coher
 | 2026-09-29 | Ring heads classify fleet events; episodic shards; decision to publish as prior art under PolyForm | primitive |
 | 2026-09-30 | SuperSeed portable spec; geometry experiments; the integrated-GPU engine; first public release (omni-ring, vsa-core) | primitive → substrate |
 | 2026-10-01 | The triangle memory, polygons, nesting, and the table / full-text / ring / matrix substrate; Part 2 disclosure | substrate |
+| 2026-10-02 | The sifter rendered as code in a vector VM, the decode ladder, the learning core (Technical Disclosure Part 4) | substrate |
+| 2026-10-03 | The seed's owned ground: clean-room data, deterministic reasoning generators, our own engines (Part 5) | substrate |
+| 2026-10-04 | Our own rendering engine, its program runtime, JavaScript on our IR, a self-repair core (Part 6) | primitive → substrate |
+| 2026-10-06 | The doctor named as a core; the standards library built from specification text only; the browser begun | primitive |
+| 2026-10-07 | The live school as one round loop; the two-team clean room of doctors; Orbit, the browser's own chrome | system → primitive |
+| 2026-10-08 | Round-9 collapse and the round guard; circular builds; core registry with receipts; the cyclone array drawn and wired; pristine geometry | primitive → substrate |
+| 2026-10-09 | Growth controller with a 100 % stage gate and a hash-chained ledger; the dual-T50 cut read; the 2^31-byte probe; Part 7 | substrate |
 
 Behind the table: 147 recorded engineering sessions with Claude (70,030 messages), about 5,200 agent sessions in the
 fleet's own runtime (4,265 archived over 24 days, plus the current database), and 883 tasks ratified with physical
-proof by 1 October.
+proof by 1 October. In the week of 2–9 October the repository took 494 more commits (docs 24–41, Technical Disclosure Part 7).
 
 ## System becomes individual, individual becomes group
 

@@ -1,0 +1,52 @@
+{
+ "probe": "CYCLONE-ARRAY per-model training footprint (CPU engine, school shapes)",
+ "lib": "<workspace>/projects/thead-trial/engine/omni_train/libomnitrain_trial.so",
+ "runs": [
+  {
+   "config": "base",
+   "params": 6819072,
+   "rss_lib_bytes": 28311552,
+   "after_create_bytes": 138276864,
+   "after_steps_rss_bytes": 465850368,
+   "peak_hwm_minus_start_bytes": 470114304,
+   "loss": 8.836463928222656
+  },
+  {
+   "config": "school",
+   "params": 6926912,
+   "rss_lib_bytes": 28274688,
+   "after_create_bytes": 140091392,
+   "after_steps_rss_bytes": 533151744,
+   "peak_hwm_minus_start_bytes": 537976832,
+   "loss": 8.84908390045166
+  }
+ ],
+ "per_model_bytes": 537976832,
+ "per_model_gb": 0.538,
+ "layouts": {
+  "1 floor (5 units x 8)": 40,
+  "3 floors (15 units x 8)": 120
+ },
+ "need_gb": {
+  "40": 21.5,
+  "120": 64.6
+ },
+ "fit_at_90pct": {
+  "RTX 3090 / 4090": {
+   "vram_gb": 24,
+   "models_fit": 40
+  },
+  "A40": {
+   "vram_gb": 48,
+   "models_fit": 80
+  },
+  "A100 80GB": {
+   "vram_gb": 80,
+   "models_fit": 133
+  },
+  "H100 80GB": {
+   "vram_gb": 80,
+   "models_fit": 133
+  }
+ }
+}

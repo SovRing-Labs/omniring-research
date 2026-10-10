@@ -1,0 +1,52 @@
+# omni-spec conformance re-run (summary; the lines are the harness's own printed output)
+# built with rustc 1.97.0 (2d8144b78 2026-07-07); scratch crate assembled from the package sources; the Brotli dictionary (a binary) was replaced by a zero-filled file of its size, which affects only the Brotli tests
+# several oracle tests skip absent inputs and still print ok: read the printed counts, not the ok
+running unittests src/lib.rs
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/brotli.rs
+test result: FAILED. 1 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/docx.rs
+test result: FAILED. 2 passed; 3 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/gif.rs
+gif oracle: 73 files checked, 44 skipped (absent)
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/html_tokenizer.rs
+html5lib tokenizer: 0/0 pass (0 initial states skipped: CDATA; 0 obsolete processing-instruction tests excluded)
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/inflate.rs
+inflate corpus: 0 streams match, 49 skipped (absent)
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/jpeg.rs
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/json.rs
+JSONTestSuite test_parsing: y_ accepted 95, n_ rejected 188; i_ accepted 11 / rejected 24 (implementation-defined)
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/opc.rs
+test result: FAILED. 4 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/otshape.rs
+otshape oracle: 275 kern pairs, 20 ligature strings checked, 0 skipped (font absent)
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/png.rs
+png oracle: 1 images match Pillow RGBA8, 93 skipped (absent)
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/sfnt.rs
+sfnt oracle: 12199 rows checked, 1895 skipped (font absent)
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/sha256.rs
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/uax14.rs
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/uax29.rs
+UAX29 GraphemeBreakTest: 853/853 pass
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/uax9.rs
+test result: FAILED. 0 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/webp.rs
+test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/xlsx.rs
+test result: FAILED. 6 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/xml.rs
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 
+running tests/zip.rs
+test result: FAILED. 4 passed; 9 failed; 0 ignored; 0 measured; 0 filtered out; 
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; 

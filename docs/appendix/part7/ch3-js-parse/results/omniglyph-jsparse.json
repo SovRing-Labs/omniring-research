@@ -1,0 +1,531 @@
+{
+ "laws": 29,
+ "runs": 58,
+ "ours_eq_acorn_path": 58,
+ "ours_eq_node": 58,
+ "acorn_path_eq_node": 58,
+ "rows": [
+  {
+   "id": "float.add.commutative",
+   "domain": "float",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "float.add.commutative",
+   "domain": "float",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "float.add.associative",
+   "domain": "float",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "float.add.associative",
+   "domain": "float",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "float.tenths.exact",
+   "domain": "float",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "float.tenths.exact",
+   "domain": "float",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.add.commutative",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.add.commutative",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.mul.distributes",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.mul.distributes",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.div.identity",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.div.identity",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.div.rounds_down",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.div.rounds_down",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.mod.nonneg_for_pos_divisor",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.mod.nonneg_for_pos_divisor",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.compare.trichotomy",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "int.compare.trichotomy",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "block.floor_div",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "block.floor_div",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "block.floor_mod",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "block.floor_mod",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "block.gcd",
+   "domain": "int",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "block.gcd",
+   "domain": "int",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.plus.string_coercion",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.plus.string_coercion",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.number.string_roundtrip",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.number.string_roundtrip",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.math.round_half_up",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.math.round_half_up",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.tofixed.ties_up",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.tofixed.ties_up",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.tofixed.two_places",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.tofixed.two_places",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.sort.default_is_string_order",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.sort.default_is_string_order",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.sort.numeric_comparator",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.sort.numeric_comparator",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.parseint.reads_prefix",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.parseint.reads_prefix",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.radix.roundtrip",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.radix.roundtrip",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.bitwise.shift_roundtrip",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.bitwise.shift_roundtrip",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.bitwise.unsigned_shift",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.bitwise.unsigned_shift",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.loose_eq.number_string",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.loose_eq.number_string",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.json.roundtrip",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.json.roundtrip",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.regex.strip_digits",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.regex.strip_digits",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.string.slice_concat",
+   "domain": "js",
+   "seed": 1,
+   "cases": 240,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.string.slice_concat",
+   "domain": "js",
+   "seed": 2,
+   "cases": 236,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.array.map_filter_reduce",
+   "domain": "js",
+   "seed": 1,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.array.map_filter_reduce",
+   "domain": "js",
+   "seed": 2,
+   "cases": 300,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.closure.counter",
+   "domain": "js",
+   "seed": 1,
+   "cases": 174,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  },
+  {
+   "id": "js.closure.counter",
+   "domain": "js",
+   "seed": 2,
+   "cases": 152,
+   "node_eq_ours": true,
+   "acorn_eq_ours": true,
+   "node_eq_acorn": true
+  }
+ ]
+}

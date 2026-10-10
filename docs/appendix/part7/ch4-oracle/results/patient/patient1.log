@@ -1,0 +1,40 @@
+patient: 37 replay pages · 312 failing origin boxes in 64 families · collected in 3.0s
+  h-|Block|Block|-                   n   25 mean |err|   67.0px
+      inputs [ours, rule.max_width, rule.replaced_width, flow.gap] · no equation · held-out 0/6 agree · 0.03s, work 165144
+  h+|Block|Flex|-                    n   24 mean |err|  455.6px
+      inputs [ours, box.content, box.pad_top, flow.trailing_margin] · no equation · held-out 0/6 agree · 0.04s, work 105758
+  h+|Block|Block|-                   n   20 mean |err|  296.3px
+      inputs [ours, box.content, rule.collapse_first_child_margin, rule.collapse_last_child_margin] · no equation · held-out 0/6 agree · 0.05s, work 163008
+  h-|Block|Block|txt                 n   18 mean |err|   34.3px
+      inputs [ours, box.content, flow.gap, rule.max_width] · no equation · held-out 0/4 agree · 0.04s, work 222768
+  h+|Block|Grid|-                    n   15 mean |err|   16.8px
+      inputs [ours, box.content, grid.item_h, rule.max_width] · depth 2: ((448i64) + ((448i64) * (ours / (512i64)))) · held-out 3/3 agree · 0.00s, work 43946
+  w+|Block|Flex|-                    n   13 mean |err|   10.2px
+      inputs [ours, flex.base_specified, box.content, box.pad_bottom] · depth 2: (ours + ((ours % box.content) - (box.content + box.pad_bottom))) · held-out 3/3 agree · 0.00s, work 4443
+  w+|Grid|Block|-                    n   13 mean |err|   28.0px
+      inputs [ours, box.border_bottom, box.border_top, box.content] · depth 0: (ours - box.content) · held-out 3/3 agree · 0.00s, work 423
+  h+|Flex|Grid|-                     n   11 mean |err|   16.2px
+      inputs [ours, grid.item_h, box.content, box.border_bottom] · depth 0: (grid.item_h / (2i64)) · held-out 3/3 agree · 0.00s, work 571
+  w-|Block|Block|-                   n    9 mean |err|  301.7px
+      inputs [ours, box.content, flow.trailing_margin, box.pad_bottom] · no equation · held-out 0/2 agree · 0.02s, work 215684
+  w-|Flex|Flex|-                     n    9 mean |err|  143.3px
+      inputs [ours, rule.flex_auto_min, box.content, flex.base_content] · no equation · held-out 0/2 agree · 0.04s, work 266254
+  y|Block|Block|-                    n    9 mean |err|   48.4px
+      inputs [ours, box.pad_bottom, flow.gap, box.content] · no equation · held-out 0/2 agree · 0.05s, work 236131
+  y|ListItem|Flex|-                  n    9 mean |err|    3.0px
+      inputs [ours, box.border_bottom, box.border_top, box.content] · depth 1: (ours + (ours / (2i64))) · held-out 2/2 agree · 0.00s, work 424
+  h-|ListItem|Block|-                n    8 mean |err|    5.1px
+      inputs [ours, flow.gap, box.border_bottom, box.border_top] · depth 2: ((ours + flow.gap) + (if ((flow.gap <= box.border_bottom) as i64) != 0 { (ours / (2i64)) } · held-out 1/1 agree · 0.00s, work 3509
+  w+|Block|Block|-                   n    8 mean |err|  186.8px
+      inputs [ours, rule.max_width, rule.replaced_width, box.pad_top] · no equation · held-out 0/1 agree · 0.04s, work 232247
+  w-|Block|Flex|txt                  n    7 mean |err|    4.9px
+      inputs [ours, flex.base_content, flex.cross_off, box.content] · depth 2: (if (flex.base_content % (2i64)) != 0 { ((box.content + box.content) + (box.content + box. · held-out 0/0 agree · 0.05s, work 641065
+  x|Block|Grid|-                     n    7 mean |err|  335.3px
+      inputs [ours, box.content, grid.item_h, rule.replaced_width] · no equation · held-out 0/0 agree · 0.01s, work 81063
+  y|Block|Grid|txt                   n    7 mean |err|   62.2px
+      inputs [ours, box.content, grid.item_h, box.border_bottom] · depth 0: (ours + box.content) · held-out 0/0 agree · 0.00s, work 571
+  h-|ListItem|Block|txt              n    6 mean |err|   20.7px
+      inputs [ours, flow.gap, rule.collapse_first_child_margin, rule.collapse_last_child_margin] · no equation · held-out 0/0 agree · 0.02s, work 78805
+  w+|Block|Flex|txt                  n    6 mean |err|    9.8px
+      inputs [ours, flex.margin_l, flex.base_content, flex.cross_off] · no equation · held-out 0/0 agree · 0.04s, work 212546
+{"collect_secs":3.039521185,"families_run":19,"origin_boxes":312,"total_secs":3.475590343}

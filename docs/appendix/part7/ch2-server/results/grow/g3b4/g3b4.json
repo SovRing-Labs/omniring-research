@@ -1,0 +1,24 @@
+{
+ "gate": "G3b-4: h0's school day through the array server == h0's day solo (the GPU library alone)",
+ "N": 2,
+ "leaves_compared": 351,
+ "solo_vs_solo_differences": 0,
+ "solo_vs_array_h0_differences": 0,
+ "first_differences_solo_vs_array": [],
+ "first_differences_solo_vs_solo": [],
+ "all_harnesses_finished_day": true,
+ "day_n": [
+  1,
+  1
+ ],
+ "server": {
+  "steps": 55,
+  "slots": 2,
+  "mean_active": 1.891,
+  "gpu_ms": 128.318,
+  "step_io_ms": 151.708,
+  "bytes_resident": 256862624,
+  "device": "NVIDIA A40"
+ },
+ "pass": true
+}

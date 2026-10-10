@@ -12,7 +12,7 @@
   FRET     "store the fret, not the note": 20 symbols x a continuous rotation dial (FPE, 1,000 ticks). Flat resonator over
            1,000 dial positions vs coarse-to-fine (low-frequency dims first on a 20-tick grid, then full dims locally).
 
-Library: _Pads/RING/ring1/ring1_core.py (make_rings / encode / make_slot / resonate / crt / wilson), unchanged.
+Library: harness/ring1/ring1_core.py (make_rings / encode / make_slot / resonate / crt / wilson), unchanged.
 Usage: run_ring3.py [--quick] [--only NAME[,NAME]] [--out PATH]
 """
 from __future__ import annotations

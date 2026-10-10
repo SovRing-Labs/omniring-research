@@ -1,0 +1,166 @@
+{
+ "domain": "mathkb",
+ "about": "laws of the math knowledge base concepts (MATH-CORE-0): properties, not definitions; python lane first",
+ "axioms": [
+  {
+   "id": "mathkb.crt.bijection",
+   "statement": "for coprime m1, m2 the map x -> (x mod m1, x mod m2) on [0, m1*m2) hits every residue pair exactly once (CRT)",
+   "vars": [
+    "m1",
+    "m2"
+   ],
+   "forms": {
+    "python": "len({(x % m1, x % m2) for x in range(m1 * m2)}) == m1 * m2"
+   },
+   "gen": "def gen(R, scope):\n    import math\n    while True:\n        a, b = R.randint(2, 60), R.randint(2, 60)\n        if math.gcd(a, b) == 1: return a, b",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)",
+   "prelude": ""
+  },
+  {
+   "id": "mathkb.mixed_radix.roundtrip",
+   "statement": "a mixed-radix value split back by divmod in bases m0, m1 returns its digits",
+   "vars": [
+    "d0",
+    "d1",
+    "d2",
+    "m0",
+    "m1"
+   ],
+   "forms": {
+    "python": "(lambda v: (v % m0, v // m0 % m1, v // m0 // m1))(d0 + m0 * (d1 + m1 * d2)) == (d0, d1, d2)"
+   },
+   "gen": "def gen(R, scope):\n    m0, m1 = R.randint(2, 100), R.randint(2, 100)\n    return R.randrange(m0), R.randrange(m1), R.randint(0, 10 ** 6), m0, m1",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)",
+   "prelude": ""
+  },
+  {
+   "id": "mathkb.barrett.equals_mod",
+   "statement": "Barrett reduction with k = 16 (mu = floor(2^32 / m), at most two corrections) equals a mod m for 2 <= m < 2^16, 0 <= a < m^2",
+   "vars": [
+    "a",
+    "m"
+   ],
+   "forms": {
+    "python": "barrett(a, m) == a % m"
+   },
+   "prelude": "def barrett(a, m):\n    r = a - ((a * (2 ** 32 // m)) >> 32) * m\n    if r >= 2 * m: return r - 2 * m\n    return r - m if r >= m else r\n",
+   "gen": "def gen(R, scope):\n    m = R.randint(2, 65535)\n    return R.randrange(m * m), m",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)"
+  },
+  {
+   "id": "mathkb.hamming.triangle",
+   "statement": "Hamming distance is a metric: zero on itself, symmetric, triangle inequality (teeth: popcount(a|b) passes triangle + symmetry, fails identity)",
+   "vars": [
+    "a",
+    "b",
+    "c"
+   ],
+   "forms": {
+    "python": "h(a, a) == 0 and h(a, c) <= h(a, b) + h(b, c) and h(a, b) == h(b, a)"
+   },
+   "prelude": "def h(x, y):\n    return bin(x ^ y).count('1')\n",
+   "gen": "def gen(R, scope):\n    return tuple(R.getrandbits(R.choice([8, 31, 64])) for _ in range(3))",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)"
+  },
+  {
+   "id": "mathkb.isqrt.newton_brackets",
+   "statement": "integer Newton from x0 = n stops at r with r*r <= n < (r+1)*(r+1)",
+   "vars": [
+    "n"
+   ],
+   "forms": {
+    "python": "(lambda r: r * r <= n < (r + 1) * (r + 1))(newton(n))"
+   },
+   "prelude": "def newton(n):\n    x = n\n    while x * x > n:\n        x = (x + n // x) // 2\n    return x\n",
+   "gen": "def gen(R, scope):\n    return (R.choice([R.randint(0, 100), R.randint(0, 10 ** 6), R.getrandbits(62)]),)",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)"
+  },
+  {
+   "id": "mathkb.period.reproduces",
+   "statement": "the smallest period p of a sequence reproduces it: v[i] == v[i mod p] for every i",
+   "vars": [
+    "v"
+   ],
+   "forms": {
+    "python": "(lambda p: all(v[i] == v[i % p] for i in range(len(v))))(period(v))"
+   },
+   "prelude": "def period(v):\n    return next(p for p in range(1, len(v) + 1) if all(v[i] == v[i + p] for i in range(len(v) - p)))\n",
+   "gen": "def gen(R, scope):\n    base = [R.randint(0, 2) for _ in range(R.randint(1, 5))]\n    n = R.randint(1, 30)\n    return ([base[i % len(base)] for i in range(n)],)",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)"
+  },
+  {
+   "id": "mathkb.absmean.ternary_sign",
+   "statement": "absmean quantisation (BitNet b1.58) gives values in {-1, 0, 1} that never flip a weight's sign",
+   "vars": [
+    "w"
+   ],
+   "forms": {
+    "python": "all(q in (-1, 0, 1) and q * x >= 0 for q, x in zip(quant(w), w))"
+   },
+   "prelude": "def quant(w):\n    s = max(sum(abs(x) for x in w) / len(w), 1e-5)\n    return [min(1, max(-1, round(x / s))) for x in w]\n",
+   "gen": "def gen(R, scope):\n    return ([R.uniform(-3, 3) * R.choice([1, 1e-3, 100]) for _ in range(R.randint(1, 64))],)",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)"
+  },
+  {
+   "id": "mathkb.softmax.normalised_shift_invariant",
+   "statement": "stable softmax sums to 1, is shift-invariant, and p_i / p_j = exp(x_i − x_j) (teeth: exp(x/10) passes the first two, fails the ratio)",
+   "vars": [
+    "x",
+    "c"
+   ],
+   "forms": {
+    "python": "(lambda p: abs(sum(p) - 1) < 1e-9 and all(abs(u - w) < 1e-9 for u, w in zip(p, sm([v + c for v in x]))) and all(abs(p[i] / p[0] - math.exp(x[i] - x[0])) <= 1e-9 * max(1.0, math.exp(x[i] - x[0])) for i in range(len(x)) if p[0] > 1e-300 and x[i] - x[0] < 600))(sm(x))"
+   },
+   "prelude": "import math\ndef sm(x):\n    m = max(x); e = [math.exp(v - m) for v in x]; z = sum(e)\n    return [v / z for v in e]\n",
+   "gen": "def gen(R, scope):\n    return [R.uniform(-50, 50) for _ in range(R.randint(1, 40))], R.uniform(-100, 100)",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)"
+  },
+  {
+   "id": "mathkb.fib.cassini",
+   "statement": "Cassini's identity: F(n-1) F(n+1) - F(n)^2 = (-1)^n",
+   "vars": [
+    "n"
+   ],
+   "forms": {
+    "python": "F(n - 1) * F(n + 1) - F(n) ** 2 == (-1) ** n"
+   },
+   "prelude": "def F(n):\n    a, b = 0, 1\n    for _ in range(n): a, b = b, a + b\n    return a\n",
+   "gen": "def gen(R, scope):\n    return (R.randint(1, 300),)",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)"
+  },
+  {
+   "id": "mathkb.clock.roundtrip",
+   "statement": "reading a time back from its residues on rings 3, 5, 7 returns the time (period 105)",
+   "vars": [
+    "t"
+   ],
+   "forms": {
+    "python": "read(t % 3, t % 5, t % 7) == t"
+   },
+   "prelude": "def read(a, b, c):\n    return next(x for x in range(105) if x % 3 == a and x % 5 == b and x % 7 == c)\n",
+   "gen": "def gen(R, scope):\n    return (R.randrange(105),)",
+   "type": "gen",
+   "proposed_by": "math core, 2026-10-07 (MATH-CORE-0 M2)",
+   "why": "property of a concept in docs/guide/MATH-CONCEPTS-AND-THANKS.md (MATH-CORE-0)"
+  }
+ ],
+ "blocks": []
+}

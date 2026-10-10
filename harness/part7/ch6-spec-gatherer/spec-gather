@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+# TIER: essential
+# OWNER: claude-seat
+"""spec-gather — the clean-room factory's GATHERER station: fetch published specifications and papers (documents, never code donors),
+keep their provenance, mark them no-train, extract their text for fleet-kb. J 10-07: "build the gatherer".
+
+Rules (DOCTOR-INTERP-0 brief, omni-spec method): specs / standards / papers are read for function and technique; third-party CODE is
+never gathered here (D9 refuses foreign-header code as a donor; GPU-LOOP forbids third-party kernel code). Every document is no-train.
+
+  spec-gather add ID URL --title T --licence L --kind spec|standard|paper|suite --purpose P [--project X]
+  spec-gather list [--project X] [--json]
+  spec-gather fetch [ID …] [--all] [--force]      download (one request, polite UA, timeout), sha256, text extraction, provenance, receipt
+  spec-gather verify                               every stored file's sha256 against its provenance
+Store: research/specs/<id>/{<file>, .text.txt (hidden: fleet-kb extracts the document itself), provenance.json}; marker research/specs/.no-train.json; manifest control-center/spec-manifest.jsonl.
+"""
+import argparse, hashlib, html, json, os, re, subprocess, sys, time, urllib.parse
+
+AI = "<workspace>"
+MANIFEST = os.environ.get("SPEC_MANIFEST", f"{AI}/control-center/spec-manifest.jsonl")
+STORE = os.environ.get("SPEC_STORE", f"{AI}/research/specs")
+RECEIPTS = os.environ.get("CORE_RECEIPTS", f"{AI}/control-center/core-receipts.jsonl")
+KINDS = ("spec", "standard", "paper", "suite")
+UA = "Mozilla/5.0 (X11; Linux x86_64) ai-stack-spec-gather/0 (+clean-room reader; one request per document)"
+
+def now(): return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+def rows():
+    try: return [json.loads(l) for l in open(MANIFEST) if l.strip()]
+    except FileNotFoundError: return []
+def write_rows(rs): open(MANIFEST, "w").write("".join(json.dumps(r, sort_keys=True) + "\n" for r in rs))
+def receipt(op, args, verdict, ms, gate, out=None):
+    r = {"v": 1, "ts": now(), "core": "spec.gather", "version": "spec-gather-0", "op": op, "caller": os.environ.get("CORE_CALLER", "claude-seat"),
+         "input_hash": "sha256:" + hashlib.sha256(json.dumps(args, sort_keys=True).encode()).hexdigest(), "output_ref": out,
+         "output_hash": ("sha256:" + hashlib.sha256(open(out, "rb").read()).hexdigest()) if out and os.path.isfile(out) else None,
+         "gate": gate, "verdict": verdict, "ms": ms, "tw": os.environ.get("CORE_TW")}
+    open(RECEIPTS, "a").write(json.dumps(r) + "\n")
+
+def ensure_store():
+    os.makedirs(STORE, exist_ok=True)
+    m = os.path.join(STORE, ".no-train.json")
+    if not os.path.exists(m):
+        json.dump({"no_train": True, "why": "gathered specifications / standards / papers: read for function and technique only, never trained on, "
+                   "never a code donor (spec-gather, DOCTOR-INTERP-0 gatherer station, J 10-07)"}, open(m, "w"), indent=1)
+
+def cmd_add(a):
+    if not re.fullmatch(r"[a-z0-9][a-z0-9._-]*", a.id): sys.exit("spec-gather: id = lowercase letters, digits, . _ -")
+    if a.kind not in KINDS: sys.exit(f"spec-gather: kind one of {KINDS}")
+    u = urllib.parse.urlparse(a.url)
+    if u.scheme != "https": sys.exit("spec-gather: https URLs only")
+    rs = [r for r in rows() if r["id"] != a.id]
+    rs.append({"id": a.id, "url": a.url, "title": a.title, "licence": a.licence, "kind": a.kind, "purpose": a.purpose, "project": a.project, "added": now()})
+    write_rows(sorted(rs, key=lambda r: r["id"])); print(json.dumps(rs[-1]))
+
+def cmd_list(a):
+    rs = [r for r in rows() if not a.project or r.get("project") == a.project]
+    if a.json: print(json.dumps(rs, indent=1)); return
+    for r in rs:
+        p = os.path.join(STORE, r["id"], "provenance.json"); st = json.load(open(p)) if os.path.exists(p) else None
+        print(f"{r['id']:28} {r['kind']:8} {(st['bytes'] if st else 0):>10} {'fetched ' + st['fetched'] if st else 'not fetched':28} {r['title'][:60]}")
+
+def html_text(b):
+    t = b.decode("utf-8", "replace")
+    t = re.sub(r"(?is)<(script|style|nav|header|footer)[^>]*>.*?</\1>", " ", t)
+    t = re.sub(r"(?i)<br\s*/?>|</p>|</h[1-6]>|</li>|</tr>|</pre>", "\n", t)
+    t = html.unescape(re.sub(r"(?s)<[^>]+>", " ", t))
+    return "\n".join(re.sub(r"[ \t]+", " ", l).strip() for l in t.splitlines() if l.strip())
+
+def fetch_one(r, force):
+    d = os.path.join(STORE, r["id"]); os.makedirs(d, exist_ok=True); prov = os.path.join(d, "provenance.json")
+    if os.path.exists(prov) and not force: return {"id": r["id"], "skipped": "already fetched (--force to refetch)"}
+    t0 = time.time(); tmp = os.path.join(d, ".part")
+    p = subprocess.run(["curl", "-sSL", "--fail", "--max-time", "300", "--max-filesize", "200000000", "-A", UA, "-o", tmp, "-w", "%{content_type}\t%{url_effective}", r["url"]],
+                       capture_output=True, text=True)
+    ms = int((time.time() - t0) * 1000)
+    if p.returncode != 0:
+        receipt("fetch", {"id": r["id"], "url": r["url"]}, "error", ms, f"curl rc {p.returncode}: {p.stderr.strip()[:200]}")
+        return {"id": r["id"], "error": p.stderr.strip()[:200]}
+    ctype, final = (p.stdout.split("\t") + [""])[:2]
+    b = open(tmp, "rb").read()
+    is_pdf = b[:5] == b"%PDF-" or "pdf" in ctype
+    name = "document.pdf" if is_pdf else "document.html" if ("html" in ctype or b.lstrip()[:1] == b"<") else "document.bin"
+    path = os.path.join(d, name); os.replace(tmp, path)
+    if is_pdf:
+        q = subprocess.run(["pdftotext", "-layout", path, os.path.join(d, ".text.txt")], capture_output=True, text=True); text_ok = q.returncode == 0
+    elif name.endswith(".html"):
+        open(os.path.join(d, ".text.txt"), "w").write(html_text(b)); text_ok = True
+    else: text_ok = False
+    tl = os.path.getsize(os.path.join(d, ".text.txt")) if text_ok else 0
+    st = {"id": r["id"], "url": r["url"], "final_url": final, "title": r["title"], "licence": r["licence"], "kind": r["kind"], "purpose": r["purpose"],
+          "project": r.get("project"), "file": name, "bytes": len(b), "sha256": hashlib.sha256(b).hexdigest(), "content_type": ctype,
+          "fetched": now(), "text_bytes": tl, "no_train": True}
+    json.dump(st, open(prov, "w"), indent=1)
+    receipt("fetch", {"id": r["id"], "url": r["url"]}, "pass", ms, f"{len(b)} B, text {tl} B", path)
+    return {"id": r["id"], "bytes": len(b), "text_bytes": tl, "file": name, "ms": ms}
+
+def cmd_fetch(a):
+    ensure_store(); rs = rows(); want = set(a.ids)
+    todo = rs if a.all else [r for r in rs if r["id"] in want]
+    if want - {r["id"] for r in rs}: sys.exit(f"spec-gather: not in the manifest: {sorted(want - {r['id'] for r in rs})}")
+    bad = 0
+    for r in todo:
+        out = fetch_one(r, a.force); print(json.dumps(out)); bad += "error" in out
+        time.sleep(1.0)   # polite: one request per document, a pause between hosts
+    sys.exit(1 if bad else 0)
+
+def cmd_verify(a):
+    bad = 0
+    for r in rows():
+        p = os.path.join(STORE, r["id"], "provenance.json")
+        if not os.path.exists(p): continue
+        st = json.load(open(p)); f = os.path.join(STORE, r["id"], st["file"])
+        ok = os.path.exists(f) and hashlib.sha256(open(f, "rb").read()).hexdigest() == st["sha256"]
+        bad += not ok; print(f"{'ok ' if ok else 'BAD'} {r['id']}")
+    sys.exit(1 if bad else 0)
+
+def main():
+    ap = argparse.ArgumentParser(prog="spec-gather", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter); sp = ap.add_subparsers(dest="cmd", required=True)
+    s = sp.add_parser("add"); s.add_argument("id"); s.add_argument("url"); s.add_argument("--title", required=True); s.add_argument("--licence", required=True)
+    s.add_argument("--kind", required=True); s.add_argument("--purpose", required=True); s.add_argument("--project"); s.set_defaults(f=cmd_add)
+    s = sp.add_parser("list"); s.add_argument("--project"); s.add_argument("--json", action="store_true"); s.set_defaults(f=cmd_list)
+    s = sp.add_parser("fetch"); s.add_argument("ids", nargs="*"); s.add_argument("--all", action="store_true"); s.add_argument("--force", action="store_true"); s.set_defaults(f=cmd_fetch)
+    s = sp.add_parser("verify"); s.set_defaults(f=cmd_verify)
+    a = ap.parse_args(); a.f(a)
+
+if __name__ == "__main__": main()

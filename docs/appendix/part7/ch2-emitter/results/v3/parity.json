@@ -1,0 +1,488 @@
+{
+ "devices": [
+  "llvmpipe",
+  "Intel"
+ ],
+ "emit": {
+  "engine0": {
+   "deterministic": true,
+   "modules": 6
+  },
+  "engine1": {
+   "deterministic": true,
+   "modules": 5
+  },
+  "engine2": {
+   "deterministic": true,
+   "modules": 3
+  },
+  "engine3": {
+   "deterministic": true,
+   "modules": 2
+  },
+  "engine4": {
+   "deterministic": true,
+   "modules": 1
+  },
+  "engine5": {
+   "deterministic": true,
+   "modules": 4
+  }
+ },
+ "fails": [],
+ "modules": 21,
+ "parity": {
+  "Intel": {
+   "attn_dv": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 3.163,
+    "op": "attn_dv",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0026
+   },
+   "attn_lse": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.834,
+    "op": "attn_lse",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0218
+   },
+   "attn_y": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 3.738,
+    "op": "attn_y",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0136
+   },
+   "bl_act_g": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.429,
+    "op": "bl_act_g",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0022
+   },
+   "bl_act_q": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.446,
+    "op": "bl_act_q",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0
+   },
+   "bl_bwd_dw": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.597,
+    "op": "bl_bwd_dw",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0028
+   },
+   "bl_bwd_dx": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.987,
+    "op": "bl_bwd_dx",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.3718
+   },
+   "bl_fwd_row": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.891,
+    "op": "bl_fwd_row",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0023
+   },
+   "bl_quant_t": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.175,
+    "op": "bl_quant_t",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0
+   },
+   "bl_scale": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.14,
+    "op": "bl_scale",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0017
+   },
+   "dot8": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.342,
+    "op": "dot8",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0045
+   },
+   "head_loss": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 4.442,
+    "op": "head_loss",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0057
+   },
+   "mem_fwd": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.491,
+    "op": "mem_fwd",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0009
+   },
+   "rms_bwd_dg": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.254,
+    "op": "rms_bwd_dg",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0022
+   },
+   "rms_bwd_dx": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.644,
+    "op": "rms_bwd_dx",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.183
+   },
+   "rms_row": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.251,
+    "op": "rms_row",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0019
+   },
+   "sgemm": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 2.36,
+    "op": "sgemm",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.8539
+   },
+   "sgemm_gnn": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 5.907,
+    "op": "sgemm_gnn",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0006
+   },
+   "sgemm_gnt": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 6.476,
+    "op": "sgemm_gnt",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0005
+   },
+   "sgemm_gtn": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 6.298,
+    "op": "sgemm_gtn",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0006
+   },
+   "sgemm_gtt": {
+    "bad": 0,
+    "device": "Intel",
+    "errors": 0,
+    "gpu_ms": 6.37,
+    "op": "sgemm_gtt",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0006
+   }
+  },
+  "llvmpipe": {
+   "attn_dv": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 62.676,
+    "op": "attn_dv",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0026
+   },
+   "attn_lse": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 72.772,
+    "op": "attn_lse",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0218
+   },
+   "attn_y": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 80.556,
+    "op": "attn_y",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0119
+   },
+   "bl_act_g": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 46.389,
+    "op": "bl_act_g",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.001
+   },
+   "bl_act_q": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 49.987,
+    "op": "bl_act_q",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0
+   },
+   "bl_bwd_dw": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 44.749,
+    "op": "bl_bwd_dw",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0005
+   },
+   "bl_bwd_dx": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 51.185,
+    "op": "bl_bwd_dx",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0822
+   },
+   "bl_fwd_row": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 54.003,
+    "op": "bl_fwd_row",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0005
+   },
+   "bl_quant_t": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 45.944,
+    "op": "bl_quant_t",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0
+   },
+   "bl_scale": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 43.412,
+    "op": "bl_scale",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0017
+   },
+   "dot8": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 43.669,
+    "op": "dot8",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0045
+   },
+   "head_loss": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 79.579,
+    "op": "head_loss",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0057
+   },
+   "mem_fwd": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 60.145,
+    "op": "mem_fwd",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.001
+   },
+   "rms_bwd_dg": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 50.698,
+    "op": "rms_bwd_dg",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0022
+   },
+   "rms_bwd_dx": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 54.843,
+    "op": "rms_bwd_dx",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.183
+   },
+   "rms_row": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 53.266,
+    "op": "rms_row",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0017
+   },
+   "sgemm": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 51.825,
+    "op": "sgemm",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.8539
+   },
+   "sgemm_gnn": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 126.478,
+    "op": "sgemm_gnn",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.02
+   },
+   "sgemm_gnt": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 160.28,
+    "op": "sgemm_gnt",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0123
+   },
+   "sgemm_gtn": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 127.304,
+    "op": "sgemm_gtn",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0346
+   },
+   "sgemm_gtt": {
+    "bad": 0,
+    "device": "llvmpipe",
+    "errors": 0,
+    "gpu_ms": 133.553,
+    "op": "sgemm_gtt",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0254
+   }
+  }
+ },
+ "rows_checked": {
+  "Intel": 1764,
+  "llvmpipe": 1764
+ },
+ "val": {
+  "engine0/dot8.spv": "pass",
+  "engine0/mem_fwd.spv": "pass",
+  "engine0/rms_bwd_dg.spv": "pass",
+  "engine0/rms_bwd_dx.spv": "pass",
+  "engine0/rms_row.spv": "pass",
+  "engine0/sgemm.spv": "pass",
+  "engine1/bl_act_g.spv": "pass",
+  "engine1/bl_act_q.spv": "pass",
+  "engine1/bl_fwd_row.spv": "pass",
+  "engine1/bl_quant_t.spv": "pass",
+  "engine1/bl_scale.spv": "pass",
+  "engine2/attn_dv.spv": "pass",
+  "engine2/attn_lse.spv": "pass",
+  "engine2/attn_y.spv": "pass",
+  "engine3/bl_bwd_dw.spv": "pass",
+  "engine3/bl_bwd_dx.spv": "pass",
+  "engine4/head_loss.spv": "pass",
+  "engine5/sgemm_gnn.spv": "pass",
+  "engine5/sgemm_gnt.spv": "pass",
+  "engine5/sgemm_gtn.spv": "pass",
+  "engine5/sgemm_gtt.spv": "pass"
+ },
+ "verdict": "pass"
+}

@@ -1,0 +1,34 @@
+
+flex_col_basis on theguardian-com-internationa: family 62 boxes (frames {'Flex': 62}) vs 1108 good controls · fix line(s) [2232] → best rank 3 HIT
+   0.387 self:path.flex_column            57/  292
+   0.387 self:L2241                       57/  292
+   0.387 self:L2232                       57/  292
+   0.336 self:rule.max_width              62/  487
+   0.310 parent:L2241                     62/  583
+   0.310 parent:L2232                     62/  583
+
+anon_cell on en-cppreference-com-w-cpp-co: family 353 boxes (frames {'Table': 118, 'TableRow': 82, 'Block': 57}) vs 254 good controls · fix line(s) [1961] → best rank 79 
+   0.749 parent:path.intrinsic_w         267/   93
+   0.702 gparent:L1252                   310/  242
+   0.702 gparent:path.block_box          310/  242
+   0.702 gparent:box.content             310/  242
+   0.702 gparent:L1294                   310/  242
+   0.702 gparent:box.border_top          310/  242
+
+line_clamp on allrecipes-com-recipe-10813-: family 12 boxes (frames {'Flex': 8, 'Block': 4}) vs 735 good controls · fix line(s) [1252] → best rank 46 
+   0.289 self:flex.col_justify_off         4/   12
+   0.289 self:L2273                        4/   12
+   0.265 self:L2330                        4/   15
+   0.250 gparent:L2291                     8/   77
+   0.250 gparent:L2313                     8/   77
+   0.250 gparent:L2298                     8/   77
+
+track_math on blog-codinghorror-com: family 124 boxes (frames {'Grid': 65, 'Flex': 34, 'Block': 24}) vs 18 good controls · fix line(s) [2563] → best rank 84 
+   0.944 gparent:box.float_contain       118/    8
+   0.934 self:move.translate_x           124/   18
+   0.934 self:move.translate_y           124/   18
+   0.934 self:box.border_top             124/   18
+   0.934 self:L1294                      124/   18
+   0.934 self:box.pad_bottom             124/   18
+
+PRE-REGISTERED: fix line in the family top 3 for 1/4 (bar ≥ 3 of 4) → FAIL

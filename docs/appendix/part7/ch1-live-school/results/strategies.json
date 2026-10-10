@@ -1,0 +1,82 @@
+{
+ "sat.dpll": {
+  "active": {
+   "id": "evo-15c93422",
+   "phase": "majority",
+   "w": [
+    0.0,
+    0.0,
+    1.67,
+    0.48
+   ]
+  },
+  "history": [
+   {
+    "by": "reason-gen evolve",
+    "from": "lowest",
+    "gate": "100% verify + per-row verdict class kept, replay + holdout",
+    "holdout_mean": [
+     16.195,
+     12.043
+    ],
+    "holdout_sha256": "8f7807e02b2279cc8c1f41c6e039e3278e920b7c1cba80f0e9507925c55055ef",
+    "replay_mean": [
+     16.115,
+     11.873
+    ],
+    "replay_sha256": "81d0e0bfece6a0c8d3feab2e4ae330a5732505bc7442fded3b3b6b13040cacb4",
+    "to": {
+     "id": "evo-15c93422",
+     "phase": "majority",
+     "w": [
+      0.0,
+      0.0,
+      1.67,
+      0.48
+     ]
+    },
+    "ts": "2026-10-04T09:44:47Z"
+   }
+  ]
+ },
+ "sat.trit": {
+  "active": {
+   "id": "evo-c325faaf",
+   "phase": "majority",
+   "w": [
+    0.31,
+    0.1,
+    1.99,
+    0.8
+   ]
+  },
+  "history": [
+   {
+    "by": "reason-gen evolve",
+    "from": "lowest",
+    "gate": "100% verify + per-row verdict class kept, replay + holdout",
+    "holdout_mean": [
+     15.52,
+     12.005
+    ],
+    "holdout_sha256": "dc983ddbd3525be2b34c8b5e700a7b6cb556ff88eec3222222f950c255008de2",
+    "replay_mean": [
+     16.468,
+     11.877
+    ],
+    "replay_sha256": "35e124e06c7970c6fc6039454a66be8e2bb4dfcf3ac334ec5849082a1abefdcb",
+    "to": {
+     "id": "evo-c325faaf",
+     "phase": "majority",
+     "w": [
+      0.31,
+      0.1,
+      1.99,
+      0.8
+     ]
+    },
+    "ts": "2026-10-04T09:45:09Z"
+   }
+  ]
+ }
+}

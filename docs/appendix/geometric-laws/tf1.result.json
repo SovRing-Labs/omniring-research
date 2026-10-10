@@ -1,0 +1,52 @@
+{
+ "RANDOM": {
+  "64": {
+   "exact": 1.0,
+   "shift": null
+  },
+  "128": {
+   "exact": 1.0,
+   "shift": null
+  },
+  "256": {
+   "exact": 0.99375,
+   "shift": null
+  }
+ },
+ "WIND": {
+  "64": {
+   "exact": 1.0,
+   "shift": 1.0
+  },
+  "128": {
+   "exact": 1.0,
+   "shift": 1.0
+  },
+  "256": {
+   "exact": 0.991015625,
+   "shift": 0.990234375
+  }
+ },
+ "CRT": {
+  "64": {
+   "exact": 1.0,
+   "shift": 1.0
+  },
+  "128": {
+   "exact": 1.0,
+   "shift": 1.0
+  },
+  "256": {
+   "exact": 0.9671875,
+   "shift": 0.9671875
+  }
+ },
+ "verdict": {
+  "PASS": true,
+  "per_arm": {
+   "WIND": true,
+   "CRT": true
+  },
+  "KILL": false
+ }
+}

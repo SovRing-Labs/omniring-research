@@ -1,0 +1,142 @@
+[
+ {
+  "url": "https://en.wikipedia.org/wiki/Ternary_numeral_system",
+  "omni": {
+   "peak_rss_kb": 41916,
+   "peak_pss_kb": 31148,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1589760,
+   "peak_pss_kb": 776814,
+   "procs": 13
+  },
+  "pss_ratio": 0.04
+ },
+ {
+  "url": "https://en.wikipedia.org/wiki/Moscow",
+  "omni": {
+   "peak_rss_kb": 68944,
+   "peak_pss_kb": 58112,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1667508,
+   "peak_pss_kb": 846616,
+   "procs": 13
+  },
+  "pss_ratio": 0.069
+ },
+ {
+  "url": "https://doc.rust-lang.org/book/ch08-02-strings.html",
+  "omni": {
+   "peak_rss_kb": 50308,
+   "peak_pss_kb": 39750,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1587408,
+   "peak_pss_kb": 771174,
+   "procs": 13
+  },
+  "pss_ratio": 0.052
+ },
+ {
+  "url": "https://peps.python.org/pep-0008/",
+  "omni": {
+   "peak_rss_kb": 55304,
+   "peak_pss_kb": 44398,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1529080,
+   "peak_pss_kb": 721257,
+   "procs": 13
+  },
+  "pss_ratio": 0.062
+ },
+ {
+  "url": "https://html.duckduckgo.com/html/?q=ternary+numeral+system",
+  "omni": {
+   "peak_rss_kb": 29968,
+   "peak_pss_kb": 19547,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1571048,
+   "peak_pss_kb": 768989,
+   "procs": 13
+  },
+  "pss_ratio": 0.025
+ },
+ {
+  "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+  "omni": {
+   "peak_rss_kb": 49020,
+   "peak_pss_kb": 38256,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1552296,
+   "peak_pss_kb": 765539,
+   "procs": 13
+  },
+  "pss_ratio": 0.05
+ },
+ {
+  "url": "https://news.ycombinator.com/",
+  "omni": {
+   "peak_rss_kb": 30060,
+   "peak_pss_kb": 19786,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1512476,
+   "peak_pss_kb": 707823,
+   "procs": 16
+  },
+  "pss_ratio": 0.028
+ },
+ {
+  "url": "https://lwn.net/",
+  "omni": {
+   "peak_rss_kb": 30296,
+   "peak_pss_kb": 19406,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1562620,
+   "peak_pss_kb": 756994,
+   "procs": 13
+  },
+  "pss_ratio": 0.026
+ },
+ {
+  "url": "https://wiki.archlinux.org/title/Systemd",
+  "omni": {
+   "peak_rss_kb": 38116,
+   "peak_pss_kb": 27323,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1544044,
+   "peak_pss_kb": 754283,
+   "procs": 13
+  },
+  "pss_ratio": 0.036
+ },
+ {
+  "url": "https://text.npr.org/",
+  "omni": {
+   "peak_rss_kb": 28896,
+   "peak_pss_kb": 18478,
+   "procs": 2
+  },
+  "firefox": {
+   "peak_rss_kb": 1533140,
+   "peak_pss_kb": 732294,
+   "procs": 13
+  },
+  "pss_ratio": 0.025
+ }
+]

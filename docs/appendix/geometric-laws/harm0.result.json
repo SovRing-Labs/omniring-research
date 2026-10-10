@@ -1,0 +1,38 @@
+{
+ "tau": 0.9979934527859241,
+ "levels": {
+  "0.5": {
+   "delta": 0.1,
+   "flagged_correct": 1.0,
+   "median_latency": 4.0,
+   "R_before": 0.998485182207,
+   "R_after": 0.9851747710322846
+  },
+  "1.0": {
+   "delta": 0.2,
+   "flagged_correct": 1.0,
+   "median_latency": 2.0,
+   "R_before": 0.998457938019746,
+   "R_after": 0.9499332866141339
+  },
+  "2.0": {
+   "delta": 0.4,
+   "flagged_correct": 1.0,
+   "median_latency": 1.0,
+   "R_before": 0.998479117872719,
+   "R_after": 0.9084448384352961
+  },
+  "4.0": {
+   "delta": 0.8,
+   "flagged_correct": 1.0,
+   "median_latency": 1.0,
+   "R_before": 0.9984792226861189,
+   "R_after": 0.893641973014565
+  }
+ },
+ "test_false_alarm": 0.0,
+ "beat_spearman": -0.05049890105764382,
+ "verdict": {
+  "PASS": false
+ }
+}

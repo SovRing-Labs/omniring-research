@@ -1,0 +1,14 @@
+patient: 37 replay pages · 312 failing origin boxes in 64 families · collected in 3.9s
+  h-|Block|Block|-                   n   25 mean |err|   67.0px · inputs [ours, box.border_bottom, box.border_top, box.content] · no equation · held-out 0/6 agree · 0.05s, work 86901
+  h+|Block|Flex|-                    n   24 mean |err|  455.6px · inputs [ours, box.border_bottom, box.border_top, box.content] · no equation · held-out 0/6 agree · 0.03s, work 48030
+  h+|Block|Block|-                   n   20 mean |err|  296.3px · inputs [ours, box.border_bottom, box.border_top, box.content] · no equation · held-out 0/6 agree · 0.01s, work 35130
+  h-|Block|Block|txt                 n   18 mean |err|   34.3px · inputs [ours, box.border_bottom, box.border_top, box.content] · no equation · held-out 0/4 agree · 0.04s, work 131517
+  h+|Block|Grid|-                    n   15 mean |err|   16.8px · inputs [ours, box.border_bottom, box.border_top, box.content] · depth 2: ((448i64) + ((448i64) * (ours / (512i64)))) · held-out 3/3 agree · 0.00s, work 33028
+  w+|Block|Flex|-                    n   13 mean |err|   10.2px · inputs [ours, box.border_bottom, box.border_top, box.content] · no equation · held-out 0/3 agree · 0.02s, work 102221
+  w+|Grid|Block|-                    n   13 mean |err|   28.0px · inputs [ours, box.border_bottom, box.border_top, box.content] · depth 0: (ours - box.content) · held-out 3/3 agree · 0.00s, work 423
+  h+|Flex|Grid|-                     n   11 mean |err|   16.2px · inputs [ours, box.border_bottom, box.border_top, box.content] · depth 1: ((box.content / (2i64)) - (ours / (2i64))) · held-out 3/3 agree · 0.00s, work 523
+  w-|Block|Block|-                   n    9 mean |err|  301.7px · inputs [ours, box.border_bottom, box.border_top, box.content] · no equation · held-out 0/2 agree · 0.01s, work 47104
+  w-|Flex|Flex|-                     n    9 mean |err|  143.3px · inputs [ours, box.border_bottom, box.border_top, box.content] · no equation · held-out 0/2 agree · 0.03s, work 164216
+  y|Block|Block|-                    n    9 mean |err|   48.4px · inputs [ours, box.border_bottom, box.border_top, box.content] · no equation · held-out 0/2 agree · 0.03s, work 111756
+  y|ListItem|Flex|-                  n    9 mean |err|    3.0px · inputs [ours, box.border_bottom, box.border_top, box.content] · depth 1: (ours + (ours / (2i64))) · held-out 2/2 agree · 0.00s, work 424
+{"collect_secs":3.872392875,"families_run":12,"origin_boxes":312,"total_secs":4.097642028}

@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """RING-1 T7 + T6b: direct (side-by-side) vs bound storage, and 1-bit tag for 2 marks.
 
-Task: RING1-DIRECT (_Pads/RING/ring1-w2.wave.yaml, cohort RING1B-contract.json).
+Task: RING1-DIRECT (ring1-w2.wave.yaml, cohort RING1B-contract.json).
 Imports ring1_core unchanged (library lock from RING1-CORE).
 Synthetic only; Python 3 + numpy.
 
 Usage:
-    python3 _Pads/RING/ring1/run_direct.py --quick
-    python3 _Pads/RING/ring1/run_direct.py
+    python3 harness/ring1/run_direct.py --quick
+    python3 harness/ring1/run_direct.py
 """
 from __future__ import annotations
 import argparse, os, sys, time
@@ -33,7 +33,7 @@ DIRECT_MODS = (3, 5, 7, 13, 17)
 BOUND_MODS = (3, 5, 7, 13)
 
 PRE_REGISTERED = """\
-PRE-REGISTERED DECISION (verbatim from _Pads/RING/ring1-w2.wave.yaml, RING1-DIRECT, step 6):
+PRE-REGISTERED DECISION (verbatim from ring1-w2.wave.yaml, RING1-DIRECT, step 6):
   PASS if direct single-mark decode is >= 0.99 exact (Wilson-99% lower bound)
   under float, AND the tagged 2-mark both-correct rate's Wilson-99% lower
   bound exceeds the untagged rate's point value. Otherwise KILL (report

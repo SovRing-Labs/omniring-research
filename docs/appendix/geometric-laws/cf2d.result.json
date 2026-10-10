@@ -1,0 +1,18 @@
+{
+ "ORACLE": {
+  "move": 0.3,
+  "hold": 1.0,
+  "release": 68,
+  "pass": false
+ },
+ "OURS": {
+  "move": 0.2,
+  "hold": 1.0,
+  "release": null,
+  "pass": false
+ },
+ "verdict": {
+  "ORACLE_PASS": false,
+  "OURS_PASS": false
+ }
+}

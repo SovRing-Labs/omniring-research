@@ -1,0 +1,21 @@
+{
+ "calibration_heldout_move": {
+  "8": 0.9,
+  "12": 1.0,
+  "16": 1.0,
+  "20": 1.0,
+  "24": 0.9,
+  "32": 0.5
+ },
+ "gamma": 16,
+ "move": 1.0,
+ "hold": 1.0,
+ "release": 68,
+ "verdict": {
+  "MOVE_ge_0.95": true,
+  "HOLD_ge_0.99": true,
+  "RELEASE_le_20": false,
+  "KILL_move_lt_0.5": false,
+  "PASS": false
+ }
+}

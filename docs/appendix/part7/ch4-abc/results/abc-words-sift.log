@@ -1,0 +1,8 @@
+== recall sweep (layout.rs, vs exhaustive 490,569 pairs / 286 words)
+bands 16 bits 20: pairs 5173 words 141 weighted recall 0.60 top30 29/30
+bands 32 bits 16: pairs 15042 words 209 recall 0.79 top30 30/30
+bands 32 bits 12: pairs 22611 words 245 recall 0.89 top30 30/30 (default)
+bands 64 bits 12: pairs 27263 words 255 recall 0.91
+bands 64 bits 10: pairs 28609 words 259 recall 0.93
+== fleet (142 Rust files: omni-spec 78, omni-render 46, omni-ui 17, terminal-launcher 1)
+{"bands":32,"bits":12,"classes":3048,"fns":1658,"mode":"sift+sieve","pairs_checked":118937,"secs":2.419783518,"secs_hv":0.35530156599999996,"secs_lgg":0.783296311,"secs_lower":0.840322525,"secs_sieve":0.44086311600000005,"words":830}

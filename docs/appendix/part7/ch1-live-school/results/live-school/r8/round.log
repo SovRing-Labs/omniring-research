@@ -1,0 +1,14 @@
+== round · core results/live-r7/h0 · 8 harnesses × 4 threads · bin 9d4c5ab7f209 · lib 361c4c46f5ea · 2026-10-08T06:19:45+00:00
+== harnesses done 2026-10-08T06:29:47+00:00
+   h0: exit 0 · 10 merges
+   h1: exit 0 · 10 merges
+   h2: exit 0 · 10 merges
+   h3: exit 0 · 10 merges
+   h4: exit 0 · 10 merges
+   h5: exit 0 · 10 merges
+   h6: exit 0 · 10 merges
+   h7: exit 0 · 10 merges
+   days 10 · held-out / canary [(10, 0.717, 0.474)]
+SKILL-EVAL 148 skills · 55 at >= 0.85
+ROUND-SKILLS 148 55
+SCHOOL-ROUND-DONE

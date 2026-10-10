@@ -1,0 +1,14 @@
+GAIN blog-codinghorror-com n608 <blockquote .> base Some([138.20313, 1549.7031, -276.40625, 81.5625]) cand Some([0.0, 0.046875, 0.0, 0.0]) «Jeff: Dad's funny. He had kind of a dark sense of humor that I enjoyed»
+GAIN blog-codinghorror-com n224 <div .gh-article-meta-content> base Some([0.265625, 100.96875, -0.53125, 0.0]) cand Some([0.265625, 0.0, -0.53125, 0.0]) «|25 Sep 2026| |—|»
+GAIN blog-codinghorror-com n525 <p .> base Some([138.20313, 1391.0469, -276.40625, 54.375]) cand Some([0.0, -0.015625, 0.0, 0.0]) «(Let's do this. If, and |only if|, you watched the whole episode and l»
+GAIN blog-codinghorror-com n384 <iframe .> base Some([0.0, 1103.0156, 0.0, 0.0]) cand Some([0.0, 0.0, 0.0, 0.0]) «»
+GAIN blog-codinghorror-com n405 <p .> base Some([138.20313, 1153.4844, -276.40625, 54.375]) cand Some([0.0, 0.0, 0.0, 0.0]) «Not only Ben, but everyone who participated on Stack Overflow. |We did»
+GAIN blog-codinghorror-com n202 <h1 .gh-article-title is-title> base Some([136.5, 0.0, -273.0, 100.96875]) cand Some([0.0, 0.0, 0.0, 0.0]) «|If we do not stop to help each other, what do we become?|»
+GAIN blog-codinghorror-com n617 <a .kg-btn kg-btn-accent> base Some([138.20313, 1631.2656, -7.96875, 0.03125]) cand Some([0.0, 0.046875, -7.96875, 0.03125]) «Off by One - Episode #2, 01:08:02|»
+GAIN blog-codinghorror-com n417 <blockquote .> base Some([138.20313, 1118.4063, -276.40625, 108.75]) cand Some([0.0, 0.0, 0.0, 0.0]) «Passively searching and reading highly ranked Stack Overflow answers a»
+GAIN blog-codinghorror-com n433 <img .kg-image> base Some([138.20313, 1417.4688, -276.40625, -207.3125]) cand Some([0.0, 0.0, 0.0, 0.0]) «»
+GAIN blog-codinghorror-com n368 <section .gh-content gh-canvas is-body> base Some([0.0, 967.0781, 0.0, 270.26563]) cand Some([0.0, 0.0, 0.0, 0.0]) «|About a year ago, I was offered a presentation slot at the |WeAreDeve»
+GAIN blog-codinghorror-com n218 <div .gh-article-meta-wrapper> base Some([0.265625, 100.96875, -0.53125, 0.0]) cand Some([0.265625, 0.0, -0.53125, 0.0]) «|Jeff Atwood| | |»
+GAIN blog-codinghorror-com n700 <p .> base Some([138.20313, 2181.9844, -276.40625, 27.1875]) cand Some([0.0, 0.171875, 0.0, 0.0]) «So thank you, Leo and Wesley, for giving me another way to make happin»
+{"base":[17638,2997],"cand":[17762,2997],"clause":"patch.track_math[*]=-1","gained":[124,0],"lost":[0,0],"pages":[{"gained":124,"holdout":false,"lost":0,"lost_nodes":[],"page":"blog-codinghorror-com"}],"pass":true,"program":"results/omr.program.json","secs":2.814075274,"sets":"1ee26bbc9aa4"}
+patch-gate patch.track_math[*]=-1: base replay 17638 holdout 2997 → cand 17762 / 2997 · lost 0/0 · gained 124/0 → PASS (2.8s)

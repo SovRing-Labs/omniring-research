@@ -1,0 +1,25 @@
+{
+ "about": "Facts extracted by script from the 2^31-byte probe logs and launcher header; the raw logs are NOT shipped.",
+ "arm_A": {
+  "cap": "default (3.5 GiB arena)",
+  "start": "21:27:51",
+  "exit_code": 1,
+  "exit_time": "21:33:13",
+  "result": "refused at build time by the storage-binding guard (explicit ValueError)",
+  "last_line": "ValueError: buffer(s) over one storage binding (2147483647 bytes): [('L_rtlg_0', 2684354560), ('L_rtlg_1', 2684354560), ('L_rtlg_2', 2684354560)] \u2014 fewer models per session (array server --group)"
+ },
+ "arm_B": {
+  "cap": 2147483392,
+  "start": "21:33:13",
+  "result": "no record: log empty (0 bytes); the job was stopped by its stall timer at 21:36:23 (signal SIGTERM, 8 min 32 s after launch)"
+ },
+ "arm_C": {
+  "groups": "5 units x 4 = 20",
+  "start": "21:36:45",
+  "exit_code": 1,
+  "exit_time": "21:40:05",
+  "launcher_elapsed_s": 202.0,
+  "launcher_state": "DONE",
+  "gate_verdict_line": "FAIL"
+ }
+}

@@ -1,0 +1,2 @@
+{"base":[20900,3048],"cand":[20945,3059],"gained":[45,11],"lost":[0,0],"pages":[{"gained":36,"holdout":false,"lost":0,"lost_nodes":[],"page":"github-com-servo-html5ever"},{"gained":9,"holdout":false,"lost":0,"lost_nodes":[],"page":"openstreetmap-org"},{"gained":11,"holdout":true,"lost":0,"lost_nodes":[],"page":"xkcd-com"}],"pass":true,"sets":"1ee26bbc9aa4"}
+binary-gate vs results/agree-snapshot-after-spec.json: replay 20900 → 20945 · holdout 3048 → 3059 · lost 0/0 · gained 45/11 → PASS (1.7s)

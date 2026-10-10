@@ -1,0 +1,1 @@
+{"round": 15, "vs_good": 14, "drop": 0.1, "rise": 0.3, "why": [], "common": 141, "gate_count_good": 79, "gate_count_now": 79, "mean_good": 0.8577, "mean_now": 0.8379, "heldout_good": 0.518, "heldout_now": 2.23, "heldout_note": "held-out sets differ (0.518 vs 2.230: h0 changed school) \u2014 not compared", "verdict": "pass"}

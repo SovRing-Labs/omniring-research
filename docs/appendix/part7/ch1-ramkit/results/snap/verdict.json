@@ -1,0 +1,17 @@
+{
+ "mems0": {
+  "bytes": 92154654,
+  "loaded": 92154654,
+  "next_loss_equal": true,
+  "params_equal": true,
+  "loss": 9.074453353881836
+ },
+ "mems1": {
+  "bytes": 143080564,
+  "loaded": 143080564,
+  "next_loss_equal": true,
+  "params_equal": true,
+  "loss": 9.074939727783203
+ },
+ "pass": true
+}

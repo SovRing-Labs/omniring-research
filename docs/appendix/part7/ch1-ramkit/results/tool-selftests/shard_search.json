@@ -1,0 +1,61 @@
+{
+ "detail": [
+  {
+   "match": true,
+   "n": 10,
+   "q": "ternary transformer training",
+   "top1": [
+    "vault:<id>"
+   ]
+  },
+  {
+   "match": true,
+   "n": 10,
+   "q": "eBay listing shipping",
+   "top1": [
+    "vault:<id>"
+   ]
+  },
+  {
+   "match": true,
+   "n": 10,
+   "q": "residue number system rings",
+   "top1": [
+    "vault:<id>"
+   ]
+  },
+  {
+   "match": true,
+   "n": 10,
+   "q": "morning routine sleep",
+   "top1": [
+    "vault:<id>"
+   ]
+  },
+  {
+   "match": true,
+   "n": 10,
+   "q": "doctor core renderer",
+   "top1": [
+    "vault:<id>"
+   ]
+  }
+ ],
+ "embedder": "omnid nomic",
+ "export_s": 1.7,
+ "queries": 5,
+ "registry_fire": {
+  "ms": 313,
+  "same_as_direct": true,
+  "verdict": "pass"
+ },
+ "rss_mb": 215.4,
+ "same_top10": 5,
+ "snapshot_bytes": 79355984,
+ "snapshot_files": {
+  "ids.json": 247760,
+  "notes.db": 77824,
+  "vault.db": 60002304,
+  "vecs.f32.npy": 19028096
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "domains": [
+  "logic.chain",
+  "graph.path",
+  "units.dimension",
+  "calendar.crt",
+  "mind.revise",
+  "mind.tom",
+  "causal.dag",
+  "struct.pushdown",
+  "sat.dpll",
+  "arith.mul",
+  "graph.group_walk",
+  "calendar.ring_euclid",
+  "code.debug"
+ ],
+ "domains_arm_E": [
+  "logic.chain",
+  "graph.path",
+  "units.dimension",
+  "calendar.crt",
+  "mind.revise",
+  "mind.tom_mask",
+  "causal.dag",
+  "struct.pushdown",
+  "sat.trit",
+  "arith.mul_rns",
+  "graph.group",
+  "calendar.clock",
+  "code.debug"
+ ],
+ "fit": {
+  "logic.chain": 1.0,
+  "graph.path": 1.0,
+  "units.dimension": 1.0,
+  "calendar.crt": 1.0,
+  "mind.revise": 1.0,
+  "mind.tom": 1.0,
+  "causal.dag": 1.0,
+  "struct.pushdown": 0.9666666666666667,
+  "sat.dpll": 0.9,
+  "arith.mul": 1.0,
+  "arith.mrc_compare": 0.0,
+  "search.astar": 0.4,
+  "graph.group_walk": 1.0,
+  "calendar.ring_euclid": 1.0,
+  "numth.prime_trial": 0.8666666666666667,
+  "code.debug": 1.0
+ },
+ "tokens_budget": 10000000,
+ "ctx": 512,
+ "batch": 8,
+ "tokenizer": "<home>/gpurun-out-1003/tokenizer-glyph-fix/tokenizer.json",
+ "smoke": false,
+ "arms": {
+  "A": {
+   "steps": 2442,
+   "tokens": 10002432,
+   "train_seconds": 1890.638859987259,
+   "data_tokens": 4428618,
+   "acc_id": 0.15128205128205127,
+   "acc_ood": 0.07948717948717948
+  }
+ }
+}

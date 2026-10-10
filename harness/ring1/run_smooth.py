@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """RING-1 T2: smooth (fractional-phase) ring for 'around when' closeness.
 
-Task: RING1-SMOOTH (_Pads/RING/ring1-w2.wave.yaml, cohort RING1B).
+Task: RING1-SMOOTH (ring1-w2.wave.yaml, cohort RING1B).
 Pillar: Nervous System, Loop step "Read". Pure synthetic study. numpy only.
 
 Imports ring1_core unchanged and adds ONE smooth ring alongside mods (3,5,7,13).
@@ -346,7 +346,7 @@ def main():
     with open(out_path, "w") as f:
         f.write(f"{verdict}\n\n")
         f.write("# RING1-SMOOTH — RING-1 T2: smooth (fractional-phase) ring for 'around when' closeness\n\n")
-        f.write(f"**Task** RING1-SMOOTH · cohort RING1B (`_Pads/RING/ring1-w2.wave.yaml`)\n")
+        f.write(f"**Task** RING1-SMOOTH · cohort RING1B (`ring1-w2.wave.yaml`)\n")
         f.write(f"**Pillar** Nervous System — the Loop's **Read** step\n")
         f.write(f"**Verdict** `{verdict}`\n\n")
         f.write("---\n\n")
@@ -423,12 +423,12 @@ def main():
         f.write("## Files\n\n")
         f.write("| Path | What |\n")
         f.write("|---|---|\n")
-        f.write("| `_Pads/RING/ring1/run_smooth.py` | This runner |\n")
-        f.write("| `_Reviews/RING/RING1-SMOOTH.md` | This report |\n\n")
+        f.write("| `harness/ring1/run_smooth.py` | This runner |\n")
+        f.write("| `RING1-SMOOTH.md` | This report |\n\n")
 
         f.write("## Verification\n\n")
         f.write("```\n")
-        f.write(f"$ cd the project root && python3 _Pads/RING/ring1/run_smooth.py --quick\n")
+        f.write(f"$ cd the project root && python3 harness/ring1/run_smooth.py --quick\n")
         f.write("```\n\n")
 
         f.write(f"DONE RING1-SMOOTH — {verdict} at {out_path}\n")
@@ -438,7 +438,7 @@ def main():
 
     # Print the gate command for verification
     print(f"\nGate check:")
-    print(f"  test -s {out_path} && grep -qE '^(PASS|KILL)' {out_path} && python3 _Pads/RING/ring1/run_smooth.py --quick")
+    print(f"  test -s {out_path} && grep -qE '^(PASS|KILL)' {out_path} && python3 harness/ring1/run_smooth.py --quick")
 
     return 0 if overall_pass else 1
 

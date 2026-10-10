@@ -1,0 +1,1 @@
+{"T": 64, "DH": 32, "pages": 4, "device": "llvmpipe", "y": {"max_rel": 1.293809466717614e-07, "worst_at": 259}, "den": {"max_rel": 7.499079487992848e-08, "worst_at": 27}, "dq": {"max_rel": 6.816934048122953e-07, "worst_at": 349}, "dk": {"max_rel": 2.832265852333589e-07, "worst_at": 113}, "dv": {"max_rel": 1.6059829932824943e-07, "worst_at": 20}, "pass": true}

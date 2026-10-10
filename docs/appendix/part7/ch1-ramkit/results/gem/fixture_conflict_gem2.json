@@ -1,0 +1,1 @@
+{"gem": 2, "mode": "conflict", "taskA_before_B": 0.1552, "taskA_traj": [0.4145, 1.031, 1.7604, 2.1106, 2.5427, 2.9024, 3.3061, 3.5333, 3.6576, 3.9671, 4.1913, 4.445], "taskA_max": 4.445, "taskA_end": 4.445, "taskA_rise": 4.2898, "taskB_end": 0.0397, "gem_steps": 60.0, "gem_projections": 95.0}

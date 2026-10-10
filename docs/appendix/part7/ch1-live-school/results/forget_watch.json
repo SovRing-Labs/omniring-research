@@ -1,0 +1,109 @@
+{
+ "fixture_slips": [
+  {
+   "first_at_gate_round": 1,
+   "gap": 0.15,
+   "round": 2,
+   "score": 0.7,
+   "skill": "b@1"
+  }
+ ],
+ "live_school": {
+  "mastered": 93,
+  "rescored_last_round": 68,
+  "rounds": 8,
+  "slipped": [
+   [
+    "br.ping@2",
+    0.8333
+   ],
+   [
+    "e.press@1",
+    0.8036
+   ],
+   [
+    "env.calendar.clock@1",
+    0.7419
+   ],
+   [
+    "env.causal.dag@1",
+    0.8485
+   ],
+   [
+    "env.sat.trit@1",
+    0.7647
+   ],
+   [
+    "k.meet@1",
+    0.8421
+   ],
+   [
+    "k.review@2",
+    0.8493
+   ],
+   [
+    "pk.babble@3",
+    0.8333
+   ],
+   [
+    "pk.commit@2",
+    0.8202
+   ],
+   [
+    "pk.echo@3",
+    0.8333
+   ],
+   [
+    "pk.flush@2",
+    0.803
+   ],
+   [
+    "pk.flush@3",
+    0.7115
+   ],
+   [
+    "pk.give@3",
+    0.75
+   ],
+   [
+    "pk.hold@2",
+    0.84
+   ],
+   [
+    "pk.meet@4",
+    0.8182
+   ],
+   [
+    "pk.meet@5",
+    0.8
+   ],
+   [
+    "pk.mix@2",
+    0.7391
+   ],
+   [
+    "pk.ping@3",
+    0.7077
+   ],
+   [
+    "pk.predict@2",
+    0.7922
+   ],
+   [
+    "pk.same@1",
+    0.8462
+   ]
+  ],
+  "slips": 20
+ },
+ "weights_after": {
+  "a@1": 0.05,
+  "b@1": 0.21500000000000002,
+  "x@1": 1.0
+ },
+ "weights_before": {
+  "a@1": 0.05,
+  "b@1": 0.05,
+  "x@1": 1.0
+ }
+}

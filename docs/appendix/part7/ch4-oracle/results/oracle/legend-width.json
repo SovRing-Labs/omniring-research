@@ -1,0 +1,47 @@
+{
+ "target": "legend-width",
+ "symbols": [
+  "pad_px"
+ ],
+ "equation_1_64px": "((pad_px * (128i64)) + (626i64))",
+ "verified_rustc": true,
+ "cegis_rounds": 1,
+ "validate": {
+  "agree": 41,
+  "of": 41,
+  "rustc": true,
+  "exhaustive": true
+ },
+ "work": 1471,
+ "how": "witness depth 0",
+ "synth_secs": 0.00206841,
+ "sample": [
+  [
+   [
+    32
+   ],
+   4722
+  ],
+  [
+   [
+    2
+   ],
+   882
+  ],
+  [
+   [
+    11
+   ],
+   2034
+  ],
+  [
+   [
+    1
+   ],
+   754
+  ]
+ ],
+ "ours_equation_1_64px": "(78848i64)",
+ "probes_agree_within_1px": 0,
+ "probes": 41
+}

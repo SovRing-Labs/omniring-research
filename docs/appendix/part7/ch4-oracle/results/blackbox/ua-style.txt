@@ -1,0 +1,162 @@
+000-a                                        els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem     10KB | agree 100.0% of 72
+001-abbr                                     els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      8KB | agree  98.6% of 72
+002-address                                  els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree  98.6% of 72
+003-article                                  els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+004-aside                                    els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+005-b                                        els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+006-bdi                                      els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+007-bdo                                      els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+008-blockquote                               els      5 rules      9 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     11KB | agree 100.0% of 72
+009-button                                   els      5 rules     10 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     13KB | agree  98.6% of 72
+010-button-w100                              els      6 rules     11 styles     6 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     13KB | agree  99.0% of 96
+011-caption                                  els      9 rules     11 styles     9 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     18KB | agree 100.0% of 168
+012-cite                                     els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem      9KB | agree 100.0% of 72
+013-code                                     els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem      9KB | agree  98.6% of 72
+014-dd                                       els      7 rules     11 styles     6 (85.7%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     12KB | agree 100.0% of 120
+015-del                                      els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+016-details                                  els      6 rules      9 styles     4 (66.7%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree  97.9% of 96
+017-details-open                             els      6 rules      9 styles     4 (66.7%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree  97.9% of 96
+018-dfn                                      els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+019-dialog-open                              els      5 rules      8 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem      8KB | agree  87.5% of 72
+020-div                                      els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+021-dl                                       els      7 rules     11 styles     6 (85.7%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     12KB | agree 100.0% of 120
+022-dt                                       els      7 rules     11 styles     6 (85.7%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     12KB | agree 100.0% of 120
+023-em                                       els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem      9KB | agree 100.0% of 72
+024-fieldset                                 els      6 rules      9 styles     5 (83.3%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem     11KB | agree  97.9% of 96
+025-legend                                   els      6 rules      9 styles     5 (83.3%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem     11KB | agree  97.9% of 96
+026-figure                                   els      6 rules     10 styles     5 (83.3%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.0 ms | mem     11KB | agree 100.0% of 96
+027-figcaption                               els      6 rules     10 styles     5 (83.3%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     11KB | agree 100.0% of 96
+028-footer                                   els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+029-form                                     els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+030-h1                                       els      5 rules     12 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     13KB | agree 100.0% of 72
+031-h2                                       els      5 rules      8 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem     10KB | agree 100.0% of 72
+032-h3                                       els      5 rules      8 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     10KB | agree 100.0% of 72
+033-h4                                       els      5 rules      8 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     10KB | agree 100.0% of 72
+034-h5                                       els      5 rules      8 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     10KB | agree 100.0% of 72
+035-h6                                       els      5 rules      8 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     10KB | agree 100.0% of 72
+036-h1-in-section                            els      6 rules     13 styles     5 (83.3%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem     13KB | agree  96.9% of 96
+037-h1-in-article-section                    els      7 rules     14 styles     5 (71.4%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     14KB | agree  97.5% of 120
+038-header                                   els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+039-hgroup                                   els      7 rules     15 styles     6 (85.7%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     15KB | agree 100.0% of 120
+040-hr                                       els      5 rules      8 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     10KB | agree 100.0% of 70
+041-i                                        els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+042-iframe                                   els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree  98.6% of 72
+043-img-broken                               els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+044-img-broken-alt                           els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+045-input-text                               els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem     14KB | agree  98.6% of 72
+046-input-size5                              els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     14KB | agree  98.6% of 72
+047-input-checkbox                           els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem     14KB | agree  98.6% of 72
+048-input-radio                              els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem     14KB | agree  95.8% of 72
+049-input-submit                             els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     15KB | agree  95.8% of 72
+050-input-button                             els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     15KB | agree  95.8% of 72
+051-input-reset                              els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem     14KB | agree  95.8% of 72
+052-input-range                              els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem     14KB | agree  84.7% of 72
+053-input-color                              els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem     14KB | agree  95.8% of 72
+054-input-date                               els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     14KB | agree  93.1% of 72
+055-input-number                             els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     14KB | agree  98.6% of 72
+056-input-file                               els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     14KB | agree  91.7% of 72
+057-input-search                             els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     14KB | agree  97.2% of 72
+058-input-email                              els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     14KB | agree  98.6% of 72
+059-input-password                           els      5 rules     14 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     14KB | agree  98.6% of 72
+060-input-w100                               els      6 rules     15 styles     6 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     15KB | agree  99.0% of 96
+061-ins                                      els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem      9KB | agree 100.0% of 72
+062-kbd                                      els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree  98.6% of 72
+063-label                                    els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem      8KB | agree 100.0% of 72
+064-li-ul                                    els      6 rules     18 styles     6 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     19KB | agree 100.0% of 96
+065-li-ol                                    els      6 rules     13 styles     6 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     14KB | agree 100.0% of 96
+066-main                                     els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+067-mark                                     els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+068-menu                                     els      6 rules     11 styles     6 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     12KB | agree 100.0% of 96
+069-meter                                    els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem      9KB | agree  98.6% of 72
+070-nav                                      els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+071-ol                                       els      6 rules     13 styles     6 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     14KB | agree 100.0% of 96
+072-ol-nested                                els      8 rules     13 styles     7 (87.5%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem     14KB | agree 100.0% of 144
+073-output                                   els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+074-p                                        els      5 rules      8 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+075-pre                                      els      5 rules     10 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     12KB | agree  95.8% of 72
+076-progress                                 els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree  98.6% of 72
+077-q                                        els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+078-ruby                                     els      6 rules      6 styles     5 (83.3%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree  96.9% of 96
+079-s                                        els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+080-samp                                     els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.1 ms | mem      9KB | agree  98.6% of 72
+081-search                                   els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+082-section                                  els      5 rules      7 styles     4 (80.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      7KB | agree 100.0% of 72
+083-select                                   els      7 rules      9 styles     6 (85.7%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     12KB | agree  90.3% of 72
+084-select-multiple                          els      7 rules      9 styles     6 (85.7%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     12KB | agree  85.8% of 120
+085-select-size3                             els      7 rules      9 styles     6 (85.7%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem     12KB | agree  85.8% of 120
+086-small                                    els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+087-span                                     els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.0 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+088-strong                                   els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+089-sub                                      els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem      9KB | agree 100.0% of 72
+090-sup                                      els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+091-summary                                  els      6 rules      9 styles     4 (66.7%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem      9KB | agree  97.9% of 96
+092-table                                    els      8 rules     10 styles     8 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     13KB | agree 100.0% of 144
+093-td                                       els      8 rules     10 styles     8 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     13KB | agree 100.0% of 144
+094-th                                       els      8 rules     11 styles     8 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     14KB | agree 100.0% of 144
+095-thead                                    els      8 rules     10 styles     8 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     13KB | agree 100.0% of 144
+096-textarea                                 els      5 rules      9 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     12KB | agree  94.4% of 72
+097-textarea-rows                            els      5 rules      9 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.1 ms | mem     12KB | agree  94.4% of 72
+098-time                                     els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+099-u                                        els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem      9KB | agree 100.0% of 72
+100-ul                                       els      6 rules     18 styles     6 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     19KB | agree 100.0% of 96
+101-ul-nested                                els      8 rules     18 styles     8 (100.0%) css     0KB miss 0 | parse   0.1 css   0.2 cascade    0.1 ms | mem     19KB | agree 100.0% of 144
+102-var                                      els      5 rules      7 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      9KB | agree 100.0% of 72
+103-video                                    els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+104-canvas                                   els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+105-svg-noattr                               els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+106-svg-viewbox                              els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+107-object                                   els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 72
+108-embed                                    els      5 rules      6 styles     5 (100.0%) css     0KB miss 0 | parse   0.1 css   0.1 cascade    0.0 ms | mem      8KB | agree 100.0% of 48
+cascade split: matching 0 ms · sibling fingerprints 0 ms · apply 1 ms · intern 2 ms · setup (facts, tables) 1 ms · vars 0 ms · gather+inline+sort 0 ms
+style sharing: 3 of 599 elements (0.5%) reused a sibling's style
+TOTAL elements 599 | distinct styles/page 94.3% of elements | union across pages 52 (u16 codeword covers all: true) | cascade 5 ms | Chrome agreement 98.5% (8934/9070)
+  background-color        95.8%  (362/378)
+  padding-bottom          96.6%  (365/378)
+  padding-right           96.6%  (365/378)
+  padding-left            96.6%  (365/378)
+  white-space             97.1%  (367/378)
+  border-top-width        97.4%  (368/378)
+  box-sizing              97.6%  (369/378)
+  display                 97.6%  (369/378)
+  padding-top             97.6%  (369/378)
+  font-size               98.1%  (371/378)
+  text-align              98.7%  (373/378)
+  margin-bottom           98.7%  (373/378)
+  margin-top              98.9%  (374/378)
+  margin-left             99.2%  (374/377)
+  list-style-type         99.2%  (375/378)
+  margin-right            99.5%  (375/377)
+  text-decoration-line    99.7%  (377/378)
+  position                99.7%  (377/378)
+  color                   99.7%  (377/378)
+  font-style              99.7%  (377/378)
+  font-weight            100.0%  (378/378)
+  visibility             100.0%  (378/378)
+  line-height            100.0%  (378/378)
+  float                  100.0%  (378/378)
+top mismatches:
+      9  background-color: ours rgba(0, 0, 0, 0) | chrome rgb(255, 255, 255) <input>
+      7  box-sizing: ours content-box | chrome border-box <input>
+      4  white-space: ours normal | chrome nowrap <option>
+      4  padding-right: ours 0px | chrome 2px <option>
+      4  padding-bottom: ours 0px | chrome 1px <option>
+      4  white-space: ours normal | chrome pre <input>
+      4  padding-left: ours 0px | chrome 2px <option>
+      4  display: ours inline | chrome block <option>
+      3  text-align: ours start | chrome center <input>
+      3  padding-left: ours 2px | chrome 0px <select>
+      3  padding-top: ours 1px | chrome 0px <select>
+      3  border-top-width: ours 2px | chrome 1px <select>
+      3  padding-right: ours 2px | chrome 0px <select>
+      3  padding-right: ours 2px | chrome 0px <input>
+      3  padding-bottom: ours 1px | chrome 0px <input>
+      3  display: ours block | chrome list-item <summary>
+      3  padding-bottom: ours 1px | chrome 0px <select>
+      3  padding-top: ours 1px | chrome 0px <input>
+      2  padding-left: ours 0px | chrome 2px <legend>
+      2  padding-top: ours 1px | chrome 2px <textarea>
+      2  text-align: ours start | chrome center <button>
+      2  white-space: ours normal | chrome nowrap <select>
+      2  border-top-width: ours 2px | chrome 1px <textarea>
+      2  padding-right: ours 0px | chrome 2px <legend>
+      2  padding-left: ours 2px | chrome 0px <input>

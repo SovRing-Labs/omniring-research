@@ -34,7 +34,7 @@ status: exploration
 not_a_spec: "This document maps possibilities. It decides nothing and commits nothing."
 project: the research prototype repo
 date: 2026-09-28
-author: researcher (THEAD-RES-3 seat, post-task extension)
+author: researcher (research seat, post-task extension)
 pillar: Nervous System
 companion_review: reviews/2026-09-28 — OMNIRING-PEER-REVIEW-RETRIEVAL-AND-CONSOLIDATION.md
 tags:
@@ -105,8 +105,8 @@ feature that had to be added, and auditors are the people who most need it.
 
 **Fit:** defence networks, air-gapped labs, hospital networks, industrial plants with no egress.
 **Why it fits:** no cloud, no GPU, no telemetry egress, 15 W CPU. This is one of very few architectures that
-can legally and physically run in these settings. It is the North Star (§I.5 — "capable AI on the computers
-people already own") realised as a *compliance* property rather than a cost property.
+can legally and physically run in these settings. It is the aim of capable AI on the computers
+people already own, realised as a *compliance* property rather than a cost property.
 **What must be true first:** nothing architectural. This is the closest to *ready* of anything in the map.
 **Confidence:** HIGH on fit, UNKNOWN on procurement (the buyer is rarely the end user).
 

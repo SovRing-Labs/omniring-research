@@ -1,0 +1,78 @@
+; mb_scatter — GROW-RUN-0 JIT-T50 #1, the MAILBOX step 3: every item takes a slot in its home toroid's contiguous mailbox.
+;   s = atomic cur[home[e]]++ ; mail[off[home[e]] + s] = e        (order inside a toroid's slice is free; consumers are order-independent)
+; Bindings: 0 home uint[n] · 1 off uint[T] · 2 cur uint[T] (atomic) · 3 mail uint[n]. 64 items per workgroup, grid as cyclone::grid.
+; Hand-written from the SPIR-V spec; our own code.
+               OpCapability Shader
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %main "main" %lid %wid %nwg
+               OpExecutionMode %main LocalSize 64 1 1
+               OpDecorate %lid BuiltIn LocalInvocationId
+               OpDecorate %wid BuiltIn WorkgroupId
+               OpDecorate %nwg BuiltIn NumWorkgroups
+               OpDecorate %rta_u ArrayStride 4
+               OpMemberDecorate %buf_u 0 Offset 0
+               OpDecorate %buf_u Block
+               OpDecorate %home DescriptorSet 0
+               OpDecorate %home Binding 0
+               OpDecorate %home NonWritable
+               OpDecorate %off DescriptorSet 0
+               OpDecorate %off Binding 1
+               OpDecorate %off NonWritable
+               OpDecorate %cur DescriptorSet 0
+               OpDecorate %cur Binding 2
+               OpDecorate %mail DescriptorSet 0
+               OpDecorate %mail Binding 3
+               OpDecorate %mail NonReadable
+       %void = OpTypeVoid
+       %fnty = OpTypeFunction %void
+       %bool = OpTypeBool
+       %uint = OpTypeInt 32 0
+     %v3uint = OpTypeVector %uint 3
+  %ptr_in_v3 = OpTypePointer Input %v3uint
+        %lid = OpVariable %ptr_in_v3 Input
+        %wid = OpVariable %ptr_in_v3 Input
+        %nwg = OpVariable %ptr_in_v3 Input
+      %rta_u = OpTypeRuntimeArray %uint
+      %buf_u = OpTypeStruct %rta_u
+     %ptr_bu = OpTypePointer StorageBuffer %buf_u
+      %ptr_u = OpTypePointer StorageBuffer %uint
+       %home = OpVariable %ptr_bu StorageBuffer
+        %off = OpVariable %ptr_bu StorageBuffer
+        %cur = OpVariable %ptr_bu StorageBuffer
+       %mail = OpVariable %ptr_bu StorageBuffer
+     %uint_0 = OpConstant %uint 0
+     %uint_1 = OpConstant %uint 1
+    %uint_64 = OpConstant %uint 64
+  %scope_dev = OpConstant %uint 1
+   %sem_none = OpConstant %uint 0
+       %main = OpFunction %void None %fnty
+      %entry = OpLabel
+         %l3 = OpLoad %v3uint %lid
+       %lane = OpCompositeExtract %uint %l3 0
+         %w3 = OpLoad %v3uint %wid
+         %wx = OpCompositeExtract %uint %w3 0
+         %wy = OpCompositeExtract %uint %w3 1
+         %n3 = OpLoad %v3uint %nwg
+         %nx = OpCompositeExtract %uint %n3 0
+        %wyn = OpIMul %uint %wy %nx
+         %wg = OpIAdd %uint %wx %wyn
+        %wg6 = OpIMul %uint %wg %uint_64
+          %e = OpIAdd %uint %wg6 %lane
+          %n = OpArrayLength %uint %home 0
+        %eok = OpULessThan %bool %e %n
+               OpSelectionMerge %end None
+               OpBranchConditional %eok %body %end
+       %body = OpLabel
+        %phe = OpAccessChain %ptr_u %home %uint_0 %e
+          %h = OpLoad %uint %phe
+        %pcu = OpAccessChain %ptr_u %cur %uint_0 %h
+         %sl = OpAtomicIAdd %uint %pcu %scope_dev %sem_none %uint_1
+        %pof = OpAccessChain %ptr_u %off %uint_0 %h
+         %of = OpLoad %uint %pof
+         %mi = OpIAdd %uint %of %sl
+        %pml = OpAccessChain %ptr_u %mail %uint_0 %mi
+               OpStore %pml %e
+               OpBranch %end
+        %end = OpLabel
+               OpReturn
+               OpFunctionEnd

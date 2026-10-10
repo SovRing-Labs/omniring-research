@@ -1,0 +1,9 @@
+# lines of the laptop ladder logs that the chapter quotes (wake throughput and the copy-gate line); nothing else of the logs is shipped
+## first laptop ladder segment
+  [wake] step 50 out 0.747 | blocks 0.96 0.56 0.82 0.34 0.57 0.64 | 0.10M tok | 134 tok/s | pass 2 | active 6
+  [wake] step 75 out 0.950 | blocks 1.09 0.88 1.10 0.38 0.60 0.88 | 0.15M tok | 136 tok/s | pass 3 | active 6
+TIER1-GATE prek: copy top-1 0.537 over 4555 positions · bar 0.85 · REPEAT
+## later laptop ladder segment (wake throughput lines only)
+  [wake] step 75 out 0.891 | blocks 1.51 1.43 1.52 0.10 1.74 0.83 | 0.15M tok | 382 tok/s | pass 3 | active 6
+  [wake] step 100 out 1.478 | blocks 1.77 1.72 1.82 0.75 2.52 1.42 | 0.20M tok | 175 tok/s | pass 4 | active 6
+  [wake] step 125 out 1.483 | blocks 1.74 1.42 1.60 0.57 1.39 1.39 | 0.26M tok | 158 tok/s | pass 5 | active 6

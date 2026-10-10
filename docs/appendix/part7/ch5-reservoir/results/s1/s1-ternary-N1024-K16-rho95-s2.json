@@ -1,0 +1,26 @@
+{
+ "kind": "ternary",
+ "N": 1024,
+ "rho": 0.95,
+ "feats": "res+bag",
+ "K": 16,
+ "seed": 2,
+ "L": 96,
+ "lambda": 0.01,
+ "val_cos": 0.8848,
+ "fit_cos": 0.9132,
+ "feat_dim": 2305,
+ "feat_secs": 71,
+ "heldout_cos": {
+  "vault": 0.8939,
+  "sessions": 0.8817
+ },
+ "hub3": {
+  "fts_only": 0.735,
+  "core_only": 0.585,
+  "hybrid_fts_core": 0.705
+ },
+ "secs_total": 100,
+ "bar": "hybrid_fts_core >= 0.775 (FTS 0.735; E6 hybrid 0.600, core-only 0.425)",
+ "PASS": false
+}

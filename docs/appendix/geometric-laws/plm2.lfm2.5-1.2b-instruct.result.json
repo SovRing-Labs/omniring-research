@@ -1,0 +1,37 @@
+{
+ "direct": {
+  "accuracy": 0.545,
+  "claims": 138,
+  "false_claims": 59,
+  "false_rate": 0.427536231884058,
+  "style": {
+   "sent_mean": 14.340416666666664,
+   "sent_cv": 0.7023244027697604,
+   "para_cv": 0.004188679245283019,
+   "sonority": 0.5817806595114997,
+   "plosive": 0.21895624975397887,
+   "list_density": 0.0,
+   "reading_ease": 62.432329329026864
+  }
+ },
+ "frame_first": {
+  "accuracy": 0.555,
+  "claims": 75,
+  "false_claims": 57,
+  "false_rate": 0.76,
+  "style": {
+   "sent_mean": 10.591666666666665,
+   "sent_cv": 0.4237512320087131,
+   "para_cv": 0.22345761003053424,
+   "sonority": 0.5985985807670566,
+   "plosive": 0.19621843966826547,
+   "list_density": 0.0,
+   "reading_ease": 43.57695705747419
+  }
+ },
+ "verdict": {
+  "Q1": false,
+  "Q2": false
+ },
+ "model": "LiquidAI/lfm2.5-1.2b-instruct:latest"
+}

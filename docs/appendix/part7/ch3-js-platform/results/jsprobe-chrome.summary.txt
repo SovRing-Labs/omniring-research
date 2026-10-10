@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>FINAL pass 106/106 | </title>
+<script>
+window.R = {}; window.EXPECT = [];
+function T(n, f) { EXPECT.push(n); try { R[n] = f() ? 1 : 0; } catch (e) { R[n] = 'E:' + String(e && e.message || e).slice(0, 30); } }
+function A(n) { EXPECT.push(n); R[n] = 'pending'; return function (ok) { R[n] = ok ? 1 : 0; }; }
+function report(tag) {
+  var fails = [], pass = 0, miss = [];
+  for (var i = 0; i < EXPECT.length; i++) { var k = EXPECT[i]; if (R[k] === 1) pass++; else fails.push(k + '=' + R[k]); }
+  var s = tag + ' pass ' + pass + '/' + EXPECT.length + ' | ' + fails.join(' ; ');
+  try { document.title = s; } catch (e) {}
+  try { var t = document.getElementsByTagName('title')[0]; t.textContent = s; } catch (e) {}
+  try { document.getElementById('out').textContent = s; } catch (e) {}
+}
+</script>
+<script src="dyn.js"></script></head>
+<body>
+<div id="box" class="c b" data-k="v" style="color: red; margin-top: 3px;"><span class="inner">inner</span><span class="adj">a</span></div>
+<div id="box2"><b>x</b><i>y</i></div>
+<ul><li>one</li><li>two</li><li>three</li></ul>
+<input name="q" value="">
+<template><em>t</em></template>
+<pre id="out">FINAL pass 106/106 | </pre>
+
+<script>T('es.let_const', () => { let a = 1; const b = 2; return a + b === 3; });</script>
+<script>T('es.arrow_this', () => { var o = { v: 5, f() { return [1].map(() => this.v)[0]; } }; return o.f() === 5; });</script>
+<script>T('es.template', () => `a${1 + 1}b` === 'a2b');</script>
+<script>T('es.destructure', () => { const { a, b: [c, ...d], e = 9 } = { a: 1, b: [2, 3, 4] }; return a === 1 && c === 2 && d.length === 2 && e === 9; });</script>
+<script>T('es.spread_obj', () => { const o = { ...{ x: 1 }, y: 2 }; return o.x === 1 && o.y === 2; });</script>
+<script>T('es.class', () => { class A { constructor(x) { this.x = x; } get d() { return this.x * 2; } static s() { return 3; } } class B extends A { constructor() { super(4); } m() { return super.d; } } return new B().d === 8 && A.s() === 3 && new B().m() === 8; });</script>
+<script>T('es.class_fields', () => { class A { x = 1; static y = 2; #p = 3; gp() { return this.#p; } } return new A().x === 1 && A.y === 2 && new A().gp() === 3; });</script>
+<script>T('es.generator', () => { function* g() { yield 1; yield 2; } return [...g()].join() === '1,2'; });</script>
+<script>T('es.optional_chain', () => { const o = null; return o?.a?.b === undefined && (o ?? 7) === 7; });</script>
+<script>T('es.logical_assign', () => { let a = null; a ??= 3; let b = 0; b ||= 4; return a === 3 && b === 4; });</script>
+<script>T('es.bigint', () => (2n ** 64n).toString() === '18446744073709551616');</script>
+<script>T('es.symbol_iter', () => { const o = { *[Symbol.iterator]() { yield 7; } }; return [...o][0] === 7; });</script>
+<script>T('es.map_set', () => { const m = new Map([[1, 2]]); const s = new Set([1, 1, 2]); return m.get(1) === 2 && s.size === 2; });</script>
+<script>T('es.weakmap', () => { const w = new WeakMap(); const k = {}; w.set(k, 1); return w.get(k) === 1; });</script>
+<script>T('es.proxy', () => { const p = new Proxy({}, { get: (t, k) => k + '!' }); return p.a === 'a!'; });</script>
+<script>T('es.reflect', () => Reflect.ownKeys({ a: 1 }).length === 1);</script>
+<script>T('es.json', () => JSON.stringify(JSON.parse('{"a":[1,{"b":null}]}')) === '{"a":[1,{"b":null}]}');</script>
+<script>T('es.regex_named', () => /(?<y>\d{4})/.exec('in 2026').groups.y === '2026');</script>
+<script>T('es.regex_lookbehind', () => /(?<=\$)\d+/.exec('$42')[0] === '42');</script>
+<script>T('es.array_new', () => [1, [2, [3]]].flat(2).length === 3 && [1, 2, 3].at(-1) === 3 && [1, 2].findLast(x => x < 2) === 1 && [1].includes(1));</script>
+<script>T('es.object_entries', () => Object.fromEntries(Object.entries({ a: 1 })).a === 1);</script>
+<script>T('es.string_new', () => 'a-b-c'.replaceAll('-', '') === 'abc' && '5'.padStart(3, '0') === '005' && ' x '.trim() === 'x');</script>
+<script>T('es.tagged_tpl', () => { const t = (s, v) => s[0] + v; return t`a${1}` === 'a1'; });</script>
+<script>T('es.labels_finally', () => { let n = 0; outer: for (let i = 0; i < 3; i++) { for (let j = 0; j < 5; j++) { n++; continue outer; } } try { return n === 3; } finally { n = 0; } });</script>
+<script>T('es.bind_call_apply', () => { function f(a) { return this.v + a; } return f.call({ v: 1 }, 2) === 3 && f.apply({ v: 1 }, [3]) === 4 && f.bind({ v: 2 })(2) === 4; });</script>
+<script>T('es.new_function', () => new Function('a', 'return a*2')(3) === 6);</script>
+<script>T('es.eval', () => eval('1+2') === 3);</script>
+<script>T('es.date', () => new Date(Date.UTC(2026, 9, 7)).toISOString() === '2026-10-07T00:00:00.000Z');</script>
+<script>T('es.intl', () => typeof Intl === 'object' && new Intl.NumberFormat('en-US').format(1234.5) === '1,234.5');</script>
+<script>T('es.tolocale', () => (1234.5).toLocaleString('en-US') === '1,234.5');</script>
+<script>T('es.globalThis', () => globalThis === window);</script>
+<script>T('es.prototype_chain', () => { function F() {} F.prototype.m = function () { return 1; }; const o = Object.create(new F()); return o.m() === 1 && o instanceof F; });</script>
+<script>T('es.getter_define', () => { const o = {}; Object.defineProperty(o, 'x', { get() { return 9; } }); return o.x === 9; });</script>
+<script>T('es.freeze', () => { const o = Object.freeze({ a: 1 }); try { o.a = 2; } catch (e) {} return o.a === 1 && Object.isFrozen(o); });</script>
+<script>T('es.error_types', () => { try { null.x; } catch (e) { return e instanceof TypeError; } });</script>
+<script>T('es.typed_array', () => { const u = new Uint8Array([1, 2, 300]); return u[2] === 44 && new Float64Array(2).length === 2; });</script>
+<script>T('es.math', () => Math.max(1, 3) === 3 && Math.trunc(-1.5) === -1 && Math.hypot(3, 4) === 5);</script>
+<script>T('es.sort_stable', () => [3, 1, 2].sort((a, b) => a - b).join() === '1,2,3');</script>
+<script>T('es.async_fn_def', () => { async function f() { return 1; } return f() instanceof Promise; });</script>
+<script>T('web.structuredClone', () => structuredClone({ a: [1] }).a[0] === 1);</script>
+<script>T('web.textencoder', () => new TextEncoder().encode('é').length === 2);</script>
+<script>T('web.url', () => new URL('/x?a=1#h', 'https://e.com/p').href === 'https://e.com/x?a=1#h' && new URLSearchParams('a=1&b=2').get('b') === '2');</script>
+<script>T('web.atob', () => atob(btoa('hi')) === 'hi');</script>
+<script>T('web.console', () => { console.log('probe'); console.warn('w'); return true; });</script>
+<script>T('dom.getById', () => document.getElementById('box') !== null);</script>
+<script>T('dom.qs', () => document.querySelector('#box .inner').textContent === 'inner' && document.querySelectorAll('li').length === 3);</script>
+<script>T('dom.create_append', () => { const d = document.createElement('div'); d.id = 'made'; d.textContent = 'made'; document.body.appendChild(d); return document.getElementById('made') === d; });</script><div id="made">made</div>
+<script>T('dom.innerHTML', () => { const b = document.getElementById('box2'); b.innerHTML = '<b>x</b><i>y</i>'; return b.children.length === 2 && b.innerHTML === '<b>x</b><i>y</i>'; });</script>
+<script>T('dom.attr', () => { const b = document.getElementById('box'); b.setAttribute('data-k', 'v'); return b.getAttribute('data-k') === 'v' && b.dataset.k === 'v' && b.hasAttribute('data-k'); });</script>
+<script>T('dom.classList', () => { const c = document.getElementById('box').classList; c.add('a'); c.toggle('b'); c.remove('a'); return c.contains('b') && !c.contains('a'); });</script>
+<script>T('dom.style', () => { const b = document.getElementById('box'); b.style.color = 'red'; b.style.setProperty('margin-top', '3px'); return b.style.color === 'red' && b.style.marginTop === '3px'; });</script>
+<script>T('dom.tree_nav', () => { const l = document.querySelector('ul'); return l.firstElementChild.nextElementSibling.textContent === 'two' && l.children[2].parentNode === l && l.lastElementChild.previousElementSibling.textContent === 'two'; });</script>
+<script>T('dom.insert_remove', () => { const l = document.querySelector('ul'); const n = document.createElement('li'); n.textContent = 'zero'; l.insertBefore(n, l.firstChild); const ok = l.firstElementChild.textContent === 'zero'; l.removeChild(n); return ok && l.children.length === 3; });</script>
+<script>T('dom.closest_matches', () => { const i = document.querySelector('.inner'); return i.closest('#box') !== null && i.matches('.inner'); });</script>
+<script>T('dom.clone', () => document.getElementById('box').cloneNode(true).querySelector('.inner') !== null);</script>
+<script>T('dom.fragment', () => { const f = document.createDocumentFragment(); f.appendChild(document.createElement('p')); document.body.appendChild(f); return true; });</script><p></p>
+<script>T('dom.insertAdjacentHTML', () => { const b = document.getElementById('box'); b.insertAdjacentHTML('beforeend', '<span class="adj">a</span>'); return b.querySelector('.adj') !== null; });</script>
+<script>T('dom.append_remove_modern', () => { const d = document.createElement('div'); document.body.append(d, 'txt'); d.remove(); return !d.parentNode; });</script>txt
+<script>T('dom.textnode', () => { const t = document.createTextNode('t'); return t.nodeType === 3 && Node.TEXT_NODE === 3; });</script>
+<script>T('dom.template', () => document.querySelector('template').content.querySelector('em') !== null);</script>
+<script>T('dom.readyState', () => typeof document.readyState === 'string');</script>
+<script>T('dom.head_body', () => document.head.tagName === 'HEAD' && document.body.tagName === 'BODY' && document.documentElement.tagName === 'HTML');</script>
+<script>T('dom.input_value', () => { const i = document.querySelector('input'); i.value = 'typed'; return i.value === 'typed'; });</script>
+<script>T('dom.getComputedStyle', () => getComputedStyle(document.getElementById('box')).display === 'block');</script>
+<script>T('dom.rect', () => { const r = document.getElementById('box').getBoundingClientRect(); return r.width > 0; });</script>
+<script>T('dom.offsetWidth', () => document.getElementById('box').offsetWidth > 0);</script>
+<script>T('dom.event_dispatch', () => { let n = 0; const b = document.getElementById('box'); b.addEventListener('ping', e => { n += e.detail; }); b.dispatchEvent(new CustomEvent('ping', { detail: 2 })); return n === 2; });</script>
+<script>T('dom.event_bubble', () => { let n = 0; document.body.addEventListener('click', () => n++); document.querySelector('.inner').click(); return n === 1; });</script>
+<script>T('dom.removeListener', () => { let n = 0; const f = () => n++; const b = document.getElementById('box'); b.addEventListener('x', f); b.removeEventListener('x', f); b.dispatchEvent(new Event('x')); return n === 0; });</script>
+<script>T('dom.customElements', () => { class X extends HTMLElement { connectedCallback() { this.textContent = 'ce'; } } customElements.define('x-ce', X); return !!customElements.get('x-ce'); });</script>
+<script>T('dom.shadow', () => { const h = document.createElement('div'); const s = h.attachShadow({ mode: 'open' }); s.innerHTML = '<p>s</p>'; return h.shadowRoot === s; });</script>
+<script>T('dom.MutationObserver', () => typeof MutationObserver === 'function');</script>
+<script>T('dom.IntersectionObserver', () => typeof IntersectionObserver === 'function');</script>
+<script>T('dom.ResizeObserver', () => typeof ResizeObserver === 'function');</script>
+<script>T('dom.matchMedia', () => typeof matchMedia('(min-width: 100px)').matches === 'boolean');</script>
+<script>T('bom.localStorage', () => { localStorage.setItem('k', 'v'); return localStorage.getItem('k') === 'v'; });</script>
+<script>T('bom.sessionStorage', () => { sessionStorage.setItem('k', 'v'); return sessionStorage.getItem('k') === 'v'; });</script>
+<script>T('bom.cookie', () => { document.cookie = 'a=1'; return typeof document.cookie === 'string'; });</script>
+<script>T('bom.location', () => location.href.startsWith('http') && typeof location.pathname === 'string');</script>
+<script>T('bom.history', () => { history.pushState({}, '', '#pushed'); return location.hash === '#pushed'; });</script>
+<script>T('bom.navigator', () => typeof navigator.userAgent === 'string' && typeof navigator.language === 'string');</script>
+<script>T('bom.screen_inner', () => innerWidth > 0 && innerHeight > 0);</script>
+<script>T('bom.raf', () => typeof requestAnimationFrame === 'function');</script>
+<script>T('net.fetch_type', () => typeof fetch === 'function');</script>
+<script>T('net.xhr_type', () => typeof XMLHttpRequest === 'function');</script>
+<script>T('net.FormData', () => { const f = new FormData(); f.append('a', '1'); return f.get('a') === '1'; });</script>
+<script>T('net.AbortController', () => typeof AbortController === 'function');</script>
+<script>T('net.WebSocket', () => typeof WebSocket === 'function');</script>
+<script>
+var micro = A('async.microtask_order');
+var order = [];
+Promise.resolve().then(() => order.push('micro'));
+setTimeout(() => { order.push('macro'); micro(order.join() === 'sync,micro,macro'); }, 0);
+order.push('sync');
+</script>
+<script>
+var aw = A('async.await');
+(async function () { const v = await new Promise(r => setTimeout(() => r(5), 10)); aw(v === 5); })();
+</script>
+<script>
+var to = A('async.setTimeout'); setTimeout(() => to(1), 20);
+var iv = A('async.setInterval'); var ivn = 0; var ivh = setInterval(() => { if (++ivn === 3) { clearInterval(ivh); iv(1); } }, 5);
+var raf = A('async.raf_fires'); try { requestAnimationFrame(() => raf(1)); } catch (e) { R['async.raf_fires'] = 'E:' + e.message; }
+var qm = A('async.queueMicrotask'); try { queueMicrotask(() => qm(1)); } catch (e) { R['async.queueMicrotask'] = 'E:' + e.message; }
+var dcl = A('event.DOMContentLoaded'); document.addEventListener('DOMContentLoaded', () => dcl(1));
+var ld = A('event.load'); window.addEventListener('load', () => ld(1));
+var ldo = A('event.onload'); window.onload = () => ldo(1);
+var mo = A('async.MutationObserver_fires'); try { new MutationObserver(() => mo(1)).observe(document.body, { childList: true }); setTimeout(() => document.body.appendChild(document.createElement('i')), 1); } catch (e) { R['async.MutationObserver_fires'] = 'E:' + e.message; }
+</script>
+<script>
+var fj = A('net.fetch_json'); try { fetch('data.json').then(r => r.json()).then(j => fj(j.ok === 1)).catch(e => { R['net.fetch_json'] = 'E:' + e; }); } catch (e) { R['net.fetch_json'] = 'E:' + e.message; }
+var ft = A('net.fetch_text'); try { fetch('data.json').then(r => { return r.ok && r.status === 200 ? r.text() : ''; }).then(t => ft(t.indexOf('ok') >= 0)).catch(e => { R['net.fetch_text'] = 'E:' + e; }); } catch (e) { R['net.fetch_text'] = 'E:' + e.message; }
+var xh = A('net.xhr_get'); try { const x = new XMLHttpRequest(); x.open('GET', 'data.json'); x.onload = () => xh(x.status === 200 && JSON.parse(x.responseText).ok === 1); x.send(); } catch (e) { R['net.xhr_get'] = 'E:' + e.message; }
+var fp = A('net.fetch_post'); try { fetch('data.json', { method: 'POST', body: 'a=1' }).then(r => fp(r.status > 0)).catch(e => { R['net.fetch_post'] = 'E:' + String(e).slice(0, 30); }); } catch (e) { R['net.fetch_post'] = 'E:' + e.message; }
+var dyn = A('load.dynamic_script'); window.__dyn = () => dyn(1); try { const s = document.createElement('script'); s.src = 'dyn.js'; document.head.appendChild(s); } catch (e) { R['load.dynamic_script'] = 'E:' + e.message; }
+</script>
+<script src="ext.js"></script>
+<script defer="" src="deferred.js"></script>
+<script type="module">window.R['load.module_inline'] = 1;</script>
+<script>EXPECT.push('load.external'); EXPECT.push('load.defer'); EXPECT.push('load.module_inline');
+report('SYNC'); setTimeout(() => report('FINAL'), 300);</script>
+
+<i></i></body></html>

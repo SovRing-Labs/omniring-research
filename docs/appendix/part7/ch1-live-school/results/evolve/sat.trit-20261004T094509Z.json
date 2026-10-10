@@ -1,0 +1,712 @@
+{
+ "domain": "sat.trit",
+ "active_before": "lowest",
+ "base_replay_mean": 16.468,
+ "base_holdout_mean": 15.52,
+ "candidates": 46,
+ "kept": {
+  "strategy": {
+   "id": "evo-c325faaf",
+   "w": [
+    0.31,
+    0.1,
+    1.99,
+    0.8
+   ],
+   "phase": "majority"
+  },
+  "replay_mean": [
+   16.468,
+   11.877
+  ],
+  "holdout_mean": [
+   15.52,
+   12.005
+  ]
+ },
+ "dry_run": false,
+ "replay_sha256": "35e124e06c7970c6fc6039454a66be8e2bb4dfcf3ac334ec5849082a1abefdcb",
+ "log": [
+  {
+   "gen": 0,
+   "strategy": "most_frequent",
+   "mean_steps": 14.645,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "dlis",
+    "w": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 14.477,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "jeroslow_wang",
+    "w": [
+     0,
+     1,
+     0,
+     0
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 14.252,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "moms",
+    "w": [
+     0,
+     0,
+     1,
+     0
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 13.775,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "jw_majority",
+    "w": [
+     0,
+     1,
+     0,
+     0
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.238,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "moms_majority",
+    "w": [
+     0.1,
+     0,
+     1,
+     0
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.012,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "evo-f1ef1196",
+    "w": [
+     0.0,
+     0.42,
+     1.0,
+     0.0
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 13.688,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "evo-59dfcbec",
+    "w": [
+     0.77,
+     0.0,
+     0.55,
+     0.0
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 14.262,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "evo-69890472",
+    "w": [
+     0.13,
+     0.07,
+     0.0,
+     0.28
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 16.008,
+   "gate": "pass"
+  },
+  {
+   "gen": 0,
+   "strategy": {
+    "id": "evo-b4605e09",
+    "w": [
+     0.0,
+     0.0,
+     0.0,
+     0.77
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 17.445,
+   "gate": "pass"
+  },
+  {
+   "gen": 1,
+   "strategy": {
+    "id": "evo-7574f1be",
+    "w": [
+     0.38,
+     0.44,
+     0.19,
+     0.0
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.275,
+   "gate": "pass"
+  },
+  {
+   "gen": 1,
+   "strategy": {
+    "id": "evo-f8cf230d",
+    "w": [
+     0.0,
+     0.76,
+     0.78,
+     0.0
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.012,
+   "gate": "pass"
+  },
+  {
+   "gen": 1,
+   "strategy": {
+    "id": "evo-398b262d",
+    "w": [
+     1.59,
+     0.0,
+     1.25,
+     0.0
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.238,
+   "gate": "pass"
+  },
+  {
+   "gen": 1,
+   "strategy": {
+    "id": "evo-cba10ae1",
+    "w": [
+     0.1,
+     0.0,
+     0.47,
+     0.17
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 14.268,
+   "gate": "pass"
+  },
+  {
+   "gen": 1,
+   "strategy": {
+    "id": "evo-c4efd104",
+    "w": [
+     0.28,
+     0.0,
+     1.16,
+     0.0
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 13.752,
+   "gate": "pass"
+  },
+  {
+   "gen": 1,
+   "strategy": {
+    "id": "evo-880ca9e1",
+    "w": [
+     0.19,
+     0.07,
+     0.49,
+     0.5
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.152,
+   "gate": "pass"
+  },
+  {
+   "gen": 2,
+   "strategy": {
+    "id": "evo-e2554f0d",
+    "w": [
+     0.99,
+     0.0,
+     0.73,
+     0.22
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 14.335,
+   "gate": "pass"
+  },
+  {
+   "gen": 2,
+   "strategy": {
+    "id": "evo-24aaf1a0",
+    "w": [
+     0.14,
+     0.54,
+     1.78,
+     0.0
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.012,
+   "gate": "pass"
+  },
+  {
+   "gen": 2,
+   "strategy": {
+    "id": "evo-84bd06ea",
+    "w": [
+     0.56,
+     0.23,
+     1.38,
+     1.02
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.93,
+   "gate": "pass"
+  },
+  {
+   "gen": 2,
+   "strategy": {
+    "id": "evo-12859079",
+    "w": [
+     0.0,
+     0.15,
+     1.66,
+     0.21
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.92,
+   "gate": "pass"
+  },
+  {
+   "gen": 2,
+   "strategy": {
+    "id": "evo-659d9b26",
+    "w": [
+     0.03,
+     0.27,
+     1.27,
+     0.01
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.98,
+   "gate": "pass"
+  },
+  {
+   "gen": 2,
+   "strategy": {
+    "id": "evo-bc8e3126",
+    "w": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 14.48,
+   "gate": "pass"
+  },
+  {
+   "gen": 3,
+   "strategy": {
+    "id": "evo-c325faaf",
+    "w": [
+     0.31,
+     0.1,
+     1.99,
+     0.8
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.877,
+   "gate": "pass"
+  },
+  {
+   "gen": 3,
+   "strategy": {
+    "id": "evo-a0f7b790",
+    "w": [
+     0.0,
+     0.73,
+     1.29,
+     0.0
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.012,
+   "gate": "pass"
+  },
+  {
+   "gen": 3,
+   "strategy": {
+    "id": "evo-c8bdd8ba",
+    "w": [
+     0.21,
+     0.96,
+     1.78,
+     0.14
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.93,
+   "gate": "pass"
+  },
+  {
+   "gen": 3,
+   "strategy": {
+    "id": "evo-9773b368",
+    "w": [
+     0.0,
+     0.0,
+     2.76,
+     0.28
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 13.787,
+   "gate": "pass"
+  },
+  {
+   "gen": 3,
+   "strategy": {
+    "id": "evo-6aa50f77",
+    "w": [
+     0.07,
+     0.0,
+     1.86,
+     0.9
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.988,
+   "gate": "pass"
+  },
+  {
+   "gen": 3,
+   "strategy": {
+    "id": "evo-d572c6d5",
+    "w": [
+     0.15,
+     0.0,
+     2.43,
+     0.01
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.98,
+   "gate": "pass"
+  },
+  {
+   "gen": 4,
+   "strategy": {
+    "id": "evo-c43682bd",
+    "w": [
+     0.3,
+     0.14,
+     2.28,
+     1.04
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.925,
+   "gate": "pass"
+  },
+  {
+   "gen": 4,
+   "strategy": {
+    "id": "evo-034a61e2",
+    "w": [
+     0.0,
+     0.39,
+     2.33,
+     0.54
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.953,
+   "gate": "pass"
+  },
+  {
+   "gen": 4,
+   "strategy": {
+    "id": "evo-d5ac30c7",
+    "w": [
+     0.0,
+     0.25,
+     1.64,
+     0.23
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 13.832,
+   "gate": "pass"
+  },
+  {
+   "gen": 4,
+   "strategy": {
+    "id": "evo-dd8e3fa7",
+    "w": [
+     0.17,
+     0.2,
+     2.06,
+     0.68
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.957,
+   "gate": "pass"
+  },
+  {
+   "gen": 4,
+   "strategy": {
+    "id": "evo-756bb5d7",
+    "w": [
+     0.63,
+     0.0,
+     1.33,
+     1.03
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.922,
+   "gate": "pass"
+  },
+  {
+   "gen": 4,
+   "strategy": {
+    "id": "evo-892ab7c1",
+    "w": [
+     0.0,
+     0.16,
+     2.49,
+     1.33
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.035,
+   "gate": "pass"
+  },
+  {
+   "gen": 5,
+   "strategy": {
+    "id": "evo-3001ff0b",
+    "w": [
+     0.05,
+     0.48,
+     2.69,
+     1.21
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.033,
+   "gate": "pass"
+  },
+  {
+   "gen": 5,
+   "strategy": {
+    "id": "evo-d7eb9cfa",
+    "w": [
+     0.08,
+     0.22,
+     2.31,
+     0.89
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.96,
+   "gate": "pass"
+  },
+  {
+   "gen": 5,
+   "strategy": {
+    "id": "evo-5cf78459",
+    "w": [
+     0.0,
+     0.0,
+     2.46,
+     1.18
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.05,
+   "gate": "pass"
+  },
+  {
+   "gen": 5,
+   "strategy": {
+    "id": "evo-ca8edf9b",
+    "w": [
+     0.0,
+     0.0,
+     2.13,
+     0.17
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.965,
+   "gate": "pass"
+  },
+  {
+   "gen": 5,
+   "strategy": {
+    "id": "evo-104dcfb3",
+    "w": [
+     0.0,
+     0.37,
+     1.4,
+     2.12
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.367,
+   "gate": "pass"
+  },
+  {
+   "gen": 5,
+   "strategy": {
+    "id": "evo-6f326ea7",
+    "w": [
+     0.25,
+     0.41,
+     1.74,
+     2.52
+    ],
+    "phase": "true"
+   },
+   "mean_steps": 15.48,
+   "gate": "pass"
+  },
+  {
+   "gen": 6,
+   "strategy": {
+    "id": "evo-4b78676f",
+    "w": [
+     1.58,
+     0.0,
+     2.77,
+     0.02
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 12.092,
+   "gate": "pass"
+  },
+  {
+   "gen": 6,
+   "strategy": {
+    "id": "evo-b948576a",
+    "w": [
+     1.28,
+     1.33,
+     2.16,
+     0.81
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.902,
+   "gate": "pass"
+  },
+  {
+   "gen": 6,
+   "strategy": {
+    "id": "evo-bb312dc8",
+    "w": [
+     0.13,
+     0.0,
+     2.25,
+     0.88
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.967,
+   "gate": "pass"
+  },
+  {
+   "gen": 6,
+   "strategy": {
+    "id": "evo-11d57426",
+    "w": [
+     0.0,
+     1.03,
+     2.22,
+     1.27
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.928,
+   "gate": "pass"
+  },
+  {
+   "gen": 6,
+   "strategy": {
+    "id": "evo-2eebec51",
+    "w": [
+     0.76,
+     0.28,
+     2.41,
+     1.55
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.89,
+   "gate": "pass"
+  },
+  {
+   "gen": 6,
+   "strategy": {
+    "id": "evo-052eef1a",
+    "w": [
+     0.0,
+     0.04,
+     2.38,
+     0.13
+    ],
+    "phase": "majority"
+   },
+   "mean_steps": 11.92,
+   "gate": "pass"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+soft-RRNS triangulation: 7369 failing boxes · σ 4.0px σ_miss 60.0px · margin 0.5
+  SPLIT   2445 → committed  2171 (89%) · the box itself 698 · carried (fits every view) 620 · frame vs Chrome's target height 365 · ABSTAIN 274 · from below (frame bottom) 221 · from above (frame top / previous) 125
+  DEFECT  2160 → committed  1802 (83%) · the box itself 1705 · ABSTAIN 358 · carried (fits every view) 63 · frame vs Chrome's target height 8 · from above (frame top / previous) 7 · from below (frame bottom) 6
+  FIT     2764 → committed  2764 (100%) · carried (fits every view) 2764
+  VERIFY — the measurement each named source predicts, named boxes vs all failing boxes:
+    previous sibling                             n    40 · gap after the previous sibling differs: 12% (all failing 18%)
+    next sibling                                 n    75 · gap before the next sibling differs: 25% (all failing 18%)
+    frame's own bottom (height from elsewhere)   n    40 · frame height differs: 90% (all failing 32%)
+    frame vs Chrome's target height              n   373 · frame height differs: 87% (all failing 32%)
+    from below (frame bottom)                    n   227 · frame height differs: 70% (all failing 32%)
+    from above (frame top / previous)            n   132 · gap after the previous sibling differs: 12% (all failing 18%)
+    the box itself                               n  2403 · own width or height differs: 81% (all failing 54%)
+    carried (fits every view)                    n  3447 · own size right (only displaced): 74% (all failing 46%)

@@ -1,0 +1,112 @@
+{
+ "gate": "CYCLONE-ARRAY C2a resident session",
+ "bin_sha256": "bee93aeef3f9",
+ "cases": [
+  {
+   "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+   "n": 1048576,
+   "pass_pairs": 1,
+   "passes_per_step": 2,
+   "steps": 1,
+   "buf0_sha256": "7d590fda7347484688154454c16e2620fae6043d912ccabea411494db4c6c3f7",
+   "buf1_sha256": "0cb179d4c8853af3df1e7d239fb3574faef0cdfea42758159e63288eb4a22852",
+   "device_local": true,
+   "bytes": 8388608,
+   "passes": 2,
+   "setup_ms": 18.392,
+   "first_step_ms": 8.692,
+   "wall_ms": 8.663,
+   "ms_per_step": 8.6627,
+   "gpu_ms_last": 7.8967,
+   "ms_per_pass": 4.3313,
+   "mismatched_words": {
+    "0": 0,
+    "1": 0
+   }
+  },
+  {
+   "device": "llvmpipe (LLVM 20.1.2, 256 bits)",
+   "n": 1048576,
+   "pass_pairs": 50,
+   "passes_per_step": 100,
+   "steps": 20,
+   "buf0_sha256": "07a8ef24ed4e670cf6f8874cbe81f63c83d203c2e7530276ff146a85801b947c",
+   "buf1_sha256": "f13f1a51afb5800f28afb26da26e66ed29e03a0c113b97e5a936bc7387f8db4c",
+   "device_local": true,
+   "bytes": 8388608,
+   "passes": 100,
+   "setup_ms": 40.846,
+   "first_step_ms": 339.658,
+   "wall_ms": 5458.811,
+   "ms_per_step": 272.9405,
+   "gpu_ms_last": 264.4601,
+   "ms_per_pass": 2.7294,
+   "mismatched_words": {
+    "0": 0,
+    "1": 0
+   }
+  },
+  {
+   "device": "llvmpipe",
+   "one_shot": true,
+   "setup_ms": 9.1,
+   "wall_ms": 3.368,
+   "gpu_ms": 2.7372,
+   "ms_per_pass": 12.468
+  },
+  {
+   "device": "Intel(R) UHD Graphics 620 (WHL GT2)",
+   "n": 1048576,
+   "pass_pairs": 1,
+   "passes_per_step": 2,
+   "steps": 1,
+   "buf0_sha256": "7d590fda7347484688154454c16e2620fae6043d912ccabea411494db4c6c3f7",
+   "buf1_sha256": "0cb179d4c8853af3df1e7d239fb3574faef0cdfea42758159e63288eb4a22852",
+   "device_local": true,
+   "bytes": 8388608,
+   "passes": 2,
+   "setup_ms": 16.965,
+   "first_step_ms": 1.537,
+   "wall_ms": 1.502,
+   "ms_per_step": 1.5018,
+   "gpu_ms_last": 0.7898,
+   "ms_per_pass": 0.7509,
+   "mismatched_words": {
+    "0": 0,
+    "1": 0
+   }
+  },
+  {
+   "device": "Intel(R) UHD Graphics 620 (WHL GT2)",
+   "n": 1048576,
+   "pass_pairs": 50,
+   "passes_per_step": 100,
+   "steps": 20,
+   "buf0_sha256": "07a8ef24ed4e670cf6f8874cbe81f63c83d203c2e7530276ff146a85801b947c",
+   "buf1_sha256": "f13f1a51afb5800f28afb26da26e66ed29e03a0c113b97e5a936bc7387f8db4c",
+   "device_local": true,
+   "bytes": 8388608,
+   "passes": 100,
+   "setup_ms": 12.228,
+   "first_step_ms": 44.508,
+   "wall_ms": 895.897,
+   "ms_per_step": 44.7948,
+   "gpu_ms_last": 45.0083,
+   "ms_per_pass": 0.4479,
+   "mismatched_words": {
+    "0": 0,
+    "1": 0
+   }
+  },
+  {
+   "device": "Intel",
+   "one_shot": true,
+   "setup_ms": 4.352,
+   "wall_ms": 1.645,
+   "gpu_ms": 0.8802,
+   "ms_per_pass": 5.997
+  }
+ ],
+ "fails": [],
+ "pass": true
+}

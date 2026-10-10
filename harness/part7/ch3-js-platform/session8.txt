@@ -1,0 +1,7 @@
+# BROWSER-BODY-0 step 8 (JS-0): load-time scripts, onclick toggle, a listener that cancels a link, then a plain link
+open http://127.0.0.1:8977/index.html
+shot results/browser-body-0/js0-load.png
+click 30 98
+click 50 238
+shot results/browser-body-0/js0-clicks.png
+click 150 238

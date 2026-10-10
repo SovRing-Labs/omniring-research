@@ -1,0 +1,65 @@
+{
+ "gate": "D2: the harness decode through the array server's decode service (4 clients, one GPU context) vs the CPU engine",
+ "clients": [
+  {
+   "rows": 24,
+   "steps": 1536,
+   "top1_agree": 1536,
+   "top1_agree_rate": 1.0,
+   "margin_absdiff_max": 0.06406999999999918,
+   "logit_absdiff_max": 0.0485799999999994,
+   "rows_with_identical_exits": 24,
+   "pass": true,
+   "client": 0
+  },
+  {
+   "rows": 24,
+   "steps": 1536,
+   "top1_agree": 1536,
+   "top1_agree_rate": 1.0,
+   "margin_absdiff_max": 0.12930999999999981,
+   "logit_absdiff_max": 1.22926,
+   "rows_with_identical_exits": 0,
+   "pass": true,
+   "client": 1
+  },
+  {
+   "rows": 24,
+   "steps": 1536,
+   "top1_agree": 1536,
+   "top1_agree_rate": 1.0,
+   "margin_absdiff_max": 0.06662000000000035,
+   "logit_absdiff_max": 0.034270000000000245,
+   "rows_with_identical_exits": 0,
+   "pass": true,
+   "client": 2
+  },
+  {
+   "rows": 24,
+   "steps": 1536,
+   "top1_agree": 1536,
+   "top1_agree_rate": 1.0,
+   "margin_absdiff_max": 0.06406999999999918,
+   "logit_absdiff_max": 0.05446999999999935,
+   "rows_with_identical_exits": 0,
+   "pass": true,
+   "client": 3
+  }
+ ],
+ "server": {
+  "decode_steps": 2923,
+  "decode_stations_per_step": 2.102,
+  "decode_ms": 116.908,
+  "steps": 1,
+  "slots": 4,
+  "mean_active": 4.0,
+  "gpu_ms": 353.391,
+  "step_io_ms": 535.833,
+  "bytes_resident": 518657576,
+  "device": "NVIDIA A40"
+ },
+ "wall_s": 358.0,
+ "cpu_fallbacks": 0,
+ "server_decode_off": 0,
+ "pass": true
+}

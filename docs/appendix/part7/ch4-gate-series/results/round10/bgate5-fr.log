@@ -1,0 +1,2 @@
+{"base":[20650,3045],"cand":[20718,3045],"gained":[76,0],"lost":[8,0],"pages":[{"gained":8,"holdout":false,"lost":0,"lost_nodes":[],"page":"bbc-com-news"},{"gained":68,"holdout":false,"lost":8,"lost_nodes":[2843,2845,3396,3398,4219,4221,4801,4803],"page":"theguardian-com-international"}],"pass":false,"sets":"1ee26bbc9aa4"}
+binary-gate vs results/agree-snapshot-after-ur.json: replay 20650 → 20718 · holdout 3045 → 3045 · lost 8/0 · gained 76/0 → FAIL (1.5s)

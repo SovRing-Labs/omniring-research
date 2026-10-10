@@ -1,0 +1,7 @@
+fifo    single p50    1381 p99    2701 ms (n=108) | batch 14.1 texts/s | {'B': 18, 's': 108}
+rhythm  single p50     280 p99    1250 ms (n=111) | batch 12.0 texts/s | {'B': 120, 's': 111}
+rhythm  single p50     267 p99     928 ms (n=124) | batch 12.8 texts/s | {'B': 128, 's': 124}
+fifo    single p50    1373 p99    3647 ms (n=107) | batch 14.4 texts/s | {'B': 19, 's': 107}
+MEDIANS: {"fifo": {"p99": 3174.059838577814, "p50": 1377.0417280029505, "batch_tps": 14.25598598844313}, "rhythm": {"p99": 1089.418512895355, "p50": 273.6545547377318, "batch_tps": 12.38700440604692}}
+B3 mismatches 0/60
+BELT-CPP: {'B1': True, 'B2': False, 'B3': True}

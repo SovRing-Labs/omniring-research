@@ -1,0 +1,13 @@
+domain: 4247 boxes named 'the box itself' (soft-RRNS) · truth (grid items the fix repaired): 152 · in domain 152
+  range theguardian-com-international:856 <div> Block<Grid fracture w -1030.0 x -90.0 h +1084.2 y +0.0 → trits (-1, -1, 1, 0)
+    K1 frame+display repeats   331 · truth recall 75/152 = 0.493 · precision 0.227 · pages [('theguardian-com-in', 156), ('bbc-com-news', 52), ('blog-codinghorror-', 50), ('ebay-com', 26)]
+    K2 +h trit       repeats   248 · truth recall 37/152 = 0.243 · precision 0.149 · pages [('theguardian-com-in', 105), ('blog-codinghorror-', 49), ('bbc-com-news', 46), ('ebay-com', 25)]
+    K3 +all trits    repeats    35 · truth recall 1/152 = 0.007 · precision 0.029 · pages [('theguardian-com-in', 24), ('blog-codinghorror-', 11)]
+  range theguardian-com-international:5157 <li> Flex<Grid fracture w -188.6 x +125.7 h +140.3 y +0.0 → trits (-1, 1, 1, 0)
+    K1 frame+display repeats   156 · truth recall 57/152 = 0.375 · precision 0.365 · pages [('theguardian-com-in', 104), ('ebay-com', 22), ('blog-codinghorror-', 14), ('usa-gov', 11)]
+    K2 +w trit       repeats   131 · truth recall 57/152 = 0.375 · precision 0.435 · pages [('theguardian-com-in', 104), ('blog-codinghorror-', 13), ('ebay-com', 12), ('developer-mozilla-', 2)]
+    K3 +all trits    repeats    26 · truth recall 26/152 = 0.171 · precision 1.000 · pages [('theguardian-com-in', 26)]
+  range theguardian-com-international:4937 <li> Flex<Grid fracture w -209.6 x +125.7 h -366.7 y +0.0 → trits (-1, 1, -1, 0)
+    K1 frame+display repeats   156 · truth recall 57/152 = 0.375 · precision 0.365 · pages [('theguardian-com-in', 104), ('ebay-com', 22), ('blog-codinghorror-', 14), ('usa-gov', 11)]
+    K2 +h trit       repeats    21 · truth recall 4/152 = 0.026 · precision 0.190 · pages [('usa-gov', 11), ('theguardian-com-in', 10)]
+    K3 +all trits    repeats     1 · truth recall 1/152 = 0.007 · precision 1.000 · pages [('theguardian-com-in', 1)]

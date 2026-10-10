@@ -1,0 +1,14 @@
+# BROWSER-BODY-0 step 5: find (count + next), reader toggle, zoom
+open https://en.wikipedia.org/wiki/Ternary_numeral_system
+find Setun
+shot results/browser-body-0/find.png
+find
+find
+read
+shot results/browser-body-0/reader.png
+read
+bigger
+bigger
+shot results/browser-body-0/zoom120.png
+smaller
+smaller

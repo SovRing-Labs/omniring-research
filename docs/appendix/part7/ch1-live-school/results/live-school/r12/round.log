@@ -1,0 +1,57 @@
+== round · core results/live-r11/h0 · 8 harnesses × 4 threads · bin 9d4c5ab7f209 · lib 361c4c46f5ea · 2026-10-08T07:40:35+00:00
+   pod-tw live-r12-h0 RUN 2m00s 21% eta 6m58s cpu61% ······················▲· +4/0:55/-0 seq=59 last+: "[day 2] step 40/195 · pass 2 · active 6
+   pod-tw live-r12-h1 RUN 2m00s 20% eta 7m16s cpu382% ······················▲· +4/0:56/-0 seq=60 last+: "[day 2] step 40/196 · pass 2 · active 
+   pod-tw live-r12-h2 RUN 2m00s 20% eta 7m32s cpu382% ·····················▲·· +4/0:56/-0 seq=60 last+: "[day 2] step 40/196 · pass 2 · active 
+   pod-tw live-r12-h3 RUN 2m00s 21% eta 7m29s cpu383% ·····················▲·· +4/0:56/-0 seq=60 last+: "[day 2] step 40/195 · pass 2 · active 
+   pod-tw live-r12-h4 RUN 2m00s 21% eta 7m14s cpu379% ·····················▲·· +4/0:56/-0 seq=60 last+: "[day 2] step 40/195 · pass 2 · active 
+   pod-tw live-r12-h5 RUN 2m00s 20% eta 7m16s cpu382% ······················▲· +4/0:56/-0 seq=60 last+: "[day 2] step 40/196 · pass 2 · active 
+   pod-tw live-r12-h6 RUN 2m00s 20% eta 7m16s cpu380% ······················▲· +4/0:56/-0 seq=60 last+: "[day 2] step 40/196 · pass 2 · active 
+   pod-tw live-r12-h7 RUN 2m00s 20% eta 7m32s cpu379% ·····················▲·· +4/0:56/-0 seq=60 last+: "[day 2] step 40/196 · pass 2 · active 
+   pod-tw live-r12-h0 RUN 4m00s 2% eta 5m27s cpu383% ··············▲▲········ +9/0:111/-0 seq=120 last+: "[par] h0 day 4: merged core loaded aft
+   pod-tw live-r12-h1 RUN 4m00s 2% eta 5m28s cpu384% ··············▲▲········ +9/0:111/-0 seq=120 last+: "[par] h1 day 4: merged core loaded aft
+   pod-tw live-r12-h2 RUN 4m00s 2% eta 5m28s cpu377% ···············▲········ +8/0:112/-0 seq=120 last+: "[par] h2 day 4: merged core loaded afte
+   pod-tw live-r12-h3 RUN 4m00s 2% eta 5m27s cpu381% ···············▲········ +8/0:112/-0 seq=120 last+: "[par] h3 day 4: merged core loaded afte
+   pod-tw live-r12-h4 RUN 4m00s 2% eta 5m27s cpu377% ··············▲▲········ +9/0:111/-0 seq=120 last+: "[par] h4 day 4: merged core loaded aft
+   pod-tw live-r12-h5 RUN 4m00s 2% eta 5m27s cpu383% ··············▲▲········ +9/0:111/-0 seq=120 last+: "[par] h5 day 4: merged core loaded aft
+   pod-tw live-r12-h6 RUN 4m00s 2% eta 5m27s cpu383% ···············▲········ +8/0:112/-0 seq=120 last+: "[par] h6 day 4: merged core loaded afte
+   pod-tw live-r12-h7 RUN 4m00s 2% eta 5m27s cpu384% ··············▲▲········ +9/0:111/-0 seq=120 last+: "[par] h7 day 4: merged core loaded aft
+   pod-tw live-r12-h0 RUN 6m00s 3% eta 3m28s cpu383% ·········▲▲·▲··········· +15/0:165/-0 seq=180 last+: "[wake] step 125 out 0.791 | blocks 0
+   pod-tw live-r12-h1 RUN 6m00s 3% eta 3m28s cpu383% ·········▲▲·▲··········· +15/0:165/-0 seq=180 last+: "[wake] step 125 out 0.817 | blocks 0
+   pod-tw live-r12-h2 RUN 6m00s 3% eta 3m28s cpu376% ·········▲▲·▲··········· +13/0:167/-0 seq=180 last+: "[wake] step 125 out 0.830 | blocks 0
+   pod-tw live-r12-h3 RUN 6m01s 3% eta 3m27s cpu383% ·········▲▲·▲··········· +14/0:166/-0 seq=180 last+: "[wake] step 125 out 0.750 | blocks 0
+   pod-tw live-r12-h4 RUN 6m01s 3% eta 3m27s cpu377% ·········▲▲·▲··········· +14/0:166/-0 seq=180 last+: "[wake] step 125 out 0.738 | blocks 0
+   pod-tw live-r12-h5 RUN 6m01s 3% eta 3m27s cpu377% ·········▲▲·▲··········· +15/0:165/-0 seq=180 last+: "[wake] step 125 out 0.768 | blocks 0
+   pod-tw live-r12-h6 RUN 6m01s 3% eta 3m27s cpu383% ·········▲▲·▲··········· +14/0:166/-0 seq=180 last+: "[wake] step 125 out 0.811 | blocks 0
+   pod-tw live-r12-h7 RUN 6m01s 3% eta 3m27s cpu350% ·········▲▲·▲··········· +14/0:166/-0 seq=180 last+: "[wake] step 125 out 0.747 | blocks 0
+   pod-tw live-r12-h0 RUN 8m01s 4% eta 1m28s cpu376% ·····▲······▲··········· +20/0:220/-0 seq=240 last+: "[wake] step 175 out 0.647 | blocks 1.
+   pod-tw live-r12-h1 RUN 8m01s 4% eta 1m28s cpu381% ···▲·▲······▲··········· +21/0:219/-0 seq=240 last+: "[wake] step 175 out 0.737 | blocks 1
+   pod-tw live-r12-h2 RUN 8m01s 4% eta 1m27s cpu379% ·····▲······▲··········· +18/0:222/-0 seq=240 last+: "[wake] step 175 out 0.665 | blocks 1.
+   pod-tw live-r12-h3 RUN 8m01s 4% eta 1m27s cpu382% ····▲▲·······▲·········· +19/0:221/-0 seq=240 last+: "[wake] step 175 out 0.588 | blocks 1
+   pod-tw live-r12-h4 RUN 8m01s 4% eta 1m27s cpu382% ·····▲······▲··········· +19/0:221/-0 seq=240 last+: "[wake] step 175 out 0.634 | blocks 0.
+   pod-tw live-r12-h5 RUN 8m01s 4% eta 1m27s cpu388% ····▲▲······▲··········· +21/0:219/-0 seq=240 last+: "[wake] step 175 out 0.592 | blocks 1
+   pod-tw live-r12-h6 RUN 8m01s 4% eta 1m27s cpu383% ····▲▲······▲··········· +20/0:220/-0 seq=240 last+: "[wake] step 175 out 0.583 | blocks 0
+   pod-tw live-r12-h7 RUN 8m01s 4% eta 1m27s cpu382% ·····▲······▲··········· +18/0:222/-0 seq=240 last+: "[wake] step 175 out 0.666 | blocks 0.
+== pod tw nudges (live-r12)
+07:50:06 TW-EXIT live-r12-h2 exit=0 state=DONE elapsed=9m30s progress=5.1% (learned) 10/196 +22/0:263/-0
+07:50:06 TW-EXIT live-r12-h5 exit=0 state=DONE elapsed=9m30s progress=5.1% (learned) 10/196 +25/0:260/-0
+07:50:06 TW-EXIT live-r12-h3 exit=0 state=DONE elapsed=9m30s progress=5.1% (learned) 10/195 +23/0:262/-0
+07:50:06 TW-EXIT live-r12-h4 exit=0 state=DONE elapsed=9m30s progress=5.1% (learned) 10/195 +23/0:262/-0
+07:50:06 TW-EXIT live-r12-h0 exit=0 state=DONE elapsed=9m30s progress=5.1% (learned) 10/195 +24/0:261/-0
+07:50:06 TW-EXIT live-r12-h1 exit=0 state=DONE elapsed=9m30s progress=5.1% (learned) 10/196 +25/0:260/-0
+07:50:06 TW-EXIT live-r12-h7 exit=0 state=DONE elapsed=9m30s progress=5.1% (learned) 10/196 +22/0:263/-0
+07:50:06 TW-EXIT live-r12-h6 exit=0 state=DONE elapsed=9m30s progress=5.1% (learned) 10/196 +24/0:261/-0
+== harnesses done 2026-10-08T07:50:06+00:00
+   h0: exit 0 · 10 merges
+   h1: exit 0 · 10 merges
+   h2: exit 0 · 10 merges
+   h3: exit 0 · 10 merges
+   h4: exit 0 · 10 merges
+   h5: exit 0 · 10 merges
+   h6: exit 0 · 10 merges
+   h7: exit 0 · 10 merges
+   days 10 · held-out / canary [(10, 0.616, 0.523)]
+SKILL-EVAL 145 skills · 72 at >= 0.85
+ROUND-SKILLS 145 72
+ramkit soup r12: 3 cores → results/soup-r12 (score it: skill-eval-par.sh results/soup-r12 <heldout> results/soup-r12/skill.json)
+ramkit memdetect: {"answers": 680, "full_match": 147, "full_match_rate": 0.2162, "mean_longest_over_len": 0.6765, "full_by_stage": {"doing": "113/468", "retry": "34/212"}}
+SCHOOL-ROUND-DONE

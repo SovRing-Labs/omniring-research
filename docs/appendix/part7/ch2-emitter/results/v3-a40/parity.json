@@ -1,0 +1,274 @@
+{
+ "devices": [
+  "A40"
+ ],
+ "emit": {
+  "engine0": {
+   "deterministic": true,
+   "modules": 6
+  },
+  "engine1": {
+   "deterministic": true,
+   "modules": 5
+  },
+  "engine2": {
+   "deterministic": true,
+   "modules": 3
+  },
+  "engine3": {
+   "deterministic": true,
+   "modules": 2
+  },
+  "engine4": {
+   "deterministic": true,
+   "modules": 1
+  },
+  "engine5": {
+   "deterministic": true,
+   "modules": 4
+  }
+ },
+ "fails": [],
+ "modules": 21,
+ "parity": {
+  "A40": {
+   "attn_dv": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.846,
+    "op": "attn_dv",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.002
+   },
+   "attn_lse": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.927,
+    "op": "attn_lse",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0218
+   },
+   "attn_y": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 1.663,
+    "op": "attn_y",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.013
+   },
+   "bl_act_g": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.683,
+    "op": "bl_act_g",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0015
+   },
+   "bl_act_q": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.725,
+    "op": "bl_act_q",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0
+   },
+   "bl_bwd_dw": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.719,
+    "op": "bl_bwd_dw",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0039
+   },
+   "bl_bwd_dx": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.863,
+    "op": "bl_bwd_dx",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.7364
+   },
+   "bl_fwd_row": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 1.123,
+    "op": "bl_fwd_row",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0028
+   },
+   "bl_quant_t": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.769,
+    "op": "bl_quant_t",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0
+   },
+   "bl_scale": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.777,
+    "op": "bl_scale",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0017
+   },
+   "dot8": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.572,
+    "op": "dot8",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0045
+   },
+   "head_loss": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 1.154,
+    "op": "head_loss",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0057
+   },
+   "mem_fwd": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.615,
+    "op": "mem_fwd",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0009
+   },
+   "rms_bwd_dg": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.577,
+    "op": "rms_bwd_dg",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0018
+   },
+   "rms_bwd_dx": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.788,
+    "op": "rms_bwd_dx",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.183
+   },
+   "rms_row": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.579,
+    "op": "rms_row",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0022
+   },
+   "sgemm": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.712,
+    "op": "sgemm",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.8539
+   },
+   "sgemm_gnn": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.611,
+    "op": "sgemm_gnn",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.02
+   },
+   "sgemm_gnt": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.612,
+    "op": "sgemm_gnt",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0123
+   },
+   "sgemm_gtn": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.611,
+    "op": "sgemm_gtn",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0346
+   },
+   "sgemm_gtt": {
+    "bad": 0,
+    "device": "A40",
+    "errors": 0,
+    "gpu_ms": 0.694,
+    "op": "sgemm_gtt",
+    "rows": 84,
+    "verdict": "pass",
+    "worst_over_tol": 0.0254
+   }
+  }
+ },
+ "rows_checked": {
+  "A40": 1764
+ },
+ "val": {
+  "engine0/dot8.spv": "pass",
+  "engine0/mem_fwd.spv": "pass",
+  "engine0/rms_bwd_dg.spv": "pass",
+  "engine0/rms_bwd_dx.spv": "pass",
+  "engine0/rms_row.spv": "pass",
+  "engine0/sgemm.spv": "pass",
+  "engine1/bl_act_g.spv": "pass",
+  "engine1/bl_act_q.spv": "pass",
+  "engine1/bl_fwd_row.spv": "pass",
+  "engine1/bl_quant_t.spv": "pass",
+  "engine1/bl_scale.spv": "pass",
+  "engine2/attn_dv.spv": "pass",
+  "engine2/attn_lse.spv": "pass",
+  "engine2/attn_y.spv": "pass",
+  "engine3/bl_bwd_dw.spv": "pass",
+  "engine3/bl_bwd_dx.spv": "pass",
+  "engine4/head_loss.spv": "pass",
+  "engine5/sgemm_gnn.spv": "pass",
+  "engine5/sgemm_gnt.spv": "pass",
+  "engine5/sgemm_gtn.spv": "pass",
+  "engine5/sgemm_gtt.spv": "pass"
+ },
+ "verdict": "pass"
+}

@@ -1,0 +1,24 @@
+{
+ "dims": 576,
+ "token_range": 4849845,
+ "sigma_0.0": {
+  "exact": 1.0,
+  "decode_us": 2697.8
+ },
+ "sigma_0.3": {
+  "exact": 1.0,
+  "decode_us": 2889.9
+ },
+ "sigma_0.6": {
+  "exact": 1.0,
+  "decode_us": 3286.1
+ },
+ "corruption": {
+  "missed": 0,
+  "of": 2000,
+  "clean_false_flags": 0
+ },
+ "verdict": {
+  "PASS": true
+ }
+}

@@ -1,0 +1,207 @@
+#!/usr/bin/env python3
+# TIER: essential
+# OWNER: claude-seat
+"""clean-room — keep only rows whose text came from permissively licensed models or our own machines (J 2026-10-03).
+
+Why: Anthropic / Google / OpenAI / Cohere terms restrict training on their outputs; Llama outputs carry a naming clause;
+Gemma outputs make a "Model Derivative". "Completely sovereign" = none of those in any training set (OWN-CORPUS-LICENSING).
+Read-only on inputs; writes filtered copies + stats + sha256 manifest. Deletes nothing.
+
+  clean-room rows   --src DIR --out DIR      reason-mine output (clean/ records/ marks/); row-level licence, marks joined
+  clean-room fleet  --src DIR --out DIR      fleet-machine output; doc-level path rules + dispatch-log attribution
+  clean-room check  PROVIDER MODEL           print the strict class for one provider/model
+
+Strict rule (first match wins): no model -> unknown · restricted-family pattern -> restricted · reason-mine's permissive
+weight-licence list (J's proposal table: nemotron, glm, minimax, qwen, gpt-oss, mimo) -> permissive · else unknown.
+Only "permissive" rows are kept. Unknown is dropped, not guessed.
+"""
+import argparse
+import glob
+import hashlib
+import json
+import os
+import re
+import sqlite3
+import subprocess
+import sys
+import time
+
+HOME = os.path.expanduser("~")
+CC = f"{HOME}/ai-stack/control-center"
+RESTRICTED = re.compile(r"claude|anthropic|gemini|google|vertex|gemma|openai|gpt-(?!oss)|\bo[134]\b|cohere|command-r|"
+                        r"llama|grok|xai")
+PERMISSIVE = [(re.compile(p), basis) for p, basis in (
+    (r"nemotron", "NVIDIA Open Model License"), (r"glm", "GLM weights MIT"), (r"minimax", "MiniMax-M2 weights MIT"),
+    (r"qwen", "Qwen weights Apache-2.0"), (r"gpt-oss", "gpt-oss weights Apache-2.0"), (r"mimo", "MiMo weights MIT"))]
+
+
+def strict(provider, model):
+    p, m = (provider or "").lower(), (model or "").lower()
+    if not m:
+        return "unknown"
+    if "gpt-oss" in m:                      # open weights (Apache-2.0) even when the id carries the "openai/" org
+        return "permissive"
+    if RESTRICTED.search(f"{p}/{m}"):
+        return "restricted"
+    return "permissive" if any(rx.search(m) for rx, _ in PERMISSIVE) else "unknown"
+
+
+def lane_class(lane):
+    """A fleet lane id ('openrouter/qwen/...', 'claude-desktop-cli', 'vllm-remote/llama-3.3-70b-awq') -> strict class."""
+    if not lane:
+        return "unknown"
+    prov, _, model = lane.partition("/")
+    return strict(prov, model or prov)
+
+
+def dispatch_models():
+    """dispatch-log basename -> lane model, from the live dispatch db and the failed-dispatch archives (read-only)."""
+    out = {}
+    for db in [*sorted(glob.glob(f"{CC}/archive/dispatch-failed*.db")), f"{CC}/dispatch.db"]:
+        try:
+            c = sqlite3.connect(f"file:{db}?mode=ro", uri=True)
+            for model, path in c.execute("select model, log_path from dispatches where log_path is not null"):
+                out[os.path.basename(path)] = model
+        except sqlite3.Error:
+            continue
+    return out
+
+
+def zread(path):
+    data = subprocess.run(["zstd", "-dc", path], capture_output=True, check=True).stdout.decode()
+    return [json.loads(x) for x in data.split("\n") if x]   # split on \n only: texts hold U+2028
+
+
+def zwrite(path, rows):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    body = "".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows).encode()
+    subprocess.run(["zstd", "-q", "-19", "-f", "-o", path], input=body, check=True)
+
+
+def sha(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for b in iter(lambda: f.read(1 << 20), b""):
+            h.update(b)
+    return h.hexdigest()
+
+
+def finish(out, stats):
+    os.makedirs(f"{out}/stats", exist_ok=True)
+    json.dump(stats, open(f"{out}/stats/clean-room.json", "w"), indent=1, sort_keys=True)
+    with open(f"{out}/stats/outputs.sha256", "w") as f:
+        for p in sorted(glob.glob(f"{out}/*/*.zst")):
+            f.write(f"{sha(p)}  {os.path.relpath(p, out)}\n")
+    print(json.dumps(stats["totals"], indent=1), flush=True)
+
+
+def bump(d, k, n=1):
+    d[k] = d.get(k, 0) + n
+
+
+def cmd_rows(a):
+    t0, st = time.time(), {"src": a.src, "rule": __doc__.split("Strict rule")[1].strip(), "by_class": {}, "by_model": {},
+                           "totals": {}}
+    units = sorted(os.path.basename(p)[:-len(".jsonl.zst")] for p in glob.glob(f"{a.src}/records/*.jsonl.zst"))
+    tot = st["totals"]
+    for u in units:
+        recs = zread(f"{a.src}/records/{u}.jsonl.zst")
+        clean = zread(f"{a.src}/clean/{u}.jsonl.zst") if os.path.exists(f"{a.src}/clean/{u}.jsonl.zst") else []
+        sid_cls = {}                                   # session -> strict class, from any row that names its model
+        for r in clean + recs:
+            if r.get("sid") and r.get("model"):
+                c, prev = strict(r.get("provider"), r.get("model")), sid_cls.get(r["sid"])
+                rank = {"restricted": 2, "unknown": 1, "permissive": 0}   # a session with ANY restricted turn is restricted
+                sid_cls[r["sid"]] = c if prev is None or rank[c] > rank[prev] else prev
+
+        def cls(r):
+            if r.get("model"):
+                return strict(r.get("provider"), r["model"])
+            return sid_cls.get(r.get("sid"), "unknown")
+        keep_recs = []
+        for r in recs:
+            c = cls(r); bump(st["by_class"], f"records:{c}"); bump(st["by_model"], f"{c}:{r.get('provider')}/{r.get('model')}")
+            if c == "permissive":
+                keep_recs.append(r)
+        kept = {r["i"] for r in keep_recs}
+        keep_clean = [r for r in clean if cls(r) == "permissive"]
+        for r in clean:
+            bump(st["by_class"], f"clean:{cls(r)}")
+        marks = zread(f"{a.src}/marks/{u}.jsonl.zst") if os.path.exists(f"{a.src}/marks/{u}.jsonl.zst") else []
+        keep_marks = [m for m in marks if m.get("i") in kept]
+        for name, rows, kept_rows in (("records", recs, keep_recs), ("clean", clean, keep_clean), ("marks", marks, keep_marks)):
+            bump(tot, f"{name}_in", len(rows)); bump(tot, f"{name}_kept", len(kept_rows))
+            if kept_rows:
+                zwrite(f"{a.out}/{name}/{u}.jsonl.zst", kept_rows)
+        print(f"{u}: records {len(keep_recs):,}/{len(recs):,}  clean {len(keep_clean):,}/{len(clean):,}  "
+              f"marks {len(keep_marks):,}/{len(marks):,}", flush=True)
+    tot["seconds"] = round(time.time() - t0, 1)
+    finish(a.out, st)
+
+
+# fleet-machine docs: (path regex, verdict, why). First match wins; unmatched -> drop (blank beats wrong).
+FLEET_RULES = [
+    (r"/dispatch-logs/", "attribute", "model transcript: keep only if its dispatch lane is permissive"),
+    (r"/labels/|\.labels\.jsonl", "drop", "teacher (Llama) labels"),
+    (r"blackboard\.db|approvals\.jsonl|/agent-memory/|/<notes>/|/documentation-matrix/|/captures/|/TRAINING/|"
+     r"/<notes>/|/vault-indexer/|events.*\.jsonl", "drop", "seat- or model-authored text (any provider)"),
+    (r"/Documents/android studio/|/projects/[^/]+/(?:a11y|dataviz|node_modules|vendor)|/hf_model/|/airtable/",
+     "drop", "third-party or vendored files / private business data"),
+    (r"/gpurun-out-[^/]+/(?!chew/)", "keep", "our measurement results and run logs"),
+    (r"/control-center/[^/]+\.log$|/\.local/share/opencode/log/|\.db#dispatches$|/archive/dispatch-failed", "keep",
+     "machine logs and dispatch metadata"),
+]
+
+
+def cmd_fleet(a):
+    t0, dm = time.time(), dispatch_models()
+    st = {"src": a.src, "rules": [r[1:] for r in FLEET_RULES], "by_rule": {}, "totals": {}}
+    tot = st["totals"]
+
+    def verdict(doc):
+        for rx, v, why in FLEET_RULES:
+            if re.search(rx, doc):
+                if v == "attribute":
+                    c = lane_class(dm.get(os.path.basename(doc.split("#")[0])))
+                    return ("keep" if c == "permissive" else "drop"), f"dispatch-log:{c}"
+                return v, why
+        return "drop", "no rule (unmatched)"
+    for p in sorted(glob.glob(f"{a.src}/clean/*.jsonl.zst")):
+        u = os.path.basename(p)[:-len(".jsonl.zst")]
+        clean = zread(p)
+        kd, keep_clean = {}, []
+        for r in clean:
+            v, why = verdict(r.get("doc", ""))
+            kd[r.get("doc")] = v == "keep"
+            bump(st["by_rule"], f"{v}:{why}"); bump(st["by_rule"], f"bytes:{v}:{why}", len(r.get("text", "")))
+            if v == "keep":
+                keep_clean.append(r)
+        recs = zread(f"{a.src}/records/{u}.jsonl.zst") if os.path.exists(f"{a.src}/records/{u}.jsonl.zst") else []
+        keep_recs = [r for r in recs if kd.get(r.get("doc"), verdict(r.get("doc", ""))[0] == "keep")]
+        kept = {r["i"] for r in keep_recs}
+        marks = zread(f"{a.src}/marks/{u}.jsonl.zst") if os.path.exists(f"{a.src}/marks/{u}.jsonl.zst") else []
+        keep_marks = [m for m in marks if m.get("i") in kept]
+        for name, rows, kept_rows in (("clean", clean, keep_clean), ("records", recs, keep_recs), ("marks", marks, keep_marks)):
+            bump(tot, f"{name}_in", len(rows)); bump(tot, f"{name}_kept", len(kept_rows))
+            if kept_rows:
+                zwrite(f"{a.out}/{name}/{u}.jsonl.zst", kept_rows)
+    tot["seconds"] = round(time.time() - t0, 1)
+    finish(a.out, st)
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sp = ap.add_subparsers(dest="cmd", required=True)
+    for name in ("rows", "fleet"):
+        s = sp.add_parser(name); s.add_argument("--src", required=True); s.add_argument("--out", required=True)
+    s = sp.add_parser("check"); s.add_argument("provider"); s.add_argument("model")
+    a = ap.parse_args()
+    if a.cmd == "check":
+        print(strict(a.provider, a.model)); return
+    if os.path.abspath(a.out) == os.path.abspath(a.src):
+        sys.exit("refusing: --out must differ from --src (inputs are read-only)")
+    {"rows": cmd_rows, "fleet": cmd_fleet}[a.cmd](a)
+
+
+if __name__ == "__main__":
+    main()

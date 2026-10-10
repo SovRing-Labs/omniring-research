@@ -1,0 +1,45 @@
+{
+ "build_s": 54.80553197860718,
+ "SCAN_packed": {
+  "ms": 500.64098834991455,
+  "bytes": 2560000000,
+  "bytes_per_mark": 2560
+ },
+ "CASCADE_prefix": {
+  "ms": 334.5080614089966,
+  "bytes": 640163840,
+  "recall": 1.0
+ },
+ "MMAP": {
+  "map_ms": 39.606332778930664,
+  "rebuild_s": 54.80553197860718,
+  "scan200k_cold_ms": 1176.5906810760498,
+  "scan200k_warm_ms": 90.36087989807129
+ },
+ "ADDRESS_residue": {
+  "us": 1017.8089141845703,
+  "bytes_scanned": 0,
+  "bytes_touched": 230464,
+  "recall": 1.0,
+  "note": "45 probes of 5,120 dims + one 64-B payload read; no scan"
+ },
+ "SUPER_build_s": 33.88573741912842,
+ "SUPER_slots": {
+  "which_slot_ms": 22.03691005706787,
+  "which_recall": 1.0,
+  "slot_read_ms": 520.5960273742676,
+  "marks_recovered": 128,
+  "bytes_which_slot": 79994880,
+  "bytes_per_mark_equiv": 79,
+  "ms_per_recovered_mark": 4.0671564638614655
+ },
+ "verdict": {
+  "A_bytes_div": 11108.025548458761,
+  "A_ms_div": 491.881119700164,
+  "B_bytes_div": 32.002048131080386,
+  "B_ms_div": 22.71829340199828,
+  "C_bytes_div": 3.9989762620769085,
+  "C_ms_div": 1.4966485000126513,
+  "PASS": true
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "build_s": 76.9,
+ "file_bytes": 394110,
+ "lookup_plus_verify_s": 40.9,
+ "memo_entries": 9849,
+ "problems": 9984,
+ "round2_hit_by_domain": {
+  "calendar.clock": 0.065,
+  "calendar.crt": 0.01,
+  "calendar.ring_euclid": 0.068,
+  "graph.group": 0.01,
+  "numth.prime": 0.021,
+  "numth.prime_trial": 0.021,
+  "struct.pushdown": 0.039,
+  "units.dimension": 0.276
+ },
+ "round2_hit_rate": 0.0196,
+ "rss_mb": 86.0,
+ "verdict_mismatch": 0,
+ "wrong_answer_trusted": 0
+}

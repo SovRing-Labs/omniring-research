@@ -1,0 +1,6 @@
+T25 · P25 = 116,431,182,179,248,680,450,031,658,440,253,681,535 (2^126.45, fits u128) · 23843 boxes · 47686 rectangles → one T25 point each → back exact: 47686/47686
+failing boxes 4298 · errors read off the T25 angles == direct: 4298/4298
+  CARRIED             2079 (48%) · frame also failing 2005/2079 = 96%
+  SHAPE               1972 (46%) · frame also failing 1618/1972 = 82%
+  OWN PLACE            247 (6%) · frame also failing 199/247 = 81%
+rendered: SHAPE, OWN PLACE, CARRIED

@@ -1,0 +1,157 @@
+; mb_ledger — GROW-RUN-0 JIT-T50 #1, the MAILBOX consumer, launched by vkCmdDispatchIndirect with the size mb_scan wrote: workgroup w serves
+; toroid t = the last t with wgo[t] ≤ w, items (w − wgo[t])·64 + lane of its mailbox — so each toroid's capacity (workgroups) follows its load.
+;   per item e of toroid t: led[t][q][res[e][q]] += 1 for every ring q < L (the toroid's T50 ledger, rebuilt from ITS mailbox — must equal
+;   route's hled) ; lane 0: wgt[t] += 1 (the workgroups each toroid received — the elastic capacity, recorded)
+; Bindings: 0 wgo uint[T+1] · 1 off uint[T] · 2 tcnt uint[T] · 3 mail uint[n] · 4 res uint[n·64] · 5 led uint[T·64·256] (atomic) · 6 wgt uint[T]
+; (atomic). SpecId 1 = rings L (50) · SpecId 2 = T. 1-D dispatch (x only; args from mb_scan).
+; Hand-written from the SPIR-V spec; our own code.
+               OpCapability Shader
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %main "main" %lid %wid
+               OpExecutionMode %main LocalSize 64 1 1
+               OpDecorate %lid BuiltIn LocalInvocationId
+               OpDecorate %wid BuiltIn WorkgroupId
+               OpDecorate %nl SpecId 1
+               OpDecorate %nt SpecId 2
+               OpDecorate %rta_u ArrayStride 4
+               OpMemberDecorate %buf_u 0 Offset 0
+               OpDecorate %buf_u Block
+               OpDecorate %wgo DescriptorSet 0
+               OpDecorate %wgo Binding 0
+               OpDecorate %wgo NonWritable
+               OpDecorate %off DescriptorSet 0
+               OpDecorate %off Binding 1
+               OpDecorate %off NonWritable
+               OpDecorate %tcnt DescriptorSet 0
+               OpDecorate %tcnt Binding 2
+               OpDecorate %tcnt NonWritable
+               OpDecorate %mail DescriptorSet 0
+               OpDecorate %mail Binding 3
+               OpDecorate %mail NonWritable
+               OpDecorate %res DescriptorSet 0
+               OpDecorate %res Binding 4
+               OpDecorate %res NonWritable
+               OpDecorate %led DescriptorSet 0
+               OpDecorate %led Binding 5
+               OpDecorate %wgt DescriptorSet 0
+               OpDecorate %wgt Binding 6
+       %void = OpTypeVoid
+       %fnty = OpTypeFunction %void
+       %bool = OpTypeBool
+       %uint = OpTypeInt 32 0
+     %v3uint = OpTypeVector %uint 3
+  %ptr_in_v3 = OpTypePointer Input %v3uint
+        %lid = OpVariable %ptr_in_v3 Input
+        %wid = OpVariable %ptr_in_v3 Input
+      %rta_u = OpTypeRuntimeArray %uint
+      %buf_u = OpTypeStruct %rta_u
+     %ptr_bu = OpTypePointer StorageBuffer %buf_u
+      %ptr_u = OpTypePointer StorageBuffer %uint
+   %ptr_fn_u = OpTypePointer Function %uint
+        %wgo = OpVariable %ptr_bu StorageBuffer
+        %off = OpVariable %ptr_bu StorageBuffer
+       %tcnt = OpVariable %ptr_bu StorageBuffer
+       %mail = OpVariable %ptr_bu StorageBuffer
+        %res = OpVariable %ptr_bu StorageBuffer
+        %led = OpVariable %ptr_bu StorageBuffer
+        %wgt = OpVariable %ptr_bu StorageBuffer
+     %uint_0 = OpConstant %uint 0
+     %uint_1 = OpConstant %uint 1
+    %uint_64 = OpConstant %uint 64
+   %uint_256 = OpConstant %uint 256
+  %scope_dev = OpConstant %uint 1
+   %sem_none = OpConstant %uint 0
+         %nl = OpSpecConstant %uint 50
+         %nt = OpSpecConstant %uint 5
+       %main = OpFunction %void None %fnty
+      %entry = OpLabel
+         %vt = OpVariable %ptr_fn_u Function
+        %vto = OpVariable %ptr_fn_u Function
+         %vq = OpVariable %ptr_fn_u Function
+         %l3 = OpLoad %v3uint %lid
+       %lane = OpCompositeExtract %uint %l3 0
+         %w3 = OpLoad %v3uint %wid
+          %w = OpCompositeExtract %uint %w3 0
+               OpStore %vt %uint_0
+               OpStore %vto %uint_0
+               OpBranch %h1
+         %h1 = OpLabel
+               OpLoopMerge %m1 %c1 None
+               OpBranch %t1
+         %t1 = OpLabel
+         %ti = OpLoad %uint %vt
+       %more = OpULessThan %bool %ti %nt
+               OpBranchConditional %more %s1 %m1
+         %s1 = OpLabel
+        %pwg = OpAccessChain %ptr_u %wgo %uint_0 %ti
+         %wo = OpLoad %uint %pwg
+         %le = OpULessThanEqual %bool %wo %w
+               OpSelectionMerge %j1 None
+               OpBranchConditional %le %own %j1
+        %own = OpLabel
+               OpStore %vto %ti
+               OpBranch %j1
+         %j1 = OpLabel
+               OpBranch %c1
+         %c1 = OpLabel
+         %t0 = OpLoad %uint %vt
+         %tn = OpIAdd %uint %t0 %uint_1
+               OpStore %vt %tn
+               OpBranch %h1
+         %m1 = OpLabel
+          %t = OpLoad %uint %vto
+        %pw2 = OpAccessChain %ptr_u %wgo %uint_0 %t
+         %w0 = OpLoad %uint %pw2
+         %dw = OpISub %uint %w %w0
+        %dw6 = OpIMul %uint %dw %uint_64
+          %i = OpIAdd %uint %dw6 %lane
+        %ptc = OpAccessChain %ptr_u %tcnt %uint_0 %t
+         %tc = OpLoad %uint %ptc
+         %lz = OpIEqual %bool %lane %uint_0
+               OpSelectionMerge %j2 None
+               OpBranchConditional %lz %cntw %j2
+       %cntw = OpLabel
+        %pwt = OpAccessChain %ptr_u %wgt %uint_0 %t
+         %a0 = OpAtomicIAdd %uint %pwt %scope_dev %sem_none %uint_1
+               OpBranch %j2
+         %j2 = OpLabel
+        %iok = OpULessThan %bool %i %tc
+               OpSelectionMerge %end None
+               OpBranchConditional %iok %body %end
+       %body = OpLabel
+        %pof = OpAccessChain %ptr_u %off %uint_0 %t
+         %of = OpLoad %uint %pof
+         %mi = OpIAdd %uint %of %i
+        %pml = OpAccessChain %ptr_u %mail %uint_0 %mi
+          %e = OpLoad %uint %pml
+        %e64 = OpIMul %uint %e %uint_64
+        %t64 = OpIMul %uint %t %uint_64
+               OpStore %vq %uint_0
+               OpBranch %h2
+         %h2 = OpLabel
+               OpLoopMerge %m2 %c2 None
+               OpBranch %t2
+         %t2 = OpLabel
+         %qi = OpLoad %uint %vq
+      %more2 = OpULessThan %bool %qi %nl
+               OpBranchConditional %more2 %s2 %m2
+         %s2 = OpLabel
+         %rx = OpIAdd %uint %e64 %qi
+        %prs = OpAccessChain %ptr_u %res %uint_0 %rx
+         %rv = OpLoad %uint %prs
+         %lq = OpIAdd %uint %t64 %qi
+        %lq2 = OpIMul %uint %lq %uint_256
+        %lq3 = OpIAdd %uint %lq2 %rv
+        %pld = OpAccessChain %ptr_u %led %uint_0 %lq3
+         %a1 = OpAtomicIAdd %uint %pld %scope_dev %sem_none %uint_1
+               OpBranch %c2
+         %c2 = OpLabel
+         %q0 = OpLoad %uint %vq
+         %q1 = OpIAdd %uint %q0 %uint_1
+               OpStore %vq %q1
+               OpBranch %h2
+         %m2 = OpLabel
+               OpBranch %end
+        %end = OpLabel
+               OpReturn
+               OpFunctionEnd

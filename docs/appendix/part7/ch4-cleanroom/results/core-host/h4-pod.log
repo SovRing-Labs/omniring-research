@@ -1,0 +1,1 @@
+{"host": "cpu32b", "jobs": 8, "rows": 409, "merged": 409, "rcs": [0, 0, 0, 0, 0, 0, 0, 0], "secs": 4.2, "out": "projects/omni-render-claude/results/core-host/h4-pod.jsonl"}

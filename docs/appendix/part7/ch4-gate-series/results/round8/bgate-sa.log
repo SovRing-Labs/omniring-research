@@ -1,0 +1,2 @@
+{"base":[20216,3045],"cand":[20398,3045],"gained":[185,0],"lost":[3,0],"pages":[{"gained":98,"holdout":false,"lost":3,"lost_nodes":[1378,1495,1497],"page":"developer-mozilla-org-en-US-docs-Web-CSS-display"},{"gained":87,"holdout":false,"lost":0,"lost_nodes":[],"page":"developer-mozilla-org-en-US-docs-Web-HTML-Element-table"}],"pass":false,"sets":"1ee26bbc9aa4"}
+binary-gate vs results/agree-snapshot-after-has.json: replay 20216 → 20398 · holdout 3045 → 3045 · lost 3/0 · gained 185/0 → FAIL (1.2s)

@@ -54,7 +54,7 @@ in `docs/appendix/` (for example `RING1-HALO.run.txt`).
 
 ## Provenance
 
-- `ring1/` and `ring3/` come from the project's staging tree (`_Pads/RING/`); the library
+- `ring1/` and `ring3/` come from the project's staging tree; the library
   `ring1_core.py` is byte-identical to the version RING-1 CORE sealed, and the runners assert that
   identity rather than assuming it (see the "Integrity 1" block in `docs/09-ring1-halo-two-stage-chain.md`).
 - `soft_sweep.py` comes from the `omniring-llm` research prototype (`bench/soft_sweep.py`). It is the

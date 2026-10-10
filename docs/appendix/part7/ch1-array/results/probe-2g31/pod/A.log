@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/root/probe/omni-gpu/tests/train/s5_array.py", line 157, in <module>
+    main()
+  File "/root/probe/omni-gpu/tests/train/s5_array.py", line 116, in main
+    gl, W_gpu, raw, gms, info = gpu_run(dims, params, params_R, Tm, K, U, ring, sw, aux, hostin_fn, S, dev)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/probe/omni-gpu/tests/train/s5_array.py", line 23, in gpu_run
+    text, ix, npass, nbuf = train_step.build_loop(dims, params, Tm, params_R=params_R, form="centre", K=K, sw=sw_dict(sw, aux) if sw else None,
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/probe/omni-gpu/gen/train_step.py", line 688, in build_loop
+    lines, idx = pr.program(pinned=set(io.values()), plan=PLAN)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/probe/omni-gpu/gen/train_step.py", line 73, in program
+    if big: raise ValueError(f"buffer(s) over one storage binding ({BIND_MAX} bytes): {big[:3]} — fewer models per session (array server --group)")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: buffer(s) over one storage binding (2147483647 bytes): [('L_rtlg_0', 2684354560), ('L_rtlg_1', 2684354560), ('L_rtlg_2', 2684354560)] — fewer models per session (array server --group)

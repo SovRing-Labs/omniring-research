@@ -1,0 +1,7 @@
+triangulation δ ±3.0° τ 2.0px over 7731 boxes (failing or deformed)
+  failing boxes                          n  7387 · FIT  4389 · DISPLACED    10 (0%) · DEFECT  2988 (40%)
+  deformed (angle station μ ≥ ½)         n  2344 · FIT   206 · DISPLACED    17 (1%) · DEFECT  2121 (90%)
+  deformed and failing                   n  2000 · FIT   180 · DISPLACED     1 (0%) · DEFECT  1819 (91%)
+  which triangles fit (= exact · ~ with a slight corner angle · x no), failing boxes: [('△=◸=◹=◺=⊿=', 4386), ('△x◸x◹x◺x⊿x', 2988), ('△~◸x◹x◺x⊿x', 6), ('△~◸~◹~◺~⊿~', 2), ('△x◸x◹=◺x⊿=', 2), ('△x◸~◹x◺~⊿x', 1), ('△x◸~◹~◺x⊿x', 1), ('△x◸=◹=◺=⊿=', 1)]
+  misfit corners in DEFECT (0 TL · 1 TR · 2 BL · 3 BR): [((0, 1, 2, 3), 2043), ((2, 3), 441), ((0, 2), 258), ((1, 3), 179), ((0, 1), 179), ((1, 2, 3), 69)]
+  DEFECT by page: [('developer-mozilla-org-en', 470), ('theguardian-com-internat', 343), ('en-cppreference-com-w-cp', 203), ('ebay-com', 148), ('github-com-servo-html5ev', 105), ('allrecipes-com-recipe-10', 102)]

@@ -1,0 +1,65 @@
+HIT  s9bc5500160ee1fb2        2 hit(s) — src/raster.rs:mix64 L157: (^ (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2) (>> (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2) 31))
+      build: {"cegis_rounds":1,"equation_cx":0,"rust":null,"secs":8.857860815,"work":60475831}
+HIT  sbbfaba095b57c7a3        2 hit(s) — src/raster.rs:mix64 L157: (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2)
+      build: {"cegis_rounds":2,"equation_cx":0,"rust":null,"secs":12.875898854999999,"work":120512450}
+HIT  seb4d8e474a1b8939        1 hit(s) — src/style.rs:h128 L1075: (| (<< (fold v0 (get0 (tup 2611923443488327891 1376283091369227076)) v1) 64) (fold v0 (get1 (tup 2611923443488327891 1376283091369227076)) v2))
+      build: {"cegis_rounds":4,"equation_cx":0,"rust":null,"secs":10.067500503,"work":182698850}
+BUILT scf325a5b1175f619        0 hit(s)
+      build: {"cegis_rounds":4,"equation_checked":true,"equation_cx":1,"how":"witness depth 2","rust":"(a2 + ((a3 - a2) * ((a0 <= (-a1)) as i64)))","secs":0.497887356,"size":10,"synth_secs":0.169594342,"validate":{"agree":16,"of":16,
+HIT  s829d66338e945eb7        5 hit(s) — src/agent.rs:visible L55: (== 0 v0)
+      build: {"cegis_rounds":8,"equation_checked":true,"equation_cx":6,"how":"witness depth 0","rust":"((a0 == (0i64)) as i64)","secs":0.33741713,"size":3,"synth_secs":0.039871019,"validate":{"agree":16,"of":16,"rustc":true},"verifie
+BUILT sf62b1fb5ec72c3eb        0 hit(s)
+      build: {"cegis_rounds":4,"equation_checked":true,"equation_cx":1,"how":"witness depth 2","rust":"a0.min(a1).max((a0 + a1).min(a0.max(a1)))","secs":0.44070607,"size":11,"synth_secs":0.119953717,"validate":{"agree":16,"of":16,"ru
+HIT  s55dc1c99bd52b84c        5 hit(s) — src/cookie.rs:header L242: (and v0 v1)
+      build: {"cegis_rounds":5,"equation_checked":true,"equation_cx":2,"how":"witness depth 1","rust":"(1i64).min((a0 * a1).abs())","secs":0.33713517,"size":6,"synth_secs":0.0423353,"validate":{"agree":16,"of":16,"rustc":true},"verif
+HIT  s8dc6eea20f02ecb8        5 hit(s) — src/agent.rs:markdown L7: (len v0)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"(a0.len() as i64)","secs":0.392431538,"size":2,"synth_secs":0.014964286,"validate":{"agree":16,"of":16,"rustc":true},"verified":tr
+HIT  sfda9f90344716b76        5 hit(s) — src/cookie.rs:parse_date L91: (+ 1 v0)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"((a0 * (1i64)) + (1i64))","secs":0.319115328,"size":5,"synth_secs":0.016049891,"validate":{"agree":16,"of":16,"rustc":true},"verif
+HIT  s54cd40fb95ef4b6d        5 hit(s) — src/cookie.rs:set L185: (get2 (tup v0 v0 v1 v0 0 0))
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.32141471,"size":1,"synth_secs":0.015079113,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verify":null
+HIT  s976306d44a36b660        4 hit(s) — src/paint.rs:paint_bounds L43: (get1 (tup (* v0 v1) (* v2 v1)))
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"(a1 * a2)","secs":0.303298599,"size":3,"synth_secs":0.015393364,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"veri
+MISS sd8ccc94b36b8a774        0 hit(s)
+      build: {"cegis_rounds":1,"equation_cx":0,"rust":null,"secs":5.709720301,"work":60154409}
+HIT  s8effd5de73e271ad        5 hit(s) — src/agent.rs:reader L15: (fold (range 0 (len v0)) v1 v2)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.367092851,"size":1,"synth_secs":0.020780945,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verify":nul
+HIT  s4d126d0c34049be0        1 hit(s) — src/font.rs:normal_line L316: (+ (+ v0 v1) v2)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 1","rust":"(a0 + (a1 + a2))","secs":0.301127632,"size":5,"synth_secs":0.015635321,"validate":{"agree":16,"of":16,"rustc":true},"verified":tru
+HIT  sfea2986347f201a0        5 hit(s) — src/corert0.rs:beat L83: (tup v0 v1)
+      build: {"cegis_rounds":1,"equation_cx":0,"rust":null,"secs":6.505e-6,"work":0}
+HIT  sae91ca6a24d3a0a2        3 hit(s) — src/css.rs:cond L598: (sel v0 (+ 1 v1) v1)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 1","rust":"(a1 + ((a0 != (0i64)) as i64))","secs":0.279246737,"size":5,"synth_secs":0.011412546,"validate":{"agree":16,"of":16,"rustc":true},
+HIT  s811848c27087f81b        5 hit(s) — src/agent.rs:reader L15: (sel (== (len (filter (range 0 (len v0)) (and (== str v1) v2))) 1) (idx (filter (range 0 (len v0)) (and (== str v1) v2)) 0) v3)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.184585733,"size":1,"synth_secs":0.029198961,"validate":null,"verified":true,"verify":null,"verify_secs":0.155374004,"
+HIT  s60a39592af376018        1 hit(s) — src/style.rs:compute_inner L1107: (sel (== v0 v1) v2 0)
+      build: {"cegis_rounds":3,"equation_checked":true,"equation_cx":2,"how":"witness depth 1","rust":"(a2 * ((a0 == a1) as i64))","secs":0.307302586,"size":5,"synth_secs":0.040868376,"validate":{"agree":16,"of":16,"rustc":true},"ver
+HIT  s045c9ad047928206        5 hit(s) — src/corert0.rs:main L146: (- v0 v1)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"(a0 - a1)","secs":0.311167129,"size":3,"synth_secs":0.010060941,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"veri
+HIT  s8f0329de73e53640        5 hit(s) — src/agent.rs:reader L15: (fold (range 0 (len v0)) v1 v2)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.570386954,"size":1,"synth_secs":0.036117774,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verify":nul
+HIT  s8ef949de73dd181b        5 hit(s) — src/agent.rs:reader L15: (fold (range 0 (len v0)) v1 v2)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.593931432,"size":1,"synth_secs":0.024747031,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verify":nul
+HIT  s8efcadde73dff7de        5 hit(s) — src/agent.rs:reader L15: (fold (range 0 (len v0)) v1 v2)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.43557137,"size":1,"synth_secs":0.02533007,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verify":null,
+HIT  s8f0dadde73ee6b11        5 hit(s) — src/agent.rs:reader L15: (fold (range 0 (len v0)) v1 v2)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.36828137,"size":1,"synth_secs":0.036281099,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verify":null
+HIT  s8f10d1de73f0de14        5 hit(s) — src/agent.rs:reader L15: (fold (range 0 (len v0)) v1 v2)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.376760897,"size":1,"synth_secs":0.02279467,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verify":null
+HIT  s31728639395a8ef8        5 hit(s) — src/corert0.rs:splitmix L18: (+ v0 v1)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"(a0 + a1)","secs":0.295285026,"size":3,"synth_secs":0.008939856,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"veri
+HIT  s294dd3beb733d8ad        3 hit(s) — src/jsi_date.rs:make L165: (+ (get2 (tup v0 v1 v2)) v3)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"(a1 + a2)","secs":0.27748839,"size":3,"synth_secs":0.020958526,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verif
+HIT  s1e47813a2237eed2        5 hit(s) — src/cookie.rs:parse_date L91: (get2 (tup v0 v1 v2))
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 0","rust":"a1","secs":0.265413954,"size":1,"synth_secs":0.011389426,"validate":{"agree":16,"of":16,"rustc":true},"verified":true,"verify":nul
+HIT  s4ca176cae0e6705b        5 hit(s) — src/cookie.rs:header L242: (sel v0 v1 v2)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"witness depth 1","rust":"(if ((a0 == (0i64)) as i64) != 0 { a2 } else { a1 })","secs":0.273979438,"size":6,"synth_secs":0.011252823,"validate":{"agree":16,
+HIT  s834de30a2fad6b87        1 hit(s) — src/css.rs:cond L598: (sel v0 (sel v1 (+ 1 v2) v2) v2)
+      build: {"cegis_rounds":6,"equation_checked":true,"equation_cx":2,"how":"witness depth 2","rust":"(a2 + (1i64).min((a0 * a1).abs()))","secs":0.622126026,"size":8,"synth_secs":0.253612633,"validate":{"agree":16,"of":16,"rustc":tr
+HIT  s15cc55c4d9ae39db        5 hit(s) — src/jsi_lib.rs:rel_index L33: (sel v0 0 v1)
+      build: {"cegis_rounds":8,"equation_checked":true,"equation_cx":5,"how":"witness depth 1","rust":"(a1 * ((a0 == (0i64)) as i64))","secs":0.349849409,"size":5,"synth_secs":0.047616149,"validate":{"agree":16,"of":16,"rustc":true},
+BUILT s351068ed33653631        0 hit(s)
+      build: {"cegis_rounds":2,"equation_checked":true,"equation_cx":0,"how":"witness depth 2","rust":"(a0 + ((a1 + (1i64)) * ((a0 < (0i64)) as i64)))","secs":0.345640794,"size":9,"synth_secs":0.065437566,"validate":{"agree":16,"of":
+BUILT sc50b08171e445eaf        0 hit(s)
+      build: {"cegis_rounds":3,"equation_checked":true,"equation_cx":0,"how":"witness depth 1","rust":"(if ((a0 == (0i64)) as i64) != 0 { a3 } else { a1 })","secs":0.377590641,"size":6,"synth_secs":0.051110995,"validate":{"agree":16,
+{"answered":31,"fns":1353,"library_terms":5516,"needs":32,"phase_secs":{"build_all_needs":38.687761693999995,"collect_library":0.030002107,"extract":0.029249303000000004,"lower_library":0.435948657,"rustc_verify_all":4.434269809,"search_all_needs":0.5691553850000002},"secs":48.432839816}

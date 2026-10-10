@@ -1,0 +1,62 @@
+{
+ "nomic_f16": {
+  "docs_per_s": 1.16,
+  "doc_batch_s": 51.8,
+  "query_batch_s": 2.5,
+  "recall_at_1": 0.8,
+  "recall_at_5": 0.95,
+  "dim": 768
+ },
+ "bitnet270m_mean_pooling(gguf default, WRONG)": {
+  "270M instruct/query": {
+   "docs_per_s": 0.32,
+   "doc_batch_s": 188.8,
+   "query_batch_s": 12.0,
+   "recall_at_1": 0.167,
+   "recall_at_5": 0.3,
+   "dim": 640
+  },
+  "270M query:": {
+   "docs_per_s": 0.32,
+   "doc_batch_s": 188.8,
+   "query_batch_s": 8.3,
+   "recall_at_1": 0.483,
+   "recall_at_5": 0.617,
+   "dim": 640
+  },
+  "270M task|query": {
+   "docs_per_s": 0.32,
+   "doc_batch_s": 188.8,
+   "query_batch_s": 10.4,
+   "recall_at_1": 0.283,
+   "recall_at_5": 0.467,
+   "dim": 640
+  }
+ },
+ "bitnet270m_last_pooling": {
+  "270M instruct/query": {
+   "docs_per_s": 0.42,
+   "doc_batch_s": 143.5,
+   "query_batch_s": 16.7,
+   "recall_at_1": 0.733,
+   "recall_at_5": 0.883,
+   "dim": 640
+  },
+  "270M query:": {
+   "docs_per_s": 0.42,
+   "doc_batch_s": 143.5,
+   "query_batch_s": 8.9,
+   "recall_at_1": 0.717,
+   "recall_at_5": 0.9,
+   "dim": 640
+  },
+  "270M task|query": {
+   "docs_per_s": 0.42,
+   "doc_batch_s": 143.5,
+   "query_batch_s": 10.3,
+   "recall_at_1": 0.733,
+   "recall_at_5": 0.9,
+   "dim": 640
+  }
+ }
+}

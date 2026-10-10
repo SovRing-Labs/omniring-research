@@ -1,0 +1,9 @@
+failing boxes 4298 · eligible (good frame, ≥ 3 good peers) 368 · skipped {'frame not good': 3825, 'no peers': 105}
+predicted box within Chrome's tolerance: 3/368 = 0.8%   (our engine on these: 0 % by definition)
+median corner hypotenuse √(dx²+dy²): predicted 215.5 px · ours 32.0 px · prediction closer on 57/368
+  axis x: predicted for 368 · within tolerance 159 (43%)
+  axis y: predicted for 302 · within tolerance 42 (14%)
+  axis w: predicted for 368 · within tolerance 134 (36%)
+  axis h: predicted for 368 · within tolerance 82 (22%)
+  by key level: {'K1': '3/125', 'K2': '0/46', 'K3': '0/197'}
+PRE-REGISTERED BAR: FAIL

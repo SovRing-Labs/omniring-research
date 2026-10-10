@@ -1,0 +1,19 @@
+{
+ "history_logs_end": "2026-10-08T02:35 local time",
+ "pairs_with_an_entry_for_this_chapter": [
+  {
+   "harness": "curriculum.py",
+   "harness_first_added": "2026-10-03T16:46",
+   "order": "harness first",
+   "pre_registration": "trial model (earlier work)",
+   "pre_registration_first_added": "2026-10-04T05:25"
+  }
+ ],
+ "pre_registrations_without_an_entry": [
+  "live school",
+  "growth run",
+  "seed-school growth",
+  "T25 reactor round 3"
+ ],
+ "what": "first date each pre-registration and harness entered the automatic version history (history is automatic checkpoints: a date is when a file first entered a checkpoint)"
+}

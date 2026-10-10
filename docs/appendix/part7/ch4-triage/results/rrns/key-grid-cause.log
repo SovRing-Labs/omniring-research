@@ -1,0 +1,8 @@
+  range theguardian-com-international:856 <div> Block<Grid fracture w -1030.0 x -90.0 h +1084.2 y +0.0 → trits (-1, -1, 1, 0)
+    KC frame + cause (w trit) repeats   365 · truth recall 133/152 = 0.875 · precision 0.364 · pages [('theguardian-com-in', 260), ('blog-codinghorror-', 62), ('ebay-com', 14), ('bbc-com-news', 12)]
+  range theguardian-com-international:5157 <li> Flex<Grid fracture w -188.6 x +125.7 h +140.3 y +0.0 → trits (-1, 1, 1, 0)
+    KC frame + cause (w trit) repeats   365 · truth recall 133/152 = 0.875 · precision 0.364 · pages [('theguardian-com-in', 260), ('blog-codinghorror-', 62), ('ebay-com', 14), ('bbc-com-news', 12)]
+  range theguardian-com-international:4937 <li> Flex<Grid fracture w -209.6 x +125.7 h -366.7 y +0.0 → trits (-1, 1, -1, 0)
+    KC frame + cause (w trit) repeats   365 · truth recall 133/152 = 0.875 · precision 0.364 · pages [('theguardian-com-in', 260), ('blog-codinghorror-', 62), ('ebay-com', 14), ('bbc-com-news', 12)]
+  range theguardian-com-international:5482 <li> ListItem<Grid fracture w -0.0 x +0.0 h +19.5 y +0.0 → trits (0, 0, 1, 0)
+    KC frame + cause (h trit) repeats   405 · truth recall 110/152 = 0.724 · precision 0.272 · pages [('theguardian-com-in', 219), ('blog-codinghorror-', 61), ('ebay-com', 56), ('bbc-com-news', 46)]

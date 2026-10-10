@@ -1,0 +1,5 @@
+depth 3 noise 0: polygon recall@1 0.520 @5 0.768 · exact signatures (A3) @1 0.870 @5 0.980 · 43.45 ms/query over 1658 polygons
+depth 3 noise 1: polygon recall@1 0.263 @5 0.515 · exact signatures (A3) @1 0.667 @5 0.844 · 57.10 ms/query over 1658 polygons
+depth 6 noise 0: polygon recall@1 0.530 @5 0.768 · exact signatures (A3) @1 0.873 @5 0.980 · 44.36 ms/query over 1658 polygons
+depth 6 noise 1: polygon recall@1 0.258 @5 0.520 · exact signatures (A3) @1 0.667 @5 0.844 · 50.82 ms/query over 1658 polygons
+depth 2 noise 1: polygon recall@1 0.246 @5 0.518 · exact signatures (A3) @1 0.667 @5 0.844 · 46.79 ms/query over 1658 polygons

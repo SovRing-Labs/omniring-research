@@ -1,0 +1,49 @@
+{
+ "target": "table-span-col1",
+ "symbols": [
+  "w1",
+  "w2",
+  "span"
+ ],
+ "equation_1_64px": null,
+ "verified_rustc": null,
+ "cegis_rounds": 1,
+ "validate": null,
+ "work": 60458529,
+ "how": null,
+ "synth_secs": null,
+ "sample": [
+  [
+   [
+    44,
+    155,
+    84
+   ],
+   2816
+  ],
+  [
+   [
+    75,
+    40,
+    527
+   ],
+   21996
+  ],
+  [
+   [
+    125,
+    130,
+    687
+   ],
+   21552
+  ],
+  [
+   [
+    107,
+    63,
+    116
+   ],
+   6848
+  ]
+ ]
+}

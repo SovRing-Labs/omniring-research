@@ -1,0 +1,830 @@
+{"fns":2,"ops":82,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil"],"word":"(tup (sel (<= (sel (< (/ (+ (* ?0 ?1) 2) 153) 10) (+ (/ (+ (* ?0 ?1) 2) 153) 3) (- (/ (+ (* ?0 ?1) 2) 153) 9)) 2) (+ (+ (/ (- (+ (- ?2 ?3) (/ ?2 ?4)) (/ (- ?5 ?6) 146096)) 365) (* ?7 400)) 1) (+ (/ (- (+ (- (- ?5 ?6) (/ ?2 ?8)) (/ (- ?5 ?6) 36524)) (/ (- (+ ?9 ?10) (* ?7 ?11)) 146096)) 365) (* ?7 400))) (sel (< (/ (+ (* 5 (- (- ?5 ?6) (- ?12 ?13))) 2) 153) 10) (+ (/ (+ (* 5 (- (- ?5 ?6) (- ?12 ?13))) 2) 153) 3) (- (/ (+ (* 5 (- (- ?5 ?6) (- ?12 ?13))) 2) 153) 9)) (+ (- (- (- (+ ?9 719468) (* ?7 146097)) (- (+ (* 365 (/ ?14 ?15)) (/ (/ ?14 ?15) 4)) (/ (/ (- ?16 ?17) 365) 100))) (/ (+ (* 153 (/ (+ ?18 ?19) 153)) 2) 5)) 1))"}
+{"fns":3,"ops":46,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(- (+ (* 365 (/ (- (+ (- (- ?0 ?1) (/ ?2 ?3)) (/ (- ?0 ?1) 36524)) (/ (- (+ ?4 ?5) (* ?6 ?7)) 146096)) 365)) (/ (/ (- (+ (- (- ?0 ?1) (/ ?2 ?3)) (/ (- ?0 ?1) 36524)) (/ (- (+ ?4 ?5) (* ?6 ?7)) 146096)) 365) 4)) (/ (/ (- (+ (- (- (+ ?4 ?5) (* ?6 ?7)) (/ (- ?0 ?1) 1460)) (/ (- (+ ?4 ?5) (* ?6 ?7)) 36524)) (/ (- (+ ?4 719468) (* ?6 146097)) 146096)) 365) 100))"}
+{"fns":3,"ops":43,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(tup ?0 (sel (< (/ (+ (* 5 (- (- ?1 ?2) (- ?3 ?4))) 2) 153) 10) (+ (/ (+ (* 5 (- (- ?1 ?2) (- ?3 ?4))) 2) 153) 3) (- (/ (+ (* 5 (- (- ?1 ?2) (- ?3 ?4))) 2) 153) 9)) (+ (- (- (- (+ ?5 719468) (* ?6 146097)) (- (+ (* 365 (/ ?7 ?8)) (/ (/ ?7 ?8) 4)) (/ (/ (- ?9 ?10) 365) 100))) (/ (+ (* 153 (/ (+ ?11 ?12) 153)) 2) 5)) 1))"}
+{"fns":6,"ops":20,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","omni-render/src/layout.rs:lmix","omni-render/src/raster.rs:mix64","omni-render/src/style.rs:mix64","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(^ (* (^ (* (^ ?0 (>> ?0 30)) ?1) (>> (* (^ ?0 (>> ?0 30)) ?1) 27)) ?2) (>> (* (^ (* (^ ?0 (>> ?0 30)) ?1) (>> (* (^ ?0 (>> ?0 ?3)) ?1) 27)) ?2) 31))"}
+{"fns":3,"ops":37,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(+ (* 365 (/ (- (+ (- (- (+ ?0 ?1) (* ?2 ?3)) (/ (- ?4 ?5) 1460)) (/ (- (+ ?0 ?1) (* ?2 ?3)) 36524)) (/ (- (+ ?0 719468) (* ?2 146097)) 146096)) 365)) (/ (/ (- (+ (- (- (+ ?0 ?1) (* ?2 ?3)) (/ (- ?4 ?5) 1460)) (/ (- (+ ?0 ?1) (* ?2 ?3)) 36524)) (/ (- (+ ?0 719468) (* ?2 146097)) 146096)) 365) 4))"}
+{"fns":3,"ops":35,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* 365 (/ (- (+ (- ?2 ?3) (/ ?2 ?4)) (/ (- ?5 ?6) 146096)) 365)) (/ (/ (- (+ (- ?2 ?3) (/ ?2 ?4)) (/ (- ?5 ?6) 146096)) 365) 4)) (/ (/ (- (+ (- (- ?5 ?6) (/ ?2 ?7)) (/ (- ?5 ?6) 36524)) (/ (- (+ ?0 ?8) (* ?1 ?9)) 146096)) 365) 100)))"}
+{"fns":2,"ops":52,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil"],"word":"(sel (<= (sel (< (/ (+ (* 5 (- ?0 ?1)) 2) 153) 10) (+ (/ (+ (* 5 (- ?0 ?1)) 2) 153) 3) (- (/ (+ (* 5 (- ?0 ?1)) 2) 153) 9)) 2) (+ (+ (/ (- (+ (- (- ?2 ?3) (/ ?0 ?4)) (/ (- ?2 ?3) 36524)) (/ (- (+ ?5 ?6) (* ?7 ?8)) 146096)) 365) (* ?7 400)) 1) (+ (/ (- (+ (- (- (+ ?5 ?6) (* ?7 ?8)) (/ (- ?2 ?3) 1460)) (/ (- (+ ?5 ?6) (* ?7 ?8)) 36524)) (/ (- (+ ?5 719468) (* ?7 146097)) 146096)) 365) (* ?7 400)))"}
+{"fns":3,"ops":34,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(sel (< (/ (+ (* 5 (- (- (+ ?0 ?1) (* ?2 ?3)) (- (+ ?4 ?5) (/ ?6 ?7)))) 2) 153) 10) (+ (/ (+ (* 5 (- (- (+ ?0 ?1) (* ?2 ?3)) (- (+ ?4 ?5) (/ ?6 ?7)))) 2) 153) 3) (- (/ (+ (* 5 (- (- (+ ?0 ?1) (* ?2 ?3)) (- (+ ?4 ?5) (/ ?6 ?7)))) 2) 153) 9))"}
+{"fns":3,"ops":32,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(- (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* 365 (/ (- (+ ?2 ?3) (/ ?4 ?5)) 365)) (/ (/ (- (+ ?2 ?3) (/ ?4 ?5)) 365) 4)) (/ (/ (- (+ (- ?4 ?6) (/ ?4 ?7)) (/ (- ?8 ?9) 146096)) 365) 100))) (/ (+ (* 153 (/ (+ (* 5 (- ?4 ?10)) 2) 153)) 2) 5))"}
+{"fns":3,"ops":28,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(+ (* ?0 146097) (+ (- (+ (* (- (sel (<= ?1 ?2) (- ?3 ?4) ?3) (* ?0 400)) 365) (/ (- (sel (<= ?1 ?2) (- ?3 ?4) ?3) (* ?0 400)) 4)) (/ (- (sel (<= ?1 2) (- ?3 1) ?3) (* ?0 400)) 100)) (- (+ (/ (+ (* 153 ?5) 2) 5) ?6) 1)))"}
+{"fns":3,"ops":27,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(^ (* (^ (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) (>> (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) 27)) ?3) (>> (* (^ (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) (>> (* (^ (+ ?0 ?1) (>> ?4 ?5)) ?2) 27)) ?3) 31))"}
+{"fns":3,"ops":26,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(+ (- (+ (* (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 365) (/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 4)) (/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 100)) (- (+ (/ (+ (* 153 ?3) 2) 5) ?4) 1))"}
+{"fns":2,"ops":38,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold ?0 (fold ?1 (get0 (tup list list)) (fold ?2 ?3 (sel ?4 ?5 ?6))) (sel (> (get2 item1) (get0 (tup (+ (sum (idx ?7 ?8)) (* ?9 (- ?10 ?11))) (+ (sum (idx ?3 ?8)) (* ?9 (- ?10 ?11)))))) (fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?1 (sum ?12))))) ?7 (store ?6 item2 (+ ?13 (/ (- (get2 ?14) (get0 ?15)) (get1 item1))))) ?7))"}
+{"fns":2,"ops":38,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold ?0 (fold ?1 (get1 (tup list list)) (fold ?2 ?3 (sel ?4 ?5 ?6))) (sel (> (get3 item1) (get1 (tup (+ (sum (idx ?7 ?8)) (* ?9 (- ?10 ?11))) (+ (sum (idx ?12 ?8)) (* ?9 (- ?10 ?11)))))) (fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?1 (sum ?13))))) ?12 (store ?14 item2 (+ ?15 (/ (- (get3 ?16) (get1 ?17)) (get1 item1))))) ?12))"}
+{"fns":2,"ops":38,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (> (get2 item1) (get0 (tup (+ (sum (idx ?0 (range ?1 ?2))) (* ?3 (- (get1 ?4) 1))) (+ (sum (idx ?5 (range ?1 ?2))) (* ?3 (- (get1 ?4) 1)))))) (fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?6 (sum (map ?7 ?8)))))) ?0 (store ?9 item2 (+ ?10 (/ (- (get2 item1) (get0 (tup ?11 ?12))) (get1 item1))))) ?0)"}
+{"fns":2,"ops":38,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (> (get3 item1) (get1 (tup (+ (sum (idx ?0 (range ?1 ?2))) (* ?3 (- (get1 ?4) 1))) (+ (sum (idx ?5 (range ?1 ?2))) (* ?3 (- (get1 ?4) 1)))))) (fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?6 (sum (map ?7 ?8)))))) ?5 (store ?9 item2 (+ ?10 (/ (- (get3 item1) (get1 (tup ?11 ?12))) (get1 item1))))) ?5)"}
+{"fns":3,"ops":25,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(* 5 (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* 365 (/ (- (+ ?2 ?3) (/ ?4 ?5)) 365)) (/ (/ (- (+ ?2 ?3) (/ ?4 ?5)) 365) 4)) (/ (/ (- (+ (- ?4 ?6) (/ ?4 ?7)) (/ (- ?8 ?9) 146096)) 365) 100))))"}
+{"fns":3,"ops":25,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(+ (- (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* 365 (/ (- ?2 ?3) 365)) (/ (/ (- ?2 ?3) 365) 4)) (/ (/ (- (+ ?4 ?5) (/ ?6 ?7)) 365) 100))) (/ (+ (* 153 (/ (+ (* ?8 ?9) 2) 153)) 2) 5)) 1)"}
+{"fns":3,"ops":25,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(- (+ (* ?0 146097) (+ (- (+ (* (- (sel ?1 ?2 ?3) (* ?0 ?4)) 365) (/ (- (sel ?1 ?2 ?3) (* ?0 ?4)) 4)) (/ (- (sel (<= ?5 ?6) (- ?3 ?7) ?3) (* ?0 400)) 100)) (- (+ (/ (+ (* ?8 ?9) 2) 5) ?10) 1))) 719468)"}
+{"fns":3,"ops":23,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(<= (sel (< (/ (+ (* 5 (- (- ?0 ?1) (- ?2 ?3))) 2) 153) 10) (+ (/ (+ (* 5 (- (- ?0 ?1) (- ?2 ?3))) 2) 153) 3) (- (/ (+ (* 5 (- (- ?0 ?1) (- ?2 ?3))) 2) 153) 9)) 2)"}
+{"fns":2,"ops":32,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sum (fold ?0 (fold ?1 (get0 (tup list list)) (fold ?2 ?3 (sel ?4 ?5 ?6))) (sel (> (get2 item1) (get0 (tup (+ (sum ?7) (* ?8 ?9)) (+ (sum ?10) (* ?8 ?9))))) (fold (range (get0 item1) (min (+ (get0 ?11) (get1 ?11)) (maxall (map ?1 ?12)))) ?13 (store ?6 item2 (+ ?14 (/ (- ?15 ?16) (get1 ?11))))) ?13)))"}
+{"fns":2,"ops":32,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sum (fold ?0 (fold ?1 (get1 (tup list list)) (fold ?2 ?3 (sel ?4 ?5 ?6))) (sel (> (get3 item1) (get1 (tup (+ (sum ?7) (* ?8 ?9)) (+ (sum ?10) (* ?8 ?9))))) (fold (range (get0 item1) (min (+ (get0 ?11) (get1 ?11)) (maxall (map ?1 ?12)))) ?13 (store ?14 item2 (+ ?15 (/ (- ?16 ?17) (get1 ?11))))) ?13)))"}
+{"fns":3,"ops":21,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(+ (/ (- (+ (- (- (+ ?0 719468) (* ?1 146097)) (/ (- (+ ?0 ?2) (* ?1 ?3)) 1460)) (/ (- (+ ?0 719468) (* ?1 146097)) 36524)) (/ (- (+ ?0 719468) (* ?1 146097)) 146096)) 365) (* ?1 400))"}
+{"fns":3,"ops":21,"where":["omni-render/src/corert0.rs:main","omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(and (and (and (>= ?0 (idx (get1 ?1) 0)) (< ?0 (+ (idx (get1 ?1) 0) (idx (get1 ?1) 2)))) (>= ?2 (idx (get1 ?1) 1))) (< ?2 (+ (idx (get1 ?1) 1) (idx (get1 ?1) 3))))"}
+{"fns":3,"ops":20,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(* 365 (/ (- (+ (- (- (+ ?0 719468) (* ?1 146097)) (/ (- (+ ?0 ?2) (* ?1 ?3)) 1460)) (/ (- (+ ?0 719468) (* ?1 146097)) 36524)) (/ (- (+ ?0 719468) (* ?1 146097)) 146096)) 365))"}
+{"fns":3,"ops":20,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(+ (+ (/ (- (+ (- (- (+ ?0 ?1) (* ?2 ?3)) (/ (- ?4 ?5) 1460)) (/ (- (+ ?0 ?1) (* ?2 ?3)) 36524)) (/ (- (+ ?0 719468) (* ?2 146097)) 146096)) 365) (* ?2 400)) ?6)"}
+{"fns":2,"ops":30,"where":["omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(+ (- (+ (* (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 365) (/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 4)) (/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 100)) (- (+ (/ (+ (* 153 (sel (> ?0 ?3) (- ?0 ?4) (+ ?0 ?5))) 2) 5) ?6) 1))"}
+{"fns":3,"ops":20,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(- (+ (* (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 365) (/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 4)) (/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 100))"}
+{"fns":3,"ops":20,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(/ (/ (- (+ (- (- (+ ?0 719468) (* ?1 146097)) (/ (- (+ ?0 ?2) (* ?1 ?3)) 1460)) (/ (- (+ ?0 719468) (* ?1 146097)) 36524)) (/ (- (+ ?0 719468) (* ?1 146097)) 146096)) 365) 100)"}
+{"fns":3,"ops":20,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(/ (/ (- (+ (- (- (+ ?0 719468) (* ?1 146097)) (/ (- (+ ?0 ?2) (* ?1 ?3)) 1460)) (/ (- (+ ?0 719468) (* ?1 146097)) 36524)) (/ (- (+ ?0 719468) (* ?1 146097)) 146096)) 365) 4)"}
+{"fns":6,"ops":10,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","omni-render/src/layout.rs:lmix","omni-render/src/raster.rs:mix64","omni-render/src/style.rs:mix64","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(>> (* (^ (* (^ ?0 (>> ?0 30)) ?1) (>> (* (^ ?0 (>> ?0 30)) ?1) 27)) ?2) 31)"}
+{"fns":2,"ops":29,"where":["omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(+ (* ?0 146097) (+ (- (+ (* (- (sel (<= ?1 ?2) (- ?3 ?4) ?3) (* ?0 400)) 365) (/ (- (sel (<= ?1 ?2) (- ?3 ?4) ?3) (* ?0 400)) 4)) (/ (- (sel (<= ?1 2) (- ?3 1) ?3) (* ?0 400)) 100)) (- (+ (/ (+ (* 153 (sel ?5 ?6 ?7)) 2) 5) ?8) 1)))"}
+{"fns":2,"ops":29,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(tup (+ (sum (idx ?0 (range (get0 item1) (min (+ (get0 ?1) (get1 ?1)) (maxall (map ?2 ?3)))))) (* ?4 (- (get1 item1) 1))) (+ (sum (idx ?5 (range (get0 item1) (min (+ (get0 ?1) (get1 ?1)) (maxall (map ?2 ?3)))))) (* ?4 (- (get1 item1) 1))))"}
+{"fns":3,"ops":19,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(+ (* 5 (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* 365 (/ (- ?2 ?3) 365)) (/ (/ (- ?2 ?3) 365) 4)) (/ (/ (- (+ ?4 ?5) (/ ?6 ?7)) 365) 100)))) 2)"}
+{"fns":3,"ops":19,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(/ (- (+ (- (- (+ ?0 719468) (* ?1 146097)) (/ (- (+ ?0 719468) (* ?1 146097)) 1460)) (/ (- (+ ?0 719468) (* ?1 146097)) 36524)) (/ (- (+ ?0 719468) (* ?1 146097)) 146096)) 365)"}
+{"fns":8,"ops":7,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/p2.rs:gemv_b8","omni-render/src/jit/ternary.rs:jit_ternary_exact_small","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(fold (range 0 ?0) ?1 (fold (range 0 ?2) ?3 (store ?4 (+ (* ?5 ?6) ?7) ?8)))"}
+{"fns":6,"ops":9,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","omni-render/src/layout.rs:lmix","omni-render/src/raster.rs:mix64","omni-render/src/style.rs:mix64","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(* (^ (* (^ ?0 (>> ?0 30)) ?1) (>> (* (^ ?0 (>> ?0 30)) ?1) 27)) ?2)"}
+{"fns":3,"ops":18,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(- (+ (- (- (+ ?0 719468) (* ?1 146097)) (/ (- (+ ?0 719468) (* ?1 146097)) 1460)) (/ (- (+ ?0 719468) (* ?1 146097)) 36524)) (/ (- (+ ?0 719468) (* ?1 146097)) 146096))"}
+{"fns":3,"ops":18,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(sel (<= (sel (< (/ (+ (* 5 (- ?0 ?1)) 2) 153) 10) (+ (/ (+ (* 5 (- ?0 ?1)) 2) 153) 3) (- (/ (+ (* 5 (- ?0 ?1)) 2) 153) 9)) 2) ?2 ?3)"}
+{"fns":10,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/p2.rs:gemv_b8","omni-render/src/jit/ternary.rs:jit_ternary_exact_small","omni-spec/src/jpeg.rs:idct_block","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ (* ?3 ?4) ?5) ?6))"}
+{"fns":10,"ops":5,"where":["omni-render/src/jit/x86.rs:add_rr","omni-render/src/jit/x86.rs:mem","omni-render/src/jit/x86.rs:mov64","omni-render/src/jit/x86.rs:test64","omni-render/src/jit/x86.rs:v0f38_rr","omni-render/src/jit/x86.rs:v66_rr","omni-render/src/jit/x86.rs:vextracti128_hi","omni-render/src/jit/x86.rs:vpaddd_x","omni-render/src/jit/x86.rs:vpshufd_x","omni-render/src/jit/x86.rs:zero"],"word":"(| (| ?0 (<< (& ?1 7) 3)) (& ?2 7))"}
+{"fns":10,"ops":5,"where":["omni-render/src/jit/x86.rs:add_rr","omni-render/src/jit/x86.rs:mov64","omni-render/src/jit/x86.rs:rex","omni-render/src/jit/x86.rs:test64","omni-render/src/jit/x86.rs:v0f38_rr","omni-render/src/jit/x86.rs:v66_rr","omni-render/src/jit/x86.rs:vextracti128_hi","omni-render/src/jit/x86.rs:vpaddd_x","omni-render/src/jit/x86.rs:vpshufd_x","omni-render/src/jit/x86.rs:zero"],"word":"(| (| ?0 (<< (& ?1 ?2) ?3)) (& ?4 ?2))"}
+{"fns":3,"ops":16,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(/ (+ (* 5 (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* 365 (/ ?2 ?3)) (/ (/ ?2 ?3) 4)) (/ (/ (- ?4 ?5) 365) 100)))) 2) 153)"}
+{"fns":6,"ops":8,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","omni-render/src/layout.rs:lmix","omni-render/src/raster.rs:mix64","omni-render/src/style.rs:mix64","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(^ (* (^ ?0 (>> ?0 30)) ?1) (>> (* (^ ?0 (>> ?0 30)) ?1) 27))"}
+{"fns":6,"ops":8,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","omni-render/src/layout.rs:lmix","omni-render/src/raster.rs:mix64","omni-render/src/style.rs:mix64","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(^ (* (^ ?0 (>> ?0 ?1)) ?2) (>> (* (^ ?0 (>> ?0 ?1)) ?2) ?3))"}
+{"fns":2,"ops":24,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(get0 (tup (+ (sum (idx ?0 (range (get0 item1) (min (+ ?1 ?2) (maxall ?3))))) (* ?4 (- (get1 item1) 1))) (+ (sum (idx ?5 (range (get0 item1) (min (+ ?1 ?2) (maxall ?3))))) (* ?4 (- (get1 item1) 1)))))"}
+{"fns":2,"ops":24,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(get1 (tup (+ (sum (idx ?0 (range (get0 item1) (min (+ ?1 ?2) (maxall ?3))))) (* ?4 (- (get1 item1) 1))) (+ (sum (idx ?5 (range (get0 item1) (min (+ ?1 ?2) (maxall ?3))))) (* ?4 (- (get1 item1) 1)))))"}
+{"fns":9,"ops":5,"where":["omni-render/src/jit/x86.rs:add_rr","omni-render/src/jit/x86.rs:mov64","omni-render/src/jit/x86.rs:test64","omni-render/src/jit/x86.rs:v0f38_rr","omni-render/src/jit/x86.rs:v66_rr","omni-render/src/jit/x86.rs:vextracti128_hi","omni-render/src/jit/x86.rs:vpaddd_x","omni-render/src/jit/x86.rs:vpshufd_x","omni-render/src/jit/x86.rs:zero"],"word":"(| (| 192 (<< (& ?0 7) 3)) (& ?1 7))"}
+{"fns":2,"ops":22,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(- (get2 item1) (get0 (tup (+ (sum (idx ?0 (range (get0 ?1) (min ?2 ?3)))) (* ?4 (- (get1 item1) 1))) (+ (sum (idx ?5 (range (get0 ?1) (min ?2 ?3)))) (* ?4 (- (get1 item1) 1))))))"}
+{"fns":2,"ops":22,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(- (get3 item1) (get1 (tup (+ (sum (idx ?0 (range (get0 ?1) (min ?2 ?3)))) (* ?4 (- (get1 item1) 1))) (+ (sum (idx ?5 (range (get0 ?1) (min ?2 ?3)))) (* ?4 (- (get1 item1) 1))))))"}
+{"fns":2,"ops":22,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(> (get2 item1) (get0 (tup (+ (sum (idx ?0 (range (get0 ?1) (min ?2 ?3)))) (* ?4 (- (get1 item1) 1))) (+ (sum (idx ?5 (range (get0 ?1) (min ?2 ?3)))) (* ?4 (- (get1 item1) 1))))))"}
+{"fns":2,"ops":22,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(> (get3 item1) (get1 (tup (+ (sum (idx ?0 (range (get0 ?1) (min ?2 ?3)))) (* ?4 (- (get1 item1) 1))) (+ (sum (idx ?5 (range (get0 ?1) (min ?2 ?3)))) (* ?4 (- (get1 item1) 1))))))"}
+{"fns":3,"ops":14,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(* 153 (/ (+ (* 5 (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* ?2 ?3) (/ ?3 ?4)) (/ (/ ?5 ?2) 100)))) 2) 153))"}
+{"fns":2,"ops":21,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ (+ (* (* ?0 (- 1 (/ item1 ?1))) (get0 (get0 ?2))) (* (* (* ?3 (- 1 (/ item1 ?1))) (/ item1 ?1)) (get0 (get1 ?2)))) (* (* ?4 (/ item1 ?1)) (get0 (get2 ?2))))"}
+{"fns":2,"ops":21,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ (+ (* (* ?0 (- 1 (/ item1 ?1))) (get1 (get0 ?2))) (* (* (* ?3 (- 1 (/ item1 ?1))) (/ item1 ?1)) (get1 (get1 ?2)))) (* (* ?4 (/ item1 ?1)) (get1 (get2 ?2))))"}
+{"fns":3,"ops":14,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(+ (/ (+ (* 5 (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* ?2 ?3) (/ ?3 ?4)) (/ (/ ?5 ?2) 100)))) 2) 153) 3)"}
+{"fns":3,"ops":14,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(- (/ (+ (* 5 (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* ?2 ?3) (/ ?3 ?4)) (/ (/ ?5 ?2) 100)))) 2) 153) 9)"}
+{"fns":3,"ops":14,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(< (/ (+ (* 5 (- (- (+ ?0 719468) (* ?1 146097)) (- (+ (* ?2 ?3) (/ ?3 ?4)) (/ (/ ?5 ?2) 100)))) 2) 153) 10)"}
+{"fns":3,"ops":14,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(>> (* (^ (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) (>> (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) 27)) ?3) 31)"}
+{"fns":3,"ops":14,"where":["omni-render/src/corert0.rs:main","omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(and (and (>= ?0 (idx (get1 ?1) 0)) (< ?0 (+ (idx (get1 ?1) 0) (idx (get1 ?1) 2)))) (>= ?2 (idx (get1 ?1) 1)))"}
+{"fns":2,"ops":21,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?0 (sum (map ?1 ?2)))))) ?3 (store ?4 item2 (+ ?5 (/ (- (get2 item1) (get0 (tup (+ ?6 ?7) (+ ?8 ?7)))) (get1 item1)))))"}
+{"fns":2,"ops":21,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?0 (sum (map ?1 ?2)))))) ?3 (store ?4 item2 (+ ?5 (/ (- (get3 item1) (get1 (tup (+ ?6 ?7) (+ ?8 ?7)))) (get1 item1)))))"}
+{"fns":2,"ops":21,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold ?0 (fold ?1 ?2 (fold ?3 ?4 (sel ?5 ?6 ?7))) (sel (> ?8 ?9) (fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?1 (sum ?10))))) ?11 (store ?12 item2 (+ ?13 (/ (- ?8 ?9) (get1 item1))))) ?11))"}
+{"fns":2,"ops":21,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sum (fold ?0 (fold ?1 ?2 (fold ?3 ?4 (sel ?5 ?6 ?7))) (sel (> ?8 ?9) (fold (range (get0 item1) (min (+ (get0 ?10) (get1 ?10)) (maxall (map ?1 ?11)))) ?12 (store ?13 item2 (+ ?14 (/ (- ?8 ?9) (get1 ?10))))) ?12)))"}
+{"fns":2,"ops":20,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil"],"word":"(+ (+ (/ (- (+ (- (- (+ ?0 ?1) (* ?2 ?3)) (/ (- ?4 ?5) 1460)) (/ (- (+ ?0 ?1) (* ?2 ?3)) 36524)) (/ (- (+ ?0 719468) (* ?2 146097)) 146096)) 365) (* ?2 400)) 1)"}
+{"fns":2,"ops":20,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(/ (- (get2 item1) (get0 (tup (+ (sum (idx ?0 (range ?1 ?2))) (* ?3 (- (get1 ?4) 1))) (+ (sum (idx ?5 (range ?1 ?2))) (* ?3 (- (get1 ?4) 1)))))) (get1 item1))"}
+{"fns":2,"ops":20,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(/ (- (get3 item1) (get1 (tup (+ (sum (idx ?0 (range ?1 ?2))) (* ?3 (- (get1 ?4) 1))) (+ (sum (idx ?5 (range ?1 ?2))) (* ?3 (- (get1 ?4) 1)))))) (get1 item1))"}
+{"fns":3,"ops":13,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(* (^ (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) (>> (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) 27)) ?3)"}
+{"fns":3,"ops":13,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(+ (* (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 365) (/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 4))"}
+{"fns":3,"ops":13,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(+ (- (- (+ ?0 719468) (* ?1 146097)) (/ (- (+ ?0 719468) (* ?1 146097)) 1460)) (/ (- (+ ?0 719468) (* ?1 146097)) 36524))"}
+{"fns":4,"ops":9,"where":["omni-spec/src/webp.rs:add_pixels","omni-spec/src/webp.rs:avg2","omni-spec/src/webp.rs:clamp_add_sub_full","omni-spec/src/webp.rs:select"],"word":"(+ (& (>> ?0 (idx (list 24 16 8 0) item1)) 255) (& (>> ?1 (idx (list 24 16 8 0) item1)) 255))"}
+{"fns":3,"ops":12,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(+ (* 153 (/ (+ (* 5 (- (- (+ ?0 ?1) (* ?2 ?3)) (- (+ ?4 ?5) (/ ?6 ?7)))) 2) 153)) 2)"}
+{"fns":3,"ops":12,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(^ (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) (>> (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) 27))"}
+{"fns":6,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (store ?4 (+ (* ?5 ?6) ?7) ?8)))"}
+{"fns":6,"ops":6,"where":["omni-render/src/checks.rs:mismatches","omni-render/src/explain.rs:check","omni-render/src/explain.rs:run","omni-render/src/main.rs:render_cmd","omni-render/src/repair.rs:score_full","omni-render/src/repair.rs:watch_page"],"word":"(map ?0 (tup (round (get0 ?1)) (round (get1 ?1))))"}
+{"fns":2,"ops":18,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (> ?0 ?1) (fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?2 (sum (map ?3 ?4)))))) ?5 (store ?6 item2 (+ ?7 (/ (- ?0 ?1) (get1 item1))))) ?5)"}
+{"fns":5,"ops":7,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-render/src/jit/p2.rs:gemv_b8","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor"],"word":"(fold (range 0 ?0) ?1 (fold (range 0 ?2) ?3 (store ?4 (+ (* item1 ?2) item2) ?5)))"}
+{"fns":7,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_at","omni-render/src/layout.rs:knob_fast","omni-render/src/style.rs:calc","omni-spec/src/jpeg.rs:decode_block","omni-spec/src/sfnt.rs:cmap4","omni-spec/src/webp.rs:inverse_predictor"],"word":"(sel ?0 ?1 (sel (== ?2 ?3) ?4 (sel (== ?5 ?6) ?7 ?8)))"}
+{"fns":7,"ops":5,"where":["omni-render/src/checks.rs:mismatches","omni-render/src/explain.rs:check","omni-render/src/explain.rs:run","omni-render/src/img.rs:size","omni-render/src/main.rs:render_cmd","omni-render/src/repair.rs:score_full","omni-render/src/repair.rs:watch_page"],"word":"(tup (round (get0 ?0)) (round (get1 ?0)))"}
+{"fns":2,"ops":17,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(+ ?0 (/ (- (get2 item1) (get0 (tup (+ (sum (idx ?1 ?2)) (* ?3 (- ?4 ?5))) (+ (sum (idx ?6 ?2)) (* ?3 (- ?4 ?5)))))) (get1 item1)))"}
+{"fns":2,"ops":17,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(+ ?0 (/ (- (get3 item1) (get1 (tup (+ (sum (idx ?1 ?2)) (* ?3 (- ?4 ?5))) (+ (sum (idx ?6 ?2)) (* ?3 (- ?4 ?5)))))) (get1 item1)))"}
+{"fns":2,"ops":16,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?0 (sum (map ?1 ?2)))))) ?3 (store ?4 item2 (+ ?5 (/ (- ?6 ?7) (get1 item1)))))"}
+{"fns":2,"ops":15,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ (* (* ?0 (- 1 (/ item1 ?1))) (get0 (get0 ?2))) (* (* (* ?3 (- 1 (/ item1 ?1))) (/ item1 ?1)) (get0 (get1 ?2))))"}
+{"fns":2,"ops":15,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ (* (* ?0 (- 1 (/ item1 ?1))) (get1 (get0 ?2))) (* (* (* ?3 (- 1 (/ item1 ?1))) (/ item1 ?1)) (get1 (get1 ?2))))"}
+{"fns":2,"ops":15,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(+ (* (get0 (tup ?0 ?1)) (get0 (tup (/ ?2 ?3) (/ ?4 ?3)))) (* (get1 (tup ?0 ?1)) (get1 (tup (/ ?2 ?3) (/ ?4 ?3)))))"}
+{"fns":2,"ops":15,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ (+ (* (* ?0 (- 1 (/ item1 ?1))) ?2) (* (* (* ?3 (- 1 (/ item1 ?1))) (/ item1 ?1)) ?4)) (* (* ?5 (/ item1 ?1)) ?6))"}
+{"fns":2,"ops":15,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(+ (sum (idx ?0 (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?1 (sum ?2))))))) (* ?3 (- (get1 item1) 1)))"}
+{"fns":6,"ops":5,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:civil_from_days","omni-ui/src/recur.rs:days_from_civil"],"word":"(- (+ (* ?0 ?1) (/ ?2 4)) (/ ?2 100))"}
+{"fns":5,"ops":6,"where":["omni-render/src/img.rs:decode_full","omni-render/src/jit/p2.rs:gemv_b8","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(fold (range 0 ?0) ?1 (fold (range 0 ?2) ?3 (store ?4 (+ ?5 ?6) ?7)))"}
+{"fns":5,"ops":6,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:decode_full","omni-render/src/img.rs:downscale","omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold (range 0 ?0) list (fold (range 0 ?1) ?2 (store ?3 (+ ?4 ?5) ?6)))"}
+{"fns":3,"ops":10,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/rm.rs:run"],"word":"(fold ?0 ?1 (sel (and (and (sel (and ?2 (== ?3 str)) 0 ?2) (> (len ?3) 1)) ?4) (fold ?5 ?6 ?7) ?6))"}
+{"fns":6,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/rm.rs:run","omni-spec/posix/src/tr.rs:run","omni-spec/src/jpeg.rs:decode_scan"],"word":"(fold ?0 ?1 (sel (and (and ?2 (> ?3 ?4)) ?5) ?6 ?7))"}
+{"fns":5,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table","omni-render/src/raster.rs:compose","omni-render/src/svg.rs:arc"],"word":"(get0 (tup (+ ?0 (* ?1 ?2)) (+ ?3 (* ?4 ?5))))"}
+{"fns":5,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table","omni-render/src/raster.rs:compose","omni-render/src/svg.rs:arc"],"word":"(get1 (tup (+ ?0 (* ?1 ?2)) (+ ?3 (* ?4 ?5))))"}
+{"fns":2,"ops":15,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden"],"word":"(tup ?0 ?1 (map (idx ?2 (range (+ ?3 8) (+ (+ ?3 8) (* ?0 ?1)))) (idx (idx ?2 (range (+ ?3 8) (+ (+ ?3 8) (* ?0 ?1)))) ?4)))"}
+{"fns":6,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/img.rs:pack","omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3","omni-render/src/svg.rs:paint","omni-spec/src/webp.rs:argb"],"word":"(| (| (<< ?0 ?1) (<< ?2 ?3)) (<< ?4 ?5))"}
+{"fns":2,"ops":14,"where":["omni-spec/src/webp.rs:clamp_add_sub_full","omni-spec/src/webp.rs:select"],"word":"(- (+ (& (>> ?0 (idx (list 24 16 8 0) item1)) 255) (& (>> ?1 (idx (list 24 16 8 0) item1)) 255)) (& (>> ?2 (idx (list 24 16 8 0) item1)) 255))"}
+{"fns":2,"ops":14,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden"],"word":"(map (idx ?0 (range (+ ?1 8) (+ (+ ?1 8) (* ?2 ?3)))) (idx (idx ?0 (range (+ ?1 8) (+ (+ ?1 8) (* ?2 ?3)))) ?4))"}
+{"fns":2,"ops":14,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(store ?0 item2 (+ ?1 (/ (- (get2 item1) (get0 (tup (+ (sum ?2) (* ?3 ?4)) (+ (sum ?5) (* ?3 ?4))))) (get1 item1))))"}
+{"fns":2,"ops":14,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(store ?0 item2 (+ ?1 (/ (- (get3 item1) (get1 (tup (+ (sum ?2) (* ?3 ?4)) (+ (sum ?5) (* ?3 ?4))))) (get1 item1))))"}
+{"fns":3,"ops":9,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(/ (+ (* 153 (/ (+ (* 5 (- (- ?0 ?1) (- ?2 ?3))) 2) 153)) 2) 5)"}
+{"fns":3,"ops":9,"where":["omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear","omni-render/src/raster.rs:touches"],"word":"(and (and (and (>= ?0 ?1) (< ?2 (+ ?1 ?3))) (>= ?4 ?5)) (< ?6 (+ ?5 ?7)))"}
+{"fns":3,"ops":9,"where":["omni-ui/src/widgets.rs:label","omni-ui/src/widgets.rs:value","terminal-launcher/apps/tsift/src/lib.rs:query"],"word":"(idx ?0 (range (get0 (idx ?1 ?2)) (+ (get0 (idx ?1 ?2)) (get1 (idx ?1 ?2)))))"}
+{"fns":3,"ops":9,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/rm.rs:run"],"word":"(sel (and (and (sel (and ?0 (== ?1 str)) 0 ?0) (> (len ?1) 1)) ?2) (fold ?3 ?4 ?5) ?4)"}
+{"fns":2,"ops":13,"where":["omni-render/src/jit/ir.rs:main","omni-render/src/jit/sift.rs:main"],"word":"(idx (map (range 0 (* (get0 ?0) (get1 ?0))) (& ?1 15)) (range (* ?2 (get1 ?0)) (* (+ ?2 1) (get1 ?0))))"}
+{"fns":5,"ops":5,"where":["omni-spec/src/webp.rs:add_pixels","omni-spec/src/webp.rs:avg2","omni-spec/src/webp.rs:clamp_add_sub_full","omni-spec/src/webp.rs:clamp_add_sub_half","omni-spec/src/webp.rs:select"],"word":"(+ (& (>> ?0 (idx (list 24 16 8 0) item1)) 255) ?1)"}
+{"fns":5,"ops":5,"where":["omni-render/src/dom.rs:heap_bytes","omni-render/src/font.rs:quad_to","omni-render/src/hit.rs:bytes","omni-render/src/main.rs:ssim","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (* ?0 ?1) (* ?2 ?3)) (* ?4 ?5))"}
+{"fns":5,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/p2.rs:gemv_b8","omni-render/src/jit/ternary.rs:jit_ternary_exact_small","omni-spec/src/jpeg.rs:idct_block"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ (* ?3 8) ?4) ?5))"}
+{"fns":5,"ops":5,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-render/src/jit/ternary.rs:jit_ternary_exact_small","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ (* ?3 ?4) item2) ?5))"}
+{"fns":5,"ops":5,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-spec/src/jpeg.rs:idct_block","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ (* item1 ?0) ?3) ?4))"}
+{"fns":5,"ops":5,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-render/src/jit/p2.rs:gemv_b8","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ (* item1 ?0) item2) ?3))"}
+{"fns":5,"ops":5,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small","omni-render/src/runtime.rs:find_index"],"word":"(fold ?0 list (fold ?1 ?2 (store ?3 (+ (* ?4 ?5) ?6) ?7)))"}
+{"fns":5,"ops":5,"where":["omni-render/src/svg.rs:intrinsic","omni-render/src/verify.rs:chrome_elements","omni-spec/src/otshape.rs:u32_at","omni-spec/src/sfnt.rs:u32_at","omni-spec/src/webp.rs:decode_vp8l"],"word":"(list (idx ?0 0) (idx ?0 1) (idx ?0 2) (idx ?0 3))"}
+{"fns":5,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:flow","omni-render/src/layout.rs:grid","omni-render/src/layout.rs:inline_seg","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (and (and ?0 (== ?1 ?2)) ?3) ?4) ?5 ?6)"}
+{"fns":5,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/rm.rs:run","omni-spec/src/jpeg.rs:decode_scan"],"word":"(sel (and (and ?0 (> ?1 ?2)) ?3) (fold ?4 ?5 ?6) ?5)"}
+{"fns":5,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_fast","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 ?1) ?2 (sel (and ?3 ?4) ?5 (sel ?6 ?7 ?8)))"}
+{"fns":5,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w","omni-render/src/woff.rs:reconstruct_glyf","omni-spec/posix/src/osx.rs:kind"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel ?6 ?7 (sel ?8 ?9 ?10)))))"}
+{"fns":5,"ops":5,"where":["omni-render/src/img.rs:size","omni-render/src/jsi_date.rs:normalize_ymd","omni-render/src/main.rs:render_cmd","omni-render/src/repair.rs:load_book","omni-spec/posix/src/cp.rs:run"],"word":"(tup (get0 (tup ?0 ?1)) (get1 (tup ?0 ?1)))"}
+{"fns":5,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/img.rs:pack","omni-render/src/svg.rs:paint","omni-spec/src/webp.rs:argb","omni-spec/src/webp.rs:inverse_color"],"word":"(| (| (<< ?0 24) (<< ?1 16)) (<< ?2 8))"}
+{"fns":3,"ops":8,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(+ (sum (idx ?0 (range ?1 (min (+ ?2 (get1 ?3)) ?4)))) (* ?5 ?6))"}
+{"fns":3,"ops":8,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-spec/posix/src/date.rs:civil","omni-ui/src/recur.rs:civil_from_days"],"word":"(- (- (+ ?0 719468) (* ?1 146097)) (/ (- (+ ?0 719468) (* ?1 146097)) 1460))"}
+{"fns":4,"ops":6,"where":["omni-spec/src/webp.rs:add_pixels","omni-spec/src/webp.rs:avg2","omni-spec/src/webp.rs:clamp_add_sub_full","omni-spec/src/webp.rs:clamp_add_sub_half"],"word":"(fold (list 24 16 8 0) 0 (| ?0 (<< ?1 (idx (list 24 16 8 0) item1))))"}
+{"fns":4,"ops":6,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/rm.rs:run","omni-spec/src/jpeg.rs:decode_scan"],"word":"(fold ?0 ?1 (sel (and (and ?2 (> ?3 ?4)) ?5) (fold ?6 ?7 ?8) ?7))"}
+{"fns":4,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table","omni-render/src/raster.rs:compose","omni-render/src/svg.rs:arc"],"word":"(get0 (tup (+ (* ?0 ?1) ?2) (+ (* ?3 ?1) ?4)))"}
+{"fns":4,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table","omni-render/src/raster.rs:compose","omni-render/src/svg.rs:arc"],"word":"(get1 (tup (+ (* ?0 ?1) ?2) (+ (* ?3 ?1) ?4)))"}
+{"fns":3,"ops":8,"where":["omni-render/src/jit/ir.rs:main","omni-render/src/jit/sift.rs:main","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(idx (map ?0 ?1) (range (* ?2 (get1 ?3)) (* (+ ?2 1) (get1 ?3))))"}
+{"fns":4,"ops":6,"where":["omni-render/src/dom.rs:add_attrs_if_missing","omni-ui/src/widgets.rs:label","omni-ui/src/widgets.rs:value","terminal-launcher/apps/tsift/src/lib.rs:query"],"word":"(idx ?0 (range (get0 ?1) (+ (get0 ?1) (get1 ?1))))"}
+{"fns":4,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden","omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(map (idx ?0 (range ?1 ?2)) (idx (idx ?0 (range ?1 ?2)) ?3))"}
+{"fns":3,"ops":8,"where":["omni-render/src/img.rs:decode_full","omni-spec/src/gif.rs:first_frame_rgba","omni-spec/src/jpeg.rs:output"],"word":"(range (* (+ (* ?0 ?1) ?2) ?3) (+ (* (+ (* ?0 ?1) ?2) ?3) ?3))"}
+{"fns":3,"ops":8,"where":["omni-ui/src/widgets.rs:label","omni-ui/src/widgets.rs:value","terminal-launcher/apps/tsift/src/lib.rs:query"],"word":"(range (get0 (idx ?0 ?1)) (+ (get0 (idx ?0 ?1)) (get1 (idx ?0 ?1))))"}
+{"fns":2,"ops":12,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sum (idx ?0 (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?1 (sum (map ?2 ?3))))))))"}
+{"fns":4,"ops":6,"where":["omni-render/src/img.rs:pack","omni-render/src/svg.rs:paint","omni-spec/src/webp.rs:argb","omni-spec/src/webp.rs:inverse_color"],"word":"(| (| (| (<< ?0 24) (<< ?1 16)) (<< ?2 8)) ?3)"}
+{"fns":4,"ops":6,"where":["omni-render/src/img.rs:pack","omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3","omni-spec/src/webp.rs:argb"],"word":"(| (| (| (<< ?0 ?1) (<< ?2 ?3)) (<< ?4 ?5)) ?6)"}
+{"fns":2,"ops":11,"where":["omni-render/apps/find/src/lib.rs:alloc","terminal-launcher/apps/tsift/src/lib.rs:alloc"],"word":"(+ (& (- (+ (sel (== ?0 0) (* ?1 65536) ?0) (max ?2 8)) 1) (not (- (max ?2 8) 1))) ?3)"}
+{"fns":2,"ops":11,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ (+ ?0 (* (* (* ?1 ?2) (/ item1 ?3)) (get0 ?4))) (* (* ?5 (/ item1 ?3)) (get0 ?6)))"}
+{"fns":2,"ops":11,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ (+ ?0 (* (* (* ?1 ?2) (/ item1 ?3)) (get1 ?4))) (* (* ?5 (/ item1 ?3)) (get1 ?6)))"}
+{"fns":2,"ops":11,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(+ (sum (idx ?0 (range ?1 (min (+ ?1 ?2) (maxall (map ?3 (sum ?4))))))) (* ?5 (- ?2 1)))"}
+{"fns":2,"ops":11,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/rm.rs:run"],"word":"(fold ?0 (get1 ?1) (sel (and (and (sel (and ?2 (== ?3 str)) 0 ?2) (> (len ?3) 1)) ?4) (fold ?5 ?6 ?7) ?6))"}
+{"fns":2,"ops":11,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(idx ?0 (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?1 (sum (map ?2 ?3)))))))"}
+{"fns":3,"ops":7,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/rm.rs:run"],"word":"(and (and (sel (and ?0 (== ?1 str)) 0 ?0) (> (len ?1) 1)) ?2)"}
+{"fns":3,"ops":7,"where":["omni-render/src/jit/ternary.rs:jit_ternary_exact_small","omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor"],"word":"(fold (range 0 ?0) ?1 (fold (range 0 ?2) ?3 (store ?4 (+ (* ?5 ?6) item2) ?7)))"}
+{"fns":3,"ops":7,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-render/src/jit/jitw0.rs:run"],"word":"(fold (range 0 ?0) list (fold (range 0 ?1) ?2 (store ?3 (+ (* ?4 ?5) ?6) ?7)))"}
+{"fns":3,"ops":7,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold (range 0 ?0) list (fold (range 0 ?1) ?2 (store ?3 (+ (* ?4 ?5) item2) ?6)))"}
+{"fns":3,"ops":7,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (store ?4 (+ (* ?5 8) ?6) (idx ?7 ?8))))"}
+{"fns":3,"ops":7,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/rm.rs:run","omni-spec/posix/src/tr.rs:run"],"word":"(fold ?0 ?1 (sel (and (and ?2 (> (len ?3) 1)) ?4) (fold ?5 ?6 ?7) ?6))"}
+{"fns":3,"ops":7,"where":["omni-render/src/doctor.rs:run","omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(map (filter (range 0 ?0) ?1) (idx ?2 (idx (filter (range 0 ?0) ?1) item1)))"}
+{"fns":2,"ops":10,"where":["omni-render/apps/find/src/lib.rs:alloc","terminal-launcher/apps/tsift/src/lib.rs:alloc"],"word":"(& (- (+ (sel (== ?0 0) (* ?1 65536) ?0) (max ?2 8)) 1) (not (- (max ?2 8) 1)))"}
+{"fns":2,"ops":10,"where":["omni-render/src/incr.rs:frame","omni-render/src/jit/jitw0.rs:run"],"word":"(+ (+ (+ (+ ?0 ?1) ?2) ?3) (len (filter (zip ?4 ?5) (!= (idx ?6 ?7) (idx ?8 ?9)))))"}
+{"fns":2,"ops":10,"where":["omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(and (>= ?0 (idx (get1 ?1) 0)) (< ?0 (+ (idx (get1 ?1) 0) (idx (get1 ?1) 2))))"}
+{"fns":4,"ops":5,"where":["omni-spec/tests/brotli.rs:oracle_streams_match_python_brotli","omni-spec/tests/inflate.rs:corpus_png_idat_matches_zlib_oracle","omni-spec/tests/otshape.rs:harfbuzz_oracle_fixture","omni-spec/tests/sfnt.rs:matches_fonttools_and_harfbuzz_oracle"],"word":"(fold (filter ?0 (and (not ?1) (not ?2))) ?3 ?4)"}
+{"fns":2,"ops":10,"where":["omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold (range 0 8) list (fold (range 0 ?0) ?1 (store ?2 (+ (* ?3 8) ?4) (idx ?5 (+ (* ?4 ?0) ?3)))))"}
+{"fns":2,"ops":10,"where":["omni-render/src/layout.rs:piece_w","omni-render/src/layout.rs:word"],"word":"(fold ?0 0 (+ (sel ?1 (sel ?2 (sel (== ?3 (get0 ?4)) (+ ?5 ?6) ?5) ?5) ?5) (+ (get2 ?4) ?7)))"}
+{"fns":2,"ops":10,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold ?0 ?1 (sel ?2 (fold (range ?3 (min (+ ?3 ?4) (maxall (map ?5 (sum ?6))))) ?7 (store ?8 item2 ?9)) ?7))"}
+{"fns":2,"ops":10,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 ?1 (sel ?2 (max ?3 ?4) (sel ?5 ?6 (sel ?7 ?8 (sel (and ?9 ?10) (max ?11 (+ (sel ?12 ?13 ?14) ?15)) ?16)))))"}
+{"fns":2,"ops":10,"where":["omni-render/src/layout.rs:knob_at","omni-render/src/layout.rs:knob_fast"],"word":"(fold ?0 ?1 (sel ?2 (tup (+ (* (len ?3) 4) (sel ?4 2 (sel ?5 ?6 (sel (== ?7 ?8) ?9 ?10)))) ?11) ?12))"}
+{"fns":4,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run","omni-render/src/explain.rs:run","omni-render/src/selt.rs:bench"],"word":"(idx (filter (range 0 (len ?0)) (and ?1 ?2)) ?3)"}
+{"fns":2,"ops":10,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run"],"word":"(idx ?0 (idx (filter (range 0 (len ?0)) (and (and (and (and (!= ?1 ?2) ?3) ?4) ?5) ?6)) item2))"}
+{"fns":4,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run","omni-render/src/layout.rs:grid","omni-spec/src/webp.rs:from_lengths"],"word":"(idx ?0 (idx (filter (range 0 (len ?0)) ?1) ?2))"}
+{"fns":4,"ops":5,"where":["omni-render/apps/find/src/lib.rs:find","omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden","omni-render/src/runtime.rs:main"],"word":"(idx ?0 (range (+ ?1 ?2) (+ (+ ?1 ?2) ?3)))"}
+{"fns":4,"ops":5,"where":["omni-render/apps/find/src/lib.rs:find","omni-spec/src/otshape.rs:u32_at","omni-spec/src/sfnt.rs:u32_at","omni-spec/src/webp.rs:decode_vp8l"],"word":"(list (idx ?0 ?1) (idx ?0 ?2) (idx ?0 ?3) (idx ?0 ?4))"}
+{"fns":4,"ops":5,"where":["omni-render/src/dom.rs:add_attrs_if_missing","omni-ui/src/widgets.rs:label","omni-ui/src/widgets.rs:value","terminal-launcher/apps/tsift/src/lib.rs:query"],"word":"(range (get0 ?0) (+ (get0 ?0) (get1 ?0)))"}
+{"fns":2,"ops":10,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map ?0 (sum (map ?1 ?2))))))"}
+{"fns":4,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:flow","omni-render/src/layout.rs:grid","omni-render/src/layout.rs:inline_seg"],"word":"(sel (and (and (and (== ?0 ?1) ?2) ?3) ?4) ?5 ?6)"}
+{"fns":2,"ops":10,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel ?0 (fold (range ?1 (min (+ ?1 ?2) (maxall (map ?3 (sum (map ?4 ?5)))))) ?6 (store ?7 item2 ?8)) ?6)"}
+{"fns":2,"ops":10,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 (max ?1 ?2) (sel ?3 ?4 (sel (and ?5 ?6) ?7 (sel (and ?8 ?9) (max ?10 (+ ?11 ?12)) (sel ?13 ?14 ?15)))))"}
+{"fns":4,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:flow","omni-spec/posix/src/cp.rs:run","omni-spec/src/jpeg.rs:decode_block"],"word":"(sel ?0 (sel ?1 ?2 (sel (not ?3) ?4 ?5)) (sel ?6 ?7 ?8))"}
+{"fns":4,"ops":5,"where":["omni-render/src/style.rs:calc","omni-spec/src/jpeg.rs:decode_block","omni-spec/src/sfnt.rs:cmap4","omni-spec/src/webp.rs:inverse_predictor"],"word":"(sel ?0 ?1 (sel (== ?2 0) ?3 (sel (== ?4 0) ?5 ?6)))"}
+{"fns":4,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table","omni-ui/src/md.rs:blocks"],"word":"(sel ?0 ?1 (sel (and ?2 ?3) ?4 (sel ?5 ?6 (sel ?7 ?8 ?9))))"}
+{"fns":4,"ops":5,"where":["omni-render/src/layout.rs:hsizes","omni-render/src/layout.rs:table","omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/mv.rs:run"],"word":"(sel ?0 ?1 (sel ?2 (sel ?3 ?4 (sel ?5 ?6 ?7)) (sel ?8 ?9 ?10)))"}
+{"fns":2,"ops":10,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run"],"word":"(tup ?0 (idx (filter (range 0 (len ?1)) (and (and (and (and (!= ?2 ?3) ?4) ?5) ?6) ?7)) item2) ?8)"}
+{"fns":3,"ops":6,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(* (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 365)"}
+{"fns":3,"ops":6,"where":["omni-render/src/hit.rs:hit","omni-render/src/raster.rs:compose","omni-spec/src/jpeg.rs:decode_scan"],"word":"(+ (* (get1 (tup ?0 ?1)) ?2) (get0 (tup ?0 ?1)))"}
+{"fns":3,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (* ?0 (get1 ?1)) ?2) (* ?3 (get1 ?4)))"}
+{"fns":3,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (* ?0 ?1) (* ?2 ?3)) (* ?4 (get0 ?5)))"}
+{"fns":2,"ops":9,"where":["omni-render/src/font.rs:curve_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (+ (* ?0 ?1) (* ?2 ?3)) (* ?4 (get1 ?5))) (* ?6 (get1 ?7)))"}
+{"fns":3,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-spec/src/jpeg.rs:idct_block","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ ?0 (* ?1 ?2)) (* ?3 ?4)) (* ?5 ?6))"}
+{"fns":2,"ops":9,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ (+ ?0 (* (* (* ?1 ?2) (/ item1 ?3)) ?4)) (* (* ?5 (/ item1 ?3)) ?6))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:piece_w","omni-render/src/layout.rs:word"],"word":"(+ (sel ?0 (sel ?1 (sel (== ?2 (get0 ?3)) (+ ?4 ?5) ?4) ?4) ?4) (+ (get2 ?3) ?6))"}
+{"fns":2,"ops":9,"where":["omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(- (+ (/ (+ (* 153 (sel (> ?0 2) (- ?0 3) (+ ?0 9))) 2) 5) ?1) 1)"}
+{"fns":3,"ops":6,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 100)"}
+{"fns":3,"ops":6,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) 4)"}
+{"fns":3,"ops":6,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(/ (- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400)) ?3)"}
+{"fns":3,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(< ?0 (+ (idx (get1 ?1) 0) (idx (get1 ?1) 2)))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:knob_at","omni-render/src/layout.rs:knob_fast"],"word":"(> (+ (* (len ?0) 4) (sel ?1 2 (sel ?2 ?3 (sel (== ?4 ?5) ?6 ?7)))) (get0 item2))"}
+{"fns":3,"ops":6,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(>> (* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2) 27)"}
+{"fns":3,"ops":6,"where":["omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear","omni-render/src/raster.rs:touches"],"word":"(and (and (>= ?0 ?1) (< ?2 (+ ?1 ?3))) (>= ?4 ?5))"}
+{"fns":3,"ops":6,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/rm.rs:run"],"word":"(and (sel (and ?0 (== ?1 str)) 0 ?0) (> (len ?1) 1))"}
+{"fns":3,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ (* ?3 8) ?4) (idx ?5 ?6)))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold (range ?0 (min (+ ?0 ?1) (maxall (map ?2 (sum (map ?3 ?4)))))) ?5 (store ?6 item2 ?7))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 ?1 (sel ?2 (max ?3 ?4) (sel ?5 ?6 (sel ?7 ?8 (sel (and ?9 ?10) (max ?11 (+ ?12 ?13)) ?14)))))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/woff.rs:reconstruct_glyf"],"word":"(get0 (sel ?0 (tup ?1 ?2) (sel ?3 (tup ?4 ?5) (sel ?6 (tup ?7 ?8) (sel ?9 (tup ?10 ?11) ?12)))))"}
+{"fns":3,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table","omni-render/src/svg.rs:arc"],"word":"(get0 (tup (+ ?0 (* ?1 ?2)) (+ ?3 (* ?4 ?2))))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/woff.rs:reconstruct_glyf"],"word":"(get1 (sel ?0 (tup ?1 ?2) (sel ?3 (tup ?4 ?5) (sel ?6 (tup ?7 ?8) (sel ?9 (tup ?10 ?11) ?12)))))"}
+{"fns":3,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table","omni-render/src/svg.rs:arc"],"word":"(get1 (tup (+ ?0 (* ?1 ?2)) (+ ?3 (* ?4 ?2))))"}
+{"fns":2,"ops":9,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run"],"word":"(idx (filter (range 0 (len ?0)) (and (and (and (and (!= ?1 str) ?2) ?3) ?4) ?5)) item2)"}
+{"fns":2,"ops":9,"where":["omni-render/src/selt.rs:bench","omni-render/src/style.rs:compute_inner"],"word":"(idx (fold (range 0 (len ?0)) list (sel (and (== ?1 ?2) (!= ?3 ?4)) (store ?5 ?6 ?7) ?8)) ?9)"}
+{"fns":2,"ops":9,"where":["omni-render/src/img.rs:decode_full","omni-spec/src/jpeg.rs:output"],"word":"(idx ?0 (range (* (+ (* ?1 ?2) ?3) ?4) (+ (* (+ (* ?1 ?2) ?3) ?4) ?4)))"}
+{"fns":3,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden","omni-render/src/runtime.rs:main"],"word":"(idx ?0 (range (+ ?1 ?2) (+ (+ ?1 ?2) (* ?3 ?4))))"}
+{"fns":2,"ops":9,"where":["omni-render/src/svg.rs:intrinsic","omni-render/src/verify.rs:chrome_elements"],"word":"(list (idx (map ?0 ?1) 0) (idx (map ?0 ?1) 1) (idx (map ?0 ?1) 2) (idx (map ?0 ?1) 3))"}
+{"fns":2,"ops":9,"where":["omni-render/src/svrt.rs:fire","omni-render/src/uiir.rs:call_named"],"word":"(map (filter ?0 (== (get0 ?1) ?2)) (get1 (idx (filter ?0 (== (get0 ?1) ?2)) ?1)))"}
+{"fns":3,"ops":6,"where":["omni-render/src/explain.rs:run","omni-render/src/repair.rs:score_full","omni-render/src/repair.rs:watch_page"],"word":"(map ?0 (tup (round (get0 item1)) (round (get1 item1))))"}
+{"fns":3,"ops":6,"where":["omni-render/src/checks.rs:mismatches","omni-render/src/explain.rs:check","omni-render/src/main.rs:render_cmd"],"word":"(map ?0 (tup (round (get0 item2)) (round (get1 item2))))"}
+{"fns":3,"ops":6,"where":["omni-render/src/jit/ir.rs:main","omni-render/src/jit/sift.rs:main","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(range (* ?0 (get1 ?1)) (* (+ ?0 1) (get1 ?1)))"}
+{"fns":3,"ops":6,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:place_abs"],"word":"(range ?0 (get0 (tup (len ?1) (len ?2) (len ?3))))"}
+{"fns":3,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (and (== ?0 1) ?1) (store ?2 ?3 (max (idx ?2 ?3) ?4)) ?2)"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(sel (and (> ?0 0) (> (sum ?1) 0)) ?2 (sel (and ?3 (> ?4 0)) ?5 (sel ?6 ?7 ?8)))"}
+{"fns":3,"ops":6,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/rm.rs:run","omni-spec/posix/src/tr.rs:run"],"word":"(sel (and (and ?0 (> (len ?1) 1)) ?2) (fold ?3 ?4 ?5) ?4)"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(sel (and ?0 ?1) (fold ?2 ?3 (sel (> ?4 ?5) ?6 ?7)) (sel ?8 (sel ?9 ?10 (sel ?11 ?12 ?13)) (sel ?14 ?15 ?16)))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 (sel (> (sum (map (filter (range ?4 ?5) ?6) ?7)) 0) ?8 ?9) ?10))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:grid","omni-render/src/uiir.rs:component_at"],"word":"(sel ?0 (fold ?1 (fold ?2 ?3 (fold ?4 ?5 (store ?6 ?7 ?8))) (store ?9 ?10 ?11)) (fold ?2 ?3 (fold ?4 ?5 (store ?6 ?7 ?8))))"}
+{"fns":3,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel ?0 (fold ?1 ?2 (store ?3 ?4 (+ ?5 (/ (- ?6 ?7) ?8)))) ?2)"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(sel ?0 (fold ?1 ?2 ?3) (sel ?4 (sel (> (sum (map (filter (range ?5 ?6) ?7) ?8)) 0) ?9 ?10) ?11))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 (max ?1 ?2) (sel ?3 ?4 (sel ?5 ?6 (sel (and ?7 ?8) (max ?9 (+ (sel ?10 ?11 ?12) ?13)) ?14))))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:block_box_full"],"word":"(sel ?0 (sel (or (or (or (or ?1 (!= ?2 0)) ?3) (!= ?4 0)) ?5) ?6 ?7) (sel ?8 ?9 ?10))"}
+{"fns":3,"ops":6,"where":["omni-render/src/layout.rs:flow","omni-spec/posix/src/cp.rs:run","omni-spec/src/jpeg.rs:decode_block"],"word":"(sel ?0 (sel ?1 ?2 (sel (not ?3) ?4 ?5)) (sel (not ?3) ?4 ?5))"}
+{"fns":3,"ops":6,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:grid","omni-render/src/style.rs:compute_inner"],"word":"(sel ?0 (sel ?1 ?2 (sel ?3 (sel ?4 ?5 ?6) ?6)) (sel ?3 (sel ?4 ?5 ?6) ?6))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:knob_at","omni-render/src/layout.rs:knob_fast"],"word":"(sel ?0 (tup (+ (* (len ?1) 4) (sel ?2 2 (sel ?3 ?4 (sel (== ?5 ?6) ?7 ?8)))) ?9) ?10)"}
+{"fns":3,"ops":6,"where":["omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small","omni-render/src/raster.rs:compose"],"word":"(store ?0 (+ (* ?1 ?2) ?3) (idx ?4 (+ (* ?5 ?6) ?7)))"}
+{"fns":2,"ops":9,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sum (idx ?0 (range ?1 (min (+ ?1 ?2) (maxall (map ?3 (sum (map ?4 ?5))))))))"}
+{"fns":3,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sum (idx ?0 (range ?1 (min (+ ?2 (get1 ?3)) ?4))))"}
+{"fns":3,"ops":6,"where":["omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3","omni-spec/src/webp.rs:inverse_color"],"word":"(| (| (<< ?0 ?1) (<< (& ?2 ?3) ?4)) (<< ?5 ?6))"}
+{"fns":2,"ops":8,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* (* ?0 (- 1 (/ item1 ?1))) (/ item1 ?1)) (get0 (get1 ?2)))"}
+{"fns":2,"ops":8,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* (* ?0 (- 1 (/ item1 ?1))) (/ item1 ?1)) (get1 (get1 ?2)))"}
+{"fns":2,"ops":8,"where":["omni-render/src/font.rs:curve_to","omni-render/src/svg.rs:arc"],"word":"(+ (* (* (* ?0 ?0) ?1) (get1 ?2)) (* (* (* ?3 ?4) ?5) ?6))"}
+{"fns":2,"ops":8,"where":["omni-render/src/font.rs:curve_to","omni-render/src/svg.rs:arc"],"word":"(+ (* (* (* ?0 ?0) ?1) ?2) (* (* (* ?3 ?4) ?5) (get0 ?6)))"}
+{"fns":2,"ops":8,"where":["omni-render/src/hit.rs:hit","omni-spec/src/jpeg.rs:decode_scan"],"word":"(+ (* (get1 (tup ?0 (/ ?1 ?2))) ?3) (get0 (tup ?0 (/ ?1 ?2))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/hit.rs:hit","omni-render/src/main.rs:ssim"],"word":"(+ (* ?0 (get1 (tup (/ ?1 ?2) (/ ?3 ?2)))) (get0 (tup ?4 ?5)))"}
+{"fns":2,"ops":8,"where":["omni-render/src/font.rs:curve_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (+ (* ?0 ?1) (* ?2 ?3)) (* ?4 (get1 ?5))) (* ?6 ?7))"}
+{"fns":2,"ops":8,"where":["omni-render/src/incr.rs:frame","omni-render/src/jit/jitw0.rs:run"],"word":"(+ (+ (+ ?0 ?1) ?2) (len (filter ?3 (!= (idx ?4 ?5) (idx ?6 ?7)))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/incr.rs:frame","omni-render/src/jit/jitw0.rs:run"],"word":"(+ (+ ?0 ?1) (len (filter (zip ?2 ?3) (!= (idx ?4 ?5) (idx ?6 ?7)))))"}
+{"fns":2,"ops":8,"where":["omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(+ (/ (+ (* 153 (sel (> ?0 2) (- ?0 3) (+ ?0 9))) 2) 5) ?1)"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(+ ?0 (/ (* (- ?1 ?2) ?3) (sum (map (filter (range 0 ?4) ?5) ?6))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:table"],"word":"(/ (* (- ?0 ?1) ?2) (sum (map (filter ?3 (not (idx ?4 ?5))) ?6)))"}
+{"fns":2,"ops":8,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(/ (fold (range ?0 ?1) (get0 (tup 0 0 0 0 0)) (fold (range ?2 ?3) ?4 (+ ?5 ?6))) ?7)"}
+{"fns":2,"ops":8,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(/ (fold (range ?0 ?1) (get1 (tup 0 0 0 0 0)) (fold (range ?2 ?3) ?4 (+ ?5 ?6))) ?7)"}
+{"fns":2,"ops":8,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(/ (fold ?0 (get0 ?1) (fold ?2 ?3 (+ ?4 ?5))) (fold ?0 ?6 (fold ?2 ?7 (+ ?8 ?9))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run"],"word":"(filter (range 0 (len ?0)) (and (and (and (and (!= ?1 str) ?2) ?3) ?4) ?5))"}
+{"fns":2,"ops":8,"where":["omni-render/src/selt.rs:bench","omni-render/src/style.rs:compute_inner"],"word":"(fold (range 0 (len ?0)) list (sel (and (== ?1 ?2) (!= ?3 ?4)) (store ?5 ?6 ?7) ?8))"}
+{"fns":2,"ops":8,"where":["omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold (range 0 8) list (fold (range 0 ?0) ?1 (store ?2 (+ (* ?3 8) ?4) (idx ?5 ?6))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ (* ?3 8) ?4) (idx ?5 (+ (* ?4 ?0) ?3))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(fold (range ?0 ?1) (get2 (tup 0 0 0 0 0)) (fold (range ?2 ?3) ?4 (+ ?5 (* ?6 ?7))))"}
+{"fns":2,"ops":8,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/tr.rs:run"],"word":"(fold ?0 (get0 ?1) (sel (and (and ?2 (> (len ?3) 1)) ?4) (fold ?5 ?6 ?7) ?6))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(fold ?0 ?1 (sel (and (and (and (== (sel ?2 ?3 ?4) 0) (== ?5 ?6)) ?7) ?8) ?9 ?10))"}
+{"fns":2,"ops":8,"where":["omni-render/src/svg.rs:paint","omni-spec/src/webp.rs:inverse_color"],"word":"(fold ?0 ?1 (store ?2 ?3 (| (| (| (<< ?4 24) (<< ?5 16)) (<< ?6 8)) ?7)))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(max (min ?0 (max (- (maxall (map ?1 (sum (map ?2 ?3)))) ?4) 0)) 1)"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(min (+ (get0 item1) (get1 item1)) (maxall (map ?0 (sum (map ?1 ?2)))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/img.rs:decode_full","omni-spec/src/gif.rs:first_frame_rgba"],"word":"(range (* (+ (* ?0 ?1) ?2) 4) (+ (* (+ (* ?0 ?1) ?2) 4) 4))"}
+{"fns":2,"ops":8,"where":["omni-spec/posix/src/rm.rs:run","omni-spec/posix/src/tr.rs:run"],"word":"(sel (fold ?0 ?1 (sel (and (and ?2 (> (len ?3) 1)) ?4) (fold ?5 ?6 ?7) ?6)) ?8 ?9)"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:block_box_full"],"word":"(sel (or (or (or (or ?0 (!= ?1 0)) ?2) (!= ?3 0)) ?4) ?5 (sel ?6 ?7 ?8))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:text_widths"],"word":"(sel ?0 (sel ?1 (+ (fold ?2 ?3 ?4) ?5) (fold ?2 ?3 ?4)) (fold ?2 (get0 (tup 0 0)) ?6))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:grid"],"word":"(sel ?0 (sel ?1 ?2 (sel ?3 (sel ?4 (sel ?5 ?6 ?7) ?8) ?8)) (sel ?3 (sel ?4 (sel ?5 ?6 ?7) ?8) ?8))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/woff.rs:reconstruct_glyf"],"word":"(sel ?0 (tup ?1 ?2) (sel ?3 (tup ?4 ?5) (sel ?6 (tup ?7 ?8) (sel ?9 (tup ?10 ?11) ?12))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel (and ?2 ?3) ?4 (sel (and ?5 ?6) (max ?7 (+ ?8 ?9)) (sel ?10 ?11 ?12))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(sum (map (filter (range 0 ?0) ?1) (idx ?2 (idx (filter (range 0 ?0) ?1) item1))))"}
+{"fns":2,"ops":8,"where":["omni-render/src/font.rs:quad_to","omni-render/src/svg.rs:arc"],"word":"(tup (+ ?0 ?1) (+ (+ (* (* ?2 ?3) ?4) (* (* ?5 ?6) ?7)) ?8))"}
+{"fns":2,"ops":8,"where":["omni-render/src/layout.rs:lkey","omni-render/src/style.rs:h128"],"word":"(| (<< (fold ?0 (get0 (tup 2611923443488327891 1376283091369227076)) ?1) 64) (fold ?0 (get1 (tup 2611923443488327891 1376283091369227076)) ?2))"}
+{"fns":2,"ops":8,"where":["omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3"],"word":"(| (| (| (<< (^ (>> ?0 3) 1) 7) (<< ?1 ?2)) (<< ?3 ?4)) ?5)"}
+{"fns":2,"ops":8,"where":["omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3"],"word":"(| (| (| (<< ?0 7) (<< (& (not ?1) 15) 3)) (<< ?2 2)) ?3)"}
+{"fns":2,"ops":8,"where":["omni-render/src/jit/x86.rs:rex","omni-spec/src/webp.rs:inverse_color"],"word":"(| (| (| ?0 (<< ?1 ?2)) (<< (& (>> ?3 ?4) ?5) ?6)) (& ?7 ?5))"}
+{"fns":3,"ops":5,"where":["omni-render/src/corert0.rs:splitmix","omni-render/src/hv.rs:splitmix","terminal-launcher/apps/tsift/src/lib.rs:splitmix"],"word":"(* (^ (+ ?0 ?1) (>> (+ ?0 ?1) 30)) ?2)"}
+{"fns":3,"ops":5,"where":["omni-render/src/img.rs:decode_full","omni-render/src/jit/sift.rs:main","omni-render/src/main.rs:ssim"],"word":"(* (get0 (tup ?0 ?1)) (get1 (tup ?0 ?1)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/img.rs:decode_full","omni-render/src/jit/sift.rs:main","omni-render/src/svg.rs:arc"],"word":"(* (get0 (tup ?0 ?1)) (get1 (tup ?2 ?3)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/hit.rs:hit","omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* ?0 (get1 (tup (/ ?1 ?2) (/ ?3 ?2))))"}
+{"fns":3,"ops":5,"where":["omni-render/src/hit.rs:hit","omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* ?0 (get1 (tup (/ ?1 ?2) (/ ?3 ?4))))"}
+{"fns":3,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to","omni-render/src/svg.rs:arc"],"word":"(+ (* ?0 (get0 ?1)) (* (get0 ?2) ?3))"}
+{"fns":3,"ops":5,"where":["omni-render/src/dom.rs:heap_bytes","omni-render/src/runtime.rs:main","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ ?0 (* ?1 ?2)) (* ?3 ?4)) ?5)"}
+{"fns":3,"ops":5,"where":["omni-render/src/dom.rs:heap_bytes","omni-spec/src/jpeg.rs:idct_block","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ ?0 (* ?1 ?2)) ?3) (* ?4 ?5))"}
+{"fns":3,"ops":5,"where":["omni-ui/src/widgets.rs:label","omni-ui/src/widgets.rs:value","terminal-launcher/apps/tsift/src/lib.rs:query"],"word":"(+ (get0 (idx ?0 ?1)) (get1 (idx ?0 ?1)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(+ (idx (get1 ?0) 0) (idx (get1 ?0) 2))"}
+{"fns":3,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(+ (idx (get1 ?0) 1) (idx (get1 ?0) 3))"}
+{"fns":3,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(+ (idx (get1 ?0) ?1) (idx (get1 ?0) ?2))"}
+{"fns":3,"ops":5,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(- (+ (/ (+ (* 153 ?0) 2) 5) ?1) 1)"}
+{"fns":3,"ops":5,"where":["omni-render/src/jsi_date.rs:days_from_civil","omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(- (sel (<= ?0 2) (- ?1 1) ?1) (* ?2 400))"}
+{"fns":3,"ops":5,"where":["omni-spec/src/webp.rs:clamp_add_sub_full","omni-spec/src/webp.rs:clamp_add_sub_half","omni-spec/src/webp.rs:select"],"word":"(- ?0 (& (>> ?1 (idx (list 24 16 8 0) item1)) 255))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:inline_seg","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:margin_box_ok"],"word":"(and (and (and ?0 ?1) (not ?2)) (== ?3 0))"}
+{"fns":3,"ops":5,"where":["omni-render/src/explain.rs:run","omni-render/src/selt.rs:bench","omni-render/src/verify.rs:score"],"word":"(filter (range 0 (len ?0)) (and (== ?1 ?2) ?3))"}
+{"fns":3,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/selt.rs:bench","omni-render/src/verify.rs:score"],"word":"(filter (range 0 (len ?0)) (and ?1 (not ?2)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/main.rs:render_cmd","omni-render/src/style.rs:compute_inner","omni-ui/src/frame.rs:render"],"word":"(fold (range 0 (len ?0)) ?1 (sel ?2 (sel ?3 ?4 ?5) ?5))"}
+{"fns":3,"ops":5,"where":["omni-render/src/doctor.rs:diff","omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 (get1 (tup ?1 ?1)) (sel ?2 (+ ?3 ?4) ?5))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/raster.rs:compose","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (fold (range 0 ?4) ?5 ?6)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table","omni-render/src/style.rs:compute_inner"],"word":"(fold ?0 ?1 (sel (and (== ?2 ?3) ?4) (store ?5 ?6 ?7) ?5))"}
+{"fns":3,"ops":5,"where":["omni-render/src/hit.rs:hit","omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(fold ?0 ?1 (sel (and (and (and ?2 ?3) ?4) ?5) ?6 ?7))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold ?0 ?1 (store ?2 ?3 (+ ?4 (/ (- ?5 ?6) ?7))))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:place_abs"],"word":"(get0 (tup (len ?0) (len ?1) (len ?2)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/raster.rs:render","omni-render/src/raster.rs:render_incr","omni-render/src/svg.rs:arc"],"word":"(get0 (tup ?0 (+ ?1 (* (get0 ?2) ?3))))"}
+{"fns":3,"ops":5,"where":["omni-render/src/style.rs:compute_inner","omni-render/src/svrt.rs:fire","omni-render/src/uiir.rs:call_named"],"word":"(get1 (idx (filter ?0 (== (get0 ?1) ?2)) ?3))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:place_abs"],"word":"(get1 (tup (len ?0) (len ?1) (len ?2)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/raster.rs:render","omni-render/src/raster.rs:render_incr","omni-render/src/svg.rs:arc"],"word":"(get1 (tup ?0 (+ ?1 (* (get0 ?2) ?3))))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:place_abs"],"word":"(get2 (tup (len ?0) (len ?1) (len ?2)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/doctor.rs:run","omni-render/src/explain.rs:run","omni-render/src/selt.rs:bench"],"word":"(idx (filter (range 0 (len ?0)) (and ?1 ?2)) item1)"}
+{"fns":3,"ops":5,"where":["omni-render/src/doctor.rs:run","omni-render/src/layout.rs:grid","omni-spec/src/webp.rs:from_lengths"],"word":"(idx ?0 (idx (filter (range 0 (len ?0)) ?1) item1))"}
+{"fns":3,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run","omni-render/src/layout.rs:grid"],"word":"(idx ?0 (idx (filter (range 0 (len ?1)) ?2) ?3))"}
+{"fns":3,"ops":5,"where":["omni-render/src/doctor.rs:run","omni-render/src/layout.rs:grid","omni-spec/src/webp.rs:from_lengths"],"word":"(idx ?0 (idx (filter (range 0 (len ?1)) ?2) item1))"}
+{"fns":3,"ops":5,"where":["omni-render/src/img.rs:decode_full","omni-spec/src/jpeg.rs:idct_block","omni-spec/src/jpeg.rs:output"],"word":"(idx ?0 (range (* ?1 ?2) (+ (* ?1 ?2) ?2)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(idx ?0 (range ?1 (min (+ ?2 (get1 ?3)) ?4)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/jit/ir.rs:main","omni-render/src/jit/sift.rs:main","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(map (range 0 (* (get0 ?0) (get1 ?0))) ?1)"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(min ?0 (max (- (maxall (map ?1 ?2)) ?3) 0))"}
+{"fns":3,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden","omni-render/src/runtime.rs:main"],"word":"(range (+ ?0 ?1) (+ (+ ?0 ?1) (* ?2 ?3)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/fastparse.rs:tag_sc","omni-spec/posix/src/regex.rs:interval","omni-spec/src/otshape.rs:subtables"],"word":"(sel (== ?0 ?1) (+ (+ ?2 ?3) ?4) (+ ?2 ?3))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_at","omni-spec/src/sfnt.rs:cmap4"],"word":"(sel (== ?0 ?1) ?2 (sel (== ?3 ?4) ?5 (sel ?6 ?7 ?8)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:inline_seg","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (and (and ?0 (== ?1 ?2)) ?3) ?4) ?5 ?5)"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:intrinsic_w","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (and (and ?0 ?1) ?2) ?3) ?4 (sel ?5 ?6 ?7))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (and (and ?0 ?1) ?2) ?3 (sel (and ?4 ?5) ?6 ?7))"}
+{"fns":3,"ops":5,"where":["omni-render/src/jsi_lib.rs:parse_int","omni-render/src/style.rs:hints","omni-render/src/svg.rs:render_at"],"word":"(sel (and (or (== ?0 ?1) (== ?0 ?2)) ?3) ?4 ?5)"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:hsizes","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and ?0 ?1) ?2 (sel (and (and ?3 ?4) ?5) ?6 ?7))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 (sel ?4 ?5 ?6) (sel ?7 ?8 ?9)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel ?0 (fold ?1 ?2 (store ?3 ?4 (+ ?5 (/ ?6 ?7)))) ?2)"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/style.rs:compute_inner","omni-spec/posix/src/rm.rs:run"],"word":"(sel ?0 (sel ?1 ?2 (sel ?3 (sel ?4 ?5 ?6) ?7)) (sel ?8 ?9 ?6))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/style.rs:compute_inner","omni-spec/posix/src/cp.rs:run"],"word":"(sel ?0 (sel ?1 ?2 (sel ?3 ?4 ?5)) (sel ?6 (sel ?7 ?8 ?9) ?9))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:hsizes","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel (and ?2 ?3) ?4 (sel (and ?5 ?6) ?7 ?8)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table","omni-render/src/raster.rs:compose"],"word":"(tup (+ (* ?0 ?1) ?2) (+ (* ?3 ?1) ?4))"}
+{"fns":3,"ops":5,"where":["omni-render/src/font.rs:quad_to","omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(tup (+ ?0 (* ?1 ?2)) (+ ?3 (* ?1 ?4)))"}
+{"fns":3,"ops":5,"where":["omni-render/src/img.rs:decode","omni-render/src/img.rs:decode_full","omni-render/src/repair.rs:frozen_sets"],"word":"(tup (get0 (tup ?0 ?1)) (get1 (tup ?0 ?1)) ?2)"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get0 (tup ?0 ?1)) (get0 (tup (/ ?2 ?3) (/ ?4 ?3))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get0 (tup ?0 ?1)) (get0 (tup (/ ?2 ?3) (/ ?4 ?5))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get0 (tup ?0 ?1)) (get1 (tup (/ ?2 ?3) (/ ?4 ?3))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get0 (tup ?0 ?1)) (get1 (tup (/ ?2 ?3) (/ ?4 ?5))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/corert0.rs:main","omni-render/src/raster.rs:compose"],"word":"(* (get1 (tup (+ ?0 (* ?1 ?2)) (+ ?3 (* ?4 ?5)))) ?6)"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get1 (tup ?0 ?1)) (get0 (tup (/ ?2 ?3) (/ ?4 ?5))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get1 (tup ?0 ?1)) (get1 (tup (/ ?2 ?3) (/ ?4 ?3))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get1 (tup ?0 ?1)) (get1 (tup (/ ?2 ?3) (/ ?4 ?5))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/raster.rs:compose","omni-render/src/svg.rs:arc"],"word":"(* ?0 (get1 (tup (+ (* ?1 ?2) ?3) (+ (* ?4 ?2) ?5))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/corert0.rs:main","omni-render/src/svg.rs:arc"],"word":"(* ?0 (get1 (tup (+ ?1 (* ?2 ?3)) (+ ?4 (* ?5 ?6)))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/font.rs:quad_to","omni-render/src/svg.rs:arc"],"word":"(+ (* (* ?0 ?1) (get1 ?2)) (* (* (* ?3 ?4) ?5) ?6))"}
+{"fns":2,"ops":7,"where":["omni-render/src/font.rs:quad_to","omni-render/src/svg.rs:arc"],"word":"(+ (* (* ?0 ?1) ?2) (* (* (* ?3 ?4) ?5) (get0 ?6)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-spec/src/jpeg.rs:decode_scan"],"word":"(+ (* (get0 (tup ?0 (/ ?1 ?2))) (get0 (tup ?3 ?4))) ?5)"}
+{"fns":2,"ops":7,"where":["omni-render/src/svg.rs:arc","omni-spec/src/jpeg.rs:decode_scan"],"word":"(+ (* (get0 (tup ?0 ?1)) (get0 (tup ?2 (/ ?3 ?4)))) ?5)"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:knob_at","omni-render/src/layout.rs:knob_fast"],"word":"(+ (* (len ?0) 4) (sel ?1 2 (sel ?2 ?3 (sel (== ?4 ?5) ?6 ?7))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-spec/src/jpeg.rs:decode_scan"],"word":"(+ (* ?0 (get1 (tup ?1 (/ ?2 ?3)))) (get0 (tup ?4 ?5)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/svg.rs:ap","omni-render/src/svg.rs:mul"],"word":"(+ (+ (* (idx ?0 0) ?1) (* (idx ?0 2) ?2)) (idx ?0 4))"}
+{"fns":2,"ops":7,"where":["omni-render/src/svg.rs:ap","omni-render/src/svg.rs:mul"],"word":"(+ (+ (* (idx ?0 1) ?1) (* (idx ?0 3) ?2)) (idx ?0 5))"}
+{"fns":2,"ops":7,"where":["omni-render/src/font.rs:curve_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (+ (* ?0 ?1) (* ?2 ?3)) (* ?4 ?5)) (* ?6 ?7))"}
+{"fns":2,"ops":7,"where":["omni-spec/src/jpeg.rs:idct_block","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ (+ ?0 (* ?1 ?2)) (* ?3 ?4)) (* ?5 ?6)) ?7)"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(+ (sum (idx ?0 (range ?1 (min (+ ?1 ?2) ?3)))) (* ?4 ?5))"}
+{"fns":2,"ops":7,"where":["omni-render/src/main.rs:ssim","omni-spec/src/jpeg.rs:decode_scan"],"word":"(+ ?0 (* (get1 (tup ?1 (/ ?2 ?3))) (get1 (tup ?4 ?5))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/svg.rs:arc","omni-spec/src/jpeg.rs:decode_scan"],"word":"(+ ?0 (* (get1 (tup ?1 ?2)) (get1 (tup ?3 (/ ?4 ?5)))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(+ ?0 (/ (* (- (idx (fold ?1 (fold ?2 ?3 ?4) ?5) item1) ?0) ?6) ?7))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:table"],"word":"(- (fold ?0 ?1 (+ (+ (sel (!= ?2 ?3) (sel ?4 ?5 ?6) ?6) ?7) ?8)) ?9)"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(/ (* (- ?0 ?1) ?2) (sum (map (filter (range 0 ?3) ?4) ?5)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:table"],"word":"(/ (* ?0 ?1) (sum (map (filter ?2 (not (idx ?3 ?4))) ?5)))"}
+{"fns":2,"ops":7,"where":["omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(/ (+ (* 153 (sel (> ?0 2) (- ?0 3) (+ ?0 9))) 2) 5)"}
+{"fns":2,"ops":7,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(/ (fold (range ?0 ?1) ?2 (fold (range ?3 ?4) ?5 (+ ?6 (* ?7 ?8)))) ?9)"}
+{"fns":2,"ops":7,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(/ (fold ?0 ?1 (fold ?2 ?3 (+ ?4 ?5))) (fold ?0 ?6 (fold ?2 ?7 (+ ?8 ?9))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/corert0.rs:main","omni-render/src/raster.rs:touches"],"word":"(and (and (>= ?0 ?1) (< (get0 ?2) (+ ?1 ?3))) (>= ?4 ?5))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:collapses_bottom","omni-render/src/layout.rs:collapses_top"],"word":"(and (and (and (and ?0 (== (idx ?1 ?2) 0)) ?3) ?4) (!= ?5 str))"}
+{"fns":2,"ops":7,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:margin_box_ok"],"word":"(and (and (and ?0 ?1) ?2) (not (and (and (== ?3 ?4) ?5) ?6)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(and ?0 (< ?1 (+ (idx (get1 ?2) ?3) (idx (get1 ?2) ?4))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/p2.rs:gemv_b8"],"word":"(fold (range 0 ?0) ?1 (fold (range 0 ?2) ?3 (store ?4 (+ (* ?5 8) ?6) ?7)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/jit/p2.rs:gemv_b8","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold (range 0 ?0) ?1 (fold (range 0 ?2) ?3 (store ?4 (+ (* ?5 8) item2) ?6)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/font.rs:raster_coverage","omni-render/src/img.rs:downscale"],"word":"(fold (range 0 ?0) list (fold (range 0 ?1) ?2 (store ?3 (+ (* item1 ?1) item2) ?4)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(fold (range ?0 ?1) (get0 (tup 0 0 0 0 0)) (fold (range ?2 ?3) ?4 (+ ?5 ?6)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(fold (range ?0 ?1) (get1 (tup 0 0 0 0 0)) (fold (range ?2 ?3) ?4 (+ ?5 ?6)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(fold (range ?0 ?1) (get3 (tup 0 0 0 0 0)) (fold (range ?2 ?3) ?4 (+ ?5 ?6)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(fold (range ?0 ?1) (get4 (tup 0 0 0 0 0)) (fold (range ?2 ?3) ?4 (+ ?5 ?6)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(fold ?0 ?1 (sel (and (== ?2 1) ?3) (store ?4 ?5 (max (idx ?4 ?5) ?6)) ?4))"}
+{"fns":2,"ops":7,"where":["omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/tr.rs:run"],"word":"(fold ?0 ?1 (sel (and (and (> (len ?2) 1) ?3) ?4) (fold ?5 ?6 ?7) ?6))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel ?6 ?7 (sel (and ?8 ?9) (max ?10 ?11) ?12)))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel ?6 ?7 (sel (and ?8 ?9) ?10 (sel ?11 ?12 ?13))))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden"],"word":"(idx (idx ?0 (range (+ ?1 8) (+ (+ ?1 8) (* ?2 ?3)))) ?4)"}
+{"fns":2,"ops":7,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run"],"word":"(idx ?0 (idx (filter (range 0 (len ?0)) (and (and ?1 ?2) ?3)) ?4))"}
+{"fns":2,"ops":7,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run"],"word":"(idx ?0 (idx (filter (range 0 (len ?1)) (and (and ?2 ?3) ?4)) ?5))"}
+{"fns":2,"ops":7,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:intrinsic_w"],"word":"(idx ?0 (idx (filter ?1 (and (and ?2 (not (and ?3 ?4))) ?5)) ?6))"}
+{"fns":2,"ops":7,"where":["omni-render/src/selt.rs:bench","omni-render/src/verify.rs:score"],"word":"(len (filter (range 0 (len ?0)) (and (== ?1 ?2) (not ?3))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(max ?0 (get1 (sel (== ?1 ?2) ?3 (tup ?4 (+ ?5 (+ ?6 ?7))))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(min ?0 (max (- (maxall (map ?1 (sum (map ?2 ?3)))) ?4) 0))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:collapses_top","omni-render/src/svg.rs:render_at"],"word":"(or (and (and ?0 (!= ?1 str)) (!= ?2 str)) (and (and ?3 ?4) ?5))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:place_abs"],"word":"(range (len ?0) (get0 (tup (len ?0) (len ?1) (len ?2))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:place_abs"],"word":"(range (len ?0) (get1 (tup (len ?1) (len ?0) (len ?2))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:place_abs"],"word":"(range (len ?0) (get2 (tup (len ?1) (len ?2) (len ?0))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flex_items","omni-spec/src/jpeg.rs:decode_block"],"word":"(sel (== ?0 ?1) (+ (sel ?2 (+ ?3 ?4) ?3) ?5) (sel ?2 (+ ?3 ?4) ?3))"}
+{"fns":2,"ops":7,"where":["omni-render/src/jsi_lib.rs:parse_int","omni-spec/src/jpeg.rs:output"],"word":"(sel (== ?0 ?1) ?2 (sel (and (or (== ?3 0) (== ?4 ?5)) ?6) ?7 ?8))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (and (== ?0 1) ?1) (store ?2 ?3 (max (idx ?2 ?3) (get0 ?4))) ?2)"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(sel (and (and (and (== (sel ?0 ?1 ?2) 0) (== ?3 ?4)) ?5) ?6) ?7 ?8)"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and (and (and ?0 ?1) ?2) ?3) ?4 (sel (and (and ?5 ?6) ?7) ?8 ?9))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:table","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 ?1) ?2 (sel (and ?3 (or ?4 ?5)) ?6 (sel ?7 ?8 (sel ?9 ?10 ?11))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 (sel ?4 (sel ?5 ?6 ?7) (fold ?8 ?9 ?10)) (fold ?8 ?9 ?10)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:block_box_full"],"word":"(sel (or (or (or (or ?0 (!= ?1 0)) ?2) (!= ?3 0)) ?4) ?5 ?6)"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(sel ?0 (sel (> (sum (map (filter (range 0 ?1) ?2) ?3)) 0) ?4 ?5) ?6)"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/woff.rs:reconstruct_glyf"],"word":"(sel ?0 (tup ?1 ?2) (sel ?3 (tup ?4 ?5) (sel ?6 (tup ?7 ?8) (tup ?9 ?10))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel (and ?4 ?5) (max ?6 (+ (sel ?7 ?8 ?9) ?10)) ?11)))"}
+{"fns":2,"ops":7,"where":["omni-render/src/svg.rs:paint","omni-spec/src/webp.rs:inverse_color"],"word":"(store ?0 ?1 (| (| (| (<< ?2 24) (<< ?3 16)) (<< ?4 8)) ?5))"}
+{"fns":2,"ops":7,"where":["omni-render/src/font.rs:quad_to","omni-render/src/svg.rs:arc"],"word":"(tup (+ (* ?0 (get0 ?1)) ?2) (+ ?3 (* ?0 (get1 ?1))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/font.rs:quad_to","omni-render/src/layout.rs:intrinsic_w"],"word":"(tup (+ (+ ?0 (* ?1 ?2)) ?3) (+ (+ ?4 (* ?1 ?5)) ?6))"}
+{"fns":2,"ops":7,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/svg.rs:ap"],"word":"(tup (+ (+ ?0 (* ?1 ?2)) ?3) (+ (+ ?4 (* ?5 ?2)) ?6))"}
+{"fns":2,"ops":7,"where":["omni-render/src/css.rs:block","omni-render/src/css.rs:take_paren"],"word":"(tup (+ ?0 1) (idx ?1 (range (+ ?2 1) (min ?0 (len ?1)))))"}
+{"fns":2,"ops":7,"where":["omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3"],"word":"(| (| (<< (^ (>> ?0 3) 1) 7) (<< ?1 ?2)) (<< ?3 ?4))"}
+{"fns":2,"ops":7,"where":["omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3"],"word":"(| (| (<< ?0 7) (<< (& (not ?1) 15) 3)) (<< ?2 2))"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* (* ?0 (- 1 (/ item1 ?1))) (/ item1 ?1)) ?2)"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* (* ?0 (- 1 (/ item1 ?1))) ?2) (get0 ?3))"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* (* ?0 (- 1 (/ item1 ?1))) ?2) (get1 ?3))"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* (- 1 (/ item1 ?0)) (- 1 (/ item1 ?0))) ?1)"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* ?0 (- 1 (/ item1 ?1))) (get0 (get0 ?2)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* ?0 (- 1 (/ item1 ?1))) (get1 (get0 ?2)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/main.rs:ssim","omni-spec/src/jpeg.rs:decode_scan"],"word":"(* (get0 (tup ?0 (/ ?1 ?2))) (get0 (tup ?3 ?4)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/svg.rs:arc","omni-spec/src/jpeg.rs:decode_scan"],"word":"(* (get0 (tup ?0 ?1)) (get0 (tup ?2 (/ ?3 ?4))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/main.rs:ssim","omni-spec/src/jpeg.rs:decode_scan"],"word":"(* (get1 (tup ?0 (/ ?1 ?2))) (get1 (tup ?3 ?4)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/svg.rs:arc","omni-spec/src/jpeg.rs:decode_scan"],"word":"(* (get1 (tup ?0 ?1)) (get1 (tup ?2 (/ ?3 ?4))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(* ?0 (+ (maxall (map ?1 (sum (map ?2 ?3)))) 1))"}
+{"fns":2,"ops":6,"where":["omni-render/src/main.rs:ssim","omni-render/src/raster.rs:compose"],"word":"(+ (* (get1 (tup ?0 ?1)) ?2) (get0 (tup ?3 ?4)))"}
+{"fns":2,"ops":6,"where":["omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(+ (* 153 (sel (> ?0 2) (- ?0 3) (+ ?0 9))) 2)"}
+{"fns":2,"ops":6,"where":["omni-render/src/img.rs:decode_full","omni-render/src/main.rs:ssim"],"word":"(+ (+ (* ?0 (get0 (tup ?1 ?2))) ?3) (get0 ?4))"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:quad_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (* ?0 (get0 ?1)) ?2) (* ?3 (get0 ?4)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (* ?0 ?1) (* ?2 ?3)) (* ?4 (get1 ?5)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/runtime.rs:main","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ (+ ?0 (* ?1 ?2)) (* ?3 ?4)) ?5) ?6)"}
+{"fns":2,"ops":6,"where":["omni-render/src/dom.rs:heap_bytes","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ (+ ?0 ?1) (* ?2 ?3)) ?4) (* ?5 ?6))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flow","omni-spec/posix/src/regex.rs:interval"],"word":"(+ (sel ?0 (sel ?1 ?2 (sel ?3 ?4 ?5)) (sel ?3 ?4 ?5)) (sel ?6 ?7 ?8))"}
+{"fns":2,"ops":6,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ ?0 (* (* (* ?1 ?2) (/ item1 ?3)) (get0 ?4)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/incr.rs:frame","omni-render/src/jit/jitw0.rs:run"],"word":"(+ ?0 (len (filter ?1 (!= (idx ?2 ?3) (idx ?4 ?5)))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:block_box_full","omni-spec/posix/src/regex.rs:interval"],"word":"(+ ?0 (sel (or ?1 ?2) (sel ?3 ?4 (sel ?5 ?6 ?7)) (sel ?5 ?6 ?7)))"}
+{"fns":2,"ops":6,"where":["omni-render/apps/find/src/lib.rs:alloc","terminal-launcher/apps/tsift/src/lib.rs:alloc"],"word":"(- (+ (sel (== ?0 0) (* ?1 65536) ?0) (max ?2 8)) 1)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(- ?0 (+ (sum ?1) (* ?2 (max (- ?3 1) 0))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(/ (* (- (idx (fold ?0 (fold ?1 ?2 ?3) ?4) item1) ?5) ?6) ?7)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(/ (* (- ?0 ?1) ?2) (sum (map (filter ?3 ?4) ?5)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(/ (- ?0 ?1) (len (filter (range 0 ?2) (not ?3))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(< ?0 (+ (idx (get1 ?1) 1) (idx (get1 ?1) 3)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(< ?0 (+ (idx (get1 ?1) ?2) (idx (get1 ?1) ?3)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:table"],"word":"(> (sum (map (filter ?0 (not (idx ?1 ?2))) ?3)) 0)"}
+{"fns":2,"ops":6,"where":["omni-render/src/fuzz.rs:next","omni-render/src/jsi_re.rs:dfa_check"],"word":"(^ (^ (^ ?0 (<< ?1 13)) (>> ?2 7)) (<< ?3 17))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(and (and (and (== (sel ?0 ?1 ?2) 0) (== ?3 ?4)) ?5) ?6)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:inline_seg","omni-render/src/layout.rs:margin_box_ok"],"word":"(and (and (and (== ?0 ?1) ?2) (not ?3)) (== ?4 0))"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:margin_box_ok"],"word":"(and (and (and (and ?0 ?1) ?2) ?3) (not (and ?4 ?5)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/style.rs:compute_inner"],"word":"(and (and (and ?0 (not (and ?1 ?2))) ?3) (== ?4 ?5))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:margin_box_ok"],"word":"(and (and (and ?0 (not ?1)) ?2) (not (and ?3 ?4)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:intrinsic_w"],"word":"(and (and (and ?0 ?1) (not ?2)) (not (and ?3 ?4)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/selt.rs:bench","omni-render/src/verify.rs:score"],"word":"(filter (range 0 (len ?0)) (and (== ?1 ?2) (not ?3)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/style.rs:compute_inner","omni-spec/src/otshape.rs:script_feature_indices"],"word":"(fold (list ?0 ?1) ?2 (fold (range 0 ?3) ?4 (sel (== ?5 ?6) ?7 ?8)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/selt.rs:bench","omni-render/src/style.rs:compute_inner"],"word":"(fold (range 0 (len ?0)) ?1 (sel (and ?2 (!= ?3 ?4)) ?5 ?6))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold (range 0 (max (len ?0) 1)) ?1 (sel ?2 ?3 (sel ?4 ?5 ?6)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/raster.rs:compose","omni-render/src/style.rs:compute_inner"],"word":"(fold (range 0 ?0) ?1 (fold (range 0 ?2) ?3 (sel ?4 (store ?5 ?6 ?7) ?5)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ ?3 ?4) (+ ?5 (sel ?6 ?7 ?8))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/selt.rs:bench"],"word":"(fold (range 0 ?0) list (sel ?1 (store ?2 item1 ?3) (sel ?4 (store ?5 item1 ?6) ?5)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(fold (range ?0 ?1) ?2 (fold (range ?3 ?4) ?5 (+ ?6 (* ?7 ?8))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-spec/src/jpeg.rs:new"],"word":"(fold (range ?0 ?1) ?2 (sel (> (idx ?3 ?4) 0) (store ?5 item1 ?6) ?5))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:table","omni-render/src/selt.rs:matching"],"word":"(fold ?0 (fold ?1 ?2 (fold (idx ?3 ?4) ?5 (sel ?6 (store ?7 ?8 ?9) ?7))) ?10)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/page.rs:apply_pseudo"],"word":"(fold ?0 (fold ?1 list (sel ?2 (store ?3 ?4 ?5) ?3)) (sel ?6 (store ?7 ?8 ?9) ?7))"}
+{"fns":2,"ops":6,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/mv.rs:run"],"word":"(fold ?0 0 (sel ?1 1 (sel ?2 (sel ?3 ?4 (sel ?5 1 ?6)) (sel ?7 ?8 ?9))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:table"],"word":"(fold ?0 ?1 (+ (+ (sel (!= ?2 ?3) (sel ?4 ?5 ?6) ?6) ?7) ?8))"}
+{"fns":2,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/p2.rs:gemv_b8"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (store ?4 (+ (* ?5 8) ?6) ?7)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/img.rs:decode_full"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (store ?4 (+ ?5 (get0 ?6)) ?7)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:shape_hv","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (store ?4 ?5 (+ ?6 (idx ?7 ?8)))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/runtime.rs:find_index"],"word":"(fold ?0 ?1 (fold ?2 ?3 (store ?4 (+ (* ?5 ?6) (get0 ?7)) ?8)))"}
+{"fns":2,"ops":6,"where":["omni-spec/posix/src/tr.rs:run","omni-spec/src/jpeg.rs:decode_scan"],"word":"(fold ?0 ?1 (sel (and (and (> ?2 ?3) ?4) ?5) (fold ?6 ?7 ?8) ?7))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flow_except_captions","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 ?1 (sel (and (and ?2 ?3) (not ?4)) (+ ?5 ?6) ?7))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/uax9.rs:matching_pdi"],"word":"(fold ?0 ?1 (sel ?2 ?3 (sel (== ?4 ?5) (sel ?6 (store ?7 ?8 ?9) ?10) ?11)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel ?6 ?7 (sel (and ?8 ?9) ?10 ?11)))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(get0 (sel (== ?0 ?1) ?2 (tup ?3 (+ ?4 (+ ?5 ?6)))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:flex_items"],"word":"(get0 (sel ?0 (tup (sel (== ?1 ?2) ?3 ?4) ?5) (tup ?6 ?7)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/raster.rs:render","omni-render/src/raster.rs:render_incr"],"word":"(get0 (tup (* item2 ?0) (+ ?1 (* (get0 item1) ?0))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/jsi_date.rs:normalize_ymd","omni-spec/posix/src/cp.rs:run"],"word":"(get0 (tup (get0 (tup ?0 ?1)) (get1 (tup ?0 ?1))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/img.rs:decode","omni-render/src/layout.rs:intrinsic_w"],"word":"(get0 (tup (min (get0 ?0) ?1) (min (get1 ?0) ?2)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:grid"],"word":"(get1 (idx ?0 (idx (filter (range 0 (len ?0)) ?1) ?2)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(get1 (sel (== ?0 ?1) ?2 (tup ?3 (+ ?4 (+ ?5 ?6)))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:flex_items"],"word":"(get1 (sel ?0 (tup (sel (== ?1 ?2) ?3 ?4) ?5) (tup ?6 ?7)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/raster.rs:render","omni-render/src/raster.rs:render_incr"],"word":"(get1 (tup (* item2 ?0) (+ ?1 (* (get0 item1) ?0))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/jsi_date.rs:normalize_ymd","omni-spec/posix/src/cp.rs:run"],"word":"(get1 (tup (get0 (tup ?0 ?1)) (get1 (tup ?0 ?1))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/img.rs:decode","omni-render/src/layout.rs:intrinsic_w"],"word":"(get1 (tup (min (get0 ?0) ?1) (min (get1 ?0) ?2)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/explain.rs:run","omni-render/src/selt.rs:bench"],"word":"(idx (filter (range 0 (len ?0)) (and (== ?1 ?2) ?3)) item1)"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run"],"word":"(idx (filter (range 0 (len ?0)) (and (and ?1 ?2) ?3)) ?4)"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/doctor.rs:run"],"word":"(idx (filter (range 0 (len ?0)) (and (and ?1 ?2) ?3)) item2)"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/selt.rs:bench"],"word":"(idx (filter (range 0 (len ?0)) (and ?1 (not ?2))) ?3)"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:intrinsic_w"],"word":"(idx (filter ?0 (and (and ?1 (not (and ?2 ?3))) ?4)) ?5)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/selt.rs:bench"],"word":"(idx (fold (range 0 ?0) ?1 ?2) (idx (filter (range 0 ?0) ?3) item1))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(idx (fold ?0 (fold ?1 ?2 ?3) ?4) (idx (filter (range 0 ?5) ?6) item1))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:table","omni-render/src/selt.rs:bench"],"word":"(idx (fold ?0 ?1 (sel ?2 ?3 ?4)) (idx (filter (range 0 ?5) ?6) item1))"}
+{"fns":2,"ops":6,"where":["omni-render/src/jsi_lib.rs:to_fixed","omni-ui/src/library_app.rs:parse_title"],"word":"(idx (sel ?0 ?1 ?2) (range 0 (- (len (sel ?0 ?1 ?2)) ?3)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden"],"word":"(idx ?0 (range (+ ?1 8) (+ (+ ?1 8) (* ?2 ?3))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/repair.rs:t_solve","terminal-launcher/apps/tsift/src/lib.rs:encode_print"],"word":"(len (filter (map ?0 ?1) (!= (idx (map ?0 ?1) ?2) ?3)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/incr.rs:frame","omni-render/src/jit/jitw0.rs:run"],"word":"(len (filter (zip ?0 ?1) (!= (idx ?2 ?3) (idx ?4 ?5))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(map (idx ?0 (range 0 ?1)) (idx (idx ?0 (range 0 ?1)) ?2))"}
+{"fns":2,"ops":6,"where":["omni-render/src/jit/jitw0.rs:load_golden","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(map (idx ?0 (range ?1 ?2)) (idx (idx ?0 (range ?1 ?2)) item2))"}
+{"fns":2,"ops":6,"where":["omni-render/src/jit/ir.rs:main","omni-render/src/jit/sift.rs:main"],"word":"(map (range 0 (* (get0 ?0) (get1 ?0))) (& ?1 15))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:place_abs"],"word":"(max (- (- (- (- ?0 ?1) (get1 ?2)) ?3) ?4) 0)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(max (- (maxall (map ?0 (sum (map ?1 ?2)))) ?3) 0)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:float_band","omni-render/src/layout.rs:intrinsic_w"],"word":"(max (fold ?0 (get0 (tup ?1 ?2)) (sel (and ?3 ?4) ?5 ?6)) ?7)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(min (+ ?0 ?1) (maxall (map ?2 (sum (map ?3 ?4)))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(min (sel (== ?0 ?1) (sel (!= ?2 0) ?3 ?4) ?5) (max ?6 1))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:block_box_full"],"word":"(or (or (or (or ?0 (!= ?1 0)) ?2) (!= ?3 0)) ?4)"}
+{"fns":2,"ops":6,"where":["omni-render/src/runtime.rs:main","omni-spec/src/brotli.rs:dictionary_word"],"word":"(range (+ ?0 (* ?1 ?2)) (+ (+ ?0 (* ?1 ?2)) ?3))"}
+{"fns":2,"ops":6,"where":["omni-render/src/woff.rs:reconstruct_glyf","omni-spec/posix/src/date.rs:iso_week"],"word":"(sel (< ?0 ?1) (tup ?2 ?3) (sel ?4 (tup ?5 ?6) (tup ?7 ?8)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/woff.rs:reconstruct_glyf","omni-spec/src/brotli.rs:ferment"],"word":"(sel (< ?0 ?1) ?2 (sel (< ?0 ?3) ?4 (sel (< ?5 ?6) ?7 ?8)))"}
+{"fns":2,"ops":6,"where":["omni-spec/src/jpeg.rs:decode_block","omni-spec/src/sfnt.rs:cmap4"],"word":"(sel (== (sel (== ?0 0) ?1 ?2) 0) ?3 (sel (== ?0 0) ?1 ?2))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:knob_at","omni-spec/src/sfnt.rs:cmap4"],"word":"(sel (== ?0 ?1) ?2 (sel (== ?3 ?4) ?5 (sel (== ?6 ?7) 0 ?8)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/svrt.rs:prop_vals","omni-spec/src/jpeg.rs:output"],"word":"(sel (== ?0 ?1) ?2 (sel (and (== (len ?3) ?4) ?5) ?6 ?7))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(sel (> (sum (map (filter (range 0 ?0) ?1) ?2)) 0) ?3 ?4)"}
+{"fns":2,"ops":6,"where":["omni-render/src/selt.rs:bench","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (!= ?0 ?1) (== ?2 ?3)) (store ?4 item1 (idx ?4 ?0)) ?5)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:table","omni-spec/src/png.rs:paeth"],"word":"(sel (and (<= ?0 ?1) ?2) ?3 (sel (<= (get1 ?4) ?5) ?6 ?7))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_fast"],"word":"(sel (and (== ?0 ?1) ?2) ?3 (sel (and ?4 ?5) ?6 (sel ?7 ?8 ?9)))"}
+{"fns":2,"ops":6,"where":["omni-spec/posix/src/ls.rs:run","omni-spec/posix/src/tr.rs:run"],"word":"(sel (and (and (> (len ?0) 1) ?1) ?2) (fold ?3 ?4 ?5) ?4)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and (and (and ?0 (< ?1 ?2)) ?3) ?4) ?5 (sel ?6 ?7 ?8))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:inline_seg","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and (and (and ?0 ?1) (not ?2)) (== ?3 0)) ?4 ?5)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (and ?0 ?1) ?2) (sel ?3 (sel ?4 (+ ?5 ?6) ?5) ?5) ?5)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (and (and ?0 ?1) ?2) ?3 (sel (and ?4 ?5) ?6 (sel ?7 ?8 ?9)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/style.rs:hints","omni-render/src/svg.rs:render_at"],"word":"(sel (and (or (== ?0 str) (== ?0 str)) (not ?1)) ?2 ?3)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/svg.rs:arc"],"word":"(sel (and ?0 (> ?1 0)) ?2 (sel (and ?3 (< ?4 0)) ?5 ?6))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:text_widths"],"word":"(sel (and ?0 (not ?1)) (+ ?2 (+ (get2 ?3) ?4)) ?2)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/webp.rs:inverse_predictor"],"word":"(sel (and ?0 ?1) ?2 (sel (== ?3 ?4) ?5 (sel (== ?6 ?7) ?8 ?9)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_fast"],"word":"(sel (and ?0 ?1) ?2 (sel (== ?3 ?4) ?5 (sel (== ?6 str) ?7 ?8)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:knob_fast"],"word":"(sel (and ?0 ?1) ?2 (sel (and ?3 (== ?4 ?5)) ?6 (sel ?7 ?8 ?9)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and ?0 ?1) ?2 (sel (and ?3 (> ?4 ?5)) (sel ?6 ?7 ?8) ?8))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:knob_fast","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 ?1) ?2 (sel (and ?3 ?4) ?2 (sel ?5 ?6 (sel ?7 ?8 ?9))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:knob_fast","omni-render/src/layout.rs:table"],"word":"(sel (and ?0 ?1) ?2 (sel (and ?3 ?4) ?5 (sel ?6 ?7 (sel ?8 ?9 ?10))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_fast"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 ?2 (sel (== ?4 ?5) ?6 (sel ?7 ?8 ?9))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_fast"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 ?4 (sel (== ?5 ?6) ?7 (sel ?8 ?9 ?10))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/incr.rs:style_mismatches","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 (+ (fold ?1 ?2 (sel ?3 ?4 ?5)) ?6) (fold ?1 ?2 (sel ?3 ?4 ?5)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:clamp_w"],"word":"(sel ?0 (max (sel ?1 (min ?2 ?3) ?2) ?4) (sel ?1 (min ?2 ?3) ?2))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:text_widths"],"word":"(sel ?0 (sel (and ?1 (not ?2)) ?3 (fold ?4 ?5 ?6)) (fold ?4 ?7 ?8))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:piece_w","omni-render/src/layout.rs:word"],"word":"(sel ?0 (sel ?1 (sel (== ?2 (get0 ?3)) (+ ?4 ?5) ?4) ?4) ?4)"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 (sel ?1 (sel ?2 ?3 (fold ?4 ?5 ?6)) (fold ?4 ?5 ?6)) (fold ?4 ?5 ?6))"}
+{"fns":2,"ops":6,"where":["omni-render/src/style.rs:compute_inner","omni-spec/src/brotli.rs:ferment"],"word":"(sel ?0 (sel ?1 (store ?2 ?3 ?4) ?2) (sel ?5 (sel ?6 (store ?7 ?8 ?9) ?7) ?10))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:text_widths"],"word":"(sel ?0 (sel ?1 ?2 (fold ?3 ?4 ?5)) (fold ?3 (get0 (tup 0 0)) ?6))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flow","omni-spec/posix/src/cp.rs:run"],"word":"(sel ?0 (sel ?1 ?2 (sel (not ?3) ?4 ?5)) (sel ?6 (sel ?7 ?8 ?9) ?9))"}
+{"fns":2,"ops":6,"where":["omni-spec/posix/src/regex.rs:interval","omni-spec/src/jpeg.rs:decode_block"],"word":"(sel ?0 (sel ?1 ?2 (sel ?3 (+ ?4 ?5) ?4)) (sel ?3 (+ ?4 ?5) ?4))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flow","omni-spec/posix/src/rm.rs:run"],"word":"(sel ?0 (sel ?1 ?2 (sel ?3 (sel (or ?4 ?5) ?6 ?7) ?8)) (sel ?9 ?10 ?7))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:block_box_full","omni-spec/posix/src/cp.rs:run"],"word":"(sel ?0 (sel ?1 ?2 (sel ?3 ?4 (sel ?5 ?6 ?7))) (sel ?3 ?4 (sel ?5 ?6 ?7)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/posix/src/date.rs:iso_week"],"word":"(sel ?0 (tup ?1 ?2) (sel ?3 (tup (+ ?4 ?5) ?6) (tup ?7 ?8)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/woff.rs:reconstruct_glyf"],"word":"(sel ?0 (tup ?1 ?2) (sel ?3 (tup ?4 ?5) (sel ?6 (tup ?7 ?8) ?9)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel ?0 ?1 (+ ?2 (idx (fold ?3 ?4 (sel (> ?5 ?6) ?7 ?8)) item1)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_fast"],"word":"(sel ?0 ?1 (sel (and ?2 (== ?3 ?4)) ?1 (sel ?5 ?6 (sel ?7 ?8 ?9))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:hsizes"],"word":"(sel ?0 ?1 (sel (and ?2 ?3) (sel ?4 ?5 (sel ?6 ?7 ?8)) (sel ?6 ?7 ?8)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-ui/src/md.rs:blocks"],"word":"(sel ?0 ?1 (sel (and ?2 ?3) ?1 (sel ?4 ?5 (sel (or ?6 ?7) ?8 ?9))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:hsizes","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel (and ?2 ?3) ?4 (sel (and (and ?5 ?6) ?7) ?8 ?9)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 (sel ?3 (sel ?4 ?5 ?6) (fold ?7 ?8 ?9)) (fold ?7 ?8 ?9)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:grid","omni-spec/posix/src/cp.rs:run"],"word":"(sel ?0 ?1 (sel ?2 (sel ?3 ?4 (sel ?5 ?6 ?7)) (sel ?8 (sel ?9 ?10 ?11) ?11)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel (and ?4 ?5) (max ?6 (+ ?7 ?8)) ?9)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel (and ?4 ?5) ?6 (sel (and ?7 ?8) ?9 ?10))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/doctor.rs:edit_class","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?3 (sel ?5 ?6 (sel (or ?7 ?8) ?9 ?6)))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel (and ?6 ?7) (max ?8 ?9) ?10))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel (and ?6 ?7) ?8 (sel ?9 ?10 ?11)))))"}
+{"fns":2,"ops":6,"where":["omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(store ?0 (+ (* ?1 8) ?2) (idx ?3 (+ (* ?2 ?4) ?1)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/corert0.rs:main","omni-render/src/font.rs:curve_to"],"word":"(tup (+ ?0 (* ?1 ?2)) (+ (+ ?3 ?4) (* ?5 ?6)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/svg.rs:arc"],"word":"(tup (+ ?0 (get0 ?1)) (+ (+ ?2 ?3) (get1 ?1)))"}
+{"fns":2,"ops":6,"where":["omni-render/src/svg.rs:ap","omni-render/src/svg.rs:arc"],"word":"(tup (+ ?0 ?1) (+ (+ (* ?2 ?3) (* ?4 ?5)) ?6))"}
+{"fns":2,"ops":6,"where":["omni-render/src/jit/x86.rs:rex","omni-spec/src/webp.rs:inverse_color"],"word":"(| (| ?0 (<< ?1 ?2)) (<< (& (>> ?3 ?4) ?5) ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/jitw0.rs:run","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(!= ?0 (idx (fold ?1 ?2 (fold (range 0 ?3) ?4 ?5)) ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/jitw0.rs:run","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(!= ?0 (idx (fold ?1 ?2 (fold (range 0 ?3) ?4 ?5)) item1))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-spec/src/webp.rs:inverse_color"],"word":"(& (>> (idx ?0 (+ (* ?1 ?2) ?3)) 16) 255)"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-spec/src/webp.rs:inverse_color"],"word":"(& (>> (idx ?0 (+ (* ?1 ?2) ?3)) 8) 255)"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-spec/src/webp.rs:inverse_color"],"word":"(& (>> (idx ?0 (+ (* ?1 ?2) ?3)) ?4) 255)"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* (* ?0 ?1) (/ item1 ?2)) (get0 ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* (* ?0 ?1) (/ item1 ?2)) (get1 ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* ?0 (- 1 (/ item1 ?1))) (/ item1 ?1))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* ?0 (/ item1 ?1)) (get0 (get2 ?2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (* ?0 (/ item1 ?1)) (get1 (get2 ?2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(* (- (idx (fold ?0 (fold ?1 ?2 ?3) ?4) item1) ?5) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(* (- 1 (/ item1 ?0)) (- 1 (/ item1 ?0)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-render/src/jsi_date.rs:days_from_civil"],"word":"(* (/ (sel (>= ?0 0) ?0 (- ?0 ?1)) ?2) 146097)"}
+{"fns":2,"ops":5,"where":["omni-render/src/jsi_date.rs:civil_from_days","omni-render/src/jsi_date.rs:days_from_civil"],"word":"(* (/ (sel (>= ?0 0) ?0 (- ?0 ?1)) ?2) 400)"}
+{"fns":2,"ops":5,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get0 (tup ?0 ?1)) (get0 (tup ?0 ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/svg.rs:arc","omni-spec/src/jpeg.rs:decode_scan"],"word":"(* (get0 (tup ?0 ?1)) (get0 (tup ?2 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:decode_full","omni-render/src/svg.rs:arc"],"word":"(* (get1 (tup ?0 ?1)) (get0 (tup ?2 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* (get1 (tup ?0 ?1)) (get1 (tup ?0 ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/svg.rs:arc","omni-spec/src/jpeg.rs:decode_scan"],"word":"(* (get1 (tup ?0 ?1)) (get1 (tup ?2 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-spec/posix/src/date.rs:days_from_civil","omni-ui/src/recur.rs:days_from_civil"],"word":"(* 153 (sel (> ?0 2) (- ?0 3) (+ ?0 9)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* ?0 (get0 (tup (/ ?1 ?2) (/ ?3 ?2))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:arc"],"word":"(* ?0 (get0 (tup (/ ?1 ?2) (/ ?3 ?4))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/svg.rs:arc"],"word":"(+ (* (* ?0 ?1) ?2) (* (* ?3 ?4) ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:decode_full","omni-spec/src/gif.rs:first_frame_rgba"],"word":"(+ (* (+ ?0 ?1) (get0 (tup ?2 ?3))) ?4)"}
+{"fns":2,"ops":5,"where":["omni-render/src/svg.rs:ap","omni-render/src/svg.rs:mul"],"word":"(+ (* (idx ?0 0) ?1) (* (idx ?0 2) ?2))"}
+{"fns":2,"ops":5,"where":["omni-render/src/svg.rs:ap","omni-render/src/svg.rs:mul"],"word":"(+ (* (idx ?0 1) ?1) (* (idx ?0 3) ?2))"}
+{"fns":2,"ops":5,"where":["omni-render/src/main.rs:ssim","omni-render/src/svg.rs:mul"],"word":"(+ (* (idx ?0 ?1) ?2) (* (idx ?0 ?3) ?4))"}
+{"fns":2,"ops":5,"where":["omni-spec/src/jpeg.rs:decode_scan","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (* ?0 ?1) (+ (* (get0 ?2) ?3) ?4))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:quad_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (* ?0 (get1 ?1)) ?2) (* ?3 ?4))"}
+{"fns":2,"ops":5,"where":["omni-render/src/dom.rs:heap_bytes","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ (+ (* ?0 ?1) (* ?2 ?3)) ?4) ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/runtime.rs:main","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ (+ ?0 (* ?1 ?2)) ?3) ?4) ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/runtime.rs:main","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ (+ ?0 ?1) (* ?2 ?3)) 2) ?4)"}
+{"fns":2,"ops":5,"where":["omni-spec/src/jpeg.rs:idct_block","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ (+ (+ ?0 ?1) (* ?2 ?3)) (* ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-spec/src/otshape.rs:script_feature_indices"],"word":"(+ (+ (fold ?0 ?1 (fold ?2 ?3 (sel ?4 ?5 ?6))) ?7) ?8)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/main.rs:ssim"],"word":"(+ (+ (get0 ?0) ?1) (get1 (tup ?2 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:table"],"word":"(+ (+ (sel (!= ?0 ?1) (sel ?2 ?3 ?4) ?4) ?5) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ ?0 (* ?1 ?2)) (* ?3 (get0 ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (+ ?0 (* ?1 ?2)) (* ?3 (get1 ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/incr.rs:style_mismatches","omni-render/src/layout.rs:intrinsic_w"],"word":"(+ (fold (range 0 ?0) ?1 (sel ?2 (+ ?3 ?4) ?5)) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:text_widths","omni-render/src/layout.rs:word"],"word":"(+ (fold ?0 ?1 (+ ?2 (+ ?3 ?4))) (+ ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-spec/src/jpeg.rs:idct_block"],"word":"(+ (get0 (tup ?0 ?1 ?2 ?3)) (get2 (tup ?0 ?1 ?2 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/dom.rs:add_attrs_if_missing","omni-ui/src/recur.rs:nth_weekday"],"word":"(+ (get0 (tup ?0 ?1)) (get1 (tup ?0 ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(+ (maxall (map ?0 (sum (map ?1 ?2)))) 1)"}
+{"fns":2,"ops":5,"where":["omni-render/apps/find/src/lib.rs:alloc","terminal-launcher/apps/tsift/src/lib.rs:alloc"],"word":"(+ (sel (== ?0 0) (* ?1 65536) ?0) (max ?2 8))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:flow"],"word":"(+ (sel ?0 (sel ?1 ?2 ?3) ?4) (sel (and ?5 ?6) ?7 ?8))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(+ (sum (fold ?0 (fold ?1 ?2 ?3) ?4)) (* ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(+ (sum ?0) (* ?1 (max (- ?2 1) 0)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-spec/src/webp.rs:inverse_color"],"word":"(+ ?0 (& (idx ?1 (+ (* ?2 ?3) ?4)) 255))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/svg.rs:arc"],"word":"(+ ?0 (* (* (* ?1 ?1) ?2) (get0 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/svg.rs:arc"],"word":"(+ ?0 (* (* (* ?1 ?2) ?3) (get0 ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ ?0 (* (* ?1 (/ item1 ?2)) (get0 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:curve_to","omni-render/src/font.rs:quad_to"],"word":"(+ ?0 (* (* ?1 (/ item1 ?2)) (get1 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/incr.rs:frame","omni-render/src/layout.rs:block_box_full"],"word":"(+ ?0 (+ (+ (+ ?1 (sel ?2 ?3 ?4)) ?5) ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/incr.rs:frame","omni-spec/src/sfnt.rs:cmap4"],"word":"(+ ?0 (+ (+ ?1 (+ (+ ?2 ?3) ?4)) ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:text_widths"],"word":"(+ ?0 (+ ?1 (sel (> (get0 item1) ?2) ?3 0)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(+ ?0 (/ (- ?1 (get1 (tup ?2 ?3))) ?4))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(+ ?0 (idx (fold ?1 ?2 (sel (> ?3 ?4) ?5 ?6)) item1))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:text_widths"],"word":"(+ ?0 (sel (> (get0 item1) 0) (+ ?1 ?2) ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:knob_fast"],"word":"(+ ?0 (sel (and ?1 ?2) ?3 (sel (and ?4 ?5) ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:place_abs"],"word":"(- (- (- ?0 ?1) ?2) (get3 (tup ?3 ?4 ?5 ?6)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:flow"],"word":"(- (fold ?0 (sel ?1 ?2 ?2) (+ ?3 ?4)) (sel ?1 ?2 ?2))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow_except_captions","omni-render/src/layout.rs:table"],"word":"(- (fold ?0 ?1 (sel (and ?2 ?3) (+ ?4 ?5) ?6)) ?1)"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:table"],"word":"(- (get1 (tup ?0 ?1)) (get0 (tup ?0 ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(- (maxall (map ?0 (sum (map ?1 ?2)))) ?3)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(/ (* ?0 (idx (fold ?1 ?2 ?3) item1)) (sum ?4))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(/ (* ?0 ?1) (sum (map (filter ?2 ?3) ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(< ?0 (maxall (map ?1 (sum (map ?2 ?3)))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(> (sum (map (filter (range 0 ?0) ?1) ?2)) 0)"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:run","omni-spec/posix/src/cut.rs:picked"],"word":"(and (>= ?0 (get0 ?1)) (<= ?2 (get1 ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/raster.rs:touches"],"word":"(and (>= ?0 ?1) (< (get0 ?2) (+ ?1 ?3)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(and (and (== (sel ?0 ?1 ?2) 0) (== ?3 ?4)) ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(and (and (>= ?0 (idx (get1 ?1) ?2)) ?3) ?4)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:collapses_top","omni-render/src/layout.rs:flex_items"],"word":"(and (and (and (== ?0 ?1) (== ?2 ?3)) ?4) ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:collapses_bottom","omni-render/src/layout.rs:margin_box_ok"],"word":"(and (and (and (and (== ?0 ?1) ?2) ?3) ?4) ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:collapses_top","omni-render/src/style.rs:compute_inner"],"word":"(and (and (and ?0 (== ?1 ?2)) ?3) (!= ?4 str))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:margin_box_ok"],"word":"(and (and (and ?0 (not ?1)) ?2) (not ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:intrinsic_w"],"word":"(and (and (and ?0 ?1) (not ?2)) (not ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:intrinsic_w"],"word":"(and (and (and ?0 ?1) ?2) (not (and ?3 ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/doctor.rs:donors_cross"],"word":"(and (and ?0 (< (get0 (tup ?1 ?2)) ?3)) ?4)"}
+{"fns":2,"ops":5,"where":["omni-render/src/hit.rs:hit","omni-render/src/hit.rs:hit_linear"],"word":"(and (and ?0 (>= ?1 (idx (get1 ?2) ?3))) ?4)"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:intrinsic_w"],"word":"(and (and ?0 (not (and ?1 ?2))) (not ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:run","omni-render/src/layout.rs:intrinsic_w"],"word":"(and (and ?0 ?1) (not (and (>= ?2 ?3) ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:donors_cross","omni-render/src/layout.rs:intrinsic_w"],"word":"(and (and ?0 ?1) (not (and ?2 (== ?3 ?4))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(and (not (and (== ?0 ?1) ?2)) (not ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/style.rs:hints","omni-render/src/svg.rs:render_at"],"word":"(and (or (== ?0 str) (== ?0 str)) (not ?1))"}
+{"fns":2,"ops":5,"where":["omni-render/src/incr.rs:frame","omni-render/src/jit/jitw0.rs:run"],"word":"(filter (zip ?0 ?1) (!= (idx ?2 ?3) (idx ?4 ?5)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:run","omni-render/src/layout.rs:grid"],"word":"(fold (filter (range 0 (len ?0)) ?1) ?2 (fold ?3 ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/repair.rs:t_predict","omni-render/src/svg.rs:style_of"],"word":"(fold (map ?0 (tup (get0 ?1) (get1 ?1))) ?2 ?3)"}
+{"fns":2,"ops":5,"where":["omni-render/src/repair.rs:t_debug","omni-render/src/style.rs:compute_inner"],"word":"(fold (range 0 (len ?0)) ?1 (fold (range ?2 ?3) ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/incr.rs:style_mismatches","omni-render/src/style.rs:compute_inner"],"word":"(fold (range 0 (len ?0)) ?1 (sel ?2 (+ ?3 ?4) ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/selt.rs:bench","omni-render/src/style.rs:compute_inner"],"word":"(fold (range 0 (len ?0)) ?1 (sel ?2 ?3 (sel ?4 ?5 ?6)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/p2.rs:gemv_b8","omni-spec/src/jpeg.rs:idct_block"],"word":"(fold (range 0 8) ?0 (store ?1 (+ (* item1 8) ?2) ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/repair.rs:t_debug","omni-render/src/svrt.rs:run_reactive"],"word":"(fold (range 0 ?0) ?1 (fold (range ?2 (len ?3)) ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/raster.rs:compose","omni-render/src/woff.rs:reconstruct_glyf"],"word":"(fold (range 0 ?0) ?1 (sel (< ?2 ?3) (store ?4 ?5 ?6) ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-spec/src/otshape.rs:script_feature_indices"],"word":"(fold (range 0 ?0) ?1 (sel (== (idx ?2 item1) ?3) ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/style.rs:compute_inner"],"word":"(fold (range 0 ?0) ?1 (sel (== ?2 0) (store ?3 ?4 ?5) ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/style.rs:compute_inner","omni-spec/src/jpeg.rs:decode_scan"],"word":"(fold (range 0 ?0) ?1 (sel (and (== ?2 ?3) ?4) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/selt.rs:bench","omni-spec/src/jpeg.rs:decode_scan"],"word":"(fold (range 0 ?0) ?1 (sel (and ?2 (== ?3 ?4)) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/style.rs:compute_inner","omni-spec/src/jpeg.rs:decode_scan"],"word":"(fold (range 0 ?0) ?1 (sel (and ?2 ?3) (fold ?4 ?5 ?6) ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/raster.rs:compose","omni-render/src/selt.rs:bench"],"word":"(fold (range 0 ?0) ?1 (sel ?2 (store ?3 ?4 (idx ?5 ?6)) ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/p2.rs:gemv_b8","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ (* ?3 8) item2) ?4))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/img.rs:decode_full"],"word":"(fold (range 0 ?0) ?1 (store ?2 (+ ?3 (get0 ?4)) ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:shape_hv","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(fold (range 0 ?0) ?1 (store ?2 ?3 (+ ?4 (idx ?5 ?6))))"}
+{"fns":2,"ops":5,"where":["omni-spec/posix/src/regex.rs:fill_class","omni-spec/src/jpeg.rs:new"],"word":"(fold (range ?0 (+ ?1 1)) ?2 (sel ?3 (store ?4 item1 ?5) ?4))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/layout.rs:grid"],"word":"(fold (range ?0 ?1) ?2 (fold (range ?3 (min ?4 ?5)) ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(fold (range ?0 ?1) ?2 (fold (range ?3 ?4) ?5 (+ ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/uiir.rs:component_at"],"word":"(fold ?0 (fold ?1 (fold ?2 ?3 (sel ?4 ?5 ?6)) ?7) (store ?6 ?8 ?9))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:table","omni-render/src/selt.rs:matching"],"word":"(fold ?0 (fold ?1 ?2 (fold (idx ?3 ?4) ?5 (sel ?6 ?7 ?8))) ?9)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/uiir.rs:component_at"],"word":"(fold ?0 (fold ?1 ?2 (fold ?3 ?4 (store ?5 ?6 ?7))) (store ?8 ?9 ?10))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-spec/src/jpeg.rs:decode_scan"],"word":"(fold ?0 (fold ?1 ?2 ?3) (sel (and (== ?4 ?5) ?6) ?7 ?8))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-spec/src/jpeg.rs:decode_scan"],"word":"(fold ?0 (fold ?1 ?2 ?3) (sel (and (and ?4 ?5) ?6) ?7 ?8))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:missing","omni-render/src/main.rs:ssim"],"word":"(fold ?0 (get0 (tup 0 0)) (fold ?1 ?2 (+ ?3 ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:diff","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 (get0 (tup ?1 ?1)) (sel ?2 (+ ?3 ?4) ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:float_band","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 (get0 (tup ?1 ?2)) (sel (and ?3 ?4) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:float_band"],"word":"(fold ?0 (get0 (tup ?1 ?2)) (sel ?3 (sel ?4 ?5 ?6) ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold ?0 (get0 (tup list list)) (fold ?1 ?2 (sel ?3 ?4 ?5)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:diff","omni-render/src/layout.rs:block_box"],"word":"(fold ?0 (get1 (tup 0 0)) (sel ?1 (+ ?2 ?3) ?2))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:float_band","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 (get1 (tup ?1 ?2)) (sel (and ?3 ?4) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold ?0 (get1 (tup list list)) (fold ?1 ?2 (sel ?3 ?4 ?5)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:table","omni-render/src/selt.rs:matching"],"word":"(fold ?0 ?1 (fold (idx ?2 ?3) ?4 (sel ?5 (store ?6 ?7 ?8) ?6)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/raster.rs:compose"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (fold ?4 ?5 (sel ?6 ?7 ?8))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/style.rs:compute_inner","omni-spec/src/otshape.rs:script_feature_indices"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (sel (== ?4 ?5) ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/raster.rs:compose","omni-render/src/style.rs:compute_inner"],"word":"(fold ?0 ?1 (fold (range 0 ?2) ?3 (sel ?4 (store ?5 ?6 ?7) ?5)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(fold ?0 ?1 (fold ?2 ?3 (sel ?4 (sel ?5 (store ?6 ?7 ?8) ?6) ?6)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/p2.rs:gemv_b8","omni-render/src/runtime.rs:find_index"],"word":"(fold ?0 ?1 (fold ?2 ?3 (store ?4 (+ (* ?5 ?6) ?7) ?8)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:shape_hv","omni-render/src/layout.rs:grid"],"word":"(fold ?0 ?1 (fold ?2 ?3 (store ?4 ?5 (+ ?6 (idx ?7 ?8)))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:float_band","omni-render/src/layout.rs:table"],"word":"(fold ?0 ?1 (sel (and (< ?2 ?3) ?4) (sel ?5 ?6 ?7) ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:float_band","omni-render/src/layout.rs:table"],"word":"(fold ?0 ?1 (sel (and (< ?2 ?3) ?4) (sel ?5 ?6 ?7) ?8))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-spec/posix/src/bin/wc.rs:main"],"word":"(fold ?0 ?1 (sel (and (> ?2 ?3) ?4) (fold ?5 ?6 ?7) ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/hit.rs:hit","omni-render/src/layout.rs:intrinsic_w"],"word":"(fold ?0 ?1 (sel (and (and ?2 (< ?3 ?4)) ?5) ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/hit.rs:hit","omni-render/src/layout.rs:flex_items"],"word":"(fold ?0 ?1 (sel (and (and ?2 ?3) ?4) (get0 ?5) ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:table","omni-render/src/selt.rs:bench"],"word":"(fold ?0 ?1 (sel (and ?2 (== ?3 ?4)) (store ?5 ?6 ?7) ?8))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/style.rs:compute_inner"],"word":"(fold ?0 ?1 (sel (and ?2 ?3) (fold ?4 ?5 (sel ?6 ?7 ?8)) ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/svrt.rs:fire"],"word":"(fold ?0 ?1 (sel ?2 (fold ?3 ?4 (sel ?5 (+ ?6 ?7) ?6)) ?4))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/posix/src/mv.rs:run"],"word":"(fold ?0 ?1 (sel ?2 ?3 (sel ?4 (sel ?5 ?6 ?7) (sel ?8 ?3 ?9))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/posix/src/cp.rs:run"],"word":"(fold ?0 ?1 (sel ?2 ?3 (sel ?4 (sel ?5 ?6 ?7) (sel ?8 ?9 ?10))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/runtime.rs:find_index"],"word":"(fold ?0 ?1 (store ?2 (+ (* ?3 ?4) (get0 ?5)) ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:decode_full","omni-render/src/runtime.rs:find_index"],"word":"(fold ?0 list (fold ?1 ?2 (store ?3 (+ ?4 (get0 ?5)) ?6)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(get0 (sel (== ?0 ?1) (tup ?2 ?3) (tup ?4 ?5)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/svg.rs:arc"],"word":"(get0 (tup (+ ?0 ?1) (+ (+ ?2 ?3) ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/svg.rs:arc"],"word":"(get0 (tup (/ (* ?0 ?1) ?2) (/ ?3 ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/svg.rs:arc"],"word":"(get0 (tup (/ ?0 ?1) (/ (- ?2 ?3) ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/svrt.rs:cli","omni-render/src/uiir.rs:run_cli"],"word":"(get0 (tup (idx ?0 0) (idx ?0 1) (idx ?0 2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/svrt.rs:fire","omni-render/src/uiir.rs:call_named"],"word":"(get1 (idx (filter ?0 (== (get0 ?1) ?2)) ?1))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(get1 (sel (== ?0 ?1) (tup ?2 ?3) (tup ?4 ?5)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/svg.rs:arc"],"word":"(get1 (tup (+ ?0 ?1) (+ (+ ?2 ?3) ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/svg.rs:arc"],"word":"(get1 (tup (/ (* ?0 ?1) ?2) (/ ?3 ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/svg.rs:arc"],"word":"(get1 (tup (/ ?0 ?1) (/ (- ?2 ?3) ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/svrt.rs:cli","omni-render/src/uiir.rs:run_cli"],"word":"(get1 (tup (idx ?0 0) (idx ?0 1) (idx ?0 2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:build_bits","omni-render/src/style.rs:compute_inner"],"word":"(get2 (idx (filter ?0 (== (get0 ?1) ?2)) ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/selt.rs:bench","omni-ui/src/frame.rs:render"],"word":"(idx (fold (range 0 (len ?0)) list (sel ?1 ?2 ?3)) ?4)"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/jitw0.rs:run","omni-render/src/jit/p2.rs:gemv_b8"],"word":"(idx (fold ?0 ?1 (fold (range 0 ?2) ?3 (store ?4 ?5 ?6))) ?7)"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:shape_hv","omni-render/src/jit/jitw0.rs:run"],"word":"(idx (fold ?0 ?1 (fold (range 0 ?2) ?3 (store ?4 ?5 ?6))) item1)"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:shape_hv","omni-render/src/jit/p2.rs:gemv_b8"],"word":"(idx (fold ?0 ?1 (fold (range 0 ?2) ?3 (store ?4 item3 ?5))) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:top8","omni-render/src/layout.rs:table"],"word":"(idx (fold ?0 ?1 (sel (> ?2 (get0 ?3)) ?4 ?5)) item1)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/selt.rs:bench"],"word":"(idx (fold ?0 ?1 ?2) (idx (filter (range 0 ?3) ?4) item1))"}
+{"fns":2,"ops":5,"where":["omni-render/src/runtime.rs:topk","omni-render/src/style.rs:calc"],"word":"(idx (idx ?0 (range 0 (min ?1 (len ?0)))) item1)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:table","omni-ui/src/library_app.rs:parse_title"],"word":"(idx (sel (and ?0 ?1) (map ?2 ?3) ?4) (range ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-spec/src/webp.rs:inverse_color","omni-spec/src/webp.rs:inverse_predictor"],"word":"(idx ?0 (+ (* (>> item1 ?1) ?2) (>> item2 ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:run","omni-render/src/layout.rs:intrinsic_w"],"word":"(idx ?0 (idx (filter ?1 (and (and ?2 ?3) ?4)) ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:run","omni-render/src/layout.rs:intrinsic_w"],"word":"(idx ?0 (idx (filter ?1 (and (and ?2 ?3) ?4)) item1))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:run"],"word":"(idx ?0 (range (* ?1 ?2) (* (+ ?1 1) ?2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/css.rs:block","omni-render/src/css.rs:take_paren"],"word":"(idx ?0 (range (+ ?1 1) (min ?2 (len ?0))))"}
+{"fns":2,"ops":5,"where":["omni-render/apps/find/src/lib.rs:find","omni-render/src/runtime.rs:main"],"word":"(idx ?0 (range (+ ?1 2) (+ (+ ?1 2) ?2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/css.rs:next_rule","omni-ui/src/shell.rs:present"],"word":"(idx ?0 (range ?1 (min (len ?2) (len ?0))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/css.rs:next_rule","omni-ui/src/shell.rs:present"],"word":"(idx ?0 (range ?1 (min (len ?2) (len ?3))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/incr.rs:frame","omni-render/src/jit/jitw0.rs:run"],"word":"(len (filter ?0 (!= (idx ?1 ?2) (idx ?3 ?4))))"}
+{"fns":2,"ops":5,"where":["omni-render/apps/find/src/lib.rs:find","omni-render/apps/find/src/lib.rs:find_open"],"word":"(list (idx ?0 4) (idx ?0 5) (idx ?0 6) (idx ?0 7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/sift.rs:main","omni-render/src/jit/ternary.rs:jit_ternary_exact_small"],"word":"(map (range 0 (* (get0 item1) (get1 item1))) ?0)"}
+{"fns":2,"ops":5,"where":["omni-render/src/runtime.rs:find_index","omni-render/src/runtime.rs:main"],"word":"(map (zip ?0 ?1) (- (idx ?0 item2) (idx ?1 item2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:compile_k","omni-render/src/layout.rs:program_sig"],"word":"(map ?0 (tup (get0 item1) (map (get1 item1) ?1)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/svg.rs:arc"],"word":"(max (- ?0 (* ?1 (get0 (tup ?2 ?3)))) 0)"}
+{"fns":2,"ops":5,"where":["omni-render/src/jsi_lib.rs:parse_int","omni-ui/src/library_app.rs:parse_title"],"word":"(or (== (get0 ?0) ?1) (== (get0 ?0) ?2))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:inline_with_block"],"word":"(or (and (and ?0 (== ?1 0)) (not ?2)) ?3)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:block_box_full"],"word":"(or (or (or (or ?0 ?1) (!= ?2 0)) ?3) ?4)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:block_box_full"],"word":"(or (or (or ?0 (!= ?1 0)) ?2) (!= ?3 0))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/jit/jitw0.rs:load_golden"],"word":"(range (+ ?0 8) (+ (+ ?0 8) (* ?1 ?2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jsi_re.rs:build","omni-render/src/layout.rs:grid"],"word":"(range (sel (and ?0 ?1) ?2 ?3) (sel (and ?4 ?5) ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/woff.rs:reconstruct_glyf","omni-spec/posix/src/date.rs:iso_week"],"word":"(sel (< ?0 ?1) (tup ?2 ?3) (sel ?4 (tup ?5 ?6) ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:downscale","omni-render/src/main.rs:ssim"],"word":"(sel (== (fold ?0 ?1 (fold ?2 ?3 (+ ?4 ?5))) 0) 0 ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/fastparse.rs:tag_sc","omni-spec/posix/src/regex.rs:interval"],"word":"(sel (== ?0 ?1) (+ (+ ?2 ?3) 1) (+ ?2 ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (== ?0 ?1) (sel (!= ?2 0) (get0 ?3) ?4) ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (== ?0 ?1) (sel (== (sel ?2 ?3 ?4) ?5) ?6 ?7) ?8)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/jpeg.rs:decode_block"],"word":"(sel (== ?0 ?1) (sel (== ?2 0) ?3 ?4) (sel ?5 ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-spec/src/jpeg.rs:decode_block"],"word":"(sel (== ?0 ?1) (sel (== ?2 ?3) (+ ?4 ?5) ?6) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/jpeg.rs:output"],"word":"(sel (== ?0 ?1) ?2 (sel (and ?3 (== ?4 ?5)) ?2 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/jpeg.rs:output"],"word":"(sel (== ?0 ?1) ?2 (sel (and ?3 (== ?4 ?5)) ?6 ?2))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/jpeg.rs:output"],"word":"(sel (== ?0 ?1) ?2 (sel (and ?3 (== ?4 ?5)) ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (== ?0 ?1) ?2 (tup ?3 (+ ?4 (+ ?5 ?6))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/svrt.rs:prop_vals"],"word":"(sel (== ?0 str) ?1 (sel (and (== ?2 ?3) ?4) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (> (sum (map ?0 ?1)) 0) ?2 (sel ?3 ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (!= ?0 ?1) ?2) (tup ?3 ?4) (tup ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/selt.rs:bench","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (== ?0 ?1) (!= ?2 ?3)) (store ?4 ?5 ?6) ?7)"}
+{"fns":2,"ops":5,"where":["omni-spec/posix/src/tr.rs:run","omni-spec/src/jpeg.rs:decode_scan"],"word":"(sel (and (and (> ?0 ?1) ?2) ?3) (fold ?4 ?5 ?6) ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:inline_seg"],"word":"(sel (and (and (and (== ?0 ?1) ?2) ?3) ?4) ?5 ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/hit.rs:hit","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (and (and (and ?0 ?1) ?2) ?3) ?4) ?5 ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:inline_seg","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and (and (and ?0 ?1) (not ?2)) ?3) ?4 ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (and (and ?0 ?1) ?2) ?3) (sel ?4 ?5 ?6) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (and (and ?0 ?1) ?2) ?3) (store ?4 ?5 ?6) ?4)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow_except_captions","omni-render/src/style.rs:compute_inner"],"word":"(sel (and (and ?0 (== ?1 ?2)) ?3) (+ ?4 ?5) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow_except_captions","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and (and ?0 ?1) (not ?2)) (+ ?3 ?4) ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:knob_fast","omni-render/src/svg.rs:arc"],"word":"(sel (and (not ?0) ?1) ?2 (sel (and ?0 ?3) ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/svg.rs:arc"],"word":"(sel (and (not ?0) ?1) ?2 (sel (and ?3 ?4) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jsi_lib.rs:parse_int","omni-spec/src/jpeg.rs:output"],"word":"(sel (and (or (== ?0 0) (== ?1 ?2)) ?3) ?4 ?5)"}
+{"fns":2,"ops":5,"where":["omni-render/src/style.rs:hints","omni-spec/src/jpeg.rs:output"],"word":"(sel (and (or (== ?0 ?1) (== ?2 ?3)) ?4) ?5 ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/style.rs:compute_inner"],"word":"(sel (and ?0 (!= ?1 ?2)) (fold ?3 ?4 (sel ?5 ?6 ?7)) ?4)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_fast"],"word":"(sel (and ?0 (== ?1 ?2)) ?3 (sel ?4 ?5 (sel ?6 ?7 ?8)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(sel (and ?0 (> (sum ?1) 0)) ?2 (sel ?3 ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/svg.rs:arc"],"word":"(sel (and ?0 (> ?1 0)) ?2 (sel (and ?3 ?4) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 (>= ?1 ?2)) ?3 (sel ?4 ?3 (sel ?5 ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 (>= ?1 ?2)) ?3 (sel ?4 ?5 (sel ?6 ?3 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 (>= ?1 ?2)) ?3 (sel ?4 ?5 (sel ?6 ?5 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_fast"],"word":"(sel (and ?0 (not ?1)) ?2 (sel (and ?3 ?4) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:flex_items"],"word":"(sel (and ?0 ?1) (fold ?2 ?3 (sel ?4 (+ ?5 ?6) ?5)) ?3)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:hsizes"],"word":"(sel (and ?0 ?1) (sel ?2 ?3 (sel ?4 ?5 ?6)) (sel ?4 ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/selt.rs:bench","omni-render/src/style.rs:compute_inner"],"word":"(sel (and ?0 ?1) (store ?2 item1 (idx ?2 ?3)) (sel ?4 ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel (and ?0 ?1) ?2 (sel (and ?3 (> ?4 ?5)) ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (and ?0 ?1) ?2 (sel (and ?3 ?4) (fold ?5 ?6 ?7) ?8))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/style.rs:compute_inner"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 (sel ?4 (store ?5 ?6 ?7) ?8) ?9))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 ?2 (sel ?4 ?5 (sel ?6 ?5 ?7))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 ?4 (sel (or ?5 ?6) ?7 ?8)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-ui/src/md.rs:blocks"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 ?4 (sel ?5 ?2 (sel ?6 ?2 ?7))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel (and ?0 ?1) ?2 (sel ?3 ?4 (sel ?5 ?6 (sel ?7 ?8 ?9))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:flex_items"],"word":"(sel (not (or ?0 (and ?1 ?2))) (sel ?3 ?4 ?5) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-render/src/layout.rs:block_box_full"],"word":"(sel (or (or ?0 ?1) ?2) ?3 (sel (or ?4 ?5) ?6 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-spec/posix/src/regex.rs:interval"],"word":"(sel (or ?0 ?1) (sel ?2 ?3 (sel ?4 ?5 ?6)) (sel ?4 ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-render/src/layout.rs:block_box_full"],"word":"(sel (or ?0 ?1) ?2 (sel (or (or ?3 ?4) ?5) ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/fastparse.rs:charref","omni-render/src/incr.rs:frame"],"word":"(sel ?0 (+ ?1 (+ (+ (+ ?2 ?3) ?4) ?5)) ?1)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 (+ ?1 ?2) (sel (> ?3 0) (+ ?4 ?5) ?6))"}
+{"fns":2,"ops":5,"where":["omni-spec/posix/src/regex.rs:group_end","omni-spec/posix/src/regex.rs:interval"],"word":"(sel ?0 (== ?1 ?2) (and (== ?3 ?2) (== ?4 ?2)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/svg.rs:render_at"],"word":"(sel ?0 (fold ?1 ?2 (sel ?3 (sel (== ?4 ?5) ?6 ?7) ?7)) ?2)"}
+{"fns":2,"ops":5,"where":["omni-spec/posix/src/xargs.rs:run","omni-ui/src/vault.rs:strip_md"],"word":"(sel ?0 (idx ?1 (range 0 (- (len ?1) ?2))) ?3)"}
+{"fns":2,"ops":5,"where":["omni-spec/posix/src/sort.rs:parse_pos","omni-spec/posix/src/xargs.rs:run"],"word":"(sel ?0 (idx ?1 (range ?2 ?3)) (idx ?4 (range ?5 ?6)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 (max ?1 ?2) (sel ?3 ?4 (sel ?5 (max ?6 ?7) ?8)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:piece_w","omni-render/src/layout.rs:word"],"word":"(sel ?0 (sel (== ?1 (get0 ?2)) (+ ?3 ?4) ?3) ?3)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:table"],"word":"(sel ?0 (sel (> ?1 ?2) ?3 (sel ?4 ?5 ?6)) (sel ?7 ?8 ?9))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/style.rs:compute_inner"],"word":"(sel ?0 (sel (and (and ?1 (== ?2 ?3)) ?4) ?5 ?6) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:hsizes","omni-spec/src/jpeg.rs:decode_block"],"word":"(sel ?0 (sel ?1 (+ ?2 ?3) (sel ?4 ?5 ?6)) (sel ?4 ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/style.rs:hints"],"word":"(sel ?0 (sel ?1 (sel (and ?2 (not ?3)) ?4 ?5) ?5) ?5)"}
+{"fns":2,"ops":5,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/rm.rs:run"],"word":"(sel ?0 (sel ?1 (sel ?2 1 ?3) (sel ?4 ?5 ?6)) (sel ?7 ?8 ?9))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 (sel ?1 (sel ?2 ?3 ?4) (fold ?5 ?6 ?7)) (fold ?5 ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/brotli.rs:ferment"],"word":"(sel ?0 (sel ?1 (store ?2 ?3 ?4) ?5) (sel ?6 ?7 (sel ?8 ?9 ?10)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-render/src/layout.rs:flow"],"word":"(sel ?0 (sel ?1 0 (sel (not ?2) ?3 ?4)) (sel ?5 ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:table","omni-render/src/layout.rs:text_widths"],"word":"(sel ?0 (sel ?1 ?2 (fold ?3 ?4 ?5)) (fold ?3 ?6 (max ?7 ?8)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box","omni-spec/posix/src/cp.rs:run"],"word":"(sel ?0 (sel ?1 ?2 (sel (not ?3) 1 ?4)) (sel ?5 ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-spec/posix/src/cp.rs:run"],"word":"(sel ?0 (sel ?1 ?2 (sel ?3 ?4 (sel ?5 ?6 ?7))) (sel ?8 ?9 ?10))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-spec/posix/src/rm.rs:run"],"word":"(sel ?0 (sel ?1 ?2 ?3) (sel ?4 (sel (or ?5 ?6) ?7 ?8) ?9))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel ?0 (store ?1 ?2 (max (idx ?1 ?2) (get0 ?3))) ?1)"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:flex_items"],"word":"(sel ?0 (tup (sel (== ?1 ?2) ?3 ?4) ?5) (tup ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/posix/src/date.rs:iso_week"],"word":"(sel ?0 (tup ?1 ?2) (sel ?3 (tup (+ ?4 ?5) ?6) ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/woff.rs:reconstruct_glyf"],"word":"(sel ?0 (tup ?1 ?2) (sel ?3 (tup ?4 ?5) (tup ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-spec/posix/src/cp.rs:run","omni-spec/posix/src/mv.rs:run"],"word":"(sel ?0 1 (sel ?1 (sel ?2 ?3 (sel ?4 1 ?5)) (sel ?6 ?7 ?8)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:knob_at","omni-render/src/layout.rs:knob_fast"],"word":"(sel ?0 2 (sel (== ?1 ?2) 1 (sel (== ?3 str) 0 ?4)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/uiir.rs:component_at"],"word":"(sel ?0 ?1 (fold ?2 (fold ?3 (fold ?4 list (sel ?5 ?6 ?7)) ?8) ?9))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/uax9.rs:matching_pdi"],"word":"(sel ?0 ?1 (sel (== ?2 ?3) (sel ?4 (store ?5 ?6 ?7) ?8) ?9))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:knob_fast","omni-spec/src/sfnt.rs:cmap4"],"word":"(sel ?0 ?1 (sel (== ?2 ?3) ?4 (sel (== ?5 ?6) 0 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:knob_at"],"word":"(sel ?0 ?1 (sel (== ?2 ?3) ?4 (sel (== ?5 str) ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/style.rs:compute_inner"],"word":"(sel ?0 ?1 (sel (and (and (and ?2 ?3) ?4) ?5) ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel (and ?2 (== ?3 0)) ?4 (sel ?5 ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:grid"],"word":"(sel ?0 ?1 (sel (and ?2 (> ?3 0)) ?4 (sel ?5 ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(sel ?0 ?1 (sel ?2 (fold ?3 (fold ?4 ?5 ?6) (sel ?7 ?8 ?9)) ?10))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:block_box_full","omni-render/src/layout.rs:flex_items"],"word":"(sel ?0 ?1 (sel ?2 (min (sel ?3 ?4 ?5) ?6) (sel ?3 ?4 ?5)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flow","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 (sel ?3 (sel ?4 (+ ?5 ?6) ?7) ?7) ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-spec/posix/src/cp.rs:run"],"word":"(sel ?0 ?1 (sel ?2 (sel ?3 (sel ?4 ?5 (sel ?6 ?7 ?8)) ?9) ?8))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/src/brotli.rs:ferment"],"word":"(sel ?0 ?1 (sel ?2 (sel ?3 (store ?4 ?5 ?6) ?7) (sel ?8 ?9 ?10)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:hsizes","omni-spec/posix/src/mv.rs:run"],"word":"(sel ?0 ?1 (sel ?2 (sel ?3 ?4 (sel ?5 ?6 ?7)) (sel ?5 ?6 ?7)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-ui/src/md.rs:blocks"],"word":"(sel ?0 ?1 (sel ?2 ?1 (sel ?3 ?1 (sel (or ?4 ?5) ?1 ?6))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?1 (sel ?3 ?4 (sel (or ?5 ?6) ?7 ?4))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?1 (sel ?3 ?4 (sel (or ?5 ?6) ?7 ?8))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:hsizes","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel (and (and ?4 ?5) ?6) ?7 ?8)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel (and ?4 ?5) (max ?6 ?7) ?8)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel (and ?4 ?5) ?6 (sel ?7 ?8 ?9))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 (max ?5 ?6) (sel ?7 ?8 ?9))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/posix/src/osx.rs:kind"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?3 (sel ?5 ?6 (sel ?7 ?8 ?6)))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-spec/posix/src/osx.rs:kind"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?3 (sel ?5 ?6 (sel ?7 ?8 ?9)))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel (and ?6 ?7) ?8 ?9))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel ?6 (fold ?7 ?8 ?9) ?10))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-render/src/layout.rs:flex_items"],"word":"(sel ?0 ?1 (sel ?2 ?3 (sel ?4 ?5 (sel ?6 ?7 (sel ?8 ?9 ?9)))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-spec/posix/src/osx.rs:kind"],"word":"(sel ?0 str (sel ?1 str (sel ?2 str (sel ?3 str (sel ?4 str ?5)))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:edit_class","omni-spec/posix/src/osx.rs:kind"],"word":"(sel ?0 str (sel ?1 str (sel ?2 str (sel ?3 str (sel ?4 str str)))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/corert0.rs:main","omni-render/src/raster.rs:compose"],"word":"(store ?0 (+ (* ?1 ?2) (get0 ?3)) (idx ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-spec/src/webp.rs:from_lengths"],"word":"(store ?0 (idx ?1 ?2) (+ (idx ?0 (idx ?1 ?2)) ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","terminal-launcher/apps/tsift/src/lib.rs:encode"],"word":"(store ?0 ?1 (+ (idx ?0 ?1) (sel (== ?2 ?3) ?4 ?5)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:intrinsic_w","omni-render/src/layout.rs:table"],"word":"(store ?0 item2 (+ ?1 (/ (- ?2 ?3) (get1 item1))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:grid","omni-render/src/layout.rs:table"],"word":"(sum (idx ?0 (range ?1 (min (+ ?1 ?2) ?3))))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:table"],"word":"(sum (map (filter ?0 (not (idx ?1 ?2))) ?3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/raster.rs:render","omni-render/src/raster.rs:render_incr"],"word":"(tup (* item2 ?0) (+ ?1 (* (get0 item1) ?0)))"}
+{"fns":2,"ops":5,"where":["omni-render/src/explain.rs:provenance","omni-render/src/style.rs:compute_inner"],"word":"(tup (>= (get1 ?0) ?1) (get0 ?0) (get1 ?0))"}
+{"fns":2,"ops":5,"where":["omni-render/src/doctor.rs:diff","omni-render/src/layout.rs:float_band"],"word":"(tup (fold ?0 (get0 (tup ?1 ?2)) (sel ?3 ?4 ?5)) ?6)"}
+{"fns":2,"ops":5,"where":["omni-render/src/font.rs:line","omni-render/src/svg.rs:render_at"],"word":"(tup (get0 ?0) (get1 ?0) (get0 ?1) (get1 ?1))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:decode","omni-render/src/layout.rs:intrinsic_w"],"word":"(tup (min (get0 ?0) ?1) (min (get1 ?0) ?2))"}
+{"fns":2,"ops":5,"where":["omni-render/src/img.rs:decode_full","terminal-launcher/apps/tsift/src/lib.rs:rank"],"word":"(tup (sel (and ?0 ?1) ?2 ?3) (sel (and ?0 ?1) ?4 ?5))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:flex_items","omni-render/src/layout.rs:intrinsic_w"],"word":"(tup (sel ?0 ?1 (+ ?2 (sel ?3 ?4 ?5))) (+ ?6 ?7))"}
+{"fns":2,"ops":5,"where":["omni-render/src/layout.rs:text_widths","terminal-launcher/apps/tsift/src/lib.rs:rank"],"word":"(tup (sel ?0 ?1 ?2) (sel (and ?3 (not ?4)) ?5 ?6))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3"],"word":"(| (<< (^ (>> ?0 3) 1) 7) (<< ?1 ?2))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/x86.rs:vex2","omni-render/src/jit/x86.rs:vex3"],"word":"(| (<< ?0 7) (<< (& (not ?1) 15) 3))"}
+{"fns":2,"ops":5,"where":["omni-render/src/jit/x86.rs:test64","omni-render/src/jit/x86.rs:zero"],"word":"(| (| 192 (<< (& ?0 7) 3)) (& ?0 7))"}

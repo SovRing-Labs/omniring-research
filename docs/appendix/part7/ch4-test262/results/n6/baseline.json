@@ -1,0 +1,90 @@
+{
+ "tests": 53614,
+ "pass": 29203,
+ "fail": 24404,
+ "skip": 7,
+ "test262": "c8c79889",
+ "binary_sha256": "b4aedcda77368db2",
+ "fail_classes": [
+  [
+   "Uncaught ReferenceError",
+   7734
+  ],
+  [
+   "Uncaught Test262Error",
+   7674
+  ],
+  [
+   "expected parse SyntaxError, got rc 1 Uncaught Test262: This ",
+   3756
+  ],
+  [
+   "Uncaught TypeError",
+   2748
+  ],
+  [
+   "Uncaught SyntaxError",
+   506
+  ],
+  [
+   "Uncaught Error",
+   247
+  ],
+  [
+   "Test262:AsyncTestFailure:Test262Error: Test262Error: Expecte",
+   243
+  ],
+  [
+   "Test262:AsyncTestFailure:Test262Error: Test262Error: TypeErr",
+   228
+  ],
+  [
+   "Uncaught RangeError",
+   107
+  ],
+  [
+   "timeout",
+   107
+  ],
+  [
+   "Test262:AsyncTestFailure:Error: cannot import ./module-code_",
+   102
+  ],
+  [
+   "Test262:AsyncTestFailure:Test262Error: Test262Error: reject ",
+   96
+  ],
+  [
+   "Test262:AsyncTestFailure:Test262Error: Test262Error: it shou",
+   84
+  ],
+  [
+   "Test262:AsyncTestFailure:TypeError: Array.fromAsync is not a",
+   66
+  ],
+  [
+   "Test262:AsyncTestFailure:TypeError: yield* operand is not it",
+   40
+  ],
+  [
+   "rc 0, no completion",
+   37
+  ],
+  [
+   "Test262:AsyncTestFailure:Error: cannot import ./dynamic-impo",
+   37
+  ],
+  [
+   "Test262:AsyncTestFailure:Error: cannot import ./eval-gtbndng",
+   36
+  ],
+  [
+   "Test262:AsyncTestFailure:ReferenceError: AsyncDisposableStac",
+   34
+  ],
+  [
+   "expected resolution SyntaxError, got rc 1 Uncaught Test262: ",
+   33
+  ]
+ ]
+}

@@ -1,0 +1,1 @@
+{"gem": 1, "taskA_before_B": 0.1552, "taskA_traj": [0.7688, 2.4572, 3.3194, 3.7324, 3.9292, 4.35, 4.7332, 5.0314, 5.2869, 5.403, 5.5242, 5.7631], "taskA_max": 5.7631, "taskA_end": 5.7631, "taskA_rise": 5.6079, "taskB_end": 0.0317, "gem_steps": 60.0, "gem_projections": 34.0}

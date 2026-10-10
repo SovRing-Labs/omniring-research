@@ -1,0 +1,10 @@
+# lines of the two array-server logs of run 3b that the chapter quotes; nothing else of the raw job logs is shipped
+## server g0: first lines, then a count of lines that mention a step
+[array] NVIDIA A40 — 20 slots, 1588 passes, 7856.7 MB resident, slot 28 MB
+[array] decode 427506328: 20 decoders × 16 stations, 297 passes, 5066.3 MB resident (queue 2)
+[array] decode 283790652: 20 decoders × 16 stations, 327 passes, 5066.5 MB resident (queue 2)
+lines mentioning "step": 0 of 3
+## server g1: first lines, then a count of lines that mention a step
+[array] NVIDIA A40 — 20 slots, 1588 passes, 7856.7 MB resident, slot 28 MB
+[array] decode 283790652: 20 decoders × 16 stations, 327 passes, 5066.5 MB resident (queue 2)
+lines mentioning "step": 0 of 2

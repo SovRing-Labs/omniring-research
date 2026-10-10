@@ -1,0 +1,8 @@
+range parts: ['W', 'X', 'H', 'frame']
+range theguardian-com-international:856 <div> Block<Grid ours [-1.0, 0.0, 5.0, 88.0] chrome [3.25, 0.0, 41.75, 60.75]
+reverse IFS: 28010 domains · 3 PARTS blocks · D 448 · 63 repeats (collage ≥ ½, check ≥ 0.6) · 1.45s
+  by page: {'theguardian-com-international': 34, 'blog-codinghorror-com': 29}
+  of them deformed (μ ≥ ½): 63 · agreeing boxes matched: 0
+  TRUTH (deformed before the fix, fixed after): 1411 · found 2 → recall 0.001 precision 0.032
+  TRUTH direct (grid items the fix repaired): 152 · found 2 → recall 0.013 · precision among found grid items 0.032
+  baseline flat family sig: 63 boxes → recall 0.006 precision 0.143

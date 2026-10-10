@@ -1,0 +1,13 @@
+PASS  /gzip           0.10s  want GZIP-OK          got GZIP-OK
+PASS  /chunked        0.09s  want CHUNKED-OK       got CHUNKED-OK
+PASS  /redirect/3     0.13s  want REDIRECT-OK      got REDIRECT-OK
+PASS  /redirect/7     0.14s  want REDIRECT-OK      got REDIRECT-OK
+PASS  /404            0.11s  want NOTFOUND-PAGE    got NOTFOUND-PAGE
+PASS  /500            0.10s  want SERVER-ERROR     got SERVER-ERROR-PAGE
+PASS  /204            0.10s  want                  got 
+PASS  /setcookie      0.14s  want COOKIE-OK        got COOKIE-OK
+PASS  /latin1         0.10s  want café-LATIN1     got café-LATIN1
+PASS  /close          0.09s  want NOLEN-CLOSE-OK   got NOLEN-CLOSE-OK
+PASS  /jscookie       0.10s  want JSC:srv=2; js=1  got JSC:srv=2; js=1
+PASS  /file.pdf       0.10s  want file.pdf         got file.pdf
+PASS  /plain          0.09s  want plain            got plain

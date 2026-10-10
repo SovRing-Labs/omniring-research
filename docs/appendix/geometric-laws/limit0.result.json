@@ -1,0 +1,10 @@
+{
+ "dram_read_GBps_1t": 11.42539083431193,
+ "sift_ceiling_Gdims_1t": 12.610806876055538,
+ "sift_45MB_Gdims_1t": 15.498558153663598,
+ "pyramid_effective_Gdims_1t": 68.26017955127377,
+ "dram_read_GBps_4t": 12.404951330753718,
+ "sift_ceiling_Gdims_4t": 43.63224882682462,
+ "sift_45MB_Gdims_4t": 52.985671278231564,
+ "pyramid_effective_Gdims_4t": 79.81684766099954
+}

@@ -1,0 +1,1 @@
+{"gem": 1, "mode": "disjoint", "taskA_before_B": 0.0367, "taskA_traj": [0.083, 0.2925, 0.6406, 0.8242, 0.7702, 0.6721, 0.7958, 0.8499, 0.8529, 0.9605, 1.0308, 1.0074], "taskA_max": 1.0308, "taskA_end": 1.0074, "taskA_rise": 0.9707, "taskB_end": 2.2344, "gem_steps": 60.0, "gem_projections": 23.0}

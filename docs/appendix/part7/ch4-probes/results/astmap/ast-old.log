@@ -1,0 +1,51 @@
+roots (failing box, good parent): 517 · good boxes 18975
+
+horizontal leg: 195 roots — top code elements by Ochiai (fail / pass):
+  0.213  edge:Block>InlineBlock                     52 /   254
+  0.150  self:path.shrink_to_fit                    78 /  1315
+  0.137  self:path.intrinsic_w                     192 /  9828
+  0.119  parent:path.intrinsic_w                   156 /  8597
+  0.103  parent:path.block_box                     194 / 17849
+  0.102  self:box.pad_top                          195 / 18613
+  0.102  self:box.border_top                       195 / 18613
+  0.102  self:move.translate_x                     195 / 18613
+  0.102  self:move.translate_y                     195 / 18613
+  0.102  self:box.pad_bottom                       195 / 18613
+  0.102  self:box.border_bottom                    195 / 18613
+  0.102  self:box.content                          195 / 18613
+
+vertical leg: 322 roots — top code elements by Ochiai (fail / pass):
+  0.147  edge:Grid>Flex                             38 /   169
+  0.131  parent:path.block_box                     318 / 17849
+  0.124  self:box.pad_bottom                       307 / 18613
+  0.124  self:move.translate_x                     307 / 18613
+  0.124  self:move.translate_y                     307 / 18613
+  0.124  self:box.pad_top                          307 / 18613
+  0.124  self:box.border_bottom                    307 / 18613
+  0.124  self:box.content                          307 / 18613
+  0.124  self:box.border_top                       307 / 18613
+  0.124  self:path.block_box                       307 / 18613
+  0.121  self:box.float_contain                    190 /  7482
+  0.120  parent:path.grid                           68 /   927
+
+all leg: 517 roots — top code elements by Ochiai (fail / pass):
+  0.168  self:path.intrinsic_w                     387 /  9828
+  0.166  parent:path.block_box                     512 / 17849
+  0.160  parent:path.intrinsic_w                   344 /  8597
+  0.160  self:box.pad_bottom                       502 / 18613
+  0.160  self:move.translate_x                     502 / 18613
+  0.160  self:move.translate_y                     502 / 18613
+  0.160  self:box.pad_top                          502 / 18613
+  0.160  self:box.border_bottom                    502 / 18613
+  0.160  self:box.content                          502 / 18613
+  0.160  self:box.border_top                       502 / 18613
+  0.160  self:path.block_box                       502 / 18613
+  0.156  self:box.float_contain                    314 /  7482
+
+expected code elements (fixes made later), rank per leg:
+  parent:path.flex_column                  {'horizontal': 76, 'vertical': 33, 'all': 49}  best 33
+  parent:path.table                        {'horizontal': 65, 'vertical': 39, 'all': 54}  best 39
+  self:path.flex                           {'horizontal': 43, 'vertical': 22, 'all': 24}  best 22
+  parent:path.float                        {'horizontal': 49, 'vertical': 65, 'all': 61}  best 49
+  parent:path.grid                         {'horizontal': 46, 'vertical': 12, 'all': 17}  best 12
+PRE-REGISTERED: expected element in the top 5 for 0/5 (bar ≥ 3)

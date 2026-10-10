@@ -1,0 +1,63 @@
+shape: 49 pages · 9002 failing boxes · 4243 boxes inside the feather, 3699 past the outline (μ ≥ ½; 660 agree on x/y/w/h) · 8958 failing boxes charged (99.5%) · alias 0.25° outline 2 feather 1 · 3.1s
+families by blast radius (sig = turned angles | display | parent display):
+  W|Block|Block                    deformed  231 · charged   951.1
+  Y|Block|Block                    deformed  146 · charged   921.4
+  W|Block|Flex                     deformed  227 · charged   783.2
+  H|Block|Block                    deformed  180 · charged   560.6
+  WY|Block|Block                   deformed  529 · charged   530.0
+  X|Block|Block                    deformed  126 · charged   421.9
+  W|InlineBlock|Block              deformed   61 · charged   395.0
+  X|InlineBlock|Block              deformed  150 · charged   306.0
+  H|Block|Flex                     deformed   44 · charged   255.1
+  WX|Block|Grid                    deformed   63 · charged   237.5
+  WY|Flex|Flex                     deformed  136 · charged   212.0
+  WXY|Flex|Flex                    deformed  118 · charged   201.9
+  W|Flex|Flex                      deformed  108 · charged   186.3
+  Y|Flex|Flex                      deformed   96 · charged   167.0
+  WX|Block|Flex                    deformed  131 · charged   159.3
+  WXY|Block|Grid                   deformed  126 · charged   150.4
+  WX|Flex|Flex                     deformed   52 · charged   148.9
+  W|InlineTable|Block              deformed   38 · charged   122.5
+  WXY|Flex|Grid                    deformed   67 · charged   121.0
+  H|Flex|Block                     deformed   41 · charged   108.6
+  WXYH|Flex|Grid                   deformed   27 · charged   108.0
+  W|TableCell|TableRow             deformed   44 · charged   100.4
+  Y|Block|Flex                     deformed   75 · charged   100.3
+  Y|Flex|Grid                      deformed   17 · charged    82.8
+  H|ListItem|Grid                  deformed    2 · charged    74.8
+  WX|Flex|Grid                     deformed   23 · charged    67.0
+  WX|InlineBlock|Block             deformed   46 · charged    61.8
+  X|Block|Flex                     deformed   25 · charged    59.4
+  WXY|Block|Flex                   deformed   35 · charged    56.0
+  W|ListItem|Block                 deformed   21 · charged    49.6
+top deformed boxes:
+  582.0  nytimes-com#article._feed-item               W|Block|Block                [["W",34.29999923706055]] 
+  262.3999938964844  nytimes-com#div._container_1hp               Y|Block|Block                [["Y",112.80000305175781]] 
+  128.10000610351562  en-wiktionary-org-wiki-b#div.etytree         Y|Block|Block                [["Y",-3.0]] 
+  110.0  en-wiktionary-org-wiki-b#div.etytree         Y|Block|Block                [["Y",-3.0]] 
+  88.9000015258789  en-wiktionary-org-wiki-b#div.mw-heading      W|Block|Block                [["W",12.300000190734863]] 
+  78.0  theguardian-com-internat#div.dcr-7eafox      WX|Block|Grid                [["W",-36.79999923706055],["X",-4.300000190734863]] 
+  77.0999984741211  lwn-net#div.ArticleText                      X|Block|Block                [["X",-27.799999237060547]] 
+  61.0  theguardian-com-internat#div.dcr-16q0ay2     Y|Flex|Grid                  [["Y",-6.699999809265137]] 
+  54.099998474121094  allrecipes-com-recipe-10#div.comp            Y|Block|Block                [["Y",-0.5]] 
+  54.0  en-wiktionary-org-wiki-b#div.etytree         Y|Block|Block                [["Y",-3.0]] 
+  47.5  docs-github-com-en-get-s#img.Primer_Brand__  W|InlineBlock|Block          [["W",15.800000190734863]] 
+  45.0  theguardian-com-internat#li.dcr-1erd99w      H|ListItem|Grid              [["H",-6.300000190734863]] 
+  42.0  developer-mozilla-org-en#a.                  W|InlineBlock|Block          [["W",-6.5]] 
+  39.0  en-wikipedia-org-wiki-We#span.               H|Block|Flex                 [["H",-15.5]] 
+  37.0  developer-mozilla-org-en#a.                  W|InlineBlock|Block          [["W",-6.699999809265137]] 
+  33.0  en-wikipedia-org-wiki-We#span.               H|Block|Flex                 [["H",-13.699999809265137]] 
+  33.0  en-wikipedia-org-wiki-We#span.               W|Block|Flex                 [["W",3.200000047683716]] 
+  29.799999237060547  theguardian-com-internat#li.dcr-1erd99w      H|ListItem|Grid              [["H",-6.0]] 
+  26.600000381469727  en-wikipedia-org-wiki-We#span.               W|Block|Flex                 [["W",-3.0]] 
+  26.0  developer-mozilla-org-en#a.                  W|InlineBlock|Block          [["W",-6.800000190734863]] 
+  26.0  en-wikipedia-org-wiki-We#span.               H|Block|Flex                 [["H",-9.800000190734863]] 
+  25.100000381469727  allrecipes-com-recipe-10#div.comp            Y|Block|Block                [["Y",1.2999999523162842]] 
+  24.399999618530273  en-wiktionary-org-wiki-b#span.               H|Block|Flex                 [["H",-13.699999809265137]] 
+  24.200000762939453  docs-github-com-en-get-s#p.                  H|Block|ListItem             [["H",-5.5]] (box agrees)
+  24.0  developer-mozilla-org-en#a.                  W|InlineBlock|Block          [["W",-6.699999809265137]] 
+  24.0  docs-github-com-en-get-s#li.                 H|ListItem|Block             [["H",-2.0]] 
+  24.0  en-wikipedia-org-wiki-We#span.               W|Block|Flex                 [["W",2.0]] 
+  22.399999618530273  weather-gov#div.full-width-bor               Y|Block|Block                [["Y",1.5]] 
+  21.600000381469727  en-wikipedia-org-wiki-We#span.               W|Block|Flex                 [["W",4.0]] 
+  21.0  en-wikipedia-org-wiki-We#span.               W|Block|Flex                 [["W",-3.0]] 

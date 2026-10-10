@@ -1,0 +1,556 @@
+{
+ "source_sha256": "631a9c0705e2b43ec725f1093929d5accd5886fa98364659ee733fa44531eaeb",
+ "cores": 53,
+ "ops": 59,
+ "by_kind": {
+  "cli": 53
+ },
+ "by_status": {
+  "live": 50,
+  "retired": 3
+ },
+ "generators": 26,
+ "retired": [
+  "doctor.need@cpu32b",
+  "doctor.spec@cpu32b",
+  "doctor.wall@cpu32b"
+ ],
+ "rows": [
+  {
+   "core": "chew.sessions",
+   "version_label": "tchew-sessions-0",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "ingest-sessions",
+    "search"
+   ],
+   "gate": "pytest -q tests (timeout 120 s)"
+  },
+  {
+   "core": "doctor.blackbox",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "blackbox"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.blackbox@gpu-loop-3090",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "blackbox"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.blackbox@gpu-loop-cpu16",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "blackbox"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.need",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "need"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.need@cpu16",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "need"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.need@cpu32b",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "retired",
+   "ops": [
+    "need"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.need@gpu-loop-3090",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "need"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.need@gpu-loop-cpu16",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "need"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.spec",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "spec"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.spec@cpu16",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "spec"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.spec@cpu32b",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "retired",
+   "ops": [
+    "spec"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.spec@gpu-loop-3090",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "spec"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.spec@gpu-loop-cpu16",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "spec"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.wall",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "wall"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.wall@cpu16",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "wall"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.wall@cpu32b",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "retired",
+   "ops": [
+    "wall"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.wall@gpu-loop-3090",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "wall"
+   ],
+   "gate": null
+  },
+  {
+   "core": "doctor.wall@gpu-loop-cpu16",
+   "version_label": "bin:<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "wall"
+   ],
+   "gate": null
+  },
+  {
+   "core": "gen.arith.mrc_compare",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate arith.mrc_compare"
+  },
+  {
+   "core": "gen.arith.mrc_plate",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate arith.mrc_plate"
+  },
+  {
+   "core": "gen.arith.mul",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate arith.mul"
+  },
+  {
+   "core": "gen.arith.mul_rns",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate arith.mul_rns"
+  },
+  {
+   "core": "gen.calendar.clock",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate calendar.clock"
+  },
+  {
+   "core": "gen.calendar.crt",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate calendar.crt"
+  },
+  {
+   "core": "gen.calendar.ring_euclid",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate calendar.ring_euclid"
+  },
+  {
+   "core": "gen.causal.dag",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate causal.dag"
+  },
+  {
+   "core": "gen.code.debug",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate code.debug"
+  },
+  {
+   "core": "gen.graph.group",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate graph.group"
+  },
+  {
+   "core": "gen.graph.group_walk",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate graph.group_walk"
+  },
+  {
+   "core": "gen.graph.path",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate graph.path"
+  },
+  {
+   "core": "gen.logic.chain",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate logic.chain"
+  },
+  {
+   "core": "gen.mind.revise",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate mind.revise"
+  },
+  {
+   "core": "gen.mind.tom",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate mind.tom"
+  },
+  {
+   "core": "gen.mind.tom_mask",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate mind.tom_mask"
+  },
+  {
+   "core": "gen.numth.prime",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate numth.prime"
+  },
+  {
+   "core": "gen.numth.prime_trial",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate numth.prime_trial"
+  },
+  {
+   "core": "gen.sat.dpll",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate sat.dpll"
+  },
+  {
+   "core": "gen.sat.trit",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate sat.trit"
+  },
+  {
+   "core": "gen.science.bioreactor",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate science.bioreactor"
+  },
+  {
+   "core": "gen.science.factorial",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate science.factorial"
+  },
+  {
+   "core": "gen.search.astar",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate search.astar"
+  },
+  {
+   "core": "gen.search.wave",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate search.wave"
+  },
+  {
+   "core": "gen.struct.pushdown",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate struct.pushdown"
+  },
+  {
+   "core": "gen.units.dimension",
+   "version_label": "rg-3",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "batch"
+   ],
+   "gate": "gen-core gate units.dimension"
+  },
+  {
+   "core": "gpu.emit",
+   "version_label": "t0-1",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "emit"
+   ],
+   "gate": null
+  },
+  {
+   "core": "gpu.emit.spirv",
+   "version_label": "spv-t2h-c3fe0da5",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "emit"
+   ],
+   "gate": null
+  },
+  {
+   "core": "math.kb",
+   "version_label": "math-kb-0",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "check",
+    "explain",
+    "gen"
+   ],
+   "gate": "math-kb check --n 200"
+  },
+  {
+   "core": "spec.gather",
+   "version_label": "spec-gather-0",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "fetch"
+   ],
+   "gate": "spec-gather verify"
+  },
+  {
+   "core": "spec.read",
+   "version_label": "<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "read"
+   ],
+   "gate": null
+  },
+  {
+   "core": "tw",
+   "version_label": "<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "kill",
+    "start",
+    "status",
+    "wait"
+   ],
+   "gate": "tw --version"
+  },
+  {
+   "core": "vk.bind",
+   "version_label": "<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "gen"
+   ],
+   "gate": null
+  },
+  {
+   "core": "vk.run",
+   "version_label": "<12 hex>",
+   "kind": "cli",
+   "status": "live",
+   "ops": [
+    "run"
+   ],
+   "gate": null
+  }
+ ]
+}

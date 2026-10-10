@@ -1,0 +1,21 @@
+BUILT s5ea5ca6973d5638d        0 hit(s)
+      build: {"route":"emit","rows_checked":1369,"rust":"{ let mut acc1: i64 = (-1i64); for item1 in ((0i64)..a1.wrapping_mul(a3)) { acc1 = (if ((((acc1 == (-1i64)) as i64) != 0 && (((((item1 % a1) == a0) as i64) != 0 && (((item1 % a
+BUILT s96bc7c351deccba6        0 hit(s)
+      build: {"route":"emit","rows_checked":2082,"rust":"a0.wrapping_add(a3.wrapping_mul(a1.wrapping_add(a4.wrapping_mul(a2))))","secs":0.408895275,"verified":true,"verify":null}
+BUILT s6a58ce69a8e71e05        0 hit(s)
+      build: {"route":"emit","rows_checked":1998,"rust":"(if ((a0.wrapping_sub(a0.wrapping_mul(((4294967296i64) / a1)).wrapping_shr(((32i64) as u32) & 63).wrapping_mul(a1)) >= (2i64).wrapping_mul(a1)) as i64) != 0 { a0.wrapping_sub(a
+BUILT s87677c9e9593a1f9        0 hit(s)
+      build: {"route":"emit","rows_checked":2084,"rust":"{ let mut acc1: i64 = (0i64); for item1 in ((0i64)..(31i64)) { acc1 = acc1.wrapping_add(((a0 ^ a1).wrapping_shr((item1 as u32) & 63) & (1i64))); } acc1 }","secs":0.44151608,"ve
+BUILT sa86d766337cf5fa3        0 hit(s)
+      build: {"route":"emit","rows_checked":1207,"rust":"{ let mut st = (a0,); loop { #[allow(unused_variables)] let (s1_0,) = st; if ((s1_0.wrapping_mul(s1_0) > a0) as i64) == 0 { break; } st = ((s1_0.wrapping_add((a0 / s1_0)) / (2i
+BUILT sb811a2abd6b0ccce        0 hit(s)
+      build: {"route":"emit","rows_checked":2084,"rust":"{ let mut acc1: i64 = (0i64); for item1 in ((1i64)..(a0.len() as i64).wrapping_add((1i64))) { acc1 = (if ((((acc1 == (0i64)) as i64) != 0 && { let mut acc2: i64 = (1i64); for i
+BUILT s0787d2dba34ab2a4        0 hit(s)
+      build: {"route":"emit","rows_checked":2084,"rust":"(0..(a0.len() as i64)).map(|item1: i64| (a0[(item1) as usize] / ({ let mut acc2: f32 = ((0i64) as f32); for item2 in ((0i64)..(a0.len() as i64)) { acc2 = (acc2 + a0[(item2) as 
+BUILT saf4e693e46314895        0 hit(s)
+      build: {"route":"emit","rows_checked":2084,"rust":"(0..(a0.len() as i64)).map(|item1: i64| ((a0[(item1) as usize] - a0.iter().fold(f32::NEG_INFINITY, |a, b| a.max(*b))).exp() / { let mut acc2: f32 = ((0i64) as f32); for item2 i
+BUILT se997805b33a099e7        0 hit(s)
+      build: {"route":"emit","rows_checked":2084,"rust":"{ let mut st = ((0i64), (1i64), a0); loop { #[allow(unused_variables)] let (s1_0, s1_1, s1_2) = st; if ((s1_2 > (0i64)) as i64) == 0 { break; } st = (s1_1, s1_0.wrapping_add(s1
+BUILT s4fb96dec0a0ad589        0 hit(s)
+      build: {"route":"emit","rows_checked":2084,"rust":"{ let mut acc1: i64 = (-1i64); for item1 in ((0i64)..(105i64)) { acc1 = (if ((((acc1 == (-1i64)) as i64) != 0 && (((((item1 % (3i64)) == a0) as i64) != 0 && (((((item1 % (5i64)
+{"answered":10,"fns":138,"library_terms":2848,"needs":10,"phase_secs":{"build_all_needs":0.0,"collect_library":0.022220478000000016,"extract":0.012484274999999989,"lower_library":0.205914275,"rustc_verify_all":0.0,"search_all_needs":0.04488017699999999},"secs":14.401538152}

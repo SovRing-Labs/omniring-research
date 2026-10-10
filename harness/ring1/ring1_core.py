@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """RING-1 core: reusable numpy resonator harness for coprime counting rings.
 
-Task: RING1-CORE (_Pads/RING/ring1-w1.wave.yaml, cohort contract _Pads/RING1-contract.json).
+Task: RING1-CORE (ring1-w1.wave.yaml, cohort contract RING1-contract.json).
 Pillar: Nervous System, Loop step "Read".  Pure synthetic study. numpy only.
 
 This module is a LIBRARY.  Other RING-1 tasks (T2 smooth ring, T3 check ring,
@@ -15,7 +15,7 @@ Public API (exactly the six functions the brief locks):
     crt(residues, mods)               -> exact mark id from residues
     wilson(k, n, z)                   -> (p, lo, hi) Wilson score interval
 
-Physics, verbatim from the seed demo _Pads/RING/ring_demos.py (seed 0/1/3/5):
+Physics, verbatim from the seed demo ring_demos.py (seed 0/1/3/5):
   * ring m contributes theta_d = j_d * 2*pi/m per dimension, j_d ~ U{0..m-1};
     position k of ring m is exp(i*k*theta).
   * binding is the elementwise product over rings: encode(x) = prod_m codebook_m[x % m].
@@ -32,7 +32,7 @@ Quantisation: quant="k16" rounds every stored phase to the nearest multiple of
 underlying per-dimension multiples j_d are drawn from the same rng stream for
 both settings, so float vs k16 is a paired comparison.
 
-Self-test:  python3 _Pads/RING/ring1/ring1_core.py --selftest
+Self-test:  python3 harness/ring1/ring1_core.py --selftest
             decodes 20 clean single marks with mods (3,5,7,13) and exits 0 only
             if all 20 decode exactly.
 """

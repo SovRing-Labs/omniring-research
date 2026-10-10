@@ -1,0 +1,12 @@
+676 width misses (SIMD exact wave vs recursive engine), judged by Chrome: {'no chrome box': 4, 'both right': 587, 'engine right, SIMD wrong': 84, 'SIMD right, engine wrong': 1}
+   571 ('both right', 'peps-python-org-pep-00')
+   84 ('engine right, SIMD wrong', 'allrecipes-com-recipe-')
+   9 ('both right', 'gnu-org-philosophy-fre')
+   7 ('both right', 'nytimes-com')
+   1 ('SIMD right, engine wrong', 'ebay-com')
+EXACT (≤ 1/64 px) against Chrome:
+   571 ('SIMD == Chrome exactly', 'engine off', 'peps-python-or')
+   84 ('SIMD off', 'engine == Chrome exactly', 'allrecipes-com')
+   9 ('SIMD == Chrome exactly', 'engine == Chrome exactly', 'gnu-org-philos')
+   7 ('SIMD == Chrome exactly', 'engine off', 'nytimes-com')
+   1 ('SIMD == Chrome exactly', 'engine off', 'ebay-com')

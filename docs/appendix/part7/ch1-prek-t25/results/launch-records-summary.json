@@ -1,0 +1,19 @@
+{
+ "launches": [
+  {
+   "class": "bash.rx-chain3.sh",
+   "exit": 0,
+   "label": "rx chain 3",
+   "seconds": 1874.0,
+   "started_utc": "2026-10-07T20:41:00Z"
+  },
+  {
+   "class": "bash.rx-days34.sh",
+   "exit": 0,
+   "label": "rx days 3-4",
+   "seconds": 1560.4,
+   "started_utc": "2026-10-07T21:29:32Z"
+  }
+ ],
+ "what": "launch records of the pre-K chain scripts (scrubbed)"
+}

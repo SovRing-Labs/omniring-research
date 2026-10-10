@@ -1,0 +1,15 @@
+dark .88
+  white [7.38, 5.66]
+  black [10.91, 8.37]
+  grey [9.14, 7.01]
+  red [10.01, 7.67]
+light .88
+  white [9.28, 7.13]
+  black [7.03, 5.4]
+  grey [8.15, 6.26]
+  red [7.51, 5.77]
+old dark .58
+  white [1.02]
+  black [4.42]
+  grey [2.19]
+  red [2.59]

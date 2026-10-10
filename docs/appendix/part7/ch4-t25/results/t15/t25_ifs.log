@@ -1,0 +1,22 @@
+PART 1 · 473 roots → SIEVE 369 exact twist families (16.4 ms) → SIFT θ 0.98: 364 families (215.8 ms)
+    38 boxes · twist (x0,y0,w,h,ry)/64px (-8.0, -9.0, 8.0, 0.0, 0.0) · [('developer-mozilla-', 38)]
+    11 boxes · twist (x0,y0,w,h,ry)/64px (0.0, 0.0, 19.0, -6.0, 0.0) · [('bbc-com-news', 11)]
+    11 boxes · twist (x0,y0,w,h,ry)/64px (-8.0, 15.0, 8.0, 0.0, 0.0) · [('developer-mozilla-', 11)]
+     9 boxes · twist (x0,y0,w,h,ry)/64px (-4.0, 4.0, 8.0, -8.0, 4.0) · [('allrecipes-com-rec', 9)]
+     9 boxes · twist (x0,y0,w,h,ry)/64px (0.0, -2.5, -0.0, 5.1, -2.5) · [('github-com-servo-h', 9)]
+     6 boxes · twist (x0,y0,w,h,ry)/64px (0.0, -2.5, 0.3, 5.1, -2.5) · [('github-com-servo-h', 6)]
+     4 boxes · twist (x0,y0,w,h,ry)/64px (-8.0, 39.0, 8.0, 0.0, 0.0) · [('developer-mozilla-', 4)]
+     3 boxes · twist (x0,y0,w,h,ry)/64px (0.0, 95.3, 2.8, 0.0, 0.0) · [('allrecipes-com-rec', 3)]
+     3 boxes · twist (x0,y0,w,h,ry)/64px (0.0, 15.2, 0.0, -6.0, 0.0) · [('weather-gov', 3)]
+     2 boxes · twist (x0,y0,w,h,ry)/64px (0.0, 0.0, 0.0, 12.0, 0.0) · [('allrecipes-com-rec', 1), ('github-com-servo-h', 1)]
+   validation (pre-fix dump): 517 roots in 403 families; 47 roots a later fix repaired
+     theguardian-com-internationa  26 repaired roots in 23 families · largest family holds 2
+     peps-python-org-pep-0008      12 repaired roots in 12 families · largest family holds 1
+     allrecipes-com-recipe-10813-   4 repaired roots in 2 families · largest family holds 3
+     en-cppreference-com-w-cpp-co   4 repaired roots in 4 families · largest family holds 1
+     docs-github-com-en-get-start   1 repaired roots in 1 families · largest family holds 1
+
+PART 2 · triangles on T25 over 4295 failing boxes (vertices: box, frame, previous sibling):
+    2509 CARRIED — the triangle (frame, sibling, box) keeps its shape
+    1786 OWN — the triangle deforms
+   the coordinates that deform the triangle: [(('h',), 455), (('x0', 'w'), 335), (('w',), 302), (('x0',), 256), (('y0', 'h'), 235), (('x0', 'y0', 'h'), 45), (('x0', 'y0', 'w', 'h'), 42), (('w', 'h'), 35)]

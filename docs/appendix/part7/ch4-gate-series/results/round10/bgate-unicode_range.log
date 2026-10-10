@@ -1,0 +1,2 @@
+{"base":[20568,3045],"cand":[20650,3045],"gained":[82,0],"lost":[0,0],"pages":[{"gained":82,"holdout":false,"lost":0,"lost_nodes":[],"page":"arstechnica-com"}],"pass":true,"sets":"1ee26bbc9aa4"}
+binary-gate vs results/agree-snapshot-after-shadow.json: replay 20568 → 20650 · holdout 3045 → 3045 · lost 0/0 · gained 82/0 → PASS (1.6s)

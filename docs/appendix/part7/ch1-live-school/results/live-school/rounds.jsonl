@@ -1,0 +1,16 @@
+{"round": 1, "mastered": 46, "gained": 5, "frontier": 52, "wall_rounds": 0, "WALL": false, "top_gain": 0.702}
+{"round": 2, "mastered": 52, "gained": 6, "frontier": 50, "wall_rounds": 0, "WALL": false, "top_gain": 0.419}
+{"round": 3, "mastered": 57, "gained": 5, "frontier": 47, "wall_rounds": 0, "WALL": false, "top_gain": 0.463}
+{"round": 4, "mastered": 66, "gained": 9, "frontier": 44, "wall_rounds": 0, "WALL": false, "top_gain": 0.264}
+{"round": 5, "mastered": 69, "gained": 3, "frontier": 45, "wall_rounds": 0, "WALL": false, "top_gain": 0.396}
+{"round": 6, "mastered": 76, "gained": 7, "frontier": 44, "wall_rounds": 0, "WALL": false, "top_gain": 0.456}
+{"round": 7, "mastered": 85, "gained": 9, "frontier": 42, "wall_rounds": 0, "WALL": false, "top_gain": 0.425}
+{"round": 8, "mastered": 93, "gained": 8, "frontier": 54, "wall_rounds": 0, "WALL": false, "top_gain": 0.326}
+{"round": 9, "mastered": 98, "gained": 5, "frontier": 35, "wall_rounds": 0, "WALL": false, "top_gain": 0.326, "reasoning": {"doing_answered": 0.626, "retry_fixed": 0.483, "tier1_at_gate": 58, "level_up": 0.779, "level_up_n": 33}}
+{"round": 10, "mastered": 111, "gained": 13, "frontier": 32, "wall_rounds": 0, "WALL": false, "top_gain": 0.387, "reasoning": {"doing_answered": 0.636, "retry_fixed": 0.489, "novel_answers": 0.704, "tier1_at_gate": 64, "level_up": 0.774, "level_up_n": 32}}
+{"round": 11, "mastered": 117, "gained": 6, "frontier": 30, "wall_rounds": 0, "WALL": false, "top_gain": 0.428, "reasoning": {"doing_answered": 0.641, "retry_fixed": 0.463, "novel_answers": 0.695, "tier1_at_gate": 60, "level_up": 0.797, "level_up_n": 30}}
+{"round": 12, "mastered": 126, "gained": 9, "frontier": 28, "wall_rounds": 0, "WALL": false, "top_gain": 0.487, "reasoning": {"doing_answered": 0.643, "retry_fixed": 0.495, "novel_answers": 0.784, "tier1_at_gate": 72, "level_up": 0.794, "level_up_n": 31}}
+{"round": 13, "mastered": 161, "gained": 35, "frontier": 53, "wall_rounds": 0, "WALL": false, "top_gain": 0.448, "reasoning": {"doing_answered": 0.623, "retry_fixed": 0.472, "novel_answers": 0.987, "tier1_at_gate": 99, "level_up": 0.815, "level_up_n": 33}}
+{"round": 14, "mastered": 176, "gained": 15, "frontier": 49, "wall_rounds": 0, "WALL": false, "top_gain": 0.328, "reasoning": {"doing_answered": 0.644, "retry_fixed": 0.394, "novel_answers": 0.986, "tier1_at_gate": 92, "level_up": 0.807, "level_up_n": 27}}
+{"round": 15, "mastered": 179, "gained": 3, "frontier": 48, "wall_rounds": 0, "WALL": false, "top_gain": 0.326, "reasoning": {"doing_answered": 0.395, "retry_fixed": 0.074, "novel_answers": 0.927, "tier1_at_gate": 91, "level_up": 0.769, "level_up_n": 27}}
+{"round": 16, "mastered": 179, "gained": 0, "frontier": 48, "wall_rounds": 0, "WALL": false, "top_gain": 0.25, "reasoning": {"doing_answered": 0.392, "retry_fixed": 0.184, "novel_answers": 0.992, "tier1_at_gate": 103, "level_up": 0.811, "level_up_n": 29}}

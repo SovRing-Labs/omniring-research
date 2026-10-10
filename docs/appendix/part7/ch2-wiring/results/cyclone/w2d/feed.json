@@ -1,0 +1,47 @@
+{
+ "gate": "CYCLONE-ARRAY W2d feed + events + T25/T50 addressing chained on the GPU",
+ "build": "<workspace>/projects/thead-trial/build-v4/tier1-prek-v4-s6400",
+ "kernels": {
+  "feed_win": "1cd4db27d166",
+  "ev_build": "a2d72ef48492",
+  "ring_addr": "6995c163e639"
+ },
+ "cases": [
+  {
+   "device": "llvmpipe",
+   "harnesses": 40,
+   "units": 5,
+   "windows": 160,
+   "events": 81920,
+   "passes": 5,
+   "device_name": "llvmpipe (LLVM 20.1.2, 256 bits)",
+   "gpu_ms": 67.6497,
+   "bytes_resident": 120802520,
+   "feed_mismatches": 0,
+   "event_mismatches": 0,
+   "t25_residue_mismatches": 0,
+   "t25_ledger_mismatches": 0,
+   "t50_residue_mismatches": 0,
+   "t50_ledger_mismatches": 0
+  },
+  {
+   "device": "Intel",
+   "harnesses": 40,
+   "units": 5,
+   "windows": 160,
+   "events": 81920,
+   "passes": 5,
+   "device_name": "Intel(R) UHD Graphics 620 (WHL GT2)",
+   "gpu_ms": 124.3319,
+   "bytes_resident": 120802520,
+   "feed_mismatches": 0,
+   "event_mismatches": 0,
+   "t25_residue_mismatches": 0,
+   "t25_ledger_mismatches": 0,
+   "t50_residue_mismatches": 0,
+   "t50_ledger_mismatches": 0
+  }
+ ],
+ "fails": [],
+ "pass": true
+}

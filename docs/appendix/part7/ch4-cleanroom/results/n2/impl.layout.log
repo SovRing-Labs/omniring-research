@@ -1,0 +1,71 @@
+BUILT s00076db7730d0144        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((a0 != 0 || ((a1 != 0 || a2 != 0) as i64) != 0) as i64) != 0 { a3 } else { a3.wrapping_add(a4) })","secs":2.58195042,"verified":true,"verify":null}
+BUILT s633f09e36e67f554        0 hit(s)
+      build: {"cegis_rounds":1,"equation_checked":true,"equation_cx":0,"how":"map","rust":"a3.iter().map(|&x| x).collect::<Vec<i64>>()","secs":0.778915938,"size":3,"synth_secs":0.090205626,"validate":{"agree":16,"of":16,"rustc":true}
+HIT  s9bc5500160ee1fb2        2 hit(s) — src/raster.rs:mix64 L157: (^ (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2) (>> (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2) 31))
+      build: {"route":"emit","rows_checked":2032,"rust":"(((a0 ^ a0.wrapping_shr(((30i64) as u32) & 63)).wrapping_mul(a1) ^ (a0 ^ a0.wrapping_shr(((30i64) as u32) & 63)).wrapping_mul(a1).wrapping_shr(((27i64) as u32) & 63)).wrapping_
+HIT  sbbfaba095b57c7a3        2 hit(s) — src/raster.rs:mix64 L157: (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2)
+      build: {"route":"emit","rows_checked":2032,"rust":"((a0 ^ a0.wrapping_shr(((30i64) as u32) & 63)).wrapping_mul(a1) ^ (a0 ^ a0.wrapping_shr(((30i64) as u32) & 63)).wrapping_mul(a1).wrapping_shr(((27i64) as u32) & 63)).wrapping_m
+HIT  seb4d8e474a1b8939        2 hit(s) — src/jsi_ast.rs:wrap_pat L427: (| (fold v0 0 (| v1 v2)) v3)
+      build: {"route":"emit","rows_checked":2032,"rust":"({ let mut acc1 = ((2611923443488327891i64), (1376283091369227076i64)).0; for item1 in 0..(a0.len() as i64) { acc1 = a1; } acc1 }.wrapping_shl(((64i64) as u32) & 63) | { let mu
+HIT  s746048db86375f33        5 hit(s) — src/agent.rs:markdown L7: (sel (!= -9223372036854775801 v0) v0 0)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((a0 != (-9223372036854775801i64)) as i64) != 0 { a0 } else { (0i64) })","secs":1.68068979,"verified":true,"verify":null}
+BUILT scf325a5b1175f619        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((a0.wrapping_add(a1) > (0i64)) as i64) != 0 { a2 } else { a3 })","secs":1.8463298620000002,"verified":true,"verify":null}
+HIT  s829d66338e945eb7        5 hit(s) — src/agent.rs:visible L55: (== 0 v0)
+      build: {"route":"emit","rows_checked":2032,"rust":"((a0 == 0) as i64)","secs":1.404878958,"verified":true,"verify":null}
+BUILT sf62b1fb5ec72c3eb        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"a0.max(a1).max((0i64)).wrapping_add(a0.min(a1).min((0i64)))","secs":2.813267656,"verified":true,"verify":null}
+HIT  s55dc1c99bd52b84c        5 hit(s) — src/cookie.rs:header L242: (and v0 v1)
+      build: {"route":"emit","rows_checked":2032,"rust":"((a0 != 0 && a1 != 0) as i64)","secs":1.7201672810000002,"verified":true,"verify":null}
+HIT  s8dc6eea20f02ecb8        5 hit(s) — src/agent.rs:markdown L7: (len v0)
+      build: {"route":"emit","rows_checked":2032,"rust":"(a0.len() as i64)","secs":1.6994745409999998,"verified":true,"verify":null}
+HIT  sfda9f90344716b76        5 hit(s) — src/cookie.rs:parse_date L91: (sel (and (!= -9223372036854775801 v0) 1) (+ 1 v0) v1)
+      build: {"route":"emit","rows_checked":2032,"rust":"a0.wrapping_add((1i64))","secs":1.555252327,"verified":true,"verify":null}
+HIT  s54cd40fb95ef4b6d        5 hit(s) — src/cookie.rs:parts L67: (get1 (sel (and (!= -9223372036854775801 v0) 1) (tup 1 v0) (tup 0 v1)))
+      build: {"route":"emit","rows_checked":2032,"rust":"(if a0 != 0 { a1 } else { a1 })","secs":1.775984991,"verified":true,"verify":null}
+HIT  s976306d44a36b660        4 hit(s) — src/paint.rs:paint_bounds L43: (get1 (tup (* v0 v1) (* v2 v1)))
+      build: {"route":"emit","rows_checked":2032,"rust":"(if a0 != 0 { a1 } else { a1 }).wrapping_mul(a2)","secs":1.565385983,"verified":true,"verify":null}
+HIT  sb61535573e0003e6        5 hit(s) — src/cookie.rs:parts L67: (get1 (sel (and (!= -9223372036854775801 v0) 1) (tup 1 v0) (tup 0 v1)))
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((a0 != (-9223372036854775801i64)) as i64) != 0 { a0 } else { a1 })","secs":1.72296168,"verified":true,"verify":null}
+BUILT s83b0b10c0db343f8        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((((a0 != (-9223372036854775801i64)) as i64) != 0 && (1i64) != 0) as i64) != 0 { (if ((((a1 != (-9223372036854775801i64)) as i64) != 0 && (1i64) != 0) as i64) != 0 { a2.min
+BUILT sd8ccc94b36b8a774        0 hit(s)
+      build: {"route":"emit","rows_checked":1124,"rust":"a0.wrapping_add(a1).wrapping_add(a2[((1i64)) as usize]).wrapping_add(a2[((3i64)) as usize])","secs":1.1783127,"verified":true,"verify":null}
+HIT  s8effd5de73e271ad        5 hit(s) — src/agent.rs:reader L15: (fold (range 0 (len v0)) v1 v2)
+      build: {"route":"emit","rows_checked":2032,"rust":"{ let mut acc1 = a1; for item1 in 0..(a0.len() as i64) { acc1 = acc1; } acc1 }","secs":6.435750913,"verified":true,"verify":null}
+HIT  s4d126d0c34049be0        1 hit(s) — src/font.rs:normal_line L316: (+ (+ v0 v1) v2)
+      build: {"route":"emit","rows_checked":2032,"rust":"a0.wrapping_add(a1).wrapping_add(a2)","secs":1.825166428,"verified":true,"verify":null}
+HIT  sfea2986347f201a0        5 hit(s) — src/cookie.rs:set L185: (tup v0 v1)
+      build: {"route":"emit","rows_checked":2032,"rust":"(a0, a1)","secs":3.286380486,"verified":true,"verify":null}
+HIT  s21c4acf1e679daa9        2 hit(s) — src/jsi_date.rs:normalize_ymd L73: (get1 (tup (get0 (tup v0 (+ 1 v1))) (get1 (tup v0 (+ 1 v1)))))
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((((a0 != (-9223372036854775801i64)) as i64) != 0 && (1i64) != 0) as i64) != 0 { a1.wrapping_add((1i64)) } else { a1 })","secs":1.95251435,"verified":true,"verify":null}
+BUILT sb2579e54a4c11379        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((((a0 != (-9223372036854775801i64)) as i64) != 0 && (1i64) != 0) as i64) != 0 { a1.wrapping_add(a2.wrapping_sub((if ((((((((a3 == (-9223372036854775801i64)) as i64) != 0 |
+HIT  s811848c27087f81b        5 hit(s) — src/checks.rs:mismatches L81: (fold (filter (map v0 v1) v2) v3 v4)
+HIT  s60a39592af376018        1 hit(s) — src/style.rs:compute_inner L1107: (sel (== v0 v1) v2 0)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((a0 == a1) as i64) != 0 { a2 } else { (0i64) })","secs":1.8562872700000002,"verified":true,"verify":null}
+HIT  s045c9ad047928206        5 hit(s) — src/corert0.rs:main L146: (- v0 v1)
+      build: {"route":"emit","rows_checked":2032,"rust":"a0.wrapping_sub(a1)","secs":1.5019986859999999,"verified":true,"verify":null}
+BUILT s263b12f205c187e1        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"{ let mut acc1 = a1; for item1 in 0..(a0.len() as i64) { acc1 = (if ((a0[(item1) as usize] == (1436213i64)) as i64) != 0 { acc1 } else { (if a2 != 0 { acc1 } else { (if a3 != 0
+BUILT s5bf78d354b8814d7        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"{ let mut acc1 = a1; for item1 in 0..(a0.len() as i64) { acc1 = (if ((a0[(item1) as usize] == (1436213i64)) as i64) != 0 { acc1 } else { (if a2 != 0 { acc1 } else { (if a3 != 0
+HIT  s31728639395a8ef8        5 hit(s) — src/corert0.rs:splitmix L18: (+ v0 v1)
+      build: {"route":"emit","rows_checked":2032,"rust":"a0.wrapping_add(a1)","secs":1.603896664,"verified":true,"verify":null}
+HIT  sccc0ea156e64566e        5 hit(s) — src/jsdom.rs:run_one L1431: (+ (sel (and (!= -9223372036854775801 v0) 1) (sel (and (!= -9223372036854775801 v1) 1) v2 v2) v2) v3)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if ((((a0 != (-9223372036854775801i64)) as i64) != 0 && (((((1i64) != 0 && (1i64) != 0) as i64) != 0 && (1i64) != 0) as i64) != 0) as i64) != 0 { a1 } else { a1 }).wrapping_ad
+BUILT s3ba9545bc3bab839        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"a0.wrapping_add(a1.wrapping_add(a2)).wrapping_add(a3.wrapping_add(a4))","secs":1.792450875,"verified":true,"verify":null}
+BUILT s834de30a2fad6b87        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if a0 != 0 { (if a1 != 0 { a2.wrapping_add((1i64)) } else { a2 }) } else { a2 })","secs":1.897539581,"verified":true,"verify":null}
+HIT  s15cc55c4d9ae39db        5 hit(s) — src/jsi_lib.rs:rel_index L33: (sel v0 0 v1)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if a0 != 0 { (0i64) } else { a1 })","secs":2.991088826,"verified":true,"verify":null}
+BUILT s0b30207af409bcb6        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"((if ((((((a0 == 0) as i64) != 0 || a1 != 0) as i64) != 0 || ((a2 != a3) as i64) != 0) as i64) != 0 { a4 } else { a4 }), (if ((((((a0 == 0) as i64) != 0 || a1 != 0) as i64) != 
+HIT  s4ca176cae0e6705b        5 hit(s) — src/cookie.rs:header L242: (sel v0 v1 v2)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if a0 != 0 { a1 } else { a2 })","secs":3.029350458,"verified":true,"verify":null}
+HIT  sc50b08171e445eaf        1 hit(s) — src/style.rs:apply L606: (get0 (tup (sel (and (and (!= -9223372036854775801 v0) 1) v1) v2 (sel (and (!= -9223372036854775801 v0) 1) v0 str)) (map v3 v4)))
+BUILT s40ef711d9667df40        0 hit(s)
+      build: {"route":"emit","rows_checked":2032,"rust":"(if a0 != 0 { (if ((a1 == 0) as i64) != 0 { (if ((a2 == (-9223372036854775801i64)) as i64) != 0 { a3 } else { a4 }) } else { a3 }) } else { a3 })","secs":2.953449105,"verified"
+{"answered":36,"fns":1353,"library_terms":12763,"needs":36,"phase_secs":{"build_all_needs":0.090205626,"collect_library":0.05427116700000001,"extract":0.03974223900000001,"lower_library":0.405864998,"rustc_verify_all":0.310874374,"search_all_needs":3.389122956},"secs":97.752790403}

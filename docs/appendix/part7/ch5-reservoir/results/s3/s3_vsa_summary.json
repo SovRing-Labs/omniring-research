@@ -1,0 +1,301 @@
+{
+  "doctor_probe": [
+    {
+      "rules_stored": 1,
+      "retention": 1.0,
+      "min_cosine_margin": 1.0
+    },
+    {
+      "rules_stored": 2,
+      "retention": 1.0,
+      "min_cosine_margin": 0.5072
+    },
+    {
+      "rules_stored": 3,
+      "retention": 1.0,
+      "min_cosine_margin": 0.4954
+    },
+    {
+      "rules_stored": 4,
+      "retention": 1.0,
+      "min_cosine_margin": 0.3694
+    },
+    {
+      "rules_stored": 5,
+      "retention": 1.0,
+      "min_cosine_margin": 0.3684
+    },
+    {
+      "rules_stored": 6,
+      "retention": 1.0,
+      "min_cosine_margin": 0.3091
+    },
+    {
+      "rules_stored": 7,
+      "retention": 1.0,
+      "min_cosine_margin": 0.302
+    },
+    {
+      "rules_stored": 8,
+      "retention": 1.0,
+      "min_cosine_margin": 0.2648
+    },
+    {
+      "rules_stored": 9,
+      "retention": 1.0,
+      "min_cosine_margin": 0.2622
+    },
+    {
+      "rules_stored": 10,
+      "retention": 1.0,
+      "min_cosine_margin": 0.2354
+    },
+    {
+      "rules_stored": 11,
+      "retention": 1.0,
+      "min_cosine_margin": 0.2336
+    },
+    {
+      "rules_stored": 12,
+      "retention": 1.0,
+      "min_cosine_margin": 0.2122
+    },
+    {
+      "rules_stored": 13,
+      "retention": 1.0,
+      "min_cosine_margin": 0.2078
+    },
+    {
+      "rules_stored": 14,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1926
+    },
+    {
+      "rules_stored": 15,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1902
+    },
+    {
+      "rules_stored": 16,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1793
+    },
+    {
+      "rules_stored": 17,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1775
+    },
+    {
+      "rules_stored": 18,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1649
+    },
+    {
+      "rules_stored": 19,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1682
+    },
+    {
+      "rules_stored": 20,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1588
+    },
+    {
+      "rules_stored": 21,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1582
+    },
+    {
+      "rules_stored": 22,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1495
+    },
+    {
+      "rules_stored": 23,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1504
+    },
+    {
+      "rules_stored": 24,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1388
+    },
+    {
+      "rules_stored": 25,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1321
+    },
+    {
+      "rules_stored": 26,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1331
+    },
+    {
+      "rules_stored": 27,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1304
+    },
+    {
+      "rules_stored": 28,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1293
+    },
+    {
+      "rules_stored": 29,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1277
+    },
+    {
+      "rules_stored": 30,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1265
+    },
+    {
+      "rules_stored": 31,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1201
+    },
+    {
+      "rules_stored": 32,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1172
+    },
+    {
+      "rules_stored": 33,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1157
+    },
+    {
+      "rules_stored": 34,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1149
+    },
+    {
+      "rules_stored": 35,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1091
+    },
+    {
+      "rules_stored": 36,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1111
+    },
+    {
+      "rules_stored": 37,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1091
+    },
+    {
+      "rules_stored": 38,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1113
+    },
+    {
+      "rules_stored": 39,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1121
+    },
+    {
+      "rules_stored": 40,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1074
+    },
+    {
+      "rules_stored": 41,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1082
+    },
+    {
+      "rules_stored": 42,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1068
+    },
+    {
+      "rules_stored": 43,
+      "retention": 1.0,
+      "min_cosine_margin": 0.106
+    },
+    {
+      "rules_stored": 44,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1017
+    },
+    {
+      "rules_stored": 45,
+      "retention": 1.0,
+      "min_cosine_margin": 0.1025
+    },
+    {
+      "rules_stored": 46,
+      "retention": 1.0,
+      "min_cosine_margin": 0.0996
+    },
+    {
+      "rules_stored": 47,
+      "retention": 1.0,
+      "min_cosine_margin": 0.0999
+    },
+    {
+      "rules_stored": 48,
+      "retention": 1.0,
+      "min_cosine_margin": 0.0942
+    },
+    {
+      "rules_stored": 49,
+      "retention": 1.0,
+      "min_cosine_margin": 0.0908
+    },
+    {
+      "rules_stored": 50,
+      "retention": 1.0,
+      "min_cosine_margin": 0.0876
+    }
+  ],
+  "capacity_scaling": [
+    {
+      "stored": 10,
+      "recall": 1.0,
+      "avg_margin": 0.2461
+    },
+    {
+      "stored": 50,
+      "recall": 1.0,
+      "avg_margin": 0.1104
+    },
+    {
+      "stored": 100,
+      "recall": 1.0,
+      "avg_margin": 0.0776
+    },
+    {
+      "stored": 200,
+      "recall": 1.0,
+      "avg_margin": 0.0548
+    },
+    {
+      "stored": 300,
+      "recall": 0.92,
+      "avg_margin": 0.0476
+    },
+    {
+      "stored": 400,
+      "recall": 0.76,
+      "avg_margin": 0.0419
+    },
+    {
+      "stored": 500,
+      "recall": 0.54,
+      "avg_margin": 0.0397
+    }
+  ],
+  "retrieval_fix": {
+    "target_doc": 7,
+    "rank_before": 92,
+    "rank_after": 0,
+    "max_shift_on_others": 63.0,
+    "mean_shift_on_others": 19.0,
+    "success": true
+  },
+  "elapsed_s": 2.4,
+  "verdict": "PASS"
+}

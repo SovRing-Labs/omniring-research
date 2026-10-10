@@ -1,110 +1,129 @@
-# MANIFEST — OMNIRING research corpus (CC BY 4.0)
+# MANIFEST: OMNIRING research corpus (CC BY 4.0)
 
-Working copy for export #3 (research corpus). Source docs are never edited: each included doc is copied, then the copy is
-cleaned. Ground truth for what was measured: the omni-ring `TECHNICAL-DISCLOSURE.md`. Source paths use `~/` =
-the author's home directory. `AS` = `~/ai-stack`, `OL` = `~/projects/omniring-llm`.
-
-Decision key: **include** = publish as is after cleaning · **include-with-corrections** = publish only with
-`> Correction:` notes against measured results · **exclude** = not published. Status: **done** = cleaned copy in
-`docs/`; **todo** = left for the staged chew task RSX-CHEW; **n/a** = excluded.
-
-Duplicates: the 18 `OMNIRING-*` files dated 2026-09-28 exist byte-identical in `AS/_Reviews/` and `OL/reviews/`
-(checked with `cmp`). Each is listed once below under its `AS/_Reviews/` path.
+What is in this repository, what was left out, and why. Version 0.2.0. Decision key: **include** = published after cleaning;
+**include-with-corrections** = published with `> Correction:` notes against later measurements; **exclude** = not published.
+Every document is a cleaned copy: private paths, internal task names and raw AI chat are removed, and numbers are not changed.
+The ground truth for what was measured is the omni-ring technical disclosure series (see the disclosures table below).
 
 ## A. Measured results (RING series and engine builds)
 
-| # | Source path | Proposed title | Category | Decision | Reason | Status |
-|---|---|---|---|---|---|---|
-| 1 | `AS/_Reviews/RING/RING1-CORE.md` | RING-1 core: cued recall, quantisation, eigengap and slot capacity | measured-result | include-with-corrections | Source of capacity ≈12 marks/slot; c = 0 rows need the seed-lottery correction | done → `docs/01-ring1-core-cued-recall-and-capacity.md` |
-| 2 | `AS/_Reviews/RING/RING1-CORE.run.txt` | Appendix: RING1-CORE raw run | measured-result (log) | include | Evidence cited by #1 | done → `docs/appendix/` |
-| 3 | `AS/_Reviews/RING/RING1-CHECK.md` | RING-1 T3: the 17 check ring flags wrong settles | measured-result | include-with-corrections | 81.8% flag / 0 false alarms; c = 0 collapse explained as seed lottery | done → `docs/02-ring1-check-ring.md` |
-| 4 | `AS/_Reviews/RING/RING1-CHECK.run.txt` | Appendix: RING1-CHECK raw run | measured-result (log) | include | Evidence cited by #3 | done → `docs/appendix/` |
-| 5 | `AS/_Reviews/RING/RING1-DIRECT.md` | RING-1: direct keyed vs bound storage, 1-bit tag | measured-result | include | 1000/1000 keyed direct read, 300/300 tagged | done → `docs/03-ring1-direct-keyed-storage.md` |
-| 6 | `AS/_Reviews/RING/RING1-DIRECT-SEAT-NOTE.md` | (merged as appendix of #5) | measured-result | include | Explains the first KILL as a brief defect (156/300 vs 300/300) | done (merged into doc 03) |
-| 7 | `AS/_Reviews/RING/RING1-DIRECT.run.txt` | Appendix: RING1-DIRECT raw run | measured-result (log) | include | Evidence cited by #5 | done → `docs/appendix/` |
-| 8 | `AS/_Reviews/RING/RING1-DISPERSE.md` | RING-1: dispersal vs one crowded slot | measured-result | include | Clean negative result; ≈94% recall given right slot | done → `docs/04-ring1-disperse.md` |
-| 9 | `AS/_Reviews/RING/RING1-DISPERSE.run.txt` | Appendix: RING1-DISPERSE raw run | measured-result (log) | include | Evidence for #8 | done → `docs/appendix/` |
-| 10 | `OL/reviews/2026-09-29 — RING1-SOFTSWEEP.md` | RING-1 SOFTSWEEP: decode_soft vs direct_probe | measured-result | include-with-corrections | Fleet v1 harness invalid, rewritten; unguided rows are seed 0 only (seed lottery) | done → `docs/05-ring1-softsweep-decode-soft.md` |
-| 11 | `AS/_Reviews/RING/RING3-RESULTS.md` | RING-3: PEEL, DIAMOND, CORREL, TABU, FRET (+ DIAMOND-2) | measured-result | include | PEEL PASS; TABU not adopted; seed-lottery harness disclosure; 15-value corners 91% | done → `docs/06-ring3-peel-diamond-correl-tabu-fret.md` |
-| 12 | `AS/_Reviews/RING/RING3-RESULTS.run.txt` | Appendix: RING-3 raw run | measured-result (log) | include | Evidence for #11 | done → `docs/appendix/` |
-| 13 | `AS/_Reviews/RING/RING3-RECS.run.txt` | Appendix: RING-3 exploratory arms | measured-result (log) | include | Evidence for #11 "Exploratory arms" | done → `docs/appendix/` |
-| 14 | `AS/_Reviews/RING/RING3b-DIAMOND2.run.txt` | Appendix: DIAMOND-2 raw run | measured-result (log) | include | Evidence for #11 DIAMOND-2 | done → `docs/appendix/` |
-| 15 | `AS/_Reviews/RING/OPEEL-READ.md` | Peeling in the engine: `omni_ring.peel.read_all` | measured-result | include | 16.65/24 true, 0/333 fakes; confidence-floor sweep | done → `docs/07-peel-read-all-module.md` |
-| 16 | `AS/_Reviews/RING/RING1-HALO.md` | RING-1 T4: two-stage halo chain vs one resonator | measured-result | include | Clean pre-registered KILL; harness ships in `harness/ring1/run_halo.py` and re-runs to the same verdict | done → `docs/09-ring1-halo-two-stage-chain.md` |
-| 17 | `AS/_Reviews/RING/RING1-HALO.run.txt` | Appendix: RING1-HALO raw run | measured-result (log) | include | Evidence for #16; verbatim run log, paths made relative | done → `docs/appendix/RING1-HALO.run.txt` |
-| 18 | `AS/_Reviews/RING/RING1-SMOOTH.md` | RING-1 T2: smooth (fractional-phase) ring for "around when" | measured-result | include-with-corrections | KILL on discovery; the cue form works. Correction added: crowding, not dial resolution, was the original failure (`06-ring3-peel-diamond-correl-tabu-fret.md`) | done → `docs/10-ring1-smooth-fractional-phase.md` |
-| 19 | `AS/_Reviews/RING/RING1-SMOOTH.run.txt` | Appendix: RING1-SMOOTH raw run | measured-result (log) | include | Evidence for #18; verbatim run log, paths made relative | done → `docs/appendix/RING1-SMOOTH.run.txt` |
-| 20 | `OL/reviews/2026-09-29 — ODECAY-MARKSTORE.md` | Mark store: count-weighted accumulation, rehearsal counter, decay | measured-result | include | Engine build with tests; basis of disclosure §9; contract/lane metadata stripped | done → `docs/11-markstore-accumulation-and-decay.md` |
-| 21 | `OL/reviews/2026-09-28 — OSEAM-D1-TRANSCODE.md` | Defining ternary (0,0) → phase 0 | measured-result | include | Measured defect (4,800/5,120 fabricated phases) and fix; home paths stripped | done → `docs/12-seam-defining-ternary-zero.md` |
-| 22 | `OL/reviews/2026-09-28 — OSEAM-D2-PROJECTION.md` | Full-slot down-projection replaces truncation | measured-result | include | Fix for the 97.5% discard at the model seam; paths stripped | done → `docs/13-seam-full-slot-down-projection.md` |
-| 23 | `OL/reviews/2026-09-28 — OSEAM-CLAIMS.md` | Replacing three false accuracy claims with a checkable claim | review | include | Public record of the retracted "zero hallucination" claims; commit/lane metadata stripped | done → `docs/14-seam-retracting-three-accuracy-claims.md` |
-| 24 | `AS/_Reviews/2026-09-28 — MINIRING-ORA-ROOT Oracle CONVERGE (Decision).md` | Modulus set {3,5,7,13}+17: correctness and choice | review | include-with-corrections | 54,600-case exhaustive check, modulus rationale; labelled as a three-lens panel decision with corrections on the seed-draw and detection-count readings | done → `docs/15-modulus-set-and-check-ring-decision.md` |
+| # | Published as | What | Category | Decision | Why, and the corrections applied |
+|---|---|---|---|---|---|
+| 1 | `docs/01-ring1-core-cued-recall-and-capacity.md` | RING-1 core: cued recall, quantisation, eigengap and slot capacity | measured-result | include-with-corrections | Source of capacity ≈12 marks/slot; c = 0 rows need the seed-lottery correction |
+| 2 | `docs/appendix/` | Appendix: RING1-CORE raw run | measured-result (log) | include | Evidence cited by #1 |
+| 3 | `docs/02-ring1-check-ring.md` | RING-1 T3: the 17 check ring flags wrong settles | measured-result | include-with-corrections | 81.8% flag / 0 false alarms; c = 0 collapse explained as seed lottery |
+| 4 | `docs/appendix/` | Appendix: RING1-CHECK raw run | measured-result (log) | include | Evidence cited by #3 |
+| 5 | `docs/03-ring1-direct-keyed-storage.md` | RING-1: direct keyed vs bound storage, 1-bit tag | measured-result | include | 1000/1000 keyed direct read, 300/300 tagged |
+| 6 | merged into `docs/03-ring1-direct-keyed-storage.md` | (merged as appendix of #5) | measured-result | include | Explains the first KILL as a brief defect (156/300 vs 300/300) |
+| 7 | `docs/appendix/` | Appendix: RING1-DIRECT raw run | measured-result (log) | include | Evidence cited by #5 |
+| 8 | `docs/04-ring1-disperse.md` | RING-1: dispersal vs one crowded slot | measured-result | include | Clean negative result; ≈94% recall given right slot |
+| 9 | `docs/appendix/` | Appendix: RING1-DISPERSE raw run | measured-result (log) | include | Evidence for #8 |
+| 10 | `docs/05-ring1-softsweep-decode-soft.md` | RING-1 SOFTSWEEP: decode_soft vs direct_probe | measured-result | include-with-corrections | Fleet v1 harness invalid, rewritten; unguided rows are seed 0 only (seed lottery) |
+| 11 | `docs/06-ring3-peel-diamond-correl-tabu-fret.md` | RING-3: PEEL, DIAMOND, CORREL, TABU, FRET (+ DIAMOND-2) | measured-result | include | PEEL PASS; TABU not adopted; seed-lottery harness disclosure; 15-value corners 91% |
+| 12 | `docs/appendix/` | Appendix: RING-3 raw run | measured-result (log) | include | Evidence for #11 |
+| 13 | `docs/appendix/` | Appendix: RING-3 exploratory arms | measured-result (log) | include | Evidence for #11 "Exploratory arms" |
+| 14 | `docs/appendix/` | Appendix: DIAMOND-2 raw run | measured-result (log) | include | Evidence for #11 DIAMOND-2 |
+| 15 | `docs/07-peel-read-all-module.md` | Peeling in the engine: `omni_ring.peel.read_all` | measured-result | include | 16.65/24 true, 0/333 fakes; confidence-floor sweep |
+| 16 | `docs/09-ring1-halo-two-stage-chain.md` | RING-1 T4: two-stage halo chain vs one resonator | measured-result | include | Clean pre-registered KILL; harness ships in `harness/ring1/run_halo.py` and re-runs to the same verdict |
+| 17 | `docs/appendix/RING1-HALO.run.txt` | Appendix: RING1-HALO raw run | measured-result (log) | include | Evidence for #16; verbatim run log, paths made relative |
+| 18 | `docs/10-ring1-smooth-fractional-phase.md` | RING-1 T2: smooth (fractional-phase) ring for "around when" | measured-result | include-with-corrections | KILL on discovery; the cue form works. Correction added: crowding, not dial resolution, was the original failure (`06-ring3-peel-diamond-correl-tabu-fret.md`) |
+| 19 | `docs/appendix/RING1-SMOOTH.run.txt` | Appendix: RING1-SMOOTH raw run | measured-result (log) | include | Evidence for #18; verbatim run log, paths made relative |
+| 20 | `docs/11-markstore-accumulation-and-decay.md` | Mark store: count-weighted accumulation, rehearsal counter, decay | measured-result | include | Engine build with tests; basis of disclosure §9; internal metadata stripped |
+| 21 | `docs/12-seam-defining-ternary-zero.md` | Defining ternary (0,0) → phase 0 | measured-result | include | Measured defect (4,800/5,120 fabricated phases) and fix; private paths stripped |
+| 22 | `docs/13-seam-full-slot-down-projection.md` | Full-slot down-projection replaces truncation | measured-result | include | Fix for the 97.5% discard at the model seam; paths stripped |
+| 23 | `docs/14-seam-retracting-three-accuracy-claims.md` | Replacing three false accuracy claims with a checkable claim | review | include | Public record of the retracted "zero hallucination" claims; internal metadata stripped |
+| 24 | `docs/15-modulus-set-and-check-ring-decision.md` | Modulus set {3,5,7,13}+17: correctness and choice | review | include-with-corrections | 54,600-case exhaustive check, modulus rationale; labelled as a three-lens panel decision with corrections on the seed-draw and detection-count readings |
 
-## B. Reviews, syntheses, vision
+## B. Reviews, syntheses, vision (published)
 
-| # | Source path | Proposed title | Category | Decision | Reason | Status |
-|---|---|---|---|---|---|---|
-| 25 | `OL/reviews/2026-09-28 — OMNIRING-PEER-REVIEW-RETRIEVAL-AND-CONSOLIDATION.md` | Peer review: retrieval, consolidation, claim ledger | review | include-with-corrections | Strongest review; "retrieval unmeasured", "capacity 1,365" and D1/D2/D4 corrected | done → `docs/08-peer-review-retrieval-and-consolidation.md` |
-| 26 | `AS/_Reviews/2026-09-27 — OMNIRING chew (Gemini study threads → resonator rings).md` | Origin: from study threads to coprime resonator rings | review | exclude | J 2026-09-29 decision (4): source is J's Gemini study-thread exports, which are chat/session-derived; skipped here, kept for a separate readable edition. Ideas are kept in #27 and #28. | n/a |
-| 27 | `AS/_Reviews/2026-09-27 — RSPK Resonator-VSA Oracle CONVERGE (9-cell).md` | RSPK: resonator/VSA spike decision (9-cell panel) | review | include-with-corrections | Decision + kill criteria; correction added: "don't build now" was superseded by RING measurements, and the K=32 patent argument is a design conclusion, not a legal finding | done → `docs/16-resonator-vsa-spike-decision.md` |
-| 28 | `AS/_Reviews/2026-09-27 — XP1 Cross-field Oracle CONVERGE (9-cell).md` | XP1: which cross-field ideas change the design | review | include-with-corrections | Rules adopted vs metaphor; lane names stripped; corrections on the ACF mask claim, the K=32 qFHRR figure and the 7.7× speedup | done → `docs/17-cross-field-which-ideas-change-the-design.md` |
-| 29 | `AS/_Reviews/XP1/citation-check.md` | XP1 citation check (17/17 arXiv ids resolve) | review | include | Appendix to #28; 17/17 arXiv ids resolve, titles match topic | done → `docs/18-appendix-xp1-citation-check.md` |
-| 30 | `AS/_Reviews/RSPK/2026-09-27-RSPK-RES.md` | Dossier: resonator networks, factorisation in superposition | review (literature) | include-with-corrections | Literature review; citation check run at publication: 67/69 URLs resolve, 2 mis-pointed URLs fixed, no paper missing | done → `docs/19-dossier-resonator-networks.md` |
-| 31 | `AS/_Reviews/RSPK/2026-09-27-RSPK-VSA1.md` | Dossier: VSA encodings, capacity, cleanup | review (literature) | include-with-corrections | As #30; contains first-party measurements; citation check run at publication | done → `docs/20-dossier-vsa-encodings-and-capacity.md` |
-| 32 | `AS/_Reviews/RSPK/2026-09-27-RSPK-MATH.md` | Dossier: dynamics, fractals, projections, codes | review (literature) | include-with-corrections | As #30; citation check run at publication | done → `docs/21-dossier-dynamics-and-codes.md` |
-| 33 | `AS/_Reviews/RSPK/2026-09-27-RSPK-VSA2.md` | Dossier: VSA in agent systems | review (literature) | exclude | Mostly fleet-routing context; J to confirm | n/a |
-| 34 | `AS/_Reviews/RSPK/2026-09-27-RSPK-PHYS.md` | Dossier: noise, oscillators, energy landscapes | review (literature) | exclude | Cross-field breadth judged mostly metaphor by XP1/OUTLOOK; J to confirm | n/a |
-| 35 | `AS/_Reviews/RSPK/2026-09-27-RSPK-MIND.md` | Dossier: neuroscience, psychology, learning | review (literature) | exclude | As #34; J to confirm | n/a |
-| 36 | `AS/_Reviews/RSPK/2026-09-27-RSPKO-*.md` (9 files) | RSPK oracle panel cells | review | exclude | Internal panel inputs; #27 summarises them; field-data and lane details | n/a |
-| 37 | `AS/_Reviews/RSPK/2026-09-27 — RSPK process retrospective.md` | — | governance/ops | exclude | Dispatch process metrics | n/a |
-| 38 | `AS/_Reviews/XP1/branches/*.md` (7 files incl. MANIFEST) | XP1 branch dossiers | review (literature) | exclude | #28 summarises; cross-field material mostly metaphor; J may promote B2-CAPACITY | n/a |
-| 39 | `AS/_Reviews/XP1/panel/XP1O-*.md` (9 files) | XP1 oracle panel cells | review | exclude | Internal panel inputs; #28 summarises | n/a |
-| 40 | `AS/_Reviews/XP1/2026-09-27-GENERATION-NOTES-triage.md` | — | review | exclude | Superseded by #26 (per its own header); reads raw chat exports | n/a |
-| 41 | `AS/_Reviews/XP1/B0-coverage.md` | — | governance/ops | exclude | Internal corpus coverage map | n/a |
-| 42 | `AS/_Reviews/XP1/sources/` (SG1.txt, SG2.txt, GEMINI-SYNTHESIS-2026-09-27.txt) | — | raw AI export | exclude | Raw AI chat / study-guide exports | n/a |
-| 43 | `OL/reviews/2026-09-28 — OMNIRING-LINEAGE-POSSIBILITIES-APPLICATION-SURFACE.md` | Where verified ring properties could apply (exploration) | vision | include-with-corrections | Self-labelled exploration; corrections added: market mapping is a hypothesis, only measured properties carry, and any cascade assumption is superseded by #16 | done → `docs/22-exploration-where-verified-properties-could-apply.md` |
-| 44 | `AS/_Reviews/2026-09-28 — OMNIRING-RESONATOR-CORTEX-VISION IMAGINE.md` | Vision: a resonator cortex (speculation) | vision | include-with-corrections | Published as labelled speculation with corrections on every unmeasured claim: O(1) framing, MeZO, forward-shot adaptation, and any capacity beyond ≈12 marks/slot | done → `docs/23-vision-a-resonator-cortex-labelled-speculation.md` |
-| 45 | `AS/_Reviews/2026-09-28 — OMNIRING-DECENTRALIZED-ARCHITECTURE-DEEP-DIVE.md` | — | vision | exclude | Gemini vision; overlaps #44; unmeasured claims throughout | n/a |
-| 46 | `AS/_Reviews/2026-09-28 — OMNIRING-CORTEX-PATENT-HEADS-MOUTH.md` | — | vision | exclude | Gemini vision (14B-equivalence claims unmeasured); patent framing conflicts with prior-art intent — J decides | n/a |
-| 47 | `AS/_Reviews/2026-09-28 — OMNIRING-GENERATOR-HEAD-BUILD-PLAN.md` | — | design | exclude | Unbuilt plan; overlaps #44 | n/a |
-| 48 | `AS/_Reviews/2026-09-28 — OMNIRING-TRANSFORMER-REPLACEMENT-FEASIBILITY.md` | — | vision | exclude | "~70% milestone" etc. flagged unverified by #25; nothing measured | n/a |
-| 49 | `AS/_Reviews/2026-09-28 — OMNIRING-CORE-GEMINI-01 Deliverable.md` | — | design | exclude | Original engine build log; claims superseded by the technical disclosure | n/a |
-| 50 | `AS/_Reviews/2026-09-28 — OMNIRING-TIER-1-TERNARY-ENGINE.md` | — | design | exclude | Build log (test counts); kernel facts live in vsa-core/omni-ring disclosures | n/a |
-| 51 | `AS/_Reviews/2026-09-28 — OMNIRING-TIER-2-RING-BANK-AND-CLAMP.md` | — | design | exclude | Build log | n/a |
-| 52 | `AS/_Reviews/2026-09-28 — OMNIRING-TIER-3-RING-ATTENTIVE-TRANSFORMER.md` | — | design | exclude | Build log; "O(1) attention" and hallucination claims measured false/unbuilt (#25, #23) | n/a |
-| 53 | `AS/_Reviews/2026-09-28 — OMNIRING-BIDIR-QUERY-01 Deliverable.md` | — | design | exclude | Build log, test counts only | n/a |
+| # | Published as | What | Category | Decision | Why, and the corrections applied |
+|---|---|---|---|---|---|
+| 25 | `docs/08-peer-review-retrieval-and-consolidation.md` | Peer review: retrieval, consolidation, claim ledger | review | include-with-corrections | Strongest review; "retrieval unmeasured", "capacity 1,365" and D1/D2/D4 corrected |
+| 27 | `docs/16-resonator-vsa-spike-decision.md` | RSPK: resonator/VSA spike decision (9-cell panel) | review | include-with-corrections | Decision + kill criteria; correction added: "don't build now" was superseded by RING measurements, and the K=32 patent argument is a design conclusion, not a legal finding |
+| 28 | `docs/17-cross-field-which-ideas-change-the-design.md` | XP1: which cross-field ideas change the design | review | include-with-corrections | Rules adopted vs metaphor; internal names stripped; corrections on the ACF mask claim, the K=32 qFHRR figure and the 7.7× speedup |
+| 29 | `docs/18-appendix-xp1-citation-check.md` | XP1 citation check (17/17 arXiv ids resolve) | review | include | Appendix to #28; 17/17 arXiv ids resolve, titles match topic |
+| 30 | `docs/19-dossier-resonator-networks.md` | Dossier: resonator networks, factorisation in superposition | review (literature) | include-with-corrections | Literature review; citation check run at publication: 67/69 URLs resolve, 2 mis-pointed URLs fixed, no paper missing |
+| 31 | `docs/20-dossier-vsa-encodings-and-capacity.md` | Dossier: VSA encodings, capacity, cleanup | review (literature) | include-with-corrections | As #30; contains first-party measurements; citation check run at publication |
+| 32 | `docs/21-dossier-dynamics-and-codes.md` | Dossier: dynamics, fractals, projections, codes | review (literature) | include-with-corrections | As #30; citation check run at publication |
+| 43 | `docs/22-exploration-where-verified-properties-could-apply.md` | Where verified ring properties could apply (exploration) | vision | include-with-corrections | Self-labelled exploration; corrections added: market mapping is a hypothesis, only measured properties carry, and any cascade assumption is superseded by #16 |
+| 44 | `docs/23-vision-a-resonator-cortex-labelled-speculation.md` | Vision: a resonator cortex (speculation) | vision | include-with-corrections | Published as labelled speculation with corrections on every unmeasured claim: O(1) framing, MeZO, forward-shot adaptation, and any capacity beyond ≈12 marks/slot |
 
-## C. Excluded: governance, operations, app integration
+## C. Not published
 
-| # | Source path | Proposed title | Category | Decision | Reason | Status |
-|---|---|---|---|---|---|---|
-| 54 | `AS/_Reviews/2026-09-28 — OMNIRING-PORTAL-BRIDGE Deliverable.md` | — | governance/ops | exclude | Launcher/portal integration log, PIDs, local ports | n/a |
-| 55 | `AS/_Reviews/2026-09-28 — OMNIRING-PORTAL-CLIENT Deliverable.md` | — | governance/ops | exclude | App integration log | n/a |
-| 56 | `AS/_Reviews/2026-09-28 — OMNIRING-PORTAL-UI Deliverable.md` | — | governance/ops | exclude | App integration log | n/a |
-| 57 | `AS/_Reviews/2026-09-28 — OMNIRING-SOAK-E2E Deliverable.md` | — | governance/ops | exclude | App soak test log | n/a |
-| 58 | `AS/_Reviews/2026-09-29 — OMNIRING-PORTALS integration review (analyze · troubleshoot · imagine).md` | — | governance/ops | exclude | App integration review | n/a |
-| 59 | `AS/_Reviews/2026-09-28 — OMNIRING-SHADOW-PROD Oracle CONVERGE (Decision).md` | — | governance/ops | exclude | Repo-process decision | n/a |
-| 60 | `AS/_Reviews/2026-09-28 — OMNIRING-SHADOW-PROD-ORACLE-ADV.md` | — | governance/ops | exclude | Repo-process panel cell | n/a |
-| 61 | `AS/_Reviews/2026-09-28 — OMNIRING-SHADOW-PROD Oracle REIMAGINE.md` | — | governance/ops | exclude | Repo-process panel cell | n/a |
-| 62 | `AS/_Reviews/2026-09-28 — OMNIRING-SHADOW-PROD Oracle RELIABILITY.md` | — | governance/ops | exclude | Repo-process panel cell | n/a |
-| 63 | `AS/_Reviews/2026-09-29 — MINIRING-ORA-STR Oracle Pass.md` | — | governance/ops | exclude | Portal bundler/build audit | n/a |
-| 64 | `AS/_Reviews/2026-09-29 — MINIRING-ORA-TOP Oracle Pass.md` | — | governance/ops | exclude | Portal architecture + TURN-0 attestations | n/a |
-| 65 | `AS/_Reviews/2026-09-27 — OUTLOOK after RSPK + XP1 (what the sprints changed).md` | — | governance/ops | exclude | Fleet throughput/dispatch metrics | n/a |
-| 66 | `AS/_Reviews/OMNI-SAE/2026-09-28-OMNI-SAE-RESEARCH.md` | — | governance/ops | exclude | Out of scope (tool executor, not OMNIRING) | n/a |
+| Kind | Candidate rows | Why not published |
+|---|---|---|
+| Raw AI chat or study-thread exports, and notes derived from them | 3 | Chat transcripts are not published. The ideas they carried are kept in the included reviews. |
+| Literature dossiers judged out of scope or mostly metaphor | 3 | Fleet-routing context or cross-field breadth with no measured effect on the design. |
+| Panel inputs and branch dossiers | 3 | Each is summarised by an included decision document; the inputs hold internal field data. |
+| Process retrospectives, coverage maps, throughput metrics | 3 | Operational records, not research. |
+| Vision and build-log documents | 9 | Unmeasured claims, unbuilt plans, or build logs superseded by the technical disclosures. |
+| Application-integration logs, soak tests, repository-process decisions, portal audits | 12 | Out of scope for the research record. |
 
-Totals: 66 rows covering 90 unique files (+18 byte-identical duplicates). Include / include-with-corrections rows: 33;
-exclude rows: 33. Done: 33 rows (23 documents, 1 note merged into doc 03, 9 appendix logs). Todo: 0 rows.
+The 66 candidate documents (90 files, plus 18 byte-identical duplicates) split into 33 published rows and 33 rows not published.
 
-RSX-CHEW (2026-09-29): 17 rows processed to `done` (docs 09-23, 2 appendix run logs). Row 26 skipped as chat/session-derived per J decision (4); its ideas are carried by #27 and #28. The research harness (`harness/`) ships the scripts docs 01-06 cite, with home paths made relative, and re-runs to the same verdicts. Citation check on the RSPK dossiers: 67/69 URLs resolve, 2 mis-pointed URLs fixed in the copies, no cited paper missing.
+## D. Essays (`docs/essays/`, 11 essays plus `INDEX.md`)
 
-## E. Essays 07–11 (written 2026-10-01 for the Part 2 disclosure; pending J review)
+| Essay |
+|---|
+| 01 Rings around a resonator |
+| 02 The jump rope |
+| 03 Tuning the string |
+| 04 Metaphor or mechanism |
+| 05 The brain and the bookshelf |
+| 06 A memory that can say "I don't know" |
+| 07 Tool, protocol, system, primitive, substrate (companion of Part 2) |
+| 08 From a point to a tesseract (companion of Part 2) |
+| 09 The triangle memory (companion of Part 2) |
+| 10 Square, line, circle, triangle (companion of Part 2) |
+| 11 How to be wrong on purpose (companion of Part 2) |
 
-| # | File | Sources | Decision | Status |
-|---|---|---|---|---|
-| E7 | `docs/essays/07-tool-protocol-system-primitive-substrate.md` | author's notebook (own words quoted), genr ledger counts, `_Reviews/` dates, session archive counts, disclosures | include (J review) | written |
-| E8 | `docs/essays/08-from-a-point-to-a-tesseract.md` | Part 2 §2–5, §8 | include (J review) | written |
-| E9 | `docs/essays/09-the-triangle-memory.md` | Part 2 §6, §8, §9 | include (J review) | written |
-| E10 | `docs/essays/10-square-line-circle-triangle.md` | Part 2 §7, §8.1, §10 | include (J review) | written |
-| E11 | `docs/essays/11-how-to-be-wrong-on-purpose.md` | Part 2 §9, §11; research log | include (J review) | written |
-Checks: gitleaks clean on docs/essays; no home paths or emails; no third-party text reproduced (the notebook lines quoted
-are the author's own); pronoun-neutral references to the author.
+Essays retell conversations in plain language; they are not transcripts. Anything not measured is marked as speculation.
+
+## E. Guide
+
+| File | What |
+|---|---|
+| `docs/guide/HYPERDIMENSIONAL-COMPUTING-AND-YOU.md` | a guide to the field; second edition 2026-10-10 (Parts 1–7, the author's words, simpler language); cites the disclosures |
+| `docs/guide/GEOMETRIC-COMPUTING-AND-YOU.md` | new in 0.2.0: the axiom and law list (first written 2026-10-01, corrections of 10-03 applied), private paths removed, evidence table, credits |
+| `docs/guide/MATH-CONCEPTS-AND-THANKS.md` | new in 0.2.0: the concepts index of 2026-10-03, extended to 10-09, with credits; source file names and unpublished experiment numbers removed |
+
+## F. Technical disclosures (`docs/disclosures/`, new in 0.2.0)
+
+Licence of these copies: CC BY 4.0. The same words ship in the code repositories under those repositories' licences.
+
+| File | Date | What | Evidence status |
+|---|---|---|---|
+| `OMNI-RING-TECHNICAL-DISCLOSURE-PART-3.md` | 2026-10-01 | designed solids, 4-D cores, the source, seams, the hypervector wire; carries the 2026-10-01 correction (random-vector acceptance about 0.04 percent: the two check slots detect errors, they are not a security boundary) | harnesses and results in the omni-ring repository, `experiments/` |
+| `OMNI-RING-TECHNICAL-DISCLOSURE-PART-4.md` | 2026-10-02 | the sifter as code, the decode ladder, the learning core | harnesses and results in the omni-ring repository, `experiments/part4/` |
+| `OMNI-RING-TECHNICAL-DISCLOSURE-PART-5.md` | 2026-10-03 | the seed's owned ground, residue memory at scale, our own engines, fleet systems | claim-to-evidence index not yet published |
+| `OMNI-RENDER-TECHNICAL-DISCLOSURE-PART-6.md` | 2026-10-04 | omni-render engine, program runtime, JS on our IR, a self-repair core | claim-to-evidence index not yet published |
+| `OMNID-TECHNICAL-DISCLOSURE.md` | 2026-10-01 | omnid: front door, hardened web face, hypervector wire | some numbers labelled unsupported in the text |
+| `DOCK-TECHNICAL-DISCLOSURE.md` | 2026-10-09 (DRAFT) | dock: constant-surface MCP front, abstaining tool search | every number labelled unverified in the text |
+| `OMNI-RING-TECHNICAL-DISCLOSURE-PART-7.md` | 2026-10-09 | live school and growth run, cyclone array and T50 hub, Omni Web, the doctor core, the cores, provenance | numbers without a published result file are labelled (partial) / (unsupported); experiments in docs 24-44, essays 12-16 |
+
+Parts 1 and 2 of the omni-ring series are in the omni-ring repository (`TECHNICAL-DISCLOSURE.md`, `TECHNICAL-DISCLOSURE-PART-2.md`).
+
+## F2. Part 7 experiments and essays (new in 0.2.0)
+
+| Path | What |
+|---|---|
+| `docs/24-*.md` … `docs/44-*.md` | twenty-one documents, one experiment or decision each, header table with verdict (see the README Contents) |
+| `docs/essays/12-*.md` … `16-*.md` | five essays on the week of 6–9 October, in the author's words; `docs/essays/INDEX.md` lists them |
+| `docs/essays/07-…` | history table extended to 2026-10-09 |
+| `harness/part7/` | harnesses cited by Part 7 and docs 24–44 (287 files) |
+| `docs/appendix/part7/` | result files, pre-registration extracts and summaries cited by Part 7 (832 files) |
+
+## G. Appendix and harness
+
+`docs/appendix/*.run.txt` are the raw run logs cited by the documents. `harness/` holds the numpy scripts behind docs 01-06 (own
+licence file `harness/LICENSE.md`).
+`docs/appendix/geometric-laws/` holds the 51 result files and 4 harnesses cited by the geometric booklet (home paths in two harnesses replaced by an
+`OMNI_RING_PATH` variable). `docs/appendix/math-kb/mathkb.json` is the math core's knowledge base (data, CC BY 4.0), with `check_laws.py`. `docs/guide/examples/` holds the
+guides' runnable examples (`ring_recipes.py` needs the public omni-ring package; `design_helpers.py` needs only Python).
+
+## H. Not in this repository, on purpose
+
+Review checklists and preparation logs of the corpus are working documents and are not published. The code-licence set
+(`LICENSE-NONCOMMERCIAL.md`, `LICENSING.md`, `DATA-AND-SHARDS.md`, `SHARD-FORMAT.md`) and the per-repository `PROVENANCE.md` and
+`TECHNICAL-DISCLOSURE.md` belong to the code repositories: this repository is documents under CC BY 4.0 plus research scripts.
+A draft design disclosure for a launcher that is not released is held back until it is reviewed.

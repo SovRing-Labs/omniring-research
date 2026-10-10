@@ -1,0 +1,172 @@
+{
+ "gate": 0.85,
+ "mastered": 93,
+ "merge": "school_graph.plan: w = forget_watch.apply(w, RAMKIT_REPLAY, N) after the REVIEW block",
+ "replay": {
+  "br.ping@2": 0.00245,
+  "e.press@1": 0.00681,
+  "env.calendar.clock@1": 0.01587,
+  "env.causal.dag@1": 0.00022,
+  "env.sat.trit@1": 0.01252,
+  "k.meet@1": 0.00116,
+  "k.review@2": 0.0001,
+  "pk.babble@3": 0.00245,
+  "pk.commit@2": 0.00437,
+  "pk.echo@3": 0.00245,
+  "pk.flush@2": 0.0069,
+  "pk.flush@3": 0.02033,
+  "pk.give@3": 0.01468,
+  "pk.hold@2": 0.00147,
+  "pk.meet@4": 0.00467,
+  "pk.meet@5": 0.00734,
+  "pk.mix@2": 0.01628,
+  "pk.ping@3": 0.02089,
+  "pk.predict@2": 0.00848,
+  "pk.same@1": 0.00056
+ },
+ "replay_share": 0.15,
+ "rescored_last_round": 68,
+ "rounds": 8,
+ "slips": [
+  {
+   "first_at_gate_round": 7,
+   "gap": 0.0167,
+   "round": 8,
+   "score": 0.8333,
+   "skill": "br.ping@2"
+  },
+  {
+   "first_at_gate_round": 7,
+   "gap": 0.0464,
+   "round": 8,
+   "score": 0.8036,
+   "skill": "e.press@1"
+  },
+  {
+   "first_at_gate_round": 3,
+   "gap": 0.1081,
+   "round": 8,
+   "score": 0.7419,
+   "skill": "env.calendar.clock@1"
+  },
+  {
+   "first_at_gate_round": 4,
+   "gap": 0.0015,
+   "round": 5,
+   "score": 0.8485,
+   "skill": "env.causal.dag@1"
+  },
+  {
+   "first_at_gate_round": 3,
+   "gap": 0.0853,
+   "round": 8,
+   "score": 0.7647,
+   "skill": "env.sat.trit@1"
+  },
+  {
+   "first_at_gate_round": 1,
+   "gap": 0.0079,
+   "round": 7,
+   "score": 0.8421,
+   "skill": "k.meet@1"
+  },
+  {
+   "first_at_gate_round": 7,
+   "gap": 0.0007,
+   "round": 8,
+   "score": 0.8493,
+   "skill": "k.review@2"
+  },
+  {
+   "first_at_gate_round": null,
+   "gap": 0.0167,
+   "round": 8,
+   "score": 0.8333,
+   "skill": "pk.babble@3"
+  },
+  {
+   "first_at_gate_round": null,
+   "gap": 0.0298,
+   "round": 8,
+   "score": 0.8202,
+   "skill": "pk.commit@2"
+  },
+  {
+   "first_at_gate_round": null,
+   "gap": 0.0167,
+   "round": 8,
+   "score": 0.8333,
+   "skill": "pk.echo@3"
+  },
+  {
+   "first_at_gate_round": 1,
+   "gap": 0.047,
+   "round": 8,
+   "score": 0.803,
+   "skill": "pk.flush@2"
+  },
+  {
+   "first_at_gate_round": null,
+   "gap": 0.1385,
+   "round": 8,
+   "score": 0.7115,
+   "skill": "pk.flush@3"
+  },
+  {
+   "first_at_gate_round": 5,
+   "gap": 0.1,
+   "round": 8,
+   "score": 0.75,
+   "skill": "pk.give@3"
+  },
+  {
+   "first_at_gate_round": 1,
+   "gap": 0.01,
+   "round": 8,
+   "score": 0.84,
+   "skill": "pk.hold@2"
+  },
+  {
+   "first_at_gate_round": 7,
+   "gap": 0.0318,
+   "round": 8,
+   "score": 0.8182,
+   "skill": "pk.meet@4"
+  },
+  {
+   "first_at_gate_round": 4,
+   "gap": 0.05,
+   "round": 8,
+   "score": 0.8,
+   "skill": "pk.meet@5"
+  },
+  {
+   "first_at_gate_round": null,
+   "gap": 0.1109,
+   "round": 8,
+   "score": 0.7391,
+   "skill": "pk.mix@2"
+  },
+  {
+   "first_at_gate_round": null,
+   "gap": 0.1423,
+   "round": 8,
+   "score": 0.7077,
+   "skill": "pk.ping@3"
+  },
+  {
+   "first_at_gate_round": null,
+   "gap": 0.0578,
+   "round": 8,
+   "score": 0.7922,
+   "skill": "pk.predict@2"
+  },
+  {
+   "first_at_gate_round": 1,
+   "gap": 0.0038,
+   "round": 8,
+   "score": 0.8462,
+   "skill": "pk.same@1"
+  }
+ ]
+}

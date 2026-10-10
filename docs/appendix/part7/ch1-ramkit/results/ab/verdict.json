@@ -1,0 +1,89 @@
+{
+ "off": [
+  [
+   0,
+   0.8681,
+   1.3671
+  ],
+  [
+   20,
+   1.5176,
+   2.1129
+  ],
+  [
+   40,
+   1.0781,
+   2.5291
+  ]
+ ],
+ "ring": {
+  "log": [
+   [
+    0,
+    0.8681,
+    1.3671
+   ],
+   [
+    20,
+    1.4751,
+    2.577
+   ],
+   [
+    40,
+    1.0695,
+    1.8324
+   ]
+  ],
+  "matched_step_deltas": {
+   "20": {
+    "heldout_delta": -0.0425,
+    "canary_delta": 0.4641
+   },
+   "40": {
+    "heldout_delta": -0.0086,
+    "canary_delta": -0.6967
+   }
+  }
+ },
+ "epi": {
+  "log": [
+   [
+    0,
+    0.8681,
+    1.3671
+   ],
+   [
+    20,
+    1.523,
+    2.2052
+   ]
+  ],
+  "matched_step_deltas": {
+   "20": {
+    "heldout_delta": 0.0054,
+    "canary_delta": 0.0923
+   }
+  }
+ },
+ "gem": {
+  "log": [
+   [
+    0,
+    0.8681,
+    1.3671
+   ],
+   [
+    20,
+    1.5254,
+    2.1923
+   ]
+  ],
+  "matched_step_deltas": {
+   "20": {
+    "heldout_delta": 0.0078,
+    "canary_delta": 0.0794
+   }
+  }
+ },
+ "note": "epi + gem arms hit the 20-min cap (timeout 1200) during day 2 (round 2 ran slower: episodic read sgemm / GEM reference backward every 4 steps); only day 1 (step 20) is matched for them. Deltas are arm \u2212 off at the same step (negative = better)."
+}

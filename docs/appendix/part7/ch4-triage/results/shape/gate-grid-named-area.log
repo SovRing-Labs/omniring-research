@@ -1,0 +1,14 @@
+GAIN theguardian-com-international n1029 <a .dcr-idxb0f> base Some([0.0, 581.90625, -329.84375, 151.9375]) cand Some([0.0, 16.28125, 0.0, 0.0]) «»
+GAIN theguardian-com-international n2236 <ul .dcr-e76yd7> base Some([-80.0, 2388.0781, -880.0, 551.9375]) cand Some([0.0, 299.5625, 0.0, 0.0]) «double quotation mark|We live in a rape-prone society. The horrific Co»
+GAIN theguardian-com-international n2860 <li .dcr-idhxvk> base Some([-580.0, 3697.2031, -220.0, 81.0]) cand Some([0.0, 401.75, 0.0, 0.0]) «Photography|The week in wildlife: a rescued orangutan, the chonkiest b»
+GAIN theguardian-com-international n1941 <div .dcr-1y98a6f> base Some([-80.0, 1744.25, -368.625, 72.75]) cand Some([0.0, 105.46875, 0.0, 0.0]) «Ireland|News conference cut short as tensions rise before second Israe»
+GAIN theguardian-com-international n1759 <source .> base Some([-340.0, 883.21875, -620.0, -496.0]) cand Some([0.0, 105.46875, 0.0, 0.0]) «»
+GAIN theguardian-com-international n1397 <h3 .card-headline dcr-116ijb0> base Some([-140.0, 1009.28125, -135.25, 115.0]) cand Some([0.0, 57.28125, 0.0, 0.0]) «US military|‘It’s been hard’: families await the return of the USS Abr»
+GAIN theguardian-com-international n1062 <div .dcr-natx2v> base Some([-329.84375, 581.90625, -330.84375, 61.0]) cand Some([0.0, 16.28125, 0.0, 0.0]) «US|Tennessee’s top prison official resigning after botched execution o»
+GAIN theguardian-com-international n1501 <div .dcr-1p6zj45> base Some([-520.0, 1120.0313, -440.0, -550.0]) cand Some([0.0, 74.375, 0.0, 0.0]) «Grace Dent on restaurants|Dante Mayfair, Claridge’s, London W1: ‘Are c»
+GAIN theguardian-com-international n1387 <source .> base Some([80.0, 1009.28125, -220.0, -176.0]) cand Some([0.0, 57.28125, 0.0, 0.0]) «»
+GAIN theguardian-com-international n1100 <a .dcr-idxb0f> base Some([0.0, 733.84375, -880.0, 109.40625]) cand Some([0.0, 16.28125, 0.0, 0.0]) «»
+GAIN theguardian-com-international n2376 <h3 .card-headline dcr-hiksz3> base Some([-140.0, 3321.6406, -220.0, 207.0]) cand Some([0.0, 413.5625, 0.0, 0.0]) «double quotation mark|What do Britain’s death-penalty cheerleaders hav»
+GAIN theguardian-com-international n3515 <source .> base Some([-360.0, 3986.9531, -220.0, -176.0]) cand Some([0.0, 299.25, 0.0, 0.0]) «»
+{"base":[16011,2997],"cand":[17620,2997],"clause":"patch.grid_named_area[*]=-1","gained":[1609,0],"lost":[0,0],"pages":[{"gained":1609,"holdout":false,"lost":0,"lost_nodes":[],"page":"theguardian-com-international"}],"pass":true,"program":"results/omr.program.json","secs":3.912707772,"sets":"1ee26bbc9aa4"}
+patch-gate patch.grid_named_area[*]=-1: base replay 16011 holdout 2997 → cand 17620 / 2997 · lost 0/0 · gained 1609/0 → PASS (3.9s)

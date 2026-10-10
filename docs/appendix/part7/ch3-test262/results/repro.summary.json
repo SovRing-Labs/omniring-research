@@ -1,0 +1,30 @@
+{
+ "id": "n6-test262-full",
+ "time": "2026-10-08 00:30:46",
+ "cmd": [
+  "bash",
+  "-c",
+  "timeout 1500 python3 test262.py --bin <workspace>/projects/omni-render-claude/target/release/omni-render --dirs test --jobs 6 --timeout 10 --out full.jsonl > full.summary.txt 2>&1"
+ ],
+ "cwd": "<workspace>/projects/omni-render-claude/results/doctor-interp/n6",
+ "env": {
+  "TW_HOOK": "<workspace>/bin/log-event --agent tw --verb STEP --task \"$TW_ID\" --step \"tw.$TW_KIND\" --note \"$TW_LINE\"",
+  "TW_DIR": "<workspace>/<notes>/TW"
+ },
+ "repos": {
+  "<workspace>/projects/omni-render-claude": {
+   "rev": "f6e6705c2eee2beef1218b3dca779d9074d41cde",
+   "branch": "claude/work",
+   "dirty": []
+  }
+ },
+ "programs": {
+  "/usr/bin/bash": {
+   "sha256": "bc5945feb8bd26203ebfafea5ce1878bb2e32cb8fb50ab7ae395cfb1e1aaaef1",
+   "mtime": 1711874463.0,
+   "size": 1446024
+  }
+ },
+ "files": [],
+ "host": "TreasureHaven"
+}

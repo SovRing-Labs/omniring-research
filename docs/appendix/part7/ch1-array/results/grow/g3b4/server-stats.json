@@ -1,0 +1,1 @@
+{"steps": 55, "slots": 2, "mean_active": 1.891, "gpu_ms": 128.318, "step_io_ms": 151.708, "bytes_resident": 256862624, "device": "NVIDIA A40"}

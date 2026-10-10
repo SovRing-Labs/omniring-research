@@ -1,0 +1,2 @@
+spec rows 32; distinct words of 3+ chars in the rows 70; identifiers of 3+ chars in the source file 2071
+shared words: and doctor filter len list max min need not out own range ret

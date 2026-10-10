@@ -1,0 +1,6 @@
+{
+ "harnesses_that_exited_134": 10,
+ "harnesses_that_exited_143": 30,
+ "launcher_last_message": "no skill.json from the pod - stop",
+ "what": "what the launcher printed in run 1b although it exited 0 (counts only)"
+}

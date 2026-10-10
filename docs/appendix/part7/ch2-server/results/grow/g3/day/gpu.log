@@ -1,0 +1,9 @@
+[thead] P3 on: confirmed rows (p > 0.95) skip the backward, full step every 4
+[thead] attention plates on (rows end at token 0)
+[thead] T25 core in the model: 16 clock pairs turned by the rendered core
+[learn2] compiled check: {"agree":128,"n":128,"ok":true,"path":"sift head"}
+[learn2] 195 wake steps · 780 windows · day 20 steps · active 4/4 · doing pool 796 · levels [0, 1, 2, 3, 4] · start: held-out 8.981 · answer (551) 8.932
+[omnitrain_gpu] training step on Intel(R) UHD Graphics 620 (WHL GT2) — 1087 passes, 128.7 MB resident
+  [day 1] step 20/195 · pass 1 · active 4 · fired 24 · frontier ≤L1 0/24 · review 0/0 · J-format prompt 0/24 answer 0/24 · assisted 0 · study own 0 corr 34 gold 14 · tools router 4/92 gate 0/92 consulted 85 · sleep 6.296→6.185 COMMIT · retry 0/48 · 155s
+[learn2] stopped after 1 days (LEARN_MAX_DAYS)
+[learn2] finished · 80 of 780 curriculum windows seen · 1 days · 158s

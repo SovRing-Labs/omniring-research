@@ -1,0 +1,23 @@
+{
+ "block_gram_err": {
+  "K3_triangle": 0.0,
+  "K5_pentachoron": 0.0034938562148434937
+ },
+ "256": {
+  "PURE": 0.99951171875,
+  "HYBRID": 0.99951171875
+ },
+ "384": {
+  "PURE": 0.9983723958333334,
+  "HYBRID": 0.998046875
+ },
+ "512": {
+  "PURE": 0.99072265625,
+  "HYBRID": 0.992431640625
+ },
+ "verdict": {
+  "PASS": false,
+  "KILL": false,
+  "blocks_exact": false
+ }
+}

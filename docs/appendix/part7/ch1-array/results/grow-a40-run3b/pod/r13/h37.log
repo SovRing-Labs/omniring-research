@@ -1,0 +1,12 @@
+[thead] warm start from <workspace>/projects/thead-trial/runtime/results/growth-base/r12-elem
+[thead] P3 on: confirmed rows (p > 0.95) skip the backward, full step every 4
+[thead] attention plates on (rows end at token 0)
+[thead] T25 core in the model: 25 clock pairs turned by the rendered core
+[omnitrain_gpu] a decoder continues on the CPU (GPU decode not prepared) — 0 tokens replayed
+[omnitrain_gpu] a decoder continues on the CPU (GPU decode not prepared) — 0 tokens replayed
+[omnitrain_gpu] a decoder continues on the CPU (GPU decode not prepared) — 0 tokens replayed
+[omnitrain_gpu] a decoder continues on the CPU (GPU decode not prepared) — 0 tokens replayed
+[learn2] compiled check: {"agree":128,"n":128,"ok":true,"path":"sift head"}
+[learn2] 195 wake steps · 779 windows · day 20 steps · active 6/6 · doing pool 5146 · levels [0, 1, 2, 3] · start: held-out 0.605 · answer (1750) 0.203
+[omnitrain_gpu] connected to the array server /dev/shm/omr-array-grow-a40-r13-g1 slot 17
+exit 143

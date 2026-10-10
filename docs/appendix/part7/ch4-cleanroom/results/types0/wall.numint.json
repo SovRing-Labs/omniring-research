@@ -1,0 +1,1 @@
+{"leak_set":{"comment_words":106,"identifiers":58,"string_literals":4},"passed":7,"refused":0,"rows":7,"seeded":{"leak_scan_alone":56,"missed":[],"per_kind":["name→need: 7/7","name→new key: 7/7","comment→reader: 7/7","literal→equation: 7/7","name→equation arg: 7/7","literal→example: 7/7","name→provenance key: 7/7","code text→equation: 7/7"],"refused":56,"tried":56}}

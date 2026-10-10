@@ -1,0 +1,96 @@
+; hub_pull — CYCLONE-ARRAY W2b: every slab pulled toward its hub's mean (written by hand from the SPIR-V unified spec; our own code).
+; w[(g·R+q)·W + j] ← K ≥ 1 ? mean[g·W + j] : w + K·(mean − w), K = kf[g·R+q]   — float32, each op rounded (NoContraction: never fused),
+; the arithmetic of runtime/src/shmbus.rs sync() (K ≥ 1 = the DiLoCo merge; a dropped harness is re-seeded with K = 1; K = 0 leaves it).
+; Bindings: 0 w float[G·R·W] (read + write) · 1 mean float[G·W] · 2 kf float[G·R]. SpecId 1 = R, SpecId 2 = W.
+; Element idx = (WorkgroupId.y · NumWorkgroups.x + WorkgroupId.x) · 64 + LocalInvocationId.x over G·R·W = length(w).
+               OpCapability Shader
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %main "main" %lid %wid %nwg
+               OpExecutionMode %main LocalSize 64 1 1
+               OpDecorate %lid BuiltIn LocalInvocationId
+               OpDecorate %wid BuiltIn WorkgroupId
+               OpDecorate %nwg BuiltIn NumWorkgroups
+               OpDecorate %nr SpecId 1
+               OpDecorate %nw SpecId 2
+               OpDecorate %rta_f ArrayStride 4
+               OpMemberDecorate %buf_f 0 Offset 0
+               OpDecorate %buf_f Block
+               OpDecorate %w DescriptorSet 0
+               OpDecorate %w Binding 0
+               OpDecorate %mean DescriptorSet 0
+               OpDecorate %mean Binding 1
+               OpDecorate %mean NonWritable
+               OpDecorate %kf DescriptorSet 0
+               OpDecorate %kf Binding 2
+               OpDecorate %kf NonWritable
+               OpDecorate %d NoContraction
+               OpDecorate %t NoContraction
+               OpDecorate %x1 NoContraction
+       %void = OpTypeVoid
+       %fnty = OpTypeFunction %void
+       %bool = OpTypeBool
+       %uint = OpTypeInt 32 0
+      %float = OpTypeFloat 32
+     %v3uint = OpTypeVector %uint 3
+  %ptr_in_v3 = OpTypePointer Input %v3uint
+        %lid = OpVariable %ptr_in_v3 Input
+        %wid = OpVariable %ptr_in_v3 Input
+        %nwg = OpVariable %ptr_in_v3 Input
+      %rta_f = OpTypeRuntimeArray %float
+      %buf_f = OpTypeStruct %rta_f
+     %ptr_bf = OpTypePointer StorageBuffer %buf_f
+          %w = OpVariable %ptr_bf StorageBuffer
+       %mean = OpVariable %ptr_bf StorageBuffer
+         %kf = OpVariable %ptr_bf StorageBuffer
+      %ptr_f = OpTypePointer StorageBuffer %float
+     %uint_0 = OpConstant %uint 0
+    %uint_64 = OpConstant %uint 64
+    %float_1 = OpConstant %float 1
+         %nr = OpSpecConstant %uint 8
+         %nw = OpSpecConstant %uint 1
+       %main = OpFunction %void None %fnty
+      %entry = OpLabel
+         %l3 = OpLoad %v3uint %lid
+       %lane = OpCompositeExtract %uint %l3 0
+         %w3 = OpLoad %v3uint %wid
+         %wx = OpCompositeExtract %uint %w3 0
+         %wy = OpCompositeExtract %uint %w3 1
+         %n3 = OpLoad %v3uint %nwg
+         %nx = OpCompositeExtract %uint %n3 0
+        %wyn = OpIMul %uint %wy %nx
+         %wg = OpIAdd %uint %wx %wyn
+       %wg64 = OpIMul %uint %wg %uint_64
+        %idx = OpIAdd %uint %wg64 %lane
+      %total = OpArrayLength %uint %w 0
+         %ok = OpULessThan %bool %idx %total
+               OpSelectionMerge %end None
+               OpBranchConditional %ok %body %end
+       %body = OpLabel
+         %ur = OpUDiv %uint %idx %nw
+          %j = OpUMod %uint %idx %nw
+          %g = OpUDiv %uint %ur %nr
+         %gw = OpIMul %uint %g %nw
+         %mi = OpIAdd %uint %gw %j
+         %pk = OpAccessChain %ptr_f %kf %uint_0 %ur
+          %k = OpLoad %float %pk
+         %pm = OpAccessChain %ptr_f %mean %uint_0 %mi
+          %m = OpLoad %float %pm
+         %pw = OpAccessChain %ptr_f %w %uint_0 %idx
+         %x0 = OpLoad %float %pw
+       %full = OpFOrdGreaterThanEqual %bool %k %float_1
+               OpSelectionMerge %join None
+               OpBranchConditional %full %seed %blend
+       %seed = OpLabel
+               OpBranch %join
+      %blend = OpLabel
+          %d = OpFSub %float %m %x0
+          %t = OpFMul %float %k %d
+         %x1 = OpFAdd %float %x0 %t
+               OpBranch %join
+       %join = OpLabel
+         %xn = OpPhi %float %m %seed %x1 %blend
+               OpStore %pw %xn
+               OpBranch %end
+        %end = OpLabel
+               OpReturn
+               OpFunctionEnd

@@ -1,0 +1,25 @@
+PASS x*2 ≡ x+x ≡ x<<1: 3 fns → classes [3, 3, 3] after 2 iterations (saturated true, 8 e-nodes)
+PASS clamp ≡ min∘max: 2 fns → classes [4, 4] after 4 iterations (saturated true, 22 e-nodes)
+PASS (a+b)−b ≡ a: 2 fns → classes [4, 4] after 10 iterations (saturated false, 18130 e-nodes)
+PASS a−b ≢ b−a: 2 fns → classes [3, 4] after 3 iterations (saturated true, 11 e-nodes)
+abc probe: PASS
+{"eclasses":6485,"enodes":6485,"fns":126,"lowered_ok":70,"nodes":11386,"opaque":1645,"opaque_max":0.2,"secs":0.054714118,"share_ok":0.5555555555555556,"top_opaque":["field of: 67","match: 52",".s(): 51",".push(): 50","if let: 48","call new: 45","matches!: 44","call res0: 37",".get(): 37","break: 33",".is_empty(): 28","struct literal: 25","call res: 21",".trim(): 18","format!: 18",".insert(): 16",".with(): 16",".attr(): 15",".flat_children(): 14",".is_abs(): 14",".is_none(): 13","iter.any: 12",".tag(): 12","while body: 12",".and_then(): 12"]}
+abc lower: 126 fns · 70 with ≤ 20% opaque nodes (55.6%) · 11386 nodes, 1645 opaque · 6485 e-nodes · 0.05s
+{"eclasses":27956,"enodes":27956,"fns":943,"lowered_ok":382,"nodes":52436,"opaque":9819,"opaque_max":0.2,"secs":0.253035719,"share_ok":0.4050901378579003,"top_opaque":["call new: 417","match: 331","if let: 320",".push(): 266",".get(): 261","field of: 220","while body: 206",".ok(): 157","format!: 146","struct literal: 134","break: 132",".contains(): 130",".insert(): 121",".is_empty(): 104","while: 102","matches!: 98",".and_then(): 94",".with(): 77","iter.any: 63",".entry(): 59","iter.find: 58","token ->: 57",".enumerate(): 56","call now: 55","loop body: 55"]}
+abc lower: 943 fns · 382 with ≤ 20% opaque nodes (40.5%) · 52436 nodes, 9819 opaque · 27956 e-nodes · 0.25s
+pair table_minmax ↔ grid_grow: 0 shared signatures (size ≥ 3)
+pair table_minmax ↔ grid_grow: 2 anti-unifiers with ≥ 3 shared operators (18 × 28 sub-terms)
+    lgg 4 ops: (+ ?0 (/ (* (- ?1 ?0) ?2) ?3))
+    lgg 3 ops: (/ (* (- ?0 ?1) ?2) ?3)
+{"enodes_lowered":52,"enodes_saturated":52,"fns":2,"iters":0,"saturated":true,"secs":0.001870408,"shared":0,"shared_fns":0,"signatures":10}
+pair table ↔ grid: 0 shared signatures (size ≥ 4)
+pair table ↔ grid: 63 anti-unifiers with ≥ 4 shared operators (302 × 496 sub-terms)
+    lgg 10 ops: (idx (sel (and ?0 ?1) ?2 (sel (and ?3 ?4) ?5 (sel ?6 (sel (> (sum (map ?7 ?8)) 0) ?9 ?10) ?11))) ?12)
+    lgg 10 ops: (sel (and ?0 ?1) ?2 (sel (and ?3 ?4) ?5 (sel ?6 (sel (> (sum (map (filter ?7 ?8) ?9)) 0) ?10 ?11) ?12)))
+    lgg 9 ops: (sel (and ?0 ?1) ?2 (sel ?3 (sel (> (sum (map (filter (range ?4 ?5) ?6) ?7)) 0) ?8 ?9) ?10))
+    lgg 9 ops: (sel ?0 (fold ?1 ?2 ?3) (sel ?4 (sel (> (sum (map (filter (range ?5 ?6) ?7) ?8)) 0) ?9 ?10) ?11))
+    lgg 9 ops: (sel (and ?0 ?1) (fold ?2 ?3 (sel (> ?4 ?5) ?6 ?7)) (sel ?8 (sel ?9 ?10 (sel ?11 ?12 ?13)) (sel ?14 ?15 ?16)))
+    lgg 8 ops: (+ (sum (idx ?0 (range ?1 (min (+ ?2 (get1 ?3)) ?4)))) (* ?5 ?6))
+    lgg 8 ops: (+ (idx ?0 ?1) (/ (- ?2 ?3) (len (filter (range 0 ?4) (not ?5)))))
+    lgg 8 ops: (+ ?0 (/ (* (- ?1 ?2) ?3) (sum (map (filter (range 0 ?4) ?5) ?6))))
+{"enodes_lowered":6485,"enodes_saturated":6485,"fns":126,"iters":0,"saturated":true,"secs":0.225390676,"shared":24,"shared_fns":10,"signatures":1085}

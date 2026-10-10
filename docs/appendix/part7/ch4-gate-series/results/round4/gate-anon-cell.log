@@ -1,0 +1,16 @@
+LOST en-cppreference-com-w-cpp-container-vector n4251 <div .> base Some([0.0, 15.859375, -33.75, 0.0]) cand Some([0.0, 16.609375, -39.75, 0.0]) «|In other languages| | |Čeština|»
+GAIN en-cppreference-com-w-cpp-container-vector n3242 <span .t-lines> base Some([0.0, 7.640625, -51.9375, 0.0]) cand Some([0.0, 4.140625, -0.015625, 0.0]) «emplace|»
+GAIN en-cppreference-com-w-cpp-container-vector n3272 <span .> base Some([0.0, 8.53125, -36.53125, 0.0]) cand Some([0.0, 5.03125, -0.015625, 0.0]) «erase|»
+GAIN en-cppreference-com-w-cpp-container-vector n2752 <td .> base Some([0.0, -3.21875, -86.421875, 0.890625]) cand Some([0.0, -3.21875, 0.015625, 0.890625]) «|operator[]| |»
+GAIN en-cppreference-com-w-cpp-container-vector n4070 <tr .t-dsc> base Some([0.0, 14.0625, -100.90625, 0.890625]) cand Some([0.0, 14.8125, 0.9375, 0.890625]) «| |array|(C++11)| | |fixed-sized inplace contiguous array | |(class te»
+GAIN en-cppreference-com-w-cpp-container-vector n2973 <span .> base Some([-36.515625, 7.109375, 4.015625, -5.125]) cand Some([0.0, 0.484375, 0.015625, 0.0]) «(C++11)|»
+GAIN en-cppreference-com-w-cpp-container-vector n3002 <div .> base Some([0.0, -0.40625, -36.53125, 0.0]) cand Some([0.0, -3.90625, -0.015625, 0.0]) «|empty|»
+GAIN en-cppreference-com-w-cpp-container-vector n2621 <div .> base Some([0.0, -12.140625, -67.34375, 0.0]) cand Some([0.0, -12.140625, -0.015625, 0.0]) «|operator=|»
+GAIN en-cppreference-com-w-cpp-container-vector n4106 <span .t-lines> base Some([0.0, 10.515625, -36.53125, 0.0]) cand Some([0.0, 11.265625, -0.015625, 0.0]) «deque|»
+GAIN en-cppreference-com-w-cpp-container-vector n3345 <div .> base Some([0.0, 11.203125, -90.453125, 0.0]) cand Some([0.0, 7.703125, -0.015625, 0.0]) «|append_range|»
+GAIN en-cppreference-com-w-cpp-container-vector n3452 <td .> base Some([0.0, 19.203125, -67.84375, 0.03125]) cand Some([0.0, 15.703125, 0.234375, 0.03125]) «|operator==|operator!=|operator<|operator<=|operator>|operator>=|opera»
+GAIN en-cppreference-com-w-cpp-container-vector n2895 <span .t-lines> base Some([0.0, 1.734375, -28.828125, 0.0]) cand Some([0.0, 0.421875, -0.015625, 0.0]) «end|cend|»
+GAIN en-cppreference-com-w-cpp-container-vector n4038 <table .t-dsc-begin> base Some([0.0, 13.171875, -100.90625, 2.671875]) cand Some([0.0, 13.921875, 0.9375, 2.671875]) «| | |inplace_vector|(C++26)| | |resizable, fixed capacity, inplace con»
+LOST en-wikipedia-org-wiki-Web-browser n3229 <ul .noprint portalbox portalborder portalright> base Some([-6.015625, -0.296875, 6.015625, -1.1875]) cand Some([-0.015625, -0.296875, 0.015625, -5.1875]) «|Internet portal|»
+{"base":[19117,3045],"cand":[19468,3045],"clause":"patch.anon_cell[*]=-1","gained":[353,0],"lost":[2,0],"pages":[{"gained":353,"holdout":false,"lost":1,"lost_nodes":[4251],"page":"en-cppreference-com-w-cpp-container-vector"},{"gained":0,"holdout":false,"lost":1,"lost_nodes":[3229],"page":"en-wikipedia-org-wiki-Web-browser"}],"pass":false,"program":"results/omr.program.json","secs":3.100010607,"sets":"1ee26bbc9aa4"}
+patch-gate patch.anon_cell[*]=-1: base replay 19117 holdout 3045 → cand 19468 / 3045 · lost 2/0 · gained 353/0 → FAIL (3.1s)

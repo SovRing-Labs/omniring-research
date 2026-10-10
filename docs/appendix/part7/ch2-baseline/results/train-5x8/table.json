@@ -1,0 +1,90 @@
+{
+ "pod": {
+  "id": "36s5pzl5fsqa3o",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "vcpu_quota": 32,
+  "price_per_h": 1.79,
+  "note": "nproc shows the host's 256 cores; the pod quota is 32 vCPU"
+ },
+ "what_ran": "AS-BUILT baseline: each harness a separate CPU process (omni-render thead-learn, school switches, warm from r16, 1 day = 52 steps of 2,048 tokens); 'gpu' lib = GPU-LOOP G4 prototype offloading sgemm calls >= 2^28 under one global mutex with synchronous copies. Model, harnesses and the T50 ring system are NOT resident in VRAM; the batched 5x8 layout is not built.",
+ "runs": [
+  {
+   "tag": "one-cpu",
+   "harnesses": 1,
+   "threads": 4,
+   "lib": "cpu",
+   "train_s_per_step_median": 1.127,
+   "tok_s_per_harness_median": 1817.6,
+   "tok_s_aggregate_train": 1817.6,
+   "tok_s_aggregate_wall": 1412.8,
+   "gpu_util_mean": 0.0,
+   "vram_mib_max": 0.0,
+   "wall_s": 75.4
+  },
+  {
+   "tag": "one-gpu",
+   "harnesses": 1,
+   "threads": 4,
+   "lib": "gpu",
+   "train_s_per_step_median": 0.833,
+   "tok_s_per_harness_median": 2458.9,
+   "tok_s_aggregate_train": 2458.9,
+   "tok_s_aggregate_wall": 1870.4,
+   "gpu_util_mean": 18.6,
+   "vram_mib_max": 525.0,
+   "wall_s": 56.9
+  },
+  {
+   "tag": "unit8-cpu",
+   "harnesses": 8,
+   "threads": 4,
+   "lib": "cpu",
+   "train_s_per_step_median": 1.182,
+   "tok_s_per_harness_median": 1732.6,
+   "tok_s_aggregate_train": 13320.3,
+   "tok_s_aggregate_wall": 10175.7,
+   "gpu_util_mean": 0.0,
+   "vram_mib_max": 0.0,
+   "wall_s": 83.7
+  },
+  {
+   "tag": "unit8-gpu",
+   "harnesses": 8,
+   "threads": 4,
+   "lib": "gpu",
+   "train_s_per_step_median": 1.038,
+   "tok_s_per_harness_median": 1974.0,
+   "tok_s_aggregate_train": 15439.8,
+   "tok_s_aggregate_wall": 10390.8,
+   "gpu_util_mean": 82.6,
+   "vram_mib_max": 4176.0,
+   "wall_s": 82.0
+  },
+  {
+   "tag": "layout5x8-cpu",
+   "harnesses": 40,
+   "threads": 1,
+   "lib": "cpu",
+   "train_s_per_step_median": 5.1,
+   "tok_s_per_harness_median": 401.5,
+   "tok_s_aggregate_train": 15889.6,
+   "tok_s_aggregate_wall": 12452.9,
+   "gpu_util_mean": 0.0,
+   "vram_mib_max": 425.0,
+   "wall_s": 342.1
+  },
+  {
+   "tag": "layout5x8-gpu",
+   "harnesses": 40,
+   "threads": 1,
+   "lib": "gpu",
+   "train_s_per_step_median": 5.081,
+   "tok_s_per_harness_median": 403.1,
+   "tok_s_aggregate_train": 15793.6,
+   "tok_s_aggregate_wall": 10380.0,
+   "gpu_util_mean": 93.1,
+   "vram_mib_max": 20875.0,
+   "wall_s": 410.4
+  }
+ ]
+}

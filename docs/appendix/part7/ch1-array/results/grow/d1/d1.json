@@ -1,0 +1,12 @@
+{
+ "gate": "D1: the harness decode on the GPU vs the CPU engine (teacher-forced, real core + held-out rows)",
+ "rows": 24,
+ "steps": 1536,
+ "top1_agree": 1536,
+ "top1_agree_rate": 1.0,
+ "margin_absdiff_max": 0.06406999999999918,
+ "margin_absdiff_median": 0.0,
+ "logit_absdiff_max": 0.0485799999999994,
+ "rows_with_identical_exits": 24,
+ "pass": true
+}

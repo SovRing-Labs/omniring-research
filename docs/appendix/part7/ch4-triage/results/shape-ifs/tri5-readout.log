@@ -1,0 +1,7 @@
+  2764  FIT all five
+  2178  DEFECT none fit
+   917  SPLIT fits only from below (◺/⊿) → top displaced from above
+   607  SPLIT other
+   515  SPLIT fits from above (△◸◹) → shape right, frame bottom differs: carried
+   207  SPLIT fits from the previous sibling, not the next
+   199  SPLIT fits from the next sibling, not the previous

@@ -1,0 +1,4973 @@
+{
+  "active": 6,
+  "config": {
+    "D": 256,
+    "H": 4,
+    "L": 6,
+    "V": 8192,
+    "arc": true,
+    "arc_amp": false,
+    "batch": 4,
+    "boot_theta": 0.0,
+    "build": "../build-v4/live-r15-c15040",
+    "canaries": 40,
+    "compiled_check": {
+      "agree": 128,
+      "n": 128,
+      "ok": true,
+      "path": "sift head"
+    },
+    "control": "<out>/control.json, read every morning",
+    "copy": 6.0,
+    "ctx": 512,
+    "day": "wake (curriculum only, tools on, depth routing) → doing (level+1 + review: (a) forward solve, then (b) J's format; tools on) → study (own solves + corrected slips with avoid pushes, no wrong targets, tools on) → sleep (integrate all blocks + re-settle the top, tools on, canary gate) → retry",
+    "day_steps": 20,
+    "do_cap": 512,
+    "do_lp": false,
+    "do_n": 32,
+    "do_review": 8,
+    "doing": "../build-v4/seed-v4-doing-bank",
+    "epoch_windows": 779,
+    "exit_theta": 3.0,
+    "feed": {
+      "built": {},
+      "spec": "answer"
+    },
+    "fixed_path": [
+      "arith.mul",
+      "arith.mul_rns",
+      "arith.mrc_compare",
+      "arith.mrc_plate",
+      "units.dimension",
+      "calendar.crt",
+      "calendar.ring_euclid",
+      "calendar.clock",
+      "numth.prime_trial",
+      "numth.prime",
+      "science.factorial",
+      "graph.group_walk"
+    ],
+    "gate_tol": 0.01,
+    "grade_stop": true,
+    "harmony": {
+      "kappa": 0.8999999761581421,
+      "lambda": 0.05000000074505806,
+      "on": true
+    },
+    "heldout": "../build-v4/seed-v4-short-heldout",
+    "int_bwd": false,
+    "ladder": false,
+    "ladder_start": 2,
+    "levels": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "local": 2,
+    "local_stride": 4,
+    "lut5": true,
+    "margin_theta": 1.0,
+    "mount_seeded": {
+      "all": [],
+      "seeded_now": []
+    },
+    "opt_mode": 0.0,
+    "p3": 0.949999988079071,
+    "pages": {
+      "loaded": 0,
+      "on": false
+    },
+    "peak_lr": 0.0015,
+    "plate_page": false,
+    "plates": 31,
+    "plates_attn": true,
+    "pointer": 5.0,
+    "procedure_plate": 26,
+    "ring": null,
+    "roles": true,
+    "route_sat": 0.8999999761581421,
+    "route_theta": 3.0,
+    "router_ce": 0.5,
+    "router_simplex_cos": -0.03333333134651184,
+    "sieve": 64,
+    "sleep_lr": 0.3,
+    "sleep_steps": 12,
+    "spark": 4.0,
+    "stations": 4,
+    "study_steps": 20,
+    "t25_core": 25,
+    "t25_fields": false,
+    "tier1_seed": null,
+    "tools": true,
+    "voicing": true,
+    "warm_from": "results/live-r14/h4"
+  },
+  "day_n": 10,
+  "days": [
+    {
+      "active": 6,
+      "answered_rate": 0.6511627906976745,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 1,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 42,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 146,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 7.37637201944987,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 6.663105209668477,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 5.646018822987874,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 5.178901433944702,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 6.142952044804891,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 6.078555762767792,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 6.745687961578369,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 3.8381102681159973,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 6.976742744445801,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 4.635086417198181,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 6.974386374155681,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 3.52063524723053,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 7.531426224597665,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 4.136526385943095,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 6.498023118291583,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 4.341214876908523,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 7.415869147278542,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 7.001137614250183,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 7.148007392883301,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 5.945646047592163,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 5.397090911865234,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 7.423630786496539,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 5.700391411781311,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 7.039179792770972,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 4.051474791306716,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 7.54597712672034,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 4.91164568066597,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 7.578973698061566,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 5.379412353038788,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 2.5271318964660168,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 6.504205862681071,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 7.265645980834961,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 7.22098724047343,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 5.851307498084174,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 7.1957120814565885,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 4.697659254074097,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 7.182460360607858,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 4.393168613314629,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 7.072193434072095,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 7.40807766692583,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 8.159039855003357,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 6.80949338277181,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 2.9628764258490667,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 0.9417876171029524,
+            "sureness": 7.37637201944987
+          },
+          "arith.mul": {
+            "drive_weight": 1.2304202385542609,
+            "sureness": 5.646018822987874
+          },
+          "arith.mul_rns": {
+            "drive_weight": 1.1308855703891847,
+            "sureness": 6.142952044804891
+          },
+          "calendar.clock": {
+            "drive_weight": 1.029839486592131,
+            "sureness": 6.745687961578369
+          },
+          "calendar.crt": {
+            "drive_weight": 0.9957334076268024,
+            "sureness": 6.976742744445801
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.9960698267026521,
+            "sureness": 6.974386374155681
+          },
+          "causal.dag": {
+            "drive_weight": 0.922398443521061,
+            "sureness": 7.531426224597665
+          },
+          "code.debug": {
+            "drive_weight": 1.0690906604359758,
+            "sureness": 6.498023118291583
+          },
+          "graph.group": {
+            "drive_weight": 0.9367716297437598,
+            "sureness": 7.415869147278542
+          },
+          "graph.group_walk": {
+            "drive_weight": 0.9718758592750106,
+            "sureness": 7.148007392883301
+          },
+          "graph.path": {
+            "drive_weight": 1.2871704294974924,
+            "sureness": 5.397090911865234
+          },
+          "logic.chain": {
+            "drive_weight": 0.9357922055739921,
+            "sureness": 7.423630786496539
+          },
+          "mind.revise": {
+            "drive_weight": 0.9869013196959288,
+            "sureness": 7.039179792770972
+          },
+          "mind.tom": {
+            "drive_weight": 0.9206197832833753,
+            "sureness": 7.54597712672034
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.9166116817161376,
+            "sureness": 7.578973698061566
+          },
+          "numth.prime": {
+            "drive_weight": 1.0680744081182885,
+            "sureness": 6.504205862681071
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.9620534693822727,
+            "sureness": 7.22098724047343
+          },
+          "sat.dpll": {
+            "drive_weight": 0.9654327116512906,
+            "sureness": 7.1957120814565885
+          },
+          "sat.trit": {
+            "drive_weight": 0.9672139459569057,
+            "sureness": 7.182460360607858
+          },
+          "search.wave": {
+            "drive_weight": 0.9822943746976376,
+            "sureness": 7.072193434072095
+          },
+          "struct.pushdown": {
+            "drive_weight": 0.9377568836890193,
+            "sureness": 7.40807766692583
+          },
+          "units.dimension": {
+            "drive_weight": 1.0201898197946135,
+            "sureness": 6.80949338277181
+          }
+        },
+        "to_harness": 94,
+        "to_model": 52
+      },
+      "assisted": 9,
+      "avoid_push": {
+        "mean_unlikelihood": 0.7890293334992908,
+        "pushes": 518.0
+      },
+      "control": {},
+      "day": 1,
+      "exits_per_block": [
+        0,
+        17,
+        1357,
+        227,
+        352,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "graph.path",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "search.wave",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime"
+      ],
+      "frontier": [
+        0,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8389155673320872,
+          0.6982619232468215,
+          0.7033815320426645,
+          0.6949305354483813,
+          0.7055400151051738,
+          0.7433986021390407
+        ],
+        "penalty_per_block": [
+          0.3256255242765919,
+          1.121474795574033,
+          1.072081775496086,
+          0.9558277049323869,
+          0.8607824439120464,
+          0.6945834090641184
+        ]
+      },
+      "j_format": {
+        "answer_own": 2,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 1,
+      "retry": [
+        0,
+        32
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          3591,
+          32396,
+          9958,
+          5877,
+          0
+        ],
+        "rows": 212574,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.3823471896551419,
+        "right": 0.8899567331623081,
+        "rows": 26117.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 1.233544024,
+        "retry": 0.822097211,
+        "sleep": 21.709409756,
+        "study": 39.551699907,
+        "wake": 14.173268949
+      },
+      "sleep": {
+        "canary_after": 2.8752742818652783,
+        "canary_before": 3.0713648518104724,
+        "decision": "COMMIT",
+        "replay_loss": 2.0709519386291504,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 20,
+      "study": {
+        "correction": 28,
+        "generator": 15,
+        "loss": 3.780992269515991,
+        "own": 0
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 148,
+        "consulted": 6,
+        "gate_open": 114,
+        "router_right": 101
+      },
+      "wake_loss": 0.23676694929599762
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.5813953488372093,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 293,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 3.901659448941549,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 5.436742871999741,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 4.557948589324951,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 6.265298795700073,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 4.759874264399211,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 5.818679761886597,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 3.381992061932882,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 5.221843123435974,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 3.263421098391215,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 4.818010032176971,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 4.707890272140503,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 4.684729957580567,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 4.737103666578021,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 4.706754207611084,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 1.7665782171137192,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 4.3571741580963135,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 2.528539771029541,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 5.581095337867737,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 3.260638952255249,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 6.2249568700790405,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 3.826374922479902,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 5.364441931247711,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 4.958137035369873,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 3.225187176515248,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 1.6099146449047586,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 2.7064971837158107,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 5.000520467758179,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 3.8319825924618143,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 5.196649789810181,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 1.8720383048057556,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 3.277208666006724,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 6.035447120666504,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 3.4049142599105835,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 5.780640959739685,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 6.162180213604943,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 3.9301454623540244,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 1.714086841134464,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 1.7411276666741622,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 4.2360535104359895,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 1.1471157868703206,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 1.8653797799614584,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 4.976192426681519,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 3.1209897796312966,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 4.49459981918335,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 0.9391205709012646,
+            "sureness": 6.333958248297374
+          },
+          "arith.mul": {
+            "drive_weight": 1.1181955408142166,
+            "sureness": 5.319597752888997
+          },
+          "arith.mul_rns": {
+            "drive_weight": 1.038463804329699,
+            "sureness": 5.728028710683187
+          },
+          "calendar.clock": {
+            "drive_weight": 1.0369159541679556,
+            "sureness": 5.736579191684722
+          },
+          "calendar.crt": {
+            "drive_weight": 1.014601388481923,
+            "sureness": 5.862746250629425
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.9450170003354943,
+            "sureness": 6.294437543551127
+          },
+          "causal.dag": {
+            "drive_weight": 0.8887248519919628,
+            "sureness": 6.693129457191771
+          },
+          "code.debug": {
+            "drive_weight": 1.1712603101573054,
+            "sureness": 5.078589647938223
+          },
+          "graph.group": {
+            "drive_weight": 0.9997781644824241,
+            "sureness": 5.949670334403842
+          },
+          "graph.group_walk": {
+            "drive_weight": 0.9944086408702958,
+            "sureness": 5.981796860694885
+          },
+          "graph.path": {
+            "drive_weight": 1.207572084087191,
+            "sureness": 4.925876115049634
+          },
+          "logic.chain": {
+            "drive_weight": 0.874002423884685,
+            "sureness": 6.80587412992189
+          },
+          "mind.revise": {
+            "drive_weight": 1.0090532046137002,
+            "sureness": 5.894982007894255
+          },
+          "mind.tom": {
+            "drive_weight": 0.9760781961646113,
+            "sureness": 6.094133143818981
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.9215281825049461,
+            "sureness": 6.45487636638164
+          },
+          "numth.prime": {
+            "drive_weight": 1.0744645659111118,
+            "sureness": 5.536106703678767
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.9789645520136303,
+            "sureness": 6.076165346304575
+          },
+          "sat.dpll": {
+            "drive_weight": 0.863876076810015,
+            "sureness": 6.885652521101095
+          },
+          "sat.trit": {
+            "drive_weight": 1.073332005116409,
+            "sureness": 5.54194830476584
+          },
+          "search.wave": {
+            "drive_weight": 0.9561187030401388,
+            "sureness": 6.221351456981263
+          },
+          "struct.pushdown": {
+            "drive_weight": 1.0353477287283026,
+            "sureness": 5.745268300836518
+          },
+          "units.dimension": {
+            "drive_weight": 1.0430318546791917,
+            "sureness": 5.702942301829655
+          }
+        },
+        "to_harness": 95,
+        "to_model": 52
+      },
+      "assisted": 4,
+      "avoid_push": {
+        "mean_unlikelihood": 0.20326583547011715,
+        "pushes": 603.0
+      },
+      "control": {},
+      "day": 2,
+      "exits_per_block": [
+        0,
+        1,
+        819,
+        179,
+        101,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "graph.path",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "search.wave",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime"
+      ],
+      "frontier": [
+        0,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8494787597972077,
+          0.71792797086497,
+          0.7218800665668373,
+          0.7058507411685536,
+          0.7155349884205061,
+          0.7742772638265618
+        ],
+        "penalty_per_block": [
+          0.1660466610177195,
+          0.7052007134626315,
+          0.7581762756886434,
+          0.6489712165250996,
+          0.5957484764949043,
+          0.38819911862941614
+        ]
+      },
+      "j_format": {
+        "answer_own": 0,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 3,
+      "retry": [
+        1,
+        39
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          1892,
+          22292,
+          4054,
+          2260,
+          0
+        ],
+        "rows": 133524,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.07143097145582478,
+        "right": 0.9854463803068735,
+        "rows": 24049.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 1.793373047,
+        "retry": 1.130308426,
+        "sleep": 19.741886317,
+        "study": 44.821459593,
+        "wake": 21.877486584
+      },
+      "sleep": {
+        "canary_after": 1.6989318779231186,
+        "canary_before": 1.7199139723328731,
+        "decision": "COMMIT",
+        "replay_loss": 1.6230213642120361,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 40,
+      "study": {
+        "correction": 29,
+        "generator": 14,
+        "loss": 2.629446268081665,
+        "own": 0
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 101,
+        "consulted": 25,
+        "gate_open": 65,
+        "router_right": 28
+      },
+      "wake_loss": 0.683910071849823
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.46511627906976744,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 440,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 1.9541191056717273,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 2.385185271501541,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 3.6293439923263175,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 2.479924464225769,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 2.401527261734009,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 2.53146669599745,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 2.085916260878245,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 2.132265420187087,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 2.06109348932902,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 2.4601972579956053,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 2.127430235898053,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 2.0545462235402505,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 3.225155820846558,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 1.5843298551255622,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 0.9427051512315312,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 3.7156001925468445,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 3.17473631007697,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 5.839033246040344,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 1.9038484222010563,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 6.480550169944763,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 1.859507713317871,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 1.99368075763478,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 3.318286592310125,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 1.6099151883806502,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 4.793950661368992,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 3.3321321823693424,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 4.740582704544067,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 3.627968558366748,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 2.9836302237077192,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 1.8514814640466983,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 3.6559131781260175,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 4.141495977129255,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 1.6079143796648299,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 3.5213877132960727,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 1.736179682109458,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 2.2217782880894092,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 2.4129128217697144,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 1.6744178229004798,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 2.392990517616272,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 3.3094659487406415,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 2.5427385297904452,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 2.864395570755005,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 3.380973151751927,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 1.8400154219552518,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 0.9752088801866986,
+            "sureness": 5.02000650550968
+          },
+          "arith.mul": {
+            "drive_weight": 1.0172535947934929,
+            "sureness": 4.812521624720193
+          },
+          "arith.mul_rns": {
+            "drive_weight": 1.0349839129743945,
+            "sureness": 4.730078275998434
+          },
+          "calendar.clock": {
+            "drive_weight": 1.054762719970147,
+            "sureness": 4.641380312442779
+          },
+          "calendar.crt": {
+            "drive_weight": 1.0366995574213007,
+            "sureness": 4.722250422239304
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.970505444597345,
+            "sureness": 5.044335351255205
+          },
+          "causal.dag": {
+            "drive_weight": 0.8660503054615885,
+            "sureness": 5.652737366288207
+          },
+          "code.debug": {
+            "drive_weight": 1.2756068390462179,
+            "sureness": 3.8378242989262152
+          },
+          "graph.group": {
+            "drive_weight": 0.9566881044415879,
+            "sureness": 5.11719012710578
+          },
+          "graph.group_walk": {
+            "drive_weight": 1.0288210823558228,
+            "sureness": 4.758412329146736
+          },
+          "graph.path": {
+            "drive_weight": 1.2220661429176052,
+            "sureness": 4.005965594530105
+          },
+          "logic.chain": {
+            "drive_weight": 0.9129723261468884,
+            "sureness": 5.362216118235756
+          },
+          "mind.revise": {
+            "drive_weight": 1.0620664544113598,
+            "sureness": 4.609461962040173
+          },
+          "mind.tom": {
+            "drive_weight": 0.9297358989531811,
+            "sureness": 5.265532855384089
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.873145360856645,
+            "sureness": 5.606804023977172
+          },
+          "numth.prime": {
+            "drive_weight": 0.9846152504347991,
+            "sureness": 4.972048646012942
+          },
+          "numth.prime_trial": {
+            "drive_weight": 1.033757459748086,
+            "sureness": 4.7356900563126505
+          },
+          "sat.dpll": {
+            "drive_weight": 0.9166314302833566,
+            "sureness": 5.340810669403604
+          },
+          "sat.trit": {
+            "drive_weight": 1.063502535497913,
+            "sureness": 4.603237659867002
+          },
+          "search.wave": {
+            "drive_weight": 0.9650515014397767,
+            "sureness": 5.072843175171766
+          },
+          "struct.pushdown": {
+            "drive_weight": 1.023209391949925,
+            "sureness": 4.784509369522696
+          },
+          "units.dimension": {
+            "drive_weight": 0.9778687867240031,
+            "sureness": 5.006351556806337
+          }
+        },
+        "to_harness": 95,
+        "to_model": 52
+      },
+      "assisted": 6,
+      "avoid_push": {
+        "mean_unlikelihood": 0.1302911705548687,
+        "pushes": 431.0
+      },
+      "control": {},
+      "day": 3,
+      "exits_per_block": [
+        0,
+        32,
+        1018,
+        388,
+        146,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "graph.path",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "search.wave",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime"
+      ],
+      "frontier": [
+        0,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.855746675249937,
+          0.707440265363691,
+          0.7217777531488051,
+          0.6898367865769734,
+          0.6988346855587279,
+          0.7678304179002937
+        ],
+        "penalty_per_block": [
+          0.15524590987905365,
+          0.7001823957921449,
+          0.6552455606369273,
+          0.6630499709691249,
+          0.6064938156771819,
+          0.40090779464566373
+        ]
+      },
+      "j_format": {
+        "answer_own": 4,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 6,
+      "retry": [
+        5,
+        33
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          1748,
+          20681,
+          4219,
+          2714,
+          0
+        ],
+        "rows": 133524,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.06660859622280299,
+        "right": 0.9861671219808334,
+        "rows": 23061.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 2.001976218,
+        "retry": 0.953769649,
+        "sleep": 21.712213564,
+        "study": 38.544601583,
+        "wake": 23.941330906
+      },
+      "sleep": {
+        "canary_after": 1.5067823253939505,
+        "canary_before": 1.545544466095655,
+        "decision": "COMMIT",
+        "replay_loss": 1.6832228899002075,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 60,
+      "study": {
+        "correction": 24,
+        "generator": 17,
+        "loss": 2.394178628921509,
+        "own": 3
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 73,
+        "consulted": 8,
+        "gate_open": 41,
+        "router_right": 37
+      },
+      "wake_loss": 3.8302793502807617
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.18604651162790697,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 587,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 2.43567535151606,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 1.4010019471459354,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 1.251535231652467,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 0.9489566433814264,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 1.9297329902648925,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 1.4046129411266697,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 4.1311803923712835,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 1.2417840538024902,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 4.203631824917263,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 2.372212118572659,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 4.1611827744377985,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 2.5686283111572266,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 2.332608836037772,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 1.8314333829012783,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 1.5674684047698975,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 1.8626643493771553,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 3.0333422554863825,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 1.1545785100836503,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 3.030278732465661,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 1.0419358454252545,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 2.6700306137402854,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 2.4438765683137547,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 1.6706554492314656,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 1.4728057439937148,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 1.1787512143452963,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 2.776486548510465,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 1.8732788562774658,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 2.6635563807054,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 0.9281946420669556,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 2.5243025559645433,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 1.6000773028323525,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 1.4346085275922502,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 3.1987177530924478,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 2.0100584030151367,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 2.0760932646487418,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 2.6830031451056984,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 1.8114824692408245,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 1.219782253791546,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 2.424125974828547,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 1.323699292682466,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 2.0307738230778623,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 1.0409795610528243,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 1.275351502678611,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 2.7524203062057495,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 0.9824807780291787,
+            "sureness": 4.244707159311593
+          },
+          "arith.mul": {
+            "drive_weight": 1.113806570157545,
+            "sureness": 3.744225706799875
+          },
+          "arith.mul_rns": {
+            "drive_weight": 1.0720746340095197,
+            "sureness": 3.889974690278371
+          },
+          "calendar.clock": {
+            "drive_weight": 0.9291545343912812,
+            "sureness": 4.48832033642133
+          },
+          "calendar.crt": {
+            "drive_weight": 0.9132142024260862,
+            "sureness": 4.566664843042691
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.872568164645911,
+            "sureness": 4.779389578209982
+          },
+          "causal.dag": {
+            "drive_weight": 0.8955578544025119,
+            "sureness": 4.656698807213076
+          },
+          "code.debug": {
+            "drive_weight": 1.321101160257766,
+            "sureness": 3.1567175306793196
+          },
+          "graph.group": {
+            "drive_weight": 0.9283860169378941,
+            "sureness": 4.492035765619961
+          },
+          "graph.group_walk": {
+            "drive_weight": 0.983577944937353,
+            "sureness": 4.239972250142413
+          },
+          "graph.path": {
+            "drive_weight": 1.1567625728973983,
+            "sureness": 3.6051851002931588
+          },
+          "logic.chain": {
+            "drive_weight": 0.9294871384682313,
+            "sureness": 4.486714253259155
+          },
+          "mind.revise": {
+            "drive_weight": 1.1368087422234994,
+            "sureness": 3.6684650966262358
+          },
+          "mind.tom": {
+            "drive_weight": 0.9228834406149033,
+            "sureness": 4.518818963322001
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.8828309718749109,
+            "sureness": 4.723829730995639
+          },
+          "numth.prime": {
+            "drive_weight": 1.052995383221361,
+            "sureness": 3.960457243058765
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.9756105336573165,
+            "sureness": 4.2745983653465895
+          },
+          "sat.dpll": {
+            "drive_weight": 0.9561946955121261,
+            "sureness": 4.361395447977145
+          },
+          "sat.trit": {
+            "drive_weight": 1.1074517079707606,
+            "sureness": 3.7657111026791483
+          },
+          "search.wave": {
+            "drive_weight": 0.9747828254355944,
+            "sureness": 4.2782280150688
+          },
+          "struct.pushdown": {
+            "drive_weight": 1.053545647626256,
+            "sureness": 3.958388705589246
+          },
+          "units.dimension": {
+            "drive_weight": 1.0728808581161913,
+            "sureness": 3.8870515405680184
+          }
+        },
+        "to_harness": 95,
+        "to_model": 52
+      },
+      "assisted": 1,
+      "avoid_push": {
+        "mean_unlikelihood": 0.11221145414477585,
+        "pushes": 438.0
+      },
+      "control": {},
+      "day": 4,
+      "exits_per_block": [
+        0,
+        22,
+        1123,
+        307,
+        154,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "graph.path",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "search.wave",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime"
+      ],
+      "frontier": [
+        0,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8802125841857292,
+          0.6788439182627348,
+          0.6929529137338619,
+          0.6752823260955644,
+          0.6751278467874738,
+          0.742151890981791
+        ],
+        "penalty_per_block": [
+          0.11918237027645139,
+          0.7357018640304487,
+          0.6637166828911123,
+          0.6547765177790805,
+          0.6337412656326612,
+          0.4356261545991753
+        ]
+      },
+      "j_format": {
+        "answer_own": 1,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 6,
+      "retry": [
+        6,
+        41
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          1112,
+          15365,
+          3893,
+          1850,
+          0
+        ],
+        "rows": 133524,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.10891052365713141,
+        "right": 0.9784515930429429,
+        "rows": 19491.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 1.704798667,
+        "retry": 1.6670241940000001,
+        "sleep": 15.516865558,
+        "study": 27.325459539,
+        "wake": 28.846492489
+      },
+      "sleep": {
+        "canary_after": 1.1922360546385762,
+        "canary_before": 1.2173076670266052,
+        "decision": "COMMIT",
+        "replay_loss": 1.5972983837127686,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 80,
+      "study": {
+        "correction": 29,
+        "generator": 14,
+        "loss": 1.6972512006759644,
+        "own": 5
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 48,
+        "consulted": 1,
+        "gate_open": 21,
+        "router_right": 17
+      },
+      "wake_loss": 3.115792751312256
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.4418604651162791,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 734,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 2.8761012450508447,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 2.4177002906799316,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 3.9242863059043884,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 3.3640357851982117,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 1.8284933200249305,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 2.1909474344814526,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 2.6948854625225067,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 2.0017154952720815,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 2.467501958211263,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 2.7920739809672037,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 2.7517290665553165,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 2.3377716541290283,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 2.1590738773345945,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 2.665569454431534,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 2.1542463302612305,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 2.572574221569559,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 2.680023573115914,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 1.487794411809821,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 1.9342749005272275,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 1.6353998449113634,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 2.4857277870178223,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 2.133453322391884,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 3.5782631436983743,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 1.6459439965181573,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 1.8713505129019419,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 3.0184205461825644,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 1.6635357966789832,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 3.4055946457142734,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 1.841876643044608,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 2.1248041849869947,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 4.287205338478088,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 1.6429211979820615,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 3.4385879039764404,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 3.5392911153681137,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 2.217929028802448,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 3.06005859375,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 1.7524683032530906,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 3.624749260564004,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 3.8068744819375535,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 2.363028049468994,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 3.7876450287476753,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 2.6729408899943032,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 2.6745805779281926,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 2.163799849423495,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 0.9752229944847437,
+            "sureness": 3.834125385033368
+          },
+          "arith.mul": {
+            "drive_weight": 0.9844357947843614,
+            "sureness": 3.798243886531229
+          },
+          "arith.mul_rns": {
+            "drive_weight": 1.1429291249396238,
+            "sureness": 3.271530279202339
+          },
+          "calendar.clock": {
+            "drive_weight": 0.946545027896346,
+            "sureness": 3.9502898742516828
+          },
+          "calendar.crt": {
+            "drive_weight": 0.9497604877785674,
+            "sureness": 3.9369159775932623
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.8964385717052386,
+            "sureness": 4.171091424713582
+          },
+          "causal.dag": {
+            "drive_weight": 0.9569320773037968,
+            "sureness": 3.9074113282495317
+          },
+          "code.debug": {
+            "drive_weight": 1.3092291447575488,
+            "sureness": 2.8559761705538924
+          },
+          "graph.group": {
+            "drive_weight": 0.9469903843023121,
+            "sureness": 3.9484321078687463
+          },
+          "graph.group_walk": {
+            "drive_weight": 1.0537908806449507,
+            "sureness": 3.5482630452578574
+          },
+          "graph.path": {
+            "drive_weight": 1.1436920592038788,
+            "sureness": 3.269347906310558
+          },
+          "logic.chain": {
+            "drive_weight": 0.9889945409933636,
+            "sureness": 3.7807359739989734
+          },
+          "mind.revise": {
+            "drive_weight": 1.221255032490251,
+            "sureness": 3.0617087665938123
+          },
+          "mind.tom": {
+            "drive_weight": 0.9189981457304776,
+            "sureness": 4.06869943818017
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.8638671288065993,
+            "sureness": 4.328359205411229
+          },
+          "numth.prime": {
+            "drive_weight": 0.9213118455873684,
+            "sureness": 4.058481671684562
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.9292538581964244,
+            "sureness": 4.023795226935545
+          },
+          "sat.dpll": {
+            "drive_weight": 1.0055862643777131,
+            "sureness": 3.7183555222247353
+          },
+          "sat.trit": {
+            "drive_weight": 1.1826175756402362,
+            "sureness": 3.1617382628513306
+          },
+          "search.wave": {
+            "drive_weight": 0.9038646767444041,
+            "sureness": 4.136821955129426
+          },
+          "struct.pushdown": {
+            "drive_weight": 0.956992259758465,
+            "sureness": 3.9071656025367743
+          },
+          "units.dimension": {
+            "drive_weight": 1.0612540400997472,
+            "sureness": 3.5233102517760706
+          }
+        },
+        "to_harness": 95,
+        "to_model": 52
+      },
+      "assisted": 5,
+      "avoid_push": {
+        "mean_unlikelihood": 0.19814876690022112,
+        "pushes": 401.0
+      },
+      "control": {},
+      "day": 5,
+      "exits_per_block": [
+        0,
+        52,
+        1600,
+        477,
+        242,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "graph.path",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "search.wave",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime"
+      ],
+      "frontier": [
+        0,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8844552179960701,
+          0.679515423850212,
+          0.6945137996820518,
+          0.6779656279612132,
+          0.671152780216386,
+          0.7394237902963559
+        ],
+        "penalty_per_block": [
+          0.11028166987696568,
+          0.748352338666011,
+          0.6680895899048194,
+          0.6226956170048435,
+          0.6128447313547445,
+          0.4167901896789785
+        ]
+      },
+      "j_format": {
+        "answer_own": 1,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 6,
+      "retry": [
+        4,
+        37
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          698,
+          19391,
+          4898,
+          2330,
+          0
+        ],
+        "rows": 133524,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.0998213026555922,
+        "right": 0.9781643973777105,
+        "rows": 19830.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 2.295722696,
+        "retry": 1.373537588,
+        "sleep": 22.788858493,
+        "study": 30.092219887,
+        "wake": 26.215222678
+      },
+      "sleep": {
+        "canary_after": 1.0732243905687546,
+        "canary_before": 1.1242507038629643,
+        "decision": "COMMIT",
+        "replay_loss": 2.356093645095825,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 100,
+      "study": {
+        "correction": 27,
+        "generator": 14,
+        "loss": 1.7385717630386353,
+        "own": 8
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 99,
+        "consulted": 12,
+        "gate_open": 56,
+        "router_right": 49
+      },
+      "wake_loss": 2.4916040897369385
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.27906976744186046,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 881,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 3.397527259329091,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 3.6395270174199883,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 2.3297210121154786,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 2.929763118426005,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 4.031217241287232,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 2.030740119792797,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 2.660916304588318,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 1.221916397412618,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 2.9452039930555554,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 1.1849732398986816,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 3.037905666563246,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 2.9181012312571206,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 2.9405530907891015,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 2.1384060859680174,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 1.5561118903644582,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 1.3982809104171454,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 3.176713490787941,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 2.1129311621189117,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 5.177299118041992,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 2.769548075539725,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 3.1442456111102035,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 2.887206692579943,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 2.371702871824566,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 1.788085797253777,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 1.5612100835116405,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 3.072988636843808,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 2.400508477137639,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 3.1903954460507347,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 1.7752674674987794,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 1.8523984597279475,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 2.4737461993568823,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 1.8642405379902234,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 2.2972805500030518,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 1.7960857323237829,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 1.8956999089057904,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 2.7375565589742457,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 2.7142888348678063,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 2.269499106840654,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 2.1976832210124178,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 1.2964616761063084,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 1.664861707589061,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 1.7745758114439067,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 4.371296366055806,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 1.6198809351239885,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 0.9386103425593014,
+            "sureness": 3.703145947322085
+          },
+          "arith.mul": {
+            "drive_weight": 1.035180188357336,
+            "sureness": 3.357687024206504
+          },
+          "arith.mul_rns": {
+            "drive_weight": 0.993248832331419,
+            "sureness": 3.4994363678278066
+          },
+          "calendar.clock": {
+            "drive_weight": 0.9753985510707766,
+            "sureness": 3.563477803352673
+          },
+          "calendar.crt": {
+            "drive_weight": 0.9550499563149287,
+            "sureness": 3.6394023822319497
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.9072534519310425,
+            "sureness": 3.8311356972684814
+          },
+          "causal.dag": {
+            "drive_weight": 0.9608711847269286,
+            "sureness": 3.6173538570114028
+          },
+          "code.debug": {
+            "drive_weight": 1.4094838949381265,
+            "sureness": 2.466016886497062
+          },
+          "graph.group": {
+            "drive_weight": 0.9351329428288034,
+            "sureness": 3.716916522744504
+          },
+          "graph.group_walk": {
+            "drive_weight": 0.8609942002586946,
+            "sureness": 4.0369738670930975
+          },
+          "graph.path": {
+            "drive_weight": 1.0754974220300906,
+            "sureness": 3.231817217750452
+          },
+          "logic.chain": {
+            "drive_weight": 0.9895048416291644,
+            "sureness": 3.5126771895732642
+          },
+          "mind.revise": {
+            "drive_weight": 1.2971274483031316,
+            "sureness": 2.6796218757918018
+          },
+          "mind.tom": {
+            "drive_weight": 0.9219691807387846,
+            "sureness": 3.7699861977792612
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.8717926190839858,
+            "sureness": 3.9869700776030803
+          },
+          "numth.prime": {
+            "drive_weight": 0.9700675085002395,
+            "sureness": 3.5830610299862578
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.9914343693277841,
+            "sureness": 3.505840823855797
+          },
+          "sat.dpll": {
+            "drive_weight": 1.0959314530970232,
+            "sureness": 3.1715588382290516
+          },
+          "sat.trit": {
+            "drive_weight": 1.1480783296905863,
+            "sureness": 3.027503434456273
+          },
+          "search.wave": {
+            "drive_weight": 0.977702543609719,
+            "sureness": 3.5550803348943227
+          },
+          "struct.pushdown": {
+            "drive_weight": 1.0746138691250193,
+            "sureness": 3.23447443405246
+          },
+          "units.dimension": {
+            "drive_weight": 0.920085101111774,
+            "sureness": 3.7777060860599914
+          }
+        },
+        "to_harness": 95,
+        "to_model": 52
+      },
+      "assisted": 2,
+      "avoid_push": {
+        "mean_unlikelihood": 0.26868120187628436,
+        "pushes": 473.0
+      },
+      "control": {},
+      "day": 6,
+      "exits_per_block": [
+        0,
+        79,
+        1851,
+        397,
+        206,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "graph.path",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "search.wave",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime"
+      ],
+      "frontier": [
+        1,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8861997938852074,
+          0.6865164699446884,
+          0.7023646258506293,
+          0.6950328066679984,
+          0.6845933116462811,
+          0.7513102148166058
+        ],
+        "penalty_per_block": [
+          0.10419469004833716,
+          0.7114094551366551,
+          0.6435316833523734,
+          0.5772605967765028,
+          0.5652780835404553,
+          0.39064413958619704
+        ]
+      },
+      "j_format": {
+        "answer_own": 2,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 6,
+      "retry": [
+        4,
+        38
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          1042,
+          20214,
+          4747,
+          2138,
+          0
+        ],
+        "rows": 133524,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.10059718731657585,
+        "right": 0.9786795756514574,
+        "rows": 19418.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 2.321549438,
+        "retry": 1.325304086,
+        "sleep": 22.239748102,
+        "study": 30.395369928,
+        "wake": 25.914170669
+      },
+      "sleep": {
+        "canary_after": 1.0034644304369598,
+        "canary_before": 1.026999257605172,
+        "decision": "COMMIT",
+        "replay_loss": 1.5186823606491089,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 120,
+      "study": {
+        "correction": 27,
+        "generator": 15,
+        "loss": 1.469014286994934,
+        "own": 5
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 51,
+        "consulted": 4,
+        "gate_open": 28,
+        "router_right": 19
+      },
+      "wake_loss": 1.9003205299377441
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.32558139534883723,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 1028,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 2.30234774180821,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 2.848090887069702,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 2.8076522166912374,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 2.428667846478914,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 2.8233592877021203,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 2.069456454246275,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 3.5543215091411886,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 2.511245432354155,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 3.6282280408419094,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 2.995499769846598,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 3.6542131350590634,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 2.0044138287052964,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 3.3087486787275835,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 2.706590384244919,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 2.31740513242277,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 2.547841798175465,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 2.537554223382839,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 2.2754177180203525,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 2.121595882234119,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 2.257904442873868,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 2.2561289366784987,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 3.397415031086315,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 2.3674678579842534,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 2.802724576765491,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 1.0043819447358449,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 3.5749714657028706,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 2.267891244093577,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 3.605178565843731,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 2.4234982573467754,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 1.6704960969778209,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 1.8788803270064205,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 2.856715945636525,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 4.166043162345886,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 2.87298547520357,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 2.356191276331417,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 4.1315691868464155,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 2.226841672261556,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 2.513348709453236,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 2.9308642688787208,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 2.349192732856387,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 2.3799015554514797,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 1.3633624378003573,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 3.005252992405611,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 2.9931827033007585,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 1.0054593245839412,
+            "sureness": 3.2829064856679224
+          },
+          "arith.mul": {
+            "drive_weight": 1.0338751367461918,
+            "sureness": 3.1926765819519236
+          },
+          "arith.mul_rns": {
+            "drive_weight": 1.001278795433389,
+            "sureness": 3.296613243790101
+          },
+          "calendar.clock": {
+            "drive_weight": 0.9270088126468816,
+            "sureness": 3.560730915089228
+          },
+          "calendar.crt": {
+            "drive_weight": 0.9078062362441143,
+            "sureness": 3.6360500798149373
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.8736838149240105,
+            "sureness": 3.778058928605656
+          },
+          "causal.dag": {
+            "drive_weight": 0.93646586318489,
+            "sureness": 3.524772303526257
+          },
+          "code.debug": {
+            "drive_weight": 1.3631714966450057,
+            "sureness": 2.4214333602747744
+          },
+          "graph.group": {
+            "drive_weight": 0.9814817429955183,
+            "sureness": 3.363107832936004
+          },
+          "graph.group_walk": {
+            "drive_weight": 0.9533464134636458,
+            "sureness": 3.462360471635404
+          },
+          "graph.path": {
+            "drive_weight": 1.1230706282036034,
+            "sureness": 2.9391107334288655
+          },
+          "logic.chain": {
+            "drive_weight": 0.9490326101652226,
+            "sureness": 3.4780985420271797
+          },
+          "mind.revise": {
+            "drive_weight": 1.2150800367911414,
+            "sureness": 2.7165526860839084
+          },
+          "mind.tom": {
+            "drive_weight": 0.889356094155897,
+            "sureness": 3.711481778156344
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.8523915735112724,
+            "sureness": 3.8724326240752753
+          },
+          "numth.prime": {
+            "drive_weight": 1.0745561593379356,
+            "sureness": 3.0718068190923065
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.8911762138149509,
+            "sureness": 3.7039015254028236
+          },
+          "sat.dpll": {
+            "drive_weight": 1.1277372523616327,
+            "sureness": 2.926948569659761
+          },
+          "sat.trit": {
+            "drive_weight": 1.1842367625034038,
+            "sureness": 2.7873049057978574
+          },
+          "search.wave": {
+            "drive_weight": 0.9801097842094983,
+            "sureness": 3.367815515089642
+          },
+          "struct.pushdown": {
+            "drive_weight": 1.108366437905655,
+            "sureness": 2.9781025704721658
+          },
+          "units.dimension": {
+            "drive_weight": 0.9308676584146598,
+            "sureness": 3.5459701579636773
+          }
+        },
+        "to_harness": 95,
+        "to_model": 52
+      },
+      "assisted": 2,
+      "avoid_push": {
+        "mean_unlikelihood": 0.18370880557229516,
+        "pushes": 456.0
+      },
+      "control": {},
+      "day": 7,
+      "exits_per_block": [
+        0,
+        111,
+        1917,
+        439,
+        162,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "search.wave",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime",
+        "graph.path"
+      ],
+      "frontier": [
+        1,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8894583375083215,
+          0.6859847661692562,
+          0.700223020116476,
+          0.6900816469584976,
+          0.6789130277018619,
+          0.7517091816972576
+        ],
+        "penalty_per_block": [
+          0.1022879238861388,
+          0.709172213729518,
+          0.6428770834428128,
+          0.5753694769369264,
+          0.5672296587006868,
+          0.3735011015754267
+        ]
+      },
+      "j_format": {
+        "answer_own": 3,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 6,
+      "retry": [
+        6,
+        37
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          1252,
+          22700,
+          4713,
+          1968,
+          0
+        ],
+        "rows": 133524,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.07729886035320474,
+        "right": 0.9848554382744378,
+        "rows": 19611.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 1.77878118,
+        "retry": 1.342594562,
+        "sleep": 21.369117887,
+        "study": 29.812904024,
+        "wake": 25.173506102
+      },
+      "sleep": {
+        "canary_after": 0.9349359845901284,
+        "canary_before": 0.955970616618614,
+        "decision": "COMMIT",
+        "replay_loss": 1.3739906549453735,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 140,
+      "study": {
+        "correction": 26,
+        "generator": 16,
+        "loss": 1.3980838060379028,
+        "own": 5
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 77,
+        "consulted": 4,
+        "gate_open": 36,
+        "router_right": 42
+      },
+      "wake_loss": 2.1071410179138184
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.4186046511627907,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 1175,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 3.370192623138428,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 2.841872173197129,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 4.131339979171753,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 3.1304794682396784,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 3.9084025859832763,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 2.0749477838215076,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 3.484060580913837,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 2.797225202832903,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 3.0875281737400937,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 3.1537205832345143,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 3.4490905908437877,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 2.870093368348621,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 2.729288638412178,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 2.831583629954945,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 2.60459472003736,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 1.7744440892163444,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 2.9985087218585313,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 3.2851246920498935,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 2.230034422874451,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 2.6133663058280945,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 3.2437044414314062,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 3.1623183972406284,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 4.133748213450114,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 2.2219586131336926,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 3.3888820620144116,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 2.6941509149732634,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 1.745526483323839,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 2.3781562010447184,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 3.3442064821720123,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 1.6574728190898895,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 2.920825627115038,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 3.3187218834372127,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 3.943467367263067,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 3.0391272376565373,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 2.1094405395644054,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 4.016838348273075,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 2.3401588160416176,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 2.5061331590016684,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 1.3135332288518389,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 2.0385759415165072,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 3.3935862588882446,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 2.9674901962280273,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 3.0323252148098416,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 3.0440623058992275,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 0.9650650485751404,
+            "sureness": 3.3090923269090737
+          },
+          "arith.mul": {
+            "drive_weight": 0.919181352849671,
+            "sureness": 3.4742756011178724
+          },
+          "arith.mul_rns": {
+            "drive_weight": 0.9176297873902023,
+            "sureness": 3.4801500464480535
+          },
+          "calendar.clock": {
+            "drive_weight": 0.9026945285123819,
+            "sureness": 3.5377298148366103
+          },
+          "calendar.crt": {
+            "drive_weight": 0.9199179949078689,
+            "sureness": 3.4714935079924842
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.8679449776035235,
+            "sureness": 3.6793684272770952
+          },
+          "causal.dag": {
+            "drive_weight": 0.9718094124076008,
+            "sureness": 3.286127203992033
+          },
+          "code.debug": {
+            "drive_weight": 1.2895787669785639,
+            "sureness": 2.47638176820355
+          },
+          "graph.group": {
+            "drive_weight": 0.9814862365383876,
+            "sureness": 3.253728099612762
+          },
+          "graph.group_walk": {
+            "drive_weight": 1.0326019037260874,
+            "sureness": 3.092662657007118
+          },
+          "graph.path": {
+            "drive_weight": 1.0537868672913326,
+            "sureness": 3.0304888458296277
+          },
+          "logic.chain": {
+            "drive_weight": 0.9438797825471819,
+            "sureness": 3.383364498591214
+          },
+          "mind.revise": {
+            "drive_weight": 1.243486138393778,
+            "sureness": 2.5681744641988433
+          },
+          "mind.tom": {
+            "drive_weight": 0.9375292064607789,
+            "sureness": 3.4062825192014197
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.932637188686909,
+            "sureness": 3.424149697166108
+          },
+          "numth.prime": {
+            "drive_weight": 1.0551713854917666,
+            "sureness": 3.026512461499126
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.8457846389818328,
+            "sureness": 3.7757712779608963
+          },
+          "sat.dpll": {
+            "drive_weight": 1.1908468207884229,
+            "sureness": 2.6816961606311542
+          },
+          "sat.trit": {
+            "drive_weight": 1.203654528419011,
+            "sureness": 2.653161078870985
+          },
+          "search.wave": {
+            "drive_weight": 1.1606227752553975,
+            "sureness": 2.751530829218301
+          },
+          "struct.pushdown": {
+            "drive_weight": 1.0292455847711617,
+            "sureness": 3.102747676996989
+          },
+          "units.dimension": {
+            "drive_weight": 0.9415110433493661,
+            "sureness": 3.391876675017526
+          }
+        },
+        "to_harness": 95,
+        "to_model": 52
+      },
+      "assisted": 5,
+      "avoid_push": {
+        "mean_unlikelihood": 0.2086275266394248,
+        "pushes": 421.0
+      },
+      "control": {},
+      "day": 8,
+      "exits_per_block": [
+        0,
+        145,
+        2272,
+        385,
+        182,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime",
+        "graph.path",
+        "search.wave"
+      ],
+      "frontier": [
+        0,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8974860575894896,
+          0.6847376891695818,
+          0.7025433068566289,
+          0.6992621210368933,
+          0.687701335081661,
+          0.7592305270111583
+        ],
+        "penalty_per_block": [
+          0.09492200276091543,
+          0.7150709228348197,
+          0.647660181159667,
+          0.551529949535333,
+          0.5562152656103869,
+          0.36204271828485296
+        ]
+      },
+      "j_format": {
+        "answer_own": 3,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 7,
+      "retry": [
+        5,
+        35
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          1227,
+          23160,
+          4721,
+          1799,
+          0
+        ],
+        "rows": 133524,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.09663806924697489,
+        "right": 0.9821491962067042,
+        "rows": 19719.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 2.92020781,
+        "retry": 1.221580715,
+        "sleep": 19.719041245,
+        "study": 29.429490488,
+        "wake": 25.458108799
+      },
+      "sleep": {
+        "canary_after": 0.8955182751197986,
+        "canary_before": 0.8913239363597647,
+        "decision": "COMMIT",
+        "replay_loss": 1.505918264389038,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 160,
+      "study": {
+        "correction": 23,
+        "generator": 20,
+        "loss": 1.4501054286956787,
+        "own": 6
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 102,
+        "consulted": 7,
+        "gate_open": 63,
+        "router_right": 65
+      },
+      "wake_loss": 2.11205792427063
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.4418604651162791,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 104,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 40
+        },
+        "clock": 1322,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 2.0862049689659705,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 3.244528251535752,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 3.6753358840942383,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 2.541446372082359,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 2.1166464818848505,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 3.0170194401460537,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 3.4290585151085486,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 2.4486607142857144,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 3.5018563270568848,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 2.118534251054128,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 3.399760576394888,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 2.8197927474975586,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 2.787202061833562,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 1.4025984371409697,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 1.6531637473539873,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 1.8580705949238367,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 3.482547299615268,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 3.513483762741089,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 3.3317803036082876,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 3.1144651499661533,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 3.650331648496481,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 3.047462509623889,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 3.1581670216151645,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 2.329119174559038,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 3.079171762746923,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 2.9574766195737396,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 2.9383241509738034,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 2.938804952338273,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 2.9092318216959634,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 1.4964149445295334,
+            "n": 52
+          },
+          "numth.prime/L0s3": {
+            "mean": 1.8439110114599355,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 1.3099795923937088,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 1.81299122271499,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 2.857762140386245,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 1.918792234560104,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 2.4778474966684976,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 1.8560064224969772,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 3.819595094936997,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 3.8136831747519,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 3.317372679710388,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 1.8842388039688143,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 3.8409235179424286,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 3.6248597456858707,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 2.478295087814331,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 1.0431511767219896,
+            "sureness": 2.9422261195261425
+          },
+          "arith.mul": {
+            "drive_weight": 0.8683279922422481,
+            "sureness": 3.5345936860107816
+          },
+          "arith.mul_rns": {
+            "drive_weight": 0.9993773114030203,
+            "sureness": 3.0710989770790924
+          },
+          "calendar.clock": {
+            "drive_weight": 0.875627442620024,
+            "sureness": 3.5051284249181918
+          },
+          "calendar.crt": {
+            "drive_weight": 0.8817975530852611,
+            "sureness": 3.480602353711804
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.8536221743860105,
+            "sureness": 3.595486072012433
+          },
+          "causal.dag": {
+            "drive_weight": 0.9785544071031611,
+            "sureness": 3.1364496613444914
+          },
+          "code.debug": {
+            "drive_weight": 1.3766771838362055,
+            "sureness": 2.2294163619486813
+          },
+          "graph.group": {
+            "drive_weight": 0.9237932780758463,
+            "sureness": 3.3223738596135135
+          },
+          "graph.group_walk": {
+            "drive_weight": 0.9699117134771599,
+            "sureness": 3.1643979509874685
+          },
+          "graph.path": {
+            "drive_weight": 0.9542180265614845,
+            "sureness": 3.2164416866296834
+          },
+          "logic.chain": {
+            "drive_weight": 0.9349882228771708,
+            "sureness": 3.2825939019010164
+          },
+          "mind.revise": {
+            "drive_weight": 1.2294165532153138,
+            "sureness": 2.4964578773069013
+          },
+          "mind.tom": {
+            "drive_weight": 0.9381184775285148,
+            "sureness": 3.271640749313115
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.9361425407869929,
+            "sureness": 3.2785462737177573
+          },
+          "numth.prime": {
+            "drive_weight": 1.1487629029925766,
+            "sureness": 2.6717320264873687
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.9630521052146462,
+            "sureness": 3.1869372613871243
+          },
+          "sat.dpll": {
+            "drive_weight": 1.2512864392183236,
+            "sureness": 2.452824982809839
+          },
+          "sat.trit": {
+            "drive_weight": 1.2714034681327895,
+            "sureness": 2.4140146819587827
+          },
+          "search.wave": {
+            "drive_weight": 0.9996775774611295,
+            "sureness": 3.0701765328783805
+          },
+          "struct.pushdown": {
+            "drive_weight": 1.121288991777078,
+            "sureness": 2.7371950150885365
+          },
+          "units.dimension": {
+            "drive_weight": 0.8865942057295007,
+            "sureness": 3.4617715962180293
+          }
+        },
+        "to_harness": 95,
+        "to_model": 52
+      },
+      "assisted": 3,
+      "avoid_push": {
+        "mean_unlikelihood": 0.1928642169151684,
+        "pushes": 456.0
+      },
+      "control": {},
+      "day": 9,
+      "exits_per_block": [
+        0,
+        167,
+        2581,
+        487,
+        207,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "mind.tom",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime",
+        "graph.path",
+        "search.wave"
+      ],
+      "frontier": [
+        1,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8973579136161783,
+          0.6858787081539229,
+          0.7031706548956114,
+          0.6974490967761621,
+          0.6937209843780056,
+          0.7605590892454938
+        ],
+        "penalty_per_block": [
+          0.09602574816618363,
+          0.7098296393235938,
+          0.6479710233918503,
+          0.5597206823915968,
+          0.5438021306730964,
+          0.3593840523924732
+        ]
+      },
+      "j_format": {
+        "answer_own": 3,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 7,
+      "retry": [
+        4,
+        36
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          1241,
+          24286,
+          4414,
+          1911,
+          0
+        ],
+        "rows": 133524,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.08388459240107825,
+        "right": 0.9857546979187715,
+        "rows": 19796.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 2.374072989,
+        "retry": 1.485084802,
+        "sleep": 19.740744079,
+        "study": 29.318022795,
+        "wake": 26.070976486
+      },
+      "sleep": {
+        "canary_after": 0.8794997305078891,
+        "canary_before": 0.8851622915054116,
+        "decision": "COMMIT",
+        "replay_loss": 1.0711878538131714,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 180,
+      "study": {
+        "correction": 25,
+        "generator": 17,
+        "loss": 1.323961853981018,
+        "own": 6
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 106,
+        "consulted": 7,
+        "gate_open": 54,
+        "router_right": 65
+      },
+      "wake_loss": 1.7208045721054077
+    },
+    {
+      "active": 6,
+      "answered_rate": 0.3953488372093023,
+      "arc": {
+        "by_generator": {
+          "arith.mrc_plate": 2,
+          "arith.mul": 2,
+          "arith.mul_rns": 2,
+          "calendar.clock": 2,
+          "calendar.crt": 2,
+          "calendar.ring_euclid": 2,
+          "causal.dag": 2,
+          "code.debug": 2,
+          "graph.group": 2,
+          "graph.group_walk": 2,
+          "graph.path": 1,
+          "logic.chain": 2,
+          "mind.revise": 2,
+          "mind.tom": 2,
+          "mind.tom_mask": 2,
+          "mixed": 94,
+          "numth.prime": 2,
+          "numth.prime_trial": 2,
+          "sat.dpll": 2,
+          "sat.trit": 2,
+          "search.wave": 2,
+          "struct.pushdown": 2,
+          "units.dimension": 2
+        },
+        "by_phase": {
+          "doing": 43,
+          "sleep": 24,
+          "study": 40,
+          "wake": 30
+        },
+        "clock": 1459,
+        "pages": {
+          "arith.mrc_plate/L0s3": {
+            "mean": 3.379597282409668,
+            "n": 1
+          },
+          "arith.mrc_plate/L0s6": {
+            "mean": 1.940619829224377,
+            "n": 1
+          },
+          "arith.mul/L0s3": {
+            "mean": 2.5541772067546846,
+            "n": 1
+          },
+          "arith.mul/L0s6": {
+            "mean": 1.8443490450198834,
+            "n": 1
+          },
+          "arith.mul_rns/L0s3": {
+            "mean": 2.1392125875357815,
+            "n": 1
+          },
+          "arith.mul_rns/L0s6": {
+            "mean": 2.3454054247948433,
+            "n": 1
+          },
+          "calendar.clock/L0s3": {
+            "mean": 3.083248880174425,
+            "n": 1
+          },
+          "calendar.clock/L0s6": {
+            "mean": 3.059149424235026,
+            "n": 1
+          },
+          "calendar.crt/L0s3": {
+            "mean": 3.064700555801392,
+            "n": 1
+          },
+          "calendar.crt/L0s6": {
+            "mean": 2.337496783052172,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s3": {
+            "mean": 2.80810318261514,
+            "n": 1
+          },
+          "calendar.ring_euclid/L0s6": {
+            "mean": 1.950768180515455,
+            "n": 1
+          },
+          "causal.dag/L0s3": {
+            "mean": 2.6421128945712065,
+            "n": 1
+          },
+          "causal.dag/L1s6": {
+            "mean": 1.837579183280468,
+            "n": 1
+          },
+          "code.debug/L0s3": {
+            "mean": 0.9041854948112645,
+            "n": 1
+          },
+          "code.debug/L0s6": {
+            "mean": 2.1610123724550814,
+            "n": 1
+          },
+          "graph.group/L0s3": {
+            "mean": 3.1084917141841006,
+            "n": 1
+          },
+          "graph.group/L0s6": {
+            "mean": 3.68923282623291,
+            "n": 1
+          },
+          "graph.group_walk/L0s3": {
+            "mean": 3.185819062319669,
+            "n": 1
+          },
+          "graph.group_walk/L0s6": {
+            "mean": 3.314667658372359,
+            "n": 1
+          },
+          "graph.path/L0s3": {
+            "mean": 3.4086982072785843,
+            "n": 1
+          },
+          "logic.chain/L0s3": {
+            "mean": 1.95955632691798,
+            "n": 1
+          },
+          "logic.chain/L0s6": {
+            "mean": 3.1472738923204973,
+            "n": 1
+          },
+          "mind.revise/L0s3": {
+            "mean": 1.9592318618506717,
+            "n": 1
+          },
+          "mind.revise/L1s6": {
+            "mean": 2.9958624950675077,
+            "n": 1
+          },
+          "mind.tom/L0s3": {
+            "mean": 3.7066917617365998,
+            "n": 1
+          },
+          "mind.tom/L0s6": {
+            "mean": 3.160467235858624,
+            "n": 1
+          },
+          "mind.tom_mask/L0s3": {
+            "mean": 3.3462979864506495,
+            "n": 1
+          },
+          "mind.tom_mask/L0s6": {
+            "mean": 3.3213730508630928,
+            "n": 1
+          },
+          "mixed/L5s0": {
+            "mean": 1.477312814682088,
+            "n": 47
+          },
+          "numth.prime/L0s3": {
+            "mean": 4.010574885777065,
+            "n": 1
+          },
+          "numth.prime/L0s6": {
+            "mean": 1.4427485742430757,
+            "n": 1
+          },
+          "numth.prime_trial/L0s3": {
+            "mean": 3.9885242098853704,
+            "n": 1
+          },
+          "numth.prime_trial/L0s6": {
+            "mean": 2.830921208416974,
+            "n": 1
+          },
+          "sat.dpll/L0s3": {
+            "mean": 2.5062534606962132,
+            "n": 1
+          },
+          "sat.dpll/L0s6": {
+            "mean": 2.6666210889816284,
+            "n": 1
+          },
+          "sat.trit/L0s3": {
+            "mean": 2.9957289873664057,
+            "n": 1
+          },
+          "sat.trit/L0s6": {
+            "mean": 3.085296136361581,
+            "n": 1
+          },
+          "search.wave/L0s3": {
+            "mean": 3.9509337544441223,
+            "n": 1
+          },
+          "search.wave/L0s6": {
+            "mean": 2.4509377064912217,
+            "n": 1
+          },
+          "struct.pushdown/L0s3": {
+            "mean": 3.132454270408267,
+            "n": 1
+          },
+          "struct.pushdown/L0s6": {
+            "mean": 1.755360673455631,
+            "n": 1
+          },
+          "units.dimension/L0s3": {
+            "mean": 1.8571251355684721,
+            "n": 1
+          },
+          "units.dimension/L0s6": {
+            "mean": 2.4802747274699963,
+            "n": 1
+          }
+        },
+        "sureness": {
+          "arith.mrc_plate": {
+            "drive_weight": 0.9816220856122446,
+            "sureness": 3.0734374683912
+          },
+          "arith.mul": {
+            "drive_weight": 0.9310239776116844,
+            "sureness": 3.2404687422339524
+          },
+          "arith.mul_rns": {
+            "drive_weight": 1.0807516990278585,
+            "sureness": 2.791533060216099
+          },
+          "calendar.clock": {
+            "drive_weight": 0.8929692012118728,
+            "sureness": 3.3785645614950615
+          },
+          "calendar.crt": {
+            "drive_weight": 0.8990182657039757,
+            "sureness": 3.3558318143386803
+          },
+          "calendar.ring_euclid": {
+            "drive_weight": 0.8980978055766813,
+            "sureness": 3.3592712051932447
+          },
+          "causal.dag": {
+            "drive_weight": 1.0096399041555804,
+            "sureness": 2.9881486313125056
+          },
+          "code.debug": {
+            "drive_weight": 1.6469464589835054,
+            "sureness": 1.831847101807456
+          },
+          "graph.group": {
+            "drive_weight": 0.925954687906439,
+            "sureness": 3.2582092159846896
+          },
+          "graph.group_walk": {
+            "drive_weight": 0.951473127216861,
+            "sureness": 3.1708242843871286
+          },
+          "graph.path": {
+            "drive_weight": 0.9214553370975191,
+            "sureness": 3.2741186428243534
+          },
+          "logic.chain": {
+            "drive_weight": 1.0454906118147502,
+            "sureness": 2.8856826294061055
+          },
+          "mind.revise": {
+            "drive_weight": 1.2918969394973618,
+            "sureness": 2.3352900726700323
+          },
+          "mind.tom": {
+            "drive_weight": 0.8867771056607007,
+            "sureness": 3.4021560530401604
+          },
+          "mind.tom_mask": {
+            "drive_weight": 0.9145411801447821,
+            "sureness": 3.298871787537625
+          },
+          "numth.prime": {
+            "drive_weight": 0.9816388806875335,
+            "sureness": 3.0733848842742777
+          },
+          "numth.prime_trial": {
+            "drive_weight": 0.8802422682101546,
+            "sureness": 3.427413345936598
+          },
+          "sat.dpll": {
+            "drive_weight": 1.2220061116360523,
+            "sureness": 2.468853526175751
+          },
+          "sat.trit": {
+            "drive_weight": 1.1655091090393388,
+            "sureness": 2.5885289735810697
+          },
+          "search.wave": {
+            "drive_weight": 0.9047956905490538,
+            "sureness": 3.334403699348103
+          },
+          "struct.pushdown": {
+            "drive_weight": 1.0564405216359873,
+            "sureness": 2.8557727916844557
+          },
+          "units.dimension": {
+            "drive_weight": 1.0122724177586557,
+            "sureness": 2.980377658023162
+          }
+        },
+        "to_harness": 90,
+        "to_model": 47
+      },
+      "assisted": 3,
+      "avoid_push": {
+        "mean_unlikelihood": 0.2264982850867368,
+        "pushes": 420.0
+      },
+      "control": {},
+      "day": 10,
+      "exits_per_block": [
+        0,
+        132,
+        2872,
+        491,
+        115,
+        0
+      ],
+      "fired": [
+        "arith.mul",
+        "logic.chain",
+        "sat.dpll",
+        "mind.revise",
+        "struct.pushdown",
+        "units.dimension",
+        "calendar.crt",
+        "code.debug",
+        "causal.dag",
+        "arith.mul_rns",
+        "arith.mrc_plate",
+        "sat.trit",
+        "graph.group_walk",
+        "graph.group",
+        "calendar.ring_euclid",
+        "calendar.clock",
+        "mind.tom_mask",
+        "numth.prime_trial",
+        "numth.prime",
+        "graph.path",
+        "search.wave",
+        "mind.tom"
+      ],
+      "frontier": [
+        0,
+        22
+      ],
+      "frontier_level": 1,
+      "harmony": {
+        "R_per_block": [
+          0.8962036764149636,
+          0.6858302480020032,
+          0.706336690860237,
+          0.6939101779085155,
+          0.6896099556911323,
+          0.7603847392029635
+        ],
+        "penalty_per_block": [
+          0.09213212764626458,
+          0.6796115137582327,
+          0.6071005053716022,
+          0.5320338490698084,
+          0.5234632936207452,
+          0.3439183921099879
+        ]
+      },
+      "j_format": {
+        "answer_own": 2,
+        "n": 21,
+        "prompt_written_right": 0
+      },
+      "mastered_by_generator": {
+        "arith.mrc_compare": 0,
+        "arith.mrc_plate": 0,
+        "arith.mul": 0,
+        "arith.mul_rns": 0,
+        "calendar.clock": 0,
+        "calendar.crt": 0,
+        "calendar.ring_euclid": 0,
+        "causal.dag": 0,
+        "code.debug": 0,
+        "graph.group": 0,
+        "graph.group_walk": 0,
+        "graph.path": 0,
+        "logic.chain": 0,
+        "mind.revise": 0,
+        "mind.tom": 0,
+        "mind.tom_mask": 0,
+        "numth.prime": 0,
+        "numth.prime_trial": 0,
+        "sat.dpll": 0,
+        "sat.trit": 0,
+        "science.bioreactor": 0,
+        "science.factorial": 0,
+        "search.astar": 0,
+        "search.wave": 0,
+        "struct.pushdown": 0,
+        "units.dimension": 0
+      },
+      "mastered_level": 0,
+      "pages": {
+        "hits": 0,
+        "new": 0
+      },
+      "pass": 8,
+      "retry": [
+        3,
+        38
+      ],
+      "review": [
+        0,
+        0
+      ],
+      "ring_walk": {
+        "decisions": 0.0,
+        "rerank": {
+          "ring_loss": 0.0,
+          "shortlisted_share": 0.0,
+          "target_in_candidates": 0.0
+        },
+        "walk_mean": 0.0
+      },
+      "route": {
+        "exits_per_block": [
+          0,
+          1334,
+          22440,
+          3921,
+          1774,
+          0
+        ],
+        "rows": 123284,
+        "theta": 3.0
+      },
+      "routing_train": {
+        "boot_exits": 0,
+        "boot_fed_seen": 0,
+        "ce": 0.08266862443796988,
+        "right": 0.9862482583146543,
+        "rows": 16507.0
+      },
+      "search": null,
+      "seconds": {
+        "doing": 2.18069575,
+        "retry": 1.390122469,
+        "sleep": 24.006164538,
+        "study": 30.951339095,
+        "wake": 20.425523326
+      },
+      "sleep": {
+        "canary_after": 0.8686070164222889,
+        "canary_before": 0.8711982414861431,
+        "decision": "COMMIT",
+        "replay_loss": 1.2620375156402588,
+        "settle_steps": 0
+      },
+      "stations": 4,
+      "step": 195,
+      "study": {
+        "correction": 26,
+        "generator": 17,
+        "loss": 1.2405245304107666,
+        "own": 4
+      },
+      "terse_share": 0.0,
+      "tool": {
+        "answer_positions": 95,
+        "consulted": 8,
+        "gate_open": 47,
+        "router_right": 50
+      },
+      "wake_loss": 1.3831655979156494
+    }
+  ],
+  "epoch_used": 779,
+  "log": [
+    {
+      "active": 6,
+      "answer_loss_no_port": 3.385051030239076,
+      "answer_loss_port": 1.502947668992836,
+      "answer_positions": 262,
+      "canary": 2.292550436584404,
+      "heldout_loss_no_port": 8.55690485239029,
+      "heldout_loss_port": 8.185842275619507,
+      "seen": 0,
+      "step": 0
+    },
+    {
+      "active": 6,
+      "answer_loss_no_port": 2.2181238254518,
+      "answer_loss_port": 0.6912965656236838,
+      "answer_positions": 262,
+      "block_losses": [
+        1.7340894275241427,
+        1.6714069857186094,
+        1.4926694901817936,
+        1.5694192285123079,
+        1.878868245906348,
+        1.2686292490689084
+      ],
+      "canary": 0.8686070164222889,
+      "day": 10,
+      "full_depth": {
+        "answer_loss_port": 0.7075752083581822,
+        "heldout_loss_no_port": 2.7859278321266174,
+        "heldout_loss_port": 2.2179059386253357
+      },
+      "heldout_loss_no_port": 2.7804389894008636,
+      "heldout_loss_port": 2.211544454097748,
+      "s": 874.55694891,
+      "seen": 399360,
+      "stage_map": [
+        [
+          1.0812360732083393,
+          2.4594430047884304,
+          2.5608607764349007,
+          3.579461362732224,
+          2.545003796650287,
+          2.7051871078419234,
+          1.4552959114246153,
+          3.5699568702540265
+        ],
+        [
+          1.7589370720277584,
+          2.6700597019250605,
+          2.5941266507566123,
+          3.284739620902075,
+          2.585907128821392,
+          2.6696754703881607,
+          1.4215252916464645,
+          3.347346747140272
+        ],
+        [
+          1.8916023999906433,
+          2.6670782669282063,
+          2.6033001097606854,
+          3.2696014451458826,
+          2.4213272971657225,
+          2.7024299616183876,
+          1.388915567076608,
+          3.2269665112189196
+        ],
+        [
+          2.0091636604463994,
+          2.6100543045894407,
+          2.605956951621692,
+          3.3324106319631315,
+          2.264355034903952,
+          2.623496060821245,
+          1.2897654711262563,
+          3.2171131744297274
+        ],
+        [
+          1.904111839187932,
+          2.6827448157521037,
+          2.596005865064402,
+          3.338014783177573,
+          2.409447036358957,
+          2.4626253369169415,
+          1.2019413413358537,
+          3.163382780661277
+        ],
+        [
+          1.5092143286303215,
+          2.832040735567459,
+          2.61440019665837,
+          3.2131199349865107,
+          2.4840587589570893,
+          2.6897893774284505,
+          1.2372422284758493,
+          3.3824780348244063
+        ]
+      ],
+      "step": 195,
+      "tok_s": 456.64264715952584
+    }
+  ],
+  "mastered": -1,
+  "method": "J-FWD-2",
+  "seen": 399360,
+  "step": 195
+}

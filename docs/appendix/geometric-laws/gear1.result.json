@@ -1,0 +1,284 @@
+{
+ "runs": {
+  "fixed quiet": [
+   {
+    "arm": "fixed quiet",
+    "p99_ms": 170.9754478244561,
+    "p99_heavy_ms": 188.87409739429106,
+    "p50_ms": 20.48916299827397,
+    "batch_q_per_s": 334.3262017748826,
+    "drain_s": 33.50021607801318,
+    "load_mean": 0.7422985074626867,
+    "load_sd": 0.11875787671289185,
+    "max_temp": 99.0,
+    "shifts": [],
+    "final_gear": "quiet",
+    "hot95": 0.08955223880597014
+   },
+   {
+    "arm": "fixed quiet",
+    "p99_ms": 144.61931913509036,
+    "p99_heavy_ms": 148.8723793800454,
+    "p50_ms": 19.02800699463114,
+    "batch_q_per_s": 334.0424392794291,
+    "drain_s": 33.52867385401623,
+    "load_mean": 0.6743134328358209,
+    "load_sd": 0.15518753305782604,
+    "max_temp": 99.0,
+    "shifts": [],
+    "final_gear": "quiet",
+    "hot95": 0.07462686567164178
+   }
+  ],
+  "fixed cruise": [
+   {
+    "arm": "fixed cruise",
+    "p99_ms": 156.0136777645675,
+    "p99_heavy_ms": 161.9284971535672,
+    "p50_ms": 36.19741299189627,
+    "batch_q_per_s": 327.8450801586905,
+    "drain_s": 34.1624769680202,
+    "load_mean": 0.6410724637681159,
+    "load_sd": 0.251482463666179,
+    "max_temp": 100.0,
+    "shifts": [],
+    "final_gear": "cruise",
+    "hot95": 0.08695652173913043
+   },
+   {
+    "arm": "fixed cruise",
+    "p99_ms": 143.41328151873273,
+    "p99_heavy_ms": 152.8913590090815,
+    "p50_ms": 37.67287600203417,
+    "batch_q_per_s": 330.583909862219,
+    "drain_s": 33.8794468389824,
+    "load_mean": 0.6431617647058824,
+    "load_sd": 0.24315442988635103,
+    "max_temp": 96.0,
+    "shifts": [],
+    "final_gear": "cruise",
+    "hot95": 0.10294117647058823
+   }
+  ],
+  "auto-thermal": [
+   {
+    "arm": "auto-thermal",
+    "p99_ms": 246.4734295854578,
+    "p99_heavy_ms": 261.31165171740497,
+    "p50_ms": 22.70960051100701,
+    "batch_q_per_s": 322.9253840249335,
+    "drain_s": 34.68293467798503,
+    "load_mean": 0.7290724637681159,
+    "load_sd": 0.19169263734627479,
+    "max_temp": 98.0,
+    "shifts": [
+     [
+      9.63,
+      "quiet",
+      "cruise",
+      "backlog with headroom (74C)"
+     ],
+     [
+      11.16,
+      "cruise",
+      "quiet",
+      "at temp target 92C"
+     ],
+     [
+      28.25,
+      "quiet",
+      "cruise",
+      "backlog with headroom (82C)"
+     ]
+    ],
+    "final_gear": "cruise",
+    "hot95": 0.08695652173913043
+   },
+   {
+    "arm": "auto-thermal",
+    "p99_ms": 124.0042512817309,
+    "p99_heavy_ms": 129.63021331001067,
+    "p50_ms": 18.702041008509696,
+    "batch_q_per_s": 333.11517008104596,
+    "drain_s": 33.622005258046556,
+    "load_mean": 0.6635735294117646,
+    "load_sd": 0.17712900883225252,
+    "max_temp": 96.0,
+    "shifts": [],
+    "final_gear": "quiet",
+    "hot95": 0.08823529411764706
+   }
+  ],
+  "auto-transmission": [
+   {
+    "arm": "auto-transmission",
+    "p99_ms": 758.6202185810544,
+    "p99_heavy_ms": 918.9838114537998,
+    "p50_ms": 72.44676700793207,
+    "batch_q_per_s": 290.9930189717609,
+    "drain_s": 38.488895849033725,
+    "load_mean": 0.7943684210526316,
+    "load_sd": 0.22776302563163175,
+    "max_temp": 98.0,
+    "shifts": [
+     [
+      5.02,
+      "cruise",
+      "power",
+      "threadlock"
+     ],
+     [
+      17.12,
+      "power",
+      "quiet",
+      "heat 95C"
+     ],
+     [
+      17.63,
+      "quiet",
+      "cruise",
+      "backlog growing"
+     ],
+     [
+      18.2,
+      "cruise",
+      "quiet",
+      "heat 98C"
+     ],
+     [
+      20.72,
+      "quiet",
+      "cruise",
+      "threadlock"
+     ],
+     [
+      21.25,
+      "cruise",
+      "quiet",
+      "heat 96C"
+     ],
+     [
+      26.36,
+      "quiet",
+      "cruise",
+      "threadlock"
+     ],
+     [
+      30.43,
+      "cruise",
+      "power",
+      "threadlock"
+     ],
+     [
+      31.05,
+      "power",
+      "overdrive",
+      "threadlock"
+     ]
+    ],
+    "final_gear": "overdrive",
+    "hot95": 0.09210526315789473
+   },
+   {
+    "arm": "auto-transmission",
+    "p99_ms": 181.4257059205558,
+    "p99_heavy_ms": 190.15618119970895,
+    "p50_ms": 42.811052000615746,
+    "batch_q_per_s": 300.6279609989834,
+    "drain_s": 37.25535031000618,
+    "load_mean": 0.6984189189189189,
+    "load_sd": 0.27575900204642834,
+    "max_temp": 98.0,
+    "shifts": [
+     [
+      17.1,
+      "cruise",
+      "quiet",
+      "heat 96C"
+     ],
+     [
+      17.62,
+      "quiet",
+      "cruise",
+      "backlog growing"
+     ],
+     [
+      18.13,
+      "cruise",
+      "quiet",
+      "heat 96C"
+     ],
+     [
+      18.64,
+      "quiet",
+      "cruise",
+      "threadlock"
+     ],
+     [
+      19.18,
+      "cruise",
+      "quiet",
+      "heat 98C"
+     ],
+     [
+      19.74,
+      "quiet",
+      "cruise",
+      "threadlock"
+     ],
+     [
+      30.86,
+      "cruise",
+      "power",
+      "threadlock"
+     ],
+     [
+      31.48,
+      "power",
+      "overdrive",
+      "threadlock"
+     ]
+    ],
+    "final_gear": "overdrive",
+    "hot95": 0.04054054054054054
+   }
+  ]
+ },
+ "medians": {
+  "fixed quiet": {
+   "p99_ms": 157.79738347977323,
+   "batch_q_per_s": 334.1843205271558,
+   "hot95": 0.08208955223880596
+  },
+  "fixed cruise": {
+   "p99_ms": 149.7134796416501,
+   "batch_q_per_s": 329.21449501045475,
+   "hot95": 0.09494884910485933
+  },
+  "auto-thermal": {
+   "p99_ms": 185.23884043359436,
+   "batch_q_per_s": 328.02027705298974,
+   "hot95": 0.08759590792838876
+  },
+  "auto-transmission": {
+   "p99_ms": 470.0229622508051,
+   "batch_q_per_s": 295.8104899853721,
+   "hot95": 0.06632290184921763
+  }
+ },
+ "detect": {
+  "profile": "thermal",
+  "start_c": 67.0,
+  "peak_c": 87.0,
+  "slope_c_per_s": 6.67,
+  "cpus": 8,
+  "probe_s": 3.0,
+  "rule": "thermal if peak >= 90 C or rise >= 4 C/s (or no sensor)"
+ },
+ "verdict": {
+  "T1": true,
+  "T2": true,
+  "T3": false,
+  "T4": true
+ }
+}

@@ -1,0 +1,14 @@
+GAIN peps-python-org-pep-0008 n1250 <p .> base Some([-9.71875, -59.953125, 19.4375, -24.0]) cand Some([0.0, -11.953125, 0.0, 0.0]) «To solve this readability problem, mathematicians and their publishers»
+GAIN peps-python-org-pep-0008 n3096 <p .> base Some([-9.71875, -131.71875, 19.4375, -24.0]) cand Some([0.0, -11.71875, 0.0, 0.0]) «When combining an argument annotation with a default value, however, d»
+GAIN peps-python-org-pep-0008 n1343 <p .> base Some([-9.71875, -83.921875, 19.4375, -24.0]) cand Some([0.0, -11.921875, 0.0, 0.0]) «Python accepts the control-L (i.e. ^L) form feed character as whitespa»
+GAIN peps-python-org-pep-0008 n4305 <p .> base Some([-9.71875, -179.20313, 19.4375, -24.0]) cand Some([0.0, -11.203125, 0.0, 0.0]) «Function names should be lowercase, with words separated by underscore»
+GAIN peps-python-org-pep-0008 n4362 <p .> base Some([-9.71875, -203.14063, 19.4375, -24.0]) cand Some([0.0, -11.140625, 0.0, 0.0]) «Python mangles these names with the class name: if class Foo has an at»
+GAIN peps-python-org-pep-0008 n5785 <li .> base Some([-9.71875, -250.98438, 19.4375, -24.0]) cand Some([0.0, -10.984375, 0.0, 0.0]) «However, outside the stdlib, experiments within the rules of |PEP 484|»
+GAIN peps-python-org-pep-0008 n2969 <li .> base Some([-9.71875, -131.71875, 19.4375, -24.0]) cand Some([0.0, -11.71875, 0.0, 0.0]) «Don’t use spaces around the |=| sign when used to indicate a keyword a»
+GAIN peps-python-org-pep-0008 n1076 <p .> base Some([-9.71875, -29.578125, 19.4375, -24.0]) cand Some([0.0, -5.578125, 0.0, 0.0]) «The default wrapping in most tools disrupts the visual structure of th»
+GAIN peps-python-org-pep-0008 n4115 <p .> base Some([-9.71875, -155.39063, 19.4375, -24.0]) cand Some([0.0, -11.390625, 0.0, 0.0]) «Identifiers used in the standard library must be ASCII compatible as d»
+GAIN peps-python-org-pep-0008 n1633 <li .> base Some([-9.71875, -107.859375, 19.4375, -24.0]) cand Some([0.0, -11.859375, 0.0, 0.0]) «Wildcard imports (|from| |<module>| |import| |*|) should be avoided, a»
+GAIN peps-python-org-pep-0008 n4299 <section .> base Some([-9.71875, -179.21875, 19.4375, -23.984375]) cand Some([0.0, -11.21875, 0.0, 0.015625]) «|Function and Variable Names| |Function names should be lowercase, wit»
+GAIN peps-python-org-pep-0008 n453 <p .> base Some([-9.71875, -5.6875, 19.4375, -24.0]) cand Some([0.0, -5.6875, 0.0, 0.0]) «However, know when to be inconsistent – sometimes style guide recommen»
+{"base":[17620,2997],"cand":[17638,2997],"clause":"patch.pad_pct_cb[*]=-1","gained":[18,0],"lost":[0,0],"pages":[{"gained":18,"holdout":false,"lost":0,"lost_nodes":[],"page":"peps-python-org-pep-0008"}],"pass":true,"program":"results/omr.program.json","secs":2.552021847,"sets":"1ee26bbc9aa4"}
+patch-gate patch.pad_pct_cb[*]=-1: base replay 17620 holdout 2997 → cand 17638 / 2997 · lost 0/0 · gained 18/0 → PASS (2.6s)

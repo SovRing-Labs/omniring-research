@@ -1,0 +1,24 @@
+{"built":{"cegis_rounds":1,"how":"","rust":"a1.max(a0.min(a2))","secs":0.108393375,"size":5,"verified":true,"verify":null,"work":4452},"hits":[],"need":"clamp"}
+{"built":{"cegis_rounds":1,"how":"","rust":"a0.max(a1)","secs":0.093661044,"size":3,"verified":true,"verify":null,"work":62},"hits":[],"need":"max2"}
+{"built":{"cegis_rounds":1,"how":"","rust":"a0.min(a1)","secs":0.098991992,"size":3,"verified":true,"verify":null,"work":58},"hits":[],"need":"min2"}
+{"built":{"cegis_rounds":1,"how":"","rust":"a0.abs()","secs":0.089455562,"size":2,"verified":true,"verify":null,"work":7},"hits":[],"need":"abs"}
+{"built":{"cegis_rounds":1,"how":"","rust":"a0.iter().sum::<i64>()","secs":0.138686848,"size":2,"verified":true,"verify":null,"work":6},"hits":[],"need":"sum_list"}
+{"built":{"cegis_rounds":1,"how":"","rust":"*a0.iter().max().unwrap()","secs":0.149494692,"size":2,"verified":true,"verify":null,"work":8},"hits":[],"need":"max_list"}
+{"built":{"cegis_rounds":1,"how":"","rust":"*a0.iter().min().unwrap()","secs":0.15294467,"size":2,"verified":true,"verify":null,"work":9},"hits":[],"need":"min_list"}
+{"built":{"cegis_rounds":1,"how":"","rust":"(a0.len() as i64)","secs":0.125662633,"size":2,"verified":true,"verify":null,"work":7},"hits":[],"need":"len_list"}
+{"built":{"cegis_rounds":1,"how":"","rust":"a0.iter().map(|&x| (((0i64) < x) as i64)).collect::<Vec<i64>>().iter().sum::<i64>()","secs":0.209857675,"size":6,"verified":true,"verify":null,"work":3432},"hits":[],"need":"count_pos"}
+{"built":{"cegis_rounds":1,"rust":null,"secs":1.633702894,"work":687500},"hits":[],"need":"grow_share"}
+{"built":{"cegis_rounds":1,"how":"","rust":"(a0 - a0.min(a1))","secs":0.111370544,"size":5,"verified":true,"verify":null,"work":1967},"hits":[],"need":"saturating_sub"}
+{"built":{"cegis_rounds":1,"rust":null,"secs":0.688773194,"work":304698},"hits":[],"need":"days_from_civil"}
+{"built":{"cegis_rounds":1,"rust":null,"secs":0.122044117,"work":53952},"hits":[],"need":"civil_from_days"}
+{"built":{"cegis_rounds":2,"how":"","rust":"(1i64).min(a0.max((-1i64)))","secs":0.107170283,"size":5,"verified":true,"verify":null,"work":2592},"hits":[],"need":"signum"}
+{"built":{"cegis_rounds":1,"rust":null,"secs":0.035999473,"work":16750},"hits":[],"need":"is_leap"}
+{"built":{"cegis_rounds":1,"rust":null,"secs":0.608322882,"work":152893},"hits":[],"need":"dot"}
+{"built":{"cegis_rounds":1,"how":"","rust":"(a0 + a0)","secs":0.112950413,"size":3,"verified":true,"verify":null,"work":30},"hits":[],"need":"double"}
+{"built":{"cegis_rounds":2,"how":"","rust":"((a0 + (a1 - (1i64))) / a1)","secs":0.42993562,"size":7,"verified":true,"verify":null,"work":111984},"hits":[],"need":"ceil_div"}
+{"built":{"cegis_rounds":1,"how":"","rust":"((a0 + a1) / (2i64))","secs":0.117338116,"size":5,"verified":true,"verify":null,"work":4367},"hits":[],"need":"midpoint"}
+{"built":{"cegis_rounds":1,"how":"","rust":"(a0 - a1).abs()","secs":0.123723275,"size":4,"verified":true,"verify":null,"work":524},"hits":[],"need":"distance"}
+{"built":{"cegis_rounds":1,"how":"","rust":"(a0 * a1)","secs":0.105905143,"size":3,"verified":true,"verify":null,"work":55},"hits":[],"need":"area"}
+{"built":{"cegis_rounds":1,"rust":null,"secs":0.306882278,"work":114640},"hits":[],"need":"gcd"}
+{"built":{"cegis_rounds":1,"how":"","rust":"(a0.iter().sum::<i64>() / (a0.len() as i64))","secs":0.178002573,"size":5,"verified":true,"verify":null,"work":1679},"hits":[],"need":"avg_list"}
+{"built":{"cegis_rounds":1,"how":"","rust":"a0.iter().map(|&x| (x * a1)).collect::<Vec<i64>>()","secs":0.475273675,"size":5,"verified":true,"verify":null,"work":8881},"hits":[],"need":"scale_list"}

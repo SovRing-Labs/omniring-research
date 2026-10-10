@@ -1,0 +1,9 @@
+d1.kind         torus16 acc 0.816 | Z cos 0.9544 acc 0.828 (2.00b) | A2 cos 0.9563 acc 0.824 (2.00b) | D4 cos 0.9583 acc 0.828 (2.00b) | E8 cos 0.9688 acc 0.833 (2.00b)
+d1.role         torus16 acc 0.745 | Z cos 0.9544 acc 0.728 (2.00b) | A2 cos 0.9563 acc 0.732 (2.00b) | D4 cos 0.9583 acc 0.741 (2.00b) | E8 cos 0.9688 acc 0.736 (2.00b)
+d2.outcome      torus16 acc 0.649 | Z cos 0.9547 acc 0.601 (2.00b) | A2 cos 0.9562 acc 0.634 (2.00b) | D4 cos 0.9584 acc 0.612 (2.00b) | E8 cos 0.9703 acc 0.619 (2.00b)
+d3.failclass    torus16 acc 0.817 | Z cos 0.9544 acc 0.821 (2.00b) | A2 cos 0.9562 acc 0.817 (2.00b) | D4 cos 0.9585 acc 0.817 (2.00b) | E8 cos 0.9714 acc 0.820 (2.00b)
+d3.outcome      torus16 acc 0.656 | Z cos 0.9546 acc 0.668 (2.00b) | A2 cos 0.9564 acc 0.662 (2.00b) | D4 cos 0.9584 acc 0.666 (2.00b) | E8 cos 0.9713 acc 0.666 (2.00b)
+d4.error_class  torus16 acc 0.807 | Z cos 0.9546 acc 0.812 (2.00b) | A2 cos 0.9563 acc 0.810 (2.00b) | D4 cos 0.9585 acc 0.812 (2.00b) | E8 cos 0.9788 acc 0.812 (2.00b)
+d5.verb         torus16 acc 0.934 | Z cos 0.9543 acc 0.932 (2.00b) | A2 cos 0.9562 acc 0.932 (2.00b) | D4 cos 0.9586 acc 0.930 (2.00b) | E8 cos 0.9906 acc 0.930 (2.00b)
+d5.verb_log     torus16 acc 0.935 | Z cos 0.9543 acc 0.939 (2.00b) | A2 cos 0.9561 acc 0.938 (2.00b) | D4 cos 0.9585 acc 0.939 (2.00b) | E8 cos 0.9913 acc 0.938 (2.00b)
+LAT-0: {'G1': True}

@@ -1,0 +1,35 @@
+{
+ "arm_c_job": {
+  "elapsed_s": 202.0,
+  "exit": 0,
+  "gpu_field_last_sample": null,
+  "started_utc": "2026-10-09T21:36:45Z",
+  "state": "DONE"
+ },
+ "arms_a_and_b_job": {
+  "elapsed_s": 512.0,
+  "exit": -15,
+  "gpu_field_last_sample": null,
+  "started_utc": "2026-10-09T21:27:51Z",
+  "state": "FAIL"
+ },
+ "probe_script_lines": [
+  "ARM A start 21:27:51 cap=default(3.5GiB)",
+  "ARM A exit 1 21:33:13",
+  "ARM B start 21:33:13 cap=2147483392",
+  "ARM C start 21:36:45 R=20 (5x4)",
+  "ARM C exit 1 21:40:05",
+  "DONE"
+ ],
+ "run3b_server0_last_sample": {
+  "elapsed_s": 1066.2,
+  "exit": -15,
+  "gpu_field_last_sample": [
+   99.0,
+   29839.0
+  ],
+  "started_utc": "2026-10-09T11:12:12Z",
+  "state": "FAIL"
+ },
+ "what": "clock records of the 2^31-byte probe and the last resource sample of server 0 in run 3b (scrubbed)"
+}

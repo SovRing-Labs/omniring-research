@@ -1,0 +1,216 @@
+{
+ "gate": "CYCLONE-ARRAY C2 S1: the training step on the GPU vs the CPU engine (om_grad)",
+ "dims": {
+  "V": 512,
+  "D": 64,
+  "L": 4,
+  "H": 2,
+  "T": 64,
+  "B": 2
+ },
+ "device": "llvmpipe",
+ "switches": [
+  "t25",
+  "voice",
+  "local",
+  "roles",
+  "avoid"
+ ],
+ "t25_pairs": 16,
+ "passes": 525,
+ "buffers": 85,
+ "loss_cpu": 6.243923664093018,
+ "cpu_s": 0.013,
+ "lib": "<workspace>/projects/thead-trial/engine/omni_train/libomnitrain_trial.so",
+ "device_name": "llvmpipe (LLVM 20.1.2, 256 bits)",
+ "loss_gpu": 6.243923664093018,
+ "loss_abs_diff": 0.0,
+ "worst_cos": 0.9999998212339202,
+ "worst_max_rel": 7.345317499130033e-06,
+ "gpu_ms_step": 336.7857,
+ "token_loss_diff": {
+  "median": 4.76837158203125e-07,
+  "p99": 0.0025039147585630417,
+  "max": 0.0025839805603027344,
+  "tokens_over_1e-4": 34,
+  "tokens": 128
+ },
+ "bytes_resident": 5092868,
+ "per_param": {
+  "emb.weight": {
+   "cos": 1.0000002,
+   "max_rel": 3.109e-06,
+   "norm_cpu": 4.459469318389893,
+   "norm_gpu": 4.459466457366943
+  },
+  "blocks.0.n1.weight": {
+   "cos": 1.0,
+   "max_rel": 7.345e-06,
+   "norm_cpu": 0.07992280274629593,
+   "norm_gpu": 0.07992281019687653
+  },
+  "blocks.0.n2.weight": {
+   "cos": 1.0,
+   "max_rel": 2.334e-06,
+   "norm_cpu": 0.07833234965801239,
+   "norm_gpu": 0.07833229005336761
+  },
+  "blocks.0.qkv.weight": {
+   "cos": 1.0000001,
+   "max_rel": 2.714e-06,
+   "norm_cpu": 2.0531094074249268,
+   "norm_gpu": 2.0531082153320312
+  },
+  "blocks.0.o.weight": {
+   "cos": 1.0000001,
+   "max_rel": 2.423e-06,
+   "norm_cpu": 1.8524975776672363,
+   "norm_gpu": 1.8524967432022095
+  },
+  "blocks.0.up.weight": {
+   "cos": 1.0000002,
+   "max_rel": 3.568e-06,
+   "norm_cpu": 1.4541548490524292,
+   "norm_gpu": 1.4541528224945068
+  },
+  "blocks.0.down.weight": {
+   "cos": 1.0000002,
+   "max_rel": 3.142e-06,
+   "norm_cpu": 2.4174563884735107,
+   "norm_gpu": 2.417454957962036
+  },
+  "blocks.1.n1.weight": {
+   "cos": 1.0,
+   "max_rel": 1.857e-06,
+   "norm_cpu": 0.04627580568194389,
+   "norm_gpu": 0.04627580940723419
+  },
+  "blocks.1.n2.weight": {
+   "cos": 1.0,
+   "max_rel": 8.868e-07,
+   "norm_cpu": 0.055267080664634705,
+   "norm_gpu": 0.055267084389925
+  },
+  "blocks.1.qkv.weight": {
+   "cos": 0.9999999,
+   "max_rel": 1.032e-06,
+   "norm_cpu": 0.9686859250068665,
+   "norm_gpu": 0.9686862230300903
+  },
+  "blocks.1.o.weight": {
+   "cos": 0.9999999,
+   "max_rel": 9.432e-07,
+   "norm_cpu": 1.0855144262313843,
+   "norm_gpu": 1.0855144262313843
+  },
+  "blocks.1.up.weight": {
+   "cos": 0.9999998,
+   "max_rel": 1.314e-06,
+   "norm_cpu": 1.0053460597991943,
+   "norm_gpu": 1.0053460597991943
+  },
+  "blocks.1.down.weight": {
+   "cos": 1.0000003,
+   "max_rel": 8.487e-07,
+   "norm_cpu": 1.6264137029647827,
+   "norm_gpu": 1.6264137029647827
+  },
+  "blocks.2.n1.weight": {
+   "cos": 1.0,
+   "max_rel": 2.433e-06,
+   "norm_cpu": 0.026173116639256477,
+   "norm_gpu": 0.02617313154041767
+  },
+  "blocks.2.n2.weight": {
+   "cos": 1.0000001,
+   "max_rel": 1.411e-06,
+   "norm_cpu": 0.030202766880393028,
+   "norm_gpu": 0.03020276501774788
+  },
+  "blocks.2.qkv.weight": {
+   "cos": 1.0000001,
+   "max_rel": 1.564e-06,
+   "norm_cpu": 0.6169927716255188,
+   "norm_gpu": 0.6169928908348083
+  },
+  "blocks.2.o.weight": {
+   "cos": 1.0,
+   "max_rel": 6.52e-07,
+   "norm_cpu": 0.7612069249153137,
+   "norm_gpu": 0.7612069845199585
+  },
+  "blocks.2.up.weight": {
+   "cos": 1.0000001,
+   "max_rel": 1.522e-06,
+   "norm_cpu": 0.7005353569984436,
+   "norm_gpu": 0.7005354166030884
+  },
+  "blocks.2.down.weight": {
+   "cos": 1.0000003,
+   "max_rel": 8.875e-07,
+   "norm_cpu": 1.5211259126663208,
+   "norm_gpu": 1.5211259126663208
+  },
+  "blocks.3.n1.weight": {
+   "cos": 1.0,
+   "max_rel": 5.86e-07,
+   "norm_cpu": 0.027288328856229782,
+   "norm_gpu": 0.027288317680358887
+  },
+  "blocks.3.n2.weight": {
+   "cos": 1.0,
+   "max_rel": 9.777e-07,
+   "norm_cpu": 0.019497396424412727,
+   "norm_gpu": 0.01949739083647728
+  },
+  "blocks.3.qkv.weight": {
+   "cos": 1.0,
+   "max_rel": 1.002e-06,
+   "norm_cpu": 0.377405047416687,
+   "norm_gpu": 0.3774048984050751
+  },
+  "blocks.3.o.weight": {
+   "cos": 1.0,
+   "max_rel": 6.93e-07,
+   "norm_cpu": 0.3715503215789795,
+   "norm_gpu": 0.3715502619743347
+  },
+  "blocks.3.up.weight": {
+   "cos": 1.0000001,
+   "max_rel": 1.065e-06,
+   "norm_cpu": 0.36564189195632935,
+   "norm_gpu": 0.36564186215400696
+  },
+  "blocks.3.down.weight": {
+   "cos": 1.0,
+   "max_rel": 1.212e-06,
+   "norm_cpu": 0.6114956140518188,
+   "norm_gpu": 0.6114956140518188
+  },
+  "nf.weight": {
+   "cos": 1.0,
+   "max_rel": 1.449e-06,
+   "norm_cpu": 0.048092857003211975,
+   "norm_gpu": 0.04809287190437317
+  },
+  "local.n0": {
+   "cos": 1.0,
+   "max_rel": 4.204e-06,
+   "norm_cpu": 0.06005260720849037,
+   "norm_gpu": 0.06005258858203888
+  },
+  "local.n1": {
+   "cos": 1.0,
+   "max_rel": 5.387e-07,
+   "norm_cpu": 0.06416851282119751,
+   "norm_gpu": 0.06416850537061691
+  },
+  "local.n2": {
+   "cos": 1.0,
+   "max_rel": 2.599e-06,
+   "norm_cpu": 0.052938953042030334,
+   "norm_gpu": 0.05293900519609451
+  }
+ },
+ "pass": true
+}

@@ -1,0 +1,56 @@
+{
+ "gate": "GROW-RUN-0 G3b-3: the array (U units \u00d7 per harnesses, each unit's cyclone holds C, floor ring) training in one GPU step",
+ "dims": {
+  "V": 512,
+  "D": 64,
+  "L": 4,
+  "H": 2,
+  "T": 64,
+  "B": 2
+ },
+ "units": 2,
+ "per": 2,
+ "R": 4,
+ "ring": null,
+ "switches": [],
+ "steps": 4,
+ "K": 0.1,
+ "lr": 0.003,
+ "device": "llvmpipe",
+ "lib": "<workspace>/projects/thead-trial/engine/omni_train/libomnitrain_trial.so",
+ "exact_mismatched_words": 0,
+ "device_name": "llvmpipe (LLVM 20.1.2, 256 bits)",
+ "passes_per_step": 630,
+ "buffers": 122,
+ "bytes_resident": 28958228,
+ "gb_resident": 0.029,
+ "gpu_ms_per_array_step": 182.25,
+ "cpu_ms_per_array_step": 53.8,
+ "speedup_vs_cpu_engines": 0.3,
+ "heldout_cpu": [
+  5.504495620727539,
+  5.502209186553955,
+  5.5106329917907715,
+  5.47222375869751
+ ],
+ "heldout_gpu": [
+  5.505529403686523,
+  5.502069473266602,
+  5.511441230773926,
+  5.473344802856445
+ ],
+ "max_rel_heldout_gap": 0.000204860804011124,
+ "loss_first_gpu": [
+  6.293827533721924,
+  6.244146823883057,
+  6.301308631896973,
+  6.238965034484863
+ ],
+ "loss_last_gpu": [
+  5.685567855834961,
+  5.640403747558594,
+  5.636778354644775,
+  5.621898174285889
+ ],
+ "pass": true
+}

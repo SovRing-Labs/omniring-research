@@ -1,0 +1,162 @@
+== chain from results/school-t25-prek-cloud1 · seeds 6400 6500 6600 6700 6800 · budget 14400s · 16 cpus · OT_THREADS=16 · bin 0006cf6af1a3 · lib 361c4c46f5ea
+== ladder seed 6400 start 2026-10-08T01:10:21+00:00 · warm results/school-t25-prek-cloud1 · 14400s left
+[thead] warm start from results/school-t25-prek-cloud1
+[thead] P3 on: confirmed rows (p > 0.95) skip the backward, full step every 4
+[thead] attention plates on (rows end at token 0)
+[thead] T25 core in the model: 25 clock pairs turned by the rendered core
+[learn2] compiled check: {"agree":128,"n":128,"ok":true,"path":"sift head"}
+[learn2] 732 wake steps · 2926 windows · day 20 steps · active 6/6 · doing pool 12514 · levels [0, 1, 2, 3, 4] · start: held-out 0.778 · answer (1550) 0.060
+  [day 1] step 20/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 6/16 · review 0/0 · J-format prompt 0/2 answer 2/2 · assisted 0 · study own 6 corr 0 gold 12 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.421→1.493 ROLLBACK · retry 5/10 · 22s
+  [wake] step 25 out 0.265 | blocks 0.47 0.04 0.07 0.38 0.09 0.23 | 0.05M tok | 1764 tok/s | pass 1 | active 6
+  [day 2] step 40/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 5/16 · review 0/0 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 10 corr 1 gold 12 · tools router 0/0 gate 0/0 consulted 0 · sleep 2.456→2.567 ROLLBACK · retry 9/12 · 22s
+  [wake] step 50 out 0.220 | blocks 1.23 0.42 0.86 0.06 0.22 0.20 | 0.10M tok | 1955 tok/s | pass 1 | active 6
+  [day 3] step 60/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 2/16 · review 6/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 17 corr 2 gold 16 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.978→2.114 ROLLBACK · retry 9/18 · 22s
+  [wake] step 75 out 0.189 | blocks 1.35 0.66 0.15 0.00 1.45 0.18 | 0.15M tok | 2004 tok/s | pass 1 | active 6
+  [day 4] step 80/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 1/16 · review 7/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 17 corr 2 gold 16 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.989→1.928 COMMIT · retry 13/18 · 23s
+  [wake] step 100 out 0.191 | blocks 1.26 2.61 1.67 0.00 1.72 0.18 | 0.20M tok | 2039 tok/s | pass 1 | active 6
+  [day 5] step 100/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 0/16 · review 4/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 20 · tools router 0/0 gate 0/0 consulted 0 · sleep 2.104→1.954 COMMIT · retry 9/21 · 22s
+  [day 6] step 120/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 2/16 · review 6/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 17 corr 1 gold 17 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.700→2.053 ROLLBACK · retry 7/17 · 25s
+  [wake] step 125 out 0.853 | blocks 1.10 0.74 0.77 1.09 0.74 0.71 | 0.26M tok | 1779 tok/s | pass 2 | active 6
+  [day 7] step 140/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 3/16 · review 5/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 15 corr 2 gold 16 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.664→1.691 ROLLBACK · retry 8/18 · 26s
+  [wake] step 150 out 0.720 | blocks 1.45 1.11 1.43 0.40 1.62 0.65 | 0.31M tok | 1786 tok/s | pass 2 | active 6
+  [day 8] step 160/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 2/16 · review 4/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 14 corr 2 gold 18 · tools router 0/0 gate 0/0 consulted 3 · sleep 1.528→1.546 ROLLBACK · retry 7/20 · 26s
+  [wake] step 175 out 0.637 | blocks 1.53 1.23 1.23 0.09 1.49 0.60 | 0.36M tok | 1793 tok/s | pass 2 | active 6
+  [day 9] step 180/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 5/16 · review 6/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 14 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.816→1.830 ROLLBACK · retry 6/14 · 25s
+  [wake] step 200 out 0.571 | blocks 1.50 1.04 1.12 0.67 1.27 0.51 | 0.41M tok | 1802 tok/s | pass 2 | active 6
+  [day 10] step 200/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 4/16 · review 7/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 17 corr 1 gold 14 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.850→1.969 ROLLBACK · retry 9/14 · 25s
+[learn2] ckpt 0.41M tok · day 10 · held-out 0.993 with plates · 1.688 without · answer (1550) 0.193 / 4.187 · canary 1.850 · full depth 1.029 / answer 0.190
+  [day 11] step 220/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 2/16 · review 5/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 16 corr 2 gold 17 · tools router 0/0 gate 0/0 consulted 1 · sleep 2.040→2.088 ROLLBACK · retry 7/19 · 25s
+  [wake] step 225 out 0.646 | blocks 0.99 0.43 0.50 0.13 0.49 0.58 | 0.46M tok | 1645 tok/s | pass 2 | active 6
+  [day 12] step 240/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 3/16 · review 3/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 13 corr 1 gold 19 · tools router 0/0 gate 0/0 consulted 3 · sleep 2.045→2.247 ROLLBACK · retry 8/19 · 25s
+  [wake] step 250 out 0.579 | blocks 1.50 1.08 1.21 0.61 1.26 0.50 | 0.51M tok | 1670 tok/s | pass 2 | active 6
+  [day 13] step 260/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 0/16 · review 2/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 10 corr 1 gold 23 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.662→1.893 ROLLBACK · retry 10/23 · 25s
+  [wake] step 275 out 0.732 | blocks 1.67 1.39 1.46 0.87 1.27 0.66 | 0.56M tok | 1684 tok/s | pass 3 | active 6
+  [day 14] step 280/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 2/16 · review 4/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 16 corr 1 gold 19 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.994→1.936 COMMIT · retry 12/19 · 26s
+  [wake] step 300 out 0.642 | blocks 1.55 1.40 1.54 0.62 1.01 0.59 | 0.61M tok | 1695 tok/s | pass 3 | active 6
+  [day 15] step 300/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 2/16 · review 4/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 19 · tools router 0/0 gate 0/0 consulted 3 · sleep 1.611→1.771 ROLLBACK · retry 7/19 · 26s
+  [day 16] step 320/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 2/16 · review 3/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 12 corr 1 gold 20 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.871→1.815 COMMIT · retry 11/20 · 25s
+  [wake] step 325 out 0.687 | blocks 1.05 0.61 0.74 0.11 0.34 0.64 | 0.67M tok | 1636 tok/s | pass 3 | active 6
+  [day 17] step 340/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 2/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 18 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.380→1.533 ROLLBACK · retry 7/18 · 26s
+  [wake] step 350 out 0.673 | blocks 1.48 1.10 1.28 0.27 1.33 0.62 | 0.72M tok | 1648 tok/s | pass 3 | active 6
+  [day 18] step 360/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 5/16 · review 2/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 14 corr 2 gold 17 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.875→1.840 COMMIT · retry 7/19 · 27s
+  [wake] step 375 out 0.640 | blocks 1.70 1.32 1.29 0.67 1.57 0.59 | 0.77M tok | 1658 tok/s | pass 3 | active 6
+  [day 19] step 380/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 5/16 · review 7/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 19 corr 2 gold 12 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.420→1.624 ROLLBACK · retry 6/14 · 26s
+  [wake] step 400 out 0.632 | blocks 1.58 1.30 1.37 0.55 1.37 0.58 | 0.82M tok | 1667 tok/s | pass 3 | active 6
+  [day 20] step 400/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 4/16 · review 3/8 · J-format prompt 0/2 answer 2/2 · assisted 0 · study own 13 corr 0 gold 19 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.433→1.366 COMMIT · retry 5/17 · 26s
+[learn2] ckpt 0.82M tok · day 20 · held-out 0.782 with plates · 1.759 without · answer (1550) 0.095 / 3.247 · canary 1.366 · full depth 0.779 / answer 0.096
+  [day 21] step 420/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 1/16 · review 4/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 10 corr 2 gold 19 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.538→1.430 COMMIT · retry 10/21 · 27s
+  [wake] step 425 out 1.137 | blocks 1.53 1.18 1.13 0.21 0.92 1.00 | 0.87M tok | 1590 tok/s | pass 4 | active 6
+  [day 22] step 440/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 3/16 · review 5/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 18 corr 2 gold 16 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.260→1.219 COMMIT · retry 9/18 · 27s
+  [wake] step 450 out 1.092 | blocks 1.90 1.67 1.76 0.82 2.15 1.02 | 0.92M tok | 1598 tok/s | pass 4 | active 6
+  [day 23] step 460/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 0/16 · review 5/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 14 corr 2 gold 19 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.428→1.342 COMMIT · retry 9/21 · 28s
+  [wake] step 475 out 0.986 | blocks 1.82 1.45 1.45 1.01 1.70 0.91 | 0.97M tok | 1603 tok/s | pass 4 | active 6
+  [day 24] step 480/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 4/16 · review 5/8 · J-format prompt 2/2 answer 1/2 · assisted 0 · study own 19 corr 1 gold 15 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.054→0.977 COMMIT · retry 9/16 · 26s
+  [wake] step 500 out 0.904 | blocks 1.69 1.33 1.40 0.41 1.54 0.83 | 1.02M tok | 1612 tok/s | pass 4 | active 6
+  [day 25] step 500/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 4/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 16 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.070→1.111 ROLLBACK · retry 4/16 · 27s
+  [day 26] step 520/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 3/16 · review 4/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 11 corr 1 gold 18 · tools router 0/0 gate 0/0 consulted 1 · sleep 0.923→0.877 COMMIT · retry 11/18 · 26s
+  [wake] step 525 out 0.951 | blocks 1.32 0.96 0.88 0.31 0.68 0.84 | 1.08M tok | 1578 tok/s | pass 4 | active 6
+  [day 27] step 540/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 6/16 · review 7/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 25 corr 1 gold 11 · tools router 0/0 gate 0/0 consulted 0 · sleep 0.779→0.914 ROLLBACK · retry 6/12 · 26s
+  [wake] step 550 out 1.140 | blocks 2.19 1.56 1.71 0.83 2.34 1.06 | 1.13M tok | 1586 tok/s | pass 5 | active 6
+  [day 28] step 560/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 7/16 · review 6/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 19 corr 1 gold 12 · tools router 0/0 gate 0/0 consulted 1 · sleep 0.820→0.887 ROLLBACK · retry 3/12 · 26s
+  [wake] step 575 out 1.044 | blocks 1.75 1.51 1.59 0.34 2.10 0.95 | 1.18M tok | 1593 tok/s | pass 5 | active 6
+  [day 29] step 580/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 3/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 11 corr 1 gold 17 · tools router 0/0 gate 0/0 consulted 1 · sleep 0.880→0.829 COMMIT · retry 10/17 · 27s
+  [wake] step 600 out 0.961 | blocks 1.72 1.40 1.47 0.61 1.96 0.89 | 1.23M tok | 1600 tok/s | pass 5 | active 6
+  [day 30] step 600/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 2/16 · review 5/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 17 · tools router 0/0 gate 0/0 consulted 0 · sleep 0.889→0.837 COMMIT · retry 7/18 · 27s
+[learn2] ckpt 1.23M tok · day 30 · held-out 0.669 with plates · 1.774 without · answer (1550) 0.025 / 4.869 · canary 0.837 · full depth 0.660 / answer 0.025
+  [day 31] step 620/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 4/16 · review 8/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 20 corr 1 gold 12 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.082→1.053 COMMIT · retry 5/13 · 26s
+  [wake] step 625 out 0.995 | blocks 1.38 0.95 0.87 0.36 1.24 0.90 | 1.28M tok | 1556 tok/s | pass 5 | active 6
+  [day 32] step 640/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 6/16 · review 3/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 15 corr 1 gold 15 · tools router 0/0 gate 0/0 consulted 0 · sleep 0.843→0.845 COMMIT · retry 10/16 · 26s
+  [wake] step 650 out 0.873 | blocks 1.79 1.35 1.40 0.79 1.83 0.81 | 1.33M tok | 1565 tok/s | pass 5 | active 6
+  [day 33] step 660/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 6/16 · review 5/8 · J-format prompt 2/2 answer 1/2 · assisted 0 · study own 22 corr 1 gold 13 · tools router 0/0 gate 0/0 consulted 3 · sleep 0.947→0.949 COMMIT · retry 6/14 · 25s
+  [wake] step 675 out 0.919 | blocks 1.88 1.48 1.52 0.60 1.99 0.85 | 1.38M tok | 1576 tok/s | pass 5 | active 6
+  [day 34] step 680/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 1/16 · review 6/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 13 corr 1 gold 18 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.020→1.041 ROLLBACK · retry 5/18 · 26s
+  [wake] step 700 out 0.975 | blocks 1.67 1.22 1.32 1.11 2.03 0.90 | 1.43M tok | 1583 tok/s | pass 5 | active 6
+  [day 35] step 700/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 3/16 · review 6/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 15 corr 1 gold 15 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.127→1.166 ROLLBACK · retry 5/16 · 26s
+  [day 36] step 720/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 3/16 · review 8/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 17 corr 1 gold 13 · tools router 0/0 gate 0/0 consulted 3 · sleep 1.027→1.007 COMMIT · retry 3/14 · 26s
+  [wake] step 725 out 0.966 | blocks 1.40 0.86 0.81 0.37 0.98 0.89 | 1.48M tok | 1561 tok/s | pass 5 | active 6
+  [day 37] step 732/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 5/16 · review 7/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 15 corr 2 gold 12 · tools router 0/0 gate 0/0 consulted 1 · sleep 0.789→0.810 ROLLBACK · retry 5/14 · 23s
+[learn2] ckpt 1.50M tok · day 37 · held-out 0.653 with plates · 1.769 without · answer (1550) 0.024 / 4.616 · canary 0.789 · full depth 0.647 / answer 0.024
+[learn2] finished · 2926 of 2926 curriculum windows seen · 37 days · 980s
+   days 37 · step 732 · day s [22, 22, 22, 23, 22, 25, 26, 26, 25, 25, 25, 25, 25, 26, 26, 25, 26, 27, 26, 26, 27, 27, 28, 26, 27, 26, 26, 26, 27, 27, 26, 26, 25, 26, 26, 26, 23]
+   held-out / canary [(30, 0.669, 0.837), (37, 0.653, 0.789)]
+Traceback (most recent call last):
+  File "/root/ai-stack/projects/thead-trial/runtime/../harness/tier1_eval.py", line 9, in <module>
+    import tier1_symbols
+ModuleNotFoundError: No module named 'tier1_symbols'
+== ladder seed 6400 exit 0 2026-10-08T01:26:41+00:00
+Traceback (most recent call last):
+  File "/root/ai-stack/projects/thead-trial/runtime/../harness/tier1_gate.py", line 10, in <module>
+    H = json.load(open(f"{run}/probes/tier1_eval.json"))["heldout_by_lesson_and_class"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/root/ai-stack/projects/thead-trial/runtime/results/school-t25-prek5-cloud-s6400/probes/tier1_eval.json'
+== ladder seed 6500 start 2026-10-08T01:26:41+00:00 · warm results/school-t25-prek5-cloud-s6400 · 13420s left
+[thead] warm start from results/school-t25-prek5-cloud-s6400
+[thead] P3 on: confirmed rows (p > 0.95) skip the backward, full step every 4
+[thead] attention plates on (rows end at token 0)
+[thead] T25 core in the model: 25 clock pairs turned by the rendered core
+[learn2] compiled check: {"agree":128,"n":128,"ok":true,"path":"sift head"}
+[learn2] 732 wake steps · 2926 windows · day 20 steps · active 6/6 · doing pool 12514 · levels [0, 1, 2, 3, 4] · start: held-out 0.653 · answer (1550) 0.026
+  [day 1] step 20/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 7/16 · review 0/0 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 7 corr 1 gold 10 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.024→1.039 ROLLBACK · retry 6/10 · 22s
+  [wake] step 25 out 0.240 | blocks 0.49 0.02 0.01 0.05 0.07 0.23 | 0.05M tok | 1773 tok/s | pass 1 | active 6
+  [day 2] step 40/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 4/16 · review 0/0 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 10 corr 1 gold 13 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.615→1.891 ROLLBACK · retry 6/13 · 21s
+  [wake] step 50 out 0.216 | blocks 0.92 0.19 0.15 2.55 0.89 0.17 | 0.10M tok | 1963 tok/s | pass 1 | active 6
+  [day 3] step 60/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 2/16 · review 7/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 15 corr 2 gold 15 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.343→1.433 ROLLBACK · retry 12/17 · 21s
+  [wake] step 75 out 0.211 | blocks 1.30 0.20 0.11 0.00 0.84 0.20 | 0.15M tok | 2054 tok/s | pass 1 | active 6
+  [day 4] step 80/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 1/16 · review 7/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 20 corr 2 gold 16 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.779→2.040 ROLLBACK · retry 8/18 · 22s
+  [wake] step 100 out 0.191 | blocks 1.08 0.95 1.45 0.85 1.27 0.15 | 0.20M tok | 2079 tok/s | pass 1 | active 6
+  [day 5] step 100/732 · pass 1 · active 6 · fired 16 · frontier ≤L5 0/16 · review 4/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 12 corr 2 gold 20 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.797→1.919 ROLLBACK · retry 12/22 · 22s
+  [day 6] step 120/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 0/16 · review 0/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 12 corr 2 gold 24 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.576→1.640 ROLLBACK · retry 17/26 · 25s
+  [wake] step 125 out 0.704 | blocks 1.07 0.52 0.56 0.15 0.42 0.60 | 0.26M tok | 1807 tok/s | pass 2 | active 6
+  [day 7] step 140/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 5/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 27 corr 1 gold 15 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.589→1.660 ROLLBACK · retry 7/15 · 24s
+  [wake] step 150 out 0.559 | blocks 1.67 1.11 1.08 0.09 1.08 0.51 | 0.31M tok | 1834 tok/s | pass 2 | active 6
+  [day 8] step 160/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 3/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 15 corr 1 gold 17 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.957→1.769 COMMIT · retry 10/17 · 24s
+  [wake] step 175 out 0.465 | blocks 1.57 0.88 0.97 0.97 1.27 0.43 | 0.36M tok | 1848 tok/s | pass 2 | active 6
+  [day 9] step 180/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 4/16 · review 5/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 19 corr 1 gold 16 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.650→1.642 COMMIT · retry 8/16 · 24s
+  [wake] step 200 out 0.472 | blocks 1.75 1.02 1.15 0.42 0.91 0.43 | 0.41M tok | 1865 tok/s | pass 2 | active 6
+  [day 10] step 200/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 5/16 · review 6/8 · J-format prompt 1/2 answer 0/2 · assisted 0 · study own 19 corr 2 gold 13 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.785→1.924 ROLLBACK · retry 12/15 · 22s
+[learn2] ckpt 0.41M tok · day 10 · held-out 0.946 with plates · 2.337 without · answer (1550) 0.288 / 5.386 · canary 1.785 · full depth 0.930 / answer 0.289
+  [day 11] step 220/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 1/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 19 · tools router 0/0 gate 0/0 consulted 5 · sleep 1.523→1.607 ROLLBACK · retry 12/19 · 23s
+  [wake] step 225 out 0.578 | blocks 1.04 0.37 0.37 0.07 0.31 0.52 | 0.46M tok | 1719 tok/s | pass 2 | active 6
+  [day 12] step 240/732 · pass 2 · active 6 · fired 16 · frontier ≤L5 4/16 · review 3/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 19 corr 2 gold 17 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.354→1.506 ROLLBACK · retry 7/19 · 24s
+  [wake] step 250 out 0.512 | blocks 1.53 0.80 0.96 0.23 0.87 0.45 | 0.51M tok | 1740 tok/s | pass 2 | active 6
+  [day 13] step 260/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 4/16 · review 4/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 15 corr 1 gold 17 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.782→1.687 COMMIT · retry 5/17 · 25s
+  [wake] step 275 out 0.620 | blocks 1.63 1.56 1.58 0.35 0.83 0.56 | 0.56M tok | 1752 tok/s | pass 3 | active 6
+  [day 14] step 280/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 6/16 · review 4/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 15 corr 1 gold 15 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.324→1.329 COMMIT · retry 8/15 · 26s
+  [wake] step 300 out 0.553 | blocks 1.74 1.18 1.17 0.08 0.91 0.53 | 0.61M tok | 1760 tok/s | pass 3 | active 6
+  [day 15] step 300/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 5/16 · review 6/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 19 corr 2 gold 13 · tools router 0/0 gate 0/0 consulted 3 · sleep 1.119→1.104 COMMIT · retry 5/15 · 25s
+  [day 16] step 320/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 6/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 16 corr 1 gold 14 · tools router 0/0 gate 0/0 consulted 6 · sleep 1.299→1.267 COMMIT · retry 6/14 · 25s
+  [wake] step 325 out 0.533 | blocks 1.00 0.37 0.35 0.04 0.20 0.50 | 0.67M tok | 1692 tok/s | pass 3 | active 6
+  [day 17] step 340/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 4/16 · review 6/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 16 corr 1 gold 15 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.448→1.364 COMMIT · retry 11/15 · 24s
+  [wake] step 350 out 0.580 | blocks 1.54 1.35 1.33 0.59 1.03 0.54 | 0.72M tok | 1710 tok/s | pass 3 | active 6
+  [day 18] step 360/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 4/16 · review 6/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 22 corr 1 gold 14 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.894→1.719 COMMIT · retry 8/15 · 25s
+  [wake] step 375 out 0.545 | blocks 1.63 1.32 1.30 0.49 1.16 0.49 | 0.77M tok | 1719 tok/s | pass 3 | active 6
+  [day 19] step 380/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 3/16 · review 6/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 17 corr 2 gold 15 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.301→1.294 COMMIT · retry 8/17 · 26s
+  [wake] step 400 out 0.527 | blocks 1.67 1.30 1.24 0.58 0.53 0.50 | 0.82M tok | 1725 tok/s | pass 3 | active 6
+  [day 20] step 400/732 · pass 3 · active 6 · fired 16 · frontier ≤L5 3/16 · review 4/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 16 corr 1 gold 17 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.618→1.609 COMMIT · retry 5/18 · 26s
+[learn2] ckpt 0.82M tok · day 20 · held-out 0.703 with plates · 2.091 without · answer (1550) 0.072 / 6.542 · canary 1.609 · full depth 0.706 / answer 0.073
+  [day 21] step 420/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 3/16 · review 4/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 12 corr 2 gold 17 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.100→1.154 ROLLBACK · retry 7/19 · 26s
+  [wake] step 425 out 1.028 | blocks 1.43 0.97 0.98 0.47 0.89 0.91 | 0.87M tok | 1645 tok/s | pass 4 | active 6
+  [day 22] step 440/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 4/16 · review 5/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 16 corr 2 gold 15 · tools router 0/0 gate 0/0 consulted 0 · sleep 0.753→0.826 ROLLBACK · retry 7/17 · 26s
+  [wake] step 450 out 0.998 | blocks 1.99 1.62 1.64 0.44 1.95 0.94 | 0.92M tok | 1653 tok/s | pass 4 | active 6
+  [day 23] step 460/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 3/16 · review 6/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 16 corr 1 gold 16 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.128→1.221 ROLLBACK · retry 7/16 · 26s
+  [wake] step 475 out 0.888 | blocks 2.02 1.45 1.48 0.11 1.87 0.82 | 0.97M tok | 1661 tok/s | pass 4 | active 6
+  [day 24] step 480/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 6/16 · review 7/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 21 corr 1 gold 11 · tools router 0/0 gate 0/0 consulted 5 · sleep 1.302→1.229 COMMIT · retry 7/12 · 26s
+  [wake] step 500 out 0.828 | blocks 1.69 1.29 1.30 0.45 1.71 0.78 | 1.02M tok | 1607 tok/s | pass 4 | active 6
+  [day 25] step 500/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 3/16 · review 4/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 14 corr 1 gold 18 · tools router 0/0 gate 0/0 consulted 1 · sleep 0.924→1.005 ROLLBACK · retry 8/18 · 244s
+  [day 26] step 520/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 3/16 · review 4/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 15 corr 1 gold 18 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.164→1.256 ROLLBACK · retry 7/18 · 32s
+  [wake] step 525 out 1.010 | blocks 1.41 0.94 0.96 0.13 0.60 0.89 | 1.08M tok | 1219 tok/s | pass 4 | active 6
+  [day 27] step 540/732 · pass 4 · active 6 · fired 16 · frontier ≤L5 6/16 · review 5/8 · J-format prompt 0/2 answer 2/2 · assisted 0 · study own 18 corr 0 gold 15 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.134→1.100 COMMIT · retry 7/13 · 26s
+  [wake] step 550 out 0.962 | blocks 1.97 1.61 1.66 1.84 1.94 0.77 | 1.13M tok | 1237 tok/s | pass 5 | active 6
+  [day 28] step 560/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 4/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 16 corr 1 gold 16 · tools router 0/0 gate 0/0 consulted 1 · sleep 0.975→0.952 COMMIT · retry 10/16 · 26s
+  [wake] step 575 out 0.894 | blocks 1.91 1.30 1.37 1.34 1.64 0.80 | 1.18M tok | 1254 tok/s | pass 5 | active 6
+  [day 29] step 580/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 3/16 · review 5/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 17 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.049→1.170 ROLLBACK · retry 10/17 · 26s
+  [wake] step 600 out 0.933 | blocks 1.76 1.28 1.41 1.03 2.18 0.87 | 1.23M tok | 1270 tok/s | pass 5 | active 6
+  [day 30] step 600/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 6/16 · review 8/8 · J-format prompt 0/2 answer 2/2 · assisted 0 · study own 24 corr 0 gold 12 · tools router 0/0 gate 0/0 consulted 2 · sleep 1.066→1.050 COMMIT · retry 3/10 · 26s
+[learn2] ckpt 1.23M tok · day 30 · held-out 0.645 with plates · 1.854 without · answer (1550) 0.030 / 5.354 · canary 1.050 · full depth 0.636 / answer 0.029
+  [day 31] step 620/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 8/16 · review 4/8 · J-format prompt 1/2 answer 0/2 · assisted 0 · study own 15 corr 2 gold 12 · tools router 0/0 gate 0/0 consulted 1 · sleep 0.784→0.884 ROLLBACK · retry 10/14 · 25s
+  [wake] step 625 out 0.935 | blocks 1.34 0.88 0.84 0.27 0.82 0.85 | 1.28M tok | 1254 tok/s | pass 5 | active 6
+  [day 32] step 640/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 5/16 · review 4/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 20 corr 1 gold 15 · tools router 0/0 gate 0/0 consulted 17 · sleep 0.798→0.928 ROLLBACK · retry 7/16 · 26s
+  [wake] step 650 out 0.909 | blocks 1.86 1.41 1.43 0.69 1.92 0.83 | 1.33M tok | 1269 tok/s | pass 5 | active 6
+  [day 33] step 660/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 7/16 · review 7/8 · J-format prompt 1/2 answer 1/2 · assisted 0 · study own 22 corr 1 gold 10 · tools router 0/0 gate 0/0 consulted 4 · sleep 0.702→0.690 COMMIT · retry 7/11 · 25s
+  [wake] step 675 out 0.896 | blocks 1.75 1.62 1.68 0.58 1.92 0.81 | 1.38M tok | 1284 tok/s | pass 5 | active 6
+  [day 34] step 680/732 · pass 5 · active 6 · fired 16 · frontier ≤L5 4/16 · review 6/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 17 corr 2 gold 14 · tools router 0/0 gate 0/0 consulted 3 · sleep 0.911→0.890 COMMIT · retry 6/16 · 26s

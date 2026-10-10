@@ -1,0 +1,20 @@
+{
+ "gate": "CYCLONE-ARRAY C2 S1 learning: K training steps GPU vs the CPU engine (om_train_step)",
+ "dims": {
+  "V": 8192,
+  "D": 256,
+  "L": 6,
+  "H": 4,
+  "T": 512,
+  "B": 4
+ },
+ "steps": 20,
+ "lr": 0.003,
+ "device": "L4",
+ "passes": 14520,
+ "buffers": 12742,
+ "cpu_s": 14.63,
+ "lib": "/root/cyclone/lib/libomnitrain_trial.so",
+ "pass": false,
+ "error": "omni-gpu: vkAllocateMemory: VkResult -2\n"
+}

@@ -1,0 +1,321 @@
+{
+ "ref": {
+  "dir": "<workspace>/projects/thead-trial/tests/ramkit/results/ab/off",
+  "log": [
+   {
+    "step": 0,
+    "heldout_loss_port": 0.868083082139492,
+    "heldout_loss_no_port": 1.5005698800086975,
+    "answer_loss_port": 0.11313466010555144,
+    "canary": 1.3670647854500628
+   },
+   {
+    "step": 20,
+    "heldout_loss_port": 1.5175653547048569,
+    "heldout_loss_no_port": 2.3290827199816704,
+    "answer_loss_port": 0.5285295595661287,
+    "canary": 2.112855835163847
+   },
+   {
+    "step": 40,
+    "heldout_loss_port": 1.078140951693058,
+    "heldout_loss_no_port": 1.7732063978910446,
+    "answer_loss_port": 0.15339515239961685,
+    "canary": 2.529134790948097
+   }
+  ],
+  "days": [
+   {
+    "day": 1,
+    "wake_loss": 0.23935441672801971,
+    "frontier": [
+     4,
+     16
+    ],
+    "review": [
+     0,
+     0
+    ],
+    "mastered_level": 0,
+    "study_loss": 0.16635824739933014,
+    "sleep": "ROLLBACK",
+    "ramkit": null
+   },
+   {
+    "day": 2,
+    "wake_loss": 0.7215425968170166,
+    "frontier": [
+     4,
+     16
+    ],
+    "review": [
+     0,
+     0
+    ],
+    "mastered_level": 2,
+    "study_loss": 0.3233571946620941,
+    "sleep": "COMMIT",
+    "ramkit": null
+   }
+  ],
+  "ckpt_sha256": "d69f82a052ff379c3a113af86533e091b02c62bbd4f28ae98e947b3b03d59c43",
+  "ramkit": null
+ },
+ "arms": [
+  {
+   "dir": "<workspace>/projects/thead-trial/tests/ramkit/results/ab/ring",
+   "log": [
+    {
+     "step": 0,
+     "heldout_loss_port": 0.868083082139492,
+     "heldout_loss_no_port": 1.5005698800086975,
+     "answer_loss_port": 0.11313466010555144,
+     "canary": 1.3670647854500628
+    },
+    {
+     "step": 20,
+     "heldout_loss_port": 1.475057015195489,
+     "heldout_loss_no_port": 2.092537224292755,
+     "answer_loss_port": 0.4688970721152521,
+     "canary": 2.5770128635649985
+    },
+    {
+     "step": 40,
+     "heldout_loss_port": 1.0694762989878654,
+     "heldout_loss_no_port": 1.875232383608818,
+     "answer_loss_port": 0.1559037673088812,
+     "canary": 1.8323943513505003
+    }
+   ],
+   "days": [
+    {
+     "day": 1,
+     "wake_loss": 0.21574898064136505,
+     "frontier": [
+      3,
+      16
+     ],
+     "review": [
+      0,
+      0
+     ],
+     "mastered_level": 0,
+     "study_loss": 0.19972647726535797,
+     "sleep": "COMMIT",
+     "ramkit": {
+      "epi_entries": 0.0,
+      "epi_gate_mean": 0.0,
+      "epi_reads": 0.0,
+      "epi_rows_written": 0,
+      "epi_writes": 0.0,
+      "gem_projections": 0.0,
+      "gem_refs": 0,
+      "gem_steps": 0.0,
+      "ring_gate_mean": 0.7063608691689576,
+      "ring_rows": 82861.0,
+      "ring_touched_per_step": 628.0961538461538,
+      "snapshots": 0
+     }
+    },
+    {
+     "day": 2,
+     "wake_loss": 0.7782458662986755,
+     "frontier": [
+      3,
+      16
+     ],
+     "review": [
+      0,
+      0
+     ],
+     "mastered_level": 2,
+     "study_loss": 0.342603474855423,
+     "sleep": "COMMIT",
+     "ramkit": {
+      "epi_entries": 0.0,
+      "epi_gate_mean": 0.0,
+      "epi_reads": 0.0,
+      "epi_rows_written": 0,
+      "epi_writes": 0.0,
+      "gem_projections": 0.0,
+      "gem_refs": 0,
+      "gem_steps": 0.0,
+      "ring_gate_mean": 0.9323652753541515,
+      "ring_rows": 82861.0,
+      "ring_touched_per_step": 1408.3461538461538,
+      "snapshots": 0
+     }
+    }
+   ],
+   "ckpt_sha256": "c4c2c34671b08db011fcfd9061503b975b2b966abadb98fe18e74490155087b7",
+   "ramkit": {
+    "epi_k": 4.0,
+    "epi_mem": 0,
+    "epi_tau": 0.1,
+    "gem": false,
+    "gem_b": 2,
+    "gem_every": 4,
+    "lut5_bwd": false,
+    "ring_mem_heads": 4.0,
+    "ring_mem_layer": 1.0,
+    "ring_mem_lr": 1.0,
+    "ring_mem_q": 1.0,
+    "ring_mem_rows": 82861,
+    "row_map": 0,
+    "row_map_share": 0.25,
+    "snap_dir": "/dev/shm/thead-snap/_home_jc_ai-stack_projects_thead-trial_tests_ramkit_results_ab_ring",
+    "snap_every": 0,
+    "snap_keep": 8
+   },
+   "identical_to_ref": false,
+   "heldout_delta_last": -0.008664652705192566,
+   "canary_delta_last": -0.6967404395975965
+  },
+  {
+   "dir": "<workspace>/projects/thead-trial/tests/ramkit/results/ab/epi",
+   "log": [
+    {
+     "step": 0,
+     "heldout_loss_port": 0.868083082139492,
+     "heldout_loss_no_port": 1.5005698800086975,
+     "answer_loss_port": 0.11313466010555144,
+     "canary": 1.3670647854500628
+    },
+    {
+     "step": 20,
+     "heldout_loss_port": 1.5229902938008308,
+     "heldout_loss_no_port": 2.305755317211151,
+     "answer_loss_port": 0.7044870808816726,
+     "canary": 2.205180360915813
+    }
+   ],
+   "days": [
+    {
+     "day": 1,
+     "wake_loss": 0.23935441672801971,
+     "frontier": [
+      4,
+      16
+     ],
+     "review": [
+      0,
+      0
+     ],
+     "mastered_level": 0,
+     "study_loss": 0.17061708867549896,
+     "sleep": "COMMIT",
+     "ramkit": {
+      "epi_entries": 20.0,
+      "epi_gate_mean": 0.08874088318702889,
+      "epi_reads": 66826.0,
+      "epi_rows_written": 4,
+      "epi_writes": 20.0,
+      "gem_projections": 0.0,
+      "gem_refs": 0,
+      "gem_steps": 0.0,
+      "ring_gate_mean": 0.0,
+      "ring_rows": 0.0,
+      "ring_touched_per_step": 0.0,
+      "snapshots": 0
+     }
+    }
+   ],
+   "ckpt_sha256": "cf4a64c90c938a26f9a96b51122d3ffb174a8b3baabe71a5bd0a0a074099dc55",
+   "ramkit": {
+    "epi_k": 4.0,
+    "epi_mem": 2048,
+    "epi_tau": 0.1,
+    "gem": false,
+    "gem_b": 2,
+    "gem_every": 4,
+    "lut5_bwd": false,
+    "ring_mem_heads": 4.0,
+    "ring_mem_layer": 1.0,
+    "ring_mem_lr": 1.0,
+    "ring_mem_q": 1.0,
+    "ring_mem_rows": 0,
+    "row_map": 0,
+    "row_map_share": 0.25,
+    "snap_dir": "/dev/shm/thead-snap/_home_jc_ai-stack_projects_thead-trial_tests_ramkit_results_ab_epi",
+    "snap_every": 0,
+    "snap_keep": 8
+   },
+   "identical_to_ref": false,
+   "heldout_delta_last": 0.4448493421077728,
+   "canary_delta_last": -0.32395443003228364
+  },
+  {
+   "dir": "<workspace>/projects/thead-trial/tests/ramkit/results/ab/gem",
+   "log": [
+    {
+     "step": 0,
+     "heldout_loss_port": 0.868083082139492,
+     "heldout_loss_no_port": 1.5005698800086975,
+     "answer_loss_port": 0.11313466010555144,
+     "canary": 1.3670647854500628
+    },
+    {
+     "step": 20,
+     "heldout_loss_port": 1.525443408638239,
+     "heldout_loss_no_port": 2.193657696247101,
+     "answer_loss_port": 0.5463536851636825,
+     "canary": 2.192252559864775
+    }
+   ],
+   "days": [
+    {
+     "day": 1,
+     "wake_loss": 0.2193288654088974,
+     "frontier": [
+      4,
+      16
+     ],
+     "review": [
+      0,
+      0
+     ],
+     "mastered_level": 0,
+     "study_loss": 0.16612061858177185,
+     "sleep": "ROLLBACK",
+     "ramkit": {
+      "epi_entries": 0.0,
+      "epi_gate_mean": 0.0,
+      "epi_reads": 0.0,
+      "epi_rows_written": 0,
+      "epi_writes": 0.0,
+      "gem_projections": 28.0,
+      "gem_refs": 5,
+      "gem_steps": 52.0,
+      "ring_gate_mean": 0.0,
+      "ring_rows": 0.0,
+      "ring_touched_per_step": 0.0,
+      "snapshots": 0
+     }
+    }
+   ],
+   "ckpt_sha256": "ef47351207fa1d35b29f8d02b4f64f9600d6392e796c46424564026c76a1c0aa",
+   "ramkit": {
+    "epi_k": 4.0,
+    "epi_mem": 0,
+    "epi_tau": 0.1,
+    "gem": true,
+    "gem_b": 2,
+    "gem_every": 4,
+    "lut5_bwd": false,
+    "ring_mem_heads": 4.0,
+    "ring_mem_layer": 1.0,
+    "ring_mem_lr": 1.0,
+    "ring_mem_q": 1.0,
+    "ring_mem_rows": 0,
+    "row_map": 0,
+    "row_map_share": 0.25,
+    "snap_dir": "/dev/shm/thead-snap/_home_jc_ai-stack_projects_thead-trial_tests_ramkit_results_ab_gem",
+    "snap_every": 0,
+    "snap_keep": 8
+   },
+   "identical_to_ref": false,
+   "heldout_delta_last": 0.4473024569451809,
+   "canary_delta_last": -0.33688223108332194
+  }
+ ]
+}

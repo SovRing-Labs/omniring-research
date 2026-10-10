@@ -1,0 +1,7 @@
+{
+ "about": "Two summary lines of the one-harness round on the A40 (launcher output); the live log itself is NOT shipped.",
+ "lines": [
+  "h0: exit 0 \u00b7 10 merges",
+  "days 10 \u00b7 held-out / canary [(10, 0.526, 0.086)]"
+ ]
+}

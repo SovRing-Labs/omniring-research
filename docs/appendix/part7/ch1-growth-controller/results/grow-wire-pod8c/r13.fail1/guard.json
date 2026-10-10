@@ -1,0 +1,1 @@
+{"round": 13, "vs_good": 12, "drop": 0.1, "rise": 0.3, "why": ["tier-1 at gate 42 \u2192 23 on 99 shared skills (> 10% drop)"], "common": 99, "gate_count_good": 42, "gate_count_now": 23, "mean_good": 0.8424, "mean_now": 0.7371, "heldout_good": 0.616, "heldout_now": null, "verdict": "fail"}

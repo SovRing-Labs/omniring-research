@@ -1,0 +1,83 @@
+{
+ "absmean_quant": {
+  "need": "s0787d2dba34ab2a4",
+  "args": [
+   "f32list"
+  ],
+  "equation": "(map a0 (max (min (round (/ (idx a0 item1) (max (/ (fold (range 0 (len a0)) 0 (+ acc2.0 (abs (idx a0 item2)))) (len a0)) 1e-05f))) 1) -1))"
+ },
+ "clock_read": {
+  "need": "s4fb96dec0a0ad589",
+  "args": [
+   "int",
+   "int",
+   "int"
+  ],
+  "equation": "(fold (range 0 105) -1 (sel (and (== acc1.0 -1) (and (== (% item1 3) a0) (and (== (% item1 5) a1) (== (% item1 7) a2)))) item1 acc1.0))"
+ },
+ "crt2": {
+  "need": "s5ea5ca6973d5638d",
+  "args": [
+   "int",
+   "int",
+   "int",
+   "int"
+  ],
+  "equation": "(fold (range 0 (* a1 a3)) -1 (sel (and (== acc1.0 -1) (and (== (% item1 a1) a0) (== (% item1 a3) a2))) item1 acc1.0))"
+ },
+ "mod_barrett": {
+  "need": "s6a58ce69a8e71e05",
+  "args": [
+   "int",
+   "int"
+  ],
+  "equation": "(sel (>= (- a0 (* (>> (* a0 (/ 4294967296 a1)) 32) a1)) (* 2 a1)) (- (- a0 (* (>> (* a0 (/ 4294967296 a1)) 32) a1)) (* 2 a1)) (sel (>= (- a0 (* (>> (* a0 (/ 4294967296 a1)) 32) a1)) a1) (- (- a0 (* (>> (* a0 (/ 4294967296 a1)) 32) a1)) a1) (- a0 (* (>> (* a0 (/ 4294967296 a1)) 32) a1))))"
+ },
+ "hamming": {
+  "need": "s87677c9e9593a1f9",
+  "args": [
+   "int",
+   "int"
+  ],
+  "equation": "(fold (range 0 31) 0 (+ acc1.0 (& (>> (^ a0 a1) item1) 1)))"
+ },
+ "mixed_radix": {
+  "need": "s96bc7c351deccba6",
+  "args": [
+   "int",
+   "int",
+   "int",
+   "int",
+   "int"
+  ],
+  "equation": "(+ a0 (* a3 (+ a1 (* a4 a2))))"
+ },
+ "isqrt": {
+  "need": "sa86d766337cf5fa3",
+  "args": [
+   "int"
+  ],
+  "equation": "(get0 (while0.1 (tup a0) (> (* st1.0 st1.0) a0) (tup (/ (+ st1.0 (/ a0 st1.0)) 2))))"
+ },
+ "softmax": {
+  "need": "saf4e693e46314895",
+  "args": [
+   "f32list"
+  ],
+  "equation": "(map a0 (/ (exp (- (idx a0 item1) (maxall a0))) (fold (range 0 (len a0)) 0 (+ acc2.0 (exp (- (idx a0 item2) (maxall a0)))))))"
+ },
+ "period": {
+  "need": "sb811a2abd6b0ccce",
+  "args": [
+   "list"
+  ],
+  "equation": "(fold (range 1 (+ (len a0) 1)) 0 (sel (and (== acc1.0 0) (fold (range 0 (- (len a0) item1)) 1 (sel (== (idx a0 item2) (idx a0 (+ item2 item1))) acc2.0 0))) item1 acc1.0))"
+ },
+ "fib": {
+  "need": "se997805b33a099e7",
+  "args": [
+   "int"
+  ],
+  "equation": "(get0 (while0.1 (tup 0 1 a0) (> st1.2 0) (tup st1.1 (+ st1.0 st1.1) (- st1.2 1))))"
+ }
+}

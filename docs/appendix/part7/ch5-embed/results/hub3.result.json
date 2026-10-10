@@ -1,0 +1,9 @@
+{
+ "n": 200,
+ "hybrid_recall5": 0.79,
+ "fts_recall5": 0.735,
+ "nomic_recall5": 0.685,
+ "p50_ms": 155.3,
+ "bar": 0.745,
+ "PASS": true
+}

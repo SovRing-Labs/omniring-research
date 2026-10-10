@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """RING-1 T4: two-stage halo chain (Arm B) vs one big resonator (Arm A) on crowded slots.
 
-Task: RING1-HALO (_Pads/RING/ring1-w2.wave.yaml, cohort contract _Pads/RING1B-contract.json).
+Task: RING1-HALO (ring1-w2.wave.yaml, cohort contract RING1B-contract.json).
 Pillar: Nervous System, Loop step "Read".  Pure synthetic study, Python 3 + numpy only.
 
 Arm A -- ONE RESONATOR (exactly RING1-CORE's T1 cell, 13-ring clamped to the target):
@@ -31,16 +31,16 @@ proves two things on disk-exact terms.
      clamped".  If it does not, Arm A and Arm B would not be the same harness.
   2. HARNESS CROSS-CHECK -- Arm A is re-run on RING1-CORE's own T1 cell seeds
      (c=1, quant=float, 200 trials) and must reproduce RING1-CORE's published counts
-     and median iterations exactly.  Source: _Reviews/RING/RING1-CORE.run.txt.
+     and median iterations exactly.  Source: RING1-CORE.run.txt.
 
 Pre-registration, the decision, the seeds and the stats rules are printed verbatim at
 the top of the output.  No threshold is fitted to any number produced here.
 
 Usage:
-    python3 _Pads/RING/ring1/run_halo.py            # full: 300 trials/cell
-    python3 _Pads/RING/ring1/run_halo.py --quick    # 30 trials/cell
-    python3 _Pads/RING/ring1/run_halo.py --quick --trials 40
-    python3 _Pads/RING/ring1/run_halo.py --verify-only
+    python3 harness/ring1/run_halo.py            # full: 300 trials/cell
+    python3 harness/ring1/run_halo.py --quick    # 30 trials/cell
+    python3 harness/ring1/run_halo.py --quick --trials 40
+    python3 harness/ring1/run_halo.py --verify-only
 """
 from __future__ import annotations
 
@@ -85,7 +85,7 @@ _NORM_FLOOR = 1e-12
 _TIE_SLACK = 1e-12
 
 # RING1-CORE's own T1 cells (stream 1, clamp_n 1, quant float -> index 0), 200 trials.
-# Published values, _Reviews/RING/RING1-CORE.run.txt.  Arm A must reproduce these.
+# Published values, RING1-CORE.run.txt.  Arm A must reproduce these.
 CORE_CROSSCHECK = {
     12: {"n": 200, "correct": 134, "any": 200, "median_iters": 2.0},
     32: {"n": 200, "correct": 69, "any": 196, "median_iters": 2.0},
@@ -95,7 +95,7 @@ CORE_CELL_CLAMP_N = 1
 CORE_CELL_QUANT_INDEX = 0                          # run_core.T1_QUANTS.index("float")
 
 PRE_REGISTERED = """\
-PRE-REGISTERED DECISION (verbatim from _Pads/RING/ring1-w2.wave.yaml, task RING1-HALO, step 6):
+PRE-REGISTERED DECISION (verbatim from ring1-w2.wave.yaml, task RING1-HALO, step 6):
   PASS if Arm B's target recall Wilson-99% lower bound exceeds Arm A's point recall at
   M = 32, OR Arm B matches Arm A (intervals overlap) with <= 0.5x the median total
   iterations. Otherwise KILL (the halo buys nothing).

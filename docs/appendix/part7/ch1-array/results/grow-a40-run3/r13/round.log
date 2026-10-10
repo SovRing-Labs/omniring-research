@@ -1,0 +1,162 @@
+== round · core <workspace>/projects/thead-trial/runtime/results/growth-base/r12-elem · 40 harnesses × 1 threads · bin 9d4c5ab7f209 · lib ee5bdeafc0d6 · 2026-10-09T10:55:06+00:00
+== array server: 40 harness models resident in 2 session(s) of ≤ 20 (/root/og/projects/omni-gpu/target/release/omni-gpu)
+   pod-tw grow-a40-r13-h0 RUN 2m01s %=? cpu18% ························ +0/0:60/-0 seq=60
+   pod-tw grow-a40-r13-h1 RUN 2m02s %=? cpu17% ························ +0/0:61/-0 seq=61
+   pod-tw grow-a40-r13-h2 RUN 2m03s 0% cpu17% ························ +0/0:61/-0 seq=61
+   pod-tw grow-a40-r13-h3 RUN 2m04s %=? cpu17% ························ +0/0:62/-0 seq=62
+   pod-tw grow-a40-r13-h4 RUN 2m06s 0% cpu17% ························ +0/0:62/-0 seq=62
+   pod-tw grow-a40-r13-h5 RUN 2m07s %=? cpu18% ························ +0/0:63/-0 seq=63
+   pod-tw grow-a40-r13-h6 RUN 2m08s 0% cpu16% ························ +0/0:64/-0 seq=64
+   pod-tw grow-a40-r13-h7 RUN 2m10s 0% cpu19% ························ +0/0:64/-0 seq=64
+   pod-tw grow-a40-r13-h8 RUN 2m11s %=? cpu18% ························ +0/0:65/-0 seq=65
+   pod-tw grow-a40-r13-h9 RUN 2m12s %=? cpu17% ························ +0/0:66/-0 seq=66
+   pod-tw grow-a40-r13-h10 RUN 2m14s %=? cpu16% ························ +0/0:66/-0 seq=66
+   pod-tw grow-a40-r13-h11 RUN 2m15s %=? cpu17% ························ +0/0:67/-0 seq=67
+   pod-tw grow-a40-r13-h12 RUN 2m16s %=? cpu18% ························ +0/0:68/-0 seq=68
+   pod-tw grow-a40-r13-h13 RUN 2m17s %=? cpu18% ························ +0/0:68/-0 seq=68
+   pod-tw grow-a40-r13-h14 RUN 2m18s %=? cpu15% ························ +0/0:69/-0 seq=69
+   pod-tw grow-a40-r13-h15 RUN 2m20s %=? cpu18% ························ +0/0:69/-0 seq=69
+   pod-tw grow-a40-r13-h16 RUN 2m21s %=? cpu18% ························ +0/0:70/-0 seq=70
+   pod-tw grow-a40-r13-h17 RUN 2m22s %=? cpu17% ························ +0/0:70/-0 seq=70
+   pod-tw grow-a40-r13-h18 RUN 2m24s %=? cpu16% ························ +0/0:71/-0 seq=71
+   pod-tw grow-a40-r13-h19 RUN 2m25s %=? cpu18% ························ +0/0:72/-0 seq=72
+   pod-tw grow-a40-r13-h20 RUN 2m26s %=? cpu17% ························ +0/0:73/-0 seq=73
+   pod-tw grow-a40-r13-h21 RUN 2m28s %=? cpu18% ························ +0/0:73/-0 seq=73
+   pod-tw grow-a40-r13-h22 RUN 2m28s 0% cpu16% ························ +0/0:74/-0 seq=74
+   pod-tw grow-a40-r13-h23 RUN 2m30s %=? cpu17% ························ +0/0:75/-0 seq=75
+   pod-tw grow-a40-r13-h24 RUN 2m31s %=? cpu16% ························ +0/0:75/-0 seq=75
+   pod-tw grow-a40-r13-h25 RUN 2m32s %=? cpu17% ························ +0/0:76/-0 seq=76
+   pod-tw grow-a40-r13-h26 RUN 2m33s %=? cpu16% ························ +0/0:76/-0 seq=76
+   pod-tw grow-a40-r13-h27 RUN 2m34s %=? cpu18% ························ +0/0:77/-0 seq=77
+   pod-tw grow-a40-r13-h28 RUN 2m36s %=? cpu16% ························ +0/0:77/-0 seq=77
+   pod-tw grow-a40-r13-h29 RUN 2m36s %=? cpu17% ························ +0/0:78/-0 seq=78
+   pod-tw grow-a40-r13-h30 RUN 2m38s 0% cpu16% ························ +0/0:78/-0 seq=78
+   pod-tw grow-a40-r13-h31 RUN 2m38s 0% cpu18% ························ +0/0:79/-0 seq=79
+   pod-tw grow-a40-r13-h32 RUN 2m40s %=? cpu17% ························ +0/0:80/-0 seq=80
+   pod-tw grow-a40-r13-h33 RUN 2m40s 0% cpu17% ························ +0/0:80/-0 seq=80
+   pod-tw grow-a40-r13-h34 RUN 2m42s %=? cpu16% ························ +0/0:80/-0 seq=80
+   pod-tw grow-a40-r13-h35 RUN 2m43s 0% cpu16% ························ +0/0:81/-0 seq=81
+   pod-tw grow-a40-r13-h36 RUN 2m45s %=? cpu18% ························ +0/0:82/-0 seq=82
+   pod-tw grow-a40-r13-h37 RUN 2m45s 0% cpu18% ························ +0/0:82/-0 seq=82
+   pod-tw grow-a40-r13-h38 RUN 2m47s %=? cpu16% ························ +0/0:83/-0 seq=83
+   pod-tw grow-a40-r13-h39 RUN 2m48s 0% cpu16% ························ +0/0:84/-0 seq=84
+   pod-tw grow-a40-r13-h0 RUN 4m51s %=? cpu17% ························ +0/0:145/-0 seq=145
+   pod-tw grow-a40-r13-h1 RUN 4m52s %=? cpu18% ························ +0/0:146/-0 seq=146
+   pod-tw grow-a40-r13-h2 RUN 4m54s 0% cpu16% ························ +0/0:146/-0 seq=146
+   pod-tw grow-a40-r13-h3 RUN 4m55s %=? cpu16% ························ +0/0:147/-0 seq=147
+   pod-tw grow-a40-r13-h4 RUN 4m56s 0% cpu17% ························ +0/0:148/-0 seq=148
+   pod-tw grow-a40-r13-h5 RUN 4m57s %=? cpu16% ························ +0/0:148/-0 seq=148
+   pod-tw grow-a40-r13-h6 RUN 4m58s 0% cpu16% ························ +0/0:149/-0 seq=149
+   pod-tw grow-a40-r13-h7 RUN 4m59s 0% cpu17% ························ +0/0:149/-0 seq=149
+   pod-tw grow-a40-r13-h8 RUN 5m01s %=? cpu18% ························ +0/0:150/-0 seq=150
+   pod-tw grow-a40-r13-h9 RUN 5m02s %=? cpu17% ························ +0/0:151/-0 seq=151
+   pod-tw grow-a40-r13-h10 RUN 5m03s %=? cpu17% ························ +0/0:151/-0 seq=151
+   pod-tw grow-a40-r13-h11 RUN 5m04s %=? cpu18% ························ +0/0:152/-0 seq=152
+   pod-tw grow-a40-r13-h12 RUN 5m05s %=? cpu17% ························ +0/0:152/-0 seq=152
+   pod-tw grow-a40-r13-h13 RUN 5m06s %=? cpu16% ························ +0/0:153/-0 seq=153
+   pod-tw grow-a40-r13-h14 RUN 5m08s %=? cpu17% ························ +0/0:153/-0 seq=153
+   pod-tw grow-a40-r13-h15 RUN 5m09s %=? cpu17% ························ +0/0:154/-0 seq=154
+   pod-tw grow-a40-r13-h16 RUN 5m10s %=? cpu17% ························ +0/0:155/-0 seq=155
+   pod-tw grow-a40-r13-h17 RUN 5m11s %=? cpu17% ························ +0/0:155/-0 seq=155
+   pod-tw grow-a40-r13-h18 RUN 5m13s %=? cpu17% ························ +0/0:156/-0 seq=156
+   pod-tw grow-a40-r13-h19 RUN 5m14s %=? cpu15% ························ +0/0:157/-0 seq=157
+   pod-tw grow-a40-r13-h20 RUN 5m15s %=? cpu16% ························ +0/0:157/-0 seq=157
+   pod-tw grow-a40-r13-h21 RUN 5m16s %=? cpu18% ························ +0/0:157/-0 seq=157
+   pod-tw grow-a40-r13-h22 RUN 5m16s 0% cpu16% ························ +0/0:158/-0 seq=158
+   pod-tw grow-a40-r13-h23 RUN 5m17s %=? cpu18% ························ +0/0:158/-0 seq=158
+   pod-tw grow-a40-r13-h24 RUN 5m18s %=? cpu16% ························ +0/0:159/-0 seq=159
+   pod-tw grow-a40-r13-h25 RUN 5m19s %=? cpu16% ························ +0/0:159/-0 seq=159
+   pod-tw grow-a40-r13-h26 RUN 5m20s %=? cpu17% ························ +0/0:159/-0 seq=159
+   pod-tw grow-a40-r13-h27 RUN 5m21s %=? cpu18% ························ +0/0:160/-0 seq=160
+   pod-tw grow-a40-r13-h28 RUN 5m23s %=? cpu17% ························ +0/0:161/-0 seq=161
+   pod-tw grow-a40-r13-h29 RUN 5m23s %=? cpu18% ························ +0/0:161/-0 seq=161
+   pod-tw grow-a40-r13-h30 RUN 5m24s 0% cpu17% ························ +0/0:162/-0 seq=162
+   pod-tw grow-a40-r13-h31 RUN 5m25s 0% cpu17% ························ +0/0:162/-0 seq=162
+   pod-tw grow-a40-r13-h32 RUN 5m26s %=? cpu18% ························ +0/0:162/-0 seq=162
+   pod-tw grow-a40-r13-h33 RUN 5m26s 0% cpu18% ···················▲···· +1/0:161/-0 seq=162 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h34 RUN 5m27s %=? cpu18% ························ +0/0:163/-0 seq=163
+   pod-tw grow-a40-r13-h35 RUN 5m29s 0% cpu18% ························ +0/0:164/-0 seq=164
+   pod-tw grow-a40-r13-h36 RUN 5m30s %=? cpu0% ·······▲················ +1/0:164/-0 seq=165 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h37 RUN 5m30s 0% cpu18% ························ +0/0:165/-0 seq=165
+   pod-tw grow-a40-r13-h38 RUN 5m32s %=? cpu16% ························ +0/0:165/-0 seq=165
+   pod-tw grow-a40-r13-h39 RUN 5m33s 0% cpu18% ························ +0/0:166/-0 seq=166
+   pod-tw grow-a40-r13-h0 RUN 7m35s %=? cpu20% ························ +1/0:226/-0 seq=227 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h1 RUN 7m36s %=? cpu20% ························ +0/0:228/-0 seq=228
+   pod-tw grow-a40-r13-h2 RUN 7m37s 0% cpu19% ························ +0/0:228/-0 seq=228
+   pod-tw grow-a40-r13-h3 RUN 7m38s %=? cpu3% ························ +1/0:228/-0 seq=229 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h4 RUN 7m39s 0% cpu20% ························ +0/0:229/-0 seq=229
+   pod-tw grow-a40-r13-h5 RUN 7m41s %=? cpu20% ························ +0/0:230/-0 seq=230
+   pod-tw grow-a40-r13-h6 RUN 7m41s 0% cpu21% ························ +0/0:230/-0 seq=230
+   pod-tw grow-a40-r13-h7 RUN 7m42s 0% cpu20% ························ +1/0:230/-0 seq=231 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h8 RUN 7m43s %=? cpu20% ························ +1/0:230/-0 seq=231 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h9 RUN 7m44s %=? cpu21% ························ +1/0:230/-0 seq=231 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h10 RUN 7m44s %=? cpu20% ························ +0/0:232/-0 seq=232
+   pod-tw grow-a40-r13-h11 RUN 7m45s %=? cpu22% ························ +0/0:232/-0 seq=232
+   pod-tw grow-a40-r13-h12 RUN 7m46s %=? cpu26% ························ +1/0:232/-0 seq=233 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h13 RUN 7m47s %=? cpu21% ························ +0/0:233/-0 seq=233
+   pod-tw grow-a40-r13-h14 RUN 7m48s %=? cpu21% ························ +0/0:233/-0 seq=233
+   pod-tw grow-a40-r13-h15 RUN 7m48s %=? cpu22% ························ +0/0:234/-0 seq=234
+   pod-tw grow-a40-r13-h16 RUN 7m49s %=? cpu3% ························ +1/0:233/-0 seq=234 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h17 RUN 7m50s %=? cpu24% ························ +0/0:234/-0 seq=234
+   pod-tw grow-a40-r13-h18 RUN 7m51s %=? cpu23% ························ +0/0:235/-0 seq=235
+   pod-tw grow-a40-r13-h19 RUN 7m52s %=? cpu23% ························ +0/0:235/-0 seq=235
+   pod-tw grow-a40-r13-h20 RUN 7m53s %=? cpu21% ························ +0/0:236/-0 seq=236
+   pod-tw grow-a40-r13-h21 RUN 7m54s %=? cpu0% ························ +1/0:236/-0 seq=237 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h22 RUN 7m54s 0% cpu22% ························ +0/0:237/-0 seq=237
+   pod-tw grow-a40-r13-h23 RUN 7m55s %=? cpu23% ························ +0/0:237/-0 seq=237
+   pod-tw grow-a40-r13-h24 RUN 7m56s %=? cpu22% ························ +0/0:237/-0 seq=237
+   pod-tw grow-a40-r13-h25 RUN 7m57s %=? cpu22% ························ +0/0:238/-0 seq=238
+   pod-tw grow-a40-r13-h26 RUN 7m57s %=? cpu23% ························ +0/0:238/-0 seq=238
+   pod-tw grow-a40-r13-h27 RUN 7m58s %=? cpu0% ························ +1/0:237/-0 seq=238 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h28 RUN 7m59s %=? cpu23% ·················▲······ +1/0:238/-0 seq=239 last+: "[learn2] compiled check: {"agree":128,"n":12
+   pod-tw grow-a40-r13-h29 RUN 7m59s %=? cpu22% ························ +0/0:239/-0 seq=239
+   pod-tw grow-a40-r13-h30 RUN 8m00s 0% cpu24% ························ +0/0:240/-0 seq=240
+   pod-tw grow-a40-r13-h31 RUN 8m00s 0% cpu0% ························ +1/0:239/-0 seq=240 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h32 RUN 8m02s %=? cpu25% ························ +0/0:240/-0 seq=240
+   pod-tw grow-a40-r13-h33 RUN 8m02s 0% cpu0% ························ +1/0:239/-0 seq=240 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h34 RUN 8m03s %=? cpu24% ························ +0/0:241/-0 seq=241
+   pod-tw grow-a40-r13-h35 RUN 8m04s 0% cpu22% ························ +0/0:242/-0 seq=242
+   pod-tw grow-a40-r13-h36 RUN 8m05s %=? cpu0% ························ +1/0:241/-0 seq=242 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h37 RUN 8m05s 0% cpu23% ························ +0/0:242/-0 seq=242
+   pod-tw grow-a40-r13-h38 RUN 8m06s %=? cpu23% ························ +0/0:243/-0 seq=243
+   pod-tw grow-a40-r13-h39 RUN 8m07s 0% cpu23% ························ +0/0:243/-0 seq=243
+   pod-tw grow-a40-r13-h0 RUN 10m08s 10% cpu0% ················▲······· +2/0:302/-0 seq=304 last+: "[day 1] step 20/195 · pass 1 · active 6 · 
+   pod-tw grow-a40-r13-h1 RUN 10m08s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h2 RUN 10m09s 0% cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h3 RUN 10m09s %=? cpu10% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h4 RUN 10m09s 0% cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h5 RUN 10m09s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h6 RUN 10m09s 0% cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h7 RUN 10m09s 10% eta 1h28m cpu0% ················▲······· +2/0:302/-0 seq=304 last+: "[day 1] step 20/196 · pass 1 · ac
+   pod-tw grow-a40-r13-h8 RUN 10m09s 10% cpu0% ············▲··········· +2/0:302/-0 seq=304 last+: "[day 1] step 20/195 · pass 1 · active 6 · 
+   pod-tw grow-a40-r13-h9 RUN 10m09s 10% cpu0% ···············▲········ +2/0:302/-0 seq=304 last+: "[day 1] step 20/196 · pass 1 · active 6 · 
+   pod-tw grow-a40-r13-h10 RUN 10m09s %=? cpu28% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":12
+   pod-tw grow-a40-r13-h11 RUN 10m09s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h12 RUN 10m09s 10% cpu0% ················▲······· +2/0:302/-0 seq=304 last+: "[day 1] step 20/195 · pass 1 · active 6 ·
+   pod-tw grow-a40-r13-h13 RUN 10m09s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h14 RUN 10m09s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h15 RUN 10m09s %=? cpu7% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h16 RUN 10m09s 10% cpu0% ··············▲········· +2/0:302/-0 seq=304 last+: "[day 1] step 20/195 · pass 1 · active 6 ·
+   pod-tw grow-a40-r13-h17 RUN 10m09s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h18 RUN 10m10s %=? cpu9% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h19 RUN 10m10s %=? cpu7% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h20 RUN 10m10s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h21 RUN 10m10s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h22 RUN 10m09s 0% cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h23 RUN 10m10s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h24 RUN 10m10s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h25 RUN 10m10s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h26 RUN 10m10s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h27 RUN 10m10s %=? cpu8% ························ +1/0:303/-0 seq=304 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h28 RUN 10m10s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h29 RUN 10m10s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h30 RUN 10m10s 0% cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h31 RUN 10m10s 0% cpu7% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h32 RUN 10m11s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h33 RUN 10m10s 0% cpu8% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h34 RUN 10m10s %=? cpu8% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h35 RUN 10m11s 0% cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h36 RUN 10m11s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h37 RUN 10m10s 0% cpu7% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128,
+   pod-tw grow-a40-r13-h38 RUN 10m10s %=? cpu6% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128
+   pod-tw grow-a40-r13-h39 RUN 10m11s 0% cpu8% ························ +1/0:304/-0 seq=305 last+: "[learn2] compiled check: {"agree":128,"n":128,

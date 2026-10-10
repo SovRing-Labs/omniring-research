@@ -1,0 +1,57 @@
+== round · core results/live-r8/h0 · 8 harnesses × 4 threads · bin 9d4c5ab7f209 · lib 361c4c46f5ea · 2026-10-08T07:03:09+00:00
+   pod-tw live-r9-h0 RUN 2m00s 21% eta 7m29s cpu375% ···················▲···· +4/0:55/-0 seq=59 last+: "[day 2] step 40/195 · pass 1 · active 6
+   pod-tw live-r9-h1 RUN 2m00s 21% eta 7m45s cpu382% ··················▲····· +4/0:56/-0 seq=60 last+: "[day 2] step 40/195 · pass 1 · active 6
+   pod-tw live-r9-h2 RUN 2m00s 21% eta 7m45s cpu382% ··················▲····▲ +5/0:55/-0 seq=60 last+: "[wake] step 50 out 0.417 | blocks 1.01 0
+   pod-tw live-r9-h3 RUN 2m00s 21% eta 7m29s cpu384% ···················▲···· +4/0:56/-0 seq=60 last+: "[day 2] step 40/195 · pass 1 · active 6
+   pod-tw live-r9-h4 RUN 2m00s 21% eta 7m29s cpu376% ···················▲···· +4/0:56/-0 seq=60 last+: "[day 2] step 40/195 · pass 1 · active 6
+   pod-tw live-r9-h5 RUN 2m00s 21% eta 7m45s cpu377% ···················▲···▲ +5/0:55/-0 seq=60 last+: "[wake] step 50 out 0.323 | blocks 1.17 0
+   pod-tw live-r9-h6 RUN 2m00s 21% eta 7m29s cpu383% ···················▲···· +4/0:56/-0 seq=60 last+: "[day 2] step 40/195 · pass 1 · active 6
+   pod-tw live-r9-h7 RUN 2m00s 21% eta 8m00s cpu385% ···················▲···· +4/0:56/-0 seq=60 last+: "[day 2] step 40/195 · pass 1 · active 6
+   pod-tw live-r9-h0 RUN 4m00s 2% cpu386% ··········▲▲········▲··· +10/0:110/-0 seq=120 last+: "[wake] step 100 out 0.428 | blocks 0.64 1.51 1.
+   pod-tw live-r9-h1 RUN 4m00s 2% cpu375% ···········▲·······▲···· +9/0:111/-0 seq=120 last+: "[wake] step 100 out 0.424 | blocks 0.67 1.50 1.41
+   pod-tw live-r9-h2 RUN 4m00s 2% cpu381% ···········▲········▲··· +9/0:111/-0 seq=120 last+: "[wake] step 100 out 0.435 | blocks 0.54 1.72 1.55
+   pod-tw live-r9-h3 RUN 4m00s 2% cpu368% ··········▲▲········▲··· +10/0:110/-0 seq=120 last+: "[wake] step 100 out 0.415 | blocks 0.58 1.47 1.
+   pod-tw live-r9-h4 RUN 4m00s 2% cpu378% ··········▲▲·······▲···· +10/0:110/-0 seq=120 last+: "[wake] step 100 out 0.389 | blocks 0.64 1.50 1.
+   pod-tw live-r9-h5 RUN 4m00s 2% cpu380% ·········▲·▲·······▲···· +10/0:110/-0 seq=120 last+: "[wake] step 100 out 0.347 | blocks 0.44 1.77 1.
+   pod-tw live-r9-h6 RUN 4m00s 2% cpu375% ···········▲·······▲···· +9/0:111/-0 seq=120 last+: "[wake] step 100 out 0.346 | blocks 0.55 1.74 1.37
+   pod-tw live-r9-h7 RUN 4m00s 2% cpu378% ···········▲·······▲···· +9/0:111/-0 seq=120 last+: "[wake] step 100 out 0.382 | blocks 0.47 1.42 1.29
+   pod-tw live-r9-h0 RUN 6m00s 3% cpu382% ····▲▲··▲··············· +15/0:165/-0 seq=180 last+: "[wake] step 125 out 0.658 | blocks 0.49 1.03 0.
+   pod-tw live-r9-h1 RUN 6m00s 3% cpu373% ····▲▲·▲················ +14/0:166/-0 seq=180 last+: "[wake] step 125 out 0.744 | blocks 0.53 1.10 0.
+   pod-tw live-r9-h2 RUN 6m00s 3% cpu384% ···▲·▲·▲················ +14/0:166/-0 seq=180 last+: "[wake] step 125 out 0.779 | blocks 0.49 1.29 0.
+   pod-tw live-r9-h3 RUN 6m01s 3% cpu274% ····▲▲·▲················ +15/0:165/-0 seq=180 last+: "[wake] step 125 out 0.689 | blocks 0.52 1.12 0.
+   pod-tw live-r9-h4 RUN 6m01s 3% cpu381% ····▲▲·▲················ +15/0:165/-0 seq=180 last+: "[wake] step 125 out 0.687 | blocks 0.53 1.09 0.
+   pod-tw live-r9-h5 RUN 6m01s 3% cpu384% ··▲··▲·▲················ +15/0:165/-0 seq=180 last+: "[wake] step 125 out 0.646 | blocks 0.50 1.11 0.
+   pod-tw live-r9-h6 RUN 6m01s 3% cpu382% ····▲▲·▲················ +14/0:166/-0 seq=180 last+: "[wake] step 125 out 0.668 | blocks 0.46 1.01 0.
+   pod-tw live-r9-h7 RUN 6m01s 3% cpu386% ·····▲·▲················ +13/0:167/-0 seq=180 last+: "[wake] step 125 out 0.605 | blocks 0.50 0.98 0.7
+   pod-tw live-r9-h0 RUN 8m01s 4% cpu382% ▲▲······▲··············· +21/0:219/-0 seq=240 last+: "[wake] step 175 out 0.785 | blocks 0.29 2.68 2.
+   pod-tw live-r9-h1 RUN 8m01s 4% cpu307% ▲▲·······▲·············· +20/0:220/-0 seq=240 last+: "[wake] step 175 out 0.886 | blocks 0.43 2.57 2.
+   pod-tw live-r9-h2 RUN 8m01s 4% cpu319% ▲▲·······▲·············· +19/0:221/-0 seq=240 last+: "[wake] step 175 out 0.865 | blocks 0.51 2.37 2.
+   pod-tw live-r9-h3 RUN 8m01s 4% cpu371% ▲▲·······▲·············· +21/0:219/-0 seq=240 last+: "[wake] step 175 out 0.691 | blocks 0.34 2.56 2.
+   pod-tw live-r9-h4 RUN 8m01s 4% cpu368% ·▲·······▲·············· +20/0:220/-0 seq=240 last+: "[wake] step 175 out 0.868 | blocks 0.36 2.43 2.3
+   pod-tw live-r9-h5 RUN 8m01s 4% cpu384% ·▲······▲··············· +21/0:219/-0 seq=240 last+: "[wake] step 175 out 0.832 | blocks 0.38 2.57 2.3
+   pod-tw live-r9-h6 RUN 8m01s 4% cpu382% ▲▲······▲··············· +20/0:220/-0 seq=240 last+: "[wake] step 175 out 0.801 | blocks 0.43 2.27 2.
+   pod-tw live-r9-h7 RUN 8m01s 4% cpu381% ▲▲······▲··············· +18/0:222/-0 seq=240 last+: "[wake] step 175 out 0.877 | blocks 0.43 2.43 2.
+== pod tw nudges (live-r9)
+07:12:37 TW-EXIT live-r9-h0 exit=0 state=DONE elapsed=9m28s progress=5.1% (learned) 10/195 +25/0:259/-0
+07:12:37 TW-EXIT live-r9-h6 exit=0 state=DONE elapsed=9m28s progress=5.1% (learned) 10/195 +24/0:260/-0
+07:12:37 TW-EXIT live-r9-h7 exit=0 state=DONE elapsed=9m28s progress=5.1% (learned) 10/195 +22/0:262/-0
+07:12:37 TW-EXIT live-r9-h1 exit=0 state=DONE elapsed=9m28s progress=5.1% (learned) 10/195 +23/0:261/-0
+07:12:37 TW-EXIT live-r9-h5 exit=0 state=DONE elapsed=9m28s progress=5.1% (learned) 10/195 +25/0:259/-0
+07:12:37 TW-EXIT live-r9-h2 exit=0 state=DONE elapsed=9m28s progress=5.1% (learned) 10/195 +23/0:261/-0
+07:12:37 TW-EXIT live-r9-h4 exit=0 state=DONE elapsed=9m28s progress=5.1% (learned) 10/195 +24/0:260/-0
+07:12:37 TW-EXIT live-r9-h3 exit=0 state=DONE elapsed=9m28s progress=5.1% (learned) 10/195 +25/0:259/-0
+== harnesses done 2026-10-08T07:12:37+00:00
+   h0: exit 0 · 10 merges
+   h1: exit 0 · 10 merges
+   h2: exit 0 · 10 merges
+   h3: exit 0 · 10 merges
+   h4: exit 0 · 10 merges
+   h5: exit 0 · 10 merges
+   h6: exit 0 · 10 merges
+   h7: exit 0 · 10 merges
+   days 10 · held-out / canary [(10, 0.609, 0.442)]
+SKILL-EVAL 146 skills · 58 at >= 0.85
+ROUND-SKILLS 146 58
+ramkit: soup r9 failed: python3: can't open file '/soup.py': [Errno 2] No such file or directory (non-fatal)
+ramkit: memdetect failed: python3: can't open file '/memdetect.py': [Errno 2] No such file or directory (non-fatal)
+SCHOOL-ROUND-DONE

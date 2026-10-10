@@ -1,0 +1,47 @@
+{
+ "target": "input-size-width",
+ "symbols": [
+  "size"
+ ],
+ "equation_1_64px": "((size * (512i64)) + (1600i64))",
+ "verified_rustc": true,
+ "cegis_rounds": 1,
+ "validate": {
+  "agree": 120,
+  "of": 120,
+  "rustc": true,
+  "exhaustive": true
+ },
+ "work": 1963,
+ "how": "witness depth 0",
+ "synth_secs": 0.002293151,
+ "sample": [
+  [
+   [
+    120
+   ],
+   63040
+  ],
+  [
+   [
+    82
+   ],
+   43584
+  ],
+  [
+   [
+    21
+   ],
+   12352
+  ],
+  [
+   [
+    91
+   ],
+   48192
+  ]
+ ],
+ "ours_equation_1_64px": "((size * (512i64)) + (1600i64))",
+ "probes_agree_within_1px": 120,
+ "probes": 120
+}

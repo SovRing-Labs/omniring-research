@@ -1,0 +1,50 @@
+{
+ "gate": "CYCLONE-ARRAY C2 S2 replica axis: R models in one recorded training step \u2014 A: each replica bit-identical to its own R=1 GPU run; B: each replica learns like the CPU engine (held-out within 2 %, loss falling)",
+ "dims": {
+  "V": 8192,
+  "D": 256,
+  "L": 6,
+  "H": 4,
+  "T": 512,
+  "B": 4
+ },
+ "R": 1,
+ "steps": 3,
+ "lr": 0.003,
+ "device": "Intel",
+ "lib": "<workspace>/projects/thead-trial/engine/omni_train/libomnitrain_trial.so",
+ "device_name": "Intel(R) UHD Graphics 620 (WHL GT2)",
+ "passes_per_step": 852,
+ "buffers": 130,
+ "bytes_resident_R": 349339460,
+ "bytes_resident_1": null,
+ "gpu_ms_per_step_R": 4865.791,
+ "gpu_ms_per_step_1": null,
+ "tokens_per_s_R": 420.9,
+ "tokens_per_s_1": null,
+ "speedup_vs_R_singles": null,
+ "cpu_ms_per_step_per_model": 2809.16,
+ "A_pass": null,
+ "B_pass": true,
+ "pass": true,
+ "replicas": [
+  {
+   "replica": 0,
+   "seed": 1234,
+   "loss_gpu": [
+    9.19011402130127,
+    8.084732055664062,
+    6.670766830444336
+   ],
+   "loss_cpu": [
+    9.190109252929688,
+    8.085257530212402,
+    6.671465873718262
+   ],
+   "max_step_loss_diff_vs_cpu": 0.0006990432739257812,
+   "heldout_gpu": 5.580581188201904,
+   "heldout_cpu": 5.580702304840088,
+   "B_learning": true
+  }
+ ]
+}

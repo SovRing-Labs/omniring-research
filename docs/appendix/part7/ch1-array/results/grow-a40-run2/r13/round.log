@@ -1,0 +1,66 @@
+== round · core <workspace>/projects/thead-trial/runtime/results/growth-base/r12-elem · 8 harnesses × 1 threads · bin 9d4c5ab7f209 · lib 2697b5e68a3f · 2026-10-09T10:32:59+00:00
+== array server: 8 harness models resident in 1 session(s) of ≤ 8 (/root/og/projects/omni-gpu/target/release/omni-gpu)
+   pod-tw grow-a40-r13-h0 RUN 2m00s %=? cpu3% ························ +1/0:58/-0 seq=59 last+: "[learn2] compiled check: {"agree":128,"n":128,"ok
+   pod-tw grow-a40-r13-h1 RUN 2m00s %=? cpu2% ························ +1/0:59/-0 seq=60 last+: "[learn2] compiled check: {"agree":128,"n":128,"ok
+   pod-tw grow-a40-r13-h2 RUN 2m00s %=? cpu1% ························ +1/0:59/-0 seq=60 last+: "[learn2] compiled check: {"agree":128,"n":128,"ok
+   pod-tw grow-a40-r13-h3 RUN 2m00s %=? cpu1% ························ +1/0:59/-0 seq=60 last+: "[learn2] compiled check: {"agree":128,"n":128,"ok
+   pod-tw grow-a40-r13-h4 RUN 2m00s %=? cpu1% ························ +1/0:59/-0 seq=60 last+: "[learn2] compiled check: {"agree":128,"n":128,"ok
+   pod-tw grow-a40-r13-h5 RUN 2m00s %=? cpu2% ························ +1/0:59/-0 seq=60 last+: "[learn2] compiled check: {"agree":128,"n":128,"ok
+   pod-tw grow-a40-r13-h6 RUN 2m00s %=? cpu2% ························ +1/0:59/-0 seq=60 last+: "[learn2] compiled check: {"agree":128,"n":128,"ok
+   pod-tw grow-a40-r13-h7 RUN 2m00s %=? cpu2% ························ +1/0:59/-0 seq=60 last+: "[learn2] compiled check: {"agree":128,"n":128,"ok
+   pod-tw grow-a40-r13-h0 RUN 4m00s %=? cpu6% ························ +1/0:119/-0 seq=120 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h1 RUN 4m00s %=? cpu3% ························ +1/0:119/-0 seq=120 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h2 RUN 4m00s %=? cpu8% ························ +1/0:119/-0 seq=120 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h3 RUN 4m00s %=? cpu1% ························ +1/0:119/-0 seq=120 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h4 RUN 4m00s %=? cpu3% ························ +1/0:119/-0 seq=120 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h5 RUN 4m00s %=? cpu8% ························ +1/0:119/-0 seq=120 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h6 RUN 4m00s %=? cpu8% ························ +1/0:119/-0 seq=120 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h7 RUN 4m01s %=? cpu2% ························ +1/0:119/-0 seq=120 last+: "[learn2] compiled check: {"agree":128,"n":128,"
+   pod-tw grow-a40-r13-h0 RUN 6m01s 10% cpu1% ························ +2/0:178/-0 seq=180 last+: "[day 1] step 20/195 · pass 1 · active 6 · fi
+   pod-tw grow-a40-r13-h1 RUN 6m01s 10% cpu0% ···············▲········ +2/0:178/-0 seq=180 last+: "[day 1] step 20/195 · pass 1 · active 6 · f
+   pod-tw grow-a40-r13-h2 RUN 6m01s 10% cpu1% ········▲··············· +2/0:178/-0 seq=180 last+: "[day 1] step 20/195 · pass 1 · active 6 · f
+   pod-tw grow-a40-r13-h3 RUN 6m01s 10% cpu0% ·······▲················ +2/0:178/-0 seq=180 last+: "[day 1] step 20/195 · pass 1 · active 6 · f
+   pod-tw grow-a40-r13-h4 RUN 6m01s 10% cpu1% ·················▲······ +2/0:178/-0 seq=180 last+: "[day 1] step 20/195 · pass 1 · active 6 · f
+   pod-tw grow-a40-r13-h5 RUN 6m01s 10% cpu8% ·······················▲ +2/0:178/-0 seq=180 last+: "[day 1] step 20/195 · pass 1 · active 6 · f
+   pod-tw grow-a40-r13-h6 RUN 6m01s 10% cpu0% ·····▲·················· +2/0:178/-0 seq=180 last+: "[day 1] step 20/195 · pass 1 · active 6 · f
+   pod-tw grow-a40-r13-h7 RUN 6m01s 10% cpu1% ·····················▲·· +2/0:178/-0 seq=180 last+: "[day 1] step 20/196 · pass 1 · active 6 · f
+   pod-tw grow-a40-r13-h0 RUN 8m01s 10% cpu1% ························ +3/0:237/-0 seq=240 last+: "[wake] step 25 out 3.862 | blocks 0.00 0.00 0.0
+   pod-tw grow-a40-r13-h1 RUN 8m01s 10% cpu1% ························ +3/0:237/-0 seq=240 last+: "[wake] step 25 out 5.330 | blocks 0.00 0.00 0.0
+   pod-tw grow-a40-r13-h2 RUN 8m01s 10% cpu2% ························ +3/0:237/-0 seq=240 last+: "[wake] step 25 out 4.353 | blocks 0.00 0.00 0.0
+   pod-tw grow-a40-r13-h3 RUN 8m01s 10% cpu2% ························ +3/0:237/-0 seq=240 last+: "[wake] step 25 out 3.240 | blocks 0.00 0.00 0.0
+   pod-tw grow-a40-r13-h4 RUN 8m01s 10% cpu2% ························ +3/0:237/-0 seq=240 last+: "[wake] step 25 out 4.185 | blocks 0.00 0.00 0.0
+   pod-tw grow-a40-r13-h5 RUN 8m02s 10% cpu2% ························ +3/0:237/-0 seq=240 last+: "[wake] step 25 out 5.425 | blocks 0.00 0.00 0.0
+   pod-tw grow-a40-r13-h6 RUN 8m02s 10% cpu1% ························ +3/0:238/-0 seq=241 last+: "[wake] step 25 out 4.857 | blocks 0.00 0.00 0.0
+   pod-tw grow-a40-r13-h7 RUN 8m02s 10% cpu1% ························ +3/0:238/-0 seq=241 last+: "[wake] step 25 out 4.928 | blocks 0.00 0.00 0.0
+   pod-tw grow-a40-r13-h0 RUN 10m02s 10% cpu2% ························ +3/0:298/-0 seq=301 last+: "[wake] step 25 out 3.862 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h1 RUN 10m02s 10% cpu2% ························ +3/0:298/-0 seq=301 last+: "[wake] step 25 out 5.330 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h2 RUN 10m02s 10% cpu2% ························ +3/0:298/-0 seq=301 last+: "[wake] step 25 out 4.353 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h3 RUN 10m02s 10% cpu2% ························ +3/0:298/-0 seq=301 last+: "[wake] step 25 out 3.240 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h4 RUN 10m02s 10% cpu4% ························ +3/0:298/-0 seq=301 last+: "[wake] step 25 out 4.185 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h5 RUN 10m02s 10% cpu3% ························ +3/0:298/-0 seq=301 last+: "[wake] step 25 out 5.425 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h6 RUN 10m02s 10% cpu2% ························ +3/0:298/-0 seq=301 last+: "[wake] step 25 out 4.857 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h7 RUN 10m02s 10% cpu2% ························ +3/0:298/-0 seq=301 last+: "[wake] step 25 out 4.928 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h0 RUN 12m02s 10% cpu2% ························ +3/0:358/-0 seq=361 last+: "[wake] step 25 out 3.862 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h1 RUN 12m02s 10% cpu8% ························ +3/0:358/-0 seq=361 last+: "[wake] step 25 out 5.330 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h2 RUN 12m03s 10% cpu8% ························ +3/0:358/-0 seq=361 last+: "[wake] step 25 out 4.353 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h3 RUN 12m03s 10% cpu2% ························ +3/0:358/-0 seq=361 last+: "[wake] step 25 out 3.240 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h4 RUN 12m03s 10% cpu2% ························ +3/0:358/-0 seq=361 last+: "[wake] step 25 out 4.185 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h5 RUN 12m03s 10% cpu2% ························ +3/0:358/-0 seq=361 last+: "[wake] step 25 out 5.425 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h6 RUN 12m03s 10% cpu8% ························ +3/0:358/-0 seq=361 last+: "[wake] step 25 out 4.857 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h7 RUN 12m03s 10% cpu2% ························ +3/0:358/-0 seq=361 last+: "[wake] step 25 out 4.928 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h0 RUN 14m03s 10% cpu1% ························ +3/0:418/-0 seq=421 last+: "[wake] step 25 out 3.862 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h1 RUN 14m03s 10% cpu1% ························ +3/0:418/-0 seq=421 last+: "[wake] step 25 out 5.330 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h2 RUN 14m03s 10% cpu1% ························ +3/0:418/-0 seq=421 last+: "[wake] step 25 out 4.353 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h3 RUN 14m03s 10% cpu1% ························ +3/0:418/-0 seq=421 last+: "[wake] step 25 out 3.240 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h4 RUN 14m03s 10% cpu0% ························ +3/0:418/-0 seq=421 last+: "[wake] step 25 out 4.185 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h5 RUN 14m03s 10% cpu2% ························ +3/0:418/-0 seq=421 last+: "[wake] step 25 out 5.425 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h6 RUN 14m03s 10% cpu1% ························ +3/0:418/-0 seq=421 last+: "[wake] step 25 out 4.857 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h7 RUN 14m03s 10% cpu1% ························ +3/0:418/-0 seq=421 last+: "[wake] step 25 out 4.928 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h0 RUN 16m04s 10% cpu2% ························ +3/0:478/-0 seq=481 last+: "[wake] step 25 out 3.862 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h1 RUN 16m04s 10% cpu2% ························ +3/0:479/-0 seq=482 last+: "[wake] step 25 out 5.330 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h2 RUN 16m04s 10% cpu5% ························ +3/0:479/-0 seq=482 last+: "[wake] step 25 out 4.353 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h3 RUN 16m04s 10% cpu3% ························ +3/0:479/-0 seq=482 last+: "[wake] step 25 out 3.240 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h4 RUN 16m04s 10% cpu2% ························ +3/0:479/-0 seq=482 last+: "[wake] step 25 out 4.185 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h5 RUN 16m04s 10% cpu2% ························ +3/0:479/-0 seq=482 last+: "[wake] step 25 out 5.425 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h6 RUN 16m04s 10% cpu2% ························ +3/0:479/-0 seq=482 last+: "[wake] step 25 out 4.857 | blocks 0.00 0.00 0.
+   pod-tw grow-a40-r13-h7 RUN 16m04s 10% cpu2% ························ +3/0:479/-0 seq=482 last+: "[wake] step 25 out 4.928 | blocks 0.00 0.00 0.

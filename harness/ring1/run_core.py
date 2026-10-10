@@ -2,7 +2,7 @@
 """RING-1 core grid runner: T1 (exact counter rings: clamp x load x quantisation),
 T5 (eigengap as a confidence signal) and T6 (slot capacity -> overflow rule).
 
-Task: RING1-CORE (_Pads/RING/ring1-w1.wave.yaml).  Pillar: Nervous System, Loop step "Read".
+Task: RING1-CORE (ring1-w1.wave.yaml).  Pillar: Nervous System, Loop step "Read".
 Synthetic only, Python 3 + numpy, no dependency on the C phase kernel.
 
 Every threshold used to decide PASS/KILL is pre-registered in the brief and is
@@ -10,9 +10,9 @@ printed verbatim at the top of the output (see PRE-REGISTERED below).  No thresh
 is fitted to these results.
 
 Usage:
-    python3 _Pads/RING/ring1/run_core.py            # full: 200 trials/cell
-    python3 _Pads/RING/ring1/run_core.py --quick    # 30 trials/cell
-    python3 _Pads/RING/ring1/run_core.py --cells T1 --quick
+    python3 harness/ring1/run_core.py            # full: 200 trials/cell
+    python3 harness/ring1/run_core.py --quick    # 30 trials/cell
+    python3 harness/ring1/run_core.py --cells T1 --quick
 """
 from __future__ import annotations
 
@@ -55,7 +55,7 @@ T6_QUANT = "float"
 Z99 = 2.5758293035489004                          # two-sided normal quantile, 99%
 
 PRE_REGISTERED = """\
-PRE-REGISTERED DECISION (verbatim from _Pads/RING/ring1-w1.wave.yaml, task RING1-CORE, step 6):
+PRE-REGISTERED DECISION (verbatim from ring1-w1.wave.yaml, task RING1-CORE, step 6):
   PASS if, at M = 12 and c = 1 (float), the Wilson-99% lower bound of target recall is > 2/M
   (twice chance). Otherwise KILL: clamping does not select a mark out of a crowded slot.
   The k16 cells are reported, never used to decide PASS/KILL.

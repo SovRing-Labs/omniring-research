@@ -1,0 +1,84 @@
+{
+ "fixed quiet": {
+  "arm": "fixed quiet",
+  "p99_ms": 69.54734476981662,
+  "p99_heavy_ms": 77.04124869836943,
+  "p50_ms": 13.79746149177663,
+  "batch_q_per_s": 372.3810871203463,
+  "drain_s": 30.076715459988918,
+  "load_mean": 0.6755833333333334,
+  "load_sd": 0.11143118828327293,
+  "max_temp": 99.0,
+  "shifts": [],
+  "final_gear": "quiet"
+ },
+ "fixed cruise": {
+  "arm": "fixed cruise",
+  "p99_ms": 154.95395825477317,
+  "p99_heavy_ms": 163.08144719921953,
+  "p50_ms": 37.48860600171611,
+  "batch_q_per_s": 331.722311429495,
+  "drain_s": 33.76317966595525,
+  "load_mean": 0.6396911764705882,
+  "load_sd": 0.25430824611048775,
+  "max_temp": 98.0,
+  "shifts": [],
+  "final_gear": "cruise"
+ },
+ "fixed power": {
+  "arm": "fixed power",
+  "p99_ms": 423.2564905303292,
+  "p99_heavy_ms": 489.00358961196594,
+  "p50_ms": 130.44204702600837,
+  "batch_q_per_s": 326.2732340584679,
+  "drain_s": 34.32705729699228,
+  "load_mean": 0.691144927536232,
+  "load_sd": 0.271443766048226,
+  "max_temp": 98.0,
+  "shifts": [],
+  "final_gear": "power"
+ },
+ "AUTO": {
+  "arm": "AUTO",
+  "p99_ms": 168.10314414265977,
+  "p99_heavy_ms": 173.0789545015432,
+  "p50_ms": 21.98513798066415,
+  "batch_q_per_s": 329.03985859939365,
+  "drain_s": 34.03842940996401,
+  "load_mean": 0.6927941176470587,
+  "load_sd": 0.22853694249080383,
+  "max_temp": 100.0,
+  "shifts": [
+   [
+    3.01,
+    "cruise",
+    "quiet",
+    "heat 85C"
+   ],
+   [
+    26.19,
+    "quiet",
+    "cruise",
+    "backlog growing"
+   ],
+   [
+    31.72,
+    "cruise",
+    "power",
+    "threadlock"
+   ],
+   [
+    32.4,
+    "power",
+    "overdrive",
+    "threadlock"
+   ]
+  ],
+  "final_gear": "overdrive"
+ },
+ "_verdict": {
+  "G1": false,
+  "G2": false,
+  "G3": false
+ }
+}

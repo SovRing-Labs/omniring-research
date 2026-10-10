@@ -1,0 +1,43 @@
+{
+ "P_eq_M": false,
+ "Q_eq_P": true,
+ "R_formula_exact": false,
+ "R_max_abs_err": 0.04629544913768768,
+ "slab_size_eq_ckpt": true,
+ "chk": {
+  "res": [
+   49266,
+   50128,
+   62989
+  ],
+  "step": 20
+ },
+ "rec": {
+  "day": 1,
+  "loss_ema": 0.2610525821027226,
+  "phase": 0,
+  "step": 20
+ },
+ "logs": {
+  "P": [
+   "[par] h0 day 1: merged core loaded after 0.2s wait"
+  ],
+  "Q": [
+   "[bus] h0 on /dev/shm/thead-busgate/busQ \u00b7 sync every day (PAR point) \u00b7 K 1",
+   "[bus] day 1: pulled toward the mean, K 1"
+  ],
+  "R": [
+   "[bus] h0 on /dev/shm/thead-busgate/busR \u00b7 sync every day (PAR point) \u00b7 K 0.5",
+   "[bus] day 1: pulled toward the mean, K 0.5"
+  ]
+ },
+ "pass": true,
+ "recheck_nonBL": {
+  "nonBL_R_formula_exact": true,
+  "nonBL_P_eq_M": true,
+  "BL_entries": 4718592,
+  "BL_R_changed_by_sync_latent": 310143,
+  "BL_P_changed_by_sync_latent": 611245
+ },
+ "note": "P (PAR merge) and Q (bus K=1) ckpts are bitwise equal. BitLinear latents differ from the pulled values in BOTH because sync_latent (run after every merge/pull, as PAR does) re-snaps latents to their trits; the formula check therefore holds on the non-BitLinear params."
+}

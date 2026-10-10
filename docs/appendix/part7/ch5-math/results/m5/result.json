@@ -1,0 +1,1 @@
+{"explained": {"crt2": ["crt2"], "mixed_radix": ["mixed_radix"], "mod_barrett": ["mod_barrett"], "hamming": ["hamming"], "isqrt": ["isqrt"], "period": ["period"], "absmean_quant": ["absmean_quant"], "softmax": ["softmax"], "fib": ["fib"], "clock_read": ["clock_read"]}, "explained_exactly": 10, "negatives_none": 4}

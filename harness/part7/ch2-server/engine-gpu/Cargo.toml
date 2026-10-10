@@ -1,0 +1,18 @@
+[package]
+name = "omnitrain-gpu"
+version = "0.1.0"
+edition = "2021"
+description = "GROW-RUN-0 G3: the engine's C ABI with the training step on the GPU (omni-gpu); everything else resolves to the CPU engine"
+publish = false
+
+[lib]
+name = "omnitrain_gpu"
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+omni-gpu = { path = ".." }
+
+[profile.release]
+opt-level = 3
+debug = false

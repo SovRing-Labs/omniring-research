@@ -1,0 +1,23 @@
+{
+ "single_RAW": {
+  "top1": 0.5225,
+  "time_within_step": 1.0
+ },
+ "single_MODULUS": {
+  "top1": 1.0,
+  "time_within_step": 1.0
+ },
+ "single_HOPF": {
+  "top1": 1.0,
+  "time_within_step": 1.0
+ },
+ "bundle8_MODULUS": 1.0,
+ "bundle8_HOPF": 1.0,
+ "bundle32_MODULUS": 1.0,
+ "bundle32_HOPF": 0.4328125,
+ "verdict": {
+  "H1": true,
+  "H2": true,
+  "PASS": true
+ }
+}

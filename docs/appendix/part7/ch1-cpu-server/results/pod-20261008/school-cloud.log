@@ -1,0 +1,37 @@
+== host 0455b9914973 · 16 cpus ·  AMD EPYC 4564P 16-Core Processor · OT_THREADS=16 · bin 0006cf6af1a3 · lib 361c4c46f5ea
+== segment 1 start 2026-10-08T00:55:04+00:00 · days done 0 · step 0 · warm results/school-t25-prek-ladder
+[thead] warm start from results/school-t25-prek-ladder
+[thead] P3 on: confirmed rows (p > 0.95) skip the backward, full step every 4
+[thead] attention plates on (rows end at token 0)
+[thead] T25 core in the model: 25 clock pairs turned by the rendered core
+[learn2] compiled check: {"agree":128,"n":128,"ok":true,"path":"sift head"}
+[learn2] 146 wake steps · 584 windows · day 20 steps · active 6/6 · doing pool 12514 · levels [0, 1, 2, 3, 4] · start: held-out 0.868 · answer (1550) 0.113
+  [day 1] step 20/146 · pass 1 · active 6 · fired 16 · frontier ≤L5 4/16 · review 0/0 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 4 corr 2 gold 12 · tools router 0/0 gate 0/0 consulted 1 · sleep 2.261→2.467 ROLLBACK · retry 11/14 · 21s
+  [wake] step 25 out 1.108 | blocks 1.34 0.97 1.20 0.65 0.73 0.76 | 0.05M tok | 1815 tok/s | pass 2 | active 6
+  [day 2] step 40/146 · pass 2 · active 6 · fired 16 · frontier ≤L5 4/16 · review 0/0 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 15 corr 2 gold 12 · tools router 0/0 gate 0/0 consulted 0 · sleep 2.430→2.541 ROLLBACK · retry 7/14 · 25s
+  [wake] step 50 out 0.760 | blocks 1.55 1.31 1.35 0.10 1.61 0.66 | 0.10M tok | 1851 tok/s | pass 2 | active 6
+  [day 3] step 60/146 · pass 3 · active 6 · fired 16 · frontier ≤L5 4/16 · review 7/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 18 corr 1 gold 14 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.770→1.827 ROLLBACK · retry 3/14 · 26s
+  [wake] step 75 out 0.793 | blocks 1.50 1.27 1.33 0.86 1.59 0.71 | 0.15M tok | 1819 tok/s | pass 3 | active 6
+  [day 4] step 80/146 · pass 3 · active 6 · fired 16 · frontier ≤L5 3/16 · review 5/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 11 corr 2 gold 16 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.788→1.912 ROLLBACK · retry 4/18 · 29s
+  [wake] step 100 out 1.277 | blocks 1.87 1.57 1.60 0.94 2.35 1.21 | 0.20M tok | 1763 tok/s | pass 4 | active 6
+  [day 5] step 100/146 · pass 4 · active 6 · fired 16 · frontier ≤L5 0/16 · review 1/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 5 corr 1 gold 24 · tools router 0/0 gate 0/0 consulted 1 · sleep 1.560→1.554 COMMIT · retry 12/24 · 30s
+  [day 6] step 120/146 · pass 5 · active 6 · fired 16 · frontier ≤L5 1/16 · review 3/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 16 corr 1 gold 21 · tools router 0/0 gate 0/0 consulted 3 · sleep 1.167→1.168 COMMIT · retry 5/21 · 29s
+  [wake] step 125 out 1.412 | blocks 1.63 1.50 1.60 0.34 1.47 1.31 | 0.26M tok | 1530 tok/s | pass 5 | active 6
+  [day 7] step 140/146 · pass 5 · active 6 · fired 16 · frontier ≤L5 3/16 · review 5/8 · J-format prompt 0/2 answer 0/2 · assisted 0 · study own 13 corr 2 gold 16 · tools router 0/0 gate 0/0 consulted 0 · sleep 1.134→1.114 COMMIT · retry 3/18 · 29s
+  [day 8] step 146/146 · pass 5 · active 6 · fired 16 · frontier ≤L5 4/16 · review 6/8 · J-format prompt 0/2 answer 1/2 · assisted 0 · study own 13 corr 1 gold 15 · tools router 0/0 gate 0/0 consulted 3 · sleep 1.102→1.063 COMMIT · retry 2/15 · 22s
+[learn2] ckpt 0.30M tok · day 8 · held-out 0.778 with plates · 1.464 without · answer (1550) 0.060 / 4.624 · canary 1.063 · full depth 0.775 / answer 0.061
+[learn2] finished · 584 of 584 curriculum windows seen · 8 days · 225s
+== segment 1 exit 0 · days 8 · step 146 2026-10-08T00:58:48+00:00
+  day 1 pass 1 {'doing': 0, 'retry': 0, 'sleep': 5, 'study': 9, 'wake': 7}
+  day 2 pass 2 {'doing': 0, 'retry': 0, 'sleep': 6, 'study': 10, 'wake': 9}
+  day 3 pass 3 {'doing': 0, 'retry': 0, 'sleep': 7, 'study': 10, 'wake': 9}
+  day 4 pass 3 {'doing': 0, 'retry': 0, 'sleep': 7, 'study': 11, 'wake': 10}
+  day 5 pass 4 {'doing': 0, 'retry': 0, 'sleep': 7, 'study': 11, 'wake': 10}
+  day 6 pass 5 {'doing': 0, 'retry': 0, 'sleep': 7, 'study': 11, 'wake': 10}
+  day 7 pass 5 {'doing': 0, 'retry': 0, 'sleep': 7, 'study': 11, 'wake': 10}
+  day 8 pass 5 {'doing': 0, 'retry': 0, 'sleep': 7, 'study': 11, 'wake': 3}
+Traceback (most recent call last):
+  File "/root/ai-stack/projects/thead-trial/runtime/../harness/tier1_eval.py", line 9, in <module>
+    import tier1_symbols
+ModuleNotFoundError: No module named 'tier1_symbols'
+cp: cannot stat 'results/school-t25-prek-cloud1/probes/tier1_eval.json': No such file or directory

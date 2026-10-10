@@ -1,0 +1,10 @@
+{
+ "min_sim_fitted": 0.59,
+ "calibration": [
+  1.0,
+  1.0
+ ],
+ "test_resolved": 1.0,
+ "test_abstain": 1.0,
+ "verdict_L5b": true
+}

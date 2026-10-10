@@ -1,0 +1,407 @@
+{
+ "devices": [
+  "llvmpipe",
+  "Intel"
+ ],
+ "emit": {
+  "engine0": {
+   "deterministic": true,
+   "modules": 6
+  },
+  "engine1": {
+   "deterministic": true,
+   "modules": 5
+  },
+  "engine2": {
+   "deterministic": true,
+   "modules": 3
+  },
+  "engine3": {
+   "deterministic": true,
+   "modules": 2
+  },
+  "engine4": {
+   "deterministic": true,
+   "modules": 1
+  },
+  "engine5": {
+   "deterministic": true,
+   "modules": 4
+  }
+ },
+ "fails": [],
+ "launches": {
+  "Intel": 933,
+  "llvmpipe": 933
+ },
+ "ops": {
+  "Intel": {
+   "engine0/dot8": {
+    "bad": 0,
+    "dispatches": 15,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0045
+   },
+   "engine0/mem_fwd": {
+    "bad": 0,
+    "dispatches": 40,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0009
+   },
+   "engine0/rms_bwd_dg": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0022
+   },
+   "engine0/rms_bwd_dx": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.183
+   },
+   "engine0/rms_row": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0021
+   },
+   "engine0/sgemm": {
+    "bad": 0,
+    "dispatches": 73,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.8539
+   },
+   "engine1/bl_act_g": {
+    "bad": 0,
+    "dispatches": 11,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0021
+   },
+   "engine1/bl_act_q": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0
+   },
+   "engine1/bl_fwd_row": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0023
+   },
+   "engine1/bl_quant_t": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0
+   },
+   "engine1/bl_scale": {
+    "bad": 0,
+    "dispatches": 11,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0017
+   },
+   "engine2/attn_dv": {
+    "bad": 0,
+    "dispatches": 35,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0026
+   },
+   "engine2/attn_lse": {
+    "bad": 0,
+    "dispatches": 33,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0218
+   },
+   "engine2/attn_y": {
+    "bad": 0,
+    "dispatches": 31,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0136
+   },
+   "engine3/bl_bwd_dw": {
+    "bad": 0,
+    "dispatches": 43,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0028
+   },
+   "engine3/bl_bwd_dx": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.3718
+   },
+   "engine4/head_loss": {
+    "bad": 0,
+    "dispatches": 66,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0057
+   },
+   "engine5/sgemm_gnn": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.02
+   },
+   "engine5/sgemm_gnt": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0123
+   },
+   "engine5/sgemm_gtn": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0346
+   },
+   "engine5/sgemm_gtt": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0254
+   }
+  },
+  "llvmpipe": {
+   "engine0/dot8": {
+    "bad": 0,
+    "dispatches": 15,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0045
+   },
+   "engine0/mem_fwd": {
+    "bad": 0,
+    "dispatches": 40,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.001
+   },
+   "engine0/rms_bwd_dg": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0022
+   },
+   "engine0/rms_bwd_dx": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.183
+   },
+   "engine0/rms_row": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0017
+   },
+   "engine0/sgemm": {
+    "bad": 0,
+    "dispatches": 73,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.8539
+   },
+   "engine1/bl_act_g": {
+    "bad": 0,
+    "dispatches": 11,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.001
+   },
+   "engine1/bl_act_q": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0
+   },
+   "engine1/bl_fwd_row": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0005
+   },
+   "engine1/bl_quant_t": {
+    "bad": 0,
+    "dispatches": 13,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0
+   },
+   "engine1/bl_scale": {
+    "bad": 0,
+    "dispatches": 11,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0017
+   },
+   "engine2/attn_dv": {
+    "bad": 0,
+    "dispatches": 35,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0026
+   },
+   "engine2/attn_lse": {
+    "bad": 0,
+    "dispatches": 33,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0218
+   },
+   "engine2/attn_y": {
+    "bad": 0,
+    "dispatches": 31,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0119
+   },
+   "engine3/bl_bwd_dw": {
+    "bad": 0,
+    "dispatches": 43,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0005
+   },
+   "engine3/bl_bwd_dx": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0822
+   },
+   "engine4/head_loss": {
+    "bad": 0,
+    "dispatches": 66,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0057
+   },
+   "engine5/sgemm_gnn": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.02
+   },
+   "engine5/sgemm_gnt": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0123
+   },
+   "engine5/sgemm_gtn": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0346
+   },
+   "engine5/sgemm_gtt": {
+    "bad": 0,
+    "dispatches": 85,
+    "errors": 0,
+    "rows": 92,
+    "shared_ok": true,
+    "worst_over_tol": 0.0254
+   }
+  }
+ },
+ "rows_checked": {
+  "Intel": 1932,
+  "llvmpipe": 1932
+ },
+ "val": {
+  "engine0/dot8.spv": "pass",
+  "engine0/mem_fwd.spv": "pass",
+  "engine0/rms_bwd_dg.spv": "pass",
+  "engine0/rms_bwd_dx.spv": "pass",
+  "engine0/rms_row.spv": "pass",
+  "engine0/sgemm.spv": "pass",
+  "engine1/bl_act_g.spv": "pass",
+  "engine1/bl_act_q.spv": "pass",
+  "engine1/bl_fwd_row.spv": "pass",
+  "engine1/bl_quant_t.spv": "pass",
+  "engine1/bl_scale.spv": "pass",
+  "engine2/attn_dv.spv": "pass",
+  "engine2/attn_lse.spv": "pass",
+  "engine2/attn_y.spv": "pass",
+  "engine3/bl_bwd_dw.spv": "pass",
+  "engine3/bl_bwd_dx.spv": "pass",
+  "engine4/head_loss.spv": "pass",
+  "engine5/sgemm_gnn.spv": "pass",
+  "engine5/sgemm_gnt.spv": "pass",
+  "engine5/sgemm_gtn.spv": "pass",
+  "engine5/sgemm_gtt.spv": "pass"
+ },
+ "verdict": "pass"
+}

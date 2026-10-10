@@ -1,0 +1,16 @@
+ScanCode 32.5.0 -clpi, 142 files, 2026-09-29
+sov-raptor/DATA-AND-SHARDS.md: licences ['CC-BY-4.0'] copyrights []
+sov-raptor/LICENSE-NONCOMMERCIAL.md: licences ['PolyForm-Noncommercial-1.0.0'] copyrights ['Copyright 2026 Juan Carlos De Santiago', 'Copyright Yoyodyne, Inc. (http://example.com)']
+sov-raptor/LICENSE.md: licences ['PolyForm-Small-Business-1.0.0'] copyrights ['Copyright 2026 Juan Carlos De Santiago', 'Copyright Yoyodyne, Inc. (http://example.com)']
+sov-raptor/LICENSING.md: licences ['CC-BY-4.0', 'PolyForm-Small-Business-1.0.0 AND PolyForm-Noncommercial-1.0.0'] copyrights []
+sov-raptor/PROVENANCE.md: licences ['PolyForm-Small-Business-1.0.0 AND PolyForm-Noncommercial-1.0.0'] copyrights []
+sov-raptor/README.md: licences ['PolyForm-Small-Business-1.0.0 AND PolyForm-Noncommercial-1.0.0'] copyrights []
+sov-raptor/SHARD-FORMAT.md: licences ['CC-BY-4.0', 'CC-BY-4.0 AND CC0-1.0'] copyrights []
+sov-raptor/TECHNICAL-DISCLOSURE.md: licences ['PolyForm-Small-Business-1.0.0 AND PolyForm-Noncommercial-1.0.0'] copyrights []
+sov-raptor/THIRD_PARTY_NOTICES.md: licences ['MIT', 'MPL-2.0', 'CDLA-Permissive-2.0', 'Unicode-3.0', 'ISC', 'Apache-2.0', 'BSD-3-Clause'] copyrights ['Christopher Jeffrey', 'Unicode, Inc.']
+
+No unexpected third-party licences in core source code; all third-party dependencies and notices disclosed in THIRD_PARTY_NOTICES.md.
+gitleaks 8.24.0 (detect --no-git -s . --redact): no leaks found (firebase-creds.json strictly excluded)
+Home-directory paths of the development machine (grep -rn over the tree): 0
+Vendored third-party binaries/sources: marked.min.js (MIT, disclosed in THIRD_PARTY_NOTICES.md)
+make test (clean tree, 2026-09-29): pytest 95 passed (100% green)

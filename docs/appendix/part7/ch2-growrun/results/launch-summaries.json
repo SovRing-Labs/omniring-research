@@ -1,0 +1,209 @@
+{
+ "about": "Facts extracted by script from the launcher summary lines and the job header of each growth-run launch. The raw job logs are NOT shipped. Paths, build hashes, job ids and pod addresses are removed.",
+ "launches": {
+  "launch-1": {
+   "state": "FAIL",
+   "launcher_exit": -15,
+   "elapsed_s": 118.1,
+   "raw_lines": 7,
+   "summary_lines": [
+    "== growth-base intact",
+    "== round 13 plan 2026-10-09T03:06:47-07:00"
+   ],
+   "compile_segfault_lines": 3
+  },
+  "launch-1b": {
+   "state": "DONE",
+   "launcher_exit": 0,
+   "elapsed_s": 1244.1,
+   "raw_lines": 325,
+   "summary_lines": [
+    "== growth-base intact",
+    "== round 13 plan 2026-10-09T03:08:47-07:00",
+    "== pod compile r13: 82 builds + 40 circular splices in 253s \u2192 /dev/shm/thead-build (390M in RAM)",
+    "== round 13 on the pod: 40 harnesses (0 middle) 2026-10-09T03:13:18-07:00",
+    "== round \u00b7 core <path> \u00b7 40 harnesses \u00d7 1 threads \u00b7 2026-10-09T10:13:20+00:00",
+    "== array server: 40 harness models resident in 2 session(s) of \u2264 20 (<path>)",
+    "== straggler cut: 30 harness(es) still running 181s after the first finished \u2014 stopping them",
+    "== array server g0: {\"steps\": 77, \"slots\": 20, \"mean_active\": 6.740, \"gpu_ms\": 4827.553, \"step_io_ms\": 4878.113, \"bytes_resident\": 7856727912, \"device\": \"NVIDIA A40\"}",
+    "== array server g1: {\"steps\": 34, \"slots\": 20, \"mean_active\": 11.765, \"gpu_ms\": 10893.866, \"step_io_ms\": 10983.083, \"bytes_resident\": 7856727912, \"device\": \"NVIDIA A40\"}",
+    "== pod tw nudges (grow-a40-r13)",
+    "== harnesses done 2026-10-09T10:28:46+00:00",
+    "== no skill.json from the pod \u2014 stop"
+   ],
+   "harness_exit_tally": {
+    "143": 30,
+    "134": 10
+   },
+   "harness_merges_tally": {
+    "0": 40
+   },
+   "server_stats": [
+    {
+     "steps": 77,
+     "slots": 20,
+     "mean_active": 6.74,
+     "gpu_ms": 4827.553,
+     "step_io_ms": 4878.113,
+     "bytes_resident": 7856727912,
+     "device": "NVIDIA A40"
+    },
+    {
+     "steps": 34,
+     "slots": 20,
+     "mean_active": 11.765,
+     "gpu_ms": 10893.866,
+     "step_io_ms": 10983.083,
+     "bytes_resident": 7856727912,
+     "device": "NVIDIA A40"
+    }
+   ],
+   "harness0_progress": [
+    [
+     "7m45s",
+     "[learn2] compiled check: {"
+    ],
+    [
+     "9m58s",
+     "[learn2] compiled check: {"
+    ],
+    [
+     "12m01s",
+     "[learn2] compiled check: {"
+    ],
+    [
+     "14m04s",
+     "[learn2] compiled check: {"
+    ]
+   ],
+   "array_server_jobs": [
+    {
+     "server": "g0",
+     "exit": "0",
+     "state": "DONE",
+     "elapsed": "15m26s"
+    },
+    {
+     "server": "g1",
+     "exit": "0",
+     "state": "DONE",
+     "elapsed": "15m26s"
+    }
+   ]
+  },
+  "launch-2": {
+   "state": "FAIL",
+   "launcher_exit": -15,
+   "elapsed_s": 1102.1,
+   "raw_lines": 72,
+   "summary_lines": [
+    "== growth-base intact",
+    "== round 13 plan 2026-10-09T03:31:14-07:00",
+    "== pod compile r13: 18 builds + 8 circular splices in 82s \u2192 /dev/shm/thead-build (390M in RAM)",
+    "== round 13 on the pod: 8 harnesses (0 middle) 2026-10-09T03:32:58-07:00",
+    "== round \u00b7 core <path> \u00b7 8 harnesses \u00d7 1 threads \u00b7 2026-10-09T10:32:59+00:00",
+    "== array server: 8 harness models resident in 1 session(s) of \u2264 8 (<path>)"
+   ],
+   "harness0_progress": [
+    [
+     "2m00s",
+     "[learn2] compiled check: {"
+    ],
+    [
+     "4m00s",
+     "[learn2] compiled check: {"
+    ],
+    [
+     "6m01s",
+     "[day 1] step 20/195"
+    ],
+    [
+     "8m01s",
+     "[wake] step 25 out 3.862"
+    ],
+    [
+     "10m02s",
+     "[wake] step 25 out 3.862"
+    ],
+    [
+     "12m02s",
+     "[wake] step 25 out 3.862"
+    ],
+    [
+     "14m03s",
+     "[wake] step 25 out 3.862"
+    ],
+    [
+     "16m04s",
+     "[wake] step 25 out 3.862"
+    ]
+   ]
+  },
+  "launch-3": {
+   "state": "FAIL",
+   "launcher_exit": -15,
+   "elapsed_s": 996.1,
+   "raw_lines": 168,
+   "summary_lines": [
+    "== growth-base intact",
+    "== round 13 plan 2026-10-09T03:50:22-07:00",
+    "== pod compile r13: 82 builds + 40 circular splices in 262s \u2192 /dev/shm/thead-build (390M in RAM)",
+    "== round 13 on the pod: 40 harnesses (0 middle) 2026-10-09T03:55:04-07:00",
+    "== round \u00b7 core <path> \u00b7 40 harnesses \u00d7 1 threads \u00b7 2026-10-09T10:55:06+00:00",
+    "== array server: 40 harness models resident in 2 session(s) of \u2264 20 (<path>)"
+   ],
+   "harness0_progress": [
+    [
+     "7m35s",
+     "[learn2] compiled check: {"
+    ],
+    [
+     "10m08s",
+     "[day 1] step 20/195"
+    ]
+   ]
+  },
+  "launch-3b": {
+   "state": "FAIL",
+   "launcher_exit": -15,
+   "elapsed_s": 1340.1,
+   "raw_lines": 288,
+   "summary_lines": [
+    "== growth-base intact",
+    "== round 13 plan 2026-10-09T04:07:30-07:00",
+    "== pod compile r13: 82 builds + 40 circular splices in 260s \u2192 /dev/shm/thead-build (390M in RAM)",
+    "== round 13 on the pod: 40 harnesses (0 middle) 2026-10-09T04:12:10-07:00",
+    "== round \u00b7 core <path> \u00b7 40 harnesses \u00d7 1 threads \u00b7 2026-10-09T11:12:11+00:00",
+    "== array server: 40 harness models resident in 2 session(s) of \u2264 20 (<path>)"
+   ],
+   "harness0_progress": [
+    [
+     "12m37s",
+     "[learn2] compiled check: {"
+    ],
+    [
+     "14m44s",
+     "[learn2] compiled check: {"
+    ],
+    [
+     "16m47s",
+     "[learn2] compiled check: {"
+    ]
+   ],
+   "server_start_lines": {
+    "g0": [
+     "[array] NVIDIA A40 \u2014 20 slots, 1588 passes, 7856.7 MB resident, slot 28 MB",
+     "[array] decode <program>: 20 decoders \u00d7 16 stations, 297 passes, 5066.3 MB resident (queue 2)",
+     "[array] decode <program>: 20 decoders \u00d7 16 stations, 327 passes, 5066.5 MB resident (queue 2)"
+    ],
+    "g1": [
+     "[array] NVIDIA A40 \u2014 20 slots, 1588 passes, 7856.7 MB resident, slot 28 MB",
+     "[array] decode <program>: 20 decoders \u00d7 16 stations, 327 passes, 5066.5 MB resident (queue 2)"
+    ]
+   },
+   "harness_logs_total": 40,
+   "harness_logs_ending_at_connected_to_array_server": 28,
+   "harness_logs_ending_after_opening_evaluation_line": 12
+  }
+ }
+}

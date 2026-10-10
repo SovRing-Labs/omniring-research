@@ -1,0 +1,1 @@
+{"round": 11, "vs_good": 10, "drop": 0.1, "rise": 0.3, "why": [], "common": 127, "gate_count_good": 52, "gate_count_now": 52, "mean_good": 0.8265, "mean_now": 0.8419, "heldout_good": 0.617, "heldout_now": 0.592, "verdict": "pass"}

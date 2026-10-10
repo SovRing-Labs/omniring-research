@@ -1,0 +1,11 @@
+# BROWSER-BODY-0 step 3: open, follow 3 links, back x2, forward (expected end: the 2nd followed page)
+open https://en.wikipedia.org/wiki/Ternary_numeral_system
+scroll 1400
+follow Setun
+follow Moscow State University
+follow Moscow
+back
+back
+forward
+back
+back

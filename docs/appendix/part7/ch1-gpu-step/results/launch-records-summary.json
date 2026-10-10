@@ -1,0 +1,15 @@
+{
+ "launches": [
+  {
+   "exit": 0,
+   "label": "one school day on the GPU library (laptop GPU)",
+   "seconds": 184.2
+  },
+  {
+   "exit": 1,
+   "label": "4-model replica school step on the laptop GPU",
+   "seconds": 68.3
+  }
+ ],
+ "what": "launch records quoted in the GPU-step section (scrubbed)"
+}

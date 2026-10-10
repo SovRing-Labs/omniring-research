@@ -1,0 +1,50 @@
+{
+ "rung": "G4",
+ "units": 1,
+ "pairs_per_unit": 4,
+ "harnesses": 4,
+ "models": 4,
+ "device": "L4",
+ "steps": 2,
+ "slab_floats": 6926912,
+ "full_state": true,
+ "events_per_step": 8192,
+ "windows_per_step": 16,
+ "exe": "/root/cyclone/omni-gpu/target/release/omni-gpu",
+ "exe_sha256": "df98b36cb7e4",
+ "command": "cyclone --preset G4 --build /root/cyclone/thead/build-v4/tier1-prek-v4-s6400 --ckpts /tmp/omni-gpu-G4-zd8ac9_q/ckpts.txt --device L4 --steps 2 --slab full --dump /tmp/omni-gpu-G4-zd8ac9_q/dump --full-state",
+ "parts": {
+  "P1 T50 centre per unit": "PARTIAL \u2014 addressing + ledger + weight coupling on the GPU; the other precompute streams not yet",
+  "P2 8 harnesses per unit": "PARTIAL \u2014 batch slicing + T25 bus on the GPU; HarnessCore / doing / judging still CPU",
+  "P3 a model per harness, training on the GPU": "ABSENT \u2014 weights resident and coupled; no training step on the GPU yet",
+  "P4 harnesses + models feed the cyclone": "PARTIAL \u2014 token events + weights flow into the hub",
+  "P5 1 centre + 4 around": "n/a at this rung",
+  "P6 units connected by the ring": "n/a at this rung",
+  "P7 all resident in VRAM": "PARTIAL \u2014 everything that runs is resident; the training state only with --full-state",
+  "routing (toroid \u2192 toroid by address)": "ABSENT \u2014 readback with J pending (10-08 Toroid array)"
+ },
+ "weights_files": [
+  "/root/cyclone/results/pod-cpu32b/live-r14/h0/ckpt.bin",
+  "/root/cyclone/results/pod-cpu32b/live-r14/h1/ckpt.bin",
+  "/root/cyclone/results/pod-cpu32b/live-r14/h2/ckpt.bin",
+  "/root/cyclone/results/pod-cpu32b/live-r14/h3/ckpt.bin"
+ ],
+ "device_name": "NVIDIA L4",
+ "passes": 7,
+ "buffers": 28,
+ "bytes_resident": 2196050296,
+ "gb_resident": 2.196,
+ "setup_ms": 288.885,
+ "first_step_ms": 2.393,
+ "ms_per_step": 2.3368,
+ "gpu_ms_last": 2.2635,
+ "check": {
+  "feed_mismatches": 0,
+  "t25_ledger_mismatches": 0,
+  "t50_ledger_mismatches": 0,
+  "weight_bit_mismatches": 0
+ },
+ "fails": [],
+ "pass": true,
+ "wall_s": 2.1
+}

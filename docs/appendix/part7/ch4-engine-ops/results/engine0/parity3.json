@@ -1,0 +1,1 @@
+{"rms_bwd_dx": {"rows": 5000, "bad": 0, "ours_max_err": 3.7071597435891627e-07, "engine_max_err": 3.8252199538137955e-07}, "rms_bwd_dg": {"rows": 5000, "bad": 0, "ours_max_err": 3.5300104977623787e-07, "engine_max_err": 2.845913721244055e-07}, "mem_fwd": {"rows": 5000, "bad": 0, "ours_max_err": 2.7535619904727797e-07, "engine_max_err": 2.0985908877109586e-07}}

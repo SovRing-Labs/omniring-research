@@ -1,0 +1,142 @@
+{
+ "gate": "CYCLONE-ARRAY C2 S1: the training step on the GPU vs the CPU engine (om_grad)",
+ "dims": {
+  "V": 512,
+  "D": 64,
+  "L": 2,
+  "H": 2,
+  "T": 64,
+  "B": 2
+ },
+ "device": "llvmpipe",
+ "switches": [
+  "t25",
+  "voice",
+  "port"
+ ],
+ "t25_pairs": 16,
+ "passes": 211,
+ "buffers": 55,
+ "loss_cpu": 6.2585883140563965,
+ "cpu_s": 0.317,
+ "lib": "<workspace>/projects/thead-trial/engine/omni_train/libomnitrain_trial.so",
+ "device_name": "llvmpipe (LLVM 20.1.2, 256 bits)",
+ "loss_gpu": 6.258586883544922,
+ "loss_abs_diff": 1.430511474609375e-06,
+ "worst_cos": 0.9999998953543241,
+ "worst_max_rel": 6.821371130172338e-07,
+ "gpu_ms_step": 908.2803,
+ "token_loss_diff": {
+  "median": 4.76837158203125e-07,
+  "p99": 9.5367431640625e-07,
+  "max": 9.5367431640625e-07,
+  "tokens_over_1e-4": 0,
+  "tokens": 128
+ },
+ "bytes_resident": 3007340,
+ "per_param": {
+  "emb.weight": {
+   "cos": 1.0000013,
+   "max_rel": 1.568e-07,
+   "norm_cpu": 3.627922773361206,
+   "norm_gpu": 3.627923011779785
+  },
+  "blocks.0.n1.weight": {
+   "cos": 0.9999999,
+   "max_rel": 3.583e-07,
+   "norm_cpu": 0.04288878291845322,
+   "norm_gpu": 0.04288877919316292
+  },
+  "blocks.0.n2.weight": {
+   "cos": 1.0,
+   "max_rel": 4.07e-07,
+   "norm_cpu": 0.03878680244088173,
+   "norm_gpu": 0.03878680616617203
+  },
+  "blocks.0.qkv.weight": {
+   "cos": 0.9999999,
+   "max_rel": 2.973e-07,
+   "norm_cpu": 1.0649299621582031,
+   "norm_gpu": 1.0649299621582031
+  },
+  "blocks.0.o.weight": {
+   "cos": 1.0,
+   "max_rel": 2.551e-07,
+   "norm_cpu": 0.9723803400993347,
+   "norm_gpu": 0.9723803997039795
+  },
+  "blocks.0.up.weight": {
+   "cos": 1.0,
+   "max_rel": 3.473e-07,
+   "norm_cpu": 0.7656108140945435,
+   "norm_gpu": 0.7656108140945435
+  },
+  "blocks.0.down.weight": {
+   "cos": 1.0000002,
+   "max_rel": 2.328e-07,
+   "norm_cpu": 1.3485325574874878,
+   "norm_gpu": 1.3485326766967773
+  },
+  "blocks.1.n1.weight": {
+   "cos": 0.9999999,
+   "max_rel": 2.454e-07,
+   "norm_cpu": 0.022867683321237564,
+   "norm_gpu": 0.022867687046527863
+  },
+  "blocks.1.n2.weight": {
+   "cos": 1.0000001,
+   "max_rel": 2.622e-07,
+   "norm_cpu": 0.032574769109487534,
+   "norm_gpu": 0.03257477283477783
+  },
+  "blocks.1.qkv.weight": {
+   "cos": 1.0,
+   "max_rel": 3.14e-07,
+   "norm_cpu": 0.5308018922805786,
+   "norm_gpu": 0.5308019518852234
+  },
+  "blocks.1.o.weight": {
+   "cos": 1.0,
+   "max_rel": 3.033e-07,
+   "norm_cpu": 0.5655525922775269,
+   "norm_gpu": 0.5655525922775269
+  },
+  "blocks.1.up.weight": {
+   "cos": 1.0000002,
+   "max_rel": 3.068e-07,
+   "norm_cpu": 0.5310022234916687,
+   "norm_gpu": 0.5310022234916687
+  },
+  "blocks.1.down.weight": {
+   "cos": 1.0000002,
+   "max_rel": 2.724e-07,
+   "norm_cpu": 0.8540204763412476,
+   "norm_gpu": 0.8540205359458923
+  },
+  "nf.weight": {
+   "cos": 1.0,
+   "max_rel": 2.169e-07,
+   "norm_cpu": 0.05038467422127724,
+   "norm_gpu": 0.05038467049598694
+  },
+  "port.router.bias": {
+   "cos": 1.0,
+   "max_rel": 7.09e-08,
+   "norm_cpu": 0.054648153483867645,
+   "norm_gpu": 0.054648157209157944
+  },
+  "port.U.weight": {
+   "cos": 1.0,
+   "max_rel": 6.821e-07,
+   "norm_cpu": 1.9718126057725188e-13,
+   "norm_gpu": 1.9718130123483335e-13
+  },
+  "port.ptr": {
+   "cos": 1.0,
+   "max_rel": 2.58e-07,
+   "norm_cpu": 1.2195158077821233e-11,
+   "norm_gpu": 1.2195159812544709e-11
+  }
+ },
+ "pass": true
+}

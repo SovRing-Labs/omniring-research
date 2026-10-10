@@ -1,0 +1,55 @@
+{"fns":["layout.rs:lmix@L84","raster.rs:mix64@L136","style.rs:mix64@L976"],"sig":"(^ (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2) (>> (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2) 31))","size":20}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map v2 v3))))))) (+ (* (- (get1 item1) 1) v0) (sum (idx v4 (range (get0 item1) (min (+ (get0 item1) (get1 item1)) (maxall (map v2 v3))))))))","size":29}
+{"fns":["corert0.rs:splitmix@L18","hv.rs:splitmix@L10"],"sig":"(^ (* (^ (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) (>> (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) 27)) v3) (>> (* (^ (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) (>> (* (^ (+ v0 v1) (>> v4 30)) v2) 27)) v3) 31))","size":27}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(get0 (tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range (get0 item1) (min (+ v2 v3) (maxall v4)))))) (+ (* (- (get1 item1) 1) v0) (sum (idx v5 (range (get0 item1) (min (+ v2 v3) (maxall v4))))))))","size":24}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(get1 (tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range (get0 item1) (min (+ v2 v3) (maxall v4)))))) (+ (* (- (get1 item1) 1) v0) (sum (idx v5 (range (get0 item1) (min (+ v2 v3) (maxall v4))))))))","size":24}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(- (get2 item1) (get0 (tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range (get0 item1) (min v2 v3))))) (+ (* (- (get1 item1) 1) v0) (sum (idx v4 (range (get0 item1) (min v2 v3))))))))","size":22}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(- (get3 item1) (get1 (tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range (get0 item1) (min v2 v3))))) (+ (* (- (get1 item1) 1) v0) (sum (idx v4 (range (get0 item1) (min v2 v3))))))))","size":22}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(> (get2 item1) (get0 (tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range (get0 item1) (min v2 v3))))) (+ (* (- (get1 item1) 1) v0) (sum (idx v4 (range (get0 item1) (min v2 v3))))))))","size":22}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(> (get3 item1) (get1 (tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range (get0 item1) (min v2 v3))))) (+ (* (- (get1 item1) 1) v0) (sum (idx v4 (range (get0 item1) (min v2 v3))))))))","size":22}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(/ (- (get2 item1) (get0 (tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range v2 v3)))) (+ (* (- (get1 item1) 1) v0) (sum (idx v4 (range v2 v3))))))) (get1 item1))","size":20}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(/ (- (get3 item1) (get1 (tup (+ (* (- (get1 item1) 1) v0) (sum (idx v1 (range v2 v3)))) (+ (* (- (get1 item1) 1) v0) (sum (idx v4 (range v2 v3))))))) (get1 item1))","size":20}
+{"fns":["doctor.rs:patch_gate@L470","doctor.rs:binary_gate@L610"],"sig":"(sel (and (== (get0 (tup (tup 0 0) (tup 0 0))) (tup 0 0)) (> (+ (get0 (get1 (tup (tup 0 0) (tup 0 0)))) (get1 (get1 (tup (tup 0 0) (tup 0 0))))) 0)) 0 1)","size":20}
+{"fns":["doctor.rs:patch_gate@L470","doctor.rs:binary_gate@L610"],"sig":"(and (== (get0 (tup (tup 0 0) (tup 0 0))) (tup 0 0)) (> (+ (get0 (get1 (tup (tup 0 0) (tup 0 0)))) (get1 (get1 (tup (tup 0 0) (tup 0 0))))) 0))","size":19}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(+ (/ (- (get2 item1) (get0 (tup (+ (* (- v0 1) v1) (sum (idx v2 v3))) (+ (* (- v0 1) v1) (sum (idx v4 v3)))))) (get1 item1)) v5)","size":17}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(+ (/ (- (get3 item1) (get1 (tup (+ (* (- v0 1) v1) (sum (idx v2 v3))) (+ (* (- v0 1) v1) (sum (idx v4 v3)))))) (get1 item1)) v5)","size":17}
+{"fns":["layout.rs:lmix@L84","raster.rs:mix64@L136","style.rs:mix64@L976"],"sig":"(>> (* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2) 31)","size":10}
+{"fns":["corert0.rs:splitmix@L18","hv.rs:splitmix@L10"],"sig":"(>> (* (^ (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) (>> (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) 27)) v3) 31)","size":14}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(store v0 item2 (+ (/ (- (get2 item1) (get0 (tup (+ (* v1 v2) (sum v3)) (+ (* v1 v2) (sum v4))))) (get1 item1)) v5))","size":14}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:table@L1834"],"sig":"(store v0 item2 (+ (/ (- (get3 item1) (get1 (tup (+ (* v1 v2) (sum v3)) (+ (* v1 v2) (sum v4))))) (get1 item1)) v5))","size":14}
+{"fns":["layout.rs:lmix@L84","raster.rs:mix64@L136","style.rs:mix64@L976"],"sig":"(* (^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27)) v2)","size":9}
+{"fns":["corert0.rs:splitmix@L18","hv.rs:splitmix@L10"],"sig":"(* (^ (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) (>> (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) 27)) v3)","size":13}
+{"fns":["doctor.rs:patch_gate@L470","doctor.rs:binary_gate@L610"],"sig":"(> (+ (get0 (get1 (tup (tup 0 0) (tup 0 0)))) (get1 (get1 (tup (tup 0 0) (tup 0 0))))) 0)","size":12}
+{"fns":["corert0.rs:splitmix@L18","hv.rs:splitmix@L10"],"sig":"(^ (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) (>> (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) 27))","size":12}
+{"fns":["layout.rs:lmix@L84","raster.rs:mix64@L136","style.rs:mix64@L976"],"sig":"(^ (* (^ (>> v0 30) v0) v1) (>> (* (^ (>> v0 30) v0) v1) 27))","size":8}
+{"fns":["doctor.rs:patch_gate@L470","doctor.rs:binary_gate@L610"],"sig":"(+ (get0 (get1 (tup (tup 0 0) (tup 0 0)))) (get1 (get1 (tup (tup 0 0) (tup 0 0)))))","size":11}
+{"fns":["doctor_abc.rs:union@L61","img.rs:size@L5","main.rs:render_cmd@L227","repair.rs:load_book@L962"],"sig":"(tup (get0 (tup v0 v1)) (get1 (tup v0 v1)))","size":5}
+{"fns":["explain.rs:run@L74","repair.rs:score_full@L44","repair.rs:watch_page@L542"],"sig":"(map v0 (tup (round (get0 item1)) (round (get1 item1))))","size":6}
+{"fns":["checks.rs:mismatches@L81","explain.rs:check@L176","main.rs:render_cmd@L227"],"sig":"(map v0 (tup (round (get0 item2)) (round (get1 item2))))","size":6}
+{"fns":["layout.rs:lkey@L92","style.rs:h128@L978"],"sig":"(| (<< (fold v0 (get0 (tup 2611923443488327891 1376283091369227076)) v1) 64) (fold v0 (get1 (tup 2611923443488327891 1376283091369227076)) v2))","size":8}
+{"fns":["layout.rs:place_abs@L592","layout.rs:block_box_full@L1094","layout.rs:flex_items@L2027"],"sig":"(get0 (tup (len v0) (len v1) (len v2)))","size":5}
+{"fns":["layout.rs:place_abs@L592","layout.rs:block_box_full@L1094","layout.rs:flex_items@L2027"],"sig":"(get1 (tup (len v0) (len v1) (len v2)))","size":5}
+{"fns":["layout.rs:place_abs@L592","layout.rs:block_box_full@L1094","layout.rs:flex_items@L2027"],"sig":"(get2 (tup (len v0) (len v1) (len v2)))","size":5}
+{"fns":["explain.rs:run@L74","repair.rs:score_full@L44","repair.rs:watch_page@L542"],"sig":"(tup (round (get0 item1)) (round (get1 item1)))","size":5}
+{"fns":["checks.rs:mismatches@L81","explain.rs:check@L176","main.rs:render_cmd@L227"],"sig":"(tup (round (get0 item2)) (round (get1 item2)))","size":5}
+{"fns":["selt.rs:bench@L133","verify.rs:score@L113"],"sig":"(len (filter (range 0 (len v0)) (and (== v1 v2) (not v3))))","size":7}
+{"fns":["layout.rs:place_abs@L592","layout.rs:block_box_full@L1094"],"sig":"(range (len v0) (get0 (tup (len v0) (len v1) (len v2))))","size":7}
+{"fns":["layout.rs:place_abs@L592","layout.rs:block_box_full@L1094"],"sig":"(range (len v0) (get1 (tup (len v1) (len v0) (len v2))))","size":7}
+{"fns":["layout.rs:place_abs@L592","layout.rs:block_box_full@L1094"],"sig":"(range (len v0) (get2 (tup (len v1) (len v2) (len v0))))","size":7}
+{"fns":["css.rs:take_paren@L244","css.rs:block@L999"],"sig":"(tup (+ 1 v0) (idx v1 (range (+ 1 v2) (min (len v1) v0))))","size":7}
+{"fns":["doctor.rs:patch_gate@L470","doctor.rs:binary_gate@L610"],"sig":"(== (get0 (tup (tup 0 0) (tup 0 0))) (tup 0 0))","size":6}
+{"fns":["corert0.rs:splitmix@L18","hv.rs:splitmix@L10"],"sig":"(>> (* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2) 27)","size":6}
+{"fns":["selt.rs:bench@L133","verify.rs:score@L113"],"sig":"(filter (range 0 (len v0)) (and (== v1 v2) (not v3)))","size":6}
+{"fns":["raster.rs:render@L100","raster.rs:render_incr@L153"],"sig":"(get0 (tup (* item2 v0) (+ (* (get0 item1) v0) v1)))","size":6}
+{"fns":["raster.rs:render@L100","raster.rs:render_incr@L153"],"sig":"(get1 (tup (* item2 v0) (+ (* (get0 item1) v0) v1)))","size":6}
+{"fns":["corert0.rs:splitmix@L18","hv.rs:splitmix@L10"],"sig":"(* (^ (+ v0 v1) (>> (+ v0 v1) 30)) v2)","size":5}
+{"fns":["layout.rs:intrinsic_w@L662","layout.rs:flex_items@L2027"],"sig":"(and (not (and (== v0 v1) v2)) (not v3))","size":5}
+{"fns":["style.rs:hints@L1273","svg.rs:render_at@L313"],"sig":"(and (not v0) (or (== str v1) (== str v1)))","size":5}
+{"fns":["doctor.rs:patch_gate@L470","doctor.rs:binary_gate@L610"],"sig":"(get0 (get1 (tup (tup 0 0) (tup 0 0))))","size":5}
+{"fns":["svrt.rs:cli@L435","uiir.rs:run_cli@L507"],"sig":"(get0 (tup (idx v0 0) (idx v0 1) (idx v0 2)))","size":5}
+{"fns":["doctor.rs:patch_gate@L470","doctor.rs:binary_gate@L610"],"sig":"(get1 (get1 (tup (tup 0 0) (tup 0 0))))","size":5}
+{"fns":["svrt.rs:cli@L435","uiir.rs:run_cli@L507"],"sig":"(get1 (tup (idx v0 0) (idx v0 1) (idx v0 2)))","size":5}
+{"fns":["css.rs:take_paren@L244","css.rs:block@L999"],"sig":"(idx v0 (range (+ 1 v1) (min (len v0) v2)))","size":5}
+{"fns":["layout.rs:flow@L1288","layout.rs:inline_with_block@L1408"],"sig":"(or (and (and (== 0 v0) v1) (not v2)) v3)","size":5}
+{"fns":["raster.rs:render@L100","raster.rs:render_incr@L153"],"sig":"(tup (* item2 v0) (+ (* (get0 item1) v0) v1))","size":5}
+{"fns":["img.rs:pack@L87","svg.rs:paint@L368"],"sig":"(| (<< v0 8) (| (<< v1 16) (<< v2 24)))","size":5}

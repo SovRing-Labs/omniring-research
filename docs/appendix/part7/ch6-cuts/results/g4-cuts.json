@@ -1,0 +1,186 @@
+{
+ "array": {
+  "toroids": 15,
+  "links": 45,
+  "capacity_C": 13680.0,
+  "inbox_per_step": {
+   "f0u0(centre)": 5649,
+   "f0u1": 27334,
+   "f0u2": 20917,
+   "f0u3": 5177,
+   "f0u4": 22523,
+   "f1u0(centre)": 5731,
+   "f1u1": 27533,
+   "f1u2": 21127,
+   "f1u3": 5118,
+   "f1u4": 22571,
+   "f2u0(centre)": 5638,
+   "f2u1": 27394,
+   "f2u2": 21250,
+   "f2u3": 5352,
+   "f2u4": 22446
+  },
+  "hottest_links": [
+   {
+    "link": "f1u0(centre)\u2013f2u0(centre)",
+    "load": 10944,
+    "saturation": 0.8
+   },
+   {
+    "link": "f1u1\u2013f2u1",
+    "load": 10944,
+    "saturation": 0.8
+   },
+   {
+    "link": "f1u2\u2013f2u2",
+    "load": 10944,
+    "saturation": 0.8
+   },
+   {
+    "link": "f1u3\u2013f2u3",
+    "load": 10944,
+    "saturation": 0.8
+   },
+   {
+    "link": "f1u4\u2013f2u4",
+    "load": 10944,
+    "saturation": 0.8
+   },
+   {
+    "link": "f0u0(centre)\u2013f1u0(centre)",
+    "load": 10912,
+    "saturation": 0.798
+   }
+  ],
+  "gh_tree_14_edges": [
+   {
+    "a": "f1u1",
+    "b": "f1u3",
+    "min_cut_headroom": 27287.0
+   },
+   {
+    "a": "f2u1",
+    "b": "f2u3",
+    "min_cut_headroom": 27334.0
+   },
+   {
+    "a": "f0u1",
+    "b": "f0u3",
+    "min_cut_headroom": 27446.0
+   },
+   {
+    "a": "f0u3",
+    "b": "f1u3",
+    "min_cut_headroom": 27520.0
+   },
+   {
+    "a": "f0u3",
+    "b": "f2u3",
+    "min_cut_headroom": 27520.0
+   },
+   {
+    "a": "f1u3",
+    "b": "f1u4",
+    "min_cut_headroom": 30307.0
+   },
+   {
+    "a": "f2u3",
+    "b": "f2u4",
+    "min_cut_headroom": 30352.0
+   },
+   {
+    "a": "f0u3",
+    "b": "f0u4",
+    "min_cut_headroom": 30519.0
+   },
+   {
+    "a": "f2u2",
+    "b": "f2u3",
+    "min_cut_headroom": 31056.0
+   },
+   {
+    "a": "f1u2",
+    "b": "f1u3",
+    "min_cut_headroom": 31183.0
+   },
+   {
+    "a": "f0u2",
+    "b": "f0u3",
+    "min_cut_headroom": 31349.0
+   },
+   {
+    "a": "f1u0(centre)",
+    "b": "f1u3",
+    "min_cut_headroom": 40223.0
+   },
+   {
+    "a": "f2u0(centre)",
+    "b": "f2u3",
+    "min_cut_headroom": 40308.0
+   },
+   {
+    "a": "f0u0(centre)",
+    "b": "f0u3",
+    "min_cut_headroom": 40461.0
+   }
+  ],
+  "global_min_cut": {
+   "a": "f1u1",
+   "b": "f1u3",
+   "min_cut_headroom": 27287.0
+  }
+ },
+ "school": {
+  "stage": "prek",
+  "skills": 85,
+  "entry": 1,
+  "top": 17,
+  "min_vertex_cut": [
+   "pk.echo@1"
+  ],
+  "cut_size": 1,
+  "most_downstream": [
+   {
+    "skill": "pk.echo@1",
+    "gates": 84
+   },
+   {
+    "skill": "pk.ping@1",
+    "gates": 39
+   },
+   {
+    "skill": "pk.hold@1",
+    "gates": 34
+   },
+   {
+    "skill": "pk.commit@1",
+    "gates": 24
+   },
+   {
+    "skill": "pk.babble@1",
+    "gates": 24
+   },
+   {
+    "skill": "pk.meet@1",
+    "gates": 19
+   },
+   {
+    "skill": "pk.flush@1",
+    "gates": 9
+   },
+   {
+    "skill": "pk.give@1",
+    "gates": 9
+   },
+   {
+    "skill": "pk.tape@1",
+    "gates": 9
+   },
+   {
+    "skill": "pk.meet_fix@1",
+    "gates": 9
+   }
+  ]
+ },
+ "source_record": "/tmp/claude-1000/-home-jc-ai-stack/<id>/scratchpad/g120/G120-llvmpipe-w262144.json"
+}

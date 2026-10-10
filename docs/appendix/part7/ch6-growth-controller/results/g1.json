@@ -1,0 +1,48 @@
+{
+ "gate": "GROW-RUN-0 G1 controller (dry, from growth-base r12)",
+ "checks": {
+  "1_frontier_prek_only": true,
+  "1_preview_k_level1": true,
+  "1_above_stage_only_review": true,
+  "2a_pac_24_rows_not_enough": true,
+  "2_stage_passed_prek_to_k": true,
+  "2_keep_on_stage_pass": true,
+  "3_slip_returns": true,
+  "4_middle_passed": true,
+  "4_wall_to_params": true,
+  "4_grown_to_skills_then_generators": true,
+  "4_keep_after_growth": true,
+  "5_default_identical": true,
+  "6_ledger_chain_verifies": true,
+  "6_tamper_detected": true
+ },
+ "report": {
+  "tier": "test",
+  "rounds": 9,
+  "hours": 0.0006,
+  "at_gate_first": 85,
+  "at_gate_last": 311,
+  "stage_now": "high",
+  "stages_passed": [
+   {
+    "round": 13,
+    "stage_before": "prek",
+    "hours": 0.0
+   }
+  ],
+  "growths": [
+   {
+    "round": 20,
+    "from": 6926912,
+    "to": 9000000,
+    "how": "test",
+    "at_gate": 311,
+    "heldout": null
+   }
+  ],
+  "keeps": 3,
+  "mode_now": "generators",
+  "skills_per_hour": 150.67
+ },
+ "pass": true
+}

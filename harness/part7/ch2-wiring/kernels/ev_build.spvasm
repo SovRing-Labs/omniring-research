@@ -1,0 +1,146 @@
+; ev_build — CYCLONE-ARRAY W2d: each model's token events for its harness's T25 bus and its unit's T50 cyclone (written by hand from the
+; SPIR-V unified spec; our own code). One invocation per window walks its T positions in order (the row field is a running count):
+;   event[j] = [position j, token x, plate (k ≥ 0 ? k : 36), level, row = EOS tokens before j, unit = h / PER, harness h = win / B, staged 0]
+; — the trunk's T25 event (THEAD-T25-CORE brief: position · token · plate · level · row), in the 8-int layout ring_addr.spv reads.
+; Bindings: 0 feed int[windows·T·5] (feed_win's [x y k p st]) · 1 level uint[windows] · 2 ev int[windows·T·8].
+; SpecId 1 = T (512) · 2 = B windows per harness (4) · 3 = PER harnesses per unit (8) · 4 = EOS token (0).
+               OpCapability Shader
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %main "main" %gid
+               OpExecutionMode %main LocalSize 64 1 1
+               OpDecorate %gid BuiltIn GlobalInvocationId
+               OpDecorate %nt SpecId 1
+               OpDecorate %nb SpecId 2
+               OpDecorate %nper SpecId 3
+               OpDecorate %eos SpecId 4
+               OpDecorate %rta_u ArrayStride 4
+               OpDecorate %rta_i ArrayStride 4
+               OpMemberDecorate %buf_u 0 Offset 0
+               OpDecorate %buf_u Block
+               OpMemberDecorate %buf_i 0 Offset 0
+               OpDecorate %buf_i Block
+               OpDecorate %feed DescriptorSet 0
+               OpDecorate %feed Binding 0
+               OpDecorate %feed NonWritable
+               OpDecorate %lvl DescriptorSet 0
+               OpDecorate %lvl Binding 1
+               OpDecorate %lvl NonWritable
+               OpDecorate %ev DescriptorSet 0
+               OpDecorate %ev Binding 2
+               OpDecorate %ev NonReadable
+       %void = OpTypeVoid
+       %fnty = OpTypeFunction %void
+       %bool = OpTypeBool
+       %uint = OpTypeInt 32 0
+        %int = OpTypeInt 32 1
+     %v3uint = OpTypeVector %uint 3
+  %ptr_in_v3 = OpTypePointer Input %v3uint
+        %gid = OpVariable %ptr_in_v3 Input
+      %rta_u = OpTypeRuntimeArray %uint
+      %buf_u = OpTypeStruct %rta_u
+      %rta_i = OpTypeRuntimeArray %int
+      %buf_i = OpTypeStruct %rta_i
+     %ptr_bu = OpTypePointer StorageBuffer %buf_u
+     %ptr_bi = OpTypePointer StorageBuffer %buf_i
+       %feed = OpVariable %ptr_bi StorageBuffer
+        %lvl = OpVariable %ptr_bu StorageBuffer
+         %ev = OpVariable %ptr_bi StorageBuffer
+      %ptr_u = OpTypePointer StorageBuffer %uint
+      %ptr_i = OpTypePointer StorageBuffer %int
+   %ptr_fn_u = OpTypePointer Function %uint
+     %uint_0 = OpConstant %uint 0
+     %uint_1 = OpConstant %uint 1
+     %uint_2 = OpConstant %uint 2
+     %uint_3 = OpConstant %uint 3
+     %uint_4 = OpConstant %uint 4
+     %uint_5 = OpConstant %uint 5
+     %uint_6 = OpConstant %uint 6
+     %uint_7 = OpConstant %uint 7
+     %uint_8 = OpConstant %uint 8
+      %int_0 = OpConstant %int 0
+     %int_36 = OpConstant %int 36
+         %nt = OpSpecConstant %uint 512
+         %nb = OpSpecConstant %uint 4
+       %nper = OpSpecConstant %uint 8
+        %eos = OpSpecConstant %int 0
+       %main = OpFunction %void None %fnty
+      %entry = OpLabel
+          %j = OpVariable %ptr_fn_u Function
+        %row = OpVariable %ptr_fn_u Function
+         %g3 = OpLoad %v3uint %gid
+        %win = OpCompositeExtract %uint %g3 0
+       %nwin = OpArrayLength %uint %lvl 0
+         %ok = OpULessThan %bool %win %nwin
+               OpSelectionMerge %end None
+               OpBranchConditional %ok %body %end
+       %body = OpLabel
+         %pl = OpAccessChain %ptr_u %lvl %uint_0 %win
+       %lvlu = OpLoad %uint %pl
+       %lvli = OpBitcast %int %lvlu
+          %h = OpUDiv %uint %win %nb
+          %u = OpUDiv %uint %h %nper
+         %hi = OpBitcast %int %h
+         %ui = OpBitcast %int %u
+               OpStore %j %uint_0
+               OpStore %row %uint_0
+               OpBranch %head
+       %head = OpLabel
+               OpLoopMerge %merge %cont None
+               OpBranch %test
+       %test = OpLabel
+         %jv = OpLoad %uint %j
+       %more = OpULessThan %bool %jv %nt
+               OpBranchConditional %more %step %merge
+       %step = OpLabel
+        %wt0 = OpIMul %uint %win %nt
+         %fi = OpIAdd %uint %wt0 %jv
+         %f5 = OpIMul %uint %fi %uint_5
+         %px = OpAccessChain %ptr_i %feed %uint_0 %f5
+          %x = OpLoad %int %px
+        %f52 = OpIAdd %uint %f5 %uint_2
+         %pk = OpAccessChain %ptr_i %feed %uint_0 %f52
+          %k = OpLoad %int %pk
+       %hask = OpSGreaterThanEqual %bool %k %int_0
+      %plate = OpSelect %int %hask %k %int_36
+         %rv = OpLoad %uint %row
+         %ri = OpBitcast %int %rv
+         %ji = OpBitcast %int %jv
+         %e8 = OpIMul %uint %fi %uint_8
+         %a0 = OpAccessChain %ptr_i %ev %uint_0 %e8
+               OpStore %a0 %ji
+        %e81 = OpIAdd %uint %e8 %uint_1
+         %a1 = OpAccessChain %ptr_i %ev %uint_0 %e81
+               OpStore %a1 %x
+        %e82 = OpIAdd %uint %e8 %uint_2
+         %a2 = OpAccessChain %ptr_i %ev %uint_0 %e82
+               OpStore %a2 %plate
+        %e83 = OpIAdd %uint %e8 %uint_3
+         %a3 = OpAccessChain %ptr_i %ev %uint_0 %e83
+               OpStore %a3 %lvli
+        %e84 = OpIAdd %uint %e8 %uint_4
+         %a4 = OpAccessChain %ptr_i %ev %uint_0 %e84
+               OpStore %a4 %ri
+        %e85 = OpIAdd %uint %e8 %uint_5
+         %a5 = OpAccessChain %ptr_i %ev %uint_0 %e85
+               OpStore %a5 %ui
+        %e86 = OpIAdd %uint %e8 %uint_6
+         %a6 = OpAccessChain %ptr_i %ev %uint_0 %e86
+               OpStore %a6 %hi
+        %e87 = OpIAdd %uint %e8 %uint_7
+         %a7 = OpAccessChain %ptr_i %ev %uint_0 %e87
+               OpStore %a7 %int_0
+      %iseos = OpIEqual %bool %x %eos
+       %rinc = OpSelect %uint %iseos %uint_1 %uint_0
+       %row1 = OpIAdd %uint %rv %rinc
+               OpStore %row %row1
+               OpBranch %cont
+       %cont = OpLabel
+         %j0 = OpLoad %uint %j
+         %j1 = OpIAdd %uint %j0 %uint_1
+               OpStore %j %j1
+               OpBranch %head
+      %merge = OpLabel
+               OpBranch %end
+        %end = OpLabel
+               OpReturn
+               OpFunctionEnd

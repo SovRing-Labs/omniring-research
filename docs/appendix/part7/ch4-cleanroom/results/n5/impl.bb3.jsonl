@@ -1,0 +1,9 @@
+{"built":{"cegis_rounds":10,"equation_cx":5,"rust":null,"secs":13.387386808,"work":197243831},"hits":[],"need":"s688aba7e8061373e","search_secs":0.102859315}
+{"built":{"cegis_rounds":3,"equation_cx":2,"rust":null,"secs":10.717172927,"work":64451623},"hits":[],"need":"s1a397b80df83286c","search_secs":0.230798765}
+{"built":{"cegis_rounds":11,"equation_cx":6,"rust":null,"secs":7.121304393,"work":157790247},"hits":[],"need":"s53910ba07f7c1566","search_secs":0.234629969}
+{"built":{"cegis_rounds":13,"equation_cx":6,"rust":null,"secs":50.425092326,"work":634920357},"hits":[],"need":"s16b159cc28d14809","search_secs":0.238962042}
+{"built":{"cegis_rounds":10,"equation_checked":false,"equation_cx":5,"how":"witness depth 3","overfit":false,"rust":"(((a0 + a1) + (if ((a0 < (0i64)) as i64) != 0 { (-a1.max((-1i64))) } else { (-a1.min((1i64))) })) / a1)","secs":6.946834079,"size":18,"synth_secs":6.771698253,"validate":{"agree":64,"of":64,"rustc":true},"verified":true,"verify":null,"verify_secs":0.077955329,"work":149475805},"hits":[],"need":"s4bbc203db3675d05","search_secs":0.131720899}
+{"built":{"cegis_rounds":6,"equation_cx":3,"rust":null,"secs":0.54540923,"work":4718817},"hits":[],"need":"s7487053b45b94c87","search_secs":0.098714136}
+{"built":{"cegis_rounds":7,"equation_cx":2,"rust":null,"secs":3.427325968,"work":77352618},"hits":[],"need":"s0661bdbdbc83d171","search_secs":0.092275553}
+{"built":{"cegis_rounds":4,"equation_cx":0,"rust":null,"secs":4.8114601,"work":71500894},"hits":[],"need":"se305e75187681ff7","search_secs":0.007616666}
+{"built":{"cegis_rounds":4,"equation_cx":0,"rust":null,"secs":5.804912724,"work":149352962},"hits":[],"need":"sb5fb8293a7fa2f28","search_secs":0.008562187}

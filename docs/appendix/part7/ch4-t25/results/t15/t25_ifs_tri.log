@@ -1,0 +1,15 @@
+now: 473 roots → 103 triangle-twist families
+    53 ('Block', 'Block', -1, 0, 0, 0) [('developer-mozill', 53)]
+    46 ('Block', 'InlineBlock', 1, 0, -1, 0) [('arstechnica-com', 36), ('developer-mozill', 9)]
+    24 ('Grid', 'Flex', 0, 0, 0, -1) [('theguardian-com-', 24)]
+    21 ('Flex', 'Block', 0, -1, 0, 1) [('github-com-servo', 19), ('docs-rs-html5eve', 2)]
+    18 ('Block', 'Block', 0, -1, 0, 1) [('wiki-archlinux-o', 10), ('developer-mozill', 6)]
+    14 ('Grid', 'Flex', 0, 0, 0, 0) [('theguardian-com-', 14)]
+    12 ('Block', 'Block', 0, 0, 0, 0) [('weather-gov', 4), ('developer-mozill', 2)]
+    11 ('Block', 'Block', 0, 0, 0, 1) [('developer-mozill', 5), ('allrecipes-com-r', 1)]
+pre-fix: 517 roots → 108 triangle-twist families
+   theguardian-com-internationa  26 repaired roots in 3 families · largest 17 ('Flex', 'Flex', 0, 0, 0, -1)
+   peps-python-org-pep-0008      12 repaired roots in 4 families · largest 5 ('Block', 'ListItem', 0, 0, 0, 0)
+   allrecipes-com-recipe-10813-   4 repaired roots in 1 families · largest 4 ('Flex', 'Flex', 0, 0, 0, 1)
+   en-cppreference-com-w-cpp-co   4 repaired roots in 3 families · largest 2 ('Block', 'Table', 0, 1, -1, -1)
+   docs-github-com-en-get-start   1 repaired roots in 1 families · largest 1 ('Flex', 'Block', 0, 0, 0, 1)

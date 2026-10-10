@@ -1,0 +1,9 @@
+{
+ "command": "bash e1/distil.sh",
+ "state": "DONE",
+ "exit": 0,
+ "elapsed_s": 800.49,
+ "attempt": 1,
+ "last_log_line": "distil done: 15 parts",
+ "note": "scrubbed summary of a supervisor job header; paths, process ids, host and time stamps removed"
+}

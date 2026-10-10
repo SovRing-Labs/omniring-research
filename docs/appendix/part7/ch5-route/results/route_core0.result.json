@@ -1,0 +1,29 @@
+{
+  "events": 1109,
+  "free_events": 1069,
+  "logged": {
+    "n": 1069,
+    "productive": 0.537,
+    "infra_loss": 0.3358
+  },
+  "outcomes": {
+    "productive": 596,
+    "model_fail": 138,
+    "infra": 223,
+    "rate_limited": 152
+  },
+  "viability": {
+    "matched": 8.0,
+    "productive": 0.5,
+    "infra_loss": 0.5,
+    "runs": 1
+  },
+  "route_core": {
+    "matched": 72.6,
+    "productive": 0.7989,
+    "infra_loss": 0.135,
+    "runs": 5
+  },
+  "method": "replay (Li, Chu, Langford, Wang 2011): scored + learned only on events where pick == logged lane",
+  "caveat": "logging policy was not uniform-random, so matched-event rates are indicative, not unbiased; arm set = lanes routed within +-7 d of each event"
+}

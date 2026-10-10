@@ -1,0 +1,66 @@
+== round 13 plan 2026-10-09T00:29:27-07:00
+ramkit watch r13: 17 slips of 126 mastered → replay share 0.15
+{"round": 13, "frontier": 55, "review": 0, "specs": {"tier1": "<workspace>/projects/thead-trial/runtime/results/grow-wire-pod/r13/grow-wpod-r13.json", "tier1_heldout": "<workspace>/projects/thead-trial/runtime/results/grow-wire-pod/r13/grow-wpod-r13-ho.json", "middle_preview": "<workspace>/projects/thead-trial/runtime/results/grow-wire-pod/r13/grow-wpod-pre-r13.json"}, "unbuilt_rungs": ["hs.A@1", "hs.C@1", "hs.D@1", "hs.E@1", "hs.F@1", "hs.G@1", "hs.H@1", "hs.I@1", "hs.J@1"]}
+== pod compile r13: 4 builds + 1 circular splices in 16s → /dev/shm/thead-build (9.5M in RAM)
+== round 13 on the pod: 1 harnesses (0 middle) 2026-10-09T00:30:06-07:00
+== round · core <workspace>/projects/thead-trial/runtime/results/growth-base/r12-elem · 1 harnesses × 8 threads · bin 9d4c5ab7f209 · lib 6baa51c41e8c · 2026-10-09T07:30:08+00:00
+   pod-tw grow-wpod-r13-h0 RUN 1m59s 31% eta 3m56s cpu42% ·····▲·▲············▲··· +6/0:53/-0 seq=59 last+: "[day 3] step 60/195 · pass 2 · a
+   pod-tw grow-wpod-r13-h0 RUN 3m59s 3% cpu259% ············▲▲▲········· +14/0:105/-0 seq=119 last+: "[wake] step 125 out 0.501 | blocks 0.00 0
+   pod-tw grow-wpod-r13-h0 DONE exit=0 5m58s 5% ▲·············▲········▲ +21/0:158/-0 seq=179 last+: "[par] h0 day 10: merged core loaded after
+== pod tw nudges (grow-wpod-r13)
+07:36:06 TW-EXIT grow-wpod-r13-h0 exit=0 state=DONE elapsed=5m58s progress=5.1% (learned) 10/195 +21/0:158/-0
+== harnesses done 2026-10-09T07:36:08+00:00
+   h0: exit 0 · 10 merges
+   days 10 · held-out / canary [(10, 0.526, 0.086)]
+SKILL-EVAL 140 skills · 78 at >= 0.85
+ROUND-SKILLS 140 78
+seq: invalid floating point argument: ‘grow-wpod-r13’
+Try 'seq --help' for more information.
+ramkit memdetect: {"answers": 711, "full_match": 200, "full_match_rate": 0.2813, "mean_longest_over_len": 0.7126, "full_by_stage": {"doing": "132/466", "retry": "68/245"}}
+SCHOOL-ROUND-DONE
+== GUARD PASS r13: {"round": 13, "vs_good": 12, "drop": 0.1, "rise": 0.3, "why": [], "common": 99, "gate_count_good": 42, "gate_count_now": 54, "mean_good": 0.8424, "mean_now": 0.8578, "heldout_good": 0.616, "heldout_now": 0.526, "verdict"
+Traceback (most recent call last):
+  File "<projects>/ai-stack-opus-gpu/projects/thead-trial/harness/school_graph.py", line 301, in <module>
+    elif c == "update": update(sys.argv[2], int(sys.argv[3]), sys.argv[4])
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<projects>/ai-stack-opus-gpu/projects/thead-trial/harness/school_graph.py", line 278, in update
+    st["rounds"] = rnd; json.dump(st, open(state_path, "w"), indent=1)
+                                      ^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '<workspace>/projects/thead-trial/runtime/results/grow-wire-pod/state.json'
+ramkit history: 2 rounds · 114 skills reached gate · 6 slipped after
+Traceback (most recent call last):
+  File "<projects>/ai-stack-opus-gpu/projects/thead-trial/cloud/grow_ctl.py", line 143, in <module>
+    r = {"step": lambda: step(run, a), "grown": lambda: grown(run, a), "report": lambda: report(run), "verify": lambda: verify(run)}[cmd]()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<projects>/ai-stack-opus-gpu/projects/thead-trial/cloud/grow_ctl.py", line 143, in <lambda>
+    r = {"step": lambda: step(run, a), "grown": lambda: grown(run, a), "report": lambda: report(run), "verify": lambda: verify(run)}[cmd]()
+                         ^^^^^^^^^^^^
+  File "<projects>/ai-stack-opus-gpu/projects/thead-trial/cloud/grow_ctl.py", line 74, in step
+    os.makedirs(run, exist_ok=True); c = load_ctl(run); upd = json.load(open(a["update"])); rnd = int(a["round"])
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

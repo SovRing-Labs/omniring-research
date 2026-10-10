@@ -1,0 +1,2 @@
+{"base":[20568,3045],"cand":[20591,3045],"gained":[25,0],"lost":[2,0],"pages":[{"gained":8,"holdout":false,"lost":1,"lost_nodes":[43],"page":"docs-rs-html5ever-latest-html5ever"},{"gained":3,"holdout":false,"lost":0,"lost_nodes":[],"page":"github-com-servo-html5ever"},{"gained":14,"holdout":false,"lost":1,"lost_nodes":[1331],"page":"weather-gov"}],"pass":false,"sets":"1ee26bbc9aa4"}
+binary-gate vs results/agree-snapshot-after-shadow.json: replay 20568 → 20591 · holdout 3045 → 3045 · lost 2/0 · gained 25/0 → FAIL (1.5s)

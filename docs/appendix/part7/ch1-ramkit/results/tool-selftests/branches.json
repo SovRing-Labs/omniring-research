@@ -1,0 +1,54 @@
+{
+ "branches": [
+  [
+   0,
+   "base",
+   4
+  ],
+  [
+   1,
+   "sharpen",
+   3
+  ],
+  [
+   2,
+   "flat",
+   4
+  ],
+  [
+   3,
+   "low-first",
+   4
+  ]
+ ],
+ "choose": {
+  "frontier_scored": 5,
+  "margin_vs_base": 0.05,
+  "mean_top1": [
+   0.6,
+   0.65,
+   0.58,
+   0.61
+  ],
+  "round": 9,
+  "winner": 1,
+  "winner_name": "sharpen"
+ },
+ "distinct_specs": true,
+ "flat_equal": true,
+ "lessons_within_plan": true,
+ "live_plan": {
+  "b0_equals_planner_passes": true,
+  "branches": 5,
+  "passes_per_branch": [
+   4,
+   3,
+   4,
+   4,
+   4
+  ],
+  "plan": "r9"
+ },
+ "shares_sum_to_1": true,
+ "tie_keeps_base": true
+}

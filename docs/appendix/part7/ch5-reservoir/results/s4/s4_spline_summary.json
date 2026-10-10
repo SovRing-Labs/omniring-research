@@ -1,0 +1,14 @@
+{
+  "n_base": 256,
+  "n_spline_sprouted": 32,
+  "n_spline_kept": 24,
+  "param_growth_pct": 9.38,
+  "base_task_acc": 0.945,
+  "novel_fault_acc_before": 1.0,
+  "novel_fault_acc_after_spline": 0.99,
+  "novel_fault_acc_pruned_frozen": 0.96,
+  "base_task_retest_acc": 0.945,
+  "zero_catastrophic_forgetting": true,
+  "elapsed_s": 0.25,
+  "verdict": "PASS"
+}

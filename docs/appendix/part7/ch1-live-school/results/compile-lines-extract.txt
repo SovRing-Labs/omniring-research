@@ -1,0 +1,6 @@
+# the "pod compile" lines of three live-school launch logs (the killed first r10 launch, the r9 restart, the r10-r12 relaunch); nothing else of the raw job logs is shipped
+== pod compile r10: 9 builds in 2s → /dev/shm/thead-build (20M in RAM)
+== pod compile r9: 10 builds in 2s → /dev/shm/thead-build (41M in RAM)
+== pod compile r10: 10 builds in 2s → /dev/shm/thead-build (44M in RAM)
+== pod compile r11: 10 builds in 2s → /dev/shm/thead-build (44M in RAM)
+== pod compile r12: 10 builds in 2s → /dev/shm/thead-build (44M in RAM)

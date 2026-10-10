@@ -1,0 +1,148 @@
+; hub_mean — CYCLONE-ARRAY W2b: a hub's mean over the slabs it gathers (written by hand from the SPIR-V unified spec; our own code).
+; mean[g][j] = f32( Σ_{q: keep[g·R+q] ≠ 0} f64(w[(g·R+q)·W + j]) / f64(count) )   — summed in order q = 0…R−1 in float64, then divided and
+; rounded once to float32: the arithmetic of cloud/bus_coord.py (np.mean(axis=0, dtype=float64).astype(float32)). count = 0 → 0.
+; One hub = a unit's cyclone over its R models, or a floor's centre over its units (the same pass, other strides).
+; Bindings: 0 w float[G·R·W] · 1 keep uint[G·R] · 2 mean float[G·W]. SpecId 1 = R (default 8), SpecId 2 = W (slab length).
+; Element idx = (WorkgroupId.y · NumWorkgroups.x + WorkgroupId.x) · 64 + LocalInvocationId.x over G·W = length(mean).
+               OpCapability Shader
+               OpCapability Float64
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %main "main" %lid %wid %nwg
+               OpExecutionMode %main LocalSize 64 1 1
+               OpDecorate %lid BuiltIn LocalInvocationId
+               OpDecorate %wid BuiltIn WorkgroupId
+               OpDecorate %nwg BuiltIn NumWorkgroups
+               OpDecorate %nr SpecId 1
+               OpDecorate %nw SpecId 2
+               OpDecorate %rta_f ArrayStride 4
+               OpDecorate %rta_u ArrayStride 4
+               OpMemberDecorate %buf_f 0 Offset 0
+               OpDecorate %buf_f Block
+               OpMemberDecorate %buf_u 0 Offset 0
+               OpDecorate %buf_u Block
+               OpDecorate %w DescriptorSet 0
+               OpDecorate %w Binding 0
+               OpDecorate %w NonWritable
+               OpDecorate %keep DescriptorSet 0
+               OpDecorate %keep Binding 1
+               OpDecorate %keep NonWritable
+               OpDecorate %mean DescriptorSet 0
+               OpDecorate %mean Binding 2
+               OpDecorate %mean NonReadable
+               OpDecorate %acc1 NoContraction
+               OpDecorate %quo NoContraction
+       %void = OpTypeVoid
+       %fnty = OpTypeFunction %void
+       %bool = OpTypeBool
+       %uint = OpTypeInt 32 0
+      %float = OpTypeFloat 32
+     %double = OpTypeFloat 64
+     %v3uint = OpTypeVector %uint 3
+  %ptr_in_v3 = OpTypePointer Input %v3uint
+        %lid = OpVariable %ptr_in_v3 Input
+        %wid = OpVariable %ptr_in_v3 Input
+        %nwg = OpVariable %ptr_in_v3 Input
+      %rta_f = OpTypeRuntimeArray %float
+      %buf_f = OpTypeStruct %rta_f
+      %rta_u = OpTypeRuntimeArray %uint
+      %buf_u = OpTypeStruct %rta_u
+     %ptr_bf = OpTypePointer StorageBuffer %buf_f
+     %ptr_bu = OpTypePointer StorageBuffer %buf_u
+          %w = OpVariable %ptr_bf StorageBuffer
+       %keep = OpVariable %ptr_bu StorageBuffer
+       %mean = OpVariable %ptr_bf StorageBuffer
+      %ptr_f = OpTypePointer StorageBuffer %float
+      %ptr_u = OpTypePointer StorageBuffer %uint
+   %ptr_fn_d = OpTypePointer Function %double
+   %ptr_fn_u = OpTypePointer Function %uint
+     %uint_0 = OpConstant %uint 0
+     %uint_1 = OpConstant %uint 1
+    %uint_64 = OpConstant %uint 64
+   %double_0 = OpConstant %double 0
+    %float_0 = OpConstant %float 0
+         %nr = OpSpecConstant %uint 8
+         %nw = OpSpecConstant %uint 1
+       %main = OpFunction %void None %fnty
+      %entry = OpLabel
+        %acc = OpVariable %ptr_fn_d Function
+        %cnt = OpVariable %ptr_fn_u Function
+          %q = OpVariable %ptr_fn_u Function
+         %l3 = OpLoad %v3uint %lid
+       %lane = OpCompositeExtract %uint %l3 0
+         %w3 = OpLoad %v3uint %wid
+         %wx = OpCompositeExtract %uint %w3 0
+         %wy = OpCompositeExtract %uint %w3 1
+         %n3 = OpLoad %v3uint %nwg
+         %nx = OpCompositeExtract %uint %n3 0
+        %wyn = OpIMul %uint %wy %nx
+         %wg = OpIAdd %uint %wx %wyn
+       %wg64 = OpIMul %uint %wg %uint_64
+        %idx = OpIAdd %uint %wg64 %lane
+      %total = OpArrayLength %uint %mean 0
+         %ok = OpULessThan %bool %idx %total
+               OpSelectionMerge %end None
+               OpBranchConditional %ok %body %end
+       %body = OpLabel
+          %g = OpUDiv %uint %idx %nw
+          %j = OpUMod %uint %idx %nw
+         %gr = OpIMul %uint %g %nr
+               OpStore %acc %double_0
+               OpStore %cnt %uint_0
+               OpStore %q %uint_0
+               OpBranch %head
+       %head = OpLabel
+               OpLoopMerge %merge %cont None
+               OpBranch %test
+       %test = OpLabel
+         %qv = OpLoad %uint %q
+       %more = OpULessThan %bool %qv %nr
+               OpBranchConditional %more %step %merge
+       %step = OpLabel
+         %kq = OpIAdd %uint %gr %qv
+         %pk = OpAccessChain %ptr_u %keep %uint_0 %kq
+         %kv = OpLoad %uint %pk
+       %live = OpINotEqual %bool %kv %uint_0
+               OpSelectionMerge %skip None
+               OpBranchConditional %live %add %skip
+        %add = OpLabel
+        %row = OpIMul %uint %kq %nw
+         %wi = OpIAdd %uint %row %j
+         %pw = OpAccessChain %ptr_f %w %uint_0 %wi
+         %wv = OpLoad %float %pw
+         %wd = OpFConvert %double %wv
+       %acc0 = OpLoad %double %acc
+       %acc1 = OpFAdd %double %acc0 %wd
+               OpStore %acc %acc1
+         %c0 = OpLoad %uint %cnt
+         %c1 = OpIAdd %uint %c0 %uint_1
+               OpStore %cnt %c1
+               OpBranch %skip
+       %skip = OpLabel
+               OpBranch %cont
+       %cont = OpLabel
+         %q0 = OpLoad %uint %q
+         %q1 = OpIAdd %uint %q0 %uint_1
+               OpStore %q %q1
+               OpBranch %head
+      %merge = OpLabel
+         %cf = OpLoad %uint %cnt
+       %some = OpINotEqual %bool %cf %uint_0
+               OpSelectionMerge %wr None
+               OpBranchConditional %some %div %zero
+        %div = OpLabel
+         %cd = OpConvertUToF %double %cf
+         %av = OpLoad %double %acc
+        %quo = OpFDiv %double %av %cd
+         %mf = OpFConvert %float %quo
+         %pm = OpAccessChain %ptr_f %mean %uint_0 %idx
+               OpStore %pm %mf
+               OpBranch %wr
+       %zero = OpLabel
+        %pm0 = OpAccessChain %ptr_f %mean %uint_0 %idx
+               OpStore %pm0 %float_0
+               OpBranch %wr
+         %wr = OpLabel
+               OpBranch %end
+        %end = OpLabel
+               OpReturn
+               OpFunctionEnd

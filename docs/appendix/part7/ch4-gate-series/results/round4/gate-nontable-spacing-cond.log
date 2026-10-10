@@ -1,0 +1,1 @@
+patch-gate patch.nontable_spacing[Table&bt=0&tag=span]=-1: base replay 19228 holdout 3045 → cand 19470 / 3045 · lost 0/0 · gained 242/0 → PASS (3.4s)

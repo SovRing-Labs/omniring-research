@@ -1,0 +1,9 @@
+{"built":{"cegis_rounds":8,"equation_cx":5,"rust":null,"secs":4.849212207,"work":132275277},"hits":[],"need":"s688aba7e8061373e","search_secs":0.103961013}
+{"built":{"cegis_rounds":2,"equation_cx":1,"rust":null,"secs":3.071034247,"work":60180103},"hits":[],"need":"s1a397b80df83286c","search_secs":0.090097803}
+{"built":{"cegis_rounds":11,"equation_cx":6,"rust":null,"secs":6.600674126,"work":280916771},"hits":[],"need":"s53910ba07f7c1566","search_secs":0.095866049}
+{"built":{"cegis_rounds":11,"equation_cx":5,"rust":null,"secs":13.133057697,"work":514803452},"hits":[],"need":"s16b159cc28d14809","search_secs":0.088876918}
+{"built":{"cegis_rounds":11,"equation_checked":false,"equation_cx":6,"how":"witness depth 3","overfit":false,"rust":"((1175i64) + ((a0 + (-(a1 * (1175i64)))) / a1))","secs":8.326936467,"size":10,"synth_secs":8.17060382,"validate":{"agree":64,"of":64,"rustc":true},"verified":true,"verify":null,"verify_secs":0.067531755,"work":351433074},"hits":[],"need":"s4bbc203db3675d05","search_secs":0.107478582}
+{"built":{"cegis_rounds":8,"equation_cx":6,"rust":null,"secs":0.767937288,"work":8323103},"hits":[],"need":"s7487053b45b94c87","search_secs":0.090642155}
+{"built":{"cegis_rounds":9,"equation_cx":4,"rust":null,"secs":5.083460251,"work":92376773},"hits":[],"need":"s0661bdbdbc83d171","search_secs":0.089664448}
+{"built":{"cegis_rounds":4,"equation_cx":0,"rust":null,"secs":4.666675488,"work":71500894},"hits":[],"need":"se305e75187681ff7","search_secs":0.011412043}
+{"built":{"cegis_rounds":4,"equation_cx":0,"rust":null,"secs":5.398270718,"work":149352962},"hits":[],"need":"sb5fb8293a7fa2f28","search_secs":0.006953151}

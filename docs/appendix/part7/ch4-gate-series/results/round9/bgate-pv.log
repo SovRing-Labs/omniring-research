@@ -1,0 +1,2 @@
+{"base":[20416,3045],"cand":[20497,3045],"gained":[99,0],"lost":[18,0],"pages":[{"gained":95,"holdout":false,"lost":18,"lost_nodes":[3558,3559,3560,3579,3580,3581,3591,3592,3593,3600,3601,3602],"page":"developer-mozilla-org-en-US-docs-Web-CSS-display"},{"gained":4,"holdout":false,"lost":0,"lost_nodes":[],"page":"developer-mozilla-org-en-US-docs-Web-HTML-Element-table"}],"pass":false,"sets":"1ee26bbc9aa4"}
+binary-gate vs results/agree-snapshot-after-mdnfont.json: replay 20416 → 20497 · holdout 3045 → 3045 · lost 18/0 · gained 99/0 → FAIL (1.5s)

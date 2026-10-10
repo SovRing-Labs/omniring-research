@@ -1,0 +1,24 @@
+{"built":{"cegis_rounds":1,"how":"witness depth 1","rust":"a1.max(a0.min(a2))","secs":0.138013108,"size":5,"verified":true,"verify":null,"work":3874},"hits":[],"need":"clamp"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"a0.max(a1)","secs":0.122521906,"size":3,"verified":true,"verify":null,"work":1215},"hits":[],"need":"max2"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"a0.min(a1)","secs":0.124284827,"size":3,"verified":true,"verify":null,"work":1203},"hits":[],"need":"min2"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"a0.abs()","secs":0.121767161,"size":2,"verified":true,"verify":null,"work":677},"hits":[],"need":"abs"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"a0.iter().sum::<i64>()","secs":0.173456856,"size":2,"verified":true,"verify":null,"work":1096},"hits":[],"need":"sum_list"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"*a0.iter().max().unwrap()","secs":0.178044265,"size":2,"verified":true,"verify":null,"work":1094},"hits":[],"need":"max_list"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"*a0.iter().min().unwrap()","secs":0.172409832,"size":2,"verified":true,"verify":null,"work":1094},"hits":[],"need":"min_list"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"(a0.len() as i64)","secs":0.140077437,"size":2,"verified":true,"verify":null,"work":1094},"hits":[],"need":"len_list"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"a0.iter().map(|&x| (((0i64) < x) as i64)).collect::<Vec<i64>>().iter().sum::<i64>()","secs":0.212520186,"size":6,"verified":true,"verify":null,"work":1096},"hits":[],"need":"count_pos"}
+{"built":{"cegis_rounds":1,"how":"witness depth 3","rust":"(a0 + (((a1 * a2) + (-(a0 * a2))) / a3))","secs":0.427174225,"size":12,"verified":true,"verify":null,"work":1213505},"hits":[],"need":"grow_share"}
+{"built":{"cegis_rounds":1,"how":"witness depth 1","rust":"(a0 + (-a0.min(a1)))","secs":0.142835186,"size":6,"verified":true,"verify":null,"work":1220},"hits":[],"need":"saturating_sub"}
+{"built":{"cegis_rounds":1,"rust":null,"secs":6.259976833,"work":26957233},"hits":[],"need":"days_from_civil"}
+{"built":{"cegis_rounds":1,"rust":null,"secs":3.836e-6,"work":0},"hits":[],"need":"civil_from_days"}
+{"built":{"cegis_rounds":3,"how":"witness depth 1","rust":"((((0i64) < a0) as i64) + (-((a0 < (0i64)) as i64)))","secs":0.115018765,"size":8,"verified":true,"verify":null,"work":2159},"hits":[],"need":"signum"}
+{"built":{"cegis_rounds":16,"rust":null,"secs":0.017962973,"work":11664},"hits":[],"need":"is_leap"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"a0.iter().zip(a1.iter()).map(|(&x, &y)| (x * y)).collect::<Vec<i64>>().iter().sum::<i64>()","secs":0.336850259,"size":7,"verified":true,"verify":null,"work":1935},"hits":[],"need":"dot"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"(a0 + a0)","secs":0.111366488,"size":3,"verified":true,"verify":null,"work":677},"hits":[],"need":"double"}
+{"built":{"cegis_rounds":16,"rust":null,"secs":0.031155645,"work":22364},"hits":[],"need":"ceil_div"}
+{"built":{"cegis_rounds":2,"how":"witness depth 1","rust":"((a0 + a1) / (2i64))","secs":0.104112369,"size":5,"verified":true,"verify":null,"work":2249},"hits":[],"need":"midpoint"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"(a0 - a1).abs()","secs":0.110604762,"size":4,"verified":true,"verify":null,"work":1217},"hits":[],"need":"distance"}
+{"built":{"cegis_rounds":1,"how":"witness depth 0","rust":"(a0 * a1)","secs":0.106762487,"size":3,"verified":true,"verify":null,"work":1203},"hits":[],"need":"area"}
+{"built":{"cegis_rounds":3,"how":"loop sketch","rust":"{ let (mut s0, mut s1): (i64, i64) = (a0, a1); let mut n = 0; while ((s0 != (0i64)) as i64) != 0 { n += 1; if n > 64 { panic!(\"loop cap\") } let t: (i64, i64) = ((s1 % s0), s0); s0 = t.0; s1 = t.1; } s1 }","secs":15.158577974,"size":10,"verified":true,"verify":null,"work":88681378},"hits":[],"need":"gcd"}
+{"built":{"cegis_rounds":1,"how":"witness depth 1","rust":"(a0.iter().sum::<i64>() / (a0.len() as i64))","secs":0.188833559,"size":5,"verified":true,"verify":null,"work":2055},"hits":[],"need":"avg_list"}
+{"built":{"cegis_rounds":1,"how":"map","rust":"a0.iter().map(|&x| (a1 * x)).collect::<Vec<i64>>()","secs":0.355142428,"size":5,"verified":true,"verify":null,"work":2568},"hits":[],"need":"scale_list"}

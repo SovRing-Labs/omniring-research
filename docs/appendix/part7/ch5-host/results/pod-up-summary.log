@@ -1,0 +1,72 @@
+# scrubbed copy of the install log: pod id, address, price, provider image, transfer progress and package-manager warning lines removed; paths replaced
+== waiting for ssh
+== 1/5 kit → gpu-loop-cpu16 (thead-cloud-20261007-2347.tar.zst, 60M)
+   16 251 GB RAM
+
+          3,754   0%    0.00kB/s    0:00:00  
+      2,494,122   4%    1.70MB/s    0:00:34  
+      3,411,626   5%    1.34MB/s    0:00:42  
+      4,198,058   6%    1.17MB/s    0:00:48  
+      5,639,850   9%    1.20MB/s    0:00:45  
+      7,343,786  11%    1.13MB/s    0:00:47  
+      9,047,722  14%    1.31MB/s    0:00:39  
+     11,144,874  17%    1.61MB/s    0:00:30  
+     14,552,746  23%    2.09MB/s    0:00:22  
+     18,878,122  30%    2.71MB/s    0:00:15  
+     24,121,002  38%    3.56MB/s    0:00:10  
+     28,708,522  46%    4.02MB/s    0:00:08  
+     34,213,546  55%    4.49MB/s    0:00:06  
+     38,276,778  61%    4.43MB/s    0:00:05  
+     42,602,154  68%    4.22MB/s    0:00:04  
+     46,927,530  75%    4.31MB/s    0:00:03  
+     51,515,050  83%    4.09MB/s    0:00:02  
+     56,102,570  90%    4.23MB/s    0:00:01  
+     60,821,162  98%    4.29MB/s    0:00:00  
+== 2/5 install.sh (smoke gates)
+== 1 CPU
+== 2 packages
+== 3 unpack into /root
+   manifest OK
+== 4 path link
+== 5 engine lib
+   shipped lib loads
+== 6 smoke gates
+ARC-CORE-SELFTEST PASS
+   t1-replay PASS
+   eval imports OK
+TIER1-GATE prek: copy top-1 0.627 over 4555 positions · bar 0.85 · REPEAT
+== 7 ready. Start training (survives logout):
+== 3/5 rustc (apt rustc-1.80; doctor emit/build verifies generated Rust)
+   rustc 1.80.1 (3f5fd8dd4 2024-08-06) (built from a source tarball)
+== 4/5 cores: registry + doctor + cuda.compile + corehostd (tw job corehostd)
+   cuda.compile vb1d13e7fda0f registered in <workspace>/control-center/cores.db
+{"ok": true, "host": "gpu-loop-cpu16", "version": "80fe8243760a", "slots": 8, "slots_max": 8, "training": false, "running": 0, "queued": 0, "peak": 0, "done": 0, "cached": 0, "cpus": "25,31,32,36,38,39,41,45", "nice": 19}
+   doctor.need gate: pass need: 10/10 verified
+== 5/5 omnikit + ramkit: omni-ring (native AVX2/AVX-512 kernels), hdc.* / ring.* / arcd.* cores, ramkit selftests
+1/5 AVX-512 kernel built + loaded (backend auto = avx512)
+2/5 package tests: 193 passed, 2 skipped in 48.45s
+omnikit: 8 cores registered in <workspace>/control-center/cores.db: hdc.sift, hdc.bind, hdc.bundle, hdc.resonate, ring.crt, ring.peel, arcd.solve, arcd.verify
+3/5 omnikit cores registered
+4/5 shard.search skipped (ramkit/shard_search.py or data/shards/pod-snap missing)
+PASS hdc.sift.sift · gate ok · fire pass 72ms · corehostd pass 70ms · 0.4s
+PASS hdc.sift.hamming · fire pass 76ms · corehostd pass 104ms · 0.3s
+PASS hdc.bind.bind · gate ok · fire pass 70ms · corehostd pass 114ms · 0.3s
+PASS hdc.bundle.bundle · gate ok · fire pass 69ms · corehostd pass 119ms · 0.4s
+PASS hdc.resonate.resonate · gate ok · fire pass 87ms · corehostd pass 141ms · 0.4s
+PASS ring.crt.crt · gate ok · fire pass 64ms · corehostd pass 65ms · 0.3s
+PASS ring.peel.peel · gate ok · fire pass 114ms · corehostd pass 125ms · 0.5s
+PASS arcd.solve.solve · gate ok · fire pass 32ms · corehostd pass 33ms · 0.2s
+PASS arcd.verify.verify · gate ok · fire pass 31ms · corehostd pass 31ms · 0.2s
+SKIP shard.search · not registered (ramkit/shard_search.py register, needs data/shards/pod-snap)
+5/5 omnikit selftest done — log <workspace>/projects/thead-trial/omnikit/install-logs/20261008T073459Z
+PASS memo (41s)
+PASS forget_watch (0s)
+PASS soup (0s)
+FAIL reactor_tables (0s) —   File "<workspace>/projects/thead-trial/ramkit/reactor_tables.py", line 146, in selftest     import random, tempfile, reactor_twin as rt, tier1_symbols ModuleNotFoundError: No module named 'reacto
+PASS memdetect (0s)
+SKIP shard_search (no vault index and no snapshot — thead-pod install --knowledge)
+FAIL branches (0s) —   File "<workspace>/projects/thead-trial/ramkit/branches.py", line 90, in selftest     import tempfile, school_graph as g ModuleNotFoundError: No module named 'school_graph' 
+PASS gen_enum (8s)
+RAMKIT-SELFTEST FAIL
+== ready: gpu-loop-cpu16 — tunnel: thead-pod tunnel gpu-loop-cpu16 · school: thead-pod school gpu-loop-cpu16 · stop: thead-pod stop gpu-loop-cpu16
+exit 0

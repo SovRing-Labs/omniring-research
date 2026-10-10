@@ -1,0 +1,61 @@
+{
+ "earlier_record_of_launch_1": [
+  {
+   "exit": 0,
+   "seconds": 140.3
+  }
+ ],
+ "first_launch_log_tail": "rsync error: unexplained error (code 255) after the round-2 plan",
+ "launches": [
+  {
+   "class": "bash.school-live.sh",
+   "exit": -15,
+   "label": "live-school launch 1",
+   "seconds": 1716.3
+  },
+  {
+   "class": "bash.school-live.sh",
+   "exit": 1,
+   "label": "live-school launch 2",
+   "seconds": 7238.3
+  },
+  {
+   "class": "bash.school-live.sh",
+   "exit": -15,
+   "label": "live-school launch 3",
+   "seconds": 51.4
+  },
+  {
+   "class": "bash.school-live.sh",
+   "exit": -15,
+   "label": "live-school launch 4",
+   "seconds": 792.9
+  },
+  {
+   "class": "bash.school-live.sh",
+   "exit": 0,
+   "label": "live-school launch 5",
+   "seconds": 2057.1
+  },
+  {
+   "class": "bash.school-live.sh",
+   "exit": 0,
+   "label": "live-school launch 6",
+   "seconds": 2394.1
+  },
+  {
+   "class": "bash.school-live.sh",
+   "exit": -15,
+   "label": "live-school launch 7",
+   "seconds": 1297.0
+  },
+  {
+   "class": "bash.school-live.sh",
+   "exit": 0,
+   "label": "live-school launch 8",
+   "seconds": 920.3
+  }
+ ],
+ "sum_seconds_launches_1_to_4_plus_earlier_record": 9939.2,
+ "what": "machine launch records of the live school (scrubbed: no commands, hosts, paths; ids replaced by labels)"
+}

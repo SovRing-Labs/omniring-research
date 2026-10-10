@@ -1,0 +1,105 @@
+; mb_scan — GROW-RUN-0 JIT-T50 #1, the MAILBOX step 2: one invocation turns this step's counts into the toroid layout + the dispatch the GPU
+; sizes for itself (vkCmdDispatchIndirect reads args): a toroid with more items gets more workgroups, a quiet one fewer — no host round trip.
+;   for t < T: off[t] = Σ_{u<t} cnt[u] · tcnt[t] = cnt[t] · wgo[t] = Σ_{u<t} ⌈cnt[u]/64⌉ · cur[t] = 0 · cnt[t] = 0 (ready for the next step)
+;   wgo[T] = Σ ⌈cnt/64⌉ · args = [wgo[T], 1, 1]
+; Bindings: 0 cnt uint[T] · 1 off uint[T] · 2 tcnt uint[T] · 3 wgo uint[T+1] · 4 cur uint[T] · 5 args uint[3]. SpecId 2 = T. Dispatch [1,1,1].
+; Hand-written from the SPIR-V spec; our own code.
+               OpCapability Shader
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %main "main" %lid
+               OpExecutionMode %main LocalSize 1 1 1
+               OpDecorate %lid BuiltIn LocalInvocationId
+               OpDecorate %nt SpecId 2
+               OpDecorate %rta_u ArrayStride 4
+               OpMemberDecorate %buf_u 0 Offset 0
+               OpDecorate %buf_u Block
+               OpDecorate %cnt DescriptorSet 0
+               OpDecorate %cnt Binding 0
+               OpDecorate %off DescriptorSet 0
+               OpDecorate %off Binding 1
+               OpDecorate %tcnt DescriptorSet 0
+               OpDecorate %tcnt Binding 2
+               OpDecorate %wgo DescriptorSet 0
+               OpDecorate %wgo Binding 3
+               OpDecorate %cur DescriptorSet 0
+               OpDecorate %cur Binding 4
+               OpDecorate %args DescriptorSet 0
+               OpDecorate %args Binding 5
+       %void = OpTypeVoid
+       %fnty = OpTypeFunction %void
+       %bool = OpTypeBool
+       %uint = OpTypeInt 32 0
+     %v3uint = OpTypeVector %uint 3
+  %ptr_in_v3 = OpTypePointer Input %v3uint
+        %lid = OpVariable %ptr_in_v3 Input
+      %rta_u = OpTypeRuntimeArray %uint
+      %buf_u = OpTypeStruct %rta_u
+     %ptr_bu = OpTypePointer StorageBuffer %buf_u
+      %ptr_u = OpTypePointer StorageBuffer %uint
+   %ptr_fn_u = OpTypePointer Function %uint
+        %cnt = OpVariable %ptr_bu StorageBuffer
+        %off = OpVariable %ptr_bu StorageBuffer
+       %tcnt = OpVariable %ptr_bu StorageBuffer
+        %wgo = OpVariable %ptr_bu StorageBuffer
+        %cur = OpVariable %ptr_bu StorageBuffer
+       %args = OpVariable %ptr_bu StorageBuffer
+     %uint_0 = OpConstant %uint 0
+     %uint_1 = OpConstant %uint 1
+     %uint_2 = OpConstant %uint 2
+    %uint_63 = OpConstant %uint 63
+    %uint_64 = OpConstant %uint 64
+         %nt = OpSpecConstant %uint 5
+       %main = OpFunction %void None %fnty
+      %entry = OpLabel
+         %vt = OpVariable %ptr_fn_u Function
+        %vac = OpVariable %ptr_fn_u Function
+        %vwa = OpVariable %ptr_fn_u Function
+               OpStore %vt %uint_0
+               OpStore %vac %uint_0
+               OpStore %vwa %uint_0
+               OpBranch %h
+          %h = OpLabel
+               OpLoopMerge %m %c None
+               OpBranch %t
+          %t = OpLabel
+         %ti = OpLoad %uint %vt
+       %more = OpULessThan %bool %ti %nt
+               OpBranchConditional %more %s %m
+          %s = OpLabel
+        %pcn = OpAccessChain %ptr_u %cnt %uint_0 %ti
+         %cv = OpLoad %uint %pcn
+         %ac = OpLoad %uint %vac
+         %wa = OpLoad %uint %vwa
+        %pof = OpAccessChain %ptr_u %off %uint_0 %ti
+               OpStore %pof %ac
+        %ptc = OpAccessChain %ptr_u %tcnt %uint_0 %ti
+               OpStore %ptc %cv
+        %pwg = OpAccessChain %ptr_u %wgo %uint_0 %ti
+               OpStore %pwg %wa
+        %pcu = OpAccessChain %ptr_u %cur %uint_0 %ti
+               OpStore %pcu %uint_0
+               OpStore %pcn %uint_0
+        %ac1 = OpIAdd %uint %ac %cv
+               OpStore %vac %ac1
+        %c63 = OpIAdd %uint %cv %uint_63
+        %nwg = OpUDiv %uint %c63 %uint_64
+        %wa1 = OpIAdd %uint %wa %nwg
+               OpStore %vwa %wa1
+               OpBranch %c
+          %c = OpLabel
+         %t0 = OpLoad %uint %vt
+         %t1 = OpIAdd %uint %t0 %uint_1
+               OpStore %vt %t1
+               OpBranch %h
+          %m = OpLabel
+        %wtl = OpLoad %uint %vwa
+        %pwT = OpAccessChain %ptr_u %wgo %uint_0 %nt
+               OpStore %pwT %wtl
+        %pa0 = OpAccessChain %ptr_u %args %uint_0 %uint_0
+               OpStore %pa0 %wtl
+        %pa1 = OpAccessChain %ptr_u %args %uint_0 %uint_1
+               OpStore %pa1 %uint_1
+        %pa2 = OpAccessChain %ptr_u %args %uint_0 %uint_2
+               OpStore %pa2 %uint_1
+               OpReturn
+               OpFunctionEnd

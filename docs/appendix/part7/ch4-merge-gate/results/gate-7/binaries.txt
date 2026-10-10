@@ -1,0 +1,3 @@
+OLD <workspace>/projects/omni-render-gatebase/target/release/omni-render () · NEW <workspace>/projects/omni-render-claude/target/release/omni-render
+331e441e0c48c8a3f886a0699d73c49194b9470d075a4fc3f4dc2b597bcb2f82  <workspace>/projects/omni-render-gatebase/target/release/omni-render
+b4aedcda77368db279a122bda4e80a1f23a46934314fec836c3eb670bef31549  <workspace>/projects/omni-render-claude/target/release/omni-render

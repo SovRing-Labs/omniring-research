@@ -1,0 +1,56 @@
+{
+ "checks": {
+  "plan_stage_mode_frontier": true,
+  "skill_json_has_rows": true,
+  "update_has_stage_fields": true,
+  "grow_row_written": true,
+  "keep_with_manifest": true,
+  "ledger_verifies": true
+ },
+ "pass": true,
+ "note": "pod round on the A40 (compile + GPU-library training + eval on the pod); laptop-side update / grow_ctl rerun by hand after the read-only state.json fix",
+ "update": {
+  "round": 13,
+  "mastered": 131,
+  "gained": 0,
+  "frontier": 58,
+  "wall_rounds": 0,
+  "WALL": false,
+  "top_gain": 0.487,
+  "gate": 1.0,
+  "min_rows": 30,
+  "at_gate": 0,
+  "stage": "prek",
+  "stage_passed": false,
+  "stages": {
+   "prek": [
+    0,
+    85
+   ],
+   "k": [
+    0,
+    61
+   ],
+   "elem": [
+    0,
+    35
+   ],
+   "middle": [
+    0,
+    130
+   ],
+   "high": [
+    0,
+    72
+   ]
+  }
+ },
+ "grow": {
+  "round": 13,
+  "mode": "skills",
+  "stage": "prek",
+  "at_gate": 0,
+  "gain": null,
+  "keep": "<workspace>/projects/thead-trial/runtime/results/grow-wire-pod/grow/keep/r13-every"
+ }
+}

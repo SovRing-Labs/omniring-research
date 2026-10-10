@@ -1,0 +1,118 @@
+{
+ "domains": [
+  "logic.chain",
+  "graph.path",
+  "units.dimension",
+  "calendar.crt",
+  "mind.revise",
+  "mind.tom",
+  "causal.dag",
+  "struct.pushdown",
+  "sat.dpll",
+  "arith.mul",
+  "graph.group_walk",
+  "calendar.ring_euclid",
+  "code.debug"
+ ],
+ "domains_arm_E": [
+  "logic.chain",
+  "graph.path",
+  "units.dimension",
+  "calendar.crt",
+  "mind.revise",
+  "mind.tom_mask",
+  "causal.dag",
+  "struct.pushdown",
+  "sat.trit",
+  "arith.mul_rns",
+  "graph.group",
+  "calendar.clock",
+  "code.debug"
+ ],
+ "fit": {
+  "logic.chain": 1.0,
+  "graph.path": 1.0,
+  "units.dimension": 1.0,
+  "calendar.crt": 1.0,
+  "mind.revise": 1.0,
+  "mind.tom": 1.0,
+  "causal.dag": 1.0,
+  "struct.pushdown": 0.9666666666666667,
+  "sat.dpll": 0.9,
+  "arith.mul": 1.0,
+  "arith.mrc_compare": 0.0,
+  "search.astar": 0.4,
+  "graph.group_walk": 1.0,
+  "calendar.ring_euclid": 1.0,
+  "numth.prime_trial": 0.8666666666666667,
+  "code.debug": 1.0
+ },
+ "tokens_budget": 10000000,
+ "ctx": 512,
+ "batch": 8,
+ "tokenizer": "<home>/gpurun-out-1003/tokenizer-glyph-fix/tokenizer.json",
+ "smoke": false,
+ "arms": {
+  "A": {
+   "resumed": true,
+   "data_tokens": 4428618,
+   "decode_check": {
+    "greedy_identical": "12/12",
+    "max_logit_diff": 0.019263863563537598
+   },
+   "acc_id": 0.21153846153846154,
+   "acc_ood": 0.1717948717948718
+  },
+  "B": {
+   "resumed": true,
+   "data_tokens": 11211769,
+   "decode_check": {
+    "greedy_identical": "10/12",
+    "max_logit_diff": 0.1108856201171875
+   },
+   "acc_id": 0.1371794871794872,
+   "acc_ood": 0.12051282051282051
+  },
+  "C": {
+   "steps": 2442,
+   "tokens": 10002432,
+   "train_seconds": 2827.8962347507477,
+   "data_tokens": 11211164,
+   "decode_check": {
+    "greedy_identical": "11/12",
+    "max_logit_diff": 0.11701297760009766
+   },
+   "acc_id": 0.08205128205128205,
+   "acc_ood": 0.1,
+   "eval_seconds": 390.2020013332367
+  },
+  "D": {
+   "steps": 2442,
+   "tokens": 10002432,
+   "train_seconds": 2097.529685020447,
+   "data_tokens": 10822621,
+   "decode_check": {
+    "greedy_identical": "12/12",
+    "max_logit_diff": 0.1134338527917862
+   },
+   "acc_id": 0.1282051282051282,
+   "acc_ood": 0.11025641025641025,
+   "eval_seconds": 234.98320364952087
+  },
+  "E": {
+   "engine": "omni_train mode 0",
+   "steps": 2442,
+   "tokens": 10002432,
+   "train_seconds": 2814.6,
+   "tok_s": 3554,
+   "data_tokens": 10012157,
+   "decode_check": {
+    "greedy_identical": "12/12",
+    "max_logit_diff": 0.16298973560333252
+   },
+   "acc_id": 0.12051282051282051,
+   "acc_ood": 0.11538461538461539,
+   "eval_seconds": 296.8
+  }
+ }
+}

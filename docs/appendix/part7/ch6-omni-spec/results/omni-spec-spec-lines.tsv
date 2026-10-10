@@ -1,0 +1,19 @@
+module	spec_line_first_140_chars
+brotli	RFC 7932 (Alakuijala & Szabadka, 2016), https://www.rfc-editor.org/rfc/rfc7932.txt — §3 prefix codes (3.2 canonical, 3.4 simple, 3.5 complex
+gif	GIF89a (CompuServe 1989; W3C copy https://www.w3.org/Graphics/GIF/spec-gif89a.txt) — §17 logical screen and colour tables, §18 extensions (g
+html	WHATWG HTML Living Standard, https://html.spec.whatwg.org/multipage/parsing.html — §13.2.3.5 input preprocessing (CR/CRLF → LF), §13.2.5 tok
+inflate	RFC 1951 §3.2.2–3.2.7 (canonical codes, stored/fixed/dynamic blocks, length/distance tables), §3.1.1 bit order; RFC 1950 §2.2 (header), §8.2
+jpeg	ITU-T T.81 (ISO/IEC 10918-1) — B.2 markers and segments (DQT, DHT, SOF0/1/2, SOS, DRI, RSTn, EOI); F.2.2 sequential coding and the Huffman d
+json	RFC 8259 (The JSON Data Interchange Format), https://www.rfc-editor.org/rfc/rfc8259.txt — §2 grammar and whitespace, §6 numbers, §7 strings 
+ooxml	ECMA-376 Office Open XML File Formats, 5th edition (Part 1 2021, Part 2 2021), identical in content to ISO/IEC 29500-1:2016 / 29500-2:2021, 
+otshape	Microsoft OpenType specification: "OpenType Font File" (ch. 2, table directory); GPOS lookup type 2 Pair Adjustment (formats 1, 2); GSUB loo
+png	https://www.w3.org/TR/png-3/ — §5 chunk layout and CRC (§5.4), §6 colour types, §7 filters (incl. §7.2 bytes-per-pixel rule), §8 Adam7 inter
+sfnt	Microsoft OpenType specification — chapter 2 (Table Directory, TTC header), `head`, `hhea`, `maxp`, `hmtx`, `cmap` (formats 4, 12), `name`, 
+sha256	FIPS PUB 180-4, Secure Hash Standard (SHS), NIST, August 2015, https://doi.org/10.6028/NIST.FIPS.180-4 — §4.1.2 functions, §4.2.2 constants,
+uax14	UAX #14 (Unicode 18.0.0), https://www.unicode.org/reports/tr14/ — §5.1 classes (Table 1), §6.1 rules LB1–LB31 (default tailoring §6.2), LB1 
+uax29	UAX #29 (Unicode 18.0.0), https://www.unicode.org/reports/tr29/ — §3.1 rules GB1–GB999 (extended: GB9a, GB9b, GB9c, GB11 included), Table 2 
+uax9	UAX #9 (Unicode 18.0.0), https://www.unicode.org/reports/tr9/ — §3.3.1 P2–P3, §3.3.2 X1–X10, §3.3.3 W1–W7, §3.3.4 N0–N2 (BD14–BD16 brackets)
+webp	"WebP Lossless Bitstream Specification" (Alakuijala, Google, 2023-03-09) — §3 header, §4 transforms (predictor, colour, subtract-green, colo
+xml	Extensible Markup Language (XML) 1.0 (Fifth Edition), W3C Recommendation 26 November 2008, https://www.w3.org/TR/xml/ — §2.2 Char, §2.5 comm
+zip	PKWARE .ZIP File Format Specification, APPNOTE.TXT version 6.3.10 (2022-11-01), https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT 
+# module documents with a Spec line: 17 of 17

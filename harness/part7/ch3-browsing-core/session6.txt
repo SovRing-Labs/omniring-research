@@ -1,0 +1,11 @@
+# BROWSER-BODY-0 step 6: search words in the address bar -> DuckDuckGo HTML (GET ?q=) -> results -> a result link opens;
+# then Wikipedia's own search <form method=get> filled and sent (the GET form path). DDG's own form is method=post (out of scope v1).
+open ternary numeral system
+shot results/browser-body-0/ddg-results.png
+follow Ternary numeral system - Wikipedia
+size 1280 800
+open https://en.wikipedia.org/wiki/Main_Page
+field search
+type balanced ternary
+submit
+shot results/browser-body-0/wiki-search.png

@@ -1,0 +1,2 @@
+{"base":[19545,3045],"cand":[19604,3045],"gained":[81,0],"lost":[22,0],"pages":[{"gained":81,"holdout":false,"lost":22,"lost_nodes":[916,918,920,922,947,955,978,980,1021,1131,1133,1141],"page":"arstechnica-com"}],"pass":false,"sets":"1ee26bbc9aa4"}
+binary-gate vs results/agree-snapshot-after-mq.json: replay 19545 → 19604 · holdout 3045 → 3045 · lost 22/0 · gained 81/0 → FAIL (1.5s)

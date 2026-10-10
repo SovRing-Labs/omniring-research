@@ -1,0 +1,23 @@
+{
+ "ema_equals_reference": true,
+ "identical_cores_byte_equal": true,
+ "real": {
+  "cores": [
+   "runtime/results/pod-live-r1/live-r1/h0",
+   "runtime/results/pod-live-r1/live-r1/h1",
+   "runtime/results/pod-live-r1/live-r1/h2",
+   "runtime/results/pod-live-r1/live-r1/h3"
+  ],
+  "equals_par_merge_bitwise": true,
+  "params": 6926912,
+  "rms_core_to_soup": 0.005758
+ },
+ "rss_mb": 300.7,
+ "time_machine_live": {
+  "ever_slipped": 38,
+  "gained": 104,
+  "rounds": 8,
+  "skills": 184
+ },
+ "uniform_equals_par_merge_bitwise": true
+}

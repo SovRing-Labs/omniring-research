@@ -1,0 +1,695 @@
+{
+ "run": "<workspace>/projects/thead-trial/runtime/results/school-t25-prek-3",
+ "heldout_by_lesson_and_class": {
+  "ALL": {
+   "action": {
+    "top1": 0.704,
+    "loss": 1.036,
+    "n": 14634
+   },
+   "goal": {
+    "top1": 0.581,
+    "loss": 1.959,
+    "n": 13021
+   },
+   "label": {
+    "top1": 0.999,
+    "loss": 0.004,
+    "n": 4427
+   },
+   "operand": {
+    "top1": 0.356,
+    "loss": 3.182,
+    "n": 5379
+   },
+   "operator": {
+    "top1": 0.221,
+    "loss": 3.539,
+    "n": 1000
+   },
+   "other": {
+    "top1": 0.803,
+    "loss": 0.899,
+    "n": 2393
+   },
+   "state": {
+    "top1": 0.485,
+    "loss": 2.719,
+    "n": 2100
+   },
+   "transport": {
+    "top1": 0.909,
+    "loss": 0.448,
+    "n": 2121
+   }
+  },
+  "k.store": {
+   "action": {
+    "top1": 0.737,
+    "loss": 0.818,
+    "n": 247
+   },
+   "goal": {
+    "top1": 0.586,
+    "loss": 2.66,
+    "n": 157
+   },
+   "label": {
+    "top1": 0.987,
+    "loss": 0.042,
+    "n": 315
+   },
+   "operand": {
+    "top1": 0.073,
+    "loss": 6.153,
+    "n": 260
+   },
+   "other": {
+    "top1": 0.764,
+    "loss": 0.892,
+    "n": 242
+   },
+   "state": {
+    "top1": 0.058,
+    "loss": 5.912,
+    "n": 52
+   }
+  },
+  "k.transport": {
+   "action": {
+    "top1": 0.746,
+    "loss": 0.901,
+    "n": 260
+   },
+   "goal": {
+    "top1": 0.566,
+    "loss": 2.854,
+    "n": 166
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.001,
+    "n": 378
+   },
+   "operand": {
+    "top1": 0.133,
+    "loss": 4.955,
+    "n": 120
+   },
+   "other": {
+    "top1": 0.842,
+    "loss": 1.015,
+    "n": 284
+   },
+   "transport": {
+    "top1": 0.825,
+    "loss": 1.006,
+    "n": 40
+   }
+  },
+  "pk.babble": {
+   "action": {
+    "top1": 0.785,
+    "loss": 0.739,
+    "n": 1136
+   },
+   "goal": {
+    "top1": 0.493,
+    "loss": 2.176,
+    "n": 1673
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.001,
+    "n": 384
+   },
+   "operand": {
+    "top1": 0.233,
+    "loss": 3.138,
+    "n": 688
+   },
+   "operator": {
+    "top1": 0.301,
+    "loss": 3.004,
+    "n": 402
+   },
+   "other": {
+    "top1": 0.979,
+    "loss": 0.13,
+    "n": 192
+   },
+   "state": {
+    "top1": 0.886,
+    "loss": 0.584,
+    "n": 184
+   },
+   "transport": {
+    "top1": 0.917,
+    "loss": 0.545,
+    "n": 192
+   }
+  },
+  "pk.commit": {
+   "action": {
+    "top1": 0.648,
+    "loss": 1.36,
+    "n": 1032
+   },
+   "goal": {
+    "top1": 0.663,
+    "loss": 1.565,
+    "n": 778
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.002,
+    "n": 262
+   },
+   "operand": {
+    "top1": 0.461,
+    "loss": 2.69,
+    "n": 254
+   },
+   "other": {
+    "top1": 0.748,
+    "loss": 1.049,
+    "n": 131
+   },
+   "state": {
+    "top1": 0.402,
+    "loss": 3.429,
+    "n": 254
+   }
+  },
+  "pk.echo": {
+   "action": {
+    "top1": 0.777,
+    "loss": 0.863,
+    "n": 1659
+   },
+   "goal": {
+    "top1": 0.703,
+    "loss": 1.474,
+    "n": 2027
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.002,
+    "n": 736
+   },
+   "operand": {
+    "top1": 0.593,
+    "loss": 1.89,
+    "n": 555
+   },
+   "other": {
+    "top1": 1.0,
+    "loss": 0.084,
+    "n": 368
+   },
+   "state": {
+    "top1": 0.607,
+    "loss": 1.983,
+    "n": 555
+   }
+  },
+  "pk.flush": {
+   "action": {
+    "top1": 0.526,
+    "loss": 1.651,
+    "n": 928
+   },
+   "goal": {
+    "top1": 0.564,
+    "loss": 1.951,
+    "n": 665
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.001,
+    "n": 202
+   },
+   "operand": {
+    "top1": 0.347,
+    "loss": 2.89,
+    "n": 262
+   },
+   "other": {
+    "top1": 0.832,
+    "loss": 0.81,
+    "n": 101
+   },
+   "state": {
+    "top1": 0.053,
+    "loss": 4.385,
+    "n": 57
+   }
+  },
+  "pk.give": {
+   "action": {
+    "top1": 0.622,
+    "loss": 1.361,
+    "n": 1088
+   },
+   "goal": {
+    "top1": 0.573,
+    "loss": 1.87,
+    "n": 674
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.002,
+    "n": 222
+   },
+   "operand": {
+    "top1": 0.522,
+    "loss": 2.349,
+    "n": 230
+   },
+   "other": {
+    "top1": 0.306,
+    "loss": 2.389,
+    "n": 111
+   },
+   "state": {
+    "top1": 0.0,
+    "loss": 6.095,
+    "n": 39
+   },
+   "transport": {
+    "top1": 0.788,
+    "loss": 1.021,
+    "n": 203
+   }
+  },
+  "pk.goal": {
+   "action": {
+    "top1": 0.719,
+    "loss": 1.015,
+    "n": 385
+   },
+   "goal": {
+    "top1": 0.616,
+    "loss": 2.025,
+    "n": 385
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.001,
+    "n": 154
+   },
+   "operand": {
+    "top1": 0.129,
+    "loss": 4.7,
+    "n": 310
+   },
+   "operator": {
+    "top1": 0.082,
+    "loss": 4.183,
+    "n": 182
+   },
+   "other": {
+    "top1": 1.0,
+    "loss": 0.037,
+    "n": 77
+   },
+   "state": {
+    "top1": 0.779,
+    "loss": 1.117,
+    "n": 77
+   },
+   "transport": {
+    "top1": 0.922,
+    "loss": 0.565,
+    "n": 77
+   }
+  },
+  "pk.hold": {
+   "action": {
+    "top1": 0.638,
+    "loss": 1.106,
+    "n": 536
+   },
+   "goal": {
+    "top1": 0.472,
+    "loss": 2.442,
+    "n": 553
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.002,
+    "n": 190
+   },
+   "operand": {
+    "top1": 0.48,
+    "loss": 2.694,
+    "n": 173
+   },
+   "other": {
+    "top1": 0.558,
+    "loss": 2.02,
+    "n": 95
+   },
+   "state": {
+    "top1": 0.341,
+    "loss": 4.178,
+    "n": 173
+   }
+  },
+  "pk.meet": {
+   "action": {
+    "top1": 0.921,
+    "loss": 0.267,
+    "n": 1516
+   },
+   "goal": {
+    "top1": 0.585,
+    "loss": 2.036,
+    "n": 1376
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.001,
+    "n": 412
+   },
+   "operand": {
+    "top1": 0.245,
+    "loss": 3.353,
+    "n": 552
+   },
+   "other": {
+    "top1": 0.99,
+    "loss": 0.13,
+    "n": 206
+   },
+   "transport": {
+    "top1": 0.996,
+    "loss": 0.035,
+    "n": 552
+   }
+  },
+  "pk.mix": {
+   "action": {
+    "top1": 0.393,
+    "loss": 2.335,
+    "n": 326
+   },
+   "goal": {
+    "top1": 0.598,
+    "loss": 2.233,
+    "n": 199
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.002,
+    "n": 70
+   },
+   "operand": {
+    "top1": 0.39,
+    "loss": 2.461,
+    "n": 59
+   },
+   "other": {
+    "top1": 0.4,
+    "loss": 2.692,
+    "n": 35
+   },
+   "state": {
+    "top1": 0.3,
+    "loss": 3.135,
+    "n": 40
+   },
+   "transport": {
+    "top1": 0.52,
+    "loss": 3.047,
+    "n": 25
+   }
+  },
+  "pk.ping": {
+   "action": {
+    "top1": 0.712,
+    "loss": 0.902,
+    "n": 3981
+   },
+   "goal": {
+    "top1": 0.686,
+    "loss": 1.333,
+    "n": 2233
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.002,
+    "n": 606
+   },
+   "operand": {
+    "top1": 0.637,
+    "loss": 1.578,
+    "n": 1024
+   },
+   "other": {
+    "top1": 1.0,
+    "loss": 0.19,
+    "n": 303
+   },
+   "state": {
+    "top1": 0.514,
+    "loss": 2.197,
+    "n": 512
+   },
+   "transport": {
+    "top1": 0.865,
+    "loss": 0.483,
+    "n": 512
+   }
+  },
+  "pk.predict": {
+   "action": {
+    "top1": 0.711,
+    "loss": 1.321,
+    "n": 540
+   },
+   "goal": {
+    "top1": 0.366,
+    "loss": 2.785,
+    "n": 1154
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.001,
+    "n": 250
+   },
+   "operand": {
+    "top1": 0.074,
+    "loss": 5.139,
+    "n": 525
+   },
+   "operator": {
+    "top1": 0.116,
+    "loss": 4.406,
+    "n": 294
+   },
+   "other": {
+    "top1": 0.064,
+    "loss": 4.35,
+    "n": 125
+   },
+   "transport": {
+    "top1": 0.921,
+    "loss": 0.527,
+    "n": 290
+   }
+  },
+  "pk.press": {
+   "action": {
+    "top1": 0.521,
+    "loss": 1.314,
+    "n": 290
+   },
+   "goal": {
+    "top1": 0.459,
+    "loss": 2.894,
+    "n": 185
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.002,
+    "n": 40
+   },
+   "operand": {
+    "top1": 0.143,
+    "loss": 4.021,
+    "n": 105
+   },
+   "other": {
+    "top1": 1.0,
+    "loss": 0.228,
+    "n": 20
+   },
+   "state": {
+    "top1": 0.086,
+    "loss": 5.211,
+    "n": 105
+   }
+  },
+  "pk.same": {
+   "action": {
+    "top1": 0.75,
+    "loss": 0.9,
+    "n": 120
+   },
+   "goal": {
+    "top1": 0.333,
+    "loss": 3.584,
+    "n": 438
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.001,
+    "n": 80
+   },
+   "operand": {
+    "top1": 0.115,
+    "loss": 5.487,
+    "n": 156
+   },
+   "operator": {
+    "top1": 0.418,
+    "loss": 2.256,
+    "n": 122
+   },
+   "other": {
+    "top1": 0.2,
+    "loss": 3.558,
+    "n": 40
+   },
+   "transport": {
+    "top1": 0.75,
+    "loss": 0.826,
+    "n": 40
+   }
+  },
+  "pk.tape": {
+   "action": {
+    "top1": 0.522,
+    "loss": 1.863,
+    "n": 590
+   },
+   "goal": {
+    "top1": 0.693,
+    "loss": 1.497,
+    "n": 358
+   },
+   "label": {
+    "top1": 1.0,
+    "loss": 0.002,
+    "n": 126
+   },
+   "operand": {
+    "top1": 0.538,
+    "loss": 2.083,
+    "n": 106
+   },
+   "other": {
+    "top1": 0.603,
+    "loss": 0.694,
+    "n": 63
+   },
+   "state": {
+    "top1": 0.154,
+    "loss": 4.411,
+    "n": 52
+   },
+   "transport": {
+    "top1": 0.979,
+    "loss": 0.137,
+    "n": 190
+   }
+  }
+ },
+ "doing": {
+  "pk.hold": {
+   "attempts": 2,
+   "solved": 1,
+   "j_format": 0
+  },
+  "pk.commit": {
+   "attempts": 2,
+   "solved": 2,
+   "j_format": 0
+  },
+  "pk.flush": {
+   "attempts": 2,
+   "solved": 1,
+   "j_format": 0
+  },
+  "pk.give": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  },
+  "pk.tape": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  },
+  "pk.meet": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  },
+  "pk.press": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  },
+  "pk.mix": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  },
+  "k.store": {
+   "attempts": 4,
+   "solved": 0,
+   "j_format": 2
+  },
+  "k.transport": {
+   "attempts": 4,
+   "solved": 2,
+   "j_format": 2
+  },
+  "pk.echo": {
+   "attempts": 2,
+   "solved": 2,
+   "j_format": 0
+  },
+  "pk.ping": {
+   "attempts": 2,
+   "solved": 2,
+   "j_format": 0
+  },
+  "pk.babble": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  },
+  "pk.predict": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  },
+  "pk.goal": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  },
+  "pk.same": {
+   "attempts": 2,
+   "solved": 0,
+   "j_format": 0
+  }
+ },
+ "doing_total": {
+  "attempts": 36,
+  "solved": 10
+ }
+}

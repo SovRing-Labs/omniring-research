@@ -1,0 +1,3 @@
+[array] NVIDIA A40 — 2 slots, 1087 passes, 256.9 MB resident, slot 3 MB
+[array] 50 steps · 1.9 slots / step · gpu 128.4 ms · step+io 151.6 ms
+[array] stop after 55 steps

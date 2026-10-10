@@ -1,0 +1,10 @@
+{
+ "launches": [
+  {
+   "exit": 1,
+   "label": "bus gate B2 harness run",
+   "seconds": 854.3
+  }
+ ],
+ "what": "launch record of the shared-RAM bus harness run (scrubbed)"
+}

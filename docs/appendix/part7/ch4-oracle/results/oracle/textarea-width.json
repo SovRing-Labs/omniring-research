@@ -1,0 +1,47 @@
+{
+ "target": "textarea-width",
+ "symbols": [
+  "cols"
+ ],
+ "equation_1_64px": "((64i64) * (((cols * (634i64)) / (79i64)) + (22i64)))",
+ "verified_rustc": true,
+ "cegis_rounds": 3,
+ "validate": {
+  "agree": 120,
+  "of": 120,
+  "rustc": true,
+  "exhaustive": true
+ },
+ "work": 3072,
+ "how": "witness depth 0",
+ "synth_secs": 0.004609539,
+ "sample": [
+  [
+   [
+    120
+   ],
+   63040
+  ],
+  [
+   [
+    82
+   ],
+   43520
+  ],
+  [
+   [
+    21
+   ],
+   12160
+  ],
+  [
+   [
+    91
+   ],
+   48128
+  ]
+ ],
+ "ours_equation_1_64px": "((64i64) * (((cols * (634i64)) / (79i64)) + (22i64)))",
+ "probes_agree_within_1px": 120,
+ "probes": 120
+}

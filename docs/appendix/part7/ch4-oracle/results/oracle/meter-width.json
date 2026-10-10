@@ -1,0 +1,47 @@
+{
+ "target": "meter-width",
+ "symbols": [
+  "font_px"
+ ],
+ "equation_1_64px": "((font_px * (320i64)) + (0i64))",
+ "verified_rustc": true,
+ "cegis_rounds": 1,
+ "validate": {
+  "agree": 43,
+  "of": 43,
+  "rustc": true,
+  "exhaustive": true
+ },
+ "work": 1013,
+ "how": "witness depth 0",
+ "synth_secs": 0.006748018,
+ "sample": [
+  [
+   [
+    31
+   ],
+   9920
+  ],
+  [
+   [
+    8
+   ],
+   2560
+  ],
+  [
+   [
+    17
+   ],
+   5440
+  ],
+  [
+   [
+    7
+   ],
+   2240
+  ]
+ ],
+ "ours_equation_1_64px": "((font_px * (320i64)) + (0i64))",
+ "probes_agree_within_1px": 43,
+ "probes": 43
+}

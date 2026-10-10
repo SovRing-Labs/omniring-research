@@ -1,0 +1,48 @@
+{
+ "target": "body-collapse-y",
+ "symbols": [
+  "body_margin",
+  "child_margin_top"
+ ],
+ "equation_1_64px": "((64i64) * (body_margin.max(child_margin_top) + child_margin_top.min((0i64))))",
+ "verified_rustc": true,
+ "cegis_rounds": 1,
+ "validate": {
+  "agree": 40,
+  "of": 40,
+  "rustc": true
+ },
+ "work": 1991456,
+ "how": "witness depth 2",
+ "synth_secs": 0.324290344,
+ "sample": [
+  [
+   [
+    8,
+    42
+   ],
+   2688
+  ],
+  [
+   [
+    4,
+    2
+   ],
+   256
+  ],
+  [
+   [
+    7,
+    33
+   ],
+   2112
+  ],
+  [
+   [
+    28,
+    30
+   ],
+   1920
+  ]
+ ]
+}

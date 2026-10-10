@@ -1,0 +1,1858 @@
+{
+ "engine_lines": 3211,
+ "functions_total": 247,
+ "functions_ran": 112,
+ "omp_loops_total": 59,
+ "omp_loops_ran": 26,
+ "lines_run": 858,
+ "lines_in_ran_functions": 967,
+ "with_gpu_spec": [
+  "dot8",
+  "mem_fwd",
+  "sgemm"
+ ],
+ "specs_not_matched_by_name": [
+  "attn_dk",
+  "attn_dq",
+  "attn_dv",
+  "attn_lse",
+  "attn_y",
+  "bl_act_g",
+  "bl_act_q",
+  "bl_bwd_dw",
+  "bl_bwd_dx",
+  "bl_fwd_row",
+  "bl_quant_t",
+  "bl_scale",
+  "head_de",
+  "head_dh",
+  "head_loss",
+  "rms_bwd_dg",
+  "rms_bwd_dx",
+  "rms_row",
+  "sgemm_gnn",
+  "sgemm_gnt",
+  "sgemm_gtn",
+  "sgemm_gtt"
+ ],
+ "day_seconds": {
+  "doing": 2.9872695670000002,
+  "retry": 1.5859441890000001,
+  "sleep": 13.104647433,
+  "study": 15.994841096,
+  "wake": 25.413783612
+ },
+ "ran": [
+  {
+   "fn": "~Tm",
+   "sig": "ot::Tm::~Tm()",
+   "lines": [
+    32,
+    32
+   ],
+   "calls": 9309,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "dot8",
+   "sig": "ot::dot8(float const*, float const*, int)",
+   "lines": [
+    217,
+    224
+   ],
+   "calls": 49664468,
+   "lines_run": 4,
+   "lines_total": 4,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": "dot8"
+  },
+  {
+   "fn": "axpy",
+   "sig": "ot::axpy(float, float const*, float*, int)",
+   "lines": [
+    225,
+    229
+   ],
+   "calls": 223061203,
+   "lines_run": 4,
+   "lines_total": 4,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "micro",
+   "sig": "ot::micro(int, float const*, float const*, float*, int, int, int, bool)",
+   "lines": [
+    289,
+    302
+   ],
+   "calls": 32929816,
+   "lines_run": 10,
+   "lines_total": 10,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "sgemm",
+   "sig": "ot::sgemm(int, int, int, float const*, int, bool, float const*, int, bool, float*, int, bool, bool)",
+   "lines": [
+    303,
+    334
+   ],
+   "calls": 456497,
+   "lines_run": 9,
+   "lines_total": 9,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": "sgemm"
+  },
+  {
+   "fn": "exp8",
+   "sig": "ot::exp8(float __vector(8))",
+   "lines": [
+    336,
+    347
+   ],
+   "calls": 105946112,
+   "lines_run": 2,
+   "lines_total": 2,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "urand",
+   "sig": "ot::urand()",
+   "lines": [
+    352,
+    352
+   ],
+   "calls": 9125376,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "nrand",
+   "sig": "ot::nrand()",
+   "lines": [
+    353,
+    353
+   ],
+   "calls": 2203392,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "rms_fwd",
+   "sig": "ot::rms_fwd(float const*, float const*, float*, float*, int, int)",
+   "lines": [
+    356,
+    363
+   ],
+   "calls": 4633,
+   "lines_run": 3,
+   "lines_total": 3,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "rms_bwd",
+   "sig": "ot::rms_bwd(float const*, float const*, float const*, float const*, float*, float*, int, int, bool)",
+   "lines": [
+    365,
+    382
+   ],
+   "calls": 240,
+   "lines_run": 7,
+   "lines_total": 7,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "bl_quant",
+   "sig": "ot::bl_quant(ot::Model&, ot::BL&)",
+   "lines": [
+    438,
+    452
+   ],
+   "calls": 1296,
+   "lines_run": 13,
+   "lines_total": 13,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "bl_fwd",
+   "sig": "ot::bl_fwd(ot::BL const&, float const*, float*, std::vector<signed char, std::allocator<signed char> >&, std::vector<float, std::allocator<float> >&, std::vector<float, std::allocator<float> >&, int, bool)",
+   "lines": [
+    456,
+    520
+   ],
+   "calls": 7536,
+   "lines_run": 8,
+   "lines_total": 8,
+   "omp_loops": 3,
+   "omp_loops_ran": 3,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "bl_bwd",
+   "sig": "ot::bl_bwd(ot::Model&, ot::BL&, float const*, std::vector<signed char, std::allocator<signed char> > const&, std::vector<float, std::allocator<float> > const&, std::vector<float, std::allocator<float> > const&, float const*, float*, int, bool, bool)",
+   "lines": [
+    580,
+    636
+   ],
+   "calls": 384,
+   "lines_run": 31,
+   "lines_total": 36,
+   "omp_loops": 6,
+   "omp_loops_ran": 6,
+   "sgemm_sites": 4,
+   "gpu_spec": null
+  },
+  {
+   "fn": "add_param",
+   "sig": "ot::add_param(ot::Model&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long)",
+   "lines": [
+    639,
+    642
+   ],
+   "calls": 52,
+   "lines_run": 4,
+   "lines_total": 4,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "init_bl",
+   "sig": "ot::init_bl(ot::Model&, ot::BL&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int)",
+   "lines": [
+    643,
+    647
+   ],
+   "calls": 24,
+   "lines_run": 5,
+   "lines_total": 5,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "create",
+   "sig": "ot::create(int, int, int, int, int, int const*, int, unsigned long long)",
+   "lines": [
+    649,
+    674
+   ],
+   "calls": 1,
+   "lines_run": 23,
+   "lines_total": 23,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "rot",
+   "sig": "ot::rot(ot::Model const&, float*, int, int, unsigned char const*)",
+   "lines": [
+    677,
+    686
+   ],
+   "calls": 2407092,
+   "lines_run": 8,
+   "lines_total": 8,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "t25_at",
+   "sig": "ot::t25_at(ot::Model const&, int)",
+   "lines": [
+    689,
+    689
+   ],
+   "calls": 1201932,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "t25_fill",
+   "sig": "ot::t25_fill(ot::Model&, int const*, int, int)",
+   "lines": [
+    690,
+    704
+   ],
+   "calls": 48,
+   "lines_run": 10,
+   "lines_total": 14,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "harm_init",
+   "sig": "ot::harm_init()",
+   "lines": [
+    710,
+    711
+   ],
+   "calls": 1,
+   "lines_run": 2,
+   "lines_total": 2,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "attn_fwd",
+   "sig": "ot::attn_fwd(ot::Model const&, float const*, float*, float*, int, int, float*)",
+   "lines": [
+    712,
+    758
+   ],
+   "calls": 288,
+   "lines_run": 4,
+   "lines_total": 4,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 4,
+   "gpu_spec": null
+  },
+  {
+   "fn": "attn_bwd",
+   "sig": "ot::attn_bwd(ot::Model const&, float const*, float const*, float const*, float const*, float*, int, int, float const*)",
+   "lines": [
+    760,
+    823
+   ],
+   "calls": 96,
+   "lines_run": 4,
+   "lines_total": 4,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 10,
+   "gpu_spec": null
+  },
+  {
+   "fn": "harm_weights",
+   "sig": "ot::harm_weights(ot::Model&, int, ot::Acts&, int, int, bool)",
+   "lines": [
+    827,
+    854
+   ],
+   "calls": 288,
+   "lines_run": 22,
+   "lines_total": 22,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "softplus",
+   "sig": "ot::softplus(float)",
+   "lines": [
+    857,
+    857
+   ],
+   "calls": 309,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "copy_fwd",
+   "sig": "ot::copy_fwd(ot::Model&, float const*, int, int)",
+   "lines": [
+    858,
+    871
+   ],
+   "calls": 48,
+   "lines_run": 8,
+   "lines_total": 8,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 2,
+   "gpu_spec": null
+  },
+  {
+   "fn": "copy_bwd",
+   "sig": "ot::copy_bwd(ot::Model&, float const*, float*, int, int)",
+   "lines": [
+    872,
+    891
+   ],
+   "calls": 8,
+   "lines_run": 12,
+   "lines_total": 12,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 4,
+   "gpu_spec": null
+  },
+  {
+   "fn": "head",
+   "sig": "ot::head(ot::Model&, float const*, int const*, float*, int, bool)",
+   "lines": [
+    897,
+    993
+   ],
+   "calls": 88,
+   "lines_run": 29,
+   "lines_total": 29,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 3,
+   "gpu_spec": null
+  },
+  {
+   "fn": "mem_layer",
+   "sig": "ot::mem_layer(ot::Model const&, int)",
+   "lines": [
+    1078,
+    1078
+   ],
+   "calls": 2076,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "plate_on",
+   "sig": "ot::plate_on(ot::Model const&, int)",
+   "lines": [
+    1079,
+    1079
+   ],
+   "calls": 384,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "mem_bucket",
+   "sig": "ot::mem_bucket(float const*, float const*, int)",
+   "lines": [
+    1080,
+    1084
+   ],
+   "calls": 4021296,
+   "lines_run": 3,
+   "lines_total": 3,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "mem_init_planes",
+   "sig": "ot::mem_init_planes(ot::Model&)",
+   "lines": [
+    1134,
+    1140
+   ],
+   "calls": 294,
+   "lines_run": 6,
+   "lines_total": 6,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "mem_fwd",
+   "sig": "ot::mem_fwd(ot::Model&, ot::Acts&, int, int, int)",
+   "lines": [
+    1143,
+    1157
+   ],
+   "calls": 288,
+   "lines_run": 2,
+   "lines_total": 9,
+   "omp_loops": 1,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": "mem_fwd"
+  },
+  {
+   "fn": "mem_bwd",
+   "sig": "ot::mem_bwd(ot::Model&, ot::Acts&, float const*, float*, int, int)",
+   "lines": [
+    1158,
+    1162
+   ],
+   "calls": 96,
+   "lines_run": 2,
+   "lines_total": 4,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "plate_flush",
+   "sig": "ot::plate_flush(std::unordered_map<int, std::vector<float, std::allocator<float> >, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<int const, std::vector<float, std::allocator<float> > > > >&, float const*, float const*, int, int const*, int, int, int, std::vector<float, std::allocator<float> >&)",
+   "lines": [
+    1170,
+    1174
+   ],
+   "calls": 145368,
+   "lines_run": 5,
+   "lines_total": 5,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "plate_core_fwd",
+   "sig": "ot::plate_core_fwd(float const*, float const*, float const*, int, int const*, int const*, int const*, float*, int, float*, int, int)",
+   "lines": [
+    1175,
+    1187
+   ],
+   "calls": 4416,
+   "lines_run": 11,
+   "lines_total": 11,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "plate_core_bwd",
+   "sig": "ot::plate_core_bwd(float const*, float const*, float const*, int, int const*, int const*, int const*, float const*, int, float const*, float const*, int, float*, float*, float*, int, int)",
+   "lines": [
+    1190,
+    1215
+   ],
+   "calls": 1536,
+   "lines_run": 21,
+   "lines_total": 21,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "plate_fwd",
+   "sig": "ot::plate_fwd(ot::Model&, ot::Acts&, int, int, int)",
+   "lines": [
+    1216,
+    1237
+   ],
+   "calls": 288,
+   "lines_run": 7,
+   "lines_total": 7,
+   "omp_loops": 2,
+   "omp_loops_ran": 2,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "plate_bwd",
+   "sig": "ot::plate_bwd(ot::Model&, ot::Acts&, float const*, float*, int, int)",
+   "lines": [
+    1238,
+    1248
+   ],
+   "calls": 96,
+   "lines_run": 4,
+   "lines_total": 4,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "port_fwd",
+   "sig": "ot::port_fwd(ot::Model&, float const*, float*, int)",
+   "lines": [
+    1379,
+    1407
+   ],
+   "calls": 48,
+   "lines_run": 9,
+   "lines_total": 9,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "port_bwd",
+   "sig": "ot::port_bwd(ot::Model&, float const*, float const*, float*, int)",
+   "lines": [
+    1410,
+    1474
+   ],
+   "calls": 8,
+   "lines_run": 15,
+   "lines_total": 15,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "head_any",
+   "sig": "ot::head_any(ot::Model&, float const*, int const*, float*, int, bool)",
+   "lines": [
+    1756,
+    1759
+   ],
+   "calls": 88,
+   "lines_run": 3,
+   "lines_total": 3,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "local_readout",
+   "sig": "ot::local_readout(ot::Model&, int, float const*, int const*, int)",
+   "lines": [
+    1763,
+    1792
+   ],
+   "calls": 40,
+   "lines_run": 26,
+   "lines_total": 26,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "block_bwd",
+   "sig": "ot::block_bwd(ot::Model&, int, std::vector<float, std::allocator<float> >&, bool, int, int)",
+   "lines": [
+    1796,
+    1841
+   ],
+   "calls": 96,
+   "lines_run": 34,
+   "lines_total": 34,
+   "omp_loops": 3,
+   "omp_loops_ran": 3,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "block_bwd",
+   "sig": "ot::block_bwd(ot::Model&, int, std::vector<float, std::allocator<float> >&, bool, int, int)::{lambda(float*, int)#1}::operator()(float*, int) const",
+   "lines": [
+    1800,
+    1802
+   ],
+   "calls": 192,
+   "lines_run": 3,
+   "lines_total": 3,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "block_bwd",
+   "sig": "ot::block_bwd(ot::Model&, int, std::vector<float, std::allocator<float> >&, bool, int, int)::{lambda()#1}::operator()() const",
+   "lines": [
+    1808,
+    1813
+   ],
+   "calls": 192,
+   "lines_run": 6,
+   "lines_total": 6,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "row_cos",
+   "sig": "ot::row_cos(float const*, float const*, int)",
+   "lines": [
+    1856,
+    1856
+   ],
+   "calls": 313808,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "route_check",
+   "sig": "ot::route_check(ot::Model&, int, float const*, float const*, int const*, int, int, bool)",
+   "lines": [
+    1857,
+    1923
+   ],
+   "calls": 240,
+   "lines_run": 19,
+   "lines_total": 28,
+   "omp_loops": 3,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 2,
+   "gpu_spec": null
+  },
+  {
+   "fn": "forward_backward",
+   "sig": "ot::forward_backward(ot::Model&, int const*, int const*, int, int, bool)",
+   "lines": [
+    2073,
+    2199
+   ],
+   "calls": 48,
+   "lines_run": 89,
+   "lines_total": 98,
+   "omp_loops": 3,
+   "omp_loops_ran": 2,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "opt_step",
+   "sig": "ot::opt_step(ot::Model&, float)",
+   "lines": [
+    2304,
+    2344
+   ],
+   "calls": 8,
+   "lines_run": 25,
+   "lines_total": 29,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "sieve_build",
+   "sig": "ot::sieve_build(ot::Model&)",
+   "lines": [
+    2350,
+    2371
+   ],
+   "calls": 5,
+   "lines_run": 19,
+   "lines_total": 19,
+   "omp_loops": 1,
+   "omp_loops_ran": 1,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "dec_prepare",
+   "sig": "ot::dec_prepare(ot::Model&)",
+   "lines": [
+    2372,
+    2377
+   ],
+   "calls": 6,
+   "lines_run": 6,
+   "lines_total": 6,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "dec_clear",
+   "sig": "ot::dec_clear(ot::Model&, ot::Model::Dec&)",
+   "lines": [
+    2378,
+    2383
+   ],
+   "calls": 13,
+   "lines_run": 6,
+   "lines_total": 6,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "port_row",
+   "sig": "ot::port_row(ot::Model const&, float const*, float*, int, int, int*, float*, float*)",
+   "lines": [
+    2386,
+    2401
+   ],
+   "calls": 261,
+   "lines_run": 16,
+   "lines_total": 16,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "copy_dec",
+   "sig": "ot::copy_dec(ot::Model const&, ot::Model::Dec&, int, float const*, float const*, bool)",
+   "lines": [
+    2404,
+    2419
+   ],
+   "calls": 269,
+   "lines_run": 16,
+   "lines_total": 16,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "sieve_top2",
+   "sig": "ot::sieve_top2(ot::Model const&, float const*, int*, float*, float*, ot::Model::Dec&)",
+   "lines": [
+    2421,
+    2431
+   ],
+   "calls": 19,
+   "lines_run": 11,
+   "lines_total": 11,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "dec_step_d",
+   "sig": "ot::dec_step_d(ot::Model const&, ot::Model::Dec&, int, int, int, int*, float*, int, int*, bool)",
+   "lines": [
+    2436,
+    2616
+   ],
+   "calls": 269,
+   "lines_run": 102,
+   "lines_total": 157,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_create",
+   "sig": "om_create",
+   "lines": [
+    2625,
+    2627
+   ],
+   "calls": 1,
+   "lines_run": 2,
+   "lines_total": 2,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_threads",
+   "sig": "om_threads",
+   "lines": [
+    2629,
+    2629
+   ],
+   "calls": 13,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_nparams",
+   "sig": "om_nparams",
+   "lines": [
+    2630,
+    2630
+   ],
+   "calls": 2,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_param_name",
+   "sig": "om_param_name",
+   "lines": [
+    2631,
+    2631
+   ],
+   "calls": 104,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_param_size",
+   "sig": "om_param_size",
+   "lines": [
+    2632,
+    2632
+   ],
+   "calls": 104,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_param_ptr",
+   "sig": "om_param_ptr",
+   "lines": [
+    2633,
+    2633
+   ],
+   "calls": 104,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_opt",
+   "sig": "om_set_opt",
+   "lines": [
+    2636,
+    2641
+   ],
+   "calls": 1,
+   "lines_run": 5,
+   "lines_total": 6,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_sync_latent",
+   "sig": "om_sync_latent",
+   "lines": [
+    2645,
+    2655
+   ],
+   "calls": 1,
+   "lines_run": 7,
+   "lines_total": 7,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_p2",
+   "sig": "om_set_p2",
+   "lines": [
+    2656,
+    2656
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_t25",
+   "sig": "om_set_t25",
+   "lines": [
+    2659,
+    2666
+   ],
+   "calls": 1,
+   "lines_run": 6,
+   "lines_total": 6,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_plates",
+   "sig": "om_set_plates",
+   "lines": [
+    2674,
+    2674
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_p3",
+   "sig": "om_set_p3",
+   "lines": [
+    2687,
+    2687
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_lut5",
+   "sig": "om_set_lut5",
+   "lines": [
+    2692,
+    2692
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_mem",
+   "sig": "om_set_mem",
+   "lines": [
+    2693,
+    2693
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_port",
+   "sig": "om_set_port",
+   "lines": [
+    2696,
+    2707
+   ],
+   "calls": 1,
+   "lines_run": 9,
+   "lines_total": 9,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_port_tau",
+   "sig": "om_set_port_tau",
+   "lines": [
+    2708,
+    2708
+   ],
+   "calls": 6,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_port_data",
+   "sig": "om_set_port_data",
+   "lines": [
+    2711,
+    2713
+   ],
+   "calls": 48,
+   "lines_run": 3,
+   "lines_total": 3,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_active",
+   "sig": "om_set_active",
+   "lines": [
+    2734,
+    2741
+   ],
+   "calls": 1,
+   "lines_run": 5,
+   "lines_total": 6,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_dec_prepare",
+   "sig": "om_dec_prepare",
+   "lines": [
+    2754,
+    2754
+   ],
+   "calls": 6,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_decx_new",
+   "sig": "om_decx_new",
+   "lines": [
+    2755,
+    2755
+   ],
+   "calls": 8,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_decx_reset",
+   "sig": "om_decx_reset",
+   "lines": [
+    2757,
+    2757
+   ],
+   "calls": 5,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_decx_step",
+   "sig": "om_decx_step",
+   "lines": [
+    2758,
+    2759
+   ],
+   "calls": 263,
+   "lines_run": 2,
+   "lines_total": 2,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_decx_step_draft",
+   "sig": "om_decx_step_draft",
+   "lines": [
+    2762,
+    2763
+   ],
+   "calls": 6,
+   "lines_run": 2,
+   "lines_total": 2,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_stage_data",
+   "sig": "om_set_stage_data",
+   "lines": [
+    2787,
+    2787
+   ],
+   "calls": 8,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_roles",
+   "sig": "om_set_roles",
+   "lines": [
+    2789,
+    2789
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_exit",
+   "sig": "om_set_exit",
+   "lines": [
+    2791,
+    2791
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_decx_exits",
+   "sig": "om_decx_exits",
+   "lines": [
+    2792,
+    2792
+   ],
+   "calls": 16,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_decx_harmony",
+   "sig": "om_decx_harmony",
+   "lines": [
+    2793,
+    2795
+   ],
+   "calls": 8,
+   "lines_run": 2,
+   "lines_total": 2,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_sieve",
+   "sig": "om_set_sieve",
+   "lines": [
+    2805,
+    2805
+   ],
+   "calls": 4,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_local",
+   "sig": "om_set_local",
+   "lines": [
+    2809,
+    2814
+   ],
+   "calls": 1,
+   "lines_run": 5,
+   "lines_total": 5,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_boot",
+   "sig": "om_set_boot",
+   "lines": [
+    2816,
+    2816
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_boot_stats",
+   "sig": "om_boot_stats",
+   "lines": [
+    2817,
+    2817
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_copy",
+   "sig": "om_set_copy",
+   "lines": [
+    2822,
+    2830
+   ],
+   "calls": 1,
+   "lines_run": 8,
+   "lines_total": 8,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_pointer",
+   "sig": "om_set_pointer",
+   "lines": [
+    2832,
+    2835
+   ],
+   "calls": 1,
+   "lines_run": 4,
+   "lines_total": 4,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_voicing",
+   "sig": "om_set_voicing",
+   "lines": [
+    2837,
+    2837
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_harmony",
+   "sig": "om_set_harmony",
+   "lines": [
+    2838,
+    2839
+   ],
+   "calls": 1,
+   "lines_run": 2,
+   "lines_total": 2,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_harmony_stats",
+   "sig": "om_harmony_stats",
+   "lines": [
+    2840,
+    2844
+   ],
+   "calls": 1,
+   "lines_run": 5,
+   "lines_total": 5,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_router_ce",
+   "sig": "om_set_router_ce",
+   "lines": [
+    2845,
+    2845
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_router_stats",
+   "sig": "om_router_stats",
+   "lines": [
+    2846,
+    2846
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_router_simplex",
+   "sig": "om_set_router_simplex",
+   "lines": [
+    2849,
+    2870
+   ],
+   "calls": 1,
+   "lines_run": 20,
+   "lines_total": 20,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "{lambda",
+   "sig": "om_set_router_simplex::{lambda()#1}::operator()() const",
+   "lines": [
+    2854,
+    2855
+   ],
+   "calls": 7936,
+   "lines_run": 2,
+   "lines_total": 2,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_route_sat",
+   "sig": "om_set_route_sat",
+   "lines": [
+    2899,
+    2899
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_ring_stats",
+   "sig": "om_ring_stats",
+   "lines": [
+    2945,
+    2945
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_avoid",
+   "sig": "om_set_avoid",
+   "lines": [
+    2949,
+    2952
+   ],
+   "calls": 4,
+   "lines_run": 3,
+   "lines_total": 3,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_ul_stats",
+   "sig": "om_ul_stats",
+   "lines": [
+    2954,
+    2954
+   ],
+   "calls": 1,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_route",
+   "sig": "om_set_route",
+   "lines": [
+    2957,
+    2960
+   ],
+   "calls": 1,
+   "lines_run": 3,
+   "lines_total": 3,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_route_stats",
+   "sig": "om_route_stats",
+   "lines": [
+    2962,
+    2967
+   ],
+   "calls": 1,
+   "lines_run": 5,
+   "lines_total": 5,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_local_losses",
+   "sig": "om_local_losses",
+   "lines": [
+    2974,
+    2974
+   ],
+   "calls": 4,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_set_flags",
+   "sig": "om_set_flags",
+   "lines": [
+    3004,
+    3016
+   ],
+   "calls": 2,
+   "lines_run": 6,
+   "lines_total": 11,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_forward_loss",
+   "sig": "om_forward_loss",
+   "lines": [
+    3017,
+    3021
+   ],
+   "calls": 40,
+   "lines_run": 3,
+   "lines_total": 3,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "gem_project",
+   "sig": "gem_project",
+   "lines": [
+    3024,
+    3032
+   ],
+   "calls": 8,
+   "lines_run": 2,
+   "lines_total": 8,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_train_step",
+   "sig": "om_train_step",
+   "lines": [
+    3041,
+    3051
+   ],
+   "calls": 8,
+   "lines_run": 9,
+   "lines_total": 9,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_tok_loss",
+   "sig": "om_tok_loss",
+   "lines": [
+    3053,
+    3053
+   ],
+   "calls": 44,
+   "lines_run": 1,
+   "lines_total": 1,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "all_bl",
+   "sig": "all_bl",
+   "lines": [
+    3056,
+    3060
+   ],
+   "calls": 2,
+   "lines_run": 3,
+   "lines_total": 4,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_snapshot",
+   "sig": "om_snapshot",
+   "lines": [
+    3061,
+    3065
+   ],
+   "calls": 1,
+   "lines_run": 5,
+   "lines_total": 5,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  },
+  {
+   "fn": "om_restore",
+   "sig": "om_restore",
+   "lines": [
+    3066,
+    3076
+   ],
+   "calls": 1,
+   "lines_run": 5,
+   "lines_total": 5,
+   "omp_loops": 0,
+   "omp_loops_ran": 0,
+   "sgemm_sites": 0,
+   "gpu_spec": null
+  }
+ ],
+ "not_ran": [
+  "attn_bwd_blk",
+  "attn_fwd_blk",
+  "bl_bwd_int",
+  "bl_dx_lut",
+  "bool frv<char>",
+  "bool frv<float>",
+  "bool frv<short>",
+  "bool frv<signed char>",
+  "bool frv<unsigned short>",
+  "bool fwv<char>",
+  "bool fwv<float>",
+  "bool fwv<short>",
+  "bool fwv<signed char>",
+  "bool fwv<unsigned short>",
+  "boot_trusts",
+  "dec_reset",
+  "dec_step",
+  "epi_bwd",
+  "epi_dec",
+  "epi_fwd",
+  "epi_read",
+  "flip_update",
+  "forward_backward_rev",
+  "fw",
+  "gem_cov",
+  "head2",
+  "head3",
+  "head_rerank",
+  "head_ring",
+  "is_bl",
+  "l5_build8f",
+  "l5_pack_t",
+  "mem_bwd_core",
+  "mem_fwd_core",
+  "mgate_bwd",
+  "mgate_fwd",
+  "mlp_bwd_blk",
+  "mlp_fwd_blk",
+  "next_prime",
+  "om_active",
+  "om_bl_export",
+  "om_block_stage_losses",
+  "om_boot_rows",
+  "om_clear_stage_data",
+  "om_dec_logits",
+  "om_dec_pos",
+  "om_dec_reset",
+  "om_dec_step",
+  "om_dec_tool",
+  "om_decx_free",
+  "om_decx_logit",
+  "om_decx_logits",
+  "om_decx_sieve_rate",
+  "om_decx_stage",
+  "om_decx_step_forced",
+  "om_decx_t25_addr",
+  "om_decx_tool",
+  "om_drop_snapshot",
+  "om_epi_test",
+  "om_epi_write",
+  "om_ext_load",
+  "om_ext_save",
+  "om_free",
+  "om_gem_ref",
+  "om_grad",
+  "om_grad_ptr",
+  "om_kicks",
+  "om_last_margin",
+  "om_mem_test",
+  "om_p3_stats",
+  "om_param_grad",
+  "om_plate_test",
+  "om_port_gate_mean",
+  "om_prof",
+  "om_ptr_beta",
+  "om_ramkit_stats",
+  "om_rerank_cands",
+  "om_rerank_stats",
+  "om_rerank_top2",
+  "om_ring_top2",
+  "om_rmem_ptr",
+  "om_rmem_test",
+  "om_route_exits",
+  "om_route_sat_rate",
+  "om_set_arch",
+  "om_set_epi",
+  "om_set_freeze",
+  "om_set_gem",
+  "om_set_head",
+  "om_set_head_mode",
+  "om_set_intbwd",
+  "om_set_lut5_bwd",
+  "om_set_plate_page",
+  "om_set_port_off",
+  "om_set_redo",
+  "om_set_rerank",
+  "om_set_resonator",
+  "om_set_ring",
+  "om_set_ring_mem",
+  "om_set_ring_mode",
+  "om_set_ring_simplex",
+  "om_set_t25_fields",
+  "om_sieve_refresh",
+  "om_snap_load",
+  "om_snap_save",
+  "om_stats",
+  "om_t25_addr",
+  "om_tok_hit",
+  "opt_step_gem2",
+  "refresh_wf",
+  "rerank_top2",
+  "resonator_update",
+  "ring_logit",
+  "ring_row_loss",
+  "ring_top2",
+  "ring_topk",
+  "ring_word",
+  "rm_row",
+  "rm_slot",
+  "rmem_bwd",
+  "rmem_dec",
+  "rmem_fwd",
+  "rmem_opt",
+  "sieve_refresh",
+  "snap_file",
+  "snap_io",
+  "tdot",
+  "tdot4",
+  "{lambda"
+ ]
+}

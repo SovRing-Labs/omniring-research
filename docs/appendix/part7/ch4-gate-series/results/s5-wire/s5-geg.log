@@ -1,0 +1,2 @@
+{"base":[15343,2898],"cand":[15343,2898],"clause":"patch.grid_equal_grow[*]=-1","gained":[0,0],"lost":[0,0],"pages":[],"pass":false,"program":"results/omr.program.json","secs":9.7701327,"sets":"1ee26bbc9aa4"}
+patch-gate patch.grid_equal_grow[*]=-1: base replay 15343 holdout 2898 → cand 15343 / 2898 · lost 0/0 · gained 0/0 → FAIL (9.8s)

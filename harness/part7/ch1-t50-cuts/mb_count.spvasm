@@ -1,0 +1,65 @@
+; mb_count — GROW-RUN-0 JIT-T50 #1 (the pressure valve), the toroid MAILBOX step 1: this step's items per home toroid.
+;   cnt[home[e]] += 1   (cnt is zeroed by mb_scan after it reads it, so every step counts from zero)
+; Bindings: 0 home uint[n] (route's per-step output) · 1 cnt uint[T] (atomic). 64 items per workgroup, grid (gx, gy) as cyclone::grid.
+; Hand-written from the SPIR-V spec; our own code.
+               OpCapability Shader
+               OpMemoryModel Logical GLSL450
+               OpEntryPoint GLCompute %main "main" %lid %wid %nwg
+               OpExecutionMode %main LocalSize 64 1 1
+               OpDecorate %lid BuiltIn LocalInvocationId
+               OpDecorate %wid BuiltIn WorkgroupId
+               OpDecorate %nwg BuiltIn NumWorkgroups
+               OpDecorate %rta_u ArrayStride 4
+               OpMemberDecorate %buf_u 0 Offset 0
+               OpDecorate %buf_u Block
+               OpDecorate %home DescriptorSet 0
+               OpDecorate %home Binding 0
+               OpDecorate %home NonWritable
+               OpDecorate %cnt DescriptorSet 0
+               OpDecorate %cnt Binding 1
+       %void = OpTypeVoid
+       %fnty = OpTypeFunction %void
+       %bool = OpTypeBool
+       %uint = OpTypeInt 32 0
+     %v3uint = OpTypeVector %uint 3
+  %ptr_in_v3 = OpTypePointer Input %v3uint
+        %lid = OpVariable %ptr_in_v3 Input
+        %wid = OpVariable %ptr_in_v3 Input
+        %nwg = OpVariable %ptr_in_v3 Input
+      %rta_u = OpTypeRuntimeArray %uint
+      %buf_u = OpTypeStruct %rta_u
+     %ptr_bu = OpTypePointer StorageBuffer %buf_u
+      %ptr_u = OpTypePointer StorageBuffer %uint
+       %home = OpVariable %ptr_bu StorageBuffer
+        %cnt = OpVariable %ptr_bu StorageBuffer
+     %uint_0 = OpConstant %uint 0
+     %uint_1 = OpConstant %uint 1
+    %uint_64 = OpConstant %uint 64
+  %scope_dev = OpConstant %uint 1
+   %sem_none = OpConstant %uint 0
+       %main = OpFunction %void None %fnty
+      %entry = OpLabel
+         %l3 = OpLoad %v3uint %lid
+       %lane = OpCompositeExtract %uint %l3 0
+         %w3 = OpLoad %v3uint %wid
+         %wx = OpCompositeExtract %uint %w3 0
+         %wy = OpCompositeExtract %uint %w3 1
+         %n3 = OpLoad %v3uint %nwg
+         %nx = OpCompositeExtract %uint %n3 0
+        %wyn = OpIMul %uint %wy %nx
+         %wg = OpIAdd %uint %wx %wyn
+        %wg6 = OpIMul %uint %wg %uint_64
+          %e = OpIAdd %uint %wg6 %lane
+          %n = OpArrayLength %uint %home 0
+        %eok = OpULessThan %bool %e %n
+               OpSelectionMerge %end None
+               OpBranchConditional %eok %body %end
+       %body = OpLabel
+        %phe = OpAccessChain %ptr_u %home %uint_0 %e
+          %h = OpLoad %uint %phe
+        %pcn = OpAccessChain %ptr_u %cnt %uint_0 %h
+         %a1 = OpAtomicIAdd %uint %pcn %scope_dev %sem_none %uint_1
+               OpBranch %end
+        %end = OpLabel
+               OpReturn
+               OpFunctionEnd

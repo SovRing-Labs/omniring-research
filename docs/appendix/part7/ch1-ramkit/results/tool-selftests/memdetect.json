@@ -1,0 +1,22 @@
+{
+ "corpus_tokens": 2015939,
+ "known_count": 2,
+ "known_longest": 60,
+ "known_row_len": 60,
+ "query_ms_40tok": 0.3,
+ "random_count": 226,
+ "random_longest": 1,
+ "report_pod_live_r1_h0_vs_r1s1000_seedv4": {
+  "answers": 870,
+  "full_by_stage": {
+   "doing": "155/471",
+   "retry": "120/399"
+  },
+  "full_match": 275,
+  "full_match_rate": 0.3161,
+  "mean_longest_over_len": 0.5949
+ },
+ "rss_mb": 177.9,
+ "sa_equals_bruteforce": true,
+ "sa_s": 3.8
+}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """RING-1 T3: the 17 check ring -- does it flag wrong resonator settles?
 
-Task: RING1-CHECK (cohort RING1B, _Pads/RING/ring1-w2.wave.yaml).
+Task: RING1-CHECK (cohort RING1B, ring1-w2.wave.yaml).
 Pillar: Nervous System, Loop step "Read".  Pure synthetic study.  numpy only.
 Imports ring1_core.py unchanged; statistics live here, not in the library.
 
@@ -41,7 +41,7 @@ entirely by the tie-break seed.  The scan repeats the whole grid on extra codebo
 seeds so the verdict is not an artifact of one codebook.  The pre-registered DECISION
 is applied to the pre-registered seed only; the scan is reported, never substituted.
 
-Usage:  python3 _Pads/RING/ring1/run_check.py [--quick] [--scan-only]
+Usage:  python3 harness/ring1/run_check.py [--quick] [--scan-only]
 """
 from __future__ import annotations
 
@@ -94,7 +94,7 @@ MIN_WRONG_FOR_POOL = 30                           # pre-registered cell filter
 Z99 = 2.5758293035489004                          # two-sided normal quantile, 99%
 
 PRE_REGISTERED = """\
-PRE-REGISTERED DECISION (verbatim from _Pads/RING/ring1-w2.wave.yaml, task
+PRE-REGISTERED DECISION (verbatim from ring1-w2.wave.yaml, task
 RING1-CHECK, step 6 -- fixed before any trial ran):
   PASS if, pooled over cells with >= 30 wrong settles, the flag rate on wrong settles
   has a Wilson-99% lower bound >= 0.5 AND the false-alarm rate on correct settles has

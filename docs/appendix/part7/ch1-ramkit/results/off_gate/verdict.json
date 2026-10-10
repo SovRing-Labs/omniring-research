@@ -1,0 +1,17 @@
+{
+ "m2_learn_ab": {
+  "losses": true,
+  "forward_loss": true,
+  "params_sha256": true,
+  "nparams": true,
+  "pass": true
+ },
+ "p3_calloff": {
+  "losses": true,
+  "forward_loss": true,
+  "params_sha256": true,
+  "nparams": true,
+  "pass": true
+ },
+ "pass": true
+}

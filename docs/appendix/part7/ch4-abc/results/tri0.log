@@ -1,0 +1,27 @@
+tri test 1 (pieces → whole): 300 functions, 3 random triangles each — polygon recall@1 0.514 @5 0.772 · exact signatures (A3) @1 0.859 @5 0.973 · 42.44 ms/query over 1658 polygons
+  MISS clamp                0 equation(s) 
+  HIT  max2                 4 equation(s) omni-render/src/layout.rs:combine — (max v0 v1)
+  HIT  min2                 8 equation(s) omni-render/src/jit/rows8.rs:chunks — (min v0 v1)
+  HIT  abs                  4 equation(s) omni-render/apps/find/src/lib.rs:num — (sel (< v0 0) (neg v0) v0)
+  HIT  sum_list             1 equation(s) omni-render/src/layout.rs:intrinsic_w — (sum v0)
+  HIT  max_list             2 equation(s) omni-render/src/woff.rs:reconstruct_glyf — (maxall v0)
+  HIT  min_list             4 equation(s) omni-render/src/woff.rs:reconstruct_glyf — (minall v0)
+  HIT  len_list           226 equation(s) omni-render/apps/find/src/lib.rs:say — (len v0)
+  MISS count_pos            0 equation(s) 
+  MISS grow_share           0 equation(s) 
+  HIT  saturating_sub       6 equation(s) omni-render/src/doctor.rs:donors_cross — (max (- (get1 (tup v0 v1)) (get0 (tup v0 v1))) 0)
+  MISS days_from_civil      0 equation(s) 
+  HIT  civil_from_days      1 equation(s) omni-render/src/jsi_date.rs:civil_from_days — (tup (sel (<= (sel (< (/ v0 153) 10) (+ (/ v0 153) 3) (- (/ v0 153) 9)) 2) (+ (+ (* (/ v1 146097) 400) (/ (- v
+  HIT  signum               2 equation(s) omni-render/src/layout.rs:load_checked — (clamp v0 (neg 1) 1)
+  HIT  is_leap              2 equation(s) omni-spec/posix/src/date.rs:leap — (== (% v0 4) 0)
+  MISS dot                  0 equation(s) 
+  HIT  double               9 equation(s) omni-render/src/hv.rs:bundle — (* 2 v0)
+  MISS ceil_div             0 equation(s) 
+  MISS midpoint             0 equation(s) 
+  HIT  distance             2 equation(s) omni-render/src/verify.rs:same — (abs (- (get0 (tup v0 v1)) (get1 (tup v0 v1))))
+  HIT  area                90 equation(s) omni-render/src/jit/x86.rs:new — (* v0 v1)
+  MISS gcd                  0 equation(s) 
+  MISS avg_list             0 equation(s) 
+  HIT  scale_list           2 equation(s) omni-render/src/layout.rs:css_spacing — (map v0 (* v1 v2))
+tri test 2 (behaviour face): 15/24 needs found by fingerprint · 0.751 ms total query time · index 15913 fingerprints built in 2.19s
+{"build_secs":1.577939966,"equations":9278,"exact_recall1":0.8589500873853816,"exact_recall5":0.9728059924824631,"fingerprints":15913,"fns":1658,"lanes":8,"ms_per_query":42.43666744333331,"recall1":0.5138888888888887,"recall5":0.7722222222222221,"shape_depth":3,"tests":300}

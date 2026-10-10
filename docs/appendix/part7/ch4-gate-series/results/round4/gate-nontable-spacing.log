@@ -1,0 +1,16 @@
+LOST en-cppreference-com-w-cpp-container-vector n4251 <div .> base Some([0.0, 62.609375, -33.75, 0.0]) cand Some([0.0, 16.609375, -39.75, 0.0]) «|In other languages| | |Čeština|»
+GAIN en-cppreference-com-w-cpp-container-vector n2598 <span .> base Some([0.0, -11.515625, 4.015625, 0.0]) cand Some([0.0, -13.03125, 0.015625, 0.0]) «(destructor)|»
+GAIN en-cppreference-com-w-cpp-container-vector n3348 <span .t-lines> base Some([0.0, 31.21875, 3.984375, 4.0]) cand Some([0.0, 7.703125, -0.015625, 0.0]) «append_range|»
+GAIN en-cppreference-com-w-cpp-container-vector n3129 <span .t-lines> base Some([3.984375, 24.0625, 4.0, 4.0]) cand Some([-0.015625, 0.546875, 0.0, 0.0]) «(|DR*|)|»
+GAIN en-cppreference-com-w-cpp-container-vector n2867 <span .t-lines> base Some([4.0, 0.390625, 4.015625, 6.0]) cand Some([0.0, 0.390625, 0.015625, 0.0]) «|(C++11)|»
+GAIN en-cppreference-com-w-cpp-container-vector n3239 <div .> base Some([0.0, 27.65625, 3.984375, 4.0]) cand Some([0.0, 4.140625, -0.015625, 0.0]) «|emplace|»
+GAIN en-cppreference-com-w-cpp-container-vector n2801 <div .t-dsc-member-div> base Some([0.0, -5.546875, 8.015625, 3.1875]) cand Some([0.0, -5.546875, 0.015625, -0.328125]) «|back|»
+GAIN en-cppreference-com-w-cpp-container-vector n3296 <span .> base Some([0.0, 31.4375, 3.984375, 0.0]) cand Some([0.0, 5.921875, -0.015625, 0.0]) «push_back|»
+GAIN en-cppreference-com-w-cpp-container-vector n3519 <span .t-lines> base Some([0.0, 50.8125, 3.984375, 4.0]) cand Some([0.0, 11.296875, -0.015625, 0.0]) «std::swap|(std::vector)|»
+GAIN en-cppreference-com-w-cpp-container-vector n2696 <td .> base Some([0.0, -5.03125, 8.015625, 0.890625]) cand Some([0.0, -5.03125, 0.015625, 0.890625]) «|get_allocator| |»
+GAIN en-cppreference-com-w-cpp-container-vector n2969 <span .t-lines> base Some([4.0, 18.484375, 4.015625, 6.0]) cand Some([0.0, 0.484375, 0.015625, 0.0]) «|(C++11)|»
+GAIN en-cppreference-com-w-cpp-container-vector n3210 <div .> base Some([0.0, 26.765625, 3.984375, 4.0]) cand Some([0.0, 3.25, -0.015625, 0.0]) «|insert_range|»
+GAIN en-cppreference-com-w-cpp-container-vector n2643 <td .> base Some([0.0, -6.8125, 8.015625, 0.890625]) cand Some([0.0, -6.8125, 0.015625, 0.890625]) «|assign| |»
+LOST en-wikipedia-org-wiki-Web-browser n3229 <ul .noprint portalbox portalborder portalright> base Some([-6.015625, -0.296875, 6.015625, -1.1875]) cand Some([-0.015625, -0.296875, 0.015625, -5.1875]) «|Internet portal|»
+{"base":[19228,3045],"cand":[19468,3045],"clause":"patch.nontable_spacing[*]=-1","gained":[242,0],"lost":[2,0],"pages":[{"gained":242,"holdout":false,"lost":1,"lost_nodes":[4251],"page":"en-cppreference-com-w-cpp-container-vector"},{"gained":0,"holdout":false,"lost":1,"lost_nodes":[3229],"page":"en-wikipedia-org-wiki-Web-browser"}],"pass":false,"program":"results/doctor-runs/2026-10-06/round4/prog-anon.json","secs":3.151406934,"sets":"1ee26bbc9aa4"}
+patch-gate patch.nontable_spacing[*]=-1: base replay 19228 holdout 3045 → cand 19468 / 3045 · lost 2/0 · gained 242/0 → FAIL (3.2s)

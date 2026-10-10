@@ -1,0 +1,33 @@
+{
+ "SEPARATED": {
+  "multi": {
+   "heart_phase_err": 0.12061673932999409,
+   "effort_r": 0.8641298461158119,
+   "kick_f1": 0.5200254627228312,
+   "kick_latency_median": 1.675
+  },
+  "alone": {
+   "heart_phase_err": 0.08872932319746688,
+   "effort_r": 0.986152335345962,
+   "kick_f1": 0.2795878738120118,
+   "kick_latency_median": 1.0
+  }
+ },
+ "CROWDED": {
+  "multi": {
+   "heart_phase_err": 0.11491080440721049,
+   "effort_r": 0.279260098591608,
+   "kick_f1": 0.0037037037037037034,
+   "kick_latency_median": 3.5
+  },
+  "alone": {
+   "heart_phase_err": 0.003251486366843926,
+   "effort_r": 0.3918815609910817,
+   "kick_f1": 0.0,
+   "kick_latency_median": NaN
+  }
+ },
+ "verdict": {
+  "PASS": false
+ }
+}

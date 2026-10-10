@@ -1,0 +1,126 @@
+{
+ "probe": "G4c T50 interlock",
+ "source_record": "tests/grow/results/g4/G120-llvmpipe-w262144.json",
+ "G120": {
+  "toroids": 15,
+  "links": 45,
+  "candidates": 33,
+  "ring_read_s": 0.000182,
+  "ring_all_pairs_s": 9.1e-05,
+  "ring_table_entries": 49,
+  "ring_global_min": 27287.0,
+  "closed_form_equals_enumeration": true,
+  "gh_s": 0.0043,
+  "gh_global_min": 27287.0,
+  "pairs": 105,
+  "pairs_equal": 105,
+  "worst_gap": 0.0,
+  "speedup": 17.2,
+  "ring_bottleneck": "f1u1",
+  "g4_global_min_cut": {
+   "a": "f1u1",
+   "b": "f1u3",
+   "min_cut_headroom": 27287.0
+  }
+ },
+ "robustness": {
+  "fields": 200,
+  "all_105_pairs_equal": 200,
+  "worst_gap": 0.0,
+  "global_min_kind": {
+   "v": 194,
+   "f": 6
+  }
+ },
+ "scaling": [
+  {
+   "toroids": 15,
+   "links": 45,
+   "candidates": 33,
+   "ring_read_s": 0.000147,
+   "ring_all_pairs_s": 7.5e-05,
+   "ring_table_entries": 49,
+   "ring_global_min": 52581.5,
+   "closed_form_equals_enumeration": true,
+   "gh_s": 0.0035,
+   "gh_global_min": 52581.5,
+   "pairs": 105,
+   "pairs_equal": 105,
+   "worst_gap": 0.0,
+   "speedup": 17.3,
+   "rings": [
+    3,
+    5
+   ]
+  },
+  {
+   "toroids": 105,
+   "links": 630,
+   "candidates": 186,
+   "ring_read_s": 0.00369,
+   "ring_all_pairs_s": 0.004425,
+   "ring_table_entries": 188,
+   "ring_global_min": 15904.0,
+   "closed_form_equals_enumeration": true,
+   "gh_s": 0.1514,
+   "gh_global_min": 15904.0,
+   "pairs": 5460,
+   "pairs_equal": 5460,
+   "worst_gap": 0.0,
+   "speedup": 18.9,
+   "rings": [
+    3,
+    5,
+    7
+   ]
+  },
+  {
+   "toroids": 1155,
+   "links": 12705,
+   "candidates": 2259,
+   "ring_read_s": 0.707345,
+   "ring_all_pairs_s": 0.805673,
+   "ring_table_entries": 1359,
+   "ring_global_min": 2922.0,
+   "sampled_pairs": 60,
+   "sampled_equal": 60,
+   "maxflow_s_per_pair": 0.0878,
+   "gh_estimate_s": 101.4,
+   "stoer_wagner_global_min": 2922.0,
+   "stoer_wagner_s": 12.18,
+   "rings": [
+    3,
+    5,
+    7,
+    11
+   ]
+  }
+ ],
+ "hot_cluster": [
+  {
+   "rings": [
+    3,
+    5
+   ],
+   "fields": 100,
+   "ring_family_exact": 85,
+   "ring_plus_box_exact": 100,
+   "worst_gap_over_C_ring": 0.556,
+   "worst_gap_over_C_box": 0.0,
+   "box_read_s_mean": 0.0021
+  },
+  {
+   "rings": [
+    3,
+    5,
+    7
+   ],
+   "fields": 3,
+   "ring_family_exact": 3,
+   "ring_plus_box_exact": 3,
+   "worst_gap_over_C_ring": 0.0,
+   "worst_gap_over_C_box": 0.0,
+   "box_read_s_mean": 2.0803
+  }
+ ]
+}

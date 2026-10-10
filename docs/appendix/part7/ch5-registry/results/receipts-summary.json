@@ -1,0 +1,79 @@
+{
+ "console_caller": {
+  "receipts": 5,
+  "tw_null": 4,
+  "tw_set": 1
+ },
+ "core_host": {
+  "by_op": {
+   "map": {
+    "pass": 1
+   },
+   "probe": {
+    "error": 3,
+    "pass": 9
+   },
+   "run": {
+    "fail": 17,
+    "pass": 74
+   },
+   "sync": {
+    "pass": 48
+   }
+  },
+  "receipts": 152
+ },
+ "doctor_local": {
+  "pass": 6
+ },
+ "doctor_remote": {
+  "fail": 20,
+  "pass": 48
+ },
+ "fail_classes": {
+  "core_host_run_nonzero": 17,
+  "doctor_blackbox_equation_refused": 9,
+  "doctor_blackbox_failures": 10,
+  "doctor_wall_exit_101": 2,
+  "post_condition": 8
+ },
+ "first_ts": "2026-10-08T03:40:17Z",
+ "gen": {
+  "hashed_by_op": {
+   "gate": 26
+  },
+  "null_by_op": {
+   "batch": 5,
+   "gate": 26,
+   "heldout-check": 2
+  },
+  "output_hash_null": 33,
+  "receipts": 59,
+  "verdicts": {
+   "pass": 59
+  }
+ },
+ "last_ts": "2026-10-09T11:20:23Z",
+ "lines": 358,
+ "math_kb": {
+  "hashed_by_op": {
+   "gate": 1
+  },
+  "null_by_op": {
+   "check": 3,
+   "explain": 14
+  },
+  "output_hash_null": 17,
+  "receipts": 18
+ },
+ "output_hash_equals_file_sha256": "recomputed separately; see the note column of the ship list",
+ "post_condition_distinct_hosts": 2,
+ "source_sha256": "f9abf69c05fd59af68a1853a3d8b078027d01aff13b0b733f81d1d00f342e563",
+ "ts_max": "2026-10-09T11:20:23Z",
+ "ts_min": "2026-10-08T03:40:17Z",
+ "verdicts": {
+  "error": 3,
+  "fail": 37,
+  "pass": 318
+ }
+}

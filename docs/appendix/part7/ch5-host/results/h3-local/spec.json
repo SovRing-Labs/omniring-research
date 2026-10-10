@@ -1,0 +1,1 @@
+{"fns":1716,"fns_clean":1172,"outputs":2670,"secs":1.67254046,"skipped":["output is a leaf: 1239","fn over opaque ceiling: 544","< 12 defined examples: 285","duplicate equation: 258","inputs 0 or > --max-inputs: 215","tuple-typed input: 122","unit value in equation: 66","deeper than --depth: 49","constant output: 27"],"specs":409}

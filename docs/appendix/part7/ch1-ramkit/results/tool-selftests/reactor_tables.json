@@ -1,0 +1,17 @@
+{
+ "build_s": 0.7,
+ "clock_mismatch": 0,
+ "clock_ticks_checked": 16232,
+ "file_bytes": 188146396,
+ "lookup_s": 2.1,
+ "lookups": 100000,
+ "mismatch_vs_twin": 0,
+ "mix": {
+  "deep": 24995,
+  "depth<=2": 60202,
+  "malformed": 48962,
+  "noise": 14803
+ },
+ "rss_mb": 237.9,
+ "t2_entries": 188116992
+}

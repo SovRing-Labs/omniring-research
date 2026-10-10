@@ -2,8 +2,8 @@
 """RING-1 T10: dispersed array vs one crowded slot, cue broadcast, best-resonating
 slot answers.
 
-Task: RING1-DISPERSE (_Pads/RING/ring1-w3.wave.yaml, cohort contract
-_Pads/RING1-contract.json).
+Task: RING1-DISPERSE (ring1-w3.wave.yaml, cohort contract
+RING1-contract.json).
 Pillar: Nervous System, Loop step "Read".  Pure synthetic study.  numpy only.
 
 Imports ring1_core unchanged (mods (3,5,7,13), D = 5120, float).  The question is a
@@ -35,9 +35,9 @@ Pre-registered decision (verbatim from the brief, do not change):
   Otherwise KILL: dispersal does not beat one crowded slot.
 
 Usage
-  python3 _Pads/RING/ring1/run_disperse.py --quick    # 30 trials/cell, NEVER writes
-                                                    # _Reviews/RING/RING1-DISPERSE.md
-  python3 _Pads/RING/ring1/run_disperse.py            # 200 trials/cell, writes the report
+  python3 harness/ring1/run_disperse.py --quick    # 30 trials/cell, NEVER writes
+                                                    # RING1-DISPERSE.md
+  python3 harness/ring1/run_disperse.py            # 200 trials/cell, writes the report
 """
 from __future__ import annotations
 
@@ -270,14 +270,14 @@ def write_report(path, rows, verdict, reason, decision_rows, trials, elapsed, cm
     lines.append("> " + PREREG)
     lines.append("")
     lines.append("Applied mechanically by `decide()` in "
-                 "`_Pads/RING/ring1/run_disperse.py`; no threshold was tuned after "
+                 "`harness/ring1/run_disperse.py`; no threshold was tuned after "
                  "seeing data. M = %d, minimum S = %d, required margin = %.2f "
                  "absolute on the Wilson-99%% lower bound." %
                  (DECISION_M, DECISION_MIN_S, DECISION_MARGIN))
     lines.append("")
     lines.append("## Setup")
     lines.append("")
-    lines.append("- Harness: `_Pads/RING/ring1/ring1_core.py`, imported unchanged. "
+    lines.append("- Harness: `harness/ring1/ring1_core.py`, imported unchanged. "
                  "mods (3,5,7,13), D = 5120, quant `float`, mark space %d "
                  "(marks drawn uniformly from 0..%d)." % (SPACE, SPACE - 1))
     lines.append("- Grid: M in %s, S in %s. M marks dealt round-robin over S slots "
@@ -399,7 +399,7 @@ def main(argv=None):
     trials = args.trials if args.trials else (30 if args.quick else 200)
     write = (not args.quick) and (not args.no_report)
 
-    cmdline = ("python3 _Pads/RING/ring1/run_disperse.py"
+    cmdline = ("python3 harness/ring1/run_disperse.py"
                + (" --quick" if args.quick else "")
                + (" --trials %d" % trials if args.trials else ""))
 

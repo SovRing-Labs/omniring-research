@@ -1,0 +1,91 @@
+== round · core results/live-r14/h4 · 8 harnesses × 4 threads · bin 9d4c5ab7f209 · lib 361c4c46f5ea · 2026-10-08T08:39:21+00:00
+   pod-tw live-r15-h0 RUN 2m00s 10% eta 7m31s cpu320% ·········▲····▲········· +3/0:56/-0 seq=59 last+: "[wake] step 25 out 0.496 | blocks 0.47 
+   pod-tw live-r15-h1 RUN 2m00s 10% eta 7m30s cpu339% ··········▲··▲·········· +3/0:57/-0 seq=60 last+: "[wake] step 25 out 0.662 | blocks 0.67 
+   pod-tw live-r15-h2 RUN 2m00s 10% eta 7m30s cpu322% ··········▲··▲·········· +3/0:57/-0 seq=60 last+: "[wake] step 25 out 0.575 | blocks 0.53 
+   pod-tw live-r15-h3 RUN 2m00s 10% eta 7m30s cpu344% ········▲····▲·········· +3/0:57/-0 seq=60 last+: "[wake] step 25 out 0.674 | blocks 0.60 
+   pod-tw live-r15-h4 RUN 2m00s 10% eta 7m29s cpu335% ··········▲··▲·········· +3/0:57/-0 seq=60 last+: "[wake] step 25 out 0.588 | blocks 0.48 
+   pod-tw live-r15-h5 RUN 2m00s 10% eta 7m30s cpu335% ·············▲·········· +3/0:57/-0 seq=60 last+: "[wake] step 25 out 0.505 | blocks 0.35 0
+   pod-tw live-r15-h6 RUN 2m00s 10% eta 7m30s cpu347% ·············▲·········· +3/0:57/-0 seq=60 last+: "[wake] step 25 out 0.382 | blocks 0.28 0
+   pod-tw live-r15-h7 RUN 2m00s 10% eta 7m30s cpu326% ·············▲·········· +3/0:57/-0 seq=60 last+: "[wake] step 25 out 0.478 | blocks 0.36 0
+   pod-tw live-r15-h0 RUN 4m00s 21% eta 19m22s cpu352% ··▲····················· +5/0:115/-0 seq=120 last+: "[wake] step 50 out 0.815 | blocks 0.9
+   pod-tw live-r15-h1 RUN 4m00s 20% eta 19m06s cpu338% ··▲····················· +5/0:115/-0 seq=120 last+: "[wake] step 50 out 0.616 | blocks 0.7
+   pod-tw live-r15-h2 RUN 4m00s 20% eta 19m49s cpu346% ··▲····················· +5/0:115/-0 seq=120 last+: "[wake] step 50 out 0.674 | blocks 0.7
+   pod-tw live-r15-h3 RUN 4m00s 21% eta 19m22s cpu357% ··▲····················· +5/0:115/-0 seq=120 last+: "[wake] step 50 out 0.675 | blocks 0.8
+   pod-tw live-r15-h4 RUN 4m00s 21% eta 18m51s cpu337% ··▲····················· +5/0:115/-0 seq=120 last+: "[wake] step 50 out 0.684 | blocks 0.7
+   pod-tw live-r15-h5 RUN 4m00s 21% eta 22m28s cpu350% ·▲······················ +5/0:115/-0 seq=120 last+: "[wake] step 50 out 0.621 | blocks 1.1
+   pod-tw live-r15-h6 RUN 4m00s 21% eta 22m13s cpu354% ·▲······················ +5/0:115/-0 seq=120 last+: "[wake] step 50 out 0.689 | blocks 0.9
+   pod-tw live-r15-h7 RUN 4m00s 21% eta 22m13s cpu346% ·▲······················ +5/0:115/-0 seq=120 last+: "[wake] step 50 out 0.670 | blocks 0.7
+   pod-tw live-r15-h0 RUN 6m00s 2% eta 3m29s cpu92% ·····················▲·▲ +9/0:171/-0 seq=180 last+: "[par] h0 day 4: merged core loaded afte
+   pod-tw live-r15-h1 RUN 6m00s 2% eta 3m30s cpu84% ···················▲···▲ +9/0:171/-0 seq=180 last+: "[par] h1 day 4: merged core loaded afte
+   pod-tw live-r15-h2 RUN 6m00s 2% eta 3m30s cpu246% ·······················▲ +8/0:172/-0 seq=180 last+: "[par] h2 day 4: merged core loaded afte
+   pod-tw live-r15-h3 RUN 6m00s 2% eta 3m30s cpu101% ······················▲▲ +9/0:171/-0 seq=180 last+: "[par] h3 day 4: merged core loaded aft
+   pod-tw live-r15-h4 RUN 6m01s 2% eta 3m29s cpu84% ·················▲·····▲ +9/0:171/-0 seq=180 last+: "[par] h4 day 4: merged core loaded afte
+   pod-tw live-r15-h5 RUN 6m01s 2% eta 3m30s cpu89% ·····▲·················▲ +9/0:171/-0 seq=180 last+: "[par] h5 day 4: merged core loaded afte
+   pod-tw live-r15-h6 RUN 6m01s 2% eta 3m30s cpu97% ······▲················▲ +9/0:171/-0 seq=180 last+: "[par] h6 day 4: merged core loaded afte
+   pod-tw live-r15-h7 RUN 6m01s 2% eta 3m30s cpu105% ······▲················▲ +9/0:171/-0 seq=180 last+: "[par] h7 day 4: merged core loaded aft
+   pod-tw live-r15-h0 RUN 8m01s 3% eta 1m29s cpu388% ···▲·▲·················· +12/0:228/-0 seq=240 last+: "[par] h0 day 5: merged core loaded af
+   pod-tw live-r15-h1 RUN 8m01s 3% eta 1m30s cpu379% ····▲▲·················· +12/0:228/-0 seq=240 last+: "[par] h1 day 5: merged core loaded af
+   pod-tw live-r15-h2 RUN 8m01s 2% eta 1m30s cpu387% ···▲·▲·················· +11/0:229/-0 seq=240 last+: "[par] h2 day 5: merged core loaded af
+   pod-tw live-r15-h3 RUN 8m01s 3% eta 1m30s cpu385% ···▲·▲·················· +12/0:228/-0 seq=240 last+: "[par] h3 day 5: merged core loaded af
+   pod-tw live-r15-h4 RUN 8m01s 3% eta 1m29s cpu384% ·····▲·················· +11/0:229/-0 seq=240 last+: "[par] h4 day 5: merged core loaded aft
+   pod-tw live-r15-h5 RUN 8m01s 3% eta 1m30s cpu339% ·····▲·················· +12/0:228/-0 seq=240 last+: "[par] h5 day 5: merged core loaded aft
+   pod-tw live-r15-h6 RUN 8m01s 3% eta 1m30s cpu359% ·····▲·················· +12/0:228/-0 seq=240 last+: "[par] h6 day 5: merged core loaded aft
+   pod-tw live-r15-h7 RUN 8m01s 3% eta 1m30s cpu382% ·····▲·················· +12/0:228/-0 seq=240 last+: "[par] h7 day 5: merged core loaded aft
+   pod-tw live-r15-h0 RUN 10m01s 3% eta 0m00s cpu368% ························ +15/0:285/-0 seq=300 last+: "[wake] step 125 out 2.188 | blocks 2.2
+   pod-tw live-r15-h1 RUN 10m01s 3% eta 0m00s cpu372% ························ +15/0:285/-0 seq=300 last+: "[wake] step 125 out 2.064 | blocks 2.1
+   pod-tw live-r15-h2 RUN 10m01s 3% eta 0m00s cpu377% ························ +13/0:287/-0 seq=300 last+: "[wake] step 125 out 2.240 | blocks 2.3
+   pod-tw live-r15-h3 RUN 10m01s 3% eta 0m00s cpu362% ························ +15/0:285/-0 seq=300 last+: "[wake] step 125 out 2.322 | blocks 2.2
+   pod-tw live-r15-h4 RUN 10m01s 3% eta 0m00s cpu372% ························ +14/0:286/-0 seq=300 last+: "[wake] step 125 out 1.912 | blocks 2.5
+   pod-tw live-r15-h5 RUN 10m01s 72% eta 4m04s cpu0% ·············▲·········· +16/0:284/-0 seq=300 last+: "[day 7] step 140/195 · pass 4 · acti
+   pod-tw live-r15-h6 RUN 10m01s 72% eta 4m03s cpu0% ··············▲········· +16/0:284/-0 seq=300 last+: "[day 7] step 140/195 · pass 4 · acti
+   pod-tw live-r15-h7 RUN 10m01s 72% eta 4m03s cpu0% ··············▲········· +16/0:284/-0 seq=300 last+: "[day 7] step 140/195 · pass 4 · acti
+   pod-tw live-r15-h0 RUN 12m01s 4% eta 0m00s cpu350% ··········▲▲········▲··· +21/0:339/-0 seq=360 last+: "[wake] step 175 out 1.535 | blocks 
+   pod-tw live-r15-h1 RUN 12m01s 4% eta 0m00s cpu375% ········▲··▲·········▲·· +21/0:339/-0 seq=360 last+: "[wake] step 175 out 1.714 | blocks 
+   pod-tw live-r15-h2 RUN 12m02s 4% eta 0m00s cpu324% ········▲·▲········▲···· +19/0:342/-0 seq=361 last+: "[wake] step 175 out 2.223 | blocks 
+   pod-tw live-r15-h3 RUN 12m02s 4% eta 0m00s cpu293% ·······▲·▲·········▲···· +21/0:340/-0 seq=361 last+: "[wake] step 175 out 1.924 | blocks 
+   pod-tw live-r15-h4 RUN 12m02s 4% eta 0m00s cpu334% ·······▲··▲········▲···· +20/0:341/-0 seq=361 last+: "[wake] step 175 out 2.186 | blocks 
+   pod-tw live-r15-h5 RUN 12m02s 4% eta 0m00s cpu365% ·········▲······▲······· +21/0:340/-0 seq=361 last+: "[wake] step 175 out 0.634 | blocks 0
+   pod-tw live-r15-h6 RUN 12m02s 4% eta 0m00s cpu369% ·········▲······▲······· +21/0:340/-0 seq=361 last+: "[wake] step 175 out 0.616 | blocks 0
+   pod-tw live-r15-h7 RUN 12m02s 4% eta 0m00s cpu379% ·········▲······▲······· +21/0:340/-0 seq=361 last+: "[wake] step 175 out 0.654 | blocks 0
+   pod-tw live-r15-h0 RUN 14m02s 5% eta 0m00s cpu368% ························ +23/0:398/-0 seq=421 last+: "[par] h0 day 9: merged core loaded aft
+   pod-tw live-r15-h1 RUN 14m02s 5% eta 0m00s cpu380% ························ +23/0:398/-0 seq=421 last+: "[par] h1 day 9: merged core loaded aft
+   pod-tw live-r15-h2 RUN 14m02s 4% eta 0m00s cpu378% ····▲··················· +22/0:399/-0 seq=421 last+: "[wake] step 200 out 1.438 | blocks 2.
+   pod-tw live-r15-h3 RUN 14m02s 5% eta 0m00s cpu364% ························ +23/0:398/-0 seq=421 last+: "[par] h3 day 9: merged core loaded aft
+   pod-tw live-r15-h4 RUN 14m02s 5% eta 0m00s cpu374% ························ +22/0:399/-0 seq=421 last+: "[par] h4 day 9: merged core loaded aft
+   pod-tw live-r15-h5 RUN 14m02s 100% eta 0m00s cpu372% ···················▲···· +24/0:397/-0 seq=421 last+: "[day 10] step 195/195 · pass 5 · 
+   pod-tw live-r15-h6 RUN 14m02s 100% eta 0m00s cpu289% ···················▲···· +24/0:397/-0 seq=421 last+: "[day 10] step 195/195 · pass 5 · 
+   pod-tw live-r15-h7 RUN 14m02s 100% eta 0m00s cpu367% ····················▲··· +24/0:397/-0 seq=421 last+: "[day 10] step 195/195 · pass 5 · 
+   pod-tw live-r15-h0 DONE exit=0 14m44s 5% ········▲··············▲ +25/0:417/-0 seq=442 last+: "[par] h0 day 10: merged core loaded after 9.1s
+   pod-tw live-r15-h1 DONE exit=0 14m44s 5% ··········▲············▲ +25/0:417/-0 seq=442 last+: "[par] h1 day 10: merged core loaded after 0.7s
+   pod-tw live-r15-h2 RUN 16m02s 100% eta 0m00s cpu0% ··▲····················· +25/0:456/-0 seq=481 last+: "[day 11] step 203/203 · pass 8 · ac
+   pod-tw live-r15-h3 DONE exit=0 14m44s 5% ·········▲·············▲ +25/0:417/-0 seq=442 last+: "[par] h3 day 10: merged core loaded after 6.1s
+   pod-tw live-r15-h4 DONE exit=0 14m44s 5% ·········▲·············▲ +24/0:418/-0 seq=442 last+: "[par] h4 day 10: merged core loaded after 7.9s
+   pod-tw live-r15-h5 DONE exit=0 14m44s 5% ·······················▲ +25/0:417/-0 seq=442 last+: "[par] h5 day 10: merged core loaded after 28.3s
+   pod-tw live-r15-h6 DONE exit=0 14m44s 5% ·······················▲ +25/0:417/-0 seq=442 last+: "[par] h6 day 10: merged core loaded after 30.5s
+   pod-tw live-r15-h7 DONE exit=0 14m44s 5% ·······················▲ +25/0:417/-0 seq=442 last+: "[par] h7 day 10: merged core loaded after 27.9s
+== pod tw nudges (live-r15)
+08:54:05 TW-EXIT live-r15-h5 exit=0 state=DONE elapsed=14m44s progress=5.1% (learned) 10/195 +25/0:417/-0
+08:54:05 TW-EXIT live-r15-h1 exit=0 state=DONE elapsed=14m44s progress=5.1% (learned) 10/197 +25/0:417/-0
+08:54:05 TW-EXIT live-r15-h6 exit=0 state=DONE elapsed=14m44s progress=5.1% (learned) 10/195 +25/0:417/-0
+08:54:05 TW-EXIT live-r15-h7 exit=0 state=DONE elapsed=14m44s progress=5.1% (learned) 10/195 +25/0:417/-0
+08:54:05 TW-EXIT live-r15-h4 exit=0 state=DONE elapsed=14m44s progress=5.1% (learned) 10/195 +24/0:418/-0
+08:54:05 TW-EXIT live-r15-h0 exit=0 state=DONE elapsed=14m44s progress=5.1% (learned) 10/195 +25/0:417/-0
+08:54:05 TW-EXIT live-r15-h3 exit=0 state=DONE elapsed=14m44s progress=5.1% (learned) 10/195 +25/0:417/-0
+08:57:01 TW-ERR live-r15-h2 exit=-15 (signal SIGTERM) -> /root/tw/jobs/live-r15-h2/err
+08:57:01 TW-EXIT live-r15-h2 exit=-15 state=FAIL elapsed=17m40s progress=100.0% (builtin) 203/203 +25/0:504/-1
+== harnesses done 2026-10-08T08:57:02+00:00
+   h0: exit 0 · 10 merges
+   h1: exit 0 · 10 merges
+   h2: exit 143 · 10 merges
+   h3: exit 0 · 10 merges
+   h4: exit 0 · 10 merges
+   h5: exit 0 · 10 merges
+   h6: exit 0 · 10 merges
+   h7: exit 0 · 10 merges
+   days 10 · held-out / canary [(10, 2.23, 0.893)]
+SKILL-EVAL 161 skills · 91 at >= 0.85
+SKILL-EVAL 46 skills · 27 at >= 0.85
+ROUND-SKILLS 207 118
+ramkit soup r15: 3 cores → results/soup-r15 (score it: skill-eval-par.sh results/soup-r15 <heldout> results/soup-r15/skill.json)
+ramkit memdetect: {"answers": 793, "full_match": 58, "full_match_rate": 0.0731, "mean_longest_over_len": 0.3315, "full_by_stage": {"doing": "44/430", "retry": "14/363"}}
+SCHOOL-ROUND-DONE

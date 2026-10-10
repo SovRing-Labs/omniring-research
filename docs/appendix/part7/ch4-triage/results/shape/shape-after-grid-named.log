@@ -1,0 +1,43 @@
+shape: 49 pages · 7393 failing boxes · 2899 boxes inside the feather, 2344 past the outline (μ ≥ ½; 730 agree on x/y/w/h) · 7349 failing boxes charged (99.4%) · alias 0.25° outline 2 feather 1 · 2.4s
+families by blast radius (sig = turned angles | display | parent display):
+  Y|Block|Block                    deformed  137 · charged   886.4
+  W|Block|Block                    deformed   36 · charged   756.1
+  W|Block|Flex                     deformed  134 · charged   674.2
+  X|Block|Block                    deformed  126 · charged   421.9
+  H|Block|Block                    deformed  137 · charged   376.7
+  H|Block|Flex                     deformed   92 · charged   362.9
+  Y|Block|Grid                     deformed   75 · charged   342.3
+  W|InlineBlock|Block              deformed   43 · charged   341.0
+  X|InlineBlock|Block              deformed  150 · charged   306.0
+  Y|Block|Flex                     deformed   90 · charged   184.3
+  Y|Flex|Flex                      deformed   94 · charged   155.4
+  WX|Block|Flex                    deformed  118 · charged   152.3
+  W|InlineTable|Block              deformed   38 · charged   122.5
+  H|Flex|Grid                      deformed   20 · charged   115.0
+  Y|Flex|Grid                      deformed   37 · charged   111.4
+  WXY|Flex|Flex                    deformed   52 · charged   109.3
+  H|Flex|Block                     deformed   41 · charged   108.6
+  W|TableCell|TableRow             deformed   44 · charged   100.4
+  WX|Block|Grid                    deformed   65 · charged    93.5
+  W|Flex|Flex                      deformed   32 · charged    86.3
+top deformed boxes:
+  582.0  nytimes-com#article._feed-item               W|Block|Block                [["W",34.29999923706055]] 
+  262.3999938964844  nytimes-com#div._container_1hp               Y|Block|Block                [["Y",112.80000305175781]] 
+  128.10000610351562  en-wiktionary-org-wiki-b#div.etytree         Y|Block|Block                [["Y",-3.0]] 
+  116.0  theguardian-com-internat#div.dcr-18agdrd     Y|Block|Grid                 [["Y",16.0]] 
+  110.0  en-wiktionary-org-wiki-b#div.etytree         Y|Block|Block                [["Y",-3.0]] 
+  88.9000015258789  en-wiktionary-org-wiki-b#div.mw-heading      W|Block|Block                [["W",12.300000190734863]] 
+  77.0999984741211  lwn-net#div.ArticleText                      X|Block|Block                [["X",-27.799999237060547]] 
+  75.0  theguardian-com-internat#div.dcr-1t2r5md     H|Flex|Grid                  [["H",1.0]] 
+  62.0  theguardian-com-internat#div.dcr-18agdrd     Y|Block|Grid                 [["Y",6.800000190734863]] 
+  61.0  theguardian-com-internat#div.dcr-16q0ay2     Y|Flex|Grid                  [["Y",-6.699999809265137]] 
+  54.099998474121094  allrecipes-com-recipe-10#div.comp            Y|Block|Block                [["Y",-0.5]] 
+  54.0  en-wiktionary-org-wiki-b#div.etytree         Y|Block|Block                [["Y",-3.0]] 
+  47.5  docs-github-com-en-get-s#img.Primer_Brand__  W|InlineBlock|Block          [["W",15.800000190734863]] 
+  42.0  developer-mozilla-org-en#a.                  W|InlineBlock|Block          [["W",-6.5]] 
+  42.0  theguardian-com-internat#div.dcr-18agdrd     Y|Block|Grid                 [["Y",11.300000190734863]] 
+  39.0  en-wikipedia-org-wiki-We#span.               H|Block|Flex                 [["H",-15.5]] 
+  37.0  developer-mozilla-org-en#a.                  W|InlineBlock|Block          [["W",-6.699999809265137]] 
+  33.0  en-wikipedia-org-wiki-We#span.               W|Block|Flex                 [["W",3.200000047683716]] 
+  33.0  en-wikipedia-org-wiki-We#span.               H|Block|Flex                 [["H",-13.699999809265137]] 
+  30.0  theguardian-com-internat#div.dcr-19aoygu     Y|Block|Flex                 [["Y",-35.29999923706055]] (box agrees)

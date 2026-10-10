@@ -1,0 +1,9 @@
+round 1 patch.kern[*]: unconditioned lost 7 gained 34; 0 literals
+
+thread 'main' (3246077) panicked at src/doctor.rs:586:23:
+start byte index 2 is out of bounds for string of length 1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+real	0m23.085s
+user	0m15.322s
+sys	0m1.104s

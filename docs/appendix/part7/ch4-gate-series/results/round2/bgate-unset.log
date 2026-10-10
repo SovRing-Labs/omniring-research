@@ -1,0 +1,2 @@
+{"base":[17762,2997],"cand":[19042,3001],"gained":[1280,4],"lost":[0,0],"pages":[{"gained":1280,"holdout":false,"lost":0,"lost_nodes":[],"page":"theguardian-com-international"},{"gained":4,"holdout":true,"lost":0,"lost_nodes":[],"page":"ebay-com"}],"pass":true,"sets":"1ee26bbc9aa4"}
+binary-gate vs results/doctor-runs/2026-10-06/round2/agree-before-font.json: replay 17762 → 19042 · holdout 2997 → 3001 · lost 0/0 · gained 1280/4 → PASS (1.7s)

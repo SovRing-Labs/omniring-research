@@ -1,0 +1,24 @@
+<workspace>/projects/embed-core/e5/tokenlearn.py:35: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/Context.cpp:848.)
+  Xt = torch.sparse_csr_tensor(torch.tensor(X.indptr), torch.tensor(X.indices), torch.tensor(X.data), size=X.shape)
+<workspace>/projects/embed-core/e5/tokenlearn.py:35: UserWarning: Sparse CSR tensor support is in beta state. If you miss a functionality in the sparse tensor support, please submit a feature request to https://github.com/pytorch/pytorch/issues. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/SparseCsrTensorImpl.cpp:49.)
+  Xt = torch.sparse_csr_tensor(torch.tensor(X.indptr), torch.tensor(X.indices), torch.tensor(X.data), size=X.shape)
+step 0 loss 0.3153 mean cos 0.6847
+step 25 loss 0.0928 mean cos 0.9072
+step 50 loss 0.0499 mean cos 0.9502
+step 75 loss 0.0299 mean cos 0.9703
+step 100 loss 0.0193 mean cos 0.9808
+step 125 loss 0.0132 mean cos 0.9870
+step 149 loss 0.0096 mean cos 0.9906
+{
+ "core_learned_only": 0.655,
+ "hybrid_fts_core_learned": 0.76,
+ "fts_only": 0.735,
+ "lambda": 0.0001,
+ "steps": 150,
+ "fit_secs": 233.0,
+ "docs": 6194,
+ "core_docs_per_s": 572.9,
+ "speedup_vs_nomic": 494,
+ "query_p50_ms": 5.95,
+ "PASS_prereg_bar": false
+}

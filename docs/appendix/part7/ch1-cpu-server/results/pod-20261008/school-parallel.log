@@ -1,0 +1,14 @@
+== parallel day training · core results/school-t25-prek-cloud1 · 4 harnesses × 4 threads · seeds 6500 6600 6700 6800 · build tier1-prek-v5 · budget 7200s · bin 2d6792fc0597 · lib 361c4c46f5ea · 2026-10-08T01:45:08+00:00
+== harnesses done 2026-10-08T02:29:53+00:00
+   h0: exit 0 · 37 merges
+   h1: exit 0 · 37 merges
+   h2: exit 0 · 37 merges
+   h3: exit 0 · 37 merges
+{"day": 35, "harnesses": 4, "params": 6926912, "rms_spread_to_mean": 0.006930409464985132, "merge_s": 0.11, "at": "02:27:14"}
+{"day": 36, "harnesses": 4, "params": 6926912, "rms_spread_to_mean": 0.006912618409842253, "merge_s": 0.13, "at": "02:28:26"}
+{"day": 37, "harnesses": 4, "params": 6926912, "rms_spread_to_mean": 0.006900005973875523, "merge_s": 0.11, "at": "02:29:53"}
+   days 37 · day s [72, 71, 69, 71, 69, 61]
+   held-out / canary [(30, 0.638, 0.749), (37, 0.624, 0.498)]
+TIER1-EVAL {"ALL": {"action": {"top1": 0.89, "loss": 0.358, "n": 14634}, "goal": {"top1": 0.608, "loss": 1.272, "n": 13021}, "label": {"top1": 1.0, "loss": 0.001, "n": 4427}, "operand": {"top1": 0.767
+TIER1-GATE prek: copy top-1 0.841 over 4555 positions · bar 0.85 · REPEAT
+SCHOOL-PARALLEL-DONE
