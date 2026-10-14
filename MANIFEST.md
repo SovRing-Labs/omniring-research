@@ -127,3 +127,11 @@ Review checklists and preparation logs of the corpus are working documents and a
 (`LICENSE-NONCOMMERCIAL.md`, `LICENSING.md`, `DATA-AND-SHARDS.md`, `SHARD-FORMAT.md`) and the per-repository `PROVENANCE.md` and
 `TECHNICAL-DISCLOSURE.md` belong to the code repositories: this repository is documents under CC BY 4.0 plus research scripts.
 A draft design disclosure for a launcher that is not released is held back until it is reviewed.
+
+## G. Added in 0.3.0 (2026-10-14)
+
+| File | Date | What | Evidence |
+|---|---|---|---|
+| `docs/disclosures/CYCLONE-TRAINER-TECHNICAL-DISCLOSURE.md` | 2026-10-14 | Cyclone Trainer design disclosure | design; measured parts reported in doc 45 |
+| `docs/disclosures/THEAD-SUPERSEED-TECHNICAL-DISCLOSURE.md` | 2026-10-14 | THEAD SuperSeed design disclosure | design; measured parts reported in doc 45 |
+| `docs/45-status-disclosure-2026-10-14.md` | 2026-10-14 | disclosure and measured status of everything built or tested 10-11 to 10-14 | result files kept in working records, not published here |

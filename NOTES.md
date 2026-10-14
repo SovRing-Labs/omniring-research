@@ -1,3 +1,13 @@
+Research corpus 0.3.0 (2026-10-14): designs built or tested after 0.2.0 are disclosed, with their measured status to this date.
+
+**Added**
+- `docs/disclosures/CYCLONE-TRAINER-TECHNICAL-DISCLOSURE.md` and `docs/disclosures/THEAD-SUPERSEED-TECHNICAL-DISCLOSURE.md` (design disclosures, previously unpublished).
+- `docs/45-status-disclosure-2026-10-14.md`: exact residue-ring softmax / LSE / loss in the trainer (device == host bit-identical, 1.98x the float kernel); the ring core inside attention with T50 addressing, an Armilla 3x3 RRNS guard (recompute on abstain, <= 0.0067 nats) and cyclone routing (gap +1.44 -> +0.26 nats after training); the cyclone shape as the MLP core (negative: +4.2 % held-out loss); the liquid ternary doctor ranker; the open web as the doctor's curriculum (10,312 Common Crawl pages, 99.22 % pristine); BitNet b1.58 2B decoded bit-identically across CPUs; dispatch that stops instead of failing over; a speech core (design only, NOT YET TESTED).
+
+**Evidence status.** Numbers come from saved runs kept in working records; their harnesses are not in this release.
+
+---
+
 Research corpus 0.2.0: the technical disclosures after Part 2 join the corpus, and the repository's own documents are corrected.
 
 **Added (`docs/disclosures/`)**

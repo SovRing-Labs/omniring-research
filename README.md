@@ -3,7 +3,7 @@
 **Authors:** Juan Carlos De Santiago, with the Sovereign Raptor fleet (AI-assisted)
 **Licence:** Creative Commons Attribution 4.0 International (CC BY 4.0), see `LICENSE.md`
 **Copyright:** 2026 Juan Carlos De Santiago
-**Version:** 0.2.0 (see `CITATION.cff`)
+**Version:** 0.3.0 (see `CITATION.cff`)
 
 ## What this is
 
@@ -65,6 +65,8 @@ the project, not independently reproduced.
 | `docs/disclosures/OMNID-TECHNICAL-DISCLOSURE.md` | 2026-10-01 | omnid: one front door for local AI, hardened web face, hypervector wire |
 | `docs/disclosures/DOCK-TECHNICAL-DISCLOSURE.md` | 2026-10-09, **draft** | dock: a constant-surface MCP front with abstaining tool search (an MCP server, unrelated to the "dock" of the ARC-reactor vocabulary) |
 | `docs/disclosures/OMNI-RING-TECHNICAL-DISCLOSURE-PART-7.md` | 2026-10-09 | Live school and growth run, cyclone array and T50 hub, Omni Web, the doctor core, the cores, provenance; numbers without a published result file are labelled (partial) / (unsupported) in place |
+| `docs/disclosures/CYCLONE-TRAINER-TECHNICAL-DISCLOSURE.md` | 2026-10-14 | Cyclone Trainer: a systolic toroid array that trains ternary register machines (THEAD-ISA) without large matrix multiplies or unbounded KV caches |
+| `docs/disclosures/THEAD-SUPERSEED-TECHNICAL-DISCLOSURE.md` | 2026-10-14 | THEAD SuperSeed: a self-contained ternary model architecture (trunk, built-in generators, shards, inducer) aimed at forgetting, hallucination and energy cost |
 
 **Licence of the disclosures.** Here they are CC BY 4.0 like everything else in this repository. The same words also ship in the
 code repositories, under those repositories' licences: omni-ring under PolyForm Small Business 1.0.0 OR PolyForm Noncommercial
@@ -132,7 +134,8 @@ document, each with its verdict; essays 12–16 tell how the week went, in the a
 | `docs/42-pre-k-arms-on-the-t25-core-model.md` | Pre-K arms on the T25-core model: plates attention kept; ring head, event fields, integer backward, T25 pages off; the pre-K ladder |
 | `docs/43-training-on-a-rented-cpu-server.md` | Parallel day merge on a rented server, throughput by model size, a native build with no gain, a shared-RAM bus |
 | `docs/44-ramkit-switches-on-the-school.md` | Memory switches that are bit-identical when off; ring memory, episodic gate and A-GEM measured, kept off |
-| `docs/disclosures/` | The technical disclosures listed above (Parts 3 to 7, omnid, dock) |
+| `docs/45-status-disclosure-2026-10-14.md` | Disclosure and status 2026-10-11 to 10-14: exact ring softmax head, ring core in attention, cyclone MLP (negative), liquid doctor ranker, open-web curriculum, BitNet decode, stop-not-failover dispatch, speech core (design only) |
+| `docs/disclosures/` | The technical disclosures listed above (Parts 3 to 7, omnid, dock, Cyclone Trainer, THEAD SuperSeed) |
 | `docs/appendix/part7/` | Result files and pre-registration extracts cited by Part 7 and docs 24-44 (`docs/appendix/part7/ordering/first-added-table.md`: the version-history ordering evidence) |
 | `docs/guide/HYPERDIMENSIONAL-COMPUTING-AND-YOU.md` | A plain-language guide to hyperdimensional computing: what we are building, why, and how (second edition) |
 | `docs/guide/GEOMETRIC-COMPUTING-AND-YOU.md` | The axioms (A0–A19), laws (L1–L17) and rules (R1–R17) of geometric computing, in plain words with the author's notes, each with its evidence and who found it first |
