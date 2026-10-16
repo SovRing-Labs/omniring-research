@@ -1,0 +1,16 @@
+# omniring-research
+
+> The research record behind OMNIRING, a memory that stores small structured records ("marks") in fixed-size high-dimensional vectors and reads them back by resonance.
+
+Setup: `git clone --depth 1 https://github.com/SovRing-Labs/omniring-research && cd omniring-research && python3 -m venv .venv && . .venv/bin/activate && python -m pip install -q numpy && python3 harness/ring1/run_halo.py --quick` (expect: VERDICT:).
+Licence: CC BY 4.0.
+
+## Docs
+- [README.md](https://raw.githubusercontent.com/SovRing-Labs/omniring-research/main/README.md)
+- [CITATION.cff](https://raw.githubusercontent.com/SovRing-Labs/omniring-research/main/CITATION.cff)
+- [AGENTS.md](https://raw.githubusercontent.com/SovRing-Labs/omniring-research/main/AGENTS.md)
+- [STATUS.md](https://raw.githubusercontent.com/SovRing-Labs/omniring-research/main/STATUS.md)
+- [suite.json](https://raw.githubusercontent.com/SovRing-Labs/omniring-research/main/suite.json)
+
+## Optional
+- [SovRing umbrella (all repos, MCP setup)](https://github.com/SovRing-Labs/SovRing)
