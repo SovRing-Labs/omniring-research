@@ -1,5 +1,11 @@
 # OMNIRING research corpus
 
+<!-- status-badges (REPO-ACCESS-C) -->
+[![status: pre-alpha (under development)](https://img.shields.io/badge/status-pre--alpha%20%28under%20development%29-orange)](STATUS.md) **Status: pre-alpha, under development** — what works today, what is untested and what failed: [`STATUS.md`](STATUS.md)
+
+[![defensive publication: DOI 10.5281/zenodo.23354784](https://img.shields.io/badge/defensive%20publication-DOI%2010.5281%2Fzenodo.23354784-blue)](https://doi.org/10.5281/zenodo.23354784) **Defensive publication:** [`docs/disclosures/`](docs/disclosures/) · DOI [10.5281/zenodo.23354784](https://doi.org/10.5281/zenodo.23354784)
+<!-- /status-badges -->
+
 **Authors:** Juan Carlos De Santiago, with the Sovereign Raptor fleet (AI-assisted)
 **Licence:** Creative Commons Attribution 4.0 International (CC BY 4.0), see `LICENSE.md`
 **Copyright:** 2026 Juan Carlos De Santiago

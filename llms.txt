@@ -1,8 +1,9 @@
 # omniring-research
 
-> The research record behind OMNIRING, a memory that stores small structured records ("marks") in fixed-size high-dimensional vectors and reads them back by resonance.
+> Public research corpus of the OMNIRING project: numbered disclosure chapters, pre-registered ring-resonator experiments (PASS and KILL both published) with their numpy harnesses and run logs, and a status disclosure that marks each later result Measured or NOT YET TESTED.
 
 Setup: `git clone --depth 1 https://github.com/SovRing-Labs/omniring-research && cd omniring-research && python3 -m venv .venv && . .venv/bin/activate && python -m pip install -q numpy && python3 harness/ring1/run_halo.py --quick` (expect: VERDICT:).
+Status: pre-alpha, under development — read STATUS.md before relying on a number.
 Licence: CC BY 4.0.
 
 ## Docs
